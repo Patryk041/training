@@ -1,0 +1,4 @@
+I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.dll
+I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.pdb
+I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.dll
+I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.pdb
