@@ -1,5 +1,9 @@
 I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialUnitTest.dll
 I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialUnitTest.pdb
-I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.csprojResolveAssemblyReference.cache
 I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.dll
 I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.pdb
+I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingApp.exe
+I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingLibrary.dll
+I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingApp.pdb
+I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingLibrary.pdb
+I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.csprojResolveAssemblyReference.cache

@@ -53,6 +53,16 @@
     <Compile Include="UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InitialTrainingApp\InitialTrainingApp.csproj">
+      <Project>{e4faa82f-1ea9-4e0d-81b3-058366b786de}</Project>
+      <Name>InitialTrainingApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InitialTrainingLibrary\InitialTrainingLibrary.csproj">
+      <Project>{ccff23ce-5a34-4fa7-ac0e-427fd4fa97b8}</Project>
+      <Name>InitialTrainingLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
