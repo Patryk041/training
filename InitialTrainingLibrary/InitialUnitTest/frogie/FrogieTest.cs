@@ -20,6 +20,15 @@ namespace InitialUnitTest.frogie
             Assert.IsFalse(validator.DateValidate(2014, 12, 32));
             Assert.IsTrue(validator.DateValidate(2014, 12, 31));
             Assert.IsFalse(validator.DateValidate(2014, 04, 31));
+            Assert.IsFalse(validator.DateValidate(2015, 02, 29));
+
+            FrogieBetterDateValidator validator1 = new FrogieBetterDateValidator();
+
+            Assert.IsFalse(validator1.DateValidate(2014, 13, 31));
+            Assert.IsFalse(validator1.DateValidate(2014, 12, 32));
+            Assert.IsTrue(validator1.DateValidate(2014, 12, 31));
+            Assert.IsFalse(validator1.DateValidate(2014, 04, 31));
+            Assert.IsFalse(validator1.DateValidate(2015, 02, 29));
 
         }
     }
