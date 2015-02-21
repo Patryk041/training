@@ -42,6 +42,36 @@
     <Compile Include="frogie\FrogieDateValidator.cs" />
     <Compile Include="Interfaces\IDateValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="syf\minesweepershowdown\board\Board.cs" />
+    <Compile Include="syf\minesweepershowdown\board\BoardField.cs" />
+    <Compile Include="syf\minesweepershowdown\board\ChessBoard.cs" />
+    <Compile Include="syf\minesweepershowdown\board\ChessBoardField.cs" />
+    <Compile Include="syf\minesweepershowdown\board\SweeperBoard.cs" />
+    <Compile Include="syf\minesweepershowdown\board\SweeperBoardField.cs" />
+    <Compile Include="syf\minesweepershowdown\interfaces\IBoard.cs" />
+    <Compile Include="syf\minesweepershowdown\interfaces\IBoardField.cs" />
+    <Compile Include="syf\postcodevalidator\interfaces\IPostCodeExtractor.cs" />
+    <Compile Include="syf\postcodevalidator\interfaces\IPostCodeValidator.cs" />
+    <Compile Include="syf\postcodevalidator\interfaces\IProvinceValidator.cs" />
+    <Compile Include="syf\postcodevalidator\PostCode.cs" />
+    <Compile Include="syf\postcodevalidator\PostCodeExtractor.cs" />
+    <Compile Include="syf\postcodevalidator\PostCodeValidator.cs" />
+    <Compile Include="syf\postcodevalidator\PostCodeValidatorFactory.cs" />
+    <Compile Include="syf\postcodevalidator\Province.cs" />
+    <Compile Include="syf\postcodevalidator\provinces\GreatPolandValidator.cs" />
+    <Compile Include="syf\postcodevalidator\provinces\MazovianValidator.cs" />
+    <Compile Include="syf\postcodevalidator\provinces\SilesianValidator.cs" />
+    <Compile Include="syf\postcodevalidator\RigthPostCodeValidator.cs" />
+    <Compile Include="syf\postcodevalidator\RigthPostCodeValidatorBase.cs" />
+    <Compile Include="syf\privatelol\PrivateTest.cs" />
+    <Compile Include="syf\refvaltypes\AdvancedHandleChild.cs" />
+    <Compile Include="syf\refvaltypes\CorTest.cs" />
+    <Compile Include="syf\refvaltypes\Handle.cs" />
+    <Compile Include="syf\refvaltypes\HandleChild.cs" />
+    <Compile Include="syf\refvaltypes\RefTypeExample.cs" />
+    <Compile Include="syf\refvaltypes\SimpleHandleChild.cs" />
+    <Compile Include="syf\TodayTraining.cs" />
+    <Compile Include="syf\Training.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InitialTrainingApp
+namespace InitialTrainingLibrary.syf
 {
-    class Program
+    class TodayTraining : Training
     {
-        static void Main(string[] args)
+        public void test()
         {
-
-            Console.ReadKey();
-            
+            //this.dataszkolenia
+             
         }
     }
 }
