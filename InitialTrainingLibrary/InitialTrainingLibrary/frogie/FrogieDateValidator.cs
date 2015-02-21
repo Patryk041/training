@@ -23,5 +23,11 @@ namespace InitialTrainingLibrary.frogie
             }
             return true;
         }
+
+        public string GetName()
+        {
+
+            return "frogie";
+        }
     }
 }
