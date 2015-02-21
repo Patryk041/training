@@ -51,6 +51,12 @@
     <Compile Include="koziu\koziuClass.cs" />
     <Compile Include="mg\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RS\Complex\DateValidator.cs" />
+    <Compile Include="RS\Complex\DayValidator.cs" />
+    <Compile Include="RS\Complex\IConcreteDateValidator.cs" />
+    <Compile Include="RS\Complex\MonthDateValidator.cs" />
+    <Compile Include="RS\Complex\YearDateValidator.cs" />
+    <Compile Include="RS\Simple\DateValidator.cs" />
     <Compile Include="syf\minesweepershowdown\board\Board.cs" />
     <Compile Include="syf\minesweepershowdown\board\BoardField.cs" />
     <Compile Include="syf\minesweepershowdown\board\ChessBoard.cs" />
@@ -85,7 +91,9 @@
     <Compile Include="warrior\WarriorDateValidator.cs" />
     <Compile Include="Witek\NaszaKlasa.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="RS\README.txt" />
+  </ItemGroup>
   <ItemGroup />
   <ItemGroup />
   <ItemGroup />
