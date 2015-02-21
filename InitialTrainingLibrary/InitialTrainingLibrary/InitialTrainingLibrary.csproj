@@ -41,7 +41,13 @@
   <ItemGroup>
     <Compile Include="dysq\Class1.cs" />
     <Compile Include="frogie\FrogieDateValidator.cs" />
+    <Compile Include="Interfaces\chess\FigureKind.cs" />
+    <Compile Include="Interfaces\chess\IBoard.cs" />
+    <Compile Include="Interfaces\chess\IBoardField.cs" />
+    <Compile Include="Interfaces\chess\ICoordinates.cs" />
+    <Compile Include="Interfaces\chess\IFigure.cs" />
     <Compile Include="Interfaces\IDateValidator.cs" />
+    <Compile Include="mg\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="syf\minesweepershowdown\board\Board.cs" />
     <Compile Include="syf\minesweepershowdown\board\BoardField.cs" />
@@ -73,8 +79,11 @@
     <Compile Include="syf\refvaltypes\SimpleHandleChild.cs" />
     <Compile Include="syf\TodayTraining.cs" />
     <Compile Include="syf\Training.cs" />
+    <Compile Include="warrior\chess\figures\Figure.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Witek\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
