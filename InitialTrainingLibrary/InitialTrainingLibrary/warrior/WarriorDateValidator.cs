@@ -8,5 +8,10 @@ namespace InitialTrainingLibrary.warrior
         {
             return true;
         }
+
+        public string GetName()
+        {
+            return "Warrior";
+        }
     }
 }
