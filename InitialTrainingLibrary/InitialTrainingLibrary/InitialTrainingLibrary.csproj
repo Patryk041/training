@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="frogie\FrogieDateValidator.cs" />
     <Compile Include="Interfaces\IDateValidator.cs" />
+    <Compile Include="mg\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="syf\minesweepershowdown\board\Board.cs" />
     <Compile Include="syf\minesweepershowdown\board\BoardField.cs" />
