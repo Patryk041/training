@@ -82,6 +82,7 @@
     <Compile Include="syf\TodayTraining.cs" />
     <Compile Include="syf\Training.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
+    <Compile Include="warrior\WarriorDateValidator.cs" />
     <Compile Include="Witek\NaszaKlasa.cs" />
   </ItemGroup>
   <ItemGroup />

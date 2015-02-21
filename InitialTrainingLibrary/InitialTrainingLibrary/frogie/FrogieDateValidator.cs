@@ -9,6 +9,7 @@ namespace InitialTrainingLibrary.frogie
 {
     public class FrogieDateValidator : IDateValidator
     {
+        // celowo robimy konflikt
         public bool DateValidate(int year, int month, int day)
         {
             if (day > 31 || month > 12)
@@ -19,7 +20,9 @@ namespace InitialTrainingLibrary.frogie
             if ((month < 8 && month % 2 == 0) || (month >= 8 && month % 2 == 1))
             {
                 if (day > 30)
+                {
                     return false;
+                }
             }
             return true;
         }
