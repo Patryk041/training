@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InitialTrainingLibrary.syf.refvaltypes
+namespace InitialTrainingLibrary.Witek
 {
-    class RefTypeExample
+    class NaszaKlasa
     {
-        public int test;
     }
 }

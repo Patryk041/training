@@ -7,3 +7,8 @@ I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialTra
 I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.exe
 I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.pdb
 C:\Users\Chmura\Documents\training\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingApp.exe.config
+<<<<<<< HEAD
+C:\Users\Mateusz\Documents\training\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingApp.exe.config
+=======
+F:\Repozytorium\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingApp.exe.config
+>>>>>>> dd261ec6ba22f32dfe9f1534ab4bfc1f5d07c122
