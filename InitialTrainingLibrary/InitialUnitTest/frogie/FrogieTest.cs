@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using InitialTrainingLibrary.frogie;
+using InitialTrainingLibrary.Interfaces;
+using InitialTrainingLibrary.RS.Simple;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace InitialUnitTest.frogie
@@ -30,6 +32,22 @@ namespace InitialUnitTest.frogie
             Assert.IsFalse(validator1.DateValidate(2014, 04, 31));
             Assert.IsFalse(validator1.DateValidate(2015, 02, 29));
 
+
+            List<IDateValidator> testCollection = new List<IDateValidator>()
+            {
+                validator,
+                validator1,
+                new DateValidator()
+            };
+
+            foreach (var valid in testCollection)
+            {
+                Assert.IsFalse(valid.DateValidate(2014, 13, 31));
+                Assert.IsFalse(valid.DateValidate(2014, 12, 32));
+                Assert.IsTrue(valid.DateValidate(2014, 12, 31));
+                Assert.IsFalse(valid.DateValidate(2014, 04, 31));
+                Assert.IsFalse(valid.DateValidate(2015, 02, 29));
+            }
         }
     }
 }
