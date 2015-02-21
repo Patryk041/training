@@ -1,0 +1,9 @@
+I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.dll
+I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.pdb
+I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.dll
+I:\self\trainings\Dropbox\szkolenie\v 2.0\code\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.pdb
+F:\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.dll
+F:\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.pdb
+F:\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.csprojResolveAssemblyReference.cache
+F:\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.dll
+F:\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.pdb
