@@ -83,25 +83,14 @@
     <Compile Include="warrior\chess\figures\Figure.cs" />
     <Compile Include="Witek\NaszaKlasa.cs" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup />
-=======
-<<<<<<< HEAD
   <ItemGroup />
-=======
->>>>>>> dd261ec6ba22f32dfe9f1534ab4bfc1f5d07c122
   <ItemGroup>
     <Folder Include="Witek\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="koziu\" />
   </ItemGroup>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> ff943909bbac0bba9482a09d6001b05e9679d150
->>>>>>> 91e06d6cc96634b653fec6e593a5f130bf74d1e4
->>>>>>> dd261ec6ba22f32dfe9f1534ab4bfc1f5d07c122
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
