@@ -8,6 +8,6 @@ namespace InitialTrainingApp
 {
     public class Class1
     {
-        public int test = 4;
+        public int test = 5;
     }
 }
