@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InitialTrainingLibrary.dysq.DateValidator;
 using InitialTrainingLibrary.frogie;
 using InitialTrainingLibrary.Interfaces;
 using InitialTrainingLibrary.RS.Simple;
@@ -38,7 +39,8 @@ namespace InitialUnitTest.frogie
             {
                 validator,
                 validator1,
-                new DateValidator()
+                new DateValidator(),
+                new MyDate()
             };
 
             foreach (var valid in testCollection)
