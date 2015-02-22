@@ -40,7 +40,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chmura\MojaKlaska.cs" />
-    <Compile Include="dysq\Class1.cs" />
+    <Compile Include="dysq\DateValidator\Days\Days28ofMonth.cs" />
+    <Compile Include="dysq\DateValidator\Days\Days30ofMonths.cs" />
+    <Compile Include="dysq\DateValidator\Days\Days31ofMonths.cs" />
+    <Compile Include="dysq\DateValidator\MyDate.cs" />
+    <Compile Include="dysq\DateValidator\Months.cs" />
     <Compile Include="frogie\FrogieDateValidator.cs" />
     <Compile Include="Interfaces\chess\FigureKind.cs" />
     <Compile Include="Interfaces\chess\IBoard.cs" />
