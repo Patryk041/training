@@ -45,6 +45,8 @@
     <Compile Include="dysq\DateValidator\Days\Days31ofMonths.cs" />
     <Compile Include="dysq\DateValidator\MyDate.cs" />
     <Compile Include="dysq\DateValidator\Months.cs" />
+    <Compile Include="dysq\Class1.cs" />
+    <Compile Include="frogie\FrogieBetterDateValidator.cs" />
     <Compile Include="frogie\FrogieDateValidator.cs" />
     <Compile Include="Interfaces\chess\FigureKind.cs" />
     <Compile Include="Interfaces\chess\IBoard.cs" />
@@ -55,6 +57,13 @@
     <Compile Include="koziu\koziuClass.cs" />
     <Compile Include="mg\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RS\Complex\DateValidator.cs" />
+    <Compile Include="RS\Complex\DayValidator.cs" />
+    <Compile Include="RS\Complex\IConcreteDateValidator.cs" />
+    <Compile Include="RS\Complex\MonthDateValidator.cs" />
+    <Compile Include="RS\Complex\YearDateValidator.cs" />
+    <Compile Include="RS\Simple\DateValidator.cs" />
+    <Compile Include="syf\algorythmics\Algorythmics.cs" />
     <Compile Include="syf\minesweepershowdown\board\Board.cs" />
     <Compile Include="syf\minesweepershowdown\board\BoardField.cs" />
     <Compile Include="syf\minesweepershowdown\board\ChessBoard.cs" />
@@ -76,7 +85,12 @@
     <Compile Include="syf\postcodevalidator\provinces\SilesianValidator.cs" />
     <Compile Include="syf\postcodevalidator\RigthPostCodeValidator.cs" />
     <Compile Include="syf\postcodevalidator\RigthPostCodeValidatorBase.cs" />
+    <Compile Include="syf\privatelol\FrogieDate.cs" />
     <Compile Include="syf\privatelol\PrivateTest.cs" />
+    <Compile Include="syf\proofsofconcept\dispose\DisposableListExample.cs" />
+    <Compile Include="syf\proofsofconcept\dispose\ExampleClass.cs" />
+    <Compile Include="syf\proofsofconcept\dispose\ExampleTask.cs" />
+    <Compile Include="syf\proofsofconcept\dispose\RamExhauster.cs" />
     <Compile Include="syf\refvaltypes\AdvancedHandleChild.cs" />
     <Compile Include="syf\refvaltypes\CorTest.cs" />
     <Compile Include="syf\refvaltypes\Handle.cs" />
@@ -86,10 +100,15 @@
     <Compile Include="syf\TodayTraining.cs" />
     <Compile Include="syf\Training.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
+    <Compile Include="warrior\WarriorDateValidator.cs" />
     <Compile Include="Witek\NaszaKlasa.cs" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="RS\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="syf\proofsofconcept\clone\" />
+  </ItemGroup>
   <ItemGroup />
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
