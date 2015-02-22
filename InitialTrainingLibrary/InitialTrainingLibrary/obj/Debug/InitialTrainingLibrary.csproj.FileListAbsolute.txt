@@ -1,0 +1,4 @@
+e:\Szkolenie\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.dll
+e:\Szkolenie\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.pdb
+e:\Szkolenie\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.dll
+e:\Szkolenie\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.pdb

@@ -62,6 +62,11 @@
     <Compile Include="RS\Complex\MonthDateValidator.cs" />
     <Compile Include="RS\Complex\YearDateValidator.cs" />
     <Compile Include="RS\Simple\DateValidator.cs" />
+    <Compile Include="Sito\1\DatePartValidator.cs" />
+    <Compile Include="Sito\1\DateValidator.cs" />
+    <Compile Include="Sito\1\IDatePartValidator.cs" />
+    <Compile Include="Sito\1\MonthValidator.cs" />
+    <Compile Include="Sito\1\YearValidator.cs" />
     <Compile Include="syf\algorythmics\Algorythmics.cs" />
     <Compile Include="syf\minesweepershowdown\board\Board.cs" />
     <Compile Include="syf\minesweepershowdown\board\BoardField.cs" />
