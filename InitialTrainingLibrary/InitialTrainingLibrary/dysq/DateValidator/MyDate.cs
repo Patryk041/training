@@ -29,6 +29,11 @@ namespace InitialTrainingLibrary.dysq.DateValidator
             return false;
         }
 
+        public string GetName()
+        {
+            return "Dysq";
+        }
+
 
         public bool IsMonthValid(int month)
         {

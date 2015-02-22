@@ -45,7 +45,6 @@
     <Compile Include="dysq\DateValidator\Days\Days31ofMonths.cs" />
     <Compile Include="dysq\DateValidator\MyDate.cs" />
     <Compile Include="dysq\DateValidator\Months.cs" />
-    <Compile Include="dysq\Class1.cs" />
     <Compile Include="frogie\FrogieBetterDateValidator.cs" />
     <Compile Include="frogie\FrogieDateValidator.cs" />
     <Compile Include="Interfaces\chess\FigureKind.cs" />
