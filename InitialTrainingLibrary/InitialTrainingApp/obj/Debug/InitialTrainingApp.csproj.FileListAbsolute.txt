@@ -6,3 +6,11 @@ E:\Szkolenie\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTraining
 E:\Szkolenie\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.csprojResolveAssemblyReference.cache
 E:\Szkolenie\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.exe
 E:\Szkolenie\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.pdb
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingApp.exe.config
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingApp.exe
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingApp.pdb
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingLibrary.dll
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingLibrary.pdb
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.csprojResolveAssemblyReference.cache
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.exe
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.pdb

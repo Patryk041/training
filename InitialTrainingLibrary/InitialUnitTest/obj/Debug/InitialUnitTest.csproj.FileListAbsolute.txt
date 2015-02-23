@@ -7,3 +7,12 @@ E:\Szkolenie\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingLib
 E:\Szkolenie\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.csprojResolveAssemblyReference.cache
 E:\Szkolenie\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.dll
 E:\Szkolenie\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.pdb
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialUnitTest.dll
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialUnitTest.pdb
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingApp.exe
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingLibrary.dll
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingApp.pdb
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingLibrary.pdb
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.csprojResolveAssemblyReference.cache
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.dll
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.pdb

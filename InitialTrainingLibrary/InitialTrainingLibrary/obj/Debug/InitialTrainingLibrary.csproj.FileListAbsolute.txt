@@ -3,3 +3,8 @@ E:\Szkolenie\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrai
 E:\Szkolenie\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.csprojResolveAssemblyReference.cache
 E:\Szkolenie\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.dll
 E:\Szkolenie\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.pdb
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.dll
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.pdb
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.csprojResolveAssemblyReference.cache
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.dll
+D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.pdb
