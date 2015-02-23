@@ -52,6 +52,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="dysq\dysqTest.cs" />
+    <Compile Include="frogie\EfficiencyMonitor\EfficiencyMonitorEntity.cs" />
     <Compile Include="frogie\FrogieTest.cs" />
     <Compile Include="RS\DateValidatorTests.cs" />
     <Compile Include="Sito\SitoTest.cs" />
@@ -90,7 +91,6 @@
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
   <PropertyGroup>
     <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
   </PropertyGroup>
