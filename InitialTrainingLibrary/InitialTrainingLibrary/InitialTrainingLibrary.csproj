@@ -47,8 +47,6 @@
     <Compile Include="dysq\DateValidator\Months.cs" />
     <Compile Include="frogie\FrogieBetterDateValidator.cs" />
     <Compile Include="frogie\FrogieDateValidator.cs" />
-    <Compile Include="hipcio\Class1.cs" />
-    <Compile Include="hipcio\Class2.cs" />
     <Compile Include="Interfaces\chess\FigureKind.cs" />
     <Compile Include="Interfaces\chess\IBoard.cs" />
     <Compile Include="Interfaces\chess\IBoardField.cs" />
@@ -124,6 +122,7 @@
     <Content Include="RS\README.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="hipek\" />
     <Folder Include="syf\proofsofconcept\clone\" />
   </ItemGroup>
   <ItemGroup />
