@@ -18,5 +18,10 @@ namespace InitialTrainingLibrary.koziu.DateValidator
             
             return _day.isDay(_year, _month);
         }
+
+        public string GetName()
+        {
+            return "koziu";
+        }
     }
 }

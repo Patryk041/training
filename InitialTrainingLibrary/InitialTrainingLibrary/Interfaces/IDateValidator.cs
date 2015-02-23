@@ -9,5 +9,7 @@ namespace InitialTrainingLibrary.Interfaces
     public interface IDateValidator
     {
         bool DateValidate(int year, int month, int day);
+
+        string GetName(); //Zwróćcie swoje imię lub nick
     }
 }
