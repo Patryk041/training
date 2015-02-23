@@ -122,6 +122,7 @@
     <Content Include="RS\README.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="hipcio\" />
     <Folder Include="syf\proofsofconcept\clone\" />
   </ItemGroup>
   <ItemGroup />
