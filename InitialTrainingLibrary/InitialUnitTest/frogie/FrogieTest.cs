@@ -40,7 +40,8 @@ namespace InitialUnitTest.frogie
                 new InitialTrainingLibrary.RS.Simple.DateValidator(),
                 new InitialTrainingLibrary.RS.Complex.DateValidator(),
                 new MyDate(),
-                new InitialTrainingLibrary.Sito._1.DateValidator()
+                new InitialTrainingLibrary.Sito._1.DateValidator(),
+                new InitialTrainingLibrary.koziu.DateValidator.DateValidator()
             };
 
             List<EfficiencyMonitorEntity> efficiencyResults = new List<EfficiencyMonitorEntity>(testCollection.Count);

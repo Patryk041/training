@@ -19,10 +19,10 @@ namespace InitialTrainingLibrary.koziu.DateValidator.Interfaces
 
             if (month.isMonth())
             {
-                if (month.GetMonth() % 2 == 1 && month.GetMonth() < 8) result = (_day > 0 && _day < 32) ? true : false;
-                else if (month.GetMonth() % 2 == 1 && month.GetMonth() > 8) result = (_day > 0 && _day < 31) ? true : false;
-                else if (month.GetMonth() % 2 == 0 && month.GetMonth() != 2 && month.GetMonth() < 7) result = (_day > 0 && _day < 31) ? true : false;
-                else if (month.GetMonth() % 2 == 0 && month.GetMonth() > 7) result = (_day > 0 && _day < 32) ? true : false;
+                if (IsCorrectDay(month, _day))
+                {
+                    return true;
+                }
                 else
                 {
                     if (year.isIntercalary()) result = (_day > 0 && _day < 29) ? true : false;
@@ -36,7 +36,10 @@ namespace InitialTrainingLibrary.koziu.DateValidator.Interfaces
 
             return result;
         }
-                    
 
+        private bool IsCorrectDay(Month month, int day)
+        {
+            return month.GetDaysCount() > 0 && month.GetDaysCount() <= day;
+        }
     }
 }
