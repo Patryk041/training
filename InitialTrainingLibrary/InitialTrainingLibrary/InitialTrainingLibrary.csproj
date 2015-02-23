@@ -74,6 +74,10 @@
     <Compile Include="Sito\1\IDatePartValidator.cs" />
     <Compile Include="Sito\1\MonthValidator.cs" />
     <Compile Include="Sito\1\YearValidator.cs" />
+    <Compile Include="Sito\2\Board.cs" />
+    <Compile Include="Sito\2\BoardField.cs" />
+    <Compile Include="Sito\2\Coordinates.cs" />
+    <Compile Include="Sito\2\Figure.cs" />
     <Compile Include="syf\algorythmics\Algorythmics.cs" />
     <Compile Include="syf\minesweepershowdown\board\Board.cs" />
     <Compile Include="syf\minesweepershowdown\board\BoardField.cs" />
