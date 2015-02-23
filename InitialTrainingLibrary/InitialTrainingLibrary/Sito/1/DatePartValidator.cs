@@ -8,12 +8,6 @@ namespace InitialTrainingLibrary.Sito._1
 {
     public abstract class DatePartValidator:IDatePartValidator
     {
-        protected DatePartValidator(int num)
-        {
-            partNumber = num;
-        }
-        protected int partNumber ;
-        public abstract bool ValidatePart();
-
+        public abstract bool ValidatePart(int d, int m, int y);
     }
 }

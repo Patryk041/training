@@ -2,6 +2,6 @@
 {
     public interface IDatePartValidator
     {
-        bool ValidatePart();
+        bool ValidatePart(int d,int m,int y);
     }
 }

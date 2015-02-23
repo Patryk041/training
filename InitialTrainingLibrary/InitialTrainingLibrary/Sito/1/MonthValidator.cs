@@ -9,14 +9,9 @@ namespace InitialTrainingLibrary.Sito._1
 {
     class MonthValidator:DatePartValidator
     {
-
-        public MonthValidator(int num) : base(num)
+        public override bool ValidatePart(int d, int m, int y)
         {
-        }
-
-        public override bool ValidatePart()
-        {
-            return this.partNumber > 0 && this.partNumber < 13;
+            return m > 0 && m < 13;
         }
     }
 }

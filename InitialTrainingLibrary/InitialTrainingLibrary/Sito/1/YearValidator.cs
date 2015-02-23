@@ -8,14 +8,9 @@ namespace InitialTrainingLibrary.Sito._1
 {
     class YearValidator:DatePartValidator
     {
-        public override bool ValidatePart()
+        public override bool ValidatePart(int d, int m, int y)
         {
-            return this.partNumber >=0;
+            return y >= 0;
         }
-
-        public YearValidator(int num) : base(num)
-        {
-        }
-      
     }
 }
