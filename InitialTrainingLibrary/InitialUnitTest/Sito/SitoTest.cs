@@ -1,7 +1,4 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using InitialTrainingLibrary.Sito._1;
+﻿using InitialTrainingLibrary.Sito._1;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace InitialUnitTest.Sito
@@ -16,9 +13,7 @@ namespace InitialUnitTest.Sito
         [TestMethod]
         public void SitoTestMethod()
         {
-
-           
-            InitialTrainingLibrary.Sito._1.DateValidator validator = new DateValidator();
+            DateValidator validator = new DateValidator();
 
             Assert.IsFalse(validator.DateValidate(2014, 13, 31));
             Assert.IsFalse(validator.DateValidate(2014, 12, 32));
