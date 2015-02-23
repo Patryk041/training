@@ -52,6 +52,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="dysq\dysqTest.cs" />
+    <Compile Include="frogie\EfficiencyMonitor\EfficiencyMonitorEntity.cs" />
     <Compile Include="frogie\FrogieTest.cs" />
     <Compile Include="RS\DateValidatorTests.cs" />
     <Compile Include="Sito\SitoTest.cs" />
