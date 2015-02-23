@@ -35,22 +35,22 @@ namespace InitialTrainingLibrary.dysq.DateValidator
         }
 
 
-        public bool IsMonthValid(int month)
+        private bool IsMonthValid(int month)
         {
             return Months.IsMonthCorrect(month);
         }
 
-        public bool IsDayValidOf31(int day)
+        private bool IsDayValidOf31(int day)
         {
             return Days31ofMonths.IsCorrect(day);
         }
 
-        public bool IsDayValidOf30(int day)
+        private bool IsDayValidOf30(int day)
         {
             return Days30ofMonths.IsCorrect(day);
         }
 
-        public bool IsDayValidOf28(int day)
+        private bool IsDayValidOf28(int day)
         {
             return Days28ofMonth.IsCorrect(day);
         }

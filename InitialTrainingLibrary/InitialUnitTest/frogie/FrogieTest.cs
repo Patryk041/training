@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
+using InitialTrainingLibrary.dysq.DateValidator;
 using InitialTrainingLibrary.frogie;
 using InitialTrainingLibrary.Interfaces;
-using InitialTrainingLibrary.RS.Simple;
 using InitialTrainingLibrary.syf.algorythmics;
+using InitialUnitTest.frogie.EfficiencyMonitor;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace InitialUnitTest.frogie
@@ -15,7 +14,7 @@ namespace InitialUnitTest.frogie
     public class FrogieTest
     {
         [TestMethod]
-        public void TestDate()
+        public void FrogieTestDate()
         {
             FrogieDateValidator validator = new FrogieDateValidator();
             
@@ -38,17 +37,50 @@ namespace InitialUnitTest.frogie
             {
                 validator,
                 validator1,
-                new DateValidator()
+                new InitialTrainingLibrary.RS.Simple.DateValidator(),
+                new InitialTrainingLibrary.RS.Complex.DateValidator(),
+                new MyDate(),
+                new InitialTrainingLibrary.Sito._1.DateValidator()
             };
+
+            List<EfficiencyMonitorEntity> efficiencyResults = new List<EfficiencyMonitorEntity>(testCollection.Count);
 
             foreach (var valid in testCollection)
             {
-                Assert.IsFalse(valid.DateValidate(2014, 13, 31));
-                Assert.IsFalse(valid.DateValidate(2014, 12, 32));
-                Assert.IsTrue(valid.DateValidate(2014, 12, 31));
-                Assert.IsFalse(valid.DateValidate(2014, 04, 31));
-                Assert.IsFalse(valid.DateValidate(2015, 02, 29));
+                var efficiencyResult = new EfficiencyMonitorEntity() {Author = valid.GetName()};
+
+                var start = DateTime.Now.Millisecond;
+
+                for (int i = 0; i < 10000; i++)
+                {
+                    efficiencyResult.FailsCount += valid.DateValidate(2014, 13, 31) ? 1 : 0;
+                    efficiencyResult.FailsCount += valid.DateValidate(2014, 12, 32) ? 1 : 0;
+                    efficiencyResult.FailsCount += valid.DateValidate(2014, 12, 31) ? 0 : 1;
+                    efficiencyResult.FailsCount += valid.DateValidate(2014, 04, 31) ? 1 : 0;
+                    efficiencyResult.FailsCount += valid.DateValidate(2015, 02, 29) ? 1 : 0;
+                    efficiencyResult.FailsCount += valid.DateValidate(2015, 02, 28) ? 0 : 1;
+                    efficiencyResult.FailsCount += valid.DateValidate(2016, 02, 29) ? 0 : 1;
+                    efficiencyResult.FailsCount += valid.DateValidate(2016, 02, 30) ? 1 : 0;
+                }
+
+                var end = DateTime.Now.Millisecond;
+
+                efficiencyResult.Time = end - start;
+
+                efficiencyResults.Add(efficiencyResult);
             }
+
+            efficiencyResults.Sort((r, r2) => testComparison(r.Time, r2.Time));
+
+            foreach (var result in efficiencyResults)
+            {
+                Debug.WriteLine("name: {0}, time: {1}, fails: {2}", result.Author, result.Time, result.FailsCount);
+            }
+        }
+
+        private int testComparison(double x, double y)
+        {
+            return x > y ? 1 : x < y ? -1 : 0;
         }
 
         [TestMethod]

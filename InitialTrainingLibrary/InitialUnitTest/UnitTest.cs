@@ -7,6 +7,7 @@ using InitialTrainingLibrary.syf.minesweepershowdown.interfaces;
 using InitialTrainingLibrary.syf.postcodevalidator;
 using InitialTrainingLibrary.syf.privatelol;
 using InitialTrainingLibrary.syf.refvaltypes;
+using InitialTrainingLibrary.Sito._1;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using InitialTrainingLibrary.koziu.DateValidator;
 
@@ -69,10 +70,11 @@ namespace InitialUnitTest
             test2.test();
         }
 
+
         [TestMethod]
         public void TestDateValidator()
         {
-            DateValidator test = new DateValidator();
+            InitialTrainingLibrary.koziu.DateValidator.DateValidator test = new InitialTrainingLibrary.koziu.DateValidator.DateValidator();
             test.DateValidate(1992, 7, 2);
             test.DateValidate(1992, 13, 31);
             test.DateValidate(1993, 2, 29);
@@ -86,7 +88,7 @@ namespace InitialUnitTest
             test.DateValidate(1992, 12, 31);
 
 
-        }
+        }                 
 
 
     }
