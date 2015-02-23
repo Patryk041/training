@@ -14,3 +14,11 @@ D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingApp\bin
 D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.csprojResolveAssemblyReference.cache
 D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.exe
 D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.pdb
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingApp.exe.config
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingApp.exe
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingApp.pdb
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingLibrary.dll
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingLibrary.pdb
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.csprojResolveAssemblyReference.cache
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.exe
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.pdb

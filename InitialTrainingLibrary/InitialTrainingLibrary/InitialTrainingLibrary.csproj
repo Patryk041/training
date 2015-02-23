@@ -58,7 +58,8 @@
     <Compile Include="koziu\DateValidator\Month.cs" />
     <Compile Include="koziu\DateValidator\Year.cs" />
     <Compile Include="koziu\koziuClass.cs" />
-    <Compile Include="mg\Class1.cs" />
+    <Compile Include="mg\DateValidator\DateValidator.cs" />
+    <Compile Include="mg\DateValidator\ValidatorLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RS\Complex\DateValidator.cs" />
     <Compile Include="RS\Complex\DayValidator.cs" />
