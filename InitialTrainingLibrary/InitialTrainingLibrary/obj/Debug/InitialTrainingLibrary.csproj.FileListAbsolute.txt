@@ -1,0 +1,5 @@
+E:\Szkolenie\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.dll
+E:\Szkolenie\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.pdb
+E:\Szkolenie\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.csprojResolveAssemblyReference.cache
+E:\Szkolenie\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.dll
+E:\Szkolenie\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.pdb

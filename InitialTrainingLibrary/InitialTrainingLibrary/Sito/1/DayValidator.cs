@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InitialTrainingLibrary.Sito._1
 {
-    class DayValidator:DatePartValidator
+    public class DayValidator:DatePartValidator
     {
         private Dictionary<List<int>, Func<int, int, bool>> daysPerMonthDictionary = new Dictionary
             <List<int>, Func<int, int, bool>>()
