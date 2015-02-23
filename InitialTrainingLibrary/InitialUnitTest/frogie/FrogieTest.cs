@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using InitialTrainingLibrary.dysq.DateValidator;
 using InitialTrainingLibrary.frogie;
 using InitialTrainingLibrary.Interfaces;
-using InitialTrainingLibrary.RS.Simple;
 using InitialTrainingLibrary.syf.algorythmics;
 using InitialUnitTest.frogie.EfficiencyMonitor;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -41,7 +37,8 @@ namespace InitialUnitTest.frogie
             {
                 validator,
                 validator1,
-                new DateValidator(),
+                new InitialTrainingLibrary.RS.Simple.DateValidator(),
+                new InitialTrainingLibrary.RS.Complex.DateValidator(),
                 new MyDate(),
                 new InitialTrainingLibrary.Sito._1.DateValidator()
             };

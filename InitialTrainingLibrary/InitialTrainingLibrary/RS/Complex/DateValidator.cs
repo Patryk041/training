@@ -23,7 +23,7 @@ namespace InitialTrainingLibrary.RS.Complex
 
         public string GetName()
         {
-            return "Roman Suska";
+            return "Roman Suska cmp";
         }
     }
 }
