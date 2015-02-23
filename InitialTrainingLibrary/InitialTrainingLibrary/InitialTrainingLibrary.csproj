@@ -53,10 +53,6 @@
     <Compile Include="Interfaces\chess\ICoordinates.cs" />
     <Compile Include="Interfaces\chess\IFigure.cs" />
     <Compile Include="Interfaces\IDateValidator.cs" />
-    <Compile Include="koziu\DateValidator\DateValidator.cs" />
-    <Compile Include="koziu\DateValidator\Day.cs" />
-    <Compile Include="koziu\DateValidator\Month.cs" />
-    <Compile Include="koziu\DateValidator\Year.cs" />
     <Compile Include="koziu\koziuClass.cs" />
     <Compile Include="mg\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +70,10 @@
     <Compile Include="Sito\1\IDatePartValidator.cs" />
     <Compile Include="Sito\1\MonthValidator.cs" />
     <Compile Include="Sito\1\YearValidator.cs" />
+    <Compile Include="Sito\2\Board.cs" />
+    <Compile Include="Sito\2\BoardField.cs" />
+    <Compile Include="Sito\2\Coordinates.cs" />
+    <Compile Include="Sito\2\Figure.cs" />
     <Compile Include="syf\algorythmics\Algorythmics.cs" />
     <Compile Include="syf\minesweepershowdown\board\Board.cs" />
     <Compile Include="syf\minesweepershowdown\board\BoardField.cs" />
