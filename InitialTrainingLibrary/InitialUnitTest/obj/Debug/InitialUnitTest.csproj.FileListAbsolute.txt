@@ -7,3 +7,12 @@ E:\Szkolenie\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingLib
 E:\Szkolenie\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.csprojResolveAssemblyReference.cache
 E:\Szkolenie\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.dll
 E:\Szkolenie\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.pdb
+E:\GitHub\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.csprojResolveAssemblyReference.cache
+E:\GitHub\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.dll
+E:\GitHub\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.pdb
+E:\GitHub\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialUnitTest.dll
+E:\GitHub\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialUnitTest.pdb
+E:\GitHub\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingApp.exe
+E:\GitHub\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingLibrary.dll
+E:\GitHub\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingApp.pdb
+E:\GitHub\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingLibrary.pdb

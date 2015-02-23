@@ -6,3 +6,11 @@ E:\Szkolenie\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTraining
 E:\Szkolenie\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.csprojResolveAssemblyReference.cache
 E:\Szkolenie\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.exe
 E:\Szkolenie\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.pdb
+E:\GitHub\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingApp.exe.config
+E:\GitHub\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingApp.exe
+E:\GitHub\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingApp.pdb
+E:\GitHub\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingLibrary.dll
+E:\GitHub\InitialTrainingLibrary\InitialTrainingApp\bin\Debug\InitialTrainingLibrary.pdb
+E:\GitHub\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.csprojResolveAssemblyReference.cache
+E:\GitHub\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.exe
+E:\GitHub\InitialTrainingLibrary\InitialTrainingApp\obj\Debug\InitialTrainingApp.pdb

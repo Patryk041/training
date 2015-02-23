@@ -54,6 +54,7 @@
     <Compile Include="dysq\dysqTest.cs" />
     <Compile Include="frogie\EfficiencyMonitor\EfficiencyMonitorEntity.cs" />
     <Compile Include="frogie\FrogieTest.cs" />
+    <Compile Include="robson\DateValidator.cs" />
     <Compile Include="RS\DateValidatorTests.cs" />
     <Compile Include="Sito\SitoTest.cs" />
     <Compile Include="UnitTest.cs" />
@@ -70,6 +71,7 @@
       <Name>InitialTrainingLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

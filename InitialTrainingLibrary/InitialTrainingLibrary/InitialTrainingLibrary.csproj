@@ -60,6 +60,7 @@
     <Compile Include="koziu\koziuClass.cs" />
     <Compile Include="mg\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="robson\Date.cs" />
     <Compile Include="RS\Complex\DateValidator.cs" />
     <Compile Include="RS\Complex\DayValidator.cs" />
     <Compile Include="RS\Complex\IConcreteDateValidator.cs" />
