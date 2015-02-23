@@ -47,7 +47,6 @@
     <Compile Include="dysq\DateValidator\Months.cs" />
     <Compile Include="frogie\FrogieBetterDateValidator.cs" />
     <Compile Include="frogie\FrogieDateValidator.cs" />
-    <Compile Include="hipek\Class1.cs" />
     <Compile Include="Interfaces\chess\FigureKind.cs" />
     <Compile Include="Interfaces\chess\IBoard.cs" />
     <Compile Include="Interfaces\chess\IBoardField.cs" />

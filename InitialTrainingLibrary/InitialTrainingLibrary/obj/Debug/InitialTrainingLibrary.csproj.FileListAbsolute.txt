@@ -8,3 +8,8 @@ D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary
 D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.csprojResolveAssemblyReference.cache
 D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.dll
 D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.pdb
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.dll
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialTrainingLibrary\bin\Debug\InitialTrainingLibrary.pdb
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.csprojResolveAssemblyReference.cache
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.dll
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialTrainingLibrary\obj\Debug\InitialTrainingLibrary.pdb

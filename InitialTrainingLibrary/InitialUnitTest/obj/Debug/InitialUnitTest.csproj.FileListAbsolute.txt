@@ -16,3 +16,12 @@ D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialUnitTest\bin\De
 D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.csprojResolveAssemblyReference.cache
 D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.dll
 D:\Szkoleniev2-Bartek\Repozytorium\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.pdb
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialUnitTest.dll
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialUnitTest.pdb
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingApp.exe
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingLibrary.dll
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingApp.pdb
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialUnitTest\bin\Debug\InitialTrainingLibrary.pdb
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.csprojResolveAssemblyReference.cache
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.dll
+C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\InitialUnitTest\obj\Debug\InitialUnitTest.pdb
