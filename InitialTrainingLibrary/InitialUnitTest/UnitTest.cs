@@ -7,6 +7,7 @@ using InitialTrainingLibrary.syf.postcodevalidator;
 using InitialTrainingLibrary.syf.privatelol;
 using InitialTrainingLibrary.syf.refvaltypes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using InitialTrainingLibrary.koziu.DateValidator;
 
 namespace InitialUnitTest
 {
@@ -66,5 +67,24 @@ namespace InitialUnitTest
 
             test2.test();
         }
+        [TestMethod]
+        public void TestDateValidator()
+        {
+            DateValidator test = new DateValidator();
+            test.DateValidate(1992, 7, 2);
+            test.DateValidate(1992, 13, 31);
+            test.DateValidate(1993, 2, 29);
+            test.DateValidate(1992, 0, 0);
+            test.DateValidate(1992, 11, 31);
+            test.DateValidate(1992, 8, 31);
+            test.DateValidate(1992, 7, 31);
+            test.DateValidate(1992, 9, 31);
+            test.DateValidate(1992, 6, 31);
+            test.DateValidate(1992, 5, 31);
+            test.DateValidate(1992, 12, 31);
+
+
+        }
+
     }
 }
