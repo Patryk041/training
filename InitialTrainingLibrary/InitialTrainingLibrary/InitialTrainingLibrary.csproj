@@ -62,7 +62,9 @@
     <Compile Include="RS\Complex\MonthDateValidator.cs" />
     <Compile Include="RS\Complex\YearDateValidator.cs" />
     <Compile Include="RS\Simple\DateValidator.cs" />
+    <Compile Include="Sito\1\DateParts.cs" />
     <Compile Include="Sito\1\DatePartValidator.cs" />
+    <Compile Include="Sito\1\DatePartValidatorFactory.cs" />
     <Compile Include="Sito\1\DateValidator.cs" />
     <Compile Include="Sito\1\DayValidator.cs" />
     <Compile Include="Sito\1\IDatePartValidator.cs" />
