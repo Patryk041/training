@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chmura\MojaKlaska.cs" />
+    <Compile Include="Domi\Class1.cs" />
     <Compile Include="dysq\DateValidator\Days\Days28ofMonth.cs" />
     <Compile Include="dysq\DateValidator\Days\Days30ofMonths.cs" />
     <Compile Include="dysq\DateValidator\Days\Days31ofMonths.cs" />
