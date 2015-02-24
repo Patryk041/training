@@ -8,7 +8,7 @@ namespace InitialUnitTest.warrior
     public class WarriorTest
     {
         [TestMethod]
-        public void TestExhaustRam()
+        public void RamExhaustTest()
         {
             var ramExhauster = new RamExhauster();
 

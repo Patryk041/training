@@ -47,6 +47,8 @@ namespace FormsInitialTrainingApp
                 button.UseVisualStyleBackColor = true;
                 button.BackColor = field.IsFieldWhite() ? Color.White : Color.Black;
 
+                //button.Controls.Add(new PictureBox());
+
                 this.Controls.Add(button);
             }
             //    }
