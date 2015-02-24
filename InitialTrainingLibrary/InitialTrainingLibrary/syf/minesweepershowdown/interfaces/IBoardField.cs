@@ -12,5 +12,7 @@ namespace InitialTrainingLibrary.syf.minesweepershowdown.interfaces
         int GetX();
 
         int GetY();
+
+        bool IsFieldWhite();
     }
 }
