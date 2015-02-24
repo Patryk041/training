@@ -82,8 +82,14 @@
     <Compile Include="Sito\2\BoardField.cs" />
     <Compile Include="Sito\2\Coordinates.cs" />
     <Compile Include="Sito\2\Figure.cs" />
-    <Compile Include="Sito\2\FiguresSet.cs" />
-    <Compile Include="Sito\2\interfaces\IFiguresSet.cs" />
+    <Compile Include="Sito\2\figuressets\FigureSet.cs" />
+    <Compile Include="Sito\2\figuressets\KingFigure.cs" />
+    <Compile Include="Sito\2\figuressets\MultipleFigureSet.cs" />
+    <Compile Include="Sito\2\figuressets\PawnFigure.cs" />
+    <Compile Include="Sito\2\figuressets\SingleFigureSet.cs" />
+    <Compile Include="Sito\2\PlayerFigures.cs" />
+    <Compile Include="Sito\2\FiguresFactory.cs" />
+    <Compile Include="Sito\2\interfaces\IPlayerFigures.cs" />
     <Compile Include="Sito\2\StartFiguresCoordinates.cs" />
     <Compile Include="syf\algorythmics\Algorythmics.cs" />
     <Compile Include="syf\minesweepershowdown\board\Board.cs" />
