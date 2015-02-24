@@ -9,5 +9,7 @@ namespace InitialTrainingLibrary.syf.proofsofconcept.sourcetree
     interface ISourceTreeConflictType
     {
         bool IsConflict();
+
+        string GetName();
     }
 }
