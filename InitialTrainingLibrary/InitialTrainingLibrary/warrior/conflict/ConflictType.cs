@@ -8,5 +8,10 @@ namespace InitialTrainingLibrary.warrior.conflict
         {
             return true;
         }
+
+        public string GetName()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
