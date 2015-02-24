@@ -13,6 +13,13 @@ namespace InitialTrainingLibrary.Sito._2
         private bool isWhite;
         private ICoordinates coordinates;
         private FigureKind figureKind;
+
+        public Figure(bool isWhite,FigureKind figureKind)
+        {
+            this.figureKind = figureKind;
+            this.isWhite = isWhite;
+            coordinates = StartFiguresCoordinates.GetStartFigureCoordinates(figureKind,isWhite);
+        }
         public bool IsFigureWhite()
         {
             return isWhite;

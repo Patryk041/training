@@ -82,6 +82,9 @@
     <Compile Include="Sito\2\BoardField.cs" />
     <Compile Include="Sito\2\Coordinates.cs" />
     <Compile Include="Sito\2\Figure.cs" />
+    <Compile Include="Sito\2\FiguresSet.cs" />
+    <Compile Include="Sito\2\interfaces\IFiguresSet.cs" />
+    <Compile Include="Sito\2\StartFiguresCoordinates.cs" />
     <Compile Include="syf\algorythmics\Algorythmics.cs" />
     <Compile Include="syf\minesweepershowdown\board\Board.cs" />
     <Compile Include="syf\minesweepershowdown\board\BoardField.cs" />
