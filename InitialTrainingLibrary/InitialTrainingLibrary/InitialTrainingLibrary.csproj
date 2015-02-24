@@ -105,10 +105,14 @@
     <Compile Include="syf\postcodevalidator\RigthPostCodeValidatorBase.cs" />
     <Compile Include="syf\privatelol\FrogieDate.cs" />
     <Compile Include="syf\privatelol\PrivateTest.cs" />
+    <Compile Include="syf\proofsofconcept\clone\ExampleSubType.cs" />
+    <Compile Include="syf\proofsofconcept\clone\ExampleType.cs" />
+    <Compile Include="syf\proofsofconcept\clone\ExampleTypeUsage.cs" />
     <Compile Include="syf\proofsofconcept\dispose\DisposableListExample.cs" />
     <Compile Include="syf\proofsofconcept\dispose\ExampleClass.cs" />
     <Compile Include="syf\proofsofconcept\dispose\ExampleTask.cs" />
     <Compile Include="syf\proofsofconcept\dispose\RamExhauster.cs" />
+    <Compile Include="syf\proofsofconcept\sourcetree\ISourceTreeConflictType.cs" />
     <Compile Include="syf\refvaltypes\AdvancedHandleChild.cs" />
     <Compile Include="syf\refvaltypes\CorTest.cs" />
     <Compile Include="syf\refvaltypes\Handle.cs" />
@@ -117,16 +121,17 @@
     <Compile Include="syf\refvaltypes\SimpleHandleChild.cs" />
     <Compile Include="syf\TodayTraining.cs" />
     <Compile Include="syf\Training.cs" />
+    <Compile Include="szymon93\[1] DateValidator\DateValidator.cs" />
+    <Compile Include="szymon93\[1] DateValidator\DaysChecker.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
+    <Compile Include="warrior\conflict\ConflictType.cs" />
     <Compile Include="warrior\WarriorDateValidator.cs" />
     <Compile Include="Witek\NaszaKlasa.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="RS\README.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="syf\proofsofconcept\clone\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup />
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
