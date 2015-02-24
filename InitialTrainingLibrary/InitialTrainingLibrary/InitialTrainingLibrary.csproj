@@ -132,6 +132,7 @@
     <Content Include="RS\README.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="frogie\goffy\" />
     <Folder Include="ghostrider\" />
   </ItemGroup>
   <ItemGroup />
