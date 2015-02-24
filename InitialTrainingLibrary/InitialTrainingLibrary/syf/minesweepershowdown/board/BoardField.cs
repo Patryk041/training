@@ -21,5 +21,10 @@ namespace InitialTrainingLibrary.syf.minesweepershowdown.board
         {
             return Y;
         }
+
+        public bool IsFieldWhite()
+        {
+            return (this.GetX() + this.GetY()) % 2 == 0;
+        }
     }
 }
