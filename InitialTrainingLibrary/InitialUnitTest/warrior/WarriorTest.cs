@@ -1,4 +1,5 @@
-﻿using InitialTrainingLibrary.syf.proofsofconcept.dispose;
+﻿using InitialTrainingLibrary.syf.proofsofconcept.clone;
+using InitialTrainingLibrary.syf.proofsofconcept.dispose;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace InitialUnitTest.warrior
@@ -14,6 +15,14 @@ namespace InitialUnitTest.warrior
             ramExhauster.ExhaustRam();
 
             ramExhauster.Wait();
+        }
+
+        [TestMethod]
+        public void TestCloneBehaviour()
+        {
+            ExampleTypeUsage usage = new ExampleTypeUsage();
+
+            usage.TestClone();
         }
     }
 }

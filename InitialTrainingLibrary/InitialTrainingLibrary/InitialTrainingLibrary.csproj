@@ -105,6 +105,9 @@
     <Compile Include="syf\postcodevalidator\RigthPostCodeValidatorBase.cs" />
     <Compile Include="syf\privatelol\FrogieDate.cs" />
     <Compile Include="syf\privatelol\PrivateTest.cs" />
+    <Compile Include="syf\proofsofconcept\clone\ExampleSubType.cs" />
+    <Compile Include="syf\proofsofconcept\clone\ExampleType.cs" />
+    <Compile Include="syf\proofsofconcept\clone\ExampleTypeUsage.cs" />
     <Compile Include="syf\proofsofconcept\dispose\DisposableListExample.cs" />
     <Compile Include="syf\proofsofconcept\dispose\ExampleClass.cs" />
     <Compile Include="syf\proofsofconcept\dispose\ExampleTask.cs" />
@@ -124,9 +127,7 @@
   <ItemGroup>
     <Content Include="RS\README.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="syf\proofsofconcept\clone\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup />
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
