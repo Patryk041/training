@@ -4,6 +4,7 @@ using System.Diagnostics;
 using InitialTrainingLibrary.dysq.DateValidator;
 using InitialTrainingLibrary.frogie;
 using InitialTrainingLibrary.Interfaces;
+using InitialTrainingLibrary.robson;
 using InitialTrainingLibrary.syf.algorythmics;
 using InitialUnitTest.frogie.EfficiencyMonitor;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -41,7 +42,9 @@ namespace InitialUnitTest.frogie
                 new InitialTrainingLibrary.RS.Complex.DateValidator(),
                 new MyDate(),
                 new InitialTrainingLibrary.Sito._1.DateValidator(),
-                new InitialTrainingLibrary.koziu.DateValidator.DateValidator()
+                new InitialTrainingLibrary.koziu.DateValidator.DateValidator(),
+                new InitialTrainingLibrary.mg.DateValidator.DateValidator(),
+                new Date()
             };
 
             List<EfficiencyMonitorEntity> efficiencyResults = new List<EfficiencyMonitorEntity>(testCollection.Count);
