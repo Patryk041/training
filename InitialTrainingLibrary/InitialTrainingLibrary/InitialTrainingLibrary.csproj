@@ -112,6 +112,7 @@
     <Compile Include="syf\proofsofconcept\dispose\ExampleClass.cs" />
     <Compile Include="syf\proofsofconcept\dispose\ExampleTask.cs" />
     <Compile Include="syf\proofsofconcept\dispose\RamExhauster.cs" />
+    <Compile Include="syf\proofsofconcept\sourcetree\ISourceTreeConflictType.cs" />
     <Compile Include="syf\refvaltypes\AdvancedHandleChild.cs" />
     <Compile Include="syf\refvaltypes\CorTest.cs" />
     <Compile Include="syf\refvaltypes\Handle.cs" />
@@ -121,6 +122,7 @@
     <Compile Include="syf\TodayTraining.cs" />
     <Compile Include="syf\Training.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
+    <Compile Include="warrior\conflict\ConflictType.cs" />
     <Compile Include="warrior\WarriorDateValidator.cs" />
     <Compile Include="Witek\NaszaKlasa.cs" />
   </ItemGroup>
