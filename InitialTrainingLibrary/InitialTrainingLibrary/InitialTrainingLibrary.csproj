@@ -131,7 +131,9 @@
   <ItemGroup>
     <Content Include="RS\README.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="frogie\goffy\" />
+  </ItemGroup>
   <ItemGroup />
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
