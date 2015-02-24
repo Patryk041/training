@@ -13,5 +13,10 @@ namespace InitialTrainingLibrary.frogie.goffy
         {
             throw new NotImplementedException();
         }
+
+        public string GetName()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
