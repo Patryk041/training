@@ -9,11 +9,14 @@ namespace InitialTrainingLibrary.szymon93._1__DateValidator
 {
 	class DateValidator : IDateValidator
 	{
+		//Fields
+		YearsChecker yearsChecker;
+		MonthsChecker monthsChecker;
+		DaysChecker daysChecker;
+
 		//Constructors
 		public DateValidator()
-		{
-
-		}
+		{ }
 
 		//Methods
 		public bool DateValidate(int year, int month, int day)
@@ -23,7 +26,7 @@ namespace InitialTrainingLibrary.szymon93._1__DateValidator
 			return false;
 		}
 
-		string GetName()
+		public string GetName()
 		{
 			return "Szymon";
 		}
