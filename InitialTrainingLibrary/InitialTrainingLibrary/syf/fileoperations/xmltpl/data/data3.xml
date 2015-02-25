@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<garage>
+    <car name="A">
+        <engine name="A1">TDI</engine>
+        <colour name="A2">Red</colour>
+    </car>
+    <car name="B">
+        <engine name="A1">benzine</engine>
+        <colour name="A2">Blue</colour>
+    </car>
+    <car name="C" />
+</garage>

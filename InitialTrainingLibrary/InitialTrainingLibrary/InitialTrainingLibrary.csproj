@@ -95,6 +95,7 @@
     <Compile Include="syf\fileoperations\FileContent.cs" />
     <Compile Include="syf\fileoperations\FileParser.cs" />
     <Compile Include="syf\fileoperations\ParseAttribute.cs" />
+    <Compile Include="syf\fileoperations\xmltpl\logic\ParalelXmlParser.cs" />
     <Compile Include="syf\fileoperations\xml\entities\Car.cs" />
     <Compile Include="syf\fileoperations\xml\entities\Garage.cs" />
     <Compile Include="syf\fileoperations\xml\logic\DataXmlParser.cs" />
@@ -148,6 +149,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="RS\README.txt" />
+    <Content Include="syf\fileoperations\xmltpl\data\data1.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data10.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data2.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data3.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data4.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data5.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data6.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data7.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data8.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data9.xml" />
     <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
   <ItemGroup>
