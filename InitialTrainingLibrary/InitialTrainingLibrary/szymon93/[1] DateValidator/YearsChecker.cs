@@ -20,7 +20,7 @@ namespace InitialTrainingLibrary.szymon93._1__DateValidator
 		//Methods
 		public bool ChceckYear()
 		{
-			if(year>0)
+			if(year>=0)
 				return true;
 			else
 				return false;

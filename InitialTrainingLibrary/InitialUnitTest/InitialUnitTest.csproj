@@ -58,6 +58,7 @@
     <Compile Include="robson\DateValidator.cs" />
     <Compile Include="RS\DateValidatorTests.cs" />
     <Compile Include="Sito\SitoTest.cs" />
+    <Compile Include="szymon93\TestClass.cs" />
     <Compile Include="UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="warrior\WarriorTest.cs" />
