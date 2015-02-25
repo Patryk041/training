@@ -9,11 +9,6 @@ namespace InitialTrainingLibrary.szymon93._1__DateValidator
 {
 	class DateValidator : IDateValidator
 	{
-		//Fields
-		YearsChecker yearsChecker;
-		MonthsChecker monthsChecker;
-		DaysChecker daysChecker;
-
 		//Constructors
 		public DateValidator()
 		{ }
@@ -21,14 +16,38 @@ namespace InitialTrainingLibrary.szymon93._1__DateValidator
 		//Methods
 		public bool DateValidate(int year, int month, int day)
 		{
+			DaysChecker daysChecker = new DaysChecker(day);
+			MonthsChecker monthsChecker = new MonthsChecker(month);
+			YearsChecker yearsChecker = new YearsChecker(year);	
 
-
-			return false;
+			return ReturnResult(CheckDateGenerally(daysChecker.CheckDay(), monthsChecker.ChceckMonth(), yearsChecker.ChceckYear()),
+				day,month,year);
 		}
 
-		public  string GetName()
+		private bool CheckDateGenerally(bool day, bool month, bool year)
+		{
+			return day && month && year;
+		}
+
+
+		public string GetName()
+
 		{
 			return "Szymon";
+		}
+
+		private bool ReturnResult(bool IsGenerallyDateCorrect, int day, int month, int year)
+		{
+			bool Result = false;
+
+			if(IsGenerallyDateCorrect)
+			{
+				//Check the date depends on the particular day
+				SpecificDate specificDate = new SpecificDate(day, month, year);
+				Result = specificDate.CheckDateSpecific();
+			}
+
+			return Result;
 		}
 	}
 }
