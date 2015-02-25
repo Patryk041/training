@@ -39,13 +39,15 @@ namespace InitialUnitTest.frogie
             {
                 validator,
                 validator1,
+                new FrogieYetBetterDateValidator(),
+
                 new InitialTrainingLibrary.RS.Simple.DateValidator(),
                 new InitialTrainingLibrary.RS.Complex.DateValidator(),
                 new MyDate(),
                 new InitialTrainingLibrary.Sito._1.DateValidator(),
                 new InitialTrainingLibrary.koziu.DateValidator.DateValidator(),
                 new InitialTrainingLibrary.mg.DateValidator.DateValidator(),
-                new FrogieYetBetterDateValidator(),
+                new InitialTrainingLibrary.szymon93._1__DateValidator.DateValidator(),
                 new Date()
             };
 
