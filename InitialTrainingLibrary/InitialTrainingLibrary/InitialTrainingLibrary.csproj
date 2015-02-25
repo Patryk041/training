@@ -48,6 +48,7 @@
     <Compile Include="dysq\DateValidator\Months.cs" />
     <Compile Include="frogie\FrogieBetterDateValidator.cs" />
     <Compile Include="frogie\FrogieDateValidator.cs" />
+    <Compile Include="frogie\goffy\Example.cs" />
     <Compile Include="Interfaces\chess\FigureKind.cs" />
     <Compile Include="Interfaces\chess\IBoard.cs" />
     <Compile Include="Interfaces\chess\IBoardField.cs" />
@@ -81,7 +82,25 @@
     <Compile Include="Sito\2\BoardField.cs" />
     <Compile Include="Sito\2\Coordinates.cs" />
     <Compile Include="Sito\2\Figure.cs" />
+    <Compile Include="Sito\2\figuressets\FigureSet.cs" />
+    <Compile Include="Sito\2\figuressets\KingFigure.cs" />
+    <Compile Include="Sito\2\figuressets\MultipleFigureSet.cs" />
+    <Compile Include="Sito\2\figuressets\PawnFigure.cs" />
+    <Compile Include="Sito\2\figuressets\SingleFigureSet.cs" />
+    <Compile Include="Sito\2\PlayerFigures.cs" />
+    <Compile Include="Sito\2\FiguresFactory.cs" />
+    <Compile Include="Sito\2\interfaces\IPlayerFigures.cs" />
+    <Compile Include="Sito\2\StartFiguresCoordinates.cs" />
     <Compile Include="syf\algorythmics\Algorythmics.cs" />
+    <Compile Include="syf\fileoperations\FileContent.cs" />
+    <Compile Include="syf\fileoperations\FileParser.cs" />
+    <Compile Include="syf\fileoperations\ParseAttribute.cs" />
+    <Compile Include="syf\fileoperations\xmltpl\logic\ParalelXmlParser.cs" />
+    <Compile Include="syf\fileoperations\xml\entities\Car.cs" />
+    <Compile Include="syf\fileoperations\xml\entities\Garage.cs" />
+    <Compile Include="syf\fileoperations\xml\logic\DataXmlParser.cs" />
+    <Compile Include="syf\fileoperations\xml\logic\XmlParseLogic.cs" />
+    <Compile Include="syf\fileoperations\xml\logic\XmlParser.cs" />
     <Compile Include="syf\minesweepershowdown\board\Board.cs" />
     <Compile Include="syf\minesweepershowdown\board\BoardField.cs" />
     <Compile Include="syf\minesweepershowdown\board\ChessBoard.cs" />
@@ -132,8 +151,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="RS\README.txt" />
+    <Content Include="syf\fileoperations\xmltpl\data\data1.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data10.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data2.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data3.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data4.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data5.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data6.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data7.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data8.xml" />
+    <Content Include="syf\fileoperations\xmltpl\data\data9.xml" />
+    <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ghostrider\" />
+  </ItemGroup>
   <ItemGroup />
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

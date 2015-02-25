@@ -7,12 +7,20 @@ using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.Sito._2
 {
-    class Figure:IFigure
+    public class Figure:IFigure
     {
 
         private bool isWhite;
         private ICoordinates coordinates;
         private FigureKind figureKind;
+        private int figureId;
+        public Figure(bool isWhite,FigureKind figureKind,int figureId=0)
+        {
+            this.figureId = figureId;
+            this.figureKind = figureKind;
+            this.isWhite = isWhite;
+            coordinates = StartFiguresCoordinates.GetStartFigureCoordinates(figureKind,isWhite,figureId);
+        }
         public bool IsFigureWhite()
         {
             return isWhite;

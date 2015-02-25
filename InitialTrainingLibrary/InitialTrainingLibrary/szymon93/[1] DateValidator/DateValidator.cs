@@ -26,7 +26,11 @@ namespace InitialTrainingLibrary.szymon93._1__DateValidator
 			return false;
 		}
 
+<<<<<<< HEAD
 		public string GetName()
+=======
+		public  string GetName()
+>>>>>>> 66fc688fea23caaa3a1b4f7d68f8041dae8da0aa
 		{
 			return "Szymon";
 		}

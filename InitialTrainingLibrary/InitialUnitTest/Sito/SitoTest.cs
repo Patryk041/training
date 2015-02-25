@@ -1,4 +1,6 @@
 ﻿using InitialTrainingLibrary.Sito._1;
+using InitialTrainingLibrary.Sito._2;
+using InitialTrainingLibrary.Sito._2.interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace InitialUnitTest.Sito
@@ -34,6 +36,11 @@ namespace InitialUnitTest.Sito
             Assert.IsTrue(validator.DateValidate(2014, 12, 31));
             Assert.IsFalse(validator.DateValidate(2014, 04, 31));
             Assert.IsFalse(validator.DateValidate(2015, 02, 29));
+        }
+        [TestMethod]
+        public void SitoChessTestMethod()
+        {
+            PlayerFigures fugureSetWhite = new PlayerFigures();
         }
     }
 }
