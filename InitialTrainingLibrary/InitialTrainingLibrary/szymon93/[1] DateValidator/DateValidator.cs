@@ -31,7 +31,6 @@ namespace InitialTrainingLibrary.szymon93._1__DateValidator
 
 
 		public string GetName()
-
 		{
 			return "Szymon";
 		}
