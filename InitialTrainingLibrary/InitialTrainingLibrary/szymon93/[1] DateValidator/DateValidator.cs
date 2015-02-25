@@ -29,7 +29,9 @@ namespace InitialTrainingLibrary.szymon93._1__DateValidator
 			return day && month && year;
 		}
 
+
 		public string GetName()
+
 		{
 			return "Szymon";
 		}
