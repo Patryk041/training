@@ -22,7 +22,8 @@ namespace InitialTrainingLibrary.szymon93._1__DateValidator
 
 		public bool CheckDateSpecific()
 		{
-			return IsDayCorrect(Months[month]);
+			MonthsChecker monthChecker = new MonthsChecker(month);
+			return IsDayCorrect(Months[month-1]);
 		}
 
 		private bool IsDayCorrect(int[] DaysInMonth)
@@ -31,6 +32,11 @@ namespace InitialTrainingLibrary.szymon93._1__DateValidator
 				return true;
 			else 
 				return false;
+		}
+
+		public void ClearData()
+		{
+			Months.Clear();
 		}
 	}
 }
