@@ -1,4 +1,5 @@
-﻿using InitialTrainingLibrary.syf.proofsofconcept.clone;
+﻿using InitialTrainingLibrary.syf.fileoperations.xml.logic;
+using InitialTrainingLibrary.syf.proofsofconcept.clone;
 using InitialTrainingLibrary.syf.proofsofconcept.dispose;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -23,6 +24,14 @@ namespace InitialUnitTest.warrior
             ExampleTypeUsage usage = new ExampleTypeUsage();
 
             usage.TestClone();
+        }
+
+        [TestMethod]
+        public void XmlParseTest()
+        {
+            XmlParseLogic logic = new XmlParseLogic();
+
+            var result = logic.ParseData();
         }
     }
 }

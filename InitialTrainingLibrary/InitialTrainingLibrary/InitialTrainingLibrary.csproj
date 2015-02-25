@@ -92,6 +92,14 @@
     <Compile Include="Sito\2\interfaces\IPlayerFigures.cs" />
     <Compile Include="Sito\2\StartFiguresCoordinates.cs" />
     <Compile Include="syf\algorythmics\Algorythmics.cs" />
+    <Compile Include="syf\fileoperations\FileContent.cs" />
+    <Compile Include="syf\fileoperations\FileParser.cs" />
+    <Compile Include="syf\fileoperations\ParseAttribute.cs" />
+    <Compile Include="syf\fileoperations\xml\entities\Car.cs" />
+    <Compile Include="syf\fileoperations\xml\entities\Garage.cs" />
+    <Compile Include="syf\fileoperations\xml\logic\DataXmlParser.cs" />
+    <Compile Include="syf\fileoperations\xml\logic\XmlParseLogic.cs" />
+    <Compile Include="syf\fileoperations\xml\logic\XmlParser.cs" />
     <Compile Include="syf\minesweepershowdown\board\Board.cs" />
     <Compile Include="syf\minesweepershowdown\board\BoardField.cs" />
     <Compile Include="syf\minesweepershowdown\board\ChessBoard.cs" />
@@ -140,9 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="RS\README.txt" />
+    <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="frogie\goffy\" />
     <Folder Include="ghostrider\" />
   </ItemGroup>
   <ItemGroup />
