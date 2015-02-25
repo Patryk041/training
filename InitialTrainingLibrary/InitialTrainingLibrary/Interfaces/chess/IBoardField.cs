@@ -11,5 +11,11 @@ namespace InitialTrainingLibrary.Interfaces.chess
         bool IsFieldWhite();
 
         ICoordinates GetCoordinates();
+
+        bool HasFigure();
+
+        void SetFigure(IFigure figure);
+
+        IFigure GetFigure();
     }
 }
