@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using InitialTrainingLibrary.dysq.Chess;
 using InitialTrainingLibrary.syf.minesweepershowdown.board;
 
 namespace FormsInitialTrainingApp
@@ -26,7 +27,8 @@ namespace FormsInitialTrainingApp
             this.SuspendLayout();
 
             //this.
-            ChessBoard chessBoard = new ChessBoard();
+            CreateFigures chesswithfigures = new CreateFigures();
+            InitialTrainingLibrary.dysq.ChessBoard chessBoard = chesswithfigures.Chess;
 
             var chessBoardFields = chessBoard.GetFields();
 
@@ -39,9 +41,15 @@ namespace FormsInitialTrainingApp
             {
                 var button = new Button();
 
-                button.Location = new Point(GetPointCoordinate(field.GetX()), GetPointCoordinate(field.GetY()));
-                button.Name = string.Format("{0}{1}", field.GetX(), field.GetY());
+                button.Location = new Point(GetPointCoordinate(field.GetCoordinates().GetX()), GetPointCoordinate(field.GetCoordinates().GetY()));
+                button.Name = string.Format("{0}{1}", field.GetCoordinates().GetX(), field.GetCoordinates().GetY());
                 button.Size = new Size(coefficient, coefficient);
+
+                if (field.HasFigure())
+                {
+                    button.Text = field.GetFigure().GetFigureKind().ToString();
+                    button.ForeColor = field.IsFieldWhite() ? Color.Black : Color.White;
+                }
                 //button.TabIndex = 0;
                 //button.Text = "button1";
                 button.UseVisualStyleBackColor = true;
