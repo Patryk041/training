@@ -22,12 +22,8 @@ namespace InitialTrainingLibrary.szymon93._1__DateValidator
 
 		public bool CheckDateSpecific()
 		{
-<<<<<<< HEAD
 			MonthsChecker monthChecker = new MonthsChecker(month);
-			return IsDayCorrect(Months[month-1]);
-=======
 			return IsDayCorrect(Months[month - 1]);
->>>>>>> 1a9c37746faf2d248cedfea24d1a54882a89767c
 		}
 
 		private bool IsDayCorrect(int[] DaysInMonth)
