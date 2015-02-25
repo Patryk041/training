@@ -40,7 +40,7 @@ namespace InitialUnitTest.Sito
         [TestMethod]
         public void SitoChessTestMethod()
         {
-            PlayerFigures fugureSetWhite = new PlayerFigures();
+            Board board = new Board();
         }
     }
 }

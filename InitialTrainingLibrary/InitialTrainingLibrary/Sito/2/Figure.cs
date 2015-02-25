@@ -19,7 +19,7 @@ namespace InitialTrainingLibrary.Sito._2
             this.figureId = figureId;
             this.figureKind = figureKind;
             this.isWhite = isWhite;
-            coordinates = StartFiguresCoordinates.GetStartFigureCoordinates(figureKind,isWhite,figureId);
+            coordinates = StartFigures.GetStartFigureCoordinates(figureKind,isWhite,figureId);
         }
         public bool IsFigureWhite()
         {

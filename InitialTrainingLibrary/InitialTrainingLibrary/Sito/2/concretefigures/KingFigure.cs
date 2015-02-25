@@ -7,8 +7,11 @@ using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.Sito._2.figuressets
 {
-    public abstract class FigureSet
+    class KingFigure:SingleFigureSet
     {
-        public abstract IFigure GetFigureByCoordinates(ICoordinates coordinates );
+        public KingFigure(bool isWhite)
+        {
+            figure = new Figure(isWhite,FigureKind.King);
+        }
     }
 }
