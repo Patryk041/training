@@ -96,6 +96,7 @@
     <Compile Include="Sito\2\interfaces\IPlayerFigures.cs" />
     <Compile Include="Sito\2\StartFiguresCoordinates.cs" />
     <Compile Include="syf\algorythmics\Algorythmics.cs" />
+    <Compile Include="syf\algorythmics\Palindrom.cs" />
     <Compile Include="syf\fileoperations\FileContent.cs" />
     <Compile Include="syf\fileoperations\FileParser.cs" />
     <Compile Include="syf\fileoperations\ParseAttribute.cs" />

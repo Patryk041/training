@@ -133,5 +133,15 @@ namespace InitialUnitTest.frogie
             Assert.IsTrue(Algorythmics.IsPalindrom11("123321"));
             Assert.IsFalse(Algorythmics.IsPalindrom11("123jkl321"));
         }
+
+        [TestMethod]
+        public void testTekst()
+        {
+       //     Assert.IsTrue(Palindrom.tekst("beata", "ata"));
+         //   Assert.IsTrue(Palindrom.tekst("bartekartak", "artak"));
+           // Assert.IsFalse(Palindrom.tekst("bartefghju", "rtefbvf"));
+
+            Palindrom.podmiana("Beata", "at", "dar");
+        }
     }
 }
