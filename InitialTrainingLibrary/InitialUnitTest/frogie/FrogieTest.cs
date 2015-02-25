@@ -39,13 +39,15 @@ namespace InitialUnitTest.frogie
             {
                 validator,
                 validator1,
+                new FrogieYetBetterDateValidator(),
+
                 new InitialTrainingLibrary.RS.Simple.DateValidator(),
                 new InitialTrainingLibrary.RS.Complex.DateValidator(),
                 new MyDate(),
                 new InitialTrainingLibrary.Sito._1.DateValidator(),
                 new InitialTrainingLibrary.koziu.DateValidator.DateValidator(),
                 new InitialTrainingLibrary.mg.DateValidator.DateValidator(),
-                new FrogieYetBetterDateValidator(),
+                new InitialTrainingLibrary.szymon93._1__DateValidator.DateValidator(),
                 new Date()
             };
 
@@ -132,6 +134,16 @@ namespace InitialUnitTest.frogie
             Assert.IsTrue(Algorythmics.IsPalindrom11("abnrrnba"));
             Assert.IsTrue(Algorythmics.IsPalindrom11("123321"));
             Assert.IsFalse(Algorythmics.IsPalindrom11("123jkl321"));
+        }
+
+        [TestMethod]
+        public void testTekst()
+        {
+       //     Assert.IsTrue(Palindrom.tekst("beata", "ata"));
+         //   Assert.IsTrue(Palindrom.tekst("bartekartak", "artak"));
+           // Assert.IsFalse(Palindrom.tekst("bartefghju", "rtefbvf"));
+
+            Palindrom.podmiana("Beata", "at", "dar");
         }
     }
 }

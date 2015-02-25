@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InitialTrainingLibrary.szymon93._1__DateValidator
 {
-	class DateValidator : IDateValidator
+	public class DateValidator : IDateValidator
 	{
 		//Constructors
 		public DateValidator()

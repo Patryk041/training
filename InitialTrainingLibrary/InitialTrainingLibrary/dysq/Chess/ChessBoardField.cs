@@ -5,39 +5,41 @@ using System.Text;
 using System.Threading.Tasks;
 using InitialTrainingLibrary.Interfaces.chess;
 
-namespace InitialTrainingLibrary.Sito._2
+namespace InitialTrainingLibrary.dysq.Chess
 {
-    class BoardField:IBoardField
+    public class ChessBoardField : IBoardField
     {
-        private readonly ICoordinates coordinates;
+        private ICoordinates ChessBoardCoordinates;
+        private IFigure _figure;
 
-        public BoardField(int x,int y)
+        public ChessBoardField(int x, int y)
         {
-            coordinates = new Coordinates(x,y);
+            ChessBoardCoordinates = new Coordinates(x,y);
         }
+
         public bool IsFieldWhite()
         {
-            return (coordinates.GetX() + coordinates.GetY()) % 2 == 0;
+            return (GetCoordinates().GetY() + GetCoordinates().GetX())%2 == 0;
         }
 
         public ICoordinates GetCoordinates()
         {
-            return coordinates;
+            return ChessBoardCoordinates;
         }
 
         public bool HasFigure()
         {
-            throw new NotImplementedException();
+            return _figure != null;
         }
 
         public void SetFigure(IFigure figure)
         {
-            throw new NotImplementedException();
+            _figure = figure;
         }
 
         public IFigure GetFigure()
         {
-            throw new NotImplementedException();
+            return _figure;
         }
     }
 }
