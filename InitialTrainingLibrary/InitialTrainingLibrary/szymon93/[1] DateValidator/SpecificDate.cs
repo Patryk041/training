@@ -22,9 +22,15 @@ namespace InitialTrainingLibrary.szymon93._1__DateValidator
 
 		public bool CheckDateSpecific()
 		{
-			
+			return IsDayCorrect(Months[month]);
+		}
 
-			return false;
+		private bool IsDayCorrect(int[] DaysInMonth)
+		{
+			if(day <= DaysInMonth.Count())  
+				return true;
+			else 
+				return false;
 		}
 	}
 }
