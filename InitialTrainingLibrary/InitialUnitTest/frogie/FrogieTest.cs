@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using InitialTrainingLibrary.dysq.DateValidator;
 using InitialTrainingLibrary.frogie;
+using InitialTrainingLibrary.frogie.FrogieComplexDateValidator;
 using InitialTrainingLibrary.Interfaces;
 using InitialTrainingLibrary.robson;
 using InitialTrainingLibrary.syf.algorythmics;
@@ -44,6 +45,7 @@ namespace InitialUnitTest.frogie
                 new InitialTrainingLibrary.Sito._1.DateValidator(),
                 new InitialTrainingLibrary.koziu.DateValidator.DateValidator(),
                 new InitialTrainingLibrary.mg.DateValidator.DateValidator(),
+                new FrogieYetBetterDateValidator(),
                 new Date()
             };
 

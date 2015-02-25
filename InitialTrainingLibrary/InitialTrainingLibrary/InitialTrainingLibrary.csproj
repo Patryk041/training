@@ -47,6 +47,10 @@
     <Compile Include="dysq\DateValidator\MyDate.cs" />
     <Compile Include="dysq\DateValidator\Months.cs" />
     <Compile Include="frogie\FrogieBetterDateValidator.cs" />
+    <Compile Include="frogie\FrogieComplexDateValidator\FrogieDayValidator.cs" />
+    <Compile Include="frogie\FrogieComplexDateValidator\FrogieMonthValidator.cs" />
+    <Compile Include="frogie\FrogieComplexDateValidator\FrogieYearValidator.cs" />
+    <Compile Include="frogie\FrogieComplexDateValidator\FrogieYetBetterDateValidator.cs" />
     <Compile Include="frogie\FrogieDateValidator.cs" />
     <Compile Include="frogie\goffy\Example.cs" />
     <Compile Include="Interfaces\chess\FigureKind.cs" />
