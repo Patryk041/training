@@ -143,6 +143,8 @@
     <Compile Include="szymon93\[1] DateValidator\DateValidator.cs" />
     <Compile Include="szymon93\[1] DateValidator\DaysChecker.cs" />
     <Compile Include="szymon93\[1] DateValidator\MonthsChecker.cs" />
+    <Compile Include="szymon93\[1] DateValidator\Shared.cs" />
+    <Compile Include="szymon93\[1] DateValidator\SpecificDate.cs" />
     <Compile Include="szymon93\[1] DateValidator\YearsChecker.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
     <Compile Include="warrior\conflict\ConflictType.cs" />
