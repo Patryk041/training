@@ -11,12 +11,12 @@ namespace InitialTrainingLibrary.dysq.Chess
 {
     public class CreateFigures
     {
-        
+        public ChessBoard Chess { get; private set; }
 
         public CreateFigures()
         {
             FigureFactory.CreateFigure(FigureKind.Queen, 1, 1, true);
-            ChessBoard Chess = new ChessBoard();
+            Chess = new ChessBoard();
 
             var fields = Chess.GetFields();
 

@@ -15,7 +15,7 @@ namespace InitialTrainingLibrary.dysq.Chess
             {FigureKind.Bishop, (x,y,colour) => new Bishop(x,y,colour)},
             {FigureKind.Horse, (x,y,colour) => new Horse(x,y,colour)},
             {FigureKind.King, (x,y,colour) => new King(x,y,colour)},
-            {FigureKind.Pawn, (x,y,colour) => new King(x,y,colour)},
+            {FigureKind.Pawn, (x,y,colour) => new Pawn(x,y,colour)},
             {FigureKind.Queen, (x,y,colour) => new Queen(x,y,colour)},
             {FigureKind.Rook, (x,y,colour) => new Rook(x,y,colour)},
         };
