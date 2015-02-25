@@ -1,4 +1,5 @@
 ﻿using System;
+using InitialTrainingLibrary.dysq.Chess;
 using InitialTrainingLibrary.frogie;
 using InitialTrainingLibrary.syf.privatelol;
 
@@ -41,6 +42,11 @@ namespace InitialTrainingApp
             }
 
             Console.ReadKey();
+
+            CreateFigures ShowMyChess = new CreateFigures();
+
+            Console.ReadKey();
+
         }
     }
 }
