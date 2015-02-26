@@ -1,5 +1,5 @@
 ﻿using InitialTrainingLibrary.Interfaces;
-using InitialTrainingLibrary.RS.Complex;
+using InitialTrainingLibrary.RS.DateValidator.Complex;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace InitialUnitTest.RS
