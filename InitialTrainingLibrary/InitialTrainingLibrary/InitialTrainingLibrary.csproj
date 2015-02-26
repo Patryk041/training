@@ -40,7 +40,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chmura\MojaKlaska.cs" />
-    <Compile Include="Domi\Class1.cs" />
+    <Compile Include="Domi\Game\Board\Board.cs" />
+    <Compile Include="Domi\Game\Board\ChessBoard.cs" />
+    <Compile Include="Domi\Game\Board\ChessField.cs" />
+    <Compile Include="Domi\Game\Board\ChessFigureKing.cs" />
+    <Compile Include="Domi\Game\Board\Field.cs" />
+    <Compile Include="Domi\Game\Board\Figure.cs" />
+    <Compile Include="Domi\Game\Interface\IBoard.cs" />
+    <Compile Include="Domi\Game\Interface\IField.cs" />
+    <Compile Include="Domi\Game\Interface\IFigure.cs" />
     <Compile Include="dysq\ChessBoard.cs" />
     <Compile Include="dysq\Chess\ChessBoardField.cs" />
     <Compile Include="dysq\Chess\Coordinates.cs" />

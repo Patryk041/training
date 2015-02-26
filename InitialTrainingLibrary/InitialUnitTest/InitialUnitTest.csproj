@@ -51,6 +51,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Domi\Game\DomiUnitTestGame.cs" />
     <Compile Include="dysq\dysqTest.cs" />
     <Compile Include="frogie\EfficiencyMonitor\EfficiencyMonitorEntity.cs" />
     <Compile Include="frogie\FrogieTest.cs" />
