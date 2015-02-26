@@ -64,6 +64,9 @@
     <Compile Include="dysq\DateValidator\Days\Days31ofMonths.cs" />
     <Compile Include="dysq\DateValidator\MyDate.cs" />
     <Compile Include="dysq\DateValidator\Months.cs" />
+    <Compile Include="frogie\chess\Pole.cs" />
+    <Compile Include="frogie\chess\Szachownica.cs" />
+    <Compile Include="frogie\chess\Wspolrzedne.cs" />
     <Compile Include="frogie\FrogieBetterDateValidator.cs" />
     <Compile Include="frogie\FrogieComplexDateValidator\FrogieDayValidator.cs" />
     <Compile Include="frogie\FrogieComplexDateValidator\FrogieMonthValidator.cs" />

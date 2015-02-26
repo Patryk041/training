@@ -148,8 +148,10 @@ namespace InitialUnitTest.frogie
             //StringReplace.WytnijTekst("Beata", "ea");
             //StringReplace.WytnijTekst("Beata", "eat");
             Assert.AreEqual(StringReplace.WytnijTekst("Beata", "eat"), "Ba");
-            Assert.AreEqual(StringReplace.WytnijTekst("Beata", "ata"), "Be");
             Assert.AreEqual(StringReplace.WytnijTekst("Beata", "ea"), "Bta");
+            Assert.AreEqual(StringReplace.WytnijTekst("Beata", "eata"), "B");
+           // Assert.AreEqual(StringReplace.WytnijTekst("Beata", "ata"), "Be");
+            
             //Assert.IsTrue(StringReplace.CzyTeksWystepuje("Beata","ata"));
             //Assert.IsTrue(StringReplace.CzyTeksWystepuje("Beata","eat"));
             //Assert.IsFalse(StringReplace.CzyTeksWystepuje("Beata","poi"));
