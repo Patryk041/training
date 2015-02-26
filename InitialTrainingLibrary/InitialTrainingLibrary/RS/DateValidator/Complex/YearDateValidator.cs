@@ -1,6 +1,6 @@
 ﻿using InitialTrainingLibrary.Interfaces;
 
-namespace InitialTrainingLibrary.RS.Complex
+namespace InitialTrainingLibrary.RS.DateValidator.Complex
 {
     public class YearDateValidator : IConcreteDateValidator, IDateValidator
     {

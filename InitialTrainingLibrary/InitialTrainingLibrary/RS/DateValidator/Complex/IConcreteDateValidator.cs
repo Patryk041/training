@@ -1,4 +1,4 @@
-﻿namespace InitialTrainingLibrary.RS.Complex
+﻿namespace InitialTrainingLibrary.RS.DateValidator.Complex
 {
     public interface IConcreteDateValidator
     {

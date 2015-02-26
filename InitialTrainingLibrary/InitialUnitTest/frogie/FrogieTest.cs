@@ -7,6 +7,7 @@ using InitialTrainingLibrary.frogie;
 using InitialTrainingLibrary.frogie.FrogieComplexDateValidator;
 using InitialTrainingLibrary.Interfaces;
 using InitialTrainingLibrary.robson;
+using InitialTrainingLibrary.RS.DateValidator.Complex;
 using InitialTrainingLibrary.syf.algorythmics;
 using InitialUnitTest.frogie.EfficiencyMonitor;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -43,7 +44,7 @@ namespace InitialUnitTest.frogie
                 new FrogieYetBetterDateValidator(),
 
                 new InitialTrainingLibrary.RS.Simple.DateValidator(),
-                new InitialTrainingLibrary.RS.Complex.DateValidator(),
+                new DateValidator(),
                 new MyDate(),
                 new InitialTrainingLibrary.Sito._1.DateValidator(),
                 new InitialTrainingLibrary.koziu.DateValidator.DateValidator(),
