@@ -11,7 +11,7 @@ namespace InitialTrainingLibrary.hipek._1.DateValidator
     {
         public bool DateValidate(int year, int month, int day)
         {
-            return day >= 1 && day <= 30;
+            return day >= 1 && day <= 30 && year >= 0;
         }
 
         public string GetName()
