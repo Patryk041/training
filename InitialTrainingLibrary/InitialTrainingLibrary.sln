@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialUnitTest", "InitialU
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsInitialTrainingApp", "FormsInitialTrainingApp\FormsInitialTrainingApp.csproj", "{D79FE4A7-9837-4EDB-8D0F-E629A3778A57}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Toci.Web", "Toci.Web", "{EEDEA193-B73F-4A9C-B1CB-A52B092826B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Web.Primary", "Toci.Web\Toci.Web.Primary\Toci.Web.Primary.csproj", "{1116D6EC-B767-405B-9EAF-EA545053B968}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,8 +35,15 @@ Global
 		{D79FE4A7-9837-4EDB-8D0F-E629A3778A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D79FE4A7-9837-4EDB-8D0F-E629A3778A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D79FE4A7-9837-4EDB-8D0F-E629A3778A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1116D6EC-B767-405B-9EAF-EA545053B968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1116D6EC-B767-405B-9EAF-EA545053B968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1116D6EC-B767-405B-9EAF-EA545053B968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1116D6EC-B767-405B-9EAF-EA545053B968}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1116D6EC-B767-405B-9EAF-EA545053B968} = {EEDEA193-B73F-4A9C-B1CB-A52B092826B1}
 	EndGlobalSection
 EndGlobal
