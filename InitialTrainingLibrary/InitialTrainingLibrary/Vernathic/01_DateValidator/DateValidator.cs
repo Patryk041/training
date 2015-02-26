@@ -11,7 +11,6 @@ namespace InitialTrainingLibrary.Vernathic._01_DateValidator
     {
         //DateValidator - TODO:
         //  1. create classes responsible for validate if set year, month, day gives correct date
-            //  a.
         //  2. handle IDateValidator interface (do not use framework datetime type)
 
         // Type: DD.MM.YYYY

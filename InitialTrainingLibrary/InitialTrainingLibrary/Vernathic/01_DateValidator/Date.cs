@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace InitialTrainingLibrary.Vernathic._01_DateValidator
 {
-    class Date
+    public class Date
     {
-        //add day, month, year field and property
+        public int year, month, day;
+
     }
 }
