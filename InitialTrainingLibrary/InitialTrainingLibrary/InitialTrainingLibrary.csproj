@@ -73,6 +73,14 @@
     <Compile Include="frogie\FrogieComplexDateValidator\FrogieYetBetterDateValidator.cs" />
     <Compile Include="frogie\FrogieDateValidator.cs" />
     <Compile Include="frogie\goffy\Example.cs" />
+    <Compile Include="hipek\1.DateValidator\28thMonthsValidator.cs" />
+    <Compile Include="hipek\1.DateValidator\29thMonthsDateValidator.cs" />
+    <Compile Include="hipek\1.DateValidator\30thMonthsValidator.cs" />
+    <Compile Include="hipek\1.DateValidator\31thMonthsValidator.cs" />
+    <Compile Include="hipek\1.DateValidator\DateValidator.cs" />
+    <Compile Include="hipek\1.DateValidator\DateValidatorFactory.cs" />
+    <Compile Include="hipek\1.DateValidator\LeapYear.cs" />
+    <Compile Include="hipek\1.DateValidator\ListOfMonths.cs" />
     <Compile Include="Interfaces\chess\FigureKind.cs" />
     <Compile Include="Interfaces\chess\IBoard.cs" />
     <Compile Include="Interfaces\chess\IBoardField.cs" />

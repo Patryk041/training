@@ -13,7 +13,12 @@ namespace InitialTrainingLibrary.Sito._2.figuressets
         public Figure figure;
         public override IFigure GetFigureByCoordinates(ICoordinates coordinates)
         {
-            return figure.GetCoordinates()==coordinates ? figure : null;
+            var coorA = (Coordinates) figure.GetCoordinates();
+            var coorb = (Coordinates)coordinates;
+
+                var ret =  coorA.Equal(coorb) ? figure : null;
+            return ret;
+
         }
     }
 }
