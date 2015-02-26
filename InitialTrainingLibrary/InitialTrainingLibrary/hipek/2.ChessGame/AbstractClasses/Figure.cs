@@ -8,6 +8,7 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame.AbstractClasses
         public bool IsFigureWhite()
         {
             throw new NotImplementedException();
+            //sdasda
         }
 
         public ICoordinates GetCoordinates()

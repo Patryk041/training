@@ -46,6 +46,8 @@
     <Compile Include="Domi\Game\Board\ChessFigureKing.cs" />
     <Compile Include="Domi\Game\Board\Field.cs" />
     <Compile Include="Domi\Game\Board\Figure.cs" />
+    <Compile Include="Domi\Validator\DataValidator.cs" />
+    <Compile Include="Domi\Validator\LogicValidator.cs" />
     <Compile Include="dysq\ChessBoard.cs" />
     <Compile Include="dysq\Chess\ChessBoardField.cs" />
     <Compile Include="dysq\Chess\Coordinates.cs" />
