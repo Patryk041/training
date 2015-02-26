@@ -53,6 +53,10 @@
     <Compile Include="Interfaces\chess\ICoordinates.cs" />
     <Compile Include="Interfaces\chess\IFigure.cs" />
     <Compile Include="Interfaces\IDateValidator.cs" />
+    <Compile Include="koziu\Chees\BoardCheesField.cs" />
+    <Compile Include="koziu\Chees\CheesBoard.cs" />
+    <Compile Include="koziu\Chees\Coordinates.cs" />
+    <Compile Include="koziu\Chees\Figure.cs" />
     <Compile Include="koziu\DateValidator\DateValidator.cs" />
     <Compile Include="koziu\DateValidator\Day.cs" />
     <Compile Include="koziu\DateValidator\Month.cs" />
