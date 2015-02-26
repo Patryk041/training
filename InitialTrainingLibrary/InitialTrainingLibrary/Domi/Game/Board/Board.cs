@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using InitialTrainingLibrary.Domi.Game.Interface;
+﻿using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.Domi.Game.Board
 {
@@ -12,7 +7,7 @@ namespace InitialTrainingLibrary.Domi.Game.Board
      
         protected Field[,] Fields; // tablica pól z jakiejś gry 
 
-        public virtual IField[,] GetFields()
+        public virtual IBoardField[,] GetFields()
         {
             return Fields; // zwaraca tablice pól 
         }

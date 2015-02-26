@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
-using InitialTrainingLibrary.Domi.Game.Interface;
+﻿using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.Domi.Game.Board
 {
-   public abstract class Field : IField //jakieś pola gry 
+   public abstract class Field : IBoardField //jakieś pola gry 
    {
        protected int x;
        protected int y;
@@ -27,6 +21,31 @@ namespace InitialTrainingLibrary.Domi.Game.Board
        public int GetY()
        {
            return y;
+       }
+
+       public bool IsFieldWhite()
+       {
+           throw new System.NotImplementedException();
+       }
+
+       public ICoordinates GetCoordinates()
+       {
+           throw new System.NotImplementedException();
+       }
+
+       public bool HasFigure()
+       {
+           throw new System.NotImplementedException();
+       }
+
+       public void SetFigure(IFigure figure)
+       {
+           throw new System.NotImplementedException();
+       }
+
+       public IFigure GetFigure()
+       {
+           throw new System.NotImplementedException();
        }
    }
 }
