@@ -44,11 +44,9 @@
     <Compile Include="Domi\Game\Board\ChessBoard.cs" />
     <Compile Include="Domi\Game\Board\ChessField.cs" />
     <Compile Include="Domi\Game\Board\ChessFigureKing.cs" />
+    <Compile Include="Domi\Game\Board\Cooridnate.cs" />
     <Compile Include="Domi\Game\Board\Field.cs" />
     <Compile Include="Domi\Game\Board\Figure.cs" />
-    <Compile Include="Domi\Game\Interface\IBoard.cs" />
-    <Compile Include="Domi\Game\Interface\IField.cs" />
-    <Compile Include="Domi\Game\Interface\IFigure.cs" />
     <Compile Include="dysq\ChessBoard.cs" />
     <Compile Include="dysq\Chess\ChessBoardField.cs" />
     <Compile Include="dysq\Chess\Coordinates.cs" />
@@ -190,6 +188,12 @@
     <Compile Include="szymon93\[1] DateValidator\Shared.cs" />
     <Compile Include="szymon93\[1] DateValidator\SpecificDate.cs" />
     <Compile Include="szymon93\[1] DateValidator\YearsChecker.cs" />
+    <Compile Include="Vernathic\01_DateValidator\Date.cs" />
+    <Compile Include="Vernathic\01_DateValidator\DateValidator.cs" />
+    <Compile Include="Vernathic\01_DateValidator\LeapYear.cs" />
+    <Compile Include="Vernathic\02_Chess\board\Board.cs" />
+    <Compile Include="Vernathic\02_Chess\Chess.cs" />
+    <Compile Include="Vernathic\FirstClass.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
     <Compile Include="warrior\conflict\ConflictType.cs" />
     <Compile Include="warrior\WarriorDateValidator.cs" />
@@ -210,7 +214,9 @@
     <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Domi\Game\Interface\" />
     <Folder Include="ghostrider\" />
+    <Folder Include="Vernathic\02_Chess\interfaces\" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup />

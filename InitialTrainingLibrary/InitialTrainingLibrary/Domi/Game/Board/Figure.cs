@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using InitialTrainingLibrary.Domi.Game.Interface;
+using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.Domi.Game.Board
 {
@@ -21,6 +21,26 @@ namespace InitialTrainingLibrary.Domi.Game.Board
        }
 
        public void FigureMove()
+       {
+           throw new NotImplementedException();
+       }
+
+       public bool IsFigureWhite()
+       {
+           throw new NotImplementedException();
+       }
+
+       public ICoordinates GetCoordinates()
+       {
+           throw new NotImplementedException();
+       }
+
+       public FigureKind GetFigureKind()
+       {
+           throw new NotImplementedException();
+       }
+
+       public bool Move(ICoordinates newCoordinates)
        {
            throw new NotImplementedException();
        }

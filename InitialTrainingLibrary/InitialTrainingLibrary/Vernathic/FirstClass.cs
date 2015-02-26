@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InitialTrainingLibrary.Domi.Game.Interface
+namespace InitialTrainingLibrary.Vernathic
 {
-   public interface IBoard
+    class FirstClass
     {
-       
+        //I hope it's finnaly done.
     }
 }
