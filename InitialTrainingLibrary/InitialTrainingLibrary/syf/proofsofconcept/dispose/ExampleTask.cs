@@ -5,7 +5,7 @@ namespace InitialTrainingLibrary.syf.proofsofconcept.dispose
     public class ExampleTask : Task
     {
         private static int listSize = 100000;
-        private static int totalCallsCount = 4000;
+        private static int totalCallsCount = 4500;
         private static int callsCount = 0;
 
         public ExampleTask()

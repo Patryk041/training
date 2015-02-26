@@ -10,10 +10,12 @@ namespace InitialTrainingLibrary.Sito._2
     class BoardField:IBoardField
     {
         private readonly ICoordinates coordinates;
-
-        public BoardField(int x,int y)
+        private IFigure figure;
+        public BoardField(int x,int y,IFigure figure)
         {
             coordinates = new Coordinates(x,y);
+            this.figure = figure;
+
         }
         public bool IsFieldWhite()
         {
@@ -23,6 +25,21 @@ namespace InitialTrainingLibrary.Sito._2
         public ICoordinates GetCoordinates()
         {
             return coordinates;
+        }
+
+        public bool HasFigure()
+        {
+            return figure != null;
+        }
+
+        public void SetFigure(IFigure figure)
+        {
+            this.figure = figure;
+        }
+
+        public IFigure GetFigure()
+        {
+            return figure;
         }
     }
 }

@@ -7,26 +7,42 @@ using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.Sito._2
 {
-    class Figure:IFigure
+    public class Figure:IFigure
     {
+
+        private bool isWhite;
+        private ICoordinates coordinates;
+        private FigureKind figureKind;
+        private int figureId;
+        public Figure(bool isWhite,FigureKind figureKind,int figureId=0)
+        {
+            this.figureId = figureId;
+            this.figureKind = figureKind;
+            this.isWhite = isWhite;
+            coordinates = StartFigures.GetStartFigureCoordinates(figureKind,isWhite,figureId);
+        }
         public bool IsFigureWhite()
         {
-            throw new NotImplementedException();
+            return isWhite;
         }
 
         public ICoordinates GetCoordinates()
         {
-            throw new NotImplementedException();
+            return coordinates;
         }
 
         public FigureKind GetFigureKind()
         {
-            throw new NotImplementedException();
+            return figureKind;
         }
 
         public bool Move(ICoordinates newCoordinates)
         {
-            throw new NotImplementedException();
+           //TODO przeciążyć operator porówniania dla ICoordinates
+
+            if (newCoordinates == coordinates) return false;
+            coordinates = new Coordinates(newCoordinates);
+            return true;
         }
     }
 }

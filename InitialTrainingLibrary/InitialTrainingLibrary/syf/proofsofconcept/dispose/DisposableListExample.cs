@@ -15,14 +15,14 @@ namespace InitialTrainingLibrary.syf.proofsofconcept.dispose
 
         public void Dispose()
         {
-            GC.SuppressFinalize(this);
+            this.Clear();
             GC.ReRegisterForFinalize(this);
-
             counter++;
 
             if (counter%100 == 0)
             {
                 GC.Collect();
+                Debug.WriteLine("Coolect counter: {0}", counter);
             }
         }
     }

@@ -51,14 +51,24 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Domi\Game\DomiUnitTestGame.cs" />
+    <Compile Include="Domi\Validator\DomiUnitTestValidator.cs" />
     <Compile Include="dysq\dysqTest.cs" />
     <Compile Include="frogie\EfficiencyMonitor\EfficiencyMonitorEntity.cs" />
     <Compile Include="frogie\FrogieTest.cs" />
+<<<<<<< HEAD
     <Compile Include="koziu\koziuTest.cs" />
+=======
+    <Compile Include="hipek\UnitTestDateValidator.cs" />
+    <Compile Include="mg\UnitTest1.cs" />
+    <Compile Include="robson\DateValidator.cs" />
+>>>>>>> 4743b83330443b92ef4368057a55539c27cc97f2
     <Compile Include="RS\DateValidatorTests.cs" />
     <Compile Include="Sito\SitoTest.cs" />
+    <Compile Include="szymon93\TestClass.cs" />
     <Compile Include="UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vernathic\01_VUnitTest.cs" />
     <Compile Include="warrior\WarriorTest.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +81,7 @@
       <Name>InitialTrainingLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
