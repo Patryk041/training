@@ -55,6 +55,7 @@
     <Compile Include="dysq\dysqTest.cs" />
     <Compile Include="frogie\EfficiencyMonitor\EfficiencyMonitorEntity.cs" />
     <Compile Include="frogie\FrogieTest.cs" />
+    <Compile Include="hipek\UnitTestDateValidator.cs" />
     <Compile Include="mg\UnitTest1.cs" />
     <Compile Include="robson\DateValidator.cs" />
     <Compile Include="RS\DateValidatorTests.cs" />
