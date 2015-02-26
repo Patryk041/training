@@ -51,5 +51,12 @@ namespace InitialTrainingLibrary.syf.algorythmics
             }
             return null;
         }
+
+        public static string DoklejTekst(string slowo1, string slowo2, string slowo3)
+        {
+            string tekst = "";
+            return tekst = WytnijTekst(slowo1, slowo2);
+
+        }
     }
 }
