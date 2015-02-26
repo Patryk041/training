@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using InitialTrainingLibrary.Interfaces;
-using InitialTrainingLibrary.koziu.DateValidator.Interfaces;
 
 namespace InitialTrainingLibrary.Domi.Validator
 {

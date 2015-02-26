@@ -16,24 +16,24 @@ namespace InitialTrainingLibrary.Domi.Validator
         private int MaxDay;
         private int yearL;
 
-        private static int day31 = 31;
-        private static int day28 = 28;
-        private static int day30 = 30;
+        private static int d31 = 31;
+        private static int d28 = 28;
+        private static int d30 = 30;
 
         private Dictionary<int, int> daysCount = new Dictionary<int, int>()
         {
-            { 1, day31 },
-            { 2, day28 },
-            { 3, day31 },
-            { 4, day30 },
-            { 5, day31 },
-            { 6, day30 },
-            { 7, day31 },
-            { 8, day31 },
-            { 9, day30 },
-            { 10, day31 },
-            { 11, day30 },
-            { 12, day31 },
+            { 1, d31 },
+            { 2, d28 },
+            { 3, d31 },
+            { 4, d30 },
+            { 5, d31 },
+            { 6, d30 },
+            { 7, d31 },
+            { 8, d31 },
+            { 9, d30 },
+            { 10, d31 },
+            { 11, d30 },
+            { 12, d31 },
         };
 
         public LogicValidator() { }
@@ -47,36 +47,35 @@ namespace InitialTrainingLibrary.Domi.Validator
 
         public bool CheckYear()
         {
-            if (1 <= years && years <= 3000)
+            if (1 > years || years > 3000)
+                return false;
+            else
             {
-                if ((years%4 == 0) && (years%100 != 0) && (years%400 == 0))
+                if ((years%4 != 0) || (years%100 == 0) || (years%400 != 0))
+                    years = years;
+                else
                 {
                     yearL = years;
                 }
-                else years = years;
                 return true;
             }
-            else return false;
         }
 
 
         public bool CheckMonth() //ilosc dni dla miesiaca i czy miesiąc poprawny 
         {
-            if (daysCount.ContainsKey(months))
+            if (!daysCount.ContainsKey(months))
+                return false;
+            else
             {
                 MaxDay = months == 2 && yearL == years ? 29 : daysCount[months];
                 return true;
             }
-            else return false;
         }
 
         public bool CheckDay()
         {
-            if (1 <= days && days <= MaxDay)
-            {
-                return true;
-            }
-            else return false;
+            return 1 <= days && days <= MaxDay;
         }
     }
 }
