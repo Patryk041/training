@@ -11,7 +11,7 @@ namespace InitialTrainingLibrary.Vernathic._01_DateValidator
         // if year%4 != 0 - it's common year
         // if year%4 == 0 && year%100 != 0 - it's leap year
 
-        bool LeapYear(Date date)
+        bool IsLeapYear(Date date)
         {
             return true;
         }
