@@ -12,7 +12,6 @@ namespace InitialUnitTest.Domi.Validator
         [TestMethod]
         public void TestMethod1()
         {
-           
             DataValidator dataTest = new DataValidator();
             Assert.IsTrue(dataTest.DateValidate(1993, 3, 13));
             Assert.IsFalse(dataTest.DateValidate(1993, 3, 50));

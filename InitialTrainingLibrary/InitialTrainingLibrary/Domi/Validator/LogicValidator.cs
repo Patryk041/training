@@ -5,7 +5,6 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace InitialTrainingLibrary.Domi.Validator
 {
     class LogicValidator
@@ -44,7 +43,6 @@ namespace InitialTrainingLibrary.Domi.Validator
             this.months = month;
             this.days = day; 
         }
-
 
         public bool CheckYear()
         {
@@ -100,7 +98,6 @@ namespace InitialTrainingLibrary.Domi.Validator
             {
                 return false;
             }
-            
         }
     }
 }
