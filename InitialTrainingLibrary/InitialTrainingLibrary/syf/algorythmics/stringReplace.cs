@@ -32,24 +32,29 @@ namespace InitialTrainingLibrary.syf.algorythmics
 
         public static string WytnijTekst(string slowo1, string slowo2)
         {
+            string wynik = "";
             if (CzyTeksWystepuje(slowo1, slowo2) == true)
             {
                 int j = 0;
-                string wynik = "";
-                for (int i = 0; i <= slowo1.Length; i++)
-                {  
+                
+                for (int i = 0; i < slowo1.Length; i++)
+                {
+                    if (i < slowo1.Length)
                     if (slowo1[i] == slowo2[j])
-                    {
-                        i += slowo2.Length-1;    
+                     {
+                        i += slowo2.Length;    
                     }
-                    wynik += slowo1[i];
-                    if (i == slowo1.Length-1)
+                    if (i < slowo1.Length)
+                    {
+                        wynik += slowo1[i];
+                    }
+                    if (i == slowo1.Length)
                     {
                         return wynik;
                     }
                 }
             }
-            return null;
+            return wynik;
         }
 
         public static string DoklejTekst(string slowo1, string slowo2, string slowo3)

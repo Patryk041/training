@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using InitialTrainingLibrary.Domi.Validator;
 using InitialTrainingLibrary.dysq.DateValidator;
 using InitialTrainingLibrary.frogie;
 using InitialTrainingLibrary.frogie.FrogieComplexDateValidator;
 using InitialTrainingLibrary.Interfaces;
 using InitialTrainingLibrary.robson;
+using InitialTrainingLibrary.RS.DateValidator.Complex;
 using InitialTrainingLibrary.syf.algorythmics;
 using InitialUnitTest.frogie.EfficiencyMonitor;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -42,13 +44,15 @@ namespace InitialUnitTest.frogie
                 new FrogieYetBetterDateValidator(),
 
                 new InitialTrainingLibrary.RS.Simple.DateValidator(),
-                new InitialTrainingLibrary.RS.Complex.DateValidator(),
+                new DateValidator(),
                 new MyDate(),
                 new InitialTrainingLibrary.Sito._1.DateValidator(),
                 new InitialTrainingLibrary.koziu.DateValidator.DateValidator(),
                 new InitialTrainingLibrary.mg.DateValidator.DateValidator(),
                 new InitialTrainingLibrary.szymon93._1__DateValidator.DateValidator(),
-                new Date()
+                new Date(),
+                //new InitialTrainingLibrary.hipek._1.DateValidator.DateValidator(),
+                new DataValidator()
             };
 
             List<EfficiencyMonitorEntity> efficiencyResults = new List<EfficiencyMonitorEntity>(testCollection.Count);
@@ -153,6 +157,11 @@ namespace InitialUnitTest.frogie
             Assert.AreEqual(StringReplace.DoklejTekst("Beata", "eat","ksa"), "Beksa");
             Assert.AreEqual(StringReplace.DoklejTekst("Beata", "ata", "za"), "Beza");
             Assert.AreEqual(StringReplace.DoklejTekst("Beata", "ea","ka"), "Btaka");
+            Assert.AreEqual(StringReplace.WytnijTekst("Beata", "eat"), "Ba");
+            Assert.AreEqual(StringReplace.WytnijTekst("Beata", "ea"), "Bta");
+            Assert.AreEqual(StringReplace.WytnijTekst("Beata", "eata"), "B");
+           // Assert.AreEqual(StringReplace.WytnijTekst("Beata", "ata"), "Be");
+            
             //Assert.IsTrue(StringReplace.CzyTeksWystepuje("Beata","ata"));
             //Assert.IsTrue(StringReplace.CzyTeksWystepuje("Beata","eat"));
             //Assert.IsFalse(StringReplace.CzyTeksWystepuje("Beata","poi"));
