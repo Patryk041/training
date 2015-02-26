@@ -133,6 +133,7 @@
     <Compile Include="Sito\2\StartFigures.cs" />
     <Compile Include="syf\algorythmics\Algorythmics.cs" />
     <Compile Include="syf\algorythmics\Palindrom.cs" />
+    <Compile Include="syf\algorythmics\stringReplace.cs" />
     <Compile Include="syf\fileoperations\FileContent.cs" />
     <Compile Include="syf\fileoperations\FileParser.cs" />
     <Compile Include="syf\fileoperations\ParseAttribute.cs" />

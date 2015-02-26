@@ -143,7 +143,18 @@ namespace InitialUnitTest.frogie
          //   Assert.IsTrue(Palindrom.tekst("bartekartak", "artak"));
            // Assert.IsFalse(Palindrom.tekst("bartefghju", "rtefbvf"));
 
-            Palindrom.podmiana("Beata", "at", "dar");
+            //StringReplace.WytnijTekst("Beata", "at");
+            //StringReplace.WytnijTekst("Beata", "ata");
+            //StringReplace.WytnijTekst("Beata", "ea");
+            //StringReplace.WytnijTekst("Beata", "eat");
+            Assert.AreEqual(StringReplace.WytnijTekst("Beata", "eat"), "Ba");
+            Assert.AreEqual(StringReplace.WytnijTekst("Beata", "ata"), "Be");
+            Assert.AreEqual(StringReplace.WytnijTekst("Beata", "ea"), "Bta");
+            //Assert.IsTrue(StringReplace.CzyTeksWystepuje("Beata","ata"));
+            //Assert.IsTrue(StringReplace.CzyTeksWystepuje("Beata","eat"));
+            //Assert.IsFalse(StringReplace.CzyTeksWystepuje("Beata","poi"));
+            //Assert.IsFalse(StringReplace.CzyTeksWystepuje("Beata","eaa"));
+            //Assert.IsTrue(StringReplace.CzyTeksWystepuje("Beata","at"));
         }
     }
 }
