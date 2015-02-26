@@ -7,7 +7,7 @@ using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.mg.Chess
 {
-    class ChessBoard : IBoard
+    public class ChessBoard : IBoard
     {
        
         IBoardField[,] chessFields = new IBoardField[8,8];

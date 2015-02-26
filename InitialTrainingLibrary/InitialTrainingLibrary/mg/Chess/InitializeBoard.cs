@@ -13,11 +13,12 @@ namespace InitialTrainingLibrary.mg
 {
     public class InitializeBoard
     {
+        public ChessBoard ChessBoard { get; private set; }
 
         public InitializeBoard()
         {
-            ChessBoard chessBoard = new ChessBoard();
-            var gameBoard = chessBoard.GetFields(); //zwraca planszę gry 8x8
+            ChessBoard = new ChessBoard();
+            var gameBoard = ChessBoard.GetFields(); //zwraca planszę gry 8x8
 
            
             //białe 1 rząd
