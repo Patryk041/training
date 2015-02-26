@@ -58,7 +58,7 @@ namespace InitialTrainingLibrary.Sito._2
 
         public IFigure GertFigureByCoordinates(ICoordinates coordinates )
         {
-            return allFigures.Values.Select(set => set.GetFigureByCoordinates(coordinates)).FirstOrDefault();
+            return allFigures.Select(set => set.Value.GetFigureByCoordinates(coordinates)).FirstOrDefault(ret => ret != null);
         }
     }
 }

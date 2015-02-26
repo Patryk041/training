@@ -24,7 +24,7 @@ namespace InitialTrainingLibrary.Sito._2
             {
                 for (int j = 0; j < heigth; j++)
                 {
-                    if (i >= 0 && i <= 1)
+                    if (j >= 0 && j <= 1)
                     {
                         fields[i, j] = new BoardField(i, j,
                             WhitePlayerFigures.GertFigureByCoordinates(new Coordinates(i, j)));

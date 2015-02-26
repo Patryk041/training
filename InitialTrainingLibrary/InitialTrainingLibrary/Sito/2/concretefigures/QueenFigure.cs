@@ -12,7 +12,7 @@ namespace InitialTrainingLibrary.Sito._2.concretefigures
     {
         public QueenFigure(bool isWhite)
         {
-            figure = new Figure(isWhite,FigureKind.King);
+            figure = new Figure(isWhite,FigureKind.Queen);
         }
     }
 }
