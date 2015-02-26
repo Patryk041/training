@@ -16,6 +16,7 @@ namespace InitialTrainingLibrary.szymon93._2__Chess
 		public Board()
 		{
 
+
 		}
 		
 		//Methods
