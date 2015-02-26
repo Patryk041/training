@@ -21,7 +21,9 @@ namespace FormsInitialTrainingApp
         public Form1()
         {
             InitializeComponent();
-            AddChessBoard();
+            //AddChessBoard();
+
+            
         }
 
         private void AddChessBoard()

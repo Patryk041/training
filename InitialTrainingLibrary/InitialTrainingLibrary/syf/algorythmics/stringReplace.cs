@@ -60,8 +60,13 @@ namespace InitialTrainingLibrary.syf.algorythmics
         public static string DoklejTekst(string slowo1, string slowo2, string slowo3)
         {
             string tekst = "";
-            return tekst = WytnijTekst(slowo1, slowo2);
+            tekst = WytnijTekst(slowo1, slowo2);
 
+            for (int i = 0; i < slowo3.Length; i++)
+            {
+                tekst += slowo3[i];
+            }
+            return tekst;
         }
     }
 }
