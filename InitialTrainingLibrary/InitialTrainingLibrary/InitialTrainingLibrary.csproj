@@ -189,6 +189,7 @@
     <Compile Include="szymon93\[1] DateValidator\Shared.cs" />
     <Compile Include="szymon93\[1] DateValidator\SpecificDate.cs" />
     <Compile Include="szymon93\[1] DateValidator\YearsChecker.cs" />
+    <Compile Include="Vernathic\FirstClass.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
     <Compile Include="warrior\conflict\ConflictType.cs" />
     <Compile Include="warrior\WarriorDateValidator.cs" />
