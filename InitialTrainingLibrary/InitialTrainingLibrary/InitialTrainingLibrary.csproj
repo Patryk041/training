@@ -109,12 +109,18 @@
     <Compile Include="mg\Chess\InitializeBoard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="robson\Date.cs" />
-    <Compile Include="RS\Complex\DateValidator.cs" />
-    <Compile Include="RS\Complex\DayValidator.cs" />
-    <Compile Include="RS\Complex\IConcreteDateValidator.cs" />
-    <Compile Include="RS\Complex\MonthDateValidator.cs" />
-    <Compile Include="RS\Complex\YearDateValidator.cs" />
-    <Compile Include="RS\Simple\DateValidator.cs" />
+    <Compile Include="RS\Chess\Board.cs" />
+    <Compile Include="RS\Chess\BoardField.cs" />
+    <Compile Include="RS\Chess\Coordinates.cs" />
+    <Compile Include="RS\Chess\FieldColorEnum.cs" />
+    <Compile Include="RS\Chess\Figure.cs" />
+    <Compile Include="RS\Chess\FigureColorEnum.cs" />
+    <Compile Include="RS\DateValidator\Complex\DateValidator.cs" />
+    <Compile Include="RS\DateValidator\Complex\DayValidator.cs" />
+    <Compile Include="RS\DateValidator\Complex\IConcreteDateValidator.cs" />
+    <Compile Include="RS\DateValidator\Complex\MonthDateValidator.cs" />
+    <Compile Include="RS\DateValidator\Complex\YearDateValidator.cs" />
+    <Compile Include="RS\DateValidator\Simple\DateValidator.cs" />
     <Compile Include="Sito\1\DateParts.cs" />
     <Compile Include="Sito\1\DatePartValidator.cs" />
     <Compile Include="Sito\1\DatePartValidatorFactory.cs" />
@@ -215,7 +221,7 @@
     <Compile Include="Witek\NaszaKlasa.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RS\README.txt" />
+    <Content Include="RS\DateValidator\README.txt" />
     <Content Include="syf\fileoperations\xmltpl\data\data1.xml" />
     <Content Include="syf\fileoperations\xmltpl\data\data10.xml" />
     <Content Include="syf\fileoperations\xmltpl\data\data2.xml" />
