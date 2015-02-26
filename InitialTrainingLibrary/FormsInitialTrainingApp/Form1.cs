@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using InitialTrainingLibrary.dysq.Chess;
+using InitialTrainingLibrary.mg;
 using InitialTrainingLibrary.syf.minesweepershowdown.board;
 
 namespace FormsInitialTrainingApp
@@ -26,9 +27,13 @@ namespace FormsInitialTrainingApp
         {
             this.SuspendLayout();
 
-            //this.
-            CreateFigures chesswithfigures = new CreateFigures();
-            InitialTrainingLibrary.dysq.ChessBoard chessBoard = chesswithfigures.Chess;
+            //CreateFigures chesswithfigures = new CreateFigures();
+            //InitialTrainingLibrary.dysq.ChessBoard chessBoard = chesswithfigures.Chess;
+
+            //InitializeBoard chesswithfigures = new InitializeBoard();
+            //var chessBoard = chesswithfigures.ChessBoard;
+
+            var chessBoard = new InitialTrainingLibrary.Sito._2.Board();
 
             var chessBoardFields = chessBoard.GetFields();
 

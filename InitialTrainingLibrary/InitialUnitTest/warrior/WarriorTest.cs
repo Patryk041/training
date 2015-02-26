@@ -1,5 +1,6 @@
 ﻿using InitialTrainingLibrary.syf.fileoperations.xml.logic;
 using InitialTrainingLibrary.syf.fileoperations.xmltpl.logic;
+using InitialTrainingLibrary.syf.proofsofconcept.async;
 using InitialTrainingLibrary.syf.proofsofconcept.clone;
 using InitialTrainingLibrary.syf.proofsofconcept.dispose;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -37,6 +38,18 @@ namespace InitialUnitTest.warrior
             ParalelXmlParser paralelParser = new ParalelXmlParser();
 
             paralelParser.ParseManyFiles();
+        }
+
+        [TestMethod]
+        public void AsyncTest()
+        {
+            OldStyle old = new OldStyle();
+
+            old.test();
+
+            NewStyle ns = new NewStyle();
+
+            ns.test();
         }
     }
 }

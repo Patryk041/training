@@ -53,7 +53,8 @@ namespace InitialTrainingLibrary.mg.Chess
                 case FigureKind.Rook:
                     return new Rook(_x, _y, _isWhite);
                     break;
-
+                default:
+                    return null;
             }
            return null; 
         }
