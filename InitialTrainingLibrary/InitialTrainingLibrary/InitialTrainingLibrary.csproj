@@ -157,6 +157,8 @@
     <Compile Include="syf\postcodevalidator\RigthPostCodeValidatorBase.cs" />
     <Compile Include="syf\privatelol\FrogieDate.cs" />
     <Compile Include="syf\privatelol\PrivateTest.cs" />
+    <Compile Include="syf\proofsofconcept\async\NewStyle.cs" />
+    <Compile Include="syf\proofsofconcept\async\OldStyle.cs" />
     <Compile Include="syf\proofsofconcept\clone\ExampleSubType.cs" />
     <Compile Include="syf\proofsofconcept\clone\ExampleType.cs" />
     <Compile Include="syf\proofsofconcept\clone\ExampleTypeUsage.cs" />
