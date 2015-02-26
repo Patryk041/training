@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using InitialTrainingLibrary.Domi.Validator;
 using InitialTrainingLibrary.dysq.DateValidator;
 using InitialTrainingLibrary.frogie;
 using InitialTrainingLibrary.frogie.FrogieComplexDateValidator;
@@ -48,7 +49,9 @@ namespace InitialUnitTest.frogie
                 new InitialTrainingLibrary.koziu.DateValidator.DateValidator(),
                 new InitialTrainingLibrary.mg.DateValidator.DateValidator(),
                 new InitialTrainingLibrary.szymon93._1__DateValidator.DateValidator(),
-                new Date()
+                new Date(),
+                //new InitialTrainingLibrary.hipek._1.DateValidator.DateValidator(),
+                new DataValidator()
             };
 
             List<EfficiencyMonitorEntity> efficiencyResults = new List<EfficiencyMonitorEntity>(testCollection.Count);
