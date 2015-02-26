@@ -52,7 +52,7 @@ namespace InitialUnitTest.frogie
                 new InitialTrainingLibrary.szymon93._1__DateValidator.DateValidator(),
                 new Date(),
                 //new InitialTrainingLibrary.hipek._1.DateValidator.DateValidator(),
-                new DataValidator()
+                new DataValidator(),
                 new InitialTrainingLibrary.hipek._1.DateValidator.DateValidator()
             };
 
