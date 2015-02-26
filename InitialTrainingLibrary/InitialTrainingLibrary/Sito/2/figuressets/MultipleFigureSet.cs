@@ -13,7 +13,8 @@ namespace InitialTrainingLibrary.Sito._2.figuressets
 
         public override IFigure GetFigureByCoordinates(ICoordinates coordinates)
         {
-            return figures.FirstOrDefault(figure => figure.GetCoordinates() == coordinates);
+           var ret =  figures.FirstOrDefault(figure => ((Coordinates)figure.GetCoordinates()).Equal((Coordinates)coordinates));
+            return ret;
         }
     }
 }
