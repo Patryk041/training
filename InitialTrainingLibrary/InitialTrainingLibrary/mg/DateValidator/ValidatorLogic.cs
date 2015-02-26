@@ -21,8 +21,8 @@ namespace InitialTrainingLibrary.mg.DateValidator
         {
             Dictionary<int, int> dict = new Dictionary<int, int>();
 
-            int[] days = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-            if (_isintercalary) days[1] = 28;
+            int[] days = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+            if (_isintercalary) days[1] = 29;
 
             for (int i = 0; i < 12; i++)
             {
