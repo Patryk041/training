@@ -27,13 +27,13 @@ namespace FormsInitialTrainingApp
         {
             this.SuspendLayout();
 
-            //CreateFigures chesswithfigures = new CreateFigures();
-            //InitialTrainingLibrary.dysq.ChessBoard chessBoard = chesswithfigures.Chess;
+            CreateFigures chesswithfigures = new CreateFigures();
+            InitialTrainingLibrary.dysq.ChessBoard chessBoard = chesswithfigures.Chess;
 
             //InitializeBoard chesswithfigures = new InitializeBoard();
             //var chessBoard = chesswithfigures.ChessBoard;
 
-            var chessBoard = new InitialTrainingLibrary.Sito._2.Board();
+            //var chessBoard = new InitialTrainingLibrary.Sito._2.Board();
 
             var chessBoardFields = chessBoard.GetFields();
 

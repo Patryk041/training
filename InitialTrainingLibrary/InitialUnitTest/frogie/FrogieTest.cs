@@ -53,6 +53,7 @@ namespace InitialUnitTest.frogie
                 new Date(),
                 //new InitialTrainingLibrary.hipek._1.DateValidator.DateValidator(),
                 new DataValidator()
+                new InitialTrainingLibrary.hipek._1.DateValidator.DateValidator()
             };
 
             List<EfficiencyMonitorEntity> efficiencyResults = new List<EfficiencyMonitorEntity>(testCollection.Count);
@@ -63,7 +64,7 @@ namespace InitialUnitTest.frogie
 
                 var start = DateTime.Now.Millisecond;
 
-                for (int i = 0; i < 10000; i++)
+                //for (int i = 0; i < 10000; i++)
                 {
                     efficiencyResult.FailsCount += valid.DateValidate(2014, 13, 31) ? 1 : 0;
                     efficiencyResult.FailsCount += valid.DateValidate(2014, 12, 32) ? 1 : 0;
