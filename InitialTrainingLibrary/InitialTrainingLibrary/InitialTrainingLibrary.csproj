@@ -40,10 +40,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chmura\MojaKlaska.cs" />
+    <Compile Include="Domi\Game\Board\Board.cs" />
     <Compile Include="Domi\Game\Board\ChessBoard.cs" />
     <Compile Include="Domi\Game\Board\ChessField.cs" />
     <Compile Include="Domi\Game\Board\ChessFigureKing.cs" />
-    <Compile Include="Domi\Game\Board\Cooridnate.cs" />
+    <Compile Include="Domi\Game\Board\Field.cs" />
     <Compile Include="Domi\Game\Board\Figure.cs" />
     <Compile Include="Domi\Game\Interface\IBoard.cs" />
     <Compile Include="Domi\Game\Interface\IField.cs" />
@@ -210,6 +211,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ghostrider\" />
+    <Folder Include="Vernathic\02_Chess\" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup />
