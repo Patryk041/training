@@ -78,7 +78,6 @@
     <Compile Include="hipek\1.DateValidator\DateValidator.cs" />
     <Compile Include="hipek\1.DateValidator\DateValidatorFactory.cs" />
     <Compile Include="hipek\1.DateValidator\LeapYear.cs" />
-    <Compile Include="hipek\1.DateValidator\ListOfMonths.cs" />
     <Compile Include="Interfaces\chess\FigureKind.cs" />
     <Compile Include="Interfaces\chess\IBoard.cs" />
     <Compile Include="Interfaces\chess\IBoardField.cs" />
