@@ -195,8 +195,6 @@
     <Compile Include="Vernathic\01_DateValidator\LeapYear.cs" />
     <Compile Include="Vernathic\02_Chess\board\Board.cs" />
     <Compile Include="Vernathic\02_Chess\Chess.cs" />
-    <Compile Include="Vernathic\02_Chess\interfaces\IBoardField.cs" />
-    <Compile Include="Vernathic\02_Chess\interfaces\IBoard.cs" />
     <Compile Include="Vernathic\FirstClass.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
     <Compile Include="warrior\conflict\ConflictType.cs" />
