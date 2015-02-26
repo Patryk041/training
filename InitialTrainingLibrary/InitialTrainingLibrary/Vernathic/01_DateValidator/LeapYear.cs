@@ -6,14 +6,23 @@ using System.Threading.Tasks;
 
 namespace InitialTrainingLibrary.Vernathic._01_DateValidator
 {
-    class LeapYear
+    public class LeapYear
     {
         // if year%4 != 0 - it's common year
         // if year%4 == 0 && year%100 != 0 - it's leap year
 
-        bool IsLeapYear(Date date)
+        public static bool IsLeapYear(int year)
         {
-            return true;
+            if (year % 4 != 0)
+            {
+                return false;
+            }
+            else if (year % 100 != 0)
+            {
+                return true;
+            }
+            else
+                return false;
         }
     }
 }

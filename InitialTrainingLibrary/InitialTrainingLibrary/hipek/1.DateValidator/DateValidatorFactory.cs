@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using InitialTrainingLibrary.Interfaces;
@@ -9,6 +10,7 @@ namespace InitialTrainingLibrary.hipek._1.DateValidator
 {
     public static class DateValidatorFactory
     {
+        
         private static Dictionary<int , Func<IDateValidator>> validatorMap = new Dictionary
             <int, Func<IDateValidator>>()
         {
@@ -35,7 +37,7 @@ namespace InitialTrainingLibrary.hipek._1.DateValidator
 
         public static IDateValidator CreateDateValidator(int month)
         {
-            return validatorMap[month]();
+            return validatorMap[month]();       
         }
 
         public static IDateValidator CreateLeapYearValidator(bool IfLeapYear)

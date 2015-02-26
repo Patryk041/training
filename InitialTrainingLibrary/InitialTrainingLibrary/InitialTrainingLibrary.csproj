@@ -44,9 +44,10 @@
     <Compile Include="Domi\Game\Board\ChessBoard.cs" />
     <Compile Include="Domi\Game\Board\ChessField.cs" />
     <Compile Include="Domi\Game\Board\ChessFigureKing.cs" />
-    <Compile Include="Domi\Game\Board\Cooridnate.cs" />
     <Compile Include="Domi\Game\Board\Field.cs" />
     <Compile Include="Domi\Game\Board\Figure.cs" />
+    <Compile Include="Domi\Validator\DataValidator.cs" />
+    <Compile Include="Domi\Validator\LogicValidator.cs" />
     <Compile Include="dysq\ChessBoard.cs" />
     <Compile Include="dysq\Chess\ChessBoardField.cs" />
     <Compile Include="dysq\Chess\Coordinates.cs" />
@@ -78,7 +79,6 @@
     <Compile Include="hipek\1.DateValidator\DateValidator.cs" />
     <Compile Include="hipek\1.DateValidator\DateValidatorFactory.cs" />
     <Compile Include="hipek\1.DateValidator\LeapYear.cs" />
-    <Compile Include="hipek\1.DateValidator\ListOfMonths.cs" />
     <Compile Include="Interfaces\chess\FigureKind.cs" />
     <Compile Include="Interfaces\chess\IBoard.cs" />
     <Compile Include="Interfaces\chess\IBoardField.cs" />
@@ -226,11 +226,9 @@
     <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Domi\Game\Interface\" />
     <Folder Include="ghostrider\" />
-    <Folder Include="Vernathic\02_Chess\interfaces\" />
+    <Folder Include="Vernathic\01_DateValidator\interfaces\" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

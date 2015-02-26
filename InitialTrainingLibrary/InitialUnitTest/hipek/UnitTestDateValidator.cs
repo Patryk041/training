@@ -21,6 +21,7 @@ namespace InitialUnitTest.hipek
             Assert.IsTrue(test.DateValidate(2014, 02, 28)); //nie jest przestepny
             Assert.IsFalse(test.DateValidate(2014, 13, 28));
             Assert.IsFalse(test.DateValidate(00, 00, 00));
+            Assert.IsFalse(test.DateValidate(-2, 05, 12));
         }
     }
 }

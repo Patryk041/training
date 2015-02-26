@@ -12,12 +12,12 @@ namespace InitialTrainingLibrary.Sito._2
         //TODO uzupełnić resztę koordynatów
         private static Dictionary<FigureKind, Func<bool,int, ICoordinates>> fugureCoordinatesByFigureKind = new Dictionary<FigureKind, Func<bool,int, ICoordinates>>
         {
-            {FigureKind.Queen,((isWhite,id) => isWhite ? new Coordinates(0,3) : new Coordinates(7,3))},
-            {FigureKind.King,((isWhite,id) => isWhite ? new Coordinates(0,4) : new Coordinates(7,4))},
-            {FigureKind.Pawn,((isWhite,id) => isWhite ? new Coordinates(1,id-8) : new Coordinates(6,id-8))},
-            {FigureKind.Rook,((isWhite,id) => isWhite ? new Coordinates(0,CoorById[FigureKind.Rook](id)) : new Coordinates(7,CoorById[FigureKind.Rook](id)))},
-            {FigureKind.Horse,((isWhite,id) => isWhite ? new Coordinates(0,CoorById[FigureKind.Horse](id)) : new Coordinates(7,CoorById[FigureKind.Horse](id)))},
-            {FigureKind.Bishop,((isWhite,id) => isWhite ? new Coordinates(0,CoorById[FigureKind.Bishop](id)) : new Coordinates(7,CoorById[FigureKind.Bishop](id)))}
+            {FigureKind.Queen,((isWhite,id) => isWhite ? new Coordinates(3,0) : new Coordinates(3,7))},
+            {FigureKind.King,((isWhite,id) => isWhite ? new Coordinates(4,0) : new Coordinates(4,7))},
+            {FigureKind.Pawn,((isWhite,id) => isWhite ? new Coordinates(id-8,1) : new Coordinates(id-8,6))},
+            {FigureKind.Rook,((isWhite,id) => isWhite ? new Coordinates(CoorById[FigureKind.Rook](id),0) : new Coordinates(CoorById[FigureKind.Rook](id),7))},
+            {FigureKind.Horse,((isWhite,id) => isWhite ? new Coordinates(CoorById[FigureKind.Horse](id),0) : new Coordinates(CoorById[FigureKind.Horse](id),7))},
+            {FigureKind.Bishop,((isWhite,id) => isWhite ? new Coordinates(CoorById[FigureKind.Bishop](id),0) : new Coordinates(CoorById[FigureKind.Bishop](id),7))}
 
         };
 
