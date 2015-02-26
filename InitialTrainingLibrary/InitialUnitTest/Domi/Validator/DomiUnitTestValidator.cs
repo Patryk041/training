@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
 using InitialTrainingLibrary.Domi.Validator;
-using InitialTrainingLibrary.koziu.DateValidator.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace InitialUnitTest.Domi.Validator
@@ -9,7 +8,7 @@ namespace InitialUnitTest.Domi.Validator
     [TestClass]
     public class DomiUnitTestValidator
     {
-        
+
         [TestMethod]
         public void TestMethod1()
         {

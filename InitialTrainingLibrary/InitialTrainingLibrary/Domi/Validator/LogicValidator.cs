@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
-using InitialTrainingLibrary.koziu.DateValidator;
+
 
 namespace InitialTrainingLibrary.Domi.Validator
 {
@@ -47,35 +48,59 @@ namespace InitialTrainingLibrary.Domi.Validator
 
         public bool CheckYear()
         {
-            if (1 > years || years > 3000)
-                return false;
-            else
+            try
             {
-                if ((years%4 != 0) || (years%100 == 0) || (years%400 != 0))
-                    years = years;
+
+                if (1 > years || years > 3000)
+                    return false;
                 else
                 {
-                    yearL = years;
+                    if ((years%4 != 0) || (years%100 == 0) || (years%400 != 0))
+                        years = years;
+                    else
+                    {
+                        yearL = years;
+                    }
+                    return true;
                 }
-                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
 
 
         public bool CheckMonth() //ilosc dni dla miesiaca i czy miesiąc poprawny 
         {
-            if (!daysCount.ContainsKey(months))
-                return false;
-            else
+            try
             {
-                MaxDay = months == 2 && yearL == years ? 29 : daysCount[months];
-                return true;
+
+                if (!daysCount.ContainsKey(months))
+                    return false;
+                else
+                {
+                    MaxDay = months == 2 && yearL == years ? 29 : daysCount[months];
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
 
         public bool CheckDay()
         {
-            return 1 <= days && days <= MaxDay;
+            try
+            {
+                return 1 <= days && days <= MaxDay;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            
         }
     }
 }
