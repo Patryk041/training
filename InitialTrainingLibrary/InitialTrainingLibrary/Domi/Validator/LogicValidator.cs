@@ -48,14 +48,13 @@ namespace InitialTrainingLibrary.Domi.Validator
         {
             try
             {
-
                 if (1 > years || years > 3000)
+                {
                     return false;
+                }
                 else
                 {
-                    if ((years%4 != 0) || (years%100 == 0) || (years%400 != 0))
-                        years = years;
-                    else
+                    if ((years % 4 == 0) && (years % 100 != 0) || (years % 400 == 0))
                     {
                         yearL = years;
                     }
@@ -73,12 +72,15 @@ namespace InitialTrainingLibrary.Domi.Validator
         {
             try
             {
-
-                if (!daysCount.ContainsKey(months))
+                if (months <1 || months >12)
                     return false;
                 else
                 {
-                    MaxDay = months == 2 && yearL == years ? 29 : daysCount[months];
+                    if (months == 2 && yearL == years)
+                        MaxDay = 29;
+                    else
+                        MaxDay = daysCount[months];
+                    
                     return true;
                 }
             }
@@ -92,7 +94,9 @@ namespace InitialTrainingLibrary.Domi.Validator
         {
             try
             {
-                return 1 <= days && days <= MaxDay;
+                if (1 <= days && days <= MaxDay)
+                    return true;
+                else return false; 
             }
             catch (Exception ex)
             {
