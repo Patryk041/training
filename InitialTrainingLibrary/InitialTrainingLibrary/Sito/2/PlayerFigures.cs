@@ -21,6 +21,10 @@ namespace InitialTrainingLibrary.Sito._2
             isFiguresSetWhite = isSetWhite;
             allFigures.Add(FigureKind.King,FiguresFactory.GetFigureSet(FigureKind.King, isSetWhite));
             allFigures.Add(FigureKind.Pawn, FiguresFactory.GetFigureSet(FigureKind.Pawn, isSetWhite));
+            allFigures.Add(FigureKind.Queen, FiguresFactory.GetFigureSet(FigureKind.Queen, isSetWhite));
+            allFigures.Add(FigureKind.Horse, FiguresFactory.GetFigureSet(FigureKind.Horse, isSetWhite));
+            allFigures.Add(FigureKind.Bishop, FiguresFactory.GetFigureSet(FigureKind.Bishop, isSetWhite));
+            allFigures.Add(FigureKind.Rook, FiguresFactory.GetFigureSet(FigureKind.Rook, isSetWhite));
         }
         public bool IsFiguresSetWhite()
         {
@@ -50,6 +54,11 @@ namespace InitialTrainingLibrary.Sito._2
         public IEnumerable<IFigure> GetPawns()
         {
             return ((MultipleFigureSet)allFigures[FigureKind.Pawn]).figures;
+        }
+
+        public IFigure GertFigureByCoordinates(ICoordinates coordinates )
+        {
+            return allFigures.Values.Select(set => set.GetFigureByCoordinates(coordinates)).FirstOrDefault();
         }
     }
 }

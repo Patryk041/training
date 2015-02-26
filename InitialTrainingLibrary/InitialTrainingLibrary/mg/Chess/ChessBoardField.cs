@@ -5,21 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using InitialTrainingLibrary.Interfaces.chess;
 
-namespace InitialTrainingLibrary.Sito._2
+namespace InitialTrainingLibrary.mg.Chess
 {
-    class BoardField:IBoardField
+    class ChessBoardField :IBoardField
     {
-        private readonly ICoordinates coordinates;
+        private ICoordinates coordinates;
         private IFigure figure;
-        public BoardField(int x,int y,IFigure figure)
-        {
-            coordinates = new Coordinates(x,y);
-            this.figure = figure;
 
+        public ChessBoardField(int x, int y)
+        {
+         coordinates = new Coordinates(x,y);
         }
+
         public bool IsFieldWhite()
         {
-            return (coordinates.GetX() + coordinates.GetY()) % 2 == 0;
+            return (coordinates.GetX() + coordinates.GetY())%2 == 1;
         }
 
         public ICoordinates GetCoordinates()

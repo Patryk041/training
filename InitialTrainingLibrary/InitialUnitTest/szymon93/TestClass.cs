@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace InitialUnitTest.szymon93
 {
 	[TestClass]
-	class TestClass
+	public class TestClass
 	{
 		[TestMethod]
 		public void DateValidatorTestMethod()
@@ -22,6 +22,7 @@ namespace InitialUnitTest.szymon93
 			Assert.IsTrue(dateValidator.DateValidate(1410, 7, 15));
 			Assert.IsTrue(dateValidator.DateValidate(1, 1, 1));
 			Assert.IsFalse(dateValidator.DateValidate(2401, 24, 8));
+			Assert.IsTrue(dateValidator.DateValidate(0, 1, 1));
 		}
 	}
 }

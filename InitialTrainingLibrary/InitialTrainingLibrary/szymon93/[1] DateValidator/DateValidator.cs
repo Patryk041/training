@@ -43,6 +43,7 @@ namespace InitialTrainingLibrary.szymon93._1__DateValidator
 				//Check the date depends on the particular day
 				SpecificDate specificDate = new SpecificDate(day, month, year);
 				Result = specificDate.CheckDateSpecific();
+				specificDate.ClearData();
 			}
 
 			return Result;

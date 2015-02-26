@@ -13,12 +13,14 @@ namespace InitialTrainingLibrary.dysq.Chess
     {
         public ChessBoard Chess { get; private set; }
 
+       
+
         public CreateFigures()
         {
             FigureFactory.CreateFigure(FigureKind.Queen, 1, 1, true);
             Chess = new ChessBoard();
 
-            var fields = Chess.GetFields();
+             var fields = Chess.GetFields();
 
          
             //black figures
@@ -31,17 +33,18 @@ namespace InitialTrainingLibrary.dysq.Chess
             fields[6,0].SetFigure(FigureFactory.CreateFigure(FigureKind.Horse, 6,0, false));
             fields[7,0].SetFigure(FigureFactory.CreateFigure(FigureKind.Rook, 7,0, false));
 
-            for (int i = 0; i < 8; i++)
-            {
-                fields[i,1].SetFigure(FigureFactory.CreateFigure(FigureKind.Pawn, i,1, false));
-            }
+           
+
+            //Pawn figures
+            //for (int i = 0; i < 8; i++)
+            //{
+            //    fields[i, 1].SetFigure(FigureFactory.CreateFigure(FigureKind.Pawn, i, 1, false));
+            //    fields[i,6].SetFigure(FigureFactory.CreateFigure(FigureKind.Pawn, i,6, true));
+            //}
+
+            SetPawns();
 
             //white figures
-            for (int i = 0; i < 8; i++)
-            {
-                fields[i,6].SetFigure(FigureFactory.CreateFigure(FigureKind.Pawn, i,6, true));
-            }
-
             fields[0,7].SetFigure(FigureFactory.CreateFigure(FigureKind.Rook, 0,7, true));
             fields[1,7].SetFigure(FigureFactory.CreateFigure(FigureKind.Horse, 1,7, true));
             fields[2,7].SetFigure(FigureFactory.CreateFigure(FigureKind.Bishop, 2,7, true));
@@ -50,7 +53,19 @@ namespace InitialTrainingLibrary.dysq.Chess
             fields[5,7].SetFigure(FigureFactory.CreateFigure(FigureKind.Bishop, 5,7, true));
             fields[6,7].SetFigure(FigureFactory.CreateFigure(FigureKind.Horse, 6,7, true));
             fields[7,7].SetFigure(FigureFactory.CreateFigure(FigureKind.Rook, 7,7, true));
+
+       
         }
 
+        private void SetPawns()
+        {
+            var fields = Chess.GetFields();
+
+            for (int i = 0; i < 8; i++)
+            {
+                fields[i, 1].SetFigure(FigureFactory.CreateFigure(FigureKind.Pawn, i, 1, false));
+                fields[i, 6].SetFigure(FigureFactory.CreateFigure(FigureKind.Pawn, i, 6, true));
+            }
+        }
     }
 }
