@@ -44,9 +44,11 @@
     <Compile Include="Domi\Game\Board\ChessBoard.cs" />
     <Compile Include="Domi\Game\Board\ChessField.cs" />
     <Compile Include="Domi\Game\Board\ChessFigureKing.cs" />
-    <Compile Include="Domi\Game\Board\Cooridnate.cs" />
     <Compile Include="Domi\Game\Board\Field.cs" />
     <Compile Include="Domi\Game\Board\Figure.cs" />
+    <Compile Include="Domi\Game\Interface\IBoard.cs" />
+    <Compile Include="Domi\Game\Interface\IField.cs" />
+    <Compile Include="Domi\Game\Interface\IFigure.cs" />
     <Compile Include="dysq\ChessBoard.cs" />
     <Compile Include="dysq\Chess\ChessBoardField.cs" />
     <Compile Include="dysq\Chess\Coordinates.cs" />
@@ -192,6 +194,8 @@
     <Compile Include="Vernathic\01_DateValidator\LeapYear.cs" />
     <Compile Include="Vernathic\02_Chess\board\Board.cs" />
     <Compile Include="Vernathic\02_Chess\Chess.cs" />
+    <Compile Include="Vernathic\02_Chess\interfaces\IBoardField.cs" />
+    <Compile Include="Vernathic\02_Chess\interfaces\IBoard.cs" />
     <Compile Include="Vernathic\FirstClass.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
     <Compile Include="warrior\conflict\ConflictType.cs" />
@@ -213,11 +217,9 @@
     <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Domi\Game\Interface\" />
     <Folder Include="ghostrider\" />
-    <Folder Include="Vernathic\02_Chess\interfaces\" />
+    <Folder Include="Vernathic\01_DateValidator\interfaces\" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
