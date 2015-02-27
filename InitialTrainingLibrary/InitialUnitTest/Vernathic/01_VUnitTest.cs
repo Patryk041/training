@@ -15,7 +15,10 @@ namespace InitialUnitTest.Vernathic
             Date date = new Date();
             date.year = 1600;
 
-            Assert.IsTrue(LeapYear.IsLeapYear(date.year));
+            //Assert.IsTrue(1 == 1);
+            //Assert.IsTrue(date.year == 1600);
+            //Assert.IsFalse(LeapYear.IsLeapYear(1200));
+            Assert.IsFalse(LeapYear.IsLeapYear(date.year));
         }
     }
 }
