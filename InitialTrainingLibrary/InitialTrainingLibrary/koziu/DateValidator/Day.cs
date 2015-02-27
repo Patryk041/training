@@ -39,7 +39,7 @@ namespace InitialTrainingLibrary.koziu.DateValidator.Interfaces
 
         private bool IsCorrectDay(Month month, int day)
         {
-            return month.GetDaysCount() > 0 && month.GetDaysCount() <= day;
+            return month.GetDaysCount() > 0 && month.GetDaysCount() >= day;
         }
     }
 }
