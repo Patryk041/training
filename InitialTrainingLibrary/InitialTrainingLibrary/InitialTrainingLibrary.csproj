@@ -39,7 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chmura\MojaKlaska.cs" />
+    <Compile Include="Chmura\DateTimeValidator\DateValidator.cs" />
+    <Compile Include="Chmura\DateTimeValidator\Day.cs" />
+    <Compile Include="Chmura\DateTimeValidator\Month.cs" />
+    <Compile Include="Chmura\DateTimeValidator\Year.cs" />
+    <Compile Include="Chmura\OtherChess\Board\Board.cs" />
+    <Compile Include="Chmura\OtherChess\Board\BoardField.cs" />
+    <Compile Include="Chmura\OtherChess\Board\ChessBoard.cs" />
+    <Compile Include="Chmura\OtherChess\Board\ChessBoardField.cs" />
+    <Compile Include="Chmura\OtherChess\Board\Coordinates.cs" />
+    <Compile Include="Chmura\OtherChess\ChessGame.cs" />
+    <Compile Include="Chmura\OtherChess\Figure\ChessFigure.cs" />
+    <Compile Include="Chmura\OtherChess\Figure\SpecificFigure.cs" />
     <Compile Include="Domi\Game\Board\Board.cs" />
     <Compile Include="Domi\Game\Board\ChessBoard.cs" />
     <Compile Include="Domi\Game\Board\ChessField.cs" />

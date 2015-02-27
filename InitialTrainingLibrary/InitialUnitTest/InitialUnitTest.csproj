@@ -51,6 +51,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Chmura\ChessTests.cs" />
+    <Compile Include="Chmura\SprawdzTo.cs" />
     <Compile Include="Domi\Game\DomiUnitTestGame.cs" />
     <Compile Include="Domi\Validator\DomiUnitTestValidator.cs" />
     <Compile Include="dysq\dysqTest.cs" />
