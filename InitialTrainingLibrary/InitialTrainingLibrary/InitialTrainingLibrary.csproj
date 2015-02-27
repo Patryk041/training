@@ -125,6 +125,7 @@
     <Compile Include="koziu\DateValidator\Month.cs" />
     <Compile Include="koziu\DateValidator\Year.cs" />
     <Compile Include="koziu\koziuClass.cs" />
+    <Compile Include="KrzysiuRysiu\1.DateValidator\DateValidator.cs" />
     <Compile Include="mg\Chess\ChessBoard.cs" />
     <Compile Include="mg\Chess\ChessBoardField.cs" />
     <Compile Include="mg\Chess\Coordinates.cs" />
@@ -248,7 +249,10 @@
     <Compile Include="Vernathic\01_DateValidator\LeapYear.cs" />
     <Compile Include="Vernathic\01_DateValidator\Month.cs" />
     <Compile Include="Vernathic\02_Chess\board\Board.cs" />
+    <Compile Include="Vernathic\02_Chess\board\BoardField.cs" />
     <Compile Include="Vernathic\02_Chess\Chess.cs" />
+    <Compile Include="Vernathic\02_Chess\Coordinates.cs" />
+    <Compile Include="Vernathic\02_Chess\Figure.cs" />
     <Compile Include="Vernathic\FirstClass.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
     <Compile Include="warrior\conflict\ConflictType.cs" />
