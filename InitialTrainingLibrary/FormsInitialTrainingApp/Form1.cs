@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using InitialTrainingLibrary.Chmura.OtherChess;
 using InitialTrainingLibrary.dysq.Chess;
+using InitialTrainingLibrary.frogie.chess;
+using InitialTrainingLibrary.koziu.Chees;
 using InitialTrainingLibrary.mg;
 using InitialTrainingLibrary.syf.minesweepershowdown.board;
 
@@ -21,6 +24,8 @@ namespace FormsInitialTrainingApp
         {
             InitializeComponent();
             AddChessBoard();
+
+            
         }
 
         private void AddChessBoard()
@@ -33,7 +38,13 @@ namespace FormsInitialTrainingApp
             //InitializeBoard chesswithfigures = new InitializeBoard();
             //var chessBoard = chesswithfigures.ChessBoard;
 
-            var chessBoard = new InitialTrainingLibrary.Sito._2.Board();
+            //var chessBoard = new InitialTrainingLibrary.Sito._2.Board();
+            //Szachownica chessBoard = new Szachownica();
+            //CheesBoard chessBoard = new CheesBoard();
+
+            ChessGame game = new ChessGame();
+            game.DrawBoard();
+            var chessBoard = game.MyBoard;
 
             var chessBoardFields = chessBoard.GetFields();
 

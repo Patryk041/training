@@ -19,6 +19,9 @@ namespace InitialUnitTest.mg
             Assert.IsFalse(validator.DateValidate(-1, 12, 30));
             Assert.IsFalse(validator.DateValidate(2014, 02, 30));
             Assert.IsFalse(validator.DateValidate(2010, 04, 31));
+
+            Assert.IsFalse(validator.DateValidate(2015,02,29));
+            Assert.IsTrue(validator.DateValidate(2016,02,29));
         }
     }
 }

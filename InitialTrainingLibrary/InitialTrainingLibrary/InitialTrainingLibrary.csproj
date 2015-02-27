@@ -39,11 +39,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chmura\MojaKlaska.cs" />
-    <Compile Include="Domi\Game\Board\Board.cs" />
+    <Compile Include="Chmura\DateTimeValidator\DateValidator.cs" />
+    <Compile Include="Chmura\DateTimeValidator\Day.cs" />
+    <Compile Include="Chmura\DateTimeValidator\Month.cs" />
+    <Compile Include="Chmura\DateTimeValidator\Year.cs" />
+    <Compile Include="Chmura\OtherChess\Board\Board.cs" />
+    <Compile Include="Chmura\OtherChess\Board\BoardField.cs" />
+    <Compile Include="Chmura\OtherChess\Board\ChessBoard.cs" />
+    <Compile Include="Chmura\OtherChess\Board\ChessBoardField.cs" />
+    <Compile Include="Chmura\OtherChess\Board\Coordinates.cs" />
+    <Compile Include="Chmura\OtherChess\ChessGame.cs" />
+    <Compile Include="Chmura\OtherChess\Figure\ChessFigure.cs" />
+    <Compile Include="Chmura\OtherChess\Figure\SpecificFigure.cs" />
     <Compile Include="Domi\Game\Board\ChessBoard.cs" />
     <Compile Include="Domi\Game\Board\ChessField.cs" />
-    <Compile Include="Domi\Game\Board\ChessFigureKing.cs" />
+    <Compile Include="Domi\Game\Board\Figures\King.cs" />
+    <Compile Include="Domi\Game\Board\Cooridnate.cs" />
     <Compile Include="Domi\Game\Board\Field.cs" />
     <Compile Include="Domi\Game\Board\Figure.cs" />
     <Compile Include="Domi\Validator\DataValidator.cs" />
@@ -65,6 +76,9 @@
     <Compile Include="dysq\DateValidator\Days\Days31ofMonths.cs" />
     <Compile Include="dysq\DateValidator\MyDate.cs" />
     <Compile Include="dysq\DateValidator\Months.cs" />
+    <Compile Include="frogie\chess\Pole.cs" />
+    <Compile Include="frogie\chess\Szachownica.cs" />
+    <Compile Include="frogie\chess\Wspolrzedne.cs" />
     <Compile Include="frogie\FrogieBetterDateValidator.cs" />
     <Compile Include="frogie\FrogieComplexDateValidator\FrogieDayValidator.cs" />
     <Compile Include="frogie\FrogieComplexDateValidator\FrogieMonthValidator.cs" />
@@ -79,12 +93,26 @@
     <Compile Include="hipek\1.DateValidator\DateValidator.cs" />
     <Compile Include="hipek\1.DateValidator\DateValidatorFactory.cs" />
     <Compile Include="hipek\1.DateValidator\LeapYear.cs" />
+    <Compile Include="hipek\2.ChessGame\ChessBoard.cs" />
+    <Compile Include="hipek\2.ChessGame\ChessBoardField.cs" />
+    <Compile Include="hipek\2.ChessGame\ChessCoordinates.cs" />
+    <Compile Include="hipek\2.ChessGame\ChessFigure.cs" />
+    <Compile Include="hipek\2.ChessGame\Figures\BishopFigure.cs" />
+    <Compile Include="hipek\2.ChessGame\Figures\HorseFigure.cs" />
+    <Compile Include="hipek\2.ChessGame\Figures\KingFigure.cs" />
+    <Compile Include="hipek\2.ChessGame\Figures\PawnFigure.cs" />
+    <Compile Include="hipek\2.ChessGame\Figures\QueenFigure.cs" />
+    <Compile Include="hipek\2.ChessGame\Figures\RookFigure.cs" />
     <Compile Include="Interfaces\chess\FigureKind.cs" />
     <Compile Include="Interfaces\chess\IBoard.cs" />
     <Compile Include="Interfaces\chess\IBoardField.cs" />
     <Compile Include="Interfaces\chess\ICoordinates.cs" />
     <Compile Include="Interfaces\chess\IFigure.cs" />
     <Compile Include="Interfaces\IDateValidator.cs" />
+    <Compile Include="koziu\Chees\BoardCheesField.cs" />
+    <Compile Include="koziu\Chees\CheesBoard.cs" />
+    <Compile Include="koziu\Chees\Coordinates.cs" />
+    <Compile Include="koziu\Chees\Figure.cs" />
     <Compile Include="koziu\DateValidator\DateValidator.cs" />
     <Compile Include="koziu\DateValidator\Day.cs" />
     <Compile Include="koziu\DateValidator\Month.cs" />
@@ -106,12 +134,18 @@
     <Compile Include="mg\Chess\InitializeBoard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="robson\Date.cs" />
-    <Compile Include="RS\Complex\DateValidator.cs" />
-    <Compile Include="RS\Complex\DayValidator.cs" />
-    <Compile Include="RS\Complex\IConcreteDateValidator.cs" />
-    <Compile Include="RS\Complex\MonthDateValidator.cs" />
-    <Compile Include="RS\Complex\YearDateValidator.cs" />
-    <Compile Include="RS\Simple\DateValidator.cs" />
+    <Compile Include="RS\Chess\Board.cs" />
+    <Compile Include="RS\Chess\BoardField.cs" />
+    <Compile Include="RS\Chess\Coordinates.cs" />
+    <Compile Include="RS\Chess\FieldColorEnum.cs" />
+    <Compile Include="RS\Chess\Figure.cs" />
+    <Compile Include="RS\Chess\FigureColorEnum.cs" />
+    <Compile Include="RS\DateValidator\Complex\DateValidator.cs" />
+    <Compile Include="RS\DateValidator\Complex\DayValidator.cs" />
+    <Compile Include="RS\DateValidator\Complex\IConcreteDateValidator.cs" />
+    <Compile Include="RS\DateValidator\Complex\MonthDateValidator.cs" />
+    <Compile Include="RS\DateValidator\Complex\YearDateValidator.cs" />
+    <Compile Include="RS\DateValidator\Simple\DateValidator.cs" />
     <Compile Include="Sito\1\DateParts.cs" />
     <Compile Include="Sito\1\DatePartValidator.cs" />
     <Compile Include="Sito\1\DatePartValidatorFactory.cs" />
@@ -203,7 +237,9 @@
     <Compile Include="szymon93\[2] Chess\Figures\Rook.cs" />
     <Compile Include="Vernathic\01_DateValidator\Date.cs" />
     <Compile Include="Vernathic\01_DateValidator\DateValidator.cs" />
+    <Compile Include="Vernathic\01_DateValidator\Day.cs" />
     <Compile Include="Vernathic\01_DateValidator\LeapYear.cs" />
+    <Compile Include="Vernathic\01_DateValidator\Month.cs" />
     <Compile Include="Vernathic\02_Chess\board\Board.cs" />
     <Compile Include="Vernathic\02_Chess\Chess.cs" />
     <Compile Include="Vernathic\FirstClass.cs" />
@@ -213,7 +249,7 @@
     <Compile Include="Witek\NaszaKlasa.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RS\README.txt" />
+    <Content Include="RS\DateValidator\README.txt" />
     <Content Include="syf\fileoperations\xmltpl\data\data1.xml" />
     <Content Include="syf\fileoperations\xmltpl\data\data10.xml" />
     <Content Include="syf\fileoperations\xmltpl\data\data2.xml" />

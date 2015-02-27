@@ -13,16 +13,12 @@ namespace InitialTrainingLibrary.Domi.Validator
        public int month;
        public int year;
 
-      
        LogicValidator data = new LogicValidator();
            
        public bool DateValidate(int year, int month, int day)
        {
            data = new LogicValidator(year, month, day);
-           data.CheckDay();
-           data.CheckMonth();
-           data.CheckYear(); 
-           return true;
+           return data.CheckYear() && data.CheckMonth() && data.CheckDay();
        }
 
        public string GetName()
