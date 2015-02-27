@@ -5,20 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using InitialTrainingLibrary.Domi.Game.Board.Figures;
 using InitialTrainingLibrary.Interfaces.chess;
-using InitialTrainingLibrary.RS.Chess;
 
 namespace InitialTrainingLibrary.Domi.Game.Board
 {
-   public abstract class ChessFigures : IFigure
+   public class ChessFigures : IFigure
    {
        protected FigureKind FigureKind;
+       protected bool IsWhite;
+       protected Cooridnate Cooridnate; 
+      
+       public ChessFigures() { }
 
-       public ChessFigures()
-       { }
-
-       public ChessFigures(FigureKind figureKind)  //lokalizacja figury na planszy (każda figura musi mieć) 
+       public ChessFigures(FigureKind figureKind, bool color)  //lokalizacja figury na planszy (każda figura musi mieć) 
        {
            this.FigureKind = figureKind;
+           this.IsWhite = color;
        }
 
        public void FigureMove()
@@ -28,18 +29,17 @@ namespace InitialTrainingLibrary.Domi.Game.Board
 
        public bool IsFigureWhite()
        {
-           throw new NotImplementedException();
+           return IsWhite; 
        }
 
        public ICoordinates GetCoordinates()
        {
-           throw new NotImplementedException();
+           return Cooridnate; 
        }
 
        public FigureKind GetFigureKind()
        {
-           return ChessFactory.CreateFigure(FigureKind).GetFigureKind();
-           //zwracal zmienna w konstruktorze ktora bedziesz budizl fabryke 
+           return FigureKind;
        }
 
        public bool Move(ICoordinates newCoordinates)

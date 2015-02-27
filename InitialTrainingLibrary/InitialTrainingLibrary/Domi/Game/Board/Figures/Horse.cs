@@ -9,9 +9,13 @@ namespace InitialTrainingLibrary.Domi.Game.Board.Figures
 {
    public class Horse : ChessFigures
     {
-       public Horse(FigureKind figureKind) : base(figureKind)
+       
+
+       public Horse(int x, int y, bool isWhite)
        {
+           FigureKind = FigureKind.Horse;
+           this.Cooridnate = new Cooridnate(x, y);
+           this.IsWhite = isWhite; 
        }
-       public Horse() { }
     }
 }

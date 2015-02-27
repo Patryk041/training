@@ -9,9 +9,13 @@ namespace InitialTrainingLibrary.Domi.Game.Board.Figures
 {
    public class Pawn : ChessFigures
     {
-       public Pawn(FigureKind figureKind) : base(figureKind)
+        
+   
+       public Pawn(int x, int y, bool isWhite)
        {
+           this.FigureKind = FigureKind.Pawn;
+           this.Cooridnate = new Cooridnate(x, y);
+           this.IsWhite = isWhite; 
        }
-       public Pawn() { }
     }
 }

@@ -54,8 +54,8 @@
     <Compile Include="Domi\Game\Board\ChessBoard.cs" />
     <Compile Include="Domi\Game\Board\ChessFactory.cs" />
     <Compile Include="Domi\Game\Board\ChessField.cs" />
+    <Compile Include="Domi\Game\Board\ChessGame.cs" />
     <Compile Include="Domi\Game\Board\Figures\Bishop.cs" />
-    <Compile Include="Domi\Game\Board\Figures\ChessFactory.cs" />
     <Compile Include="Domi\Game\Board\Figures\Horse.cs" />
     <Compile Include="Domi\Game\Board\Figures\King.cs" />
     <Compile Include="Domi\Game\Board\Cooridnate.cs" />
