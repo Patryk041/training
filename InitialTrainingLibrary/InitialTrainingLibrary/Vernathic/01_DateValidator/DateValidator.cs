@@ -13,8 +13,6 @@ namespace InitialTrainingLibrary.Vernathic._01_DateValidator
         //  1. create classes responsible for validate if set year, month, day gives correct date
         //  2. handle IDateValidator interface (do not use framework datetime type)
 
-        // Type: DD.MM.YYYY
-
         //1. Get date
         //2. Extract date
         //3. Validate (check if Date is correct)
@@ -23,7 +21,11 @@ namespace InitialTrainingLibrary.Vernathic._01_DateValidator
             //3.c   Leap year
         public bool DateValidate(int year, int month, int day)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            if (Day.IsCorrectDay(year, month, day))
+                return true;
+            else
+                return false;
         }
 
         public string GetName()

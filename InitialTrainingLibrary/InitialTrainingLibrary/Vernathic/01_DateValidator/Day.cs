@@ -8,10 +8,11 @@ namespace InitialTrainingLibrary.Vernathic._01_DateValidator
 {
     class Day
     {
-        bool IsCorrectDay(int day)
+        public static bool IsCorrectDay(int year, int month, int day)
         {
-            
-            return false;
+            if ((1 <= day) || (day <= Month.GetMonthLenght(year, month)))
+                return true;
+            else return false;
         }
     }
 }
