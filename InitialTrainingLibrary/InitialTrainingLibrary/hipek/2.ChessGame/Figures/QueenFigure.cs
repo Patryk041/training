@@ -9,12 +9,11 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame.Figures
 {
     public class QueenFigure :ChessFigure
     {
-        public QueenFigure()
+        public QueenFigure( int x, int y, bool isWHite) : base( x, y, isWHite)
         {
-        }
-
-        public QueenFigure(FigureKind figure) : base(figure)
-        {
+            this.figureKind = FigureKind.Queen;
+            this.isWhite = isWHite;
+            this.coordinates = new ChessCoordinates(x, y);
         }
     }
 }

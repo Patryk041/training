@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InitialTrainingLibrary.Chmura.DateTimeValidator;
 using InitialTrainingLibrary.hipek._2.ChessGame.Figures;
 using InitialTrainingLibrary.Interfaces.chess;
 
@@ -10,32 +11,30 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
 {
     public class ChessFigure : IFigure
     {
-        protected FigureKind FigureKind;
+        protected FigureKind figureKind;
+        protected bool isWhite;
+        protected ChessCoordinates coordinates;
 
-        public ChessFigure()
+
+        public ChessFigure( int x, int y, bool isWHite)
         {
+            this.isWhite = isWHite;
         }
-
-        public ChessFigure(FigureKind figure)
-        {
-            this.FigureKind = figure;
-        }
-
-       
+    
 
         public bool IsFigureWhite()
         {
-            throw new NotImplementedException();
+            return isWhite;
         }
 
         public ICoordinates GetCoordinates()
         {
-            throw new NotImplementedException();
+            return coordinates;
         }
 
         public FigureKind GetFigureKind()
         {
-            return ChessFigureFactory.CreateFigure(FigureKind).GetFigureKind();
+            return figureKind;
         }
 
         public bool Move(ICoordinates newCoordinates)

@@ -9,6 +9,14 @@ namespace InitialTrainingLibrary.Vernathic._02_Chess
 {
     class Coordinates : ICoordinates
     {
+        public int GetX()
+        {
+            throw new NotImplementedException();
+        }
 
+        public int GetY()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
