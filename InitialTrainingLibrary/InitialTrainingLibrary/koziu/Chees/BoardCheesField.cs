@@ -27,7 +27,7 @@ namespace InitialTrainingLibrary.koziu.Chees
 
         public bool HasFigure()
         {
-            throw new NotImplementedException();
+            return false;
         }
 
         public void SetFigure(IFigure figure)

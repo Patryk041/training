@@ -7,14 +7,14 @@ using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.koziu.Chees
 {
-    class CheesBoard:IBoard
+    public class CheesBoard:IBoard
     {
         private readonly IBoardField[,] _boardFields = new IBoardField[8,8];
         public CheesBoard()
         {
             for (int i = 0; i < 8; i++)
             {
-                for (int j = 0; j < 0; j++)
+                for (int j = 0; j < 8; j++)
                 {
                     _boardFields[i,j] = new BoardCheesField(i,j);
                 } 
