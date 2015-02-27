@@ -248,6 +248,7 @@
     <Compile Include="Vernathic\01_DateValidator\LeapYear.cs" />
     <Compile Include="Vernathic\01_DateValidator\Month.cs" />
     <Compile Include="Vernathic\02_Chess\board\Board.cs" />
+    <Compile Include="Vernathic\02_Chess\board\BoardField.cs" />
     <Compile Include="Vernathic\02_Chess\Chess.cs" />
     <Compile Include="Vernathic\FirstClass.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />

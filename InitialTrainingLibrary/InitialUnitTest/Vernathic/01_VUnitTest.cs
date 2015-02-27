@@ -10,7 +10,7 @@ namespace InitialUnitTest.Vernathic
     public class VernathicUnitTest
     {
         [TestMethod]
-        public void TestLeapYear()
+        public void TestDateValidator()
         {
             Date date = new Date(1693,2,30);
 
@@ -19,6 +19,12 @@ namespace InitialUnitTest.Vernathic
 
             Assert.IsFalse(LeapYear.IsLeapYear(date.year));
             //Assert.AreEqual(Month.GetMonthLenght(date.year, date.month), 30);
+        }
+
+        [TestMethod]
+        public void TestChess()
+        {
+
         }
     }
 }
