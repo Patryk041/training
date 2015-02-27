@@ -9,7 +9,7 @@ using InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.MonthTypes;
 
 namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator
 {
-	class DateValidator	:IDateValidator
+	public class DateValidator	:IDateValidator
 	{
 		Gregorian30 g30 =new Gregorian30();
 		Gregorian31 g31 = new Gregorian31();
@@ -25,5 +25,6 @@ namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator
 	    {
 			return "KrzysiuRysiu";
 	    }
+		
 	}
 }
