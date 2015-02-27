@@ -11,15 +11,16 @@ namespace InitialTrainingLibrary.szymon93._2__Chess
 	{
 		//Fields
 		public bool isWhite;
-		int x, y;
+		int x, y, ID;
 		FigureKind figureKind;
 		ICoordinates coordinates;
 
 		//Constructors
-		public Figure(bool isWhite, FigureKind figureKind)
+		public Figure(bool isWhite, FigureKind figureKind, int ID)
 		{
 			this.isWhite = isWhite;
 			this.figureKind = figureKind;
+			this.ID = ID;
 		}
 
 		//Methods

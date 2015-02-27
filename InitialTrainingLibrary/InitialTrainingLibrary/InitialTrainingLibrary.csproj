@@ -200,6 +200,7 @@
     <Compile Include="szymon93\[2] Chess\BoardField.cs" />
     <Compile Include="szymon93\[2] Chess\Coordinates.cs" />
     <Compile Include="szymon93\[2] Chess\Figure.cs" />
+    <Compile Include="szymon93\[2] Chess\Figures\Rook.cs" />
     <Compile Include="Vernathic\01_DateValidator\Date.cs" />
     <Compile Include="Vernathic\01_DateValidator\DateValidator.cs" />
     <Compile Include="Vernathic\01_DateValidator\LeapYear.cs" />
