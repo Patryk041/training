@@ -14,7 +14,7 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
 
         public ChessCoordinates()
         {
-
+            //asda
         }
 
         public ChessCoordinates(int x, int y)
