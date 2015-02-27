@@ -7,11 +7,15 @@ using InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.Interfaces;
 
 namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.DayTypes
 {
-	class Gregorian30 : IDayType
+	public class Gregorian30 : IDayType
 	{
-		public bool ValidateDay()
+		private int minDay = 1;
+		private int maxDay = 30;
+		private int[] validMonths = new int[4] { 4, 6, 9, 11 };
+
+		public bool ValidateDay(int year, int month, int day)
 		{
-			return true;
+			return (minDay <= day && day <= maxDay) && (validMonths.Any(number => number == month));
 		}
 	}
 }

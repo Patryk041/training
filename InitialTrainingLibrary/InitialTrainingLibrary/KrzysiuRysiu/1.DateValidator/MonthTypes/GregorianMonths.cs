@@ -7,11 +7,14 @@ using InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.Interfaces;
 
 namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.MonthTypes
 {
-	class GregorianMonths : IMonthType
+	public class GregorianMonths : IMonthType
 	{
-		public bool ValidateMonth()
+		private int minMonth = 1;
+		private int maxMonth = 12;
+
+		public bool ValidateMonth(int month)
 		{
-			return true;
+			return minMonth <=month && month <= maxMonth;
 		}
 	}
 }

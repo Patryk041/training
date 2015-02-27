@@ -10,6 +10,6 @@ namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.Interfaces
 	{
 		
 
-		bool ValidateDay();
+		bool ValidateDay(int day,int month,int year);
 	}
 }
