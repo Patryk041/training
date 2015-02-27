@@ -20,14 +20,24 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
             {
                 for (int j = 0; j < 8; j++)
                 {
-                    this.Fields[i,j] = new ChessBoardField(i, j);
+                    if (j==0 || j ==1 || j == 6 || j == 7)
+                    {
+                        this.Fields[i, j] = new ChessBoardField(i, j, true);
+                    }
+                    else
+                    {
+                        this.Fields[i, j] = new ChessBoardField(i, j, false);
+                    }
+                    
                 }
             }
+
+            
         }
 
         public IBoardField[,] GetFields()
         {
             return this.Fields;
         }
-    }
+    } 
 }

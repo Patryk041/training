@@ -10,19 +10,20 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
 {
     public static class ChessFigureFactory
     {
-        private static Dictionary<FigureKind, Func<IFigure>> _figureMap = new Dictionary<FigureKind, Func<IFigure>>()
+        private static Dictionary<FigureKind, Func< int, int, bool, IFigure>> _figureMap = new Dictionary<FigureKind, Func< int, int, bool, IFigure>>()
         {
-            {FigureKind.Bishop, () => new BishopFigure()},
-            {FigureKind.Horse, () => new HorseFigure()},
-            {FigureKind.King, () => new KingFigure()},
-            {FigureKind.Pawn, () => new PawnFigure()},
-            {FigureKind.Queen, () => new QueenFigure()},
-            {FigureKind.Rook, () => new RookFigure()}
+            {FigureKind.Bishop, (x, y, isWhite) => new BishopFigure(x, y, isWhite)},
+            {FigureKind.Horse, (x, y, isWhite) => new HorseFigure(x, y, isWhite)},
+            {FigureKind.King, (x, y, isWhite) => new KingFigure(x, y, isWhite)},
+            {FigureKind.Pawn, (x, y, isWhite) => new PawnFigure(x, y, isWhite)},
+            {FigureKind.Queen, (x, y, isWhite) => new QueenFigure(x, y, isWhite)},
+            {FigureKind.Rook, (x, y, isWhite) => new RookFigure(x, y, isWhite)}
         };
 
-        public static IFigure CreateFigure(FigureKind figure)
+        public static IFigure CreateFigure(int x, int y, bool isWhite, FigureKind figure)
         {
-            return _figureMap[figure]();
+            
+            return _figureMap[figure](x, y, isWhite);
         }
     }
 }

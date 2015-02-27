@@ -9,12 +9,11 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame.Figures
 {
     public class RookFigure : ChessFigure
     {
-        public RookFigure()
+        public RookFigure( int x, int y, bool isWHite) : base( x, y, isWHite)
         {
-        }
-
-        public RookFigure(FigureKind figure) : base(figure)
-        {
+            this.figureKind = FigureKind.Rook;
+            this.isWhite = isWHite;
+            this.coordinates = new ChessCoordinates(x, y);
         }
     }
 }
