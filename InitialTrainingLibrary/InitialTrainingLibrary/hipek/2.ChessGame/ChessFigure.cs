@@ -1,14 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using InitialTrainingLibrary.Interfaces.chess;
 
-namespace InitialTrainingLibrary.hipek._2.ChessGame.AbstractClasses
+namespace InitialTrainingLibrary.hipek._2.ChessGame
 {
-    public abstract class Figure : IFigure
+    public class ChessFigure : IFigure
     {
         public bool IsFigureWhite()
         {
             throw new NotImplementedException();
-            //sdasda
         }
 
         public ICoordinates GetCoordinates()
