@@ -18,7 +18,7 @@ namespace InitialUnitTest.Vernathic
             Assert.IsTrue(validator.DateValidate(date.year, date.month, date.day));
 
             Assert.IsFalse(LeapYear.IsLeapYear(date.year));
-            //Assert.AreEqual(Month.GetMonthLenght(date.year, date.month), 30);
+            Assert.AreEqual(Month.GetMonthLenght(date.year, date.month), 30);
         }
 
         [TestMethod]
