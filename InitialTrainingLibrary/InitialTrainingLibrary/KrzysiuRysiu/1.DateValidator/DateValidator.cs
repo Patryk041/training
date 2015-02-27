@@ -18,7 +18,7 @@ namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator
 
 	    public string GetName()
 	    {
-	        throw new NotImplementedException();
+			return "KrzysiuRysiu";
 	    }
 	}
 }
