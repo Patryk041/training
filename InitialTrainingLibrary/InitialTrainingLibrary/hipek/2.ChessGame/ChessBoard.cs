@@ -27,7 +27,7 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
 
         public IBoardField[,] GetFields()
         {
-            return Fields;
+            return this.Fields;
         }
     }
 }

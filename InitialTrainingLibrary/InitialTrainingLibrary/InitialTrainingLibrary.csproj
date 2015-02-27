@@ -98,6 +98,7 @@
     <Compile Include="hipek\2.ChessGame\ChessBoardField.cs" />
     <Compile Include="hipek\2.ChessGame\ChessCoordinates.cs" />
     <Compile Include="hipek\2.ChessGame\ChessFigure.cs" />
+    <Compile Include="hipek\2.ChessGame\ChessFigureFactory.cs" />
     <Compile Include="hipek\2.ChessGame\Figures\BishopFigure.cs" />
     <Compile Include="hipek\2.ChessGame\Figures\HorseFigure.cs" />
     <Compile Include="hipek\2.ChessGame\Figures\KingFigure.cs" />

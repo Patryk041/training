@@ -9,23 +9,24 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
 {
     public class ChessBoardField : IBoardField
     {
-        ICoordinates coordinates = new ChessCoordinates();
+        protected ICoordinates Coordinates;
 
         public ChessBoardField(int x, int y)
         {
-           // coordinates.
+            Coordinates = new ChessCoordinates(x, y);
         }
 
 
         public bool IsFieldWhite()
         {
             
-            return (coordinates.GetX() + coordinates.GetY())%2 == 0;
+            return (Coordinates.GetX() + Coordinates.GetY())%2 == 0;
         }
 
         public ICoordinates GetCoordinates()
         {
-            return null;
+
+            return this.Coordinates;
 
         }
 

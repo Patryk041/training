@@ -12,11 +12,6 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
         protected int X;
         protected int Y;
 
-        public ChessCoordinates()
-        {
-            //asda
-        }
-
         public ChessCoordinates(int x, int y)
         {
             this.X = x;
@@ -28,20 +23,9 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
             return X;
         }
 
-        public void SetX(int value)
-        {
-            X = value;
-        }
-
-
         public int GetY()
         {
             return Y;
-        }
-
-        public void SetY(int value)
-        {
-            X = value;
         }
     }
 }
