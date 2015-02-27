@@ -19,11 +19,11 @@ namespace InitialTrainingLibrary.Domi.Validator
        public bool DateValidate(int year, int month, int day)
        {
            data = new LogicValidator(year, month, day);
-           data.CheckYear();
-           data.CheckMonth();
-           data.CheckDay();
+           bool a= data.CheckYear();
+           bool b= data.CheckMonth();
+           bool c=data.CheckDay();
            
-           return true;
+           return a==true && b==true && c==true;      
        }
 
        public string GetName()
