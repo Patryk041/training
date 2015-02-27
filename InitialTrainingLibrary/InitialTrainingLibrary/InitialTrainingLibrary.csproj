@@ -125,6 +125,7 @@
     <Compile Include="koziu\DateValidator\Month.cs" />
     <Compile Include="koziu\DateValidator\Year.cs" />
     <Compile Include="koziu\koziuClass.cs" />
+    <Compile Include="KrzysiuRysiu\1.DateValidator\DateValidator.cs" />
     <Compile Include="mg\Chess\ChessBoard.cs" />
     <Compile Include="mg\Chess\ChessBoardField.cs" />
     <Compile Include="mg\Chess\Coordinates.cs" />
@@ -271,7 +272,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ghostrider\" />
-    <Folder Include="KrzysiuRysiu\" />
     <Folder Include="Vernathic\01_DateValidator\interfaces\" />
   </ItemGroup>
   <ItemGroup />
