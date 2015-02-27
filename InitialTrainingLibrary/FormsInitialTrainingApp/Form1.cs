@@ -10,9 +10,12 @@ using System.Windows.Forms;
 using InitialTrainingLibrary.Chmura.OtherChess;
 using InitialTrainingLibrary.dysq.Chess;
 using InitialTrainingLibrary.frogie.chess;
+using InitialTrainingLibrary.Interfaces.chess;
 using InitialTrainingLibrary.koziu.Chees;
 using InitialTrainingLibrary.mg;
 using InitialTrainingLibrary.syf.minesweepershowdown.board;
+//using ChessBoard = InitialTrainingLibrary.Domi.Game.Board.ChessBoard;
+//using ChessGame = InitialTrainingLibrary.Domi.Game.Board.ChessGame;
 
 namespace FormsInitialTrainingApp
 {
@@ -77,6 +80,34 @@ namespace FormsInitialTrainingApp
             }
             //    }
             //}
+
+                                    //**************************************************************Domi START******************************
+                                  ////ChessGame game = new ChessGame();
+
+                                  ////  foreach (var field in game.DrawBoard())
+                                  ////  {
+                                  ////      var button = new Button();
+
+                                  ////      button.Location = new Point(GetPointCoordinate(field.GetCoordinates().GetX()), GetPointCoordinate(field.GetCoordinates().GetY()));
+                                  ////      button.Name = string.Format("{0}{1}", field.GetCoordinates().GetX(), field.GetCoordinates().GetY());
+                                  ////      button.Size = new Size(coefficient, coefficient);
+
+                                  ////      if (field.HasFigure())
+                                  ////      {
+                                  ////          button.Text = field.GetFigure().GetFigureKind().ToString();
+                                  ////          button.ForeColor = field.IsFieldWhite() ? Color.Black : Color.White;
+                                  ////      }
+                                  ////      //button.TabIndex = 0;
+                                  ////      //button.Text = "button1";
+                                  ////      button.UseVisualStyleBackColor = true;
+                                  ////      button.BackColor = field.IsFieldWhite() ? Color.White : Color.Black;
+
+                                  ////      //button.Controls.Add(new PictureBox());
+
+                                  ////      this.Controls.Add(button);
+                                  ////  }
+
+                                  ////  //**********************KONIEC DOMI************************************
 
             this.ResumeLayout(false);
         }
