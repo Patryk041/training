@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using InitialTrainingLibrary.Domi.Validator;
 using InitialTrainingLibrary.dysq.DateValidator;
 using InitialTrainingLibrary.frogie;
 using InitialTrainingLibrary.frogie.FrogieComplexDateValidator;
@@ -51,8 +50,9 @@ namespace InitialUnitTest.frogie
                 new InitialTrainingLibrary.mg.DateValidator.DateValidator(),
                 new InitialTrainingLibrary.szymon93._1__DateValidator.DateValidator(),
                 new Date(),
-                //new InitialTrainingLibrary.hipek._1.DateValidator.DateValidator(),
-                new DataValidator()
+                new InitialTrainingLibrary.hipek._1.DateValidator.DateValidator(),
+                new InitialTrainingLibrary.Domi.Validator.DataValidator(),
+                new InitialTrainingLibrary.Chmura.DateTimeValidator.DateValidator()
             };
 
             List<EfficiencyMonitorEntity> efficiencyResults = new List<EfficiencyMonitorEntity>(testCollection.Count);
@@ -63,7 +63,7 @@ namespace InitialUnitTest.frogie
 
                 var start = DateTime.Now.Millisecond;
 
-                for (int i = 0; i < 10000; i++)
+                //for (int i = 0; i < 10000; i++)
                 {
                     efficiencyResult.FailsCount += valid.DateValidate(2014, 13, 31) ? 1 : 0;
                     efficiencyResult.FailsCount += valid.DateValidate(2014, 12, 32) ? 1 : 0;

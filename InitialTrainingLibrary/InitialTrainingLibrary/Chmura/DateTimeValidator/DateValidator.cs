@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InitialTrainingLibrary.Interfaces;
 
 namespace InitialTrainingLibrary.Chmura.DateTimeValidator
 {
-    public class DateValidator
+    public class DateValidator : IDateValidator
     {
         private Year year;
         private Month month;
