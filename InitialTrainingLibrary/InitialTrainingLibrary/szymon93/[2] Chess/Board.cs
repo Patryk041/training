@@ -15,7 +15,7 @@ namespace InitialTrainingLibrary.szymon93._2__Chess
 		//Constructors
 		public Board()
 		{
-
+			boardFields = new IBoardField[8, 8];
 
 		}
 		

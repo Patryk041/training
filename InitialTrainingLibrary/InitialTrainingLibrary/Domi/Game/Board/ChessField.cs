@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InitialTrainingLibrary.Chmura.OtherChess.Board;
 using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.Domi.Game.Board
@@ -10,23 +11,23 @@ namespace InitialTrainingLibrary.Domi.Game.Board
    public class ChessField : IBoardField    //pola gry szachy 
     {  
        
-       protected int x;
-       protected int y;
+       protected int X;
+       protected int Y;
+       protected ICoordinates getPossition;
 
        public ChessField(int x, int y)
        {
-           this.x = x;
-           this.y = y; 
+          getPossition = new Cooridnate(x,y); //powołujemy współrzędne 
        }
-
-       public bool IsFieldWhite()
-       {
-           throw new NotImplementedException();
-       }
-
+      
        public ICoordinates GetCoordinates()
        {
-           throw new NotImplementedException();
+           return getPossition; //pozycja 
+       }
+      
+       public bool IsFieldWhite()
+       {
+           return ((getPossition.GetX() + getPossition.GetY())%2 == 0); //sprawdzamy czy pole jest białe 
        }
 
        public bool HasFigure()

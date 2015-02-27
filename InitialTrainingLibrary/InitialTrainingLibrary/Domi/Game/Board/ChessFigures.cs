@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InitialTrainingLibrary.Domi.Game.Board.Figures;
 using InitialTrainingLibrary.Interfaces.chess;
+using InitialTrainingLibrary.RS.Chess;
 
 namespace InitialTrainingLibrary.Domi.Game.Board
 {
-   public abstract class Figure : IFigure
+   public abstract class ChessFigures : IFigure
    {
-       protected string FigureName;
-       protected int FigureX;
-       protected int FigureY;
+       protected FigureKind FigureKind;
 
-       public Figure(int x, int y, string name)  //lokalizacja figury na planszy (każda figura musi mieć) 
+       public ChessFigures()
+       { }
+
+       public ChessFigures(FigureKind figureKind)  //lokalizacja figury na planszy (każda figura musi mieć) 
        {
-           this.FigureX = x;
-           this.FigureY = y;
-           this.FigureName = name; 
+           this.FigureKind = figureKind;
        }
 
        public void FigureMove()
@@ -37,7 +38,8 @@ namespace InitialTrainingLibrary.Domi.Game.Board
 
        public FigureKind GetFigureKind()
        {
-           throw new NotImplementedException();
+           return ChessFactory.CreateFigure(FigureKind).GetFigureKind();
+           //zwracal zmienna w konstruktorze ktora bedziesz budizl fabryke 
        }
 
        public bool Move(ICoordinates newCoordinates)
