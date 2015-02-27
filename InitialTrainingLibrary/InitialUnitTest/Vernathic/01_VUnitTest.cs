@@ -12,7 +12,7 @@ namespace InitialUnitTest.Vernathic
         [TestMethod]
         public void TestLeapYear()
         {
-            Date date = new Date(1693,2,29);
+            Date date = new Date(1693,2,30);
 
             DateValidator validator = new DateValidator();
             Assert.IsTrue(validator.DateValidate(date.year, date.month, date.day));
