@@ -9,12 +9,12 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame.Figures
 {
     public class PawnFigure : ChessFigure
     {
-        public PawnFigure()
+        public PawnFigure( int x, int y, bool isWHite) : base( x, y, isWHite)
         {
-        }
+            this.figureKind = FigureKind.Pawn;
+            this.isWhite = isWHite;
+            this.coordinates = new ChessCoordinates(x, y);
 
-        public PawnFigure(FigureKind figure) : base(figure)
-        {
         }
     }
 }

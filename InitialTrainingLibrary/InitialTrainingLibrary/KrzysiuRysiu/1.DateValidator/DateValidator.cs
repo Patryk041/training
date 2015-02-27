@@ -10,6 +10,15 @@ namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator
 	class DateValidator	:IDateValidator
 	{
 		//kek test
-	
+
+	    public bool DateValidate(int year, int month, int day)
+	    {
+	        throw new NotImplementedException();
+	    }
+
+	    public string GetName()
+	    {
+	        throw new NotImplementedException();
+	    }
 	}
 }

@@ -54,8 +54,8 @@
     <Compile Include="Domi\Game\Board\ChessBoard.cs" />
     <Compile Include="Domi\Game\Board\ChessFactory.cs" />
     <Compile Include="Domi\Game\Board\ChessField.cs" />
+    <Compile Include="Domi\Game\Board\ChessGame.cs" />
     <Compile Include="Domi\Game\Board\Figures\Bishop.cs" />
-    <Compile Include="Domi\Game\Board\Figures\ChessFactory.cs" />
     <Compile Include="Domi\Game\Board\Figures\Horse.cs" />
     <Compile Include="Domi\Game\Board\Figures\King.cs" />
     <Compile Include="Domi\Game\Board\Cooridnate.cs" />
@@ -104,6 +104,7 @@
     <Compile Include="hipek\2.ChessGame\ChessCoordinates.cs" />
     <Compile Include="hipek\2.ChessGame\ChessFigure.cs" />
     <Compile Include="hipek\2.ChessGame\ChessFigureFactory.cs" />
+    <Compile Include="hipek\2.ChessGame\ChessGame.cs" />
     <Compile Include="hipek\2.ChessGame\Figures\BishopFigure.cs" />
     <Compile Include="hipek\2.ChessGame\Figures\HorseFigure.cs" />
     <Compile Include="hipek\2.ChessGame\Figures\KingFigure.cs" />
@@ -257,6 +258,8 @@
     <Compile Include="Vernathic\02_Chess\board\Board.cs" />
     <Compile Include="Vernathic\02_Chess\board\BoardField.cs" />
     <Compile Include="Vernathic\02_Chess\Chess.cs" />
+    <Compile Include="Vernathic\02_Chess\Coordinates.cs" />
+    <Compile Include="Vernathic\02_Chess\Figure.cs" />
     <Compile Include="Vernathic\FirstClass.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
     <Compile Include="warrior\conflict\ConflictType.cs" />

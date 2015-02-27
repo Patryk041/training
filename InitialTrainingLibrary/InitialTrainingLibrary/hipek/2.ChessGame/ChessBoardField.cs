@@ -10,10 +10,15 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
     public class ChessBoardField : IBoardField
     {
         protected ICoordinates Coordinates;
+        protected IFigure Figure;
+        protected bool hasFigure;
 
-        public ChessBoardField(int x, int y)
+        public ChessBoardField(int x, int y, bool hasFigure)
         {
             Coordinates = new ChessCoordinates(x, y);
+            this.hasFigure = hasFigure;
+
+            
         }
 
 
@@ -32,17 +37,20 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
 
         public bool HasFigure()
         {
-            throw new NotImplementedException();
+            return hasFigure;
         }
 
         public void SetFigure(IFigure figure)
         {
-            throw new NotImplementedException();
+             
+            this.Figure = figure;
+           
+            //ChessFigureFactory.CreateFigure(figure.GetFigureKind());
         }
 
         public IFigure GetFigure()
         {
-            throw new NotImplementedException();
+            return this.Figure;
         }
     }
 }
