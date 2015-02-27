@@ -126,6 +126,12 @@
     <Compile Include="koziu\DateValidator\Year.cs" />
     <Compile Include="koziu\koziuClass.cs" />
     <Compile Include="KrzysiuRysiu\1.DateValidator\DateValidator.cs" />
+    <Compile Include="KrzysiuRysiu\1.DateValidator\DayTypes\Gregorian30.cs" />
+    <Compile Include="KrzysiuRysiu\1.DateValidator\DayTypes\Gregorian31.cs" />
+    <Compile Include="KrzysiuRysiu\1.DateValidator\DayTypes\GregorianException.cs" />
+    <Compile Include="KrzysiuRysiu\1.DateValidator\Interfaces\IDayType.cs" />
+    <Compile Include="KrzysiuRysiu\1.DateValidator\Interfaces\IMonthType.cs" />
+    <Compile Include="KrzysiuRysiu\1.DateValidator\MonthTypes\GregorianMonths.cs" />
     <Compile Include="mg\Chess\ChessBoard.cs" />
     <Compile Include="mg\Chess\ChessBoardField.cs" />
     <Compile Include="mg\Chess\Coordinates.cs" />
