@@ -51,10 +51,9 @@
     <Compile Include="Chmura\OtherChess\ChessGame.cs" />
     <Compile Include="Chmura\OtherChess\Figure\ChessFigure.cs" />
     <Compile Include="Chmura\OtherChess\Figure\SpecificFigure.cs" />
-    <Compile Include="Domi\Game\Board\Board.cs" />
     <Compile Include="Domi\Game\Board\ChessBoard.cs" />
     <Compile Include="Domi\Game\Board\ChessField.cs" />
-    <Compile Include="Domi\Game\Board\ChessFigureKing.cs" />
+    <Compile Include="Domi\Game\Board\Figures\King.cs" />
     <Compile Include="Domi\Game\Board\Cooridnate.cs" />
     <Compile Include="Domi\Game\Board\Field.cs" />
     <Compile Include="Domi\Game\Board\Figure.cs" />
