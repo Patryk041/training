@@ -274,7 +274,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ghostrider\" />
-    <Folder Include="KrzysiuRysiu\" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
