@@ -9,6 +9,9 @@ namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.MonthTypes
 {
 	class GregorianMonths : IMonthType
 	{
-
+		public bool ValidateMonth()
+		{
+			return true;
+		}
 	}
 }

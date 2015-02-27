@@ -8,8 +8,7 @@ namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.Interfaces
 {
 	interface IMonthType
 	{
-		int minMonth;
-		int maxMonth;
+		
 
 		bool ValidateMonth();
 	}

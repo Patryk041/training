@@ -9,5 +9,9 @@ namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.DayTypes
 {
 	class Gregorian31 : IDayType
 	{
+		public bool ValidateDay()
+		{
+			return true;
+		}
 	}
 }

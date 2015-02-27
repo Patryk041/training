@@ -8,8 +8,7 @@ namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.Interfaces
 {
 	interface IDayType
 	{
-		int minDay;
-		int maxDay;
+		
 
 		bool ValidateDay();
 	}
