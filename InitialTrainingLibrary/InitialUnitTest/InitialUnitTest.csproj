@@ -61,6 +61,7 @@
     <Compile Include="hipek\UnitTestChess.cs" />
     <Compile Include="koziu\koziuTest.cs" />
     <Compile Include="hipek\UnitTestDateValidator.cs" />
+    <Compile Include="KrzysiuRysiu\UnitTest1.cs" />
     <Compile Include="mg\UnitTest1.cs" />
     <Compile Include="robson\DateValidator.cs" />
     <Compile Include="RS\DateValidatorTests.cs" />
