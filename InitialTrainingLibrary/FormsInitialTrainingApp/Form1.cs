@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,6 +14,7 @@ using InitialTrainingLibrary.frogie.chess;
 using InitialTrainingLibrary.Interfaces.chess;
 using InitialTrainingLibrary.koziu.Chees;
 using InitialTrainingLibrary.mg;
+using InitialTrainingLibrary.RS.Chess;
 using InitialTrainingLibrary.syf.minesweepershowdown.board;
 
 //using ChessBoard = InitialTrainingLibrary.Domi.Game.Board.ChessBoard;
@@ -31,9 +33,47 @@ namespace FormsInitialTrainingApp
         public Form1()
         {
             InitializeComponent();
-            AddChessBoard();
+            //AddChessBoard();
+            AddChessBoardsButtons();
 
-            
+        }
+
+        private void AddChessBoardsButtons()
+        {
+            this.SuspendLayout();
+
+            List<Func<int, IBoard>> boardsList = new List<Func<int, IBoard>>
+            {
+                (liczba) => new InitialTrainingLibrary.Sito._2.Board(),
+                (liczba) =>
+                {
+                    var board = new InitialTrainingLibrary.Chmura.OtherChess.ChessGame();
+                    board.DrawBoard();
+                    return board.MyBoard;
+                },
+                (liczba) =>
+                {
+                    var dysqBoard = new InitializeBoard();
+                    return dysqBoard.ChessBoard;
+                },
+            };
+
+            int i = 0;
+            foreach (var boardsListItem in boardsList)
+            {
+                i++;
+                var button = new Button();
+
+                button.Text = boardsListItem(1).GetName();
+
+                button.Location = new Point(30, 20 * i);
+                button.Size = new Size(200, 30);
+
+                button.Click += delegate(object sender, EventArgs args) { var window = new ChessBoardPresentation(boardsListItem(1)); window.Show(); };
+                this.Controls.Add(button);
+            }
+
+            this.ResumeLayout(false);
         }
 
         private void AddChessBoard()

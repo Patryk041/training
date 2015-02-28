@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsInitialTrainingApp", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Toci.Web", "Toci.Web", "{EEDEA193-B73F-4A9C-B1CB-A52B092826B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.TraininigLibrary", "Toci.TraininigLibrary\Toci.TraininigLibrary.csproj", "{0ED59B72-4120-4F4E-8684-D3A1D1F6BBF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.TrainingLibrary.Test", "Toci.TrainingLibrary.Test\Toci.TrainingLibrary.Test.csproj", "{192CE854-6FE7-408F-BD34-E3BA1B46F7CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{D79FE4A7-9837-4EDB-8D0F-E629A3778A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D79FE4A7-9837-4EDB-8D0F-E629A3778A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D79FE4A7-9837-4EDB-8D0F-E629A3778A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ED59B72-4120-4F4E-8684-D3A1D1F6BBF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED59B72-4120-4F4E-8684-D3A1D1F6BBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED59B72-4120-4F4E-8684-D3A1D1F6BBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED59B72-4120-4F4E-8684-D3A1D1F6BBF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{192CE854-6FE7-408F-BD34-E3BA1B46F7CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192CE854-6FE7-408F-BD34-E3BA1B46F7CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192CE854-6FE7-408F-BD34-E3BA1B46F7CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192CE854-6FE7-408F-BD34-E3BA1B46F7CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

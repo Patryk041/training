@@ -27,5 +27,10 @@ namespace InitialTrainingLibrary.mg.Chess
         {
             return chessFields;
         }
+
+        public string GetName()
+        {
+            return "mg";
+        }
     }
 }

@@ -9,5 +9,10 @@ namespace InitialTrainingLibrary.Vernathic._02_Chess
         {
             throw new NotImplementedException();
         }
+
+        public string GetName()
+        {
+            return "Vernathic";
+        }
     }
 }

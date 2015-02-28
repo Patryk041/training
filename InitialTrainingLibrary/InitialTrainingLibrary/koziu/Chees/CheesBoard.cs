@@ -25,5 +25,10 @@ namespace InitialTrainingLibrary.koziu.Chees
         {
             return _boardFields;
         }
+
+        public string GetName()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

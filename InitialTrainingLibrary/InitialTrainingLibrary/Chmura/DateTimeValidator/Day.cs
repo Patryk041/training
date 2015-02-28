@@ -8,6 +8,8 @@ namespace InitialTrainingLibrary.Chmura.DateTimeValidator
 {
     class Day
     {
+        const int minimumDay = 1;
+
         private int day;
 
         public Day(int d)
@@ -17,7 +19,7 @@ namespace InitialTrainingLibrary.Chmura.DateTimeValidator
 
         public bool Validate(Month m, Year y)
         {
-            return (day > 1 && day <= m.GetDayCount(y));
+            return (day > minimumDay && day <= m.GetDayCount(y));
         }
     }
 }

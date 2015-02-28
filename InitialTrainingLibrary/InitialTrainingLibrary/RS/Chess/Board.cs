@@ -15,5 +15,10 @@ namespace InitialTrainingLibrary.RS.Chess
         {
             return _boardFields;
         }
+
+        public string GetName()
+        {
+            return "Rs";
+        }
     }
 }

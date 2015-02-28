@@ -43,5 +43,10 @@ namespace InitialTrainingLibrary.Sito._2
         {
             return fields;
         }
+
+        public string GetName()
+        {
+            return "Sito";
+        }
     }
 }
