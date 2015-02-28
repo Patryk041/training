@@ -52,7 +52,9 @@ namespace InitialUnitTest.frogie
                 new Date(),
                 new InitialTrainingLibrary.hipek._1.DateValidator.DateValidator(),
                 new InitialTrainingLibrary.Domi.Validator.DataValidator(),
-                new InitialTrainingLibrary.Chmura.DateTimeValidator.DateValidator()
+                new InitialTrainingLibrary.Chmura.DateTimeValidator.DateValidator(),
+                new InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.DateValidator(),
+                new InitialTrainingLibrary.Vernathic._01_DateValidator.DateValidator()
             };
 
             List<EfficiencyMonitorEntity> efficiencyResults = new List<EfficiencyMonitorEntity>(testCollection.Count);
