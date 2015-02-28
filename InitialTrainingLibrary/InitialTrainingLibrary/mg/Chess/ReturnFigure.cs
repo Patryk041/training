@@ -32,27 +32,26 @@ namespace InitialTrainingLibrary.mg.Chess
             {
                 case FigureKind.Bishop:
                     return new Bishop(_x,_y,_isWhite);
-                    break;
+                   
 
                 case FigureKind.Horse:
                     return new Horse(_x, _y, _isWhite);
-                    break;
-
+                    
                 case FigureKind.King:
                     return new King(_x, _y, _isWhite);
-                    break;
+                   
 
                 case FigureKind.Pawn:
                     return new Pawn(_x, _y, _isWhite);
-                    break;
+                    
 
                 case FigureKind.Queen:
                     return new Queen(_x, _y, _isWhite);
-                    break;
+                    
 
                 case FigureKind.Rook:
                     return new Rook(_x, _y, _isWhite);
-                    break;
+                    
                 default:
                     return null;
             }
