@@ -29,6 +29,9 @@ namespace InitialTrainingLibrary.dysq
            return BoardFields;
        }
 
-     
-    }
+       public string GetName()
+       {
+           throw new NotImplementedException();
+       }
+   }
 }

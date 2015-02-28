@@ -26,5 +26,10 @@ namespace InitialTrainingLibrary.frogie.chess
         {
            return PolaSzachowe; 
         }
+
+        public string GetName()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

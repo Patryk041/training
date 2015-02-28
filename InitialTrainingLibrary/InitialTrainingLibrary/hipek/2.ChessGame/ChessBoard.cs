@@ -39,5 +39,10 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
         {
             return this.Fields;
         }
+
+        public string GetName()
+        {
+            throw new NotImplementedException();
+        }
     } 
 }

@@ -37,7 +37,7 @@ namespace InitialTrainingLibrary.hipek._1.DateValidator
 
         public static IDateValidator CreateDateValidator(int month)
         {
-            return validatorMap[month]();       
+            return validatorMap.ContainsKey(month) ? validatorMap[month]() : null;       
         }
 
         public static IDateValidator CreateLeapYearValidator(bool IfLeapYear)

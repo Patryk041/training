@@ -24,5 +24,10 @@ namespace InitialTrainingLibrary.szymon93._2__Chess
 		{
 			return boardFields;
 		}
+
+	    public string GetName()
+	    {
+	        throw new NotImplementedException();
+	    }
 	}
 }

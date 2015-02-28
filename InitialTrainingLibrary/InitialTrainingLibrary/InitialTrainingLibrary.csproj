@@ -92,6 +92,12 @@
     <Compile Include="frogie\FrogieComplexDateValidator\FrogieYetBetterDateValidator.cs" />
     <Compile Include="frogie\FrogieDateValidator.cs" />
     <Compile Include="frogie\goffy\Example.cs" />
+    <Compile Include="ghostrider\AnotherExample.cs" />
+    <Compile Include="ghostrider\Example.cs" />
+    <Compile Include="ghostrider\HipcioSingleton.cs" />
+    <Compile Include="ghostrider\IChmuraQuestions.cs" />
+    <Compile Include="ghostrider\Logic.cs" />
+    <Compile Include="ghostrider\Singleton.cs" />
     <Compile Include="hipek\1.DateValidator\28thMonthsValidator.cs" />
     <Compile Include="hipek\1.DateValidator\29thMonthsDateValidator.cs" />
     <Compile Include="hipek\1.DateValidator\30thMonthsValidator.cs" />
@@ -189,6 +195,14 @@
     <Compile Include="syf\algorythmics\Algorythmics.cs" />
     <Compile Include="syf\algorythmics\Palindrom.cs" />
     <Compile Include="syf\algorythmics\stringReplace.cs" />
+    <Compile Include="syf\bank\CreditCardHeader.cs" />
+    <Compile Include="syf\bank\CreditCardOperations.cs" />
+    <Compile Include="syf\bank\File.cs" />
+    <Compile Include="syf\bank\FileEntry.cs" />
+    <Compile Include="syf\bank\Interfaces\IFileSection.cs" />
+    <Compile Include="syf\disposable\DisposableList.cs" />
+    <Compile Include="syf\disposable\FileReader.cs" />
+    <Compile Include="syf\disposable\Logic.cs" />
     <Compile Include="syf\fileoperations\FileContent.cs" />
     <Compile Include="syf\fileoperations\FileParser.cs" />
     <Compile Include="syf\fileoperations\ParseAttribute.cs" />
@@ -220,6 +234,7 @@
     <Compile Include="syf\postcodevalidator\RigthPostCodeValidator.cs" />
     <Compile Include="syf\postcodevalidator\RigthPostCodeValidatorBase.cs" />
     <Compile Include="syf\privatelol\FrogieDate.cs" />
+    <Compile Include="syf\privatelol\GenExample.cs" />
     <Compile Include="syf\privatelol\PrivateTest.cs" />
     <Compile Include="syf\proofsofconcept\async\NewStyle.cs" />
     <Compile Include="syf\proofsofconcept\async\OldStyle.cs" />
@@ -281,7 +296,6 @@
     <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ghostrider\" />
     <Folder Include="Vernathic\01_DateValidator\interfaces\" />
   </ItemGroup>
   <ItemGroup />

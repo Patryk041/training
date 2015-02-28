@@ -75,6 +75,8 @@ namespace InitialUnitTest.frogie
                     efficiencyResult.FailsCount += valid.DateValidate(2015, 02, 28) ? 0 : 1;
                     efficiencyResult.FailsCount += valid.DateValidate(2016, 02, 29) ? 0 : 1;
                     efficiencyResult.FailsCount += valid.DateValidate(2016, 02, 30) ? 1 : 0;
+                    efficiencyResult.FailsCount += valid.DateValidate(2016, -2, 10) ? 1 : 0;
+                    efficiencyResult.FailsCount += valid.DateValidate(2016, 2, -1) ? 1 : 0;
                 }
 
                 var end = DateTime.Now.Millisecond;

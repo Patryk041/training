@@ -11,15 +11,10 @@ namespace InitialTrainingLibrary.hipek._1.DateValidator
     {
         public bool DateValidate(int year, int month, int day)
         {
-            try
-            {
-                return DateValidatorFactory.CreateDateValidator(month).DateValidate(year, month, day);
-            }
-            catch (System.Collections.Generic.KeyNotFoundException)
-            {
 
-                return false;
-            }
+            var validator = DateValidatorFactory.CreateDateValidator(month);
+            return validator != null && validator.DateValidate(year, month, day);
+            
 
             
         }
