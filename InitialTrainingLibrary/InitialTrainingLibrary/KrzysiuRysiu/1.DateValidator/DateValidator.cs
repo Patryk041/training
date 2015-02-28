@@ -16,12 +16,17 @@ namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator
 		GregorianException gE = new GregorianException();
 		GregorianMonths gM = new GregorianMonths();
 
-	    public bool DateValidate(int year, int month, int day)
+	    public bool GregorianDateValidate(int year, int month, int day)
 	    {
 		    return gM.ValidateMonth(month) && ((g30.ValidateDay(year, month, day))	||	(g31.ValidateDay(year, month, day))	||	(gE.ValidateDay(year, month, day)));
 	    }
 
-	    public string GetName()
+		public bool DateValidate(int year, int month, int day)
+		{
+			return GregorianDateValidate(year,month,day);
+		}
+
+		public string GetName()
 	    {
 			return "KrzysiuRysiu";
 	    }
