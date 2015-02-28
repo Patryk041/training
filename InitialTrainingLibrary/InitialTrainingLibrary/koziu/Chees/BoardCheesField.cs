@@ -24,5 +24,20 @@ namespace InitialTrainingLibrary.koziu.Chees
         {
             return _coordinates;
         }
+
+        public bool HasFigure()
+        {
+            return false;
+        }
+
+        public void SetFigure(IFigure figure)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IFigure GetFigure()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

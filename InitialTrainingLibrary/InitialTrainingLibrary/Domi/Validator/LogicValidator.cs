@@ -4,6 +4,8 @@ using System.Linq;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
+using InitialTrainingLibrary.dysq.DateValidator.Days;
+using InitialTrainingLibrary.syf.privatelol;
 
 namespace InitialTrainingLibrary.Domi.Validator
 {
@@ -16,9 +18,15 @@ namespace InitialTrainingLibrary.Domi.Validator
         private int MaxDay;
         private int yearL;
 
+        private static int february =2;
+        private static int maxYear =3000 ;
+        private static int minYear = 0; 
+        private static int minDay= 1; 
+
         private static int d31 = 31;
-        private static int d28 = 28;
-        private static int d30 = 30;
+        private static int d30 = 30; 
+        private static int d28 = 28; 
+        private static int d29 = 29; 
 
         private Dictionary<int, int> daysCount = new Dictionary<int, int>()
         {
@@ -46,9 +54,7 @@ namespace InitialTrainingLibrary.Domi.Validator
 
         public bool CheckYear()
         {
-            try
-            {
-                if (1 > years || years > 3000)
+                if ( years < minYear || years > maxYear)
                 {
                     return false;
                 }
@@ -59,50 +65,29 @@ namespace InitialTrainingLibrary.Domi.Validator
                         yearL = years;
                     }
                     return true;
-                    //ghdg
                 }
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
         }
-
 
         public bool CheckMonth() //ilosc dni dla miesiaca i czy miesiąc poprawny 
         {
-            try
-            {
-                if (months <1 || months >12)
-                    return false;
+              if (!daysCount.ContainsKey(months))
+              {return false;}
                 else
                 {
-                    if (months == 2 && yearL == years)
-                        MaxDay = 29;
+                    if (months == february && yearL == years)
+                    {  MaxDay = d29;}
                     else
-                        MaxDay = daysCount[months];
+                    { MaxDay = daysCount[months];}
                     
                     return true;
                 }
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
         }
 
         public bool CheckDay()
         {
-            try
-            {
-                if (1 <= days && days <= MaxDay)
-                    return true;
-                else return false; 
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
+                if (days >= minDay && days <= MaxDay)
+                {return true;}
+                else {return false;} 
         }
     }
 }

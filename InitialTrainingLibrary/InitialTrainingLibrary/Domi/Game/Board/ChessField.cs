@@ -3,45 +3,55 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InitialTrainingLibrary.Chmura.OtherChess.Board;
+using InitialTrainingLibrary.Domi.Game.Board.Figures;
+
 using InitialTrainingLibrary.Interfaces.chess;
+
 
 namespace InitialTrainingLibrary.Domi.Game.Board
 {
    public class ChessField : IBoardField    //pola gry szachy 
     {  
-       
-       protected int x;
-       protected int y;
+       protected int X;
+       protected int Y;
 
-       public ChessField(int x, int y)
-       {
-           this.x = x;
-           this.y = y; 
-       }
+       protected bool hasFigure;
+       protected bool color; 
 
-       public bool IsFieldWhite()
+       protected ICoordinates getPossition;
+       protected IFigure Figure; 
+
+       public ChessField(int x, int y, bool hasFigure)
        {
-           throw new NotImplementedException();
+           getPossition = new Cooridnate(x,y); //powołujemy współrzędne 
+           this.hasFigure = hasFigure;
        }
 
        public ICoordinates GetCoordinates()
        {
-           throw new NotImplementedException();
+           return getPossition; //pozycja 
+       }
+      
+       public bool IsFieldWhite()
+       {
+           return ((getPossition.GetX() + getPossition.GetY())%2 == 0); //sprawdzamy czy pole jest białe 
        }
 
        public bool HasFigure()
        {
-           throw new NotImplementedException();
+           return hasFigure; //zwraca czy jest figura
        }
 
        public void SetFigure(IFigure figure)
-       {
-           throw new NotImplementedException();
+       { 
+           this.Figure = figure;
        }
 
        public IFigure GetFigure()
        {
-           throw new NotImplementedException();
+           return Figure;
+           
        }
     }
 }
