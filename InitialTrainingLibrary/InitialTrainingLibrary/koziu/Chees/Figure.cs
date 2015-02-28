@@ -11,7 +11,7 @@ namespace InitialTrainingLibrary.koziu.Chees
     {
         private string _color;
         private FigureKind _kind;
-        private ICoordinates _coordinates;
+        private ICoordinates _coordinates = null;
 
         public Figure(string color, FigureKind kind)
         {

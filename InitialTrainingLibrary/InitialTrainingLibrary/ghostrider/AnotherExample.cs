@@ -9,9 +9,11 @@ namespace InitialTrainingLibrary.ghostrider
 {
     class AnotherExample : IChmuraQuestions
     {
-        private GenExample ex;
+        private GenExample ex= null;
 
-        private Example exrf;
+        private Example exrf = null;
+
+      
 
         public GenExample GetGenExample()
         {

@@ -8,7 +8,9 @@ namespace InitialTrainingLibrary.syf
 {
     public class Training
     {
+/*
         private DateTime dataszkolenia;
+*/
 
         public int year;
 

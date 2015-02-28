@@ -14,7 +14,14 @@ namespace InitialTrainingLibrary.syf.bank
         private TDetails details;
         private TFooter footer;
 
-        private StreamReader reader;
+        public File(THeader h, TDetails d, TFooter f)
+        {
+            this.header = h;
+            this.details = d;
+            this.footer = f;
+        }
+
+        private StreamReader reader = null;
 
         private void Open()
         {
