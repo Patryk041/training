@@ -17,7 +17,7 @@ namespace InitialTrainingLibrary.ghostrider
                 {"mysql", new Example()}
             };
 
-            int e = 4;
+            //int e = 4; // Redundant, never used
         }
     }
 }

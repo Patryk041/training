@@ -10,12 +10,12 @@ namespace InitialTrainingLibrary.syf.disposable
     {
         public void ReadText()
         {
-            int dsaf = 5;
+            //int dsaf = 5;
         }
 
         public void Dispose()
         {
-            int siemaheniu = 4;
+            //int siemaheniu = 4; //Never Used
 
             GC.SuppressFinalize(this);
 

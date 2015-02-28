@@ -23,7 +23,7 @@ namespace InitialTrainingLibrary.syf.proofsofconcept.async
         {
             var result = asyncDelegate.BeginInvoke(callback, 8);
 
-            int dsa = 6;
+            //int dsa = 6; // Redundant, never used
 
             asyncDelegate.EndInvoke(result);
         }
@@ -31,7 +31,7 @@ namespace InitialTrainingLibrary.syf.proofsofconcept.async
         private void callback(IAsyncResult result)
         {
             //result.
-            int i = 5;
+            //int i = 5; // Redundant, never used
 
             //return null;
         }

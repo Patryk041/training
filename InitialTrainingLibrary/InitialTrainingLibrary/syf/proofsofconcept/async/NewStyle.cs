@@ -31,7 +31,7 @@ namespace InitialTrainingLibrary.syf.proofsofconcept.async
         {
             var result = WaitSomeTime();
 
-            int dsa = 6;
+            //int dsa = 6; // Redundant, never used
 
             result.Wait();
             var test = result.Result;
