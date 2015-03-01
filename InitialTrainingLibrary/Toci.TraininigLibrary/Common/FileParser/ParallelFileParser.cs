@@ -9,8 +9,13 @@ namespace Toci.TraininigLibrary.Common.FileParser
 {
     public class ParallelFileParser<TSaver> where TSaver : IDbSave
     {
-        protected List<FileParser<IFileSection, IFileSection, IFileSection>> parsers = new List<FileParser<IFileSection, IFileSection, IFileSection>>(); 
+        protected Func<FileEntityBase, bool> CustomCallback; 
 
+        protected List<FileParser<IFileSection, IFileSection, IFileSection>> parsers = new List<FileParser<IFileSection, IFileSection, IFileSection>>();
 
+        public ParallelFileParser(Func<FileEntityBase, bool> customCallback)
+        {
+            CustomCallback = customCallback;
+        }
     }
 }

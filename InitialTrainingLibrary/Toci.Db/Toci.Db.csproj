@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0ED59B72-4120-4F4E-8684-D3A1D1F6BBF2}</ProjectGuid>
+    <ProjectGuid>{E45EA1C2-F40C-4903-94C3-30A885A71D33}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Toci.TraininigLibrary</RootNamespace>
-    <AssemblyName>Toci.TraininigLibrary</AssemblyName>
+    <RootNamespace>Toci.Db</RootNamespace>
+    <AssemblyName>Toci.Db</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,33 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\Base\InternetStore\BinBase.cs" />
-    <Compile Include="Common\Base\InternetStore\BinBaseCollection.cs" />
-    <Compile Include="Common\FileParser\FileDetailParserBase.cs" />
-    <Compile Include="Common\FileParser\FileEntityBase.cs" />
-    <Compile Include="Common\FileParser\FileFooterParserBase.cs" />
-    <Compile Include="Common\FileParser\FileHeaderParserBase.cs" />
-    <Compile Include="Common\FileParser\FileParser.cs" />
-    <Compile Include="Common\FileParser\ParallelFileParser.cs" />
-    <Compile Include="Common\Interfaces\FileParser\IDbSave.cs" />
-    <Compile Include="Common\Interfaces\FileParser\IFile.cs" />
-    <Compile Include="Common\Interfaces\FileParser\IFileParser.cs" />
-    <Compile Include="Common\Interfaces\FileParser\IFileSection.cs" />
-    <Compile Include="Common\Interfaces\InternetStore\IBin.cs" />
-    <Compile Include="Common\Interfaces\InternetStore\IDiscount.cs" />
-    <Compile Include="Common\Interfaces\InternetStore\IPurchase.cs" />
-    <Compile Include="Logic\AccountTranferParseSaveLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Core\" />
-    <Folder Include="Developers\Warrior\FileParser\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
-      <Project>{b39d28c8-a026-48bc-8040-95af3986608e}</Project>
-      <Name>Toci.Dal</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
