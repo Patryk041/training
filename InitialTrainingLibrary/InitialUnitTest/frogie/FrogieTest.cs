@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using InitialTrainingLibrary.dysq.DateValidator;
 using InitialTrainingLibrary.frogie;
+using InitialTrainingLibrary.frogie.FileParse;
 using InitialTrainingLibrary.frogie.FrogieComplexDateValidator;
 using InitialTrainingLibrary.Interfaces;
 using InitialTrainingLibrary.robson;
@@ -16,6 +17,19 @@ namespace InitialUnitTest.frogie
     [TestClass]
     public class FrogieTest
     {
+        [TestMethod]
+        public void TestFileOperation()
+        {
+            File file = new File();
+
+            var result = file.PodajDaneZPliku();
+            var slownik = file.PodajDaneZLinii(result);
+
+            Przelew p = new Przelew();
+
+            var przelewy = p.GetTransfers();
+        }
+
         [TestMethod]
         public void FrogieTestDate()
         {

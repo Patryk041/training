@@ -9,12 +9,12 @@ namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.MonthTypes
 {
 	public class GregorianMonths : IMonthType
 	{
-		private int minMonth = 1;
-		private int maxMonth = 12;
+	    private const int minMonth = 1;
+	    private int maxMonth = 12;
 
 		public bool ValidateMonth(int month)
 		{
-			return minMonth <=month && month <= maxMonth;
+			return month >= minMonth && month <= maxMonth;
 		}
 	}
 }

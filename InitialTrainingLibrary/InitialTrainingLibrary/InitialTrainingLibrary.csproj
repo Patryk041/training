@@ -85,6 +85,8 @@
     <Compile Include="frogie\chess\Pole.cs" />
     <Compile Include="frogie\chess\Szachownica.cs" />
     <Compile Include="frogie\chess\Wspolrzedne.cs" />
+    <Compile Include="frogie\FileParse\File.cs" />
+    <Compile Include="frogie\FileParse\Przelew.cs" />
     <Compile Include="frogie\FrogieBetterDateValidator.cs" />
     <Compile Include="frogie\FrogieComplexDateValidator\FrogieDayValidator.cs" />
     <Compile Include="frogie\FrogieComplexDateValidator\FrogieMonthValidator.cs" />
@@ -282,6 +284,7 @@
     <Compile Include="Witek\NaszaKlasa.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="frogie\data\dane.txt" />
     <Content Include="RS\DateValidator\README.txt" />
     <Content Include="syf\fileoperations\xmltpl\data\data1.xml" />
     <Content Include="syf\fileoperations\xmltpl\data\data10.xml" />
