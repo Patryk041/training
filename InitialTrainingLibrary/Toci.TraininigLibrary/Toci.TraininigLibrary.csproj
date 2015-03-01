@@ -60,12 +60,16 @@
   <ItemGroup>
     <Folder Include="Core\" />
     <Folder Include="Developers\Warrior\FileParser\" />
+    <Folder Include="Test\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
       <Project>{b39d28c8-a026-48bc-8040-95af3986608e}</Project>
       <Name>Toci.Dal</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\transfer_2015-03-01_321434535_warrior.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
