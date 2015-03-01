@@ -41,13 +41,22 @@
   <ItemGroup>
     <Compile Include="Common\Base\InternetStore\BinBase.cs" />
     <Compile Include="Common\Base\InternetStore\BinBaseCollection.cs" />
+    <Compile Include="Common\FileParser\FileDetailParserBase.cs" />
+    <Compile Include="Common\FileParser\FileEntityBase.cs" />
+    <Compile Include="Common\FileParser\FileFooterParserBase.cs" />
+    <Compile Include="Common\FileParser\FileHeaderParserBase.cs" />
+    <Compile Include="Common\FileParser\FileParser.cs" />
+    <Compile Include="Common\FileParser\ParallelFileParser.cs" />
+    <Compile Include="Common\Interfaces\FileParser\IDbSave.cs" />
+    <Compile Include="Common\Interfaces\FileParser\IFile.cs" />
+    <Compile Include="Common\Interfaces\FileParser\IFileParser.cs" />
+    <Compile Include="Common\Interfaces\FileParser\IFileSection.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IBin.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IDiscount.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IPurchase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Common\FileParser\" />
     <Folder Include="Core\" />
     <Folder Include="Developers\Warrior\FileParser\" />
     <Folder Include="Logic\" />
