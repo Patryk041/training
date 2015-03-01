@@ -52,8 +52,8 @@ namespace InitialTrainingLibrary.syf.algorythmics
         {
             int pozycja;
             string newWord = "";
-            string newWord1 = "";
-            string koncowe;
+            //string newWord1 = ""; // Redundant, never used
+            //string koncowe; // Redundant, never used
             pozycja = tekst(word1, word2);
             for (int j = 0; j < pozycja; j++)
             {

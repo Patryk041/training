@@ -11,7 +11,8 @@ namespace InitialTrainingLibrary.szymon93._2__Chess
 	{
 		//Fields
 		public bool isWhite;
-		int x, y, ID;
+        // private int x, y; // Temporary redundant
+        int ID; 
 		FigureKind figureKind;
 		ICoordinates coordinates;
 

@@ -14,7 +14,7 @@ namespace InitialTrainingLibrary.Domi.Validator
         private int years;
         private int months;
         private int days;
-        private int monthLeap;
+        // private int monthLeap; // Redundant, never used
         private int MaxDay;
         private int yearL;
 

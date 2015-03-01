@@ -45,6 +45,11 @@ namespace InitialTrainingLibrary.Domi.Game.Board
             return Fields;
         }
 
+        public string GetName()
+        {
+            throw new NotImplementedException();
+        }
+
         public string[,] ColorField()
         {
             return ColorFields;

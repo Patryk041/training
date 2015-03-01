@@ -16,5 +16,10 @@ namespace InitialTrainingLibrary.Chmura.OtherChess.Board
             // IBoardField fields = new IBoardField();
             return (IBoardField[,]) fields;
         }
+
+        public string GetName()
+        {
+            return "Chmura";
+        }
     }
 }

@@ -9,5 +9,7 @@ namespace InitialTrainingLibrary.Interfaces.chess
     public interface IBoard
     {
         IBoardField[,] GetFields();
+
+        string GetName();
     }
 }

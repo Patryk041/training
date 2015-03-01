@@ -10,8 +10,8 @@ namespace InitialTrainingLibrary.szymon93._2__Chess
 	class BoardField : IBoardField
 	{
 		//Fields
-		ICoordinates coordinates;
-		IFigure figure = null;
+		ICoordinates coordinates = null;
+		IFigure figure;
 		int x, y;
 
 		//Constructors
