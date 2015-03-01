@@ -17,5 +17,13 @@ namespace Toci.TraininigLibrary.Common.FileParser
         {
             return string.Format("{0} {1} {2} {3}", Name, Surname, Date, Account);
         }
+
+        public virtual string GetLine()
+        {
+            return string.Format("{0} {1} {2} {3}", Name, Surname, Date, Account);
+        }
+
+        
+        
     }
 }

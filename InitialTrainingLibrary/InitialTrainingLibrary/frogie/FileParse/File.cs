@@ -24,6 +24,13 @@ namespace InitialTrainingLibrary.frogie.FileParse
                 }
             }
 
+            List<Task<string>> taski = new List<Task<string>>();
+
+            for (int i = 0; i < 10; i++)
+            {
+                //taski.Add(Task.Factory.StartNew());
+            }
+ 
             return result;
         }
 
@@ -37,6 +44,8 @@ namespace InitialTrainingLibrary.frogie.FileParse
                 linia = item.Split(new [] {"\t"}, StringSplitOptions.None);
                 result.Add(linia[0], linia.ToList());
             }
+
+            //result.AsParallel().WithDegreeOfParallelism(10).ForAll();
 
             return result;
         }

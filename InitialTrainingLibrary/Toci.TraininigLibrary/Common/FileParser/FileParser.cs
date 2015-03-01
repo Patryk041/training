@@ -16,11 +16,12 @@ namespace Toci.TraininigLibrary.Common.FileParser
             FileName = fileName;
         }
 
-        //protected abstract IEnumerable<FileEntityBase> GetParsedData();
+        protected abstract FileEntityBase ReadRow();
 
         public IEnumerable<FileEntityBase> GetParsedData()
         {
             // TODO
+
             return null;
         }
 
