@@ -18,9 +18,11 @@ namespace Toci.TraininigLibrary.Common.FileParser
 
         protected abstract FileEntityBase ReadRow();
 
-        public IEnumerable<FileEntityBase> GetParsedData()
+        public FileEntityBase GetParsedData(string line)
         {
             // TODO
+            //TDetails details = new TDetails();
+            //details.ReadEntry(line);
 
             return null;
         }

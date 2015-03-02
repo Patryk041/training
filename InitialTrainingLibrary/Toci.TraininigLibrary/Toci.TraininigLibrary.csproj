@@ -54,6 +54,8 @@
     <Compile Include="Common\Interfaces\InternetStore\IBin.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IDiscount.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IPurchase.cs" />
+    <Compile Include="Developers\Dysq\DysqFileEntity.cs" />
+    <Compile Include="Developers\Dysq\DysqFileParser.cs" />
     <Compile Include="Logic\AccountTranferParseSaveLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

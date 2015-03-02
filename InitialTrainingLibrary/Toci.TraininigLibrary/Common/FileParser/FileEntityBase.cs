@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Common.FileParser
 {
-    public class FileEntityBase
+    public abstract class FileEntityBase
     {
         public string Name { get; protected set; }
         public string Surname { get; protected set; }
