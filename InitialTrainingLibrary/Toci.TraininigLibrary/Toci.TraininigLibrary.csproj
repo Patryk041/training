@@ -54,6 +54,11 @@
     <Compile Include="Common\Interfaces\InternetStore\IBin.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IDiscount.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IPurchase.cs" />
+    <Compile Include="Developers\Domi\DomiFileDetails.cs" />
+    <Compile Include="Developers\Domi\DomiFileEntity.cs" />
+    <Compile Include="Developers\Domi\DomiFileFooter.cs" />
+    <Compile Include="Developers\Domi\DomiFileParser.cs" />
+    <Compile Include="Developers\Domi\DomiFileHeader.cs" />
     <Compile Include="Developers\Dysq\DysqFileEntity.cs" />
     <Compile Include="Developers\Dysq\DysqFileParser.cs" />
     <Compile Include="Logic\AccountTranferParseSaveLogic.cs" />
@@ -71,6 +76,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\DomiFileAccount.txt" />
     <Content Include="data\transfer_2015-03-01_321434535_warrior.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
