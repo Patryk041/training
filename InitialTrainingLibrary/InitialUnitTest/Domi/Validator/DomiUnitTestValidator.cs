@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
+using InitialTrainingLibrary;
 using InitialTrainingLibrary.Domi.Validator;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

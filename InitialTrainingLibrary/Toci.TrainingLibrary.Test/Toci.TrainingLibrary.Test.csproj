@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Developers\Domi\DomiFileParserTest.cs" />
     <Compile Include="Developers\Dysq\DysqFileParserTest.cs" />
     <Compile Include="Developers\Hipek\HipekFileParserTest.cs" />
     <Compile Include="Developers\Warrior\WarriorFileParserTest.cs" />

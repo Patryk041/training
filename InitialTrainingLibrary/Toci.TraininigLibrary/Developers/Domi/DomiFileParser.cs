@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,13 +10,15 @@ namespace Toci.TraininigLibrary.Developers.Domi
 {
     class DomiFileParser : FileParser<DomiFileHeader, DomiFileDetails, DomiFileFooter>
     {
-        public DomiFileParser(string fileName) : base(fileName, new DomiFileDetails())
+        public DomiFileParser(string fileName, DomiFileDetails details) : base(fileName, details)
         {
+            FileName = fileName;
+            DetailsParser = details;
         }
 
         public override string GetName()
         {
-            return "Domi"; 
+            return FileName; 
         }
 
         public override void Dispose()
