@@ -1,10 +1,7 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-<<<<<<< HEAD
-using InitialTrainingLibrary.robson;  
-=======
+using Microsoft.VisualStudio.TestTools.UnitTesting; 
 using InitialTrainingLibrary.robson;
->>>>>>> ba7257324624db24e669fe9aa650b098cc3efc44
+
 
 namespace InitialUnitTest.robson
 {
