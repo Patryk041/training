@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Toci.DbVirtualization.Interfaces;
+using Toci.TraininigLibrary.Common.Interfaces.FileParser;
 
 namespace Toci.TraininigLibrary.Common.FileParser
 {
-    public abstract class FileEntityBase
+    public class FileEntityBase : IDbSave
     {
         public string Name { get; protected set; }
         public string Surname { get; protected set; }
@@ -23,7 +25,10 @@ namespace Toci.TraininigLibrary.Common.FileParser
             return string.Format("{0} {1} {2} {3}", Name, Surname, Date, Account);
         }
 
-        
+        public bool Save(FileEntityBase entry, IModel dataBaseModel)
+        {
+            throw new NotImplementedException();
+        }
         
     }
 }
