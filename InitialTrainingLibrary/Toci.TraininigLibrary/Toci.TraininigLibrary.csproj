@@ -55,7 +55,10 @@
     <Compile Include="Common\Interfaces\InternetStore\IDiscount.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IPurchase.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileDetailParser.cs" />
+    <Compile Include="Developers\Hipek\FileParser\HipekFileDetailsParser.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileEntity.cs" />
+    <Compile Include="Developers\Hipek\FileParser\HipekFileFooterParser.cs" />
+    <Compile Include="Developers\Hipek\FileParser\HipekFileHeaderParser.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileParser.cs" />
     <Compile Include="Developers\Domi\DomiFileDetails.cs" />
     <Compile Include="Developers\Domi\DomiFileEntity.cs" />
