@@ -11,14 +11,40 @@ namespace Toci.TraininigLibrary.Developers.Domi
    public class DomiFileEntity : FileEntityBase
     {
 
-       public override string ToString()
+
+       public override string ToString()    // po co nam dwie te same metody, które zwracają dokładnie to samo? 
        {
-           return base.ToString();
+           return string.Format("{0} {1} {2} {3}", Name, Surname, Date, Account);
        }
 
        public override string GetLine()
        {
-           return base.GetLine(); 
+
+           return string.Format("{0},{1},{2},{3}", Name, Surname, Date, Account); 
        }
-    }
+
+       public string GetName(string name)
+       {
+           Name = name; 
+           return Name;
+       }
+
+       public string GetSurname(string surname)
+       {
+           Surname = surname;
+           return Surname;
+       }
+
+       public DateTime GetDate(string dateTime)
+       {
+           Date = Convert.ToDateTime(dateTime);  
+           return Date;
+       }
+
+       public string GetAccount(string account)
+       {
+           Account = account; 
+           return Account;
+       }
+   }
 }
