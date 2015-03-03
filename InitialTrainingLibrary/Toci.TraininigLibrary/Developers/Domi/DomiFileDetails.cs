@@ -11,6 +11,7 @@ namespace Toci.TraininigLibrary.Developers.Domi
     {
         public override FileEntityBase ReadEntry(string fileLine)
         {
+            // todo parse the file entry line here and fill DomiFileEntity
             throw new NotImplementedException();
         }
     }

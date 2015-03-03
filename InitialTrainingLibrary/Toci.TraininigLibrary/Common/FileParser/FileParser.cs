@@ -11,20 +11,26 @@ namespace Toci.TraininigLibrary.Common.FileParser
     {
         protected string FileName;
 
-        protected FileParser(string fileName)
+        protected TDetails DetailsParser;
+
+        protected FileEntityBase Row;
+
+        protected FileParser(string fileName, TDetails detailsParser)
         {
             FileName = fileName;
+            DetailsParser = detailsParser;
         }
 
-        protected abstract FileEntityBase ReadRow();
+        //protected abstract FileEntityBase ReadRow();
 
         public FileEntityBase GetParsedData(string line)
         {
             // TODO
             //TDetails details = new TDetails();
-            //details.ReadEntry(line);
+            Row = DetailsParser.ReadEntry(line);
 
-            return null;
+
+            return Row;
         }
 
         public abstract string GetName();
