@@ -54,7 +54,10 @@
     <Compile Include="Common\Interfaces\InternetStore\IBin.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IDiscount.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IPurchase.cs" />
+    <Compile Include="Developers\Dysq\DysqFileDetailParser.cs" />
     <Compile Include="Developers\Dysq\DysqFileEntity.cs" />
+    <Compile Include="Developers\Dysq\DysqFileFooterParser.cs" />
+    <Compile Include="Developers\Dysq\DysqFileHeaderParser.cs" />
     <Compile Include="Developers\Dysq\DysqFileParser.cs" />
     <Compile Include="Logic\AccountTranferParseSaveLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\transfer_2015-03-01_321434535_warrior.txt" />
+    <Content Include="data\transfer_2015_03_02_987654321_dysq.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
