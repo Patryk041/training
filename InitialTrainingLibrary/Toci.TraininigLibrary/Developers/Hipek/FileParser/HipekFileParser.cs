@@ -5,10 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Common.FileParser;
 
-namespace Toci.TraininigLibrary.Common.Interfaces.FileParser
+namespace Toci.TraininigLibrary.Developers.Hipek.FileParser
 {
-    public interface IFileSection
+    public class HipekFileParser //: FileParser<>
     {
-        FileEntityBase ReadEntry(string fileLine);
     }
 }

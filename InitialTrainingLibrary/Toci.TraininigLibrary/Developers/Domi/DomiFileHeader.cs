@@ -5,10 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Common.FileParser;
 
-namespace Toci.TraininigLibrary.Common.Interfaces.FileParser
+namespace Toci.TraininigLibrary.Developers.Domi
 {
-    public interface IFileSection
+    public class DomiFileHeader : FileHeaderParserBase
     {
-        FileEntityBase ReadEntry(string fileLine);
     }
 }

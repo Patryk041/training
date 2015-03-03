@@ -54,18 +54,37 @@
     <Compile Include="Common\Interfaces\InternetStore\IBin.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IDiscount.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IPurchase.cs" />
+    <Compile Include="Developers\Hipek\FileParser\HipekFileEntity.cs" />
+    <Compile Include="Developers\Hipek\FileParser\HipekFileParser.cs" />
+    <Compile Include="Developers\Domi\DomiFileDetails.cs" />
+    <Compile Include="Developers\Domi\DomiFileEntity.cs" />
+    <Compile Include="Developers\Domi\DomiFileFooter.cs" />
+    <Compile Include="Developers\Domi\DomiFileParser.cs" />
+    <Compile Include="Developers\Domi\DomiFileHeader.cs" />
+    <Compile Include="Developers\Dysq\DysqFileEntity.cs" />
+    <Compile Include="Developers\Dysq\DysqFileParser.cs" />
     <Compile Include="Logic\AccountTranferParseSaveLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
     <Folder Include="Developers\Warrior\FileParser\" />
+    <Folder Include="Test\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
       <Project>{b39d28c8-a026-48bc-8040-95af3986608e}</Project>
       <Name>Toci.Dal</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Toci.DbVirtualization\Toci.DbVirtualization.csproj">
+      <Project>{4770951a-ad44-41ff-a7fa-25964046e9f8}</Project>
+      <Name>Toci.DbVirtualization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\transfer_2015-03-02_4325234564_domi.txt" />
+    <Content Include="data\transfer_2015-03-01_321434535_warrior.txt" />
+    <Content Include="data\transfer_2015-03-02_7777777_hipek.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

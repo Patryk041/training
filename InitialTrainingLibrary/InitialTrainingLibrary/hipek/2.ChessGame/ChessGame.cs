@@ -9,11 +9,12 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
 {
     public class ChessGame
     {
+        private ChessBoard _chessBoard;
 
-        public IBoardField[,] DrawBoard()
+        public void DrawBoard()
         {
-            ChessBoard chessBoard = new ChessBoard();
-            IBoardField[,] field = chessBoard.GetFields();
+            _chessBoard = new ChessBoard();
+            IBoardField[,] field = _chessBoard.GetFields();
 
             //biale gora
             field[0, 0].SetFigure(ChessFigureFactory.CreateFigure(0, 0, true, FigureKind.Rook));
@@ -54,7 +55,12 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
             field[6, 7].SetFigure(ChessFigureFactory.CreateFigure(6, 7, false, FigureKind.Horse));
             field[7, 7].SetFigure(ChessFigureFactory.CreateFigure(7, 7, false, FigureKind.Rook));
 
-            return field;
+            //return field;
+        }
+
+        public IBoard ReturnBoard()
+        {
+            return _chessBoard;
         }
         
     }

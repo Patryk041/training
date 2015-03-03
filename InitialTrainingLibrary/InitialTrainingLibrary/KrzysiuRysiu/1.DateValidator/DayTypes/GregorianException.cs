@@ -7,7 +7,7 @@ using InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.Interfaces;
 
 namespace InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.DayTypes
 {
-	public class GregorianException : IDayType
+	public class GregorianException : Exception, IDayType
 	{
 		private int minDay = 1;
 		private int maxDay = 28;

@@ -42,7 +42,7 @@ namespace InitialTrainingLibrary.hipek._2.ChessGame
 
         public string GetName()
         {
-            throw new NotImplementedException();
+            return "Hipek";
         }
     } 
 }

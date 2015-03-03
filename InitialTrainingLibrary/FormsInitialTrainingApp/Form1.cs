@@ -56,6 +56,12 @@ namespace FormsInitialTrainingApp
                     var dysqBoard = new InitializeBoard();
                     return dysqBoard.ChessBoard;
                 },
+                 (liczba) =>
+                {
+                    var hipekBoard = new InitialTrainingLibrary.hipek._2.ChessGame.ChessGame();
+                    hipekBoard.DrawBoard();
+                    return hipekBoard.ReturnBoard();
+                },
             };
 
             int i = 0;

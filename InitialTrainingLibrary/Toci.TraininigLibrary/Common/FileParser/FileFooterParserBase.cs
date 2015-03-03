@@ -7,9 +7,9 @@ using Toci.TraininigLibrary.Common.Interfaces.FileParser;
 
 namespace Toci.TraininigLibrary.Common.FileParser
 {
-    class FileFooterParserBase : IFileSection
+    public class FileFooterParserBase : IFileSection
     {
-        public string ReadEntry()
+        public FileEntityBase ReadEntry(string fileLine)
         {
             throw new NotImplementedException();
         }

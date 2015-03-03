@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,11 +13,75 @@ namespace Toci.TraininigLibrary.Common.FileParser
     {
         protected Func<FileEntityBase, bool> CustomCallback; 
 
-        protected List<FileParser<IFileSection, IFileSection, IFileSection>> parsers = new List<FileParser<IFileSection, IFileSection, IFileSection>>();
+        //protected List<FileParser<IFileSection, IFileSection, IFileSection>> parsers = new List<FileParser<IFileSection, IFileSection, IFileSection>>();
 
         public ParallelFileParser(Func<FileEntityBase, bool> customCallback)
         {
             CustomCallback = customCallback;
+        }
+
+        public virtual List<Task> ParseFile(FileParser<IFileSection, IFileSection, IFileSection> fileParser, 
+            StreamReader fileReader, FileEntityBase resultContainter, int threadsCount)
+        {
+            List<Task> list = new List<Task>();
+
+            List<string> lines = new List<string>();
+
+            while (!fileReader.EndOfStream)
+            {
+                lines.Add(fileReader.ReadLine());
+            }
+
+            for (int i = 0; i<threadsCount; i++)
+            {
+                var start = threadsCount*i;
+                  // = new Task(ReadSection(fileReader, start, threadsCount));
+                list.Add(Task.Factory.StartNew(ReadSection(fileParser, lines, start, threadsCount)));
+            }
+
+            foreach (var item in list)
+            {
+                item.Wait();
+            }
+
+            return list;
+        }
+
+
+        private Action ReadSection(FileParser<IFileSection, IFileSection, IFileSection> fileParser,
+            List<string> lines, int start, int count)
+        {
+
+
+            // wywolac custom callback dla zaczytanego wiersza, dac ifa czy ten callback istnieje
+
+
+
+            //logika wyczytujaca z pliku i parsuje
+            //for 
+            for (int i = start; i < start + count; i++)
+            {
+                if (i < lines.Count())
+                {
+                
+                var line = lines[i];
+
+                FileEntityBase entity = fileParser.GetParsedData(line);
+                if (CustomCallback != null)
+                {
+                    CustomCallback(entity);
+                }
+                if (lines.Count() <= start + count*count)
+                    ReadSection(fileParser, lines, start + count*count, count);
+                return null;
+                }
+        }
+
+        // start + count * count
+            //if
+            //ReadSection
+
+            return null;
         }
     }
 }

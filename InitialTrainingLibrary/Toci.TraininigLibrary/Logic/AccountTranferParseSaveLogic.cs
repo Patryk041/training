@@ -15,6 +15,8 @@ namespace Toci.TraininigLibrary.Logic
         public AccountTranferParseSaveLogic()
         {
             parallelFileParser = new ParallelFileParser<IDbSave>(DoOperation);
+            //BankAccountTransferModel
+            
         }
 
         private bool DoOperation(FileEntityBase fileEntity)
