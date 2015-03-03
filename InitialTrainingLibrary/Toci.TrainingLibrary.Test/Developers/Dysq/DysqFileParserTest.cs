@@ -21,7 +21,8 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq
             DysqFileDetailParser parser = new DysqFileDetailParser();
            
 
-          string filePath = @"E:\Szkolenia\InitialTrainingLibrary\Toci.TraininigLibrary\data\transfer_2015-03-02_987654321_dysq.txt";
+          //string filePath = @"E:\Szkolenia\InitialTrainingLibrary\Toci.TraininigLibrary\data\transfer_2015-03-02_987654321_dysq.txt";
+          string filePath = @"..\..\..\Toci.TraininigLibrary\data\transfer_2015-03-02_987654321_dysq.txt";
           //string filePath = @"F:\self\projects\training\InitialTrainingLibrary\Toci.TraininigLibrary\data\transfer_2015-03-02_987654321_dysq.txt";
 
             List<string> lines = new List<string>();
