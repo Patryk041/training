@@ -22,6 +22,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq
            
 
           string filePath = @"E:\Szkolenia\InitialTrainingLibrary\Toci.TraininigLibrary\data\transfer_2015-03-02_987654321_dysq.txt";
+          //string filePath = @"F:\self\projects\training\InitialTrainingLibrary\Toci.TraininigLibrary\data\transfer_2015-03-02_987654321_dysq.txt";
 
             List<string> lines = new List<string>();
 
@@ -33,7 +34,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq
 
            var test = parser.ReadEntry(lines[0]);
 
-            var x = 0;
+            Assert.AreEqual(test.Name, "Mateusz");
         }
     }
 }
