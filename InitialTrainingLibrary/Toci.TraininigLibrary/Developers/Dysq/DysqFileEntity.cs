@@ -24,7 +24,7 @@ namespace Toci.TraininigLibrary.Developers.Dysq
             Date = Convert.ToDateTime(dysqDate);
         }
 
-        public void setAccount(string dysqAccount)
+        public void SetAccount(string dysqAccount)
         {
             Account = dysqAccount;
         }

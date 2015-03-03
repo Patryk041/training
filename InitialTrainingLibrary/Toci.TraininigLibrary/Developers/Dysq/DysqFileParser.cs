@@ -9,31 +9,26 @@ using Toci.TraininigLibrary.Common.Interfaces.FileParser;
 
 namespace Toci.TraininigLibrary.Developers.Dysq
 {
-    public class DysqFileParser  //: FileParser<, DysqFileDetailParser, >
+    public class DysqFileParser : FileParser<DysqFileHeaderParser, DysqFileDetailParser, DysqFileFooterParser>
     {
-     /* DysqFileEntity : FileEntityBase                             ten parser bdzie wyywolany z tego co pisalem
-     * uzupelnia linie dysq file entity dzidziczaca po file entity base
-     * ReadEntry
-     * {
-     * rozpoznawac linijke tekstowa, uzupelniac propercje DysqFileEntity
-     */
-        private string path = @"E:\Szkolenia\InitialTrainingLibrary\Toci.TraininigLibrary\data\";
-        List<string> lines = new List<string>();
-        
-        public void parseMyTxtFiles()
+     
+        protected DysqFileDetailParser DysqDetailsParser;
+        protected string DysqFileName;
+
+        public DysqFileParser(string fileName, DysqFileDetailParser detailsParser) : base(fileName, detailsParser)
         {
-            IEnumerable<string> paths = Directory.GetDirectories(path);
+            DysqFileName = fileName;
+            DysqDetailsParser = detailsParser;
         }
 
-        public List<string> parseMyFile(FileParser<IFileSection, IFileSection, IFileSection> fileParser,
-            StreamReader reader)
-            {
-            while (!reader.EndOfStream)
-            {
-                reader.ReadLine().Split(new [] "-")
-            }
+        public override string GetName()
+        {
+            return "Dysq";
+        }
 
-            }
-
+        public override void Dispose()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
