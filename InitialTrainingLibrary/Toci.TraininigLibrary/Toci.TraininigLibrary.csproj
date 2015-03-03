@@ -68,12 +68,12 @@
     <Compile Include="Developers\Dysq\DysqFileParser.cs" />
     <Compile Include="Logic\AccountTranferParseSaveLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Test\koziu\ISaveFile.cs" />
+    <Compile Include="Common\Interfaces\FileParser\ISaveFile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
     <Folder Include="Developers\Warrior\FileParser\" />
-    <Folder Include="Test\" />
+    <Folder Include="Test\koziu\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">

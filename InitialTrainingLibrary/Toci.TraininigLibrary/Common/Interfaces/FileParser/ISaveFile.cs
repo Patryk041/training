@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Common.FileParser;
 
-namespace Toci.TraininigLibrary.Test.koziu
+namespace Toci.TraininigLibrary.Common.Interfaces.FileParser
 {
     public interface ISaveFile
     {
-       bool saveFile(List<FileEntityBase> streamList);        
+       bool SaveFile(List<FileEntityBase> entriesList, string fileName);        
     }
 }
