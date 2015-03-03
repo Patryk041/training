@@ -50,11 +50,18 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Developers\Dysq\DysqFileParserTest.cs" />
     <Compile Include="Developers\Warrior\WarriorFileParserTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toci.TraininigLibrary\Toci.TraininigLibrary.csproj">
+      <Project>{0ed59b72-4120-4f4e-8684-d3a1d1f6bbf2}</Project>
+      <Name>Toci.TraininigLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
