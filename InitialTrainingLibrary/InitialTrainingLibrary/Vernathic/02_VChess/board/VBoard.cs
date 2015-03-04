@@ -3,7 +3,7 @@ using System;
 
 namespace InitialTrainingLibrary.Vernathic._02_Chess
 {
-    public abstract class Board : IBoard
+    public abstract class VBoard : IBoard
     {
         public IBoardField[,] GetFields()
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InitialTrainingLibrary.Vernathic._01_DateValidator
 {
-    public class Month
+    public class VMonth
     {
         static bool IsCorrectMonth(int month)
         {
@@ -31,7 +31,7 @@ namespace InitialTrainingLibrary.Vernathic._01_DateValidator
             {
                 if (month == 2)
                 {
-                    if (LeapYear.IsLeapYear(year))
+                    if (VLeapYear.IsLeapYear(year))
                         return 29;
                     else return 28;
                 }
