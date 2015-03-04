@@ -22,11 +22,6 @@ namespace Toci.TraininigLibrary.Developers.Santi.FileParser
 		}
 
 		//Methods
-		public FileEntityBase GetParsedData(string line)
-		{
-			return detailParser.ReadEntry(line);
-		}
-
 		public override string GetName()
 		{
 			return "Santi";
