@@ -11,7 +11,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Domi
     public class DomiFileParserTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void DomiTestDomiFileDetailsParser()
         {
             DomiFileDetails details = new DomiFileDetails();
         
@@ -30,7 +30,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Domi
             
             Assert.AreEqual(test.Name, "Dominika");
             Assert.AreEqual(test.Surname, "Dziurzynska");
-          //  Assert.AreEqual(test.Date, "2015-03-13 00:00:00"); nie działa mi porównanie z datą 
+            Assert.AreEqual(test.Date.ToString(), "2015-03-13 00:00:00"); //nie działa mi porównanie z datą 
             Assert.AreEqual(test.Account, "13039302007");
 
         }

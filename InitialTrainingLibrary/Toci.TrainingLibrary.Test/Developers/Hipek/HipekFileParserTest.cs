@@ -15,12 +15,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Hipek
         {
             string fileName = @"..\..\..\Toci.TraininigLibrary\data\transfer_2015-03-02_7777777_hipek.txt";
 
-           
-            HipekFileDetailsParser detailsParser = new HipekFileDetailsParser();    
-
-            HipekFileParser fileParser = new HipekFileParser(fileName, detailsParser);
-
-            //fileParser.GetParsedData()
+            HipekFileParser fileParser = new HipekFileParser(fileName);
 
             List<string> lines = new List<string>();
 
@@ -36,16 +31,13 @@ namespace Toci.TrainingLibrary.Test.Developers.Hipek
 
             foreach (var line in lines)
             {
-                entityBases.Add(detailsParser.ReadEntry(line));
+                entityBases.Add(fileParser.GetParsedData(line));
             }
 
             Assert.AreEqual(entityBases[5].Name, "Zbychu");
             Assert.AreEqual(entityBases[5].Surname, "Kowalski");
-            //Assert.AreEqual(entityBases[5].Date, "2015-03-02");
+            Assert.AreEqual(entityBases[5].Date.ToString(), "2015-03-02 00:00:00");
             Assert.AreEqual(entityBases[5].Account, "123123123");
-            
-
-            int i = 3;
 
         }
     }

@@ -10,7 +10,7 @@ namespace Toci.TraininigLibrary.Developers.Hipek.FileParser
 {
     public class HipekFileParser : FileParser<HipekFileHeaderParser, HipekFileDetailsParser, HipekFileFooterParser>
     {
-        public HipekFileParser(string fileName, HipekFileDetailsParser detailsParser) : base(fileName, detailsParser)
+        public HipekFileParser(string fileName) : base(fileName, new HipekFileDetailsParser())
         {
  
         }
