@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace InitialTrainingLibrary.Vernathic._01_DateValidator
 {
-    class Day
+    class VDay
     {
         public static bool IsCorrectDay(int year, int month, int day)
         {
-            if ((1 <= day) || (day <= Month.GetMonthLenght(year, month)))
+            if ((1 <= day) || (day <= VMonth.GetMonthLenght(year, month)))
                 return true;
             else return false;
         }

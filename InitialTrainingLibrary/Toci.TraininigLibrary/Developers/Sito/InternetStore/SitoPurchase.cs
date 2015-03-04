@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InitialTrainingLibrary.Vernathic
+namespace Toci.TraininigLibrary.Developers.Sito.InternetStore
 {
-    class FirstClass
+    class SitoPurchase
     {
-        //I hope it's finnaly done.
     }
 }

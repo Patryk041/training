@@ -7,7 +7,7 @@ using InitialTrainingLibrary.Interfaces;
 
 namespace InitialTrainingLibrary.Vernathic._01_DateValidator
 {
-    public class DateValidator : IDateValidator
+    public class VDateValidator : IDateValidator
     {
         //DateValidator - TODO:
         //  1. create classes responsible for validate if set year, month, day gives correct date
@@ -22,7 +22,7 @@ namespace InitialTrainingLibrary.Vernathic._01_DateValidator
         public bool DateValidate(int year, int month, int day)
         {
             //throw new NotImplementedException();
-            if (Day.IsCorrectDay(year, month, day))
+            if (VDay.IsCorrectDay(year, month, day))
                 return true;
             else
                 return false;
