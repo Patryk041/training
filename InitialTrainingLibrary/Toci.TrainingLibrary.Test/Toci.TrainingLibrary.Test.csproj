@@ -53,6 +53,7 @@
     <Compile Include="Developers\Domi\DomiFileParserTest.cs" />
     <Compile Include="Developers\Dysq\DysqFileParserTest.cs" />
     <Compile Include="Developers\Hipek\HipekFileParserTest.cs" />
+    <Compile Include="Developers\Santi\SantiFileParserTest.cs" />
     <Compile Include="Developers\Warrior\WarriorFileParserTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
