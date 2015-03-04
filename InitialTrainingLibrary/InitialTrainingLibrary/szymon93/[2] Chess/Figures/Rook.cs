@@ -9,6 +9,6 @@ namespace InitialTrainingLibrary.szymon93._2__Chess.Figures
 {
 	class Rook
 	{
-
+		
 	}
 }
