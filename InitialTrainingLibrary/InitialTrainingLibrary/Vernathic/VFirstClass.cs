@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InitialTrainingLibrary.Vernathic
 {
-    class FirstClass
+    class VFirstClass
     {
         //I hope it's finnaly done.
     }

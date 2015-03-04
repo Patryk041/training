@@ -7,24 +7,14 @@ using System.Threading.Tasks;
 
 namespace InitialTrainingLibrary.Vernathic._02_Chess
 {
-    class Figure : IFigure
+    class VCoordinates : ICoordinates
     {
-        public bool IsFigureWhite()
+        public int GetX()
         {
             throw new NotImplementedException();
         }
 
-        public ICoordinates GetCoordinates()
-        {
-            throw new NotImplementedException();
-        }
-
-        public FigureKind GetFigureKind()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Move(ICoordinates newCoordinates)
+        public int GetY()
         {
             throw new NotImplementedException();
         }

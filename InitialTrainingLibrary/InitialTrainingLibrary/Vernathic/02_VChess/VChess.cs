@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InitialTrainingLibrary.Vernathic._02_Chess
 {
-    class Chess
+    class VChess
     {
         //2. Chess - 
         //TODO:: create chess board and chess figures as classes (w/o user interface)

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InitialTrainingLibrary.Vernathic._02_Chess.board
 {
-    class BoardField : IBoardField
+    class VBoardField : IBoardField
     {
         public bool IsFieldWhite()
         {

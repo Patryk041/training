@@ -68,7 +68,7 @@ namespace InitialUnitTest.frogie
                 new InitialTrainingLibrary.Domi.Validator.DataValidator(),
                 new InitialTrainingLibrary.Chmura.DateTimeValidator.DateValidator(),
                 new InitialTrainingLibrary.KrzysiuRysiu._1.DateValidator.DateValidator(),
-                new InitialTrainingLibrary.Vernathic._01_DateValidator.DateValidator()
+                new InitialTrainingLibrary.Vernathic._01_DateValidator.VDateValidator()
             };
 
             List<EfficiencyMonitorEntity> efficiencyResults = new List<EfficiencyMonitorEntity>(testCollection.Count);

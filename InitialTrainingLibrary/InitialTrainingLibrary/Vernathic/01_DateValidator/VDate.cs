@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace InitialTrainingLibrary.Vernathic._01_DateValidator
 {
-    public class Date
+    public class VDate
     {
         public int year, month, day;
 
-        public Date(int year, int month, int day)
+        public VDate(int year, int month, int day)
         {
             year = this.year;
             month = this.month;

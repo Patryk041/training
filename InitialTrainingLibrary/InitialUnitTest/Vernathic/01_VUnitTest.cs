@@ -12,13 +12,13 @@ namespace InitialUnitTest.Vernathic
         [TestMethod]
         public void TestDateValidator()
         {
-            Date date = new Date(1693,2,30);
+            VDate date = new VDate(1693,2,30);
 
-            DateValidator validator = new DateValidator();
+            VDateValidator validator = new VDateValidator();
             Assert.IsTrue(validator.DateValidate(date.year, date.month, date.day));
 
-            Assert.IsFalse(LeapYear.IsLeapYear(date.year));
-            Assert.AreEqual(Month.GetMonthLenght(date.year, date.month), 30);
+            Assert.IsFalse(VLeapYear.IsLeapYear(date.year));
+            Assert.AreEqual(VMonth.GetMonthLenght(date.year, date.month), 30);
         }
 
         [TestMethod]
