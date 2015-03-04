@@ -69,12 +69,15 @@
     <Compile Include="Developers\Dysq\FileParser\DysqFileFooterParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileHeaderParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileParser.cs" />
+    <Compile Include="Developers\Mg\MgFileParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileDetailParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileEntity.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileFooterParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileHeaderParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileParser.cs" />
     <Compile Include="Logic\AccountTranferParseSaveLogic.cs" />
+    <Compile Include="Logic\DirectoryFileList.cs" />
+    <Compile Include="Logic\ParsersFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\Interfaces\FileParser\ISaveFile.cs" />
   </ItemGroup>
