@@ -54,6 +54,15 @@
     <Compile Include="Common\Interfaces\InternetStore\IBin.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IDiscount.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IPurchase.cs" />
+    <Compile Include="Developers\Dysq\Bin\DysqBin.cs" />
+    <Compile Include="Developers\Dysq\Bin\DysqPurshase.cs" />
+    <Compile Include="Developers\Dysq\Bin\DysqBase\BootKind.cs" />
+    <Compile Include="Developers\Dysq\Bin\DysqBase\Boots.cs" />
+    <Compile Include="Developers\Dysq\Bin\Products\CowboyBoots.cs" />
+    <Compile Include="Developers\Dysq\Bin\Products\HighHeelBoots.cs" />
+    <Compile Include="Developers\Dysq\Bin\Products\Sandals.cs" />
+    <Compile Include="Developers\Dysq\Bin\Products\Schoes.cs" />
+    <Compile Include="Developers\Dysq\Bin\Products\SportsBoots.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileDetailParser.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileEntity.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileParser.cs" />
