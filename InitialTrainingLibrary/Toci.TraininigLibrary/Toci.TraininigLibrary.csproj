@@ -74,12 +74,14 @@
     <Compile Include="Developers\Santi\FileParser\SantiFileFooterParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileHeaderParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileParser.cs" />
+    <Compile Include="Developers\Sito\InternetStore\SitoBin.cs" />
     <Compile Include="Logic\AccountTranferParseSaveLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\Interfaces\FileParser\ISaveFile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
+    <Folder Include="Developers\Sito\FileParser\" />
     <Folder Include="Developers\Warrior\FileParser\" />
     <Folder Include="Test\koziu\" />
   </ItemGroup>
