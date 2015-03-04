@@ -10,10 +10,9 @@ namespace Toci.TraininigLibrary.Developers.Domi
 {
     class DomiFileParser : FileParser<DomiFileHeader, DomiFileDetails, DomiFileFooter>
     {
-        public DomiFileParser(string fileName, DomiFileDetails details) : base(fileName, details)
+        public DomiFileParser(string fileName) : base(fileName, new DomiFileDetails())
         {
-            FileName = fileName;
-            DetailsParser = details;
+            
         }
 
         public override string GetName()
