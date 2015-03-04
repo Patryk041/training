@@ -9,19 +9,10 @@ namespace Toci.TraininigLibrary.Common.Base.InternetStore
 {
     public abstract class BinBase : IBin
     {
-        public Dictionary<string, IPurchase> Purchases()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Dictionary<string, IPurchase> Purchases();
 
-        public string DevNickName()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract  string DevNickName();
 
-        public IDiscount GetDiscount()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract IDiscount GetDiscount();
     }
 }
