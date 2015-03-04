@@ -69,6 +69,11 @@
     <Compile Include="Developers\Dysq\FileParser\DysqFileFooterParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileHeaderParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileParser.cs" />
+    <Compile Include="Developers\Santi\FileParser\SantiFileDetailParser.cs" />
+    <Compile Include="Developers\Santi\FileParser\SantiFileEntity.cs" />
+    <Compile Include="Developers\Santi\FileParser\SantiFileFooterParser.cs" />
+    <Compile Include="Developers\Santi\FileParser\SantiFileHeaderParser.cs" />
+    <Compile Include="Developers\Santi\FileParser\SantiFileParser.cs" />
     <Compile Include="Logic\AccountTranferParseSaveLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\Interfaces\FileParser\ISaveFile.cs" />
@@ -93,6 +98,7 @@
     <Content Include="data\transfer_2015-03-01_321434535_warrior.txt" />
     <Content Include="data\transfer_2015-03-02_987654321_dysq.txt" />
     <Content Include="data\transfer_2015-03-02_7777777_hipek.txt" />
+    <Content Include="data\transfer_2015-03-04_123456789_santi.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
