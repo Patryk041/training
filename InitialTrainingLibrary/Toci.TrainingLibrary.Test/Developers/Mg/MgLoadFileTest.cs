@@ -13,7 +13,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Mg
 
 
 
-            var directoryList = "".GetDirectoryFileList();
+            var directoryList = "defaultPath".GetDirectoryFileList();
             var parserName = directoryList[0].GetName();
 
             ParsersFactory pf = new ParsersFactory();

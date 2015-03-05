@@ -18,7 +18,7 @@ namespace Toci.TraininigLibrary.Logic
         public static string[] GetDirectoryFileList(this string path)
         {
 
-            path = path == "" ? new StringBuilder(Directory.GetParent(
+            path = path == "defaultPath" ? new StringBuilder(Directory.GetParent(
                  Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).ToString()).ToString())
                  .ToString()).Append(@"\Toci.TraininigLibrary\data").ToString() : path;
 
