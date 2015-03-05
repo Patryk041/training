@@ -78,6 +78,11 @@
     <Compile Include="Developers\Dysq\FileParser\DysqFileFooterParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileHeaderParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileParser.cs" />
+    <Compile Include="Developers\Koziu\InternetStore\BikeKind.cs" />
+    <Compile Include="Developers\Koziu\InternetStore\Bike.cs" />
+    <Compile Include="Developers\Koziu\InternetStore\KoziuBin.cs" />
+    <Compile Include="Developers\Koziu\InternetStore\KoziuBinCollection.cs" />
+    <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />
     <Compile Include="Developers\Mg\MgFileParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileDetailParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileEntity.cs" />
@@ -90,12 +95,12 @@
     <Compile Include="Logic\ParsersFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\Interfaces\FileParser\ISaveFile.cs" />
+    <Compile Include="Test\koziu\FileGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
     <Folder Include="Developers\Sito\FileParser\" />
     <Folder Include="Developers\Warrior\FileParser\" />
-    <Folder Include="Test\koziu\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">

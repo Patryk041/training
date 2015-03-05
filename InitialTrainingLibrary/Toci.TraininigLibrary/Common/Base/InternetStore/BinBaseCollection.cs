@@ -8,5 +8,6 @@ namespace Toci.TraininigLibrary.Common.Base.InternetStore
 {
     public class BinBaseCollection : Dictionary<string, BinBase>
     {
+
     }
 }
