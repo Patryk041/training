@@ -22,48 +22,8 @@ namespace InitialTrainingLibrary.robson.ChessGame
                 {FigureKind.Queen, (x,y,color)=> new Queen(x,y,color)},
                 {FigureKind.Rook, (x,y,color)=> new Rook(x,y,color)}
             };
-
-
-            var x = figure[type](xCord, yCord, colorValue);
+      
             return figure[type](xCord, yCord, colorValue);
-
-        
-
-            
-        }
-
-        //    (x, y, color)=> new Bishop(x, y, color)
-
-        private IFigure zworcBiszopa(int x, int y, FigureColor kolora)
-        {
-            return new Bishop(x, y, kolora);
-        }
-        public static IFigure ChooseFigure(int xCord, int yCord, FigureColor colorValue, FigureKind type)
-        {
-            switch(type)
-            {
-                case FigureKind.Bishop:
-                    return new Bishop(xCord, yCord, colorValue);
-
-                case FigureKind.Horse:
-                    return new Horse(xCord, yCord, colorValue);
-
-                case FigureKind.King:
-                    return new King(xCord, yCord, colorValue);
-
-                case FigureKind.Pawn:
-                    return new Pawn(xCord, yCord, colorValue);
-
-                case FigureKind.Queen:
-                    return new Queen(xCord, yCord, colorValue);
-
-                case FigureKind.Rook:
-                    return new Rook(xCord, yCord, colorValue);
-
-                default:
-                    return null;
-
-            }
         }
     }
 }
