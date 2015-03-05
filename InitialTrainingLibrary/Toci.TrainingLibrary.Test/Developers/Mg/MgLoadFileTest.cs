@@ -10,15 +10,16 @@ namespace Toci.TrainingLibrary.Test.Developers.Mg
         [TestMethod]
         public void LoadFiles()
         {
-           
-            //const string path = @"C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\Toci.TraininigLibrary\data";
 
-            var directoryList = DirectoryFileList.GetPathList();
-            var parsersNames = DirectoryFileList.GetParsersNames(directoryList);
+
+
+            var directoryList = "".GetDirectoryFileList();
+            var parserName = directoryList[0].GetName();
 
             ParsersFactory pf = new ParsersFactory();
+          //  pf.GetData()
+            var z = pf.GetData(directoryList);
 
-            var xyz = pf.GetData(parsersNames[0],directoryList[0]);
 
         }
     }

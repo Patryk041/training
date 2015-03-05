@@ -8,12 +8,25 @@ using System.Threading.Tasks;
 namespace Toci.TraininigLibrary.Logic
 {
     public static class DirectoryFileList
+    {  /// <summary>
+        /// Zwraca ścieżki plików w katalogu. Domyślnie "~\Toci.TrainingLibrary\data"
+        /// </summary>
+        /// <param name="path">Ścieżka katalogu, default = ~\Toci.TrainingLibrary\data</param>
+        public static string[] GetPathList(string path="")
     {
-        public static string[] GetPathList()
-        {
-            return Directory.GetFiles(@"C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\Toci.TraininigLibrary\data");
+
+      path = path == "" ? new StringBuilder(Directory.GetParent(
+              Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).ToString()).ToString())
+              .ToString()).Append(@"\Toci.TraininigLibrary\data").ToString() : path;
+           
+     
+            return Directory.GetFiles(path);
         }
 
+        /// <summary>
+        /// Zwraca nazwy parserów zapisane dużymi literami (.ToUpper())
+        /// </summary>
+        /// <param name="filesList">Tablica strimmg[] listy plików</param>
         public static string[] GetParsersNames(string[] filesList)
         {
             string[] parserList = new string[filesList.Length];
@@ -29,6 +42,7 @@ namespace Toci.TraininigLibrary.Logic
                     parserList[i] += splitList[splitList.Length - 1][j];
                     j++;
                 }
+                parserList[i] = parserList[i].ToUpper();
                 j = 0;
                 i++;
             }

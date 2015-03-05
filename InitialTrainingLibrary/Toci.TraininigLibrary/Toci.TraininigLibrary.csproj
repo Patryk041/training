@@ -96,7 +96,10 @@
     <Compile Include="Developers\Santi\FileParser\SantiFileParser.cs" />
     <Compile Include="Developers\Sito\InternetStore\SitoBin.cs" />
     <Compile Include="Logic\AccountTranferParseSaveLogic.cs" />
-    <Compile Include="Logic\DirectoryFileList.cs" />
+    <Compile Include="Logic\DirectoryFileList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\StringPathsExtensions.cs" />
     <Compile Include="Logic\ParsersFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\Interfaces\FileParser\ISaveFile.cs" />

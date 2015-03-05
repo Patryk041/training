@@ -7,11 +7,16 @@ using Toci.TraininigLibrary.Common.FileParser;
 
 namespace Toci.TraininigLibrary.Developers.Mg
 {
-    public class MgFileParser
+    public class MgFileParser:FileDetailParserBase
     {
-        public FileEntityBase GetParser(string path)
+        public MgFileParser()
         {
-            return new FileEntityBase();
+            
+        }
+
+        public override FileEntityBase ReadEntry(string fileLine)
+        {
+            throw new NotImplementedException();
         }
     }
 }
