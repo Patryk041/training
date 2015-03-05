@@ -14,9 +14,9 @@ namespace Toci.TraininigLibrary.Test.koziu
     {
   
         private const string pattern = @"..\..\..\Toci.TraininigLibrary\data\transfer_{0}_{1}_{2}.txt"; 
-        private Random random = new Random();
-        private string fileName = "";
-        private string fileData = "";      
+        private Random _random = new Random();
+        private string _fileName = "";
+        private string _fileData = "";      
        
           
 
@@ -24,15 +24,15 @@ namespace Toci.TraininigLibrary.Test.koziu
         {
             foreach (var content in contents)
             {       
-                fileName = String.Format(pattern, DateTime.Today.ToShortDateString(), random.Next(100000000, 999999999), content.Key);
-                using (StreamWriter sw = new StreamWriter(fileName))
+                _fileName = String.Format(pattern, DateTime.Today.ToShortDateString(), _random.Next(100000000, 999999999), content.Key);
+                using (StreamWriter sw = new StreamWriter(_fileName))
                 {
-                    fileData = "";
+                    _fileData = "";
 
                     foreach (var value in content.Value)
                     {
-                        fileData = value.GetLine();    
-                        sw.WriteLine(fileData);
+                        _fileData = value.GetLine();    
+                        sw.WriteLine(_fileData);
                     }
                     sw.Close();
                 }         

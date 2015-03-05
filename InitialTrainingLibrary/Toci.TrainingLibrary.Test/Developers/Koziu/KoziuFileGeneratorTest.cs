@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Toci.TraininigLibrary.Common.FileParser;
 using Toci.TraininigLibrary.Developers.Domi;
 using Toci.TraininigLibrary.Developers.Dysq.FileParser;
+using Toci.TraininigLibrary.Developers.RS.FileParser;
 
 namespace Toci.TrainingLibrary.Test.Developers.Koziu
 {
@@ -19,6 +20,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Koziu
             DysqFileEntity a = new DysqFileEntity();
             DysqFileEntity b = new DysqFileEntity();
             DomiFileEntity c = new DomiFileEntity();
+            RsFileEntity d = new RsFileEntity();
 
             a.SetName("Dysq");
             a.SetSurname("Raz");
@@ -35,10 +37,19 @@ namespace Toci.TrainingLibrary.Test.Developers.Koziu
             c.GetDate(DateTime.Today.ToShortDateString());
             c.GetAccount("1234561234");
 
+            d.SetName("RS");
+            d.SetSurname("Raz");
+            d.SetDate(DateTime.Today.ToShortDateString());
+            d.SetAccount("1234561234");
+            
+
+
+
             List<FileEntityBase> fileEntity = new List<FileEntityBase>();
             fileEntity.Add(a);
             fileEntity.Add(b);    
-            fileEntity.Add(c);    
+            fileEntity.Add(c);  
+            fileEntity.Add(d);
             content.Add("Koziu", fileEntity);
             generator.Generate(content);
         
