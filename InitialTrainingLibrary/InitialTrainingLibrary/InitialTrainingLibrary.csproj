@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -156,6 +157,18 @@
     <Compile Include="mg\DateValidator\ValidatorLogic.cs" />
     <Compile Include="mg\Chess\InitializeBoard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="robson\ChessGame\ChessBoard.cs" />
+    <Compile Include="robson\ChessGame\ChessBoardField.cs" />
+    <Compile Include="robson\ChessGame\ChessBoardFieldCoordinates.cs" />
+    <Compile Include="robson\ChessGame\ChessBoardFigure.cs" />
+    <Compile Include="robson\ChessGame\ChessBoardFigureFactory.cs" />
+    <Compile Include="robson\ChessGame\FigureTypes\Bishop.cs" />
+    <Compile Include="robson\ChessGame\FigureTypes\Horse.cs" />
+    <Compile Include="robson\ChessGame\FigureTypes\King.cs" />
+    <Compile Include="robson\ChessGame\FigureTypes\Pawn.cs" />
+    <Compile Include="robson\ChessGame\FigureTypes\Queen.cs" />
+    <Compile Include="robson\ChessGame\FigureTypes\Rook.cs" />
+    <Compile Include="robson\ChessGame\SetUpGame.cs" />
     <Compile Include="robson\Date.cs" />
     <Compile Include="RS\Chess\Board.cs" />
     <Compile Include="RS\Chess\BoardField.cs" />

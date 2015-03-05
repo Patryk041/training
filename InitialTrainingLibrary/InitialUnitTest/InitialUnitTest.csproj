@@ -65,6 +65,7 @@
     <Compile Include="KrzysiuRysiu\UnitTest1.cs" />
     <Compile Include="mg\UnitTest1.cs" />
     <Compile Include="robson\DateValidator.cs" />
+    <Compile Include="robson\ChessValidator.cs" />
     <Compile Include="RS\DateValidatorTests.cs" />
     <Compile Include="Sito\SitoTest.cs" />
     <Compile Include="szymon93\TestClass.cs" />
