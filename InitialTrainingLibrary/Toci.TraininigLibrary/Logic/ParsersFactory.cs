@@ -23,10 +23,12 @@ namespace Toci.TraininigLibrary.Logic
           
         //FileParser<DomiFileHeader, DomiFileDetails, DomiFileFooter> abc = new DomiFileParser("a");
 
-            Dictionary<string, Func<FileParser<FileHeaderParserBase, FileDetailParserBase, FileFooterParserBase>>> parserFactory = new Dictionary<string, Func<FileParser<FileHeaderParserBase, FileDetailParserBase, FileFooterParserBase>>>()
+            //Dictionary<string, Func<FileParser<FileHeaderParserBase, FileDetailParserBase, FileFooterParserBase>>> parserFactory = new Dictionary<string, Func<FileParser<FileHeaderParserBase, FileDetailParserBase, FileFooterParserBase>>>()
+            Dictionary<string, Func<FileDetailParserBase>> parserFactory = new Dictionary<string, Func<FileDetailParserBase>>()
             {
               //  {"mg",(_path) => new MgFileParser().GetParser(path)}
               //  { "Domi", () => { return (FileParser<FileHeaderParserBase, FileDetailParserBase, FileFooterParserBase>)new DomiFileParser(); } }
+                { "Domi", () => new DomiFileDetails()}
             };
 
 
