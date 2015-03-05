@@ -14,7 +14,6 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Bin.Products
             base ( productId,  name,  price, discount)
         {
 
-            var b = 1;
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Bin.Products
         protected SportsBoots(int productId, BootKind name, double price, bool discount) : 
             base(productId, name, price, discount)
         {
-            var a = 0;
+
         }
     }
 }

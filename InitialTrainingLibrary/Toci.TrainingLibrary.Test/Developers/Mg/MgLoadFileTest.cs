@@ -11,7 +11,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Mg
         public void LoadFiles()
         {
            
-            const string path = @"C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\Toci.TraininigLibrary\data";
+            //const string path = @"C:\Dropbox\SzkolenieBartek\InitialTrainingLibrary\Toci.TraininigLibrary\data";
 
             var directoryList = DirectoryFileList.GetPathList();
             var parsersNames = DirectoryFileList.GetParsersNames(directoryList);

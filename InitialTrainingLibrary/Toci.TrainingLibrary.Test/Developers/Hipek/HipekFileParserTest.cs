@@ -15,7 +15,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Hipek
         {
             string fileName = @"..\..\..\Toci.TraininigLibrary\data\transfer_2015-03-02_7777777_hipek.txt";
 
-            HipekFileParser fileParser = new HipekFileParser(fileName);
+            HipekFileParser fileParser = new HipekFileParser();
 
             List<string> lines = new List<string>();
 

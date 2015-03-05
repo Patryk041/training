@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.Remoting.Channels;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Common.FileParser;
@@ -20,11 +21,12 @@ namespace Toci.TraininigLibrary.Logic
         {
          
           
-        FileParser<DomiFileHeader, DomiFileDetails, DomiFileFooter> abc = new DomiFileParser("a");
-          
-            Dictionary<string, Func<string, FileEntityBase>> parserFactory = new Dictionary<string, Func<string, FileEntityBase>>();
+        //FileParser<DomiFileHeader, DomiFileDetails, DomiFileFooter> abc = new DomiFileParser("a");
+
+            Dictionary<string, Func<FileParser<FileHeaderParserBase, FileDetailParserBase, FileFooterParserBase>>> parserFactory = new Dictionary<string, Func<FileParser<FileHeaderParserBase, FileDetailParserBase, FileFooterParserBase>>>()
             {
               //  {"mg",(_path) => new MgFileParser().GetParser(path)}
+              //  { "Domi", () => { return (FileParser<FileHeaderParserBase, FileDetailParserBase, FileFooterParserBase>)new DomiFileParser(); } }
             };
 
 

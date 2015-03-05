@@ -63,7 +63,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Santi
 		[TestMethod]
 		public void SantiFileParserObjectTest()
 		{
-			SantiFileParser fileParser = new SantiFileParser(FilePath, new SantiFileDetailParser());
+			SantiFileParser fileParser = new SantiFileParser();
 
 			using(stream = new StreamReader(FilePath))
 			{
