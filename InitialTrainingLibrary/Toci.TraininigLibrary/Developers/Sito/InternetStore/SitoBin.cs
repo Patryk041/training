@@ -10,9 +10,14 @@ namespace Toci.TraininigLibrary.Developers.Sito.InternetStore
 {
     class SitoBin:BinBase
     {
+        private Dictionary<string, IPurchase> purchases; 
+        public SitoBin()
+        {
+            purchases = new Dictionary<string, IPurchase>();
+        }
         public override Dictionary<string, IPurchase> Purchases()
         {
-            throw new NotImplementedException();
+            return purchases;
         }
 
         public override string DevNickName()
