@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.TraininigLibrary.Developers.Dysq.Bin.DysqBase
+namespace Toci.TraininigLibrary.Developers.Dysq.Bin.Products
 {
-    public enum BootKind
+    public enum BootsKind
     {
         Schoes,
         SportsBoots,

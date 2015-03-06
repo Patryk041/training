@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Common.Interfaces.InternetStore;
-using Toci.TraininigLibrary.Developers.Dysq.Bin.DysqBase;
+
 
 namespace Toci.TraininigLibrary.Developers.Dysq.Bin.Products
 {
-    public class Schoes : Boots
+    public class Boots
     {
-        public Schoes(int productId, BootKind name, double price, bool discount) : 
-            base ( productId,  name,  price, discount)
-        {
+        protected int ProductId { get; set; }
+        protected BootsKind Name { get; set; }
+        protected double Price { get; set; }
+        protected bool Discount { get; set; }
+        protected double Size { get; set; }
 
-        }
     }
 }
