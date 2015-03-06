@@ -46,7 +46,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq
            // purchase.SetName(BootsKind.Sandals);
            //var name= purchase.Name();
             var testPurchase = purchase;
-            var x = 0;
+            
         }
     }
 }

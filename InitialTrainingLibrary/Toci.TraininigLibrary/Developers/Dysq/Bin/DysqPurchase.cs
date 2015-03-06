@@ -15,7 +15,7 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Bin
         private int _count;
         private double _price;
         private BootsKind _name;
-        private IDiscount _discount;
+        private IDiscount _discount = null;
         private bool _isDiscount;
         private string _productId;
         private double _unitPrice;
