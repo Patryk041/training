@@ -55,6 +55,7 @@
     <Compile Include="Developers\Hipek\HipekFileParserTest.cs" />
     <Compile Include="Developers\Koziu\KoziuFileGeneratorTest.cs" />
     <Compile Include="Developers\Mg\MgLoadFileTest.cs" />
+    <Compile Include="Developers\Mg\BasketTest.cs" />
     <Compile Include="Developers\Santi\SantiFileParserTest.cs" />
     <Compile Include="Developers\Warrior\WarriorFileParserTest.cs" />
     <Compile Include="Developers\Warrior\WarriorMgSolutionTest.cs" />

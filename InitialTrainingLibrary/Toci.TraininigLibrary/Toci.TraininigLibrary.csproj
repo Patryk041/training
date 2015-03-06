@@ -88,6 +88,8 @@
     <Compile Include="Developers\Koziu\InternetStore\KoziuBin.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuBinCollection.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />
+    <Compile Include="Developers\Mg\Basket\MgBasket.cs" />
+    <Compile Include="Developers\Mg\Basket\Products\MgSamsungGalaxy.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileDetailsParser.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileEntity.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileParser.cs" />
@@ -121,11 +123,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
-
-    <Folder Include="Developers\Sito\FileParser\" />
-
-    <Folder Include="Developers\Warrior\FileParser\" />
-
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
