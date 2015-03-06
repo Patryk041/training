@@ -20,8 +20,7 @@ namespace Toci.TraininigLibrary.Common.FileParser
             CustomCallback = customCallback;
         }
 
-        public virtual List<Task> ParseFile(FileDetailParserBase fileParser, 
-            StreamReader fileReader, int threadsCount)
+        public virtual List<Task> ParseFile(FileDetailParserBase fileParser, StreamReader fileReader, int threadsCount)
         {
             List<Task> list = new List<Task>();
 
