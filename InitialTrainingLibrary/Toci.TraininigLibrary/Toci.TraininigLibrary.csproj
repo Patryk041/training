@@ -101,6 +101,11 @@
     <Compile Include="Developers\Santi\FileParser\SantiFileFooterParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileHeaderParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileParser.cs" />
+    <Compile Include="Developers\Sito\FileParser\SitoDetailsParser.cs" />
+    <Compile Include="Developers\Sito\FileParser\SitoFileEntity.cs" />
+    <Compile Include="Developers\Sito\FileParser\SitoFileParser.cs" />
+    <Compile Include="Developers\Sito\FileParser\SitoFooterParser.cs" />
+    <Compile Include="Developers\Sito\FileParser\SitoHeaderParser.cs" />
     <Compile Include="Developers\Sito\InternetStore\SitoBin.cs" />
     <Compile Include="Developers\Warrior\FileParser\WarriorFileDetailParser.cs" />
     <Compile Include="Developers\Warrior\FileParser\WarriorFileEntity.cs" />
@@ -116,7 +121,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
+
     <Folder Include="Developers\Sito\FileParser\" />
+
+    <Folder Include="Developers\Warrior\FileParser\" />
+
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
@@ -129,6 +138,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\transfer_2015-03-01_321434535_sito.txt" />
     <Content Include="data\transfer_2015-03-02_4325234564_domi.txt" />
     <Content Include="data\transfer_2015-03-01_321434535_warrior.txt" />
     <Content Include="data\transfer_2015-03-02_987654321_dysq.txt" />
