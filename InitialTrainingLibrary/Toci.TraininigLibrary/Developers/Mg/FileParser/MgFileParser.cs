@@ -16,7 +16,8 @@ namespace Toci.TraininigLibrary.Developers.Mg
 
         public override FileEntityBase ReadEntry(string fileLine)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return null;
         }
     }
 }

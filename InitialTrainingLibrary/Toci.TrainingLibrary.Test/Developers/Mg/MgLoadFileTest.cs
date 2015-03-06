@@ -14,14 +14,10 @@ namespace Toci.TrainingLibrary.Test.Developers.Mg
 
 
 
-            var directoryList = "defaultPath".GetDirectoryFileList();
-            var parserName = directoryList[0].GetName();
-            MgFileDetailsParser fp = new MgFileDetailsParser();
-            var mgEntity = fp.ReadEntry(@"Michał/Garbacz/2015_03_06/1353403124232932323");
-
-            ParsersFactory pf = new ParsersFactory();
-          //  pf.GetData()
-            pf.GetData();
+     
+      
+        
+    
 
 
         }

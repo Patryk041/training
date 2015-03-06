@@ -14,9 +14,9 @@ namespace Toci.TrainingLibrary.Test.Developers.Warrior
         [TestMethod]
         public void MgWarriorMultiFileParserTest()
         {
-            ParsersFactory factory = new ParsersFactory();
+            ReadFile reader = new ReadFile();
 
-            factory.GetData();
+            reader.Execute();
         }
     }
 }

@@ -21,30 +21,11 @@ using Toci.TraininigLibrary.Developers.Warrior.FileParser;
 
 namespace Toci.TraininigLibrary.Logic
 {
-    public class ParsersFactory
+    class ParsersFactory
     {
-        /// <summary>
-        /// Zwraca listę obiektów typu EntityBase (pojedyńczy rekord). Argument = string [] directotryPaths
-        /// </summary>
-        /// <param name="path"></param>
-        public void GetData()
-        {
-            string[] filePaths = DirectoryFileList.GetPathList();
 
-            filePaths.AsParallel().WithDegreeOfParallelism(5).ForAll(ParallelFileParse);
-        //temp.AsParallel().WithDegreeOfParallelism(5).ForAll(i => entityBaseList.Add(GetProperParser(i.GetName()).ReadEntry("Dominika;Dziurzynska;2015-03-13;13039302007")));
-        }
-
-        protected void ParallelFileParse(string filePath)
-        {
-            FileDetailParserBase parser = GetProperParser(DirectoryFileList.GetParserName(filePath).ToUpper());
-
-            ParallelFileParser<IDbSave> fileParser = new ParallelFileParser<IDbSave>(null);
-
-            fileParser.ParseFile(parser, new StreamReader(filePath), 10);
-        }
-
-        private FileDetailParserBase GetProperParser(string name)
+ 
+        public FileDetailParserBase GetProperParser(string name)
         {
             Dictionary<string, Func<FileDetailParserBase>> parserFactory = new Dictionary<string, Func<FileDetailParserBase>>()
             {
@@ -58,6 +39,7 @@ namespace Toci.TraininigLibrary.Logic
                 { "DYSQ", () => new DysqFileDetailParser()},
                 { "KOZIU", () => new KoziuFileDetailParser()},
                 { "WARRIOR", () => new WarriorFileDetailParser()},
+                { "SITO", () => new WarriorFileDetailParser()},
                
             };
 
