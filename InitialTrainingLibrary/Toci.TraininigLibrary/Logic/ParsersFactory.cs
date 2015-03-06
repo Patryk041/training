@@ -13,9 +13,11 @@ using Toci.TraininigLibrary.Common.Interfaces.FileParser;
 using Toci.TraininigLibrary.Developers.Domi;
 using Toci.TraininigLibrary.Developers.Dysq.FileParser;
 using Toci.TraininigLibrary.Developers.Hipek.FileParser;
+using Toci.TraininigLibrary.Developers.Koziu.FileParser;
 using Toci.TraininigLibrary.Developers.Mg;
 using Toci.TraininigLibrary.Developers.RS.FileParser;
 using Toci.TraininigLibrary.Developers.Santi.FileParser;
+using Toci.TraininigLibrary.Developers.Warrior.FileParser;
 
 namespace Toci.TraininigLibrary.Logic
 {
@@ -25,22 +27,23 @@ namespace Toci.TraininigLibrary.Logic
         /// Zwraca listę obiektów typu EntityBase (pojedyńczy rekord). Argument = string [] directotryPaths
         /// </summary>
         /// <param name="path"></param>
-        public List<FileEntityBase> GetData(string[] directoryPaths)
+        public void GetData()
         {
-         List<FileEntityBase> entityBaseList = new List<FileEntityBase>();
+            string[] filePaths = DirectoryFileList.GetPathList();
 
-            string[] temp = new string[1];
-            foreach (var x in directoryPaths)
-            {
-                if (x.GetName().Contains("DOMI")) temp[0] = x;
-            }
-
-            temp.AsParallel().WithDegreeOfParallelism(5).ForAll(i => entityBaseList.Add(GetProperParser(i.GetName()).ReadEntry("Dominika;Dziurzynska;2015-03-13;13039302007")));
-
-         return entityBaseList;
+            filePaths.AsParallel().WithDegreeOfParallelism(5).ForAll(ParallelFileParse);
+        //temp.AsParallel().WithDegreeOfParallelism(5).ForAll(i => entityBaseList.Add(GetProperParser(i.GetName()).ReadEntry("Dominika;Dziurzynska;2015-03-13;13039302007")));
         }
 
-       // private FileDetailParserBase GetProperParser(string path)
+        protected void ParallelFileParse(string filePath)
+        {
+            FileDetailParserBase parser = GetProperParser(DirectoryFileList.GetParserName(filePath).ToUpper());
+
+            ParallelFileParser<IDbSave> fileParser = new ParallelFileParser<IDbSave>(null);
+
+            fileParser.ParseFile(parser, new StreamReader(filePath), 10);
+        }
+
         private FileDetailParserBase GetProperParser(string name)
         {
             Dictionary<string, Func<FileDetailParserBase>> parserFactory = new Dictionary<string, Func<FileDetailParserBase>>()
@@ -53,6 +56,8 @@ namespace Toci.TraininigLibrary.Logic
                 { "MG", () => new MgFileParser()},
                 { "HIPEK", () => new HipekFileDetailsParser()},
                 { "DYSQ", () => new DysqFileDetailParser()},
+                { "KOZIU", () => new KoziuFileDetailParser()},
+                { "WARRIOR", () => new WarriorFileDetailParser()},
                
             };
 

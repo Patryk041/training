@@ -13,9 +13,9 @@ namespace Toci.TraininigLibrary.Logic
         /// </summary>
         /// <param name="path">Ścieżka katalogu, default = ~\Toci.TrainingLibrary\data</param>
         public static string[] GetPathList(string path="")
-    {
+        {
 
-      path = path == "" ? new StringBuilder(Directory.GetParent(
+            path = path == "" ? new StringBuilder(Directory.GetParent(
               Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).ToString()).ToString())
               .ToString()).Append(@"\Toci.TraininigLibrary\data").ToString() : path;
            
@@ -27,27 +27,20 @@ namespace Toci.TraininigLibrary.Logic
         /// Zwraca nazwy parserów zapisane dużymi literami (.ToUpper())
         /// </summary>
         /// <param name="filesList">Tablica strimmg[] listy plików</param>
-        public static string[] GetParsersNames(string[] filesList)
+        public static string GetParserName(string fileName)
         {
-            string[] parserList = new string[filesList.Length];
+            int j = 0;
+            string result = "";
 
-            int i = 0, j = 0;
+            var splitList = fileName.Split(new char[] { '_' });
 
-            foreach (var x in filesList)
+            while (splitList[splitList.Length - 1][j] != '.')
             {
-                var splitList = x.Split(new char[] { '_' });
-
-                while (splitList[splitList.Length - 1][j] != '.')
-                {
-                    parserList[i] += splitList[splitList.Length - 1][j];
-                    j++;
-                }
-                parserList[i] = parserList[i].ToUpper();
-                j = 0;
-                i++;
+                result += splitList[splitList.Length - 1][j];
+                j++;
             }
 
-            return parserList;
+            return result;
         }
     }
 }
