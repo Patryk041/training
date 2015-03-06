@@ -55,14 +55,9 @@
     <Compile Include="Common\Interfaces\InternetStore\IDiscount.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IPurchase.cs" />
     <Compile Include="Developers\Dysq\Bin\DysqBin.cs" />
-    <Compile Include="Developers\Dysq\Bin\DysqPurshase.cs" />
-    <Compile Include="Developers\Dysq\Bin\DysqBase\BootKind.cs" />
-    <Compile Include="Developers\Dysq\Bin\DysqBase\Boots.cs" />
-    <Compile Include="Developers\Dysq\Bin\Products\CowboyBoots.cs" />
-    <Compile Include="Developers\Dysq\Bin\Products\HighHeelBoots.cs" />
-    <Compile Include="Developers\Dysq\Bin\Products\Sandals.cs" />
-    <Compile Include="Developers\Dysq\Bin\Products\Schoes.cs" />
-    <Compile Include="Developers\Dysq\Bin\Products\SportsBoots.cs" />
+    <Compile Include="Developers\Dysq\Bin\DysqPurchase.cs" />
+    <Compile Include="Developers\Dysq\Bin\Products\BootsKind.cs" />
+    <Compile Include="Developers\Dysq\Bin\Products\Boots.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileDetailParser.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileDetailsParser.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileEntity.cs" />
@@ -134,14 +129,11 @@
     <Content Include="data\transfer_2015-03-02_7777777_hipek.txt" />
     <Content Include="data\transfer_2015-03-04_123456789_santi.txt" />
     <Content Include="data\transfer_2015-03-05_1234567890_rs.txt" />
-
     <Content Include="data\transfer_2015-03-05_265015678_Koziu.txt" />
     <Content Include="data\transfer_2015-03-05_495662414_Koziu.txt" />
     <Content Include="data\transfer_2015-03-05_926916819_Koziu.txt" />
     <Content Include="data\transfer_2015_03_02_987654321_dysq.txt" />
-
     <Content Include="data\transfer_2015_03_06_232325_mg.txt" />
-
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

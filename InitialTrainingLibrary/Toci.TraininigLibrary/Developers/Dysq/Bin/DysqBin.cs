@@ -10,14 +10,26 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Bin
 {
     public class DysqBin : BinBase
     {
+        private Dictionary<string, IPurchase> purchases; 
+
+        public DysqBin()
+        {
+            purchases = new Dictionary<string, IPurchase>();
+        }
+
+        public void AddToDysqBin(IPurchase dysqItem)
+        {
+            purchases.Add(dysqItem.Name(), dysqItem);
+        }
+
         public override Dictionary<string, IPurchase> Purchases()
         {
-            throw new NotImplementedException();
+            return purchases;
         }
 
         public override string DevNickName()
         {
-            throw new NotImplementedException();
+            return "Dysq";
         }
 
         public override IDiscount GetDiscount()
