@@ -102,6 +102,8 @@
     <Compile Include="Developers\Santi\FileParser\SantiFileHeaderParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileParser.cs" />
     <Compile Include="Developers\Sito\InternetStore\SitoBin.cs" />
+    <Compile Include="Developers\Warrior\FileParser\WarriorFileDetailParser.cs" />
+    <Compile Include="Developers\Warrior\FileParser\WarriorFileEntity.cs" />
     <Compile Include="Logic\AccountTranferParseSaveLogic.cs" />
     <Compile Include="Logic\DirectoryFileList.cs">
       <SubType>Code</SubType>
@@ -115,7 +117,6 @@
   <ItemGroup>
     <Folder Include="Core\" />
     <Folder Include="Developers\Sito\FileParser\" />
-    <Folder Include="Developers\Warrior\FileParser\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
@@ -134,14 +135,11 @@
     <Content Include="data\transfer_2015-03-02_7777777_hipek.txt" />
     <Content Include="data\transfer_2015-03-04_123456789_santi.txt" />
     <Content Include="data\transfer_2015-03-05_1234567890_rs.txt" />
-
     <Content Include="data\transfer_2015-03-05_265015678_Koziu.txt" />
     <Content Include="data\transfer_2015-03-05_495662414_Koziu.txt" />
     <Content Include="data\transfer_2015-03-05_926916819_Koziu.txt" />
     <Content Include="data\transfer_2015_03_02_987654321_dysq.txt" />
-
     <Content Include="data\transfer_2015_03_06_232325_mg.txt" />
-
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

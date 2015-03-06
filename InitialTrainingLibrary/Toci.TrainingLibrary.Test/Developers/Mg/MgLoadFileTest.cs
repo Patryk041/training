@@ -21,7 +21,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Mg
 
             ParsersFactory pf = new ParsersFactory();
           //  pf.GetData()
-            var z = pf.GetData(directoryList);
+            pf.GetData();
 
 
         }

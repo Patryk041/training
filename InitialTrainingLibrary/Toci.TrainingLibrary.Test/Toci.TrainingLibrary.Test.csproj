@@ -57,6 +57,7 @@
     <Compile Include="Developers\Mg\MgLoadFileTest.cs" />
     <Compile Include="Developers\Santi\SantiFileParserTest.cs" />
     <Compile Include="Developers\Warrior\WarriorFileParserTest.cs" />
+    <Compile Include="Developers\Warrior\WarriorMgSolutionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
