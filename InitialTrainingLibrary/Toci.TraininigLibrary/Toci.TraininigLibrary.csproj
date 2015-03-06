@@ -88,7 +88,9 @@
     <Compile Include="Developers\Koziu\InternetStore\KoziuBin.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuBinCollection.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />
-    <Compile Include="Developers\Mg\MgFileParser.cs" />
+    <Compile Include="Developers\Mg\FileParser\MgFileDetailsParser.cs" />
+    <Compile Include="Developers\Mg\FileParser\MgFileEntity.cs" />
+    <Compile Include="Developers\Mg\FileParser\MgFileParser.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileDetailsParser.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileEntity.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileFooterParser.cs" />
@@ -132,10 +134,14 @@
     <Content Include="data\transfer_2015-03-02_7777777_hipek.txt" />
     <Content Include="data\transfer_2015-03-04_123456789_santi.txt" />
     <Content Include="data\transfer_2015-03-05_1234567890_rs.txt" />
+<<<<<<< HEAD
     <Content Include="data\transfer_2015-03-05_265015678_Koziu.txt" />
     <Content Include="data\transfer_2015-03-05_495662414_Koziu.txt" />
     <Content Include="data\transfer_2015-03-05_926916819_Koziu.txt" />
     <Content Include="data\transfer_2015_03_02_987654321_dysq.txt" />
+=======
+    <Content Include="data\transfer_2015_03_06_232325_mg.txt" />
+>>>>>>> c9e46040fdb95f588534d71a770113870e1fa1f5
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
