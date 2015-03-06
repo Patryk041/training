@@ -30,7 +30,7 @@ namespace Toci.TraininigLibrary.Test.koziu
                     _fileData = "";
 
                     foreach (var value in content.Value)
-                    {
+                    {   
                         _fileData = value.GetLine();    
                         sw.WriteLine(_fileData);
                     }
