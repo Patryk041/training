@@ -96,6 +96,10 @@
     <Compile Include="Developers\RS\FileParser\RsFileFooterParser.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileHeaderParser.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileParser.cs" />
+    <Compile Include="Developers\RS\RSDictionary\RsDictionary.cs" />
+    <Compile Include="Developers\RS\RSDictionary\RsExtensionMethods.cs" />
+    <Compile Include="Developers\RS\RSDictionary\RsHashtable.cs" />
+    <Compile Include="Developers\RS\RSDictionary\RsHashtableBase.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileDetailParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileEntity.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileFooterParser.cs" />
