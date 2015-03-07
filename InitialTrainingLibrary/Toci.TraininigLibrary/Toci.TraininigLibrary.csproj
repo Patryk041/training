@@ -89,9 +89,14 @@
     <Compile Include="Developers\Mg\FileParser\MgFileDetailsParser.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileEntity.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileParser.cs" />
-    <Compile Include="Developers\Mg\Inheritance\MgStringSortedList.cs" />
-    <Compile Include="Developers\Mg\Inheritance\MgStringDictionaryExtension.cs" />
-    <Compile Include="Developers\Mg\Inheritance\MgStringDictionaryInheritance.cs" />
+    <Compile Include="Developers\Mg\Inheritance\Common interface solution\Interfaces\IMgCommonDictionaryBase.cs" />
+    <Compile Include="Developers\Mg\Inheritance\Common interface solution\MgCommonDictionary.cs" />
+    <Compile Include="Developers\Mg\Inheritance\Simple Inheritance\MgDictionary.cs" />
+    <Compile Include="Developers\Mg\Inheritance\Common interface solution\Base\MgCommonDictionaryBase.cs" />
+    <Compile Include="Developers\Mg\Inheritance\Common interface solution\MgCommonNonGenericSortedList.cs" />
+    <Compile Include="Developers\Mg\Inheritance\Common interface solution\Base\MgCommonNonGenericSortedListBase.cs" />
+    <Compile Include="Developers\Mg\Inheritance\Simple Inheritance\MgStringDictionaryExtension.cs" />
+    <Compile Include="Developers\Mg\Inheritance\Simple Inheritance\MgStringDictionaryInheritance.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileDetailsParser.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileEntity.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileFooterParser.cs" />

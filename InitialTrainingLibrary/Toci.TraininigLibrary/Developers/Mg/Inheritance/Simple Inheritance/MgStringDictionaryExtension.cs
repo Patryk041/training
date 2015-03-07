@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Toci.TraininigLibrary.Common.Base.Inheritance;
 
-namespace Toci.TraininigLibrary.Developers.Mg.Inheritance
+namespace Toci.TraininigLibrary.Developers.Mg.Inheritance.Simple_Inheritance
 {
     public static class MgStringDictionaryExtension 
     {
