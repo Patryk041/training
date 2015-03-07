@@ -2,7 +2,7 @@
 
 namespace Toci.TraininigLibrary.Developers.Mg.Inheritance.Common_interface_solution.Interfaces
 {
-    interface IMgCommonDictionaryBase<T> 
+   public interface IMgCommonDictionaryBase<T> 
     {
         List<T> GetAnagramSet(string anagramCandidate); //radar  raadr
         List<T> GetPalindromSet(); // cyc radar aerrea

@@ -70,8 +70,8 @@ namespace Toci.TraininigLibrary.Developers.Mg.Inheritance.Common_interface_solut
 
         public override List<T> GetWildcardSet(string wildcard)
         {
-            return this.Where(x => x.Key.Contains(wildcard)).Select(x => x.Value).ToList();
-            // return this.Keys.Select(x => x).Where(x => x.ToUpper().Contains(wildcard.ToUpper())).ToList();
+            return this.Where(x => x.Key.ToUpper().Contains(wildcard.ToUpper())).Select(x => x.Value).ToList();
+           
         }
     }
 }

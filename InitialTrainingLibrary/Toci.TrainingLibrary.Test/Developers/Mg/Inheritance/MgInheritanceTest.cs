@@ -2,6 +2,7 @@
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.TraininigLibrary.Developers.Mg.Inheritance.Common_interface_solution;
+using Toci.TraininigLibrary.Developers.Mg.Inheritance.Common_interface_solution.Interfaces;
 using Toci.TraininigLibrary.Developers.Mg.Inheritance.Simple_Inheritance;
 
 namespace Toci.TrainingLibrary.Test.Developers.Mg.Inheritance
@@ -54,8 +55,55 @@ namespace Toci.TrainingLibrary.Test.Developers.Mg.Inheritance
             var commonSortedPalindromList = mgCommonSortedList.GetPalindromSet();
             var commonSortedAnagramList = mgCommonSortedList.GetAnagramSet("roewr");
             //var commonSortedWildCardList = mgCommonSortedList.GetWildcardSet("abc");
-      
+            
+           IMgCommonDictionaryBase<string> commonDict = new MgCommonDictionary<string>()
+           {
+               {"abccba", "1"},
+               {"rower", "2"},
+               {"weror", "3"},
+               {"abc234324", "4"},
 
+
+           };
+           IMgCommonDictionaryBase<string> commonSortedList = new MgCommonNonGenericSortedList<string>()
+           {  
+               {"abccba", "1"},
+               {"rower", "2"},
+               {"weror", "3"},
+               {"abc234324", "4"},
+               
+           };
+
+            var IMgDictAnagram = commonDict.GetAnagramSet("rower");
+            var IMgDictPalindrom = commonDict.GetPalindromSet();
+            var IMgDictWildCard = commonDict.GetWildcardSet("abc");
+
+            var IMgSortedListAnagram = commonSortedList.GetAnagramSet("rower");
+            var IMgSortedListPalindrom = commonSortedList.GetPalindromSet();
+            var IMgSortedListWildCard = commonSortedList.GetWildcardSet("abc");
+
+
+            for (int i = 0; i < anagramList.Count; i++)
+            {
+                Assert.AreEqual(IMgDictAnagram[i],anagramList[i]);
+                Assert.AreEqual(IMgSortedListAnagram[i], anagramList[i]);
+            }
+
+            for (int i = 0; i < palindromList.Count; i++)
+            {
+                Assert.AreEqual(IMgDictPalindrom[i], palindromList[i]);
+                Assert.AreEqual(IMgSortedListPalindrom[i], palindromList[i]);
+            }
+
+            
+            for (int i = 0; i < wildCardList.Count; i++)
+            {
+                Assert.AreEqual(IMgDictWildCard[i], wildCardList[i]);
+               // Assert.AreEqual(IMgSortedListWildCard[i], wildCardList[i]);
+            }
+
+
+      
         }
     }
 }
