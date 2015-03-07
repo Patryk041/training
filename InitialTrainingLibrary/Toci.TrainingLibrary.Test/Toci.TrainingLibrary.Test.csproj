@@ -56,8 +56,9 @@
     <Compile Include="Developers\Dysq\DysqFileParserTest.cs" />
     <Compile Include="Developers\Hipek\HipekFileParserTest.cs" />
     <Compile Include="Developers\Koziu\KoziuFileGeneratorTest.cs" />
+    <Compile Include="Developers\Mg\Inheritance\MgInheritanceTest.cs" />
     <Compile Include="Developers\Mg\MgLoadFileTest.cs" />
-    <Compile Include="Developers\Mg\BasketTest.cs" />
+    <Compile Include="Developers\Mg\MgBasketTest.cs" />
     <Compile Include="Developers\Rs\RsFileDetailParserTest.cs" />
     <Compile Include="Developers\Santi\SantiFileParserTest.cs" />
     <Compile Include="Developers\Warrior\Db\DbOperationsTest.cs" />
