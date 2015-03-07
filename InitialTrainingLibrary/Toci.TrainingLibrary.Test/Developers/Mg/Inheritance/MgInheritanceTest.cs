@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.TraininigLibrary.Developers.Mg.Inheritance;
 
@@ -10,15 +11,20 @@ namespace Toci.TrainingLibrary.Test.Developers.Mg.Inheritance
         [TestMethod]
         public void TestMethod1()
         {
-            MgStringDictionary<int> abc = new MgStringDictionary<int>();
+            MgStringDictionaryInheritance mgDictionary = new MgStringDictionaryInheritance();
 
-            abc.Add("abccba","1");
-            abc.Add("rower", "2");
-            abc.Add("weror","3");
-            abc.Add("abc234324","4");
-            var palindromList = abc.GetPalindromSet();
-            var anagramList = abc.GetAnagramSet("roewr");
-            var wildCardList = abc.GetWildcardSet("abc");
+            mgDictionary.Add("abccba","1");
+            mgDictionary.Add("rower", "2");
+            mgDictionary.Add("weror","3");
+            mgDictionary.Add("abc234324","4");
+            var palindromList = mgDictionary.GetPalindromSet();
+            var anagramList = mgDictionary.GetAnagramSet("roewr");
+            var wildCardList = mgDictionary.GetWildcardSet("abc");
+
+            var palindomExtensionList = mgDictionary.GetPalindromSetExtension();
+            var anagramExtensionList = mgDictionary.GetAnagramSet("roewr");
+            var wildCardExtensionList = mgDictionary.GetWildcardSet("abc");
+
 
         }
     }

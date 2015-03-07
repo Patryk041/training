@@ -1,36 +1,35 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Common.Base.Inheritance;
 
 namespace Toci.TraininigLibrary.Developers.Mg.Inheritance
 {
-    public class MgStringDictionaryInheritance : StringDictionary<string>
+    public static class MgStringDictionaryExtension 
     {
-        private List<string> itemList;
-      
+        private static List<string> itemList;
 
-        public override List<string> GetAnagramSet(string anagramCandidate)
+        public static List<string> GetAnagramSetExtension( this MgStringDictionaryInheritance dictionary , string anagramCandidate)
         {
-           itemList = new List<string>();
-       
-           
-           var anagramCandidateArray = anagramCandidate.ToArray();
-           Array.Sort(anagramCandidateArray);
+            itemList = new List<string>();
+
+
+            var anagramCandidateArray = anagramCandidate.ToArray();
+            Array.Sort(anagramCandidateArray);
             bool isAnagram;
 
-            foreach (var key in this.Keys)
+            foreach (var key in dictionary.Keys)
             {
 
                 var array = key.ToArray();
                 Array.Sort(array);
 
-               if(array.Length!=anagramCandidateArray.Length) continue;
+                if (array.Length != anagramCandidateArray.Length) continue;
 
-               // isAnagram = !array.Where((t, i) => t != anagramCandidateArray[i]).Any();
+                // isAnagram = !array.Where((t, i) => t != anagramCandidateArray[i]).Any();
 
                 isAnagram = true;
                 for (int i = 0; i < array.Length; i++)
@@ -42,23 +41,23 @@ namespace Toci.TraininigLibrary.Developers.Mg.Inheritance
                     }
                 }
 
-                if(isAnagram) itemList.Add(key);
-         
+                if (isAnagram) itemList.Add(key);
+
             }
             return itemList;
+
         }
 
-      
-        public override List<string> GetPalindromSet()
-        { 
-         
-            itemList = new List<string>();
-            StringBuilder stringBuilder  = new StringBuilder();
 
-            foreach (var key in this.Keys)
+        public static List<string> GetPalindromSetExtension(this MgStringDictionaryInheritance dictionary)
+        {
+            itemList = new List<string>();
+            StringBuilder stringBuilder = new StringBuilder();
+
+            foreach (var key in dictionary.Keys)
             {
                 var reversedArray = key.Reverse().ToArray();
-               
+
                 foreach (var letter in reversedArray)
                 {
                     stringBuilder.Append(letter);
@@ -72,10 +71,10 @@ namespace Toci.TraininigLibrary.Developers.Mg.Inheritance
             return itemList;
         }
 
-        public override List<string> GetWildcardSet(string wildcard)
+        public static List<string> GetWildcardSetExtension(this MgStringDictionaryInheritance dictionary, string wildcard)
         {
-           
-            return this.Keys.Select(x => x).Where(x => x.Contains(wildcard)).ToList();
+            return dictionary.Keys.Select(x => x).Where(x => x.Contains(wildcard)).ToList();
         }
+      
     }
 }

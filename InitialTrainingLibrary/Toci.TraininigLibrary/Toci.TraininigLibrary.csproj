@@ -89,6 +89,7 @@
     <Compile Include="Developers\Mg\FileParser\MgFileDetailsParser.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileEntity.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileParser.cs" />
+    <Compile Include="Developers\Mg\Inheritance\MgStringDictionaryExtension.cs" />
     <Compile Include="Developers\Mg\Inheritance\MgStringDictionaryInheritance.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileDetailsParser.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileEntity.cs" />
