@@ -105,6 +105,8 @@
     <Compile Include="Developers\Sito\FileParser\SitoFooterParser.cs" />
     <Compile Include="Developers\Sito\FileParser\SitoHeaderParser.cs" />
     <Compile Include="Developers\Sito\InternetStore\SitoBin.cs" />
+    <Compile Include="Developers\Warrior\Db\Models\ModelBase.cs" />
+    <Compile Include="Developers\Warrior\Db\Models\TransferModel.cs" />
     <Compile Include="Developers\Warrior\FileParser\WarriorFileDetailParser.cs" />
     <Compile Include="Developers\Warrior\FileParser\WarriorFileEntity.cs" />
     <Compile Include="Logic\AccountTranferParseSaveLogic.cs" />
@@ -128,6 +130,10 @@
     <ProjectReference Include="..\Toci.DbVirtualization\Toci.DbVirtualization.csproj">
       <Project>{4770951a-ad44-41ff-a7fa-25964046e9f8}</Project>
       <Name>Toci.DbVirtualization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Db\Toci.Db.csproj">
+      <Project>{e45ea1c2-f40c-4903-94c3-30a885a71d33}</Project>
+      <Name>Toci.Db</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

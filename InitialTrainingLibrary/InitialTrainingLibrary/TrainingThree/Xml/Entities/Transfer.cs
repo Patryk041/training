@@ -20,6 +20,9 @@ namespace InitialTrainingLibrary.TrainingThree.Xml.Entities
         [XmlElement("owner")]
         public string Owner { get; set; }
 
+        [XmlElement("date")]
+        public string Date { get; set; }
+
         [XmlElement("sum")]
         public string Sum { get; set; }
     }

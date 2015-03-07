@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Common.FileParser;
 using Toci.TraininigLibrary.Common.Interfaces.FileParser;
+using Toci.TraininigLibrary.Developers.Warrior.Db.Models;
 
 namespace Toci.TraininigLibrary.Logic
 {
@@ -29,9 +30,15 @@ namespace Toci.TraininigLibrary.Logic
 
             FileDetailParserBase parser = _factory.GetProperParser(DirectoryFileList.GetParserName(filePath).ToUpper());
 
-            ParallelFileParser<IDbSave> fileParser = new ParallelFileParser<IDbSave>(null);
+            ParallelFileParser<IDbSave> fileParser = new ParallelFileParser<IDbSave>(SaveInDb);
 
             fileParser.ParseFile(parser, new StreamReader(filePath), 10);
+        }
+
+        private bool SaveInDb(FileEntityBase entity)
+        {
+            TransferModel model = new TransferModel();
+            return model.Insert(entity) > 0;
         }
     }
 }
