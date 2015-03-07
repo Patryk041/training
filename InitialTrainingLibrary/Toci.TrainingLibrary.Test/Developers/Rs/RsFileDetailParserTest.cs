@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.TraininigLibrary.Developers.RS.FileParser;
 
@@ -17,16 +13,14 @@ namespace Toci.TrainingLibrary.Test.Developers.Rs
             var parser = new RsFileDetailsParser();
 
 
-            List<string> lines = new List<string>()
-            {
-                "{\"name\": \"Roman\",\"surname\": \"Suska\",\"datetime\": \"2015-03-05\",\"number\": \"1234567890\"}",
-            };
+            const string dataLine = "{\"name\": \"Roman\",\"surname\": \"Suska\",\"datetime\": \"2015-03-05\",\"number\": \"1234567890\"}";
 
-            foreach (var line in lines)
-            {
-                var dsqf= parser.ReadEntry(line);
-            }
-            
+            var result = parser.ReadEntry(dataLine);
+
+            Assert.AreEqual("Roman", result.Name);
+            Assert.AreEqual("Suska", result.Surname);
+            Assert.AreEqual(new DateTime(2015, 3, 5), result.Date);
+            Assert.AreEqual("1234567890", result.Account);
         }
     }
 }
