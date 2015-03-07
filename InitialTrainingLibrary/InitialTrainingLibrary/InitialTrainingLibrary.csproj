@@ -280,6 +280,20 @@
     <Compile Include="szymon93\[2] Chess\Coordinates.cs" />
     <Compile Include="szymon93\[2] Chess\Figure.cs" />
     <Compile Include="szymon93\[2] Chess\Figures\Rook.cs" />
+    <Compile Include="TrainingThree\Extensions\ExtensionsFail.cs" />
+    <Compile Include="TrainingThree\Extensions\StringExtension.cs" />
+    <Compile Include="TrainingThree\Extensions\TestExtension.cs" />
+    <Compile Include="TrainingThree\Inheritance\DictionaryInheritance.cs" />
+    <Compile Include="TrainingThree\Inheritance\IFlower.cs" />
+    <Compile Include="TrainingThree\Inheritance\IPlant.cs" />
+    <Compile Include="TrainingThree\Inheritance\MySocket.cs" />
+    <Compile Include="TrainingThree\Inheritance\PlantBase.cs" />
+    <Compile Include="TrainingThree\Inheritance\Presentation.cs" />
+    <Compile Include="TrainingThree\Inheritance\Rose.cs" />
+    <Compile Include="TrainingThree\Inheritance\WarriorDictionary.cs" />
+    <Compile Include="TrainingThree\Xml\Entities\Transfer.cs" />
+    <Compile Include="TrainingThree\Xml\Entities\TransferBase.cs" />
+    <Compile Include="TrainingThree\Xml\Logic\XmlParser.cs" />
     <Compile Include="Vernathic\01_DateValidator\VDate.cs" />
     <Compile Include="Vernathic\01_DateValidator\VDateValidator.cs" />
     <Compile Include="Vernathic\01_DateValidator\VDay.cs" />
@@ -311,7 +325,11 @@
     <Content Include="syf\fileoperations\xmltpl\data\data9.xml" />
     <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="TrainingThree\Db\" />
+    <Folder Include="TrainingThree\FileParser\" />
+    <Folder Include="TrainingThree\Polimorphism\" />
+  </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

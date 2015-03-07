@@ -10,7 +10,7 @@ namespace Toci.TraininigLibrary.Developers.RS.FileParser
         public override FileEntityBase ReadEntry(string fileLine)
         {
             RsFileEntity entity = new RsFileEntity();
-            var dataParts = fileLine.Split(',');
+            var dataParts = fileLine.Replace("{", "").Replace("}", "").Split(',');
 
             Dictionary<string, string> myDictionary =
                 dataParts.ToDictionary(s => s.Split(new[] {':'}, StringSplitOptions.RemoveEmptyEntries)[0].Replace("\"", "").Replace(" ", String.Empty),
