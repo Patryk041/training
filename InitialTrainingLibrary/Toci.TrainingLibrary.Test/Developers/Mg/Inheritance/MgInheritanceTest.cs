@@ -11,12 +11,13 @@ namespace Toci.TrainingLibrary.Test.Developers.Mg.Inheritance
         [TestMethod]
         public void TestMethod1()
         {
-            MgStringDictionaryInheritance mgDictionary = new MgStringDictionaryInheritance();
+            MgStringDictionaryInheritance<string> mgDictionary = new MgStringDictionaryInheritance<string>();
 
             mgDictionary.Add("abccba","1");
             mgDictionary.Add("rower", "2");
             mgDictionary.Add("weror","3");
             mgDictionary.Add("abc234324","4");
+
             var palindromList = mgDictionary.GetPalindromSet();
             var anagramList = mgDictionary.GetAnagramSet("roewr");
             var wildCardList = mgDictionary.GetWildcardSet("abc");

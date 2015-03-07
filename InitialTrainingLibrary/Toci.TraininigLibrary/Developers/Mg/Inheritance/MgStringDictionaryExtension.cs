@@ -10,25 +10,25 @@ namespace Toci.TraininigLibrary.Developers.Mg.Inheritance
 {
     public static class MgStringDictionaryExtension 
     {
-        private static List<string> itemList;
+       
 
-        public static List<string> GetAnagramSetExtension( this MgStringDictionaryInheritance dictionary , string anagramCandidate)
+        public static List<T> GetAnagramSetExtension<T>(this MgStringDictionaryInheritance<T> dictionary, string anagramCandidate)
         {
-            itemList = new List<string>();
+            List<T> itemList = new List<T>();
 
 
-            var anagramCandidateArray = anagramCandidate.ToArray();
+            var anagramCandidateArray = anagramCandidate.ToUpper().ToArray();
             Array.Sort(anagramCandidateArray);
             bool isAnagram;
 
             foreach (var key in dictionary.Keys)
             {
 
-                var array = key.ToArray();
-                Array.Sort(array);
+                var array = key.ToUpper().ToArray();
 
                 if (array.Length != anagramCandidateArray.Length) continue;
 
+                Array.Sort(array);
                 // isAnagram = !array.Where((t, i) => t != anagramCandidateArray[i]).Any();
 
                 isAnagram = true;
@@ -41,17 +41,16 @@ namespace Toci.TraininigLibrary.Developers.Mg.Inheritance
                     }
                 }
 
-                if (isAnagram) itemList.Add(key);
+                if (isAnagram) itemList.Add(dictionary[key]);
 
             }
             return itemList;
-
         }
 
 
-        public static List<string> GetPalindromSetExtension(this MgStringDictionaryInheritance dictionary)
+        public static List<T> GetPalindromSetExtension<T>(this MgStringDictionaryInheritance<T> dictionary)
         {
-            itemList = new List<string>();
+            List<T> itemList = new List<T>();
             StringBuilder stringBuilder = new StringBuilder();
 
             foreach (var key in dictionary.Keys)
@@ -63,7 +62,7 @@ namespace Toci.TraininigLibrary.Developers.Mg.Inheritance
                     stringBuilder.Append(letter);
                 }
 
-                if (stringBuilder.ToString() == key) itemList.Add(key);
+                if (stringBuilder.ToString().ToUpper() == key.ToUpper()) itemList.Add(dictionary[key]);
 
                 stringBuilder.Clear();
             }
@@ -71,9 +70,10 @@ namespace Toci.TraininigLibrary.Developers.Mg.Inheritance
             return itemList;
         }
 
-        public static List<string> GetWildcardSetExtension(this MgStringDictionaryInheritance dictionary, string wildcard)
+        public static List<T> GetWildcardSetExtension<T>(this MgStringDictionaryInheritance<T> dictionary, string wildcard)
         {
-            return dictionary.Keys.Select(x => x).Where(x => x.Contains(wildcard)).ToList();
+           // return dictionary.Keys.Select(x => x).Where(x => x.Contains(wildcard)).ToList();
+            return dictionary.Where(x => x.Key.Contains(wildcard)).Select(x => x.Value).ToList();
         }
       
     }

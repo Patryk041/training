@@ -8,30 +8,30 @@ using Toci.TraininigLibrary.Common.Base.Inheritance;
 
 namespace Toci.TraininigLibrary.Developers.Mg.Inheritance
 {
-    public class MgStringDictionaryInheritance : StringDictionary<string>
+    public class MgStringDictionaryInheritance<T> : StringDictionary<T>
     {
-        private List<string> itemList;
+      
       
 
-        public override List<string> GetAnagramSet(string anagramCandidate)
+        public override List<T> GetAnagramSet(string anagramCandidate)
         {
-           itemList = new List<string>();
+           List<T> itemList = new List<T>();
        
            
-           var anagramCandidateArray = anagramCandidate.ToArray();
+           var anagramCandidateArray = anagramCandidate.ToUpper().ToArray();
            Array.Sort(anagramCandidateArray);
             bool isAnagram;
 
             foreach (var key in this.Keys)
             {
 
-                var array = key.ToArray();
-                Array.Sort(array);
-
+                var array = key.ToUpper().ToArray();
+                
                if(array.Length!=anagramCandidateArray.Length) continue;
 
+               Array.Sort(array);
                // isAnagram = !array.Where((t, i) => t != anagramCandidateArray[i]).Any();
-
+             
                 isAnagram = true;
                 for (int i = 0; i < array.Length; i++)
                 {
@@ -42,17 +42,17 @@ namespace Toci.TraininigLibrary.Developers.Mg.Inheritance
                     }
                 }
 
-                if(isAnagram) itemList.Add(key);
+                if(isAnagram) itemList.Add(this[key]);
          
             }
             return itemList;
         }
 
-      
-        public override List<string> GetPalindromSet()
+
+        public override List<T> GetPalindromSet()
         { 
          
-            itemList = new List<string>();
+            List<T> itemList = new List<T>();
             StringBuilder stringBuilder  = new StringBuilder();
 
             foreach (var key in this.Keys)
@@ -64,7 +64,7 @@ namespace Toci.TraininigLibrary.Developers.Mg.Inheritance
                     stringBuilder.Append(letter);
                 }
 
-                if (stringBuilder.ToString() == key) itemList.Add(key);
+                if (stringBuilder.ToString().ToUpper() == key.ToUpper()) itemList.Add(this[key]);
 
                 stringBuilder.Clear();
             }
@@ -72,10 +72,10 @@ namespace Toci.TraininigLibrary.Developers.Mg.Inheritance
             return itemList;
         }
 
-        public override List<string> GetWildcardSet(string wildcard)
+        public override List<T> GetWildcardSet(string wildcard)
         {
-           
-            return this.Keys.Select(x => x).Where(x => x.Contains(wildcard)).ToList();
+            return this.Where(x => x.Key.Contains(wildcard)).Select(x => x.Value).ToList();
+            // return this.Keys.Select(x => x).Where(x => x.ToUpper().Contains(wildcard.ToUpper())).ToList();
         }
     }
 }
