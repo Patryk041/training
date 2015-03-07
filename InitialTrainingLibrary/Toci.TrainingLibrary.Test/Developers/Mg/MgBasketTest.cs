@@ -6,7 +6,7 @@ using Toci.TraininigLibrary.Developers.Mg.Basket.Products;
 namespace Toci.TrainingLibrary.Test.Developers.Mg
 {
     [TestClass]
-    public class BasketTest
+    public class MgBasketTest
     {
         [TestMethod]
         public void TestMethod1()
