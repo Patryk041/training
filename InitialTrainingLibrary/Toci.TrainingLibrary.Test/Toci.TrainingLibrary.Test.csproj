@@ -64,6 +64,7 @@
     <Compile Include="Developers\Rs\RsDictionaryTests\RsHashtableTest.cs" />
     <Compile Include="Developers\Rs\RsFileDetailParserTest.cs" />
     <Compile Include="Developers\Santi\SantiFileParserTest.cs" />
+    <Compile Include="Developers\Sito\Inheritance\SitoInheritanceTests.cs" />
     <Compile Include="Developers\Warrior\Db\DbOperationsTest.cs" />
     <Compile Include="Developers\Warrior\WarriorFileParserTest.cs" />
     <Compile Include="Developers\Warrior\WarriorMgSolutionTest.cs" />
