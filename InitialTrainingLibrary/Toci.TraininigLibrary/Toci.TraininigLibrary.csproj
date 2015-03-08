@@ -88,6 +88,15 @@
     <Compile Include="Developers\Mg\FileParser\MgFileDetailsParser.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileEntity.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileParser.cs" />
+    <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\Book.cs" />
+    <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\DiscountItem.cs" />
+    <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\Item.cs" />
+    <Compile Include="Developers\Robson\ShoppingCartv2\RobsonsShoppingCart.cs" />
+    <Compile Include="Developers\Robson\ShoppingCart\CartItem.cs" />
+    <Compile Include="Developers\Robson\ShoppingCart\Item.cs" />
+    <Compile Include="Developers\Robson\ShoppingCart\Items\Book.cs" />
+    <Compile Include="Developers\Robson\ShoppingCart\ItemType.cs" />
+    <Compile Include="Developers\Robson\ShoppingCart\RobsonsShoppingCart.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileDetailsParser.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileEntity.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileFooterParser.cs" />
