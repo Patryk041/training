@@ -58,7 +58,6 @@
     <Compile Include="Developers\Koziu\KoziuFileGeneratorTest.cs" />
     <Compile Include="Developers\Mg\Inheritance\MgInheritanceTest.cs" />
     <Compile Include="Developers\Mg\MgLoadFileTest.cs" />
-    <Compile Include="Developers\Mg\BasketTest.cs" />
     <Compile Include="Developers\Robson\RobsonsShoppingCartTest.cs" />
     <Compile Include="Developers\Mg\MgBasketTest.cs" />
     <Compile Include="Developers\Rs\RsDictionaryTests\RsDictionaryTest.cs" />

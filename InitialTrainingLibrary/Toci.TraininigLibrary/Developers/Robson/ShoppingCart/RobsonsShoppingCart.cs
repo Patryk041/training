@@ -11,7 +11,7 @@ namespace Toci.TraininigLibrary.Developers.Robson.ShoppingCart
 {
     public class RobsonsShoppingCart : BinBase
     {
-        List<CartItem<Book>> allItems;
+        //List<CartItem<Book>> allItems;
 
         public override Dictionary<string, IPurchase> Purchases()
         {
