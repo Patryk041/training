@@ -74,7 +74,9 @@ namespace Toci.TrainingLibrary.Test.Developers.Mg.Inheritance
                
            };
 
-            commonSortedList.Add("ewqff", 5);
+            commonSortedList.Add("ewqff", "5");
+            commonDict.Add("EW","5");
+
 
             var IMgDictAnagram = commonDict.GetAnagramSet("rower");
             var IMgDictPalindrom = commonDict.GetPalindromSet();
