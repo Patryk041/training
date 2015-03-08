@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Common.Interfaces.FileParser;
+using Toci.TraininigLibrary.Developers.Koziu.FileParser;
+using Toci.TraininigLibrary.Developers.Sito.FileParser;
 
 namespace Toci.TraininigLibrary.Common.FileParser
 {
@@ -64,6 +66,13 @@ namespace Toci.TraininigLibrary.Common.FileParser
                     var line = lines[i];
 
                     FileEntityBase entity = fileParser.ReadEntry(line);
+
+                    if (entity is KoziuFileEntity)
+                    {
+                        // call web service
+                        
+                    }
+
                     if (CustomCallback != null)
                     {
                         CustomCallback(entity);

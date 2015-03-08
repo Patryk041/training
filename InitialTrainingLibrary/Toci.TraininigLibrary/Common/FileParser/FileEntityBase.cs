@@ -10,10 +10,10 @@ namespace Toci.TraininigLibrary.Common.FileParser
 {
     public class FileEntityBase : IDbSave
     {
-        public string Name { get; protected set; }
-        public string Surname { get; protected set; }
-        public DateTime Date { get; protected set; }
-        public string Account { get; protected set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public DateTime Date { get; set; }
+        public string Account { get; set; }
 
         public override string ToString()
         {

@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mono.Security">
+      <HintPath>..\Libraries\Mono.Security.dll</HintPath>
+    </Reference>
     <Reference Include="Npgsql">
       <HintPath>..\Libraries\Npgsql.dll</HintPath>
     </Reference>
@@ -43,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clients\PostgreSqlClient.cs" />
+    <Compile Include="Clients\SqlClientBase.cs" />
     <Compile Include="Interfaces\IDbClient.cs" />
     <Compile Include="Interfaces\IDbCluster.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

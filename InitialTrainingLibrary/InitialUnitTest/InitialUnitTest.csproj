@@ -72,6 +72,7 @@
     <Compile Include="UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vernathic\01_VUnitTest.cs" />
+    <Compile Include="warrior\TrainingThree\Tests.cs" />
     <Compile Include="warrior\WarriorTest.cs" />
   </ItemGroup>
   <ItemGroup>

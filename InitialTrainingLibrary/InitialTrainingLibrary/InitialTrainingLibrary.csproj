@@ -280,6 +280,26 @@
     <Compile Include="szymon93\[2] Chess\Coordinates.cs" />
     <Compile Include="szymon93\[2] Chess\Figure.cs" />
     <Compile Include="szymon93\[2] Chess\Figures\Rook.cs" />
+    <Compile Include="TrainingThree\Extensions\ExtensionsFail.cs" />
+    <Compile Include="TrainingThree\Extensions\StringExtension.cs" />
+    <Compile Include="TrainingThree\Extensions\TestExtension.cs" />
+    <Compile Include="TrainingThree\Inheritance\DictionaryInheritance.cs" />
+    <Compile Include="TrainingThree\Inheritance\IFlower.cs" />
+    <Compile Include="TrainingThree\Inheritance\IPlant.cs" />
+    <Compile Include="TrainingThree\Inheritance\MySocket.cs" />
+    <Compile Include="TrainingThree\Inheritance\PlantBase.cs" />
+    <Compile Include="TrainingThree\Inheritance\Presentation.cs" />
+    <Compile Include="TrainingThree\Inheritance\Rose.cs" />
+    <Compile Include="TrainingThree\Inheritance\WarriorDictionary.cs" />
+    <Compile Include="TrainingThree\Polimorphism\ITransfersParser.cs" />
+    <Compile Include="TrainingThree\Polimorphism\ITransfersSaver.cs" />
+    <Compile Include="TrainingThree\Polimorphism\TextFileTransfersParser.cs" />
+    <Compile Include="TrainingThree\Polimorphism\TransfersParserBase.cs" />
+    <Compile Include="TrainingThree\Polimorphism\TransfersSaveLogic.cs" />
+    <Compile Include="TrainingThree\Polimorphism\XmlTransfersParser.cs" />
+    <Compile Include="TrainingThree\Xml\Entities\Transfer.cs" />
+    <Compile Include="TrainingThree\Xml\Entities\TransferBase.cs" />
+    <Compile Include="TrainingThree\Xml\Logic\XmlParser.cs" />
     <Compile Include="Vernathic\01_DateValidator\VDate.cs" />
     <Compile Include="Vernathic\01_DateValidator\VDateValidator.cs" />
     <Compile Include="Vernathic\01_DateValidator\VDay.cs" />
@@ -311,8 +331,16 @@
     <Content Include="syf\fileoperations\xmltpl\data\data9.xml" />
     <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="TrainingThree\Db\" />
+    <Folder Include="TrainingThree\FileParser\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toci.TraininigLibrary\Toci.TraininigLibrary.csproj">
+      <Project>{0ed59b72-4120-4f4e-8684-d3a1d1f6bbf2}</Project>
+      <Name>Toci.TraininigLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

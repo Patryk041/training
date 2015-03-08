@@ -35,6 +35,8 @@ namespace Toci.TraininigLibrary.Developers.Domi
              ReturnData.GetDate(_splitFile[2]);
              ReturnData.GetAccount(_splitFile[3]);
 
+
+
             return ReturnData; 
         }
 
