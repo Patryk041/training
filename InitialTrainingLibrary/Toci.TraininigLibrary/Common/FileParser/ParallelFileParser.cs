@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Common.Interfaces.FileParser;
+using Toci.TraininigLibrary.Developers.Koziu.FileParser;
+using Toci.TraininigLibrary.Developers.Sito.FileParser;
 
 namespace Toci.TraininigLibrary.Common.FileParser
 {
@@ -20,8 +22,7 @@ namespace Toci.TraininigLibrary.Common.FileParser
             CustomCallback = customCallback;
         }
 
-        public virtual List<Task> ParseFile(FileParser<IFileSection, IFileSection, IFileSection> fileParser, 
-            StreamReader fileReader, FileEntityBase resultContainter, int threadsCount)
+        public virtual List<Task> ParseFile(FileDetailParserBase fileParser, StreamReader fileReader, int threadsCount)
         {
             List<Task> list = new List<Task>();
 
@@ -36,7 +37,7 @@ namespace Toci.TraininigLibrary.Common.FileParser
             {
                 var start = threadsCount*i;
                   // = new Task(ReadSection(fileReader, start, threadsCount));
-                list.Add(Task.Factory.StartNew(ReadSection(fileParser, lines, start, threadsCount)));
+                list.Add(Task.Factory.StartNew(() => ReadSection(fileParser, lines, start, threadsCount)));
             }
 
             foreach (var item in list)
@@ -48,14 +49,12 @@ namespace Toci.TraininigLibrary.Common.FileParser
         }
 
 
-        private Action ReadSection(FileParser<IFileSection, IFileSection, IFileSection> fileParser,
+        private void ReadSection(FileDetailParserBase fileParser,
             List<string> lines, int start, int count)
         {
 
 
             // wywolac custom callback dla zaczytanego wiersza, dac ifa czy ten callback istnieje
-
-
 
             //logika wyczytujaca z pliku i parsuje
             //for 
@@ -64,16 +63,24 @@ namespace Toci.TraininigLibrary.Common.FileParser
                 if (i < lines.Count())
                 {
                 
-                var line = lines[i];
+                    var line = lines[i];
 
-                FileEntityBase entity = fileParser.GetParsedData(line);
-                if (CustomCallback != null)
-                {
-                    CustomCallback(entity);
-                }
-                if (lines.Count() <= start + count*count)
-                    ReadSection(fileParser, lines, start + count*count, count);
-                return null;
+                    FileEntityBase entity = fileParser.ReadEntry(line);
+
+                    if (entity is KoziuFileEntity)
+                    {
+                        // call web service
+                        
+                    }
+
+                    if (CustomCallback != null)
+                    {
+                        CustomCallback(entity);
+                    }
+                    if (lines.Count() <= start + count*count)
+                    {
+                        ReadSection(fileParser, lines, start + count*count, count);
+                    }
                 }
         }
 
@@ -81,7 +88,6 @@ namespace Toci.TraininigLibrary.Common.FileParser
             //if
             //ReadSection
 
-            return null;
         }
     }
 }

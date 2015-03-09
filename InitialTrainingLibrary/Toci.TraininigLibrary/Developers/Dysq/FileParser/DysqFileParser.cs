@@ -11,7 +11,7 @@ namespace Toci.TraininigLibrary.Developers.Dysq.FileParser
 {
     public class DysqFileParser : FileParser<DysqFileHeaderParser, DysqFileDetailParser, DysqFileFooterParser>
     {
-        public DysqFileParser(string fileName, DysqFileDetailParser detailsParser) : base(fileName, detailsParser)
+        public DysqFileParser() : base(new DysqFileDetailParser())
         {
             
         }

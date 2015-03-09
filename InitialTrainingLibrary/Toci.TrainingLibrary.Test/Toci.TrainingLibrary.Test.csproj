@@ -36,6 +36,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -52,15 +54,36 @@
   <ItemGroup>
     <Compile Include="Developers\Domi\DomiFileParserTest.cs" />
     <Compile Include="Developers\Dysq\DysqFileParserTest.cs" />
+    <Compile Include="Developers\Dysq\Inheritance\DysqTest.cs" />
     <Compile Include="Developers\Hipek\HipekFileParserTest.cs" />
+    <Compile Include="Developers\Koziu\KoziuFileGeneratorTest.cs" />
+    <Compile Include="Developers\Mg\Inheritance\MgInheritanceTest.cs" />
+    <Compile Include="Developers\Mg\MgLoadFileTest.cs" />
+    <Compile Include="Developers\Robson\RobsonsShoppingCartTest.cs" />
+    <Compile Include="Developers\Mg\MgBasketTest.cs" />
+    <Compile Include="Developers\Rs\RsDictionaryTests\RsDictionaryTest.cs" />
+    <Compile Include="Developers\Rs\RsDictionaryTests\RsExtensionMethodsTest.cs" />
+    <Compile Include="Developers\Rs\RsDictionaryTests\RsHashtableTest.cs" />
+    <Compile Include="Developers\Rs\RsFileDetailParserTest.cs" />
     <Compile Include="Developers\Santi\SantiFileParserTest.cs" />
+    <Compile Include="Developers\Sito\Inheritance\SitoInheritanceTests.cs" />
+    <Compile Include="Developers\Warrior\Db\DbOperationsTest.cs" />
     <Compile Include="Developers\Warrior\WarriorFileParserTest.cs" />
+    <Compile Include="Developers\Warrior\WarriorMgSolutionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\Entities\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\InitialTrainingLibrary\InitialTrainingLibrary.csproj">
+      <Project>{ccff23ce-5a34-4fa7-ac0e-427fd4fa97b8}</Project>
+      <Name>InitialTrainingLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Db\Toci.Db.csproj">
+      <Project>{e45ea1c2-f40c-4903-94c3-30a885a71d33}</Project>
+      <Name>Toci.Db</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Toci.TraininigLibrary\Toci.TraininigLibrary.csproj">
       <Project>{0ed59b72-4120-4f4e-8684-d3a1d1f6bbf2}</Project>
       <Name>Toci.TraininigLibrary</Name>

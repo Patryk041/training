@@ -9,6 +9,6 @@ namespace Toci.TraininigLibrary.Common.Interfaces.FileParser
 {
     public interface ISaveFile
     {
-       bool SaveFile(List<FileEntityBase> entriesList, string fileName);        
+        void Generate(Dictionary<string, List<FileEntityBase>> contents);        
     }
 }

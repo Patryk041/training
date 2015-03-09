@@ -10,15 +10,10 @@ namespace Toci.TraininigLibrary.Developers.Santi.FileParser
 {
 	public class SantiFileParser : FileParser<SantiFileHeaderParser,SantiFileDetailParser,SantiFileFooterParser>
 	{
-		//Fields
-		private string FilePath;
-		private SantiFileDetailParser detailParser;
-
 		//Constructors
-		public SantiFileParser(string fileName, SantiFileDetailParser detailParser) : base(fileName, new SantiFileDetailParser())
+		public SantiFileParser() : base(new SantiFileDetailParser())
 		{
-			FilePath = fileName;
-			this.detailParser = detailParser;
+
 		}
 
 		//Methods

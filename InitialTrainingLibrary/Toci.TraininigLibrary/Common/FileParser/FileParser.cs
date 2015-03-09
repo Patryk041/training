@@ -9,15 +9,15 @@ namespace Toci.TraininigLibrary.Common.FileParser
 {
     public abstract class FileParser<THeader, TDetails, TFooter> : IDisposable where THeader : IFileSection where TDetails : IFileSection where TFooter : IFileSection
     {
-        protected string FileName;
+        //protected string FileName;
 
         protected TDetails DetailsParser;
 
         protected FileEntityBase Row;
 
-        protected FileParser(string fileName, TDetails detailsParser)
+        protected FileParser(TDetails detailsParser)
         {
-            FileName = fileName;
+            //FileName = fileName;
             DetailsParser = detailsParser;
         }
 

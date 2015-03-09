@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tranfers>
+  <transfer bank="ingbankslaski">
+    <account>34712859235732857324</account>
+    <owner>Rdsadfbhadsfdafdsaf</owner>
+    <sum>434.45</sum>
+    <sourceAccount>4327852345928543463</sourceAccount>
+    <date>2015-03-07</date>
+  </transfer>
+  <transfer bank="pkosa">
+    <account>73896736586586</account>
+    <owner>Ggfhgsfgf</owner>
+    <sum>768.45</sum>
+    <sourceAccount>53478676654</sourceAccount>
+    <date>2015-03-07</date>
+  </transfer>
+  <transfer bank="mbank">
+    <account>8950479367348</account>
+    <owner>Wdfsahghdg</owner>
+    <sum>876.45</sum>
+    <sourceAccount>213432546543</sourceAccount>
+    <date>2015-03-07</date>
+  </transfer>
+  <transfer bank="gettin">
+    <account>654754754774</account>
+    <owner>Fdwgrwgrewheheher</owner>
+    <sum>125.45</sum>
+    <sourceAccount>6536574746786575</sourceAccount>
+    <date>2015-03-07</date>
+  </transfer>
+</tranfers>

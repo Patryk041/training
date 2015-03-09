@@ -6,8 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.TraininigLibrary.Common.FileParser;
+using Toci.TraininigLibrary.Developers.Dysq.Bin;
+using Toci.TraininigLibrary.Developers.Dysq.Bin.Products;
 using Toci.TraininigLibrary.Developers.Dysq.FileParser;
-
 
 namespace Toci.TrainingLibrary.Test.Developers.Dysq
 {
@@ -17,7 +18,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq
         [TestMethod]
         public void TestDysqFileParser()
         {
-        
+
             DysqFileDetailParser parser = new DysqFileDetailParser();
            
 
@@ -36,6 +37,16 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq
            var test = parser.ReadEntry(lines[0]);
 
             Assert.AreEqual(test.Name, "Mateusz");
+        }
+
+        [TestMethod]
+        public void TestDysqShopItemName()
+        {
+            DysqPurchase purchase = new DysqPurchase(2,220.00, BootsKind.Sandals,false);
+           // purchase.SetName(BootsKind.Sandals);
+           //var name= purchase.Name();
+            var testPurchase = purchase;
+            
         }
     }
 }

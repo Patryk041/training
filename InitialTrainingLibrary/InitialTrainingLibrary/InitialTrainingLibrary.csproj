@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -156,6 +157,18 @@
     <Compile Include="mg\DateValidator\ValidatorLogic.cs" />
     <Compile Include="mg\Chess\InitializeBoard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="robson\ChessGame\ChessBoard.cs" />
+    <Compile Include="robson\ChessGame\ChessBoardField.cs" />
+    <Compile Include="robson\ChessGame\ChessBoardFieldCoordinates.cs" />
+    <Compile Include="robson\ChessGame\ChessBoardFigure.cs" />
+    <Compile Include="robson\ChessGame\ChessBoardFigureFactory.cs" />
+    <Compile Include="robson\ChessGame\FigureTypes\Bishop.cs" />
+    <Compile Include="robson\ChessGame\FigureTypes\Horse.cs" />
+    <Compile Include="robson\ChessGame\FigureTypes\King.cs" />
+    <Compile Include="robson\ChessGame\FigureTypes\Pawn.cs" />
+    <Compile Include="robson\ChessGame\FigureTypes\Queen.cs" />
+    <Compile Include="robson\ChessGame\FigureTypes\Rook.cs" />
+    <Compile Include="robson\ChessGame\SetUpGame.cs" />
     <Compile Include="robson\Date.cs" />
     <Compile Include="RS\Chess\Board.cs" />
     <Compile Include="RS\Chess\BoardField.cs" />
@@ -267,6 +280,28 @@
     <Compile Include="szymon93\[2] Chess\Coordinates.cs" />
     <Compile Include="szymon93\[2] Chess\Figure.cs" />
     <Compile Include="szymon93\[2] Chess\Figures\Rook.cs" />
+    <Compile Include="TrainingFour\Reflection\PreTest\Flower.cs" />
+    <Compile Include="TrainingFour\Reflection\PreTest\ReflectFlower.cs" />
+    <Compile Include="TrainingThree\Extensions\ExtensionsFail.cs" />
+    <Compile Include="TrainingThree\Extensions\StringExtension.cs" />
+    <Compile Include="TrainingThree\Extensions\TestExtension.cs" />
+    <Compile Include="TrainingThree\Inheritance\DictionaryInheritance.cs" />
+    <Compile Include="TrainingThree\Inheritance\IFlower.cs" />
+    <Compile Include="TrainingThree\Inheritance\IPlant.cs" />
+    <Compile Include="TrainingThree\Inheritance\MySocket.cs" />
+    <Compile Include="TrainingThree\Inheritance\PlantBase.cs" />
+    <Compile Include="TrainingThree\Inheritance\Presentation.cs" />
+    <Compile Include="TrainingThree\Inheritance\Rose.cs" />
+    <Compile Include="TrainingThree\Inheritance\WarriorDictionary.cs" />
+    <Compile Include="TrainingThree\Polimorphism\ITransfersParser.cs" />
+    <Compile Include="TrainingThree\Polimorphism\ITransfersSaver.cs" />
+    <Compile Include="TrainingThree\Polimorphism\TextFileTransfersParser.cs" />
+    <Compile Include="TrainingThree\Polimorphism\TransfersParserBase.cs" />
+    <Compile Include="TrainingThree\Polimorphism\TransfersSaveLogic.cs" />
+    <Compile Include="TrainingThree\Polimorphism\XmlTransfersParser.cs" />
+    <Compile Include="TrainingThree\Xml\Entities\Transfer.cs" />
+    <Compile Include="TrainingThree\Xml\Entities\TransferBase.cs" />
+    <Compile Include="TrainingThree\Xml\Logic\XmlParser.cs" />
     <Compile Include="Vernathic\01_DateValidator\VDate.cs" />
     <Compile Include="Vernathic\01_DateValidator\VDateValidator.cs" />
     <Compile Include="Vernathic\01_DateValidator\VDay.cs" />
@@ -298,8 +333,17 @@
     <Content Include="syf\fileoperations\xmltpl\data\data9.xml" />
     <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="TrainingFour\Reflection\Training\" />
+    <Folder Include="TrainingThree\Db\" />
+    <Folder Include="TrainingThree\FileParser\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toci.TraininigLibrary\Toci.TraininigLibrary.csproj">
+      <Project>{0ed59b72-4120-4f4e-8684-d3a1d1f6bbf2}</Project>
+      <Name>Toci.TraininigLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
