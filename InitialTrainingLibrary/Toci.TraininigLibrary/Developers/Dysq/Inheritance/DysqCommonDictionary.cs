@@ -43,15 +43,27 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Inheritance
         public override List<T> GetPalindromSet()
         {
             List<T> palindromList = new List<T>();
-           
 
+            bool isPalindrom;
             foreach (var key in this.Keys)
-            { 
-                string reversedKey = key.Reverse().ToString();
+            {
+                isPalindrom = false;
+                var keyCharArray = key.ToArray();
+                var reversedSequenceOfKeyChars = key.ToArray();
+                Array.Reverse(reversedSequenceOfKeyChars);
 
-                if (key == reversedKey)
-                    palindromList.Add(this[key]);
+                var a =keyCharArray.ToString();
+                var b = reversedSequenceOfKeyChars.ToString();
+                
+                for (int i = 0; i < keyCharArray.Count(); i++)
+                {
+                    if (keyCharArray[i] != reversedSequenceOfKeyChars[i])
+                        break;
+                    isPalindrom = true;
 
+                }
+                if(isPalindrom)
+               palindromList.Add(this[key]);
             }
 
             return palindromList;
