@@ -280,6 +280,8 @@
     <Compile Include="szymon93\[2] Chess\Coordinates.cs" />
     <Compile Include="szymon93\[2] Chess\Figure.cs" />
     <Compile Include="szymon93\[2] Chess\Figures\Rook.cs" />
+    <Compile Include="TrainingFour\Reflection\PreTest\Flower.cs" />
+    <Compile Include="TrainingFour\Reflection\PreTest\ReflectFlower.cs" />
     <Compile Include="TrainingThree\Extensions\ExtensionsFail.cs" />
     <Compile Include="TrainingThree\Extensions\StringExtension.cs" />
     <Compile Include="TrainingThree\Extensions\TestExtension.cs" />
@@ -332,6 +334,7 @@
     <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="TrainingFour\Reflection\Training\" />
     <Folder Include="TrainingThree\Db\" />
     <Folder Include="TrainingThree\FileParser\" />
   </ItemGroup>
