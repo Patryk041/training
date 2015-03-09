@@ -28,7 +28,7 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Inheritance
 
                 isDysqAnagram = true;
 
-                for (int i = 0; i <= key.Length; i++)
+                for (int i = 0; i < key.Length; i++)
                 {
                     if (arrayOfkey[i] != anagramCandidateArray[i])
                          isDysqAnagram = false;
@@ -43,21 +43,15 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Inheritance
         public override List<T> GetPalindromSet()
         {
             List<T> palindromList = new List<T>();
-            List<string> keysList = new List<string>();
-          
-            List<T> valuesList = this.Values.ToList();
+           
 
             foreach (var key in this.Keys)
             { 
-                var reversedKey = key.Reverse().ToString();
-                keysList.Add(reversedKey);
+                string reversedKey = key.Reverse().ToString();
 
-                for (int i = 0; i <= keysList.Count(); i++)
-            {
-                if (keysList[i] == valuesList[i].ToString())
+                if (key == reversedKey)
                     palindromList.Add(this[key]);
 
-            }    
             }
 
             return palindromList;
