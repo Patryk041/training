@@ -272,8 +272,8 @@
     <Compile Include="Vernathic\01_DateValidator\VDay.cs" />
     <Compile Include="Vernathic\01_DateValidator\VLeapYear.cs" />
     <Compile Include="Vernathic\01_DateValidator\VMonth.cs" />
-    <Compile Include="Vernathic\02_VChess\board\VBoard.cs" />
-    <Compile Include="Vernathic\02_VChess\board\VBoardField.cs" />
+    <Compile Include="Vernathic\02_VChess\VBoard.cs" />
+    <Compile Include="Vernathic\02_VChess\VBoardField.cs" />
     <Compile Include="Vernathic\02_VChess\VChess.cs" />
     <Compile Include="Vernathic\02_VChess\VCoordinates.cs" />
     <Compile Include="Vernathic\02_VChess\VFigure.cs" />
