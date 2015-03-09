@@ -61,6 +61,10 @@
     <Compile Include="Developers\Dysq\Bin\Products\BootsKind.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\Boots.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileDetailParser.cs" />
+    <Compile Include="Developers\Dysq\Inheritance\Base\DysqCommonDictionaryBase.cs" />
+    <Compile Include="Developers\Dysq\Inheritance\DysqCommonDictionary.cs" />
+    <Compile Include="Developers\Dysq\Inheritance\ExtensionsByDysq.cs" />
+    <Compile Include="Developers\Dysq\Inheritance\Interfaces\IDysqCommonDictionaryBase.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileDetailsParser.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileEntity.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileFooterParser.cs" />
