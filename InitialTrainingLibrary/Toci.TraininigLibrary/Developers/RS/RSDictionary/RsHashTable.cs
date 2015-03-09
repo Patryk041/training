@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Toci.TraininigLibrary.Common.RsStaticClasses;
 
 namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
 {
@@ -11,10 +12,15 @@ namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
 
             foreach (var hashtableMember in Keys)
             {
-                var anagramCharArray = anagramCandidate.ToLower().ToCharArray().OrderBy(s => s);
-                var dictionaryMemberKeyCharArray = hashtableMember.ToString().ToLower().ToCharArray().OrderBy(s => s);
+//                var anagramCharArray = anagramCandidate.ToLower().ToCharArray().OrderBy(s => s);
+//                var dictionaryMemberKeyCharArray = hashtableMember.ToString().ToLower().ToCharArray().OrderBy(s => s);
+//
+//                if (anagramCharArray.SequenceEqual(dictionaryMemberKeyCharArray))
+//                {
+//                    results.Add(this[hashtableMember] as T);
+//                }
 
-                if (anagramCharArray.SequenceEqual(dictionaryMemberKeyCharArray))
+                if (RsDictionaryHelpers.IsAnagram(anagramCandidate, hashtableMember.ToString()))
                 {
                     results.Add(this[hashtableMember] as T);
                 }
@@ -28,10 +34,15 @@ namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
 
             foreach (var hashtableMember in Keys)
             {
-                var key = hashtableMember.ToString().ToLower().ToCharArray();
-                var reverseKey = key.Reverse();
+//                var key = hashtableMember.ToString().ToLower().ToCharArray();
+//                var reverseKey = key.Reverse();
+//
+//                if (key.SequenceEqual(reverseKey))
+//                {
+//                    results.Add(this[hashtableMember] as T);
+//                }
 
-                if (key.SequenceEqual(reverseKey))
+                if (RsDictionaryHelpers.IsPalindrom(hashtableMember.ToString()))
                 {
                     results.Add(this[hashtableMember] as T);
                 }
@@ -46,14 +57,19 @@ namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
 
             foreach (var hashtableMember in Keys)
             {
-                if (hashtableMember.ToString().Length < wildcardSize)
-                {
-                    continue;
-                }
+//                if (hashtableMember.ToString().Length < wildcardSize)
+//                {
+//                    continue;
+//                }
+//
+//                string subStringKey = hashtableMember.ToString().Substring(0, wildcardSize);
+//
+//                if (subStringKey == wildcard)
+//                {
+//                    results.Add(this[hashtableMember] as T);
+//                }
 
-                string subStringKey = hashtableMember.ToString().Substring(0, wildcardSize);
-
-                if (subStringKey == wildcard)
+                if (RsDictionaryHelpers.ContainsWildCard(wildcard, hashtableMember.ToString()))
                 {
                     results.Add(this[hashtableMember] as T);
                 }

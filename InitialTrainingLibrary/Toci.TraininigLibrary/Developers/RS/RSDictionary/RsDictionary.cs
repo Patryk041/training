@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Toci.TraininigLibrary.Common.Base.Inheritance;
+using Toci.TraininigLibrary.Common.RsStaticClasses;
 
 namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
 {
@@ -12,10 +12,7 @@ namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
 
             foreach (var dictionaryMember in this)
             {
-                var anagramCharArray = anagramCandidate.ToLower().ToCharArray().OrderBy(s => s);
-                var dictionaryMemberKeyCharArray = dictionaryMember.Key.ToLower().ToCharArray().OrderBy(s => s);
-
-                if (anagramCharArray.SequenceEqual(dictionaryMemberKeyCharArray))
+                if (RsDictionaryHelpers.IsAnagram(anagramCandidate, dictionaryMember.Key))
                 {
                     results.Add(dictionaryMember.Value);
                 }
@@ -29,10 +26,7 @@ namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
 
             foreach (var dictionaryMember in this)
             {
-                var key = dictionaryMember.Key.ToLower().ToCharArray();
-                var reverseKey = key.Reverse();
-                
-                if (key.SequenceEqual(reverseKey))
+                if (RsDictionaryHelpers.IsPalindrom(dictionaryMember.Key))
                 {
                     results.Add(dictionaryMember.Value);
                 }
@@ -42,19 +36,11 @@ namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
 
         public override List<T> GetWildcardSet(string wildcard)
         {
-            int wildcardSize = wildcard.Length;
             List<T> results = new List<T>();
 
             foreach (var dictionaryMember in this)
             {
-                if (dictionaryMember.Key.Length < wildcardSize)
-                {
-                    continue;
-                }
-
-                string subStringKey = dictionaryMember.Key.Substring(0, wildcardSize);
-
-                if (subStringKey == wildcard)
+                if (RsDictionaryHelpers.ContainsWildCard(wildcard, dictionaryMember.Key))
                 {
                     results.Add(dictionaryMember.Value);
                 }
