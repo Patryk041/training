@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tranfers>
+	<transfer>
+		<name>Jan</name>
+		<surname>Kowalski</surname>
+		<summary>302.45</summary>
+		<date>10.02.2015</date>
+		<accountNumber>342141341321</accountNumber>
+	</transfer>
+		<transfer>
+		<name>Henryk</name>
+		<surname>Nowak</surname>
+		<summary>355.45</summary>
+		<date>01.02.2014</date>
+		<accountNumber>564334253445</accountNumber>
+	</transfer>
+</tranfers>
