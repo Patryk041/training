@@ -34,6 +34,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Chmura.TrainingThree
             chmuraDic.Add("arrad", new ChmuraClass() { Name = "drugi" });
             chmuraDic.Add("radarowo", new ChmuraClass() { Name = "trzeci" });
             chmuraDic.Add("JestemInny", new ChmuraClass() { Name = "czwarty" });
+            chmuraDic.Add("romek", new ChmuraClass() { Name = "piaty" });
 
             List<ChmuraClass> myList = new List<ChmuraClass>();
 
