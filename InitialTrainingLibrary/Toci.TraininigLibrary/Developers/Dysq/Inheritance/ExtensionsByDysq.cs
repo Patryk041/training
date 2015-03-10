@@ -39,9 +39,32 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Inheritance
         }
         
 
-        public static List<T> IsDysqPalindrom<T>(this Dictionary<string,T> dysqDictionary, string palindromCandidate)// cyc radar aerrea
+        public static List<T> IsDysqPalindrom<T>(this Dictionary<string,T> dysqDictionary)// cyc radar aerrea
         {
-            return (from key in dysqDictionary.Keys let reversedKey = key.Reverse().ToString() where reversedKey.ToUpper() == palindromCandidate.ToUpper() select dysqDictionary[key]).ToList();
+
+            List<T> palindromList = new List<T>();
+
+            bool isPalindrom;
+            foreach (var key in dysqDictionary.Keys)
+            {
+                isPalindrom = false;
+                var keyCharArray = key.ToArray();
+                var reversedSequenceOfKeyChars = key.ToArray();
+                Array.Reverse(reversedSequenceOfKeyChars);
+
+
+                for (int i = 0; i < keyCharArray.Count(); i++)
+                {
+                    if (keyCharArray[i] != reversedSequenceOfKeyChars[i])
+                        break;
+                    isPalindrom = true;
+
+                }
+                if (isPalindrom)
+                    palindromList.Add(dysqDictionary[key]);
+            }
+
+            return palindromList;
         }
 
 

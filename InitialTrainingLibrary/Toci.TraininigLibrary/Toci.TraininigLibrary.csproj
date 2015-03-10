@@ -56,6 +56,9 @@
     <Compile Include="Common\Interfaces\InternetStore\IDiscount.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IPurchase.cs" />
     <Compile Include="Common\RsStaticClasses\RsDictionaryHelpers.cs" />
+    <Compile Include="Developers\Chmura\ChmuraClass.cs" />
+    <Compile Include="Developers\Chmura\ChmuraInheritanceTask\ChmuraStringDictionary.cs" />
+    <Compile Include="Developers\Chmura\ChmuraInheritanceTask\ChmuraTrainingThreeExtensions.cs" />
     <Compile Include="Developers\Dysq\Bin\DysqBin.cs" />
     <Compile Include="Developers\Dysq\Bin\DysqPurchase.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\BootsKind.cs" />
@@ -132,6 +135,11 @@
     <Compile Include="Developers\Sito\FileParser\SitoHeaderParser.cs" />
     <Compile Include="Developers\Sito\Inheritance\SitoExtensions.cs" />
     <Compile Include="Developers\Sito\InternetStore\SitoBin.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\Interfaces\ITransferParser.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\SitoTextTransferParser.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\TextParserFactory.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\TransferModels\SitoTransfer.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\SitoTransferParserBase.cs" />
     <Compile Include="Developers\Warrior\Db\Models\ModelBase.cs" />
     <Compile Include="Developers\Warrior\Db\Models\TransferModel.cs" />
     <Compile Include="Developers\Warrior\FileParser\WarriorFileDetailParser.cs" />
