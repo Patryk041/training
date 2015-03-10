@@ -22,7 +22,7 @@ namespace Toci.TraininigLibrary.Developers.Sito.Polimorphism
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
-                    var fileEntityBase = TextParserFactory.GetParser(GetDevName(path)).ReadEntry(line);
+                    var fileEntityBase = SitoTextParserFactory.GetParser(GetDevName(path)).ReadEntry(line);
                     entries.Add(new SitoTransfer(){AccountNumber = fileEntityBase.Account,Date = fileEntityBase.Date.ToString(),Name = fileEntityBase.Name,Surname = fileEntityBase.Surname});
 
 

@@ -140,6 +140,11 @@
     <Compile Include="Developers\Sito\FileParser\SitoHeaderParser.cs" />
     <Compile Include="Developers\Sito\Inheritance\SitoExtensions.cs" />
     <Compile Include="Developers\Sito\InternetStore\SitoBin.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\SitoDataParser.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\SitoTextParserFactory.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\SitoTranferParsersFactory.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\SitoXmlTransferParser.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\XmlParser.cs" />
     <Compile Include="Developers\Vernathic\Inheritance\VInheritance.cs" />
     <Compile Include="Developers\Sito\Polimorphism\Interfaces\ITransferParser.cs" />
     <Compile Include="Developers\Sito\Polimorphism\SitoTextTransferParser.cs" />
