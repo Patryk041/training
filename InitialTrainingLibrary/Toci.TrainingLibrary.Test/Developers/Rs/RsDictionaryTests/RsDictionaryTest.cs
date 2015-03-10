@@ -28,14 +28,14 @@ namespace Toci.TrainingLibrary.Test.Developers.Rs.RsDictionaryTests
             var resultOne = targetOne.GetAnagramSet(myAnagram);
 
             Assert.IsNotNull(resultOne);
-            Assert.AreEqual(resultOne.Count, 2);
+            Assert.AreEqual(2, resultOne.Count);
             Assert.AreEqual("ValueOne", resultOne[0]);
             Assert.AreEqual("ValueThree", resultOne[1]);
 
             var resultTwo = targetTwo.GetAnagramSet(myAnagram);
 
             Assert.IsNotNull(resultTwo);
-            Assert.AreEqual(resultTwo.Count, 2);
+            Assert.AreEqual(2, resultTwo.Count);
             Assert.AreEqual("ValueOne", resultTwo[0].StringValue);
             Assert.AreEqual("ValueThree", resultTwo[1].StringValue);
         }

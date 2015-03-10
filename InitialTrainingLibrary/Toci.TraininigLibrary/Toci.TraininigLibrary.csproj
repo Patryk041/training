@@ -56,6 +56,9 @@
     <Compile Include="Common\Interfaces\InternetStore\IDiscount.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IPurchase.cs" />
     <Compile Include="Common\RsStaticClasses\RsDictionaryHelpers.cs" />
+    <Compile Include="Developers\Chmura\ChmuraClass.cs" />
+    <Compile Include="Developers\Chmura\ChmuraInheritanceTask\ChmuraStringDictionary.cs" />
+    <Compile Include="Developers\Chmura\ChmuraInheritanceTask\ChmuraTrainingThreeExtensions.cs" />
     <Compile Include="Developers\Dysq\Bin\DysqBin.cs" />
     <Compile Include="Developers\Dysq\Bin\DysqPurchase.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\BootsKind.cs" />
@@ -65,6 +68,11 @@
     <Compile Include="Developers\Dysq\Inheritance\DysqCommonDictionary.cs" />
     <Compile Include="Developers\Dysq\Inheritance\ExtensionsByDysq.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Interfaces\IDysqCommonDictionaryBase.cs" />
+    <Compile Include="Developers\Dysq\Interfaces\IDysqTrasfersParser.cs" />
+    <Compile Include="Developers\Dysq\XMLBase\DysqTransfersParserBase.cs" />
+    <Compile Include="Developers\Dysq\XML\DysqXmlFileEntity.cs" />
+    <Compile Include="Developers\Dysq\XML\DysqXmlTransferParser.cs" />
+    <Compile Include="Developers\Dysq\XML\XmlDysqParser.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileDetailsParser.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileEntity.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileFooterParser.cs" />
@@ -132,7 +140,15 @@
     <Compile Include="Developers\Sito\FileParser\SitoHeaderParser.cs" />
     <Compile Include="Developers\Sito\Inheritance\SitoExtensions.cs" />
     <Compile Include="Developers\Sito\InternetStore\SitoBin.cs" />
+<<<<<<< HEAD
     <Compile Include="Developers\Vernathic\Inheritance\VInheritance.cs" />
+=======
+    <Compile Include="Developers\Sito\Polimorphism\Interfaces\ITransferParser.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\SitoTextTransferParser.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\TextParserFactory.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\TransferModels\SitoTransfer.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\SitoTransferParserBase.cs" />
+>>>>>>> 21aa381e798f1dddf32c6c9d489f055199075e36
     <Compile Include="Developers\Warrior\Db\Models\ModelBase.cs" />
     <Compile Include="Developers\Warrior\Db\Models\TransferModel.cs" />
     <Compile Include="Developers\Warrior\FileParser\WarriorFileDetailParser.cs" />
@@ -178,6 +194,7 @@
     <Content Include="data\transfer_2015_03_02_987654321_dysq.txt" />
     <Content Include="data\transfer_2015_03_06_232325_mg.txt" />
     <Content Include="xmldata\transfer_2015-03-07_43657284832_warrior.xml" />
+    <Content Include="xmldata\transfer_2015-03-10_09876543210_dysq.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
