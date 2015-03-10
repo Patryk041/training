@@ -132,6 +132,7 @@
     <Compile Include="Developers\Sito\FileParser\SitoHeaderParser.cs" />
     <Compile Include="Developers\Sito\Inheritance\SitoExtensions.cs" />
     <Compile Include="Developers\Sito\InternetStore\SitoBin.cs" />
+    <Compile Include="Developers\Vernathic\Inheritance\VInheritance.cs" />
     <Compile Include="Developers\Warrior\Db\Models\ModelBase.cs" />
     <Compile Include="Developers\Warrior\Db\Models\TransferModel.cs" />
     <Compile Include="Developers\Warrior\FileParser\WarriorFileDetailParser.cs" />
