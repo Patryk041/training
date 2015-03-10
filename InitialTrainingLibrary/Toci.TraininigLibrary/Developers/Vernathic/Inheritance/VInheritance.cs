@@ -7,7 +7,7 @@ using Toci.TraininigLibrary.Common.Base.Inheritance;
 
 namespace Toci.TraininigLibrary.Developers.Vernathic.Inheritance
 {
-    class VInheritance : StringDictionary<>
+    class VInheritance// : StringDictionary<> do poprawy
     {
 
     }
