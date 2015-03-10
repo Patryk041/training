@@ -7,8 +7,21 @@ using Toci.TraininigLibrary.Common.Base.Inheritance;
 
 namespace Toci.TraininigLibrary.Developers.Vernathic.Inheritance
 {
-    class VInheritance : StringDictionary<>
-    {
+    public class VInheritance<T> : StringDictionary<T>
+    {      
+        public override List<T> GetAnagramSet(string anagramCandidate)    //radar  raadr
+        {
+            throw new NotImplementedException();
+        }
 
+        public override List<T> GetPalindromSet()           // cyc radar aerrea
+        {
+            throw new NotImplementedException();
+        }
+
+        public override List<T> GetWildcardSet(string wildcard)     // test*  :   testdsafda testewqrfqe, testgfe
+        {
+            throw new NotImplementedException();
+        }
     }
 }
