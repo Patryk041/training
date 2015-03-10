@@ -40,7 +40,7 @@ namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
 //            return results;
 
             // NEW VERSION
-            var results = RsDictionaryHelpers.RsDictionaryHelperInvoke(RsDictionaryHelpers.IsPalindrom, dictionary, null).ToList();
+            var results = RsDictionaryHelpers.RsDictionaryHelperInvoke((param1, param2) => RsDictionaryHelpers.IsPalindrom(param1), dictionary, null).ToList();
             return results.OfType<string>().ToList();
         }
 

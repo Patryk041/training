@@ -19,16 +19,9 @@ namespace Toci.TraininigLibrary.Common.RsStaticClasses
             return false;
         }
 
-        public static bool IsPalindrom(string reverseKeyValue, string keyValue)
+        public static bool IsPalindrom(string reverseKeyValue)
         {
-            var key = keyValue.ToLower().ToCharArray();
-            var reverseKey = key.Reverse();
-
-            if (key.SequenceEqual(reverseKey))
-            {
-                return true;
-            }
-            return false;
+            return reverseKeyValue.Reverse().SequenceEqual(reverseKeyValue.ToCharArray());
         }
 
         public static bool ContainsWildCard(string wildCard, string keyValue)
@@ -53,7 +46,7 @@ namespace Toci.TraininigLibrary.Common.RsStaticClasses
 
             foreach (DictionaryEntry dictionaryMember in myDictionary)
             {
-                if (myMethod.Invoke(additionalCandidate, dictionaryMember.Key.ToString()))
+                if (myMethod(dictionaryMember.Key.ToString(), additionalCandidate))
                 {
                     results.Add(dictionaryMember.Value);
                 }
