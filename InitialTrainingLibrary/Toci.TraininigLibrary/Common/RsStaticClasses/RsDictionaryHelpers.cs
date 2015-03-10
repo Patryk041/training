@@ -1,4 +1,7 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Toci.TraininigLibrary.Common.RsStaticClasses
 {
@@ -16,9 +19,9 @@ namespace Toci.TraininigLibrary.Common.RsStaticClasses
             return false;
         }
 
-        public static bool IsPalindrom(string palindromCandidate)
+        public static bool IsPalindrom(string reverseKeyValue, string keyValue)
         {
-            var key = palindromCandidate.ToLower().ToCharArray();
+            var key = keyValue.ToLower().ToCharArray();
             var reverseKey = key.Reverse();
 
             if (key.SequenceEqual(reverseKey))
@@ -42,6 +45,21 @@ namespace Toci.TraininigLibrary.Common.RsStaticClasses
                 return true;
             }
             return false;
+        }
+
+        public static IEnumerable<object> RsDictionaryHelperInvoke(Func<string, string, bool> myMethod, IDictionary myDictionary, string additionalCandidate)
+        {
+            List<object> results = new List<object>();
+
+            foreach (DictionaryEntry dictionaryMember in myDictionary)
+            {
+                if (myMethod.Invoke(additionalCandidate, dictionaryMember.Key.ToString()))
+                {
+                    results.Add(dictionaryMember.Value);
+                }
+            }
+
+            return results;
         }
     }
 }

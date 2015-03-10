@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Toci.TraininigLibrary.Common.Base.Inheritance;
 using Toci.TraininigLibrary.Common.RsStaticClasses;
 
@@ -8,44 +9,59 @@ namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
     {
         public override List<T> GetAnagramSet(string anagramCandidate)
         {
-            List<T> results = new List<T>();
+            // OLD VERSION
+//            List<T> results = new List<T>();
+//
+//            foreach (var dictionaryMember in this)
+//            {
+//                if (RsDictionaryHelpers.IsAnagram(anagramCandidate, dictionaryMember.Key))
+//                {
+//                    results.Add(dictionaryMember.Value);
+//                }
+//            }
+//            return results;
 
-            foreach (var dictionaryMember in this)
-            {
-                if (RsDictionaryHelpers.IsAnagram(anagramCandidate, dictionaryMember.Key))
-                {
-                    results.Add(dictionaryMember.Value);
-                }
-            }
-            return results;
+            // NEW VERSION
+            var results = RsDictionaryHelpers.RsDictionaryHelperInvoke(RsDictionaryHelpers.IsAnagram, this, anagramCandidate).ToList();
+            return results.Cast<T>().ToList();
         }
 
         public override List<T> GetPalindromSet()
         {
-            List<T> results = new List<T>();
+            // OLD VERSION
+//            List<T> results = new List<T>();
+//
+//            foreach (var dictionaryMember in this)
+//            {
+//                if (RsDictionaryHelpers.IsAnagram(null, dictionaryMember.Key))
+//                {
+//                    results.Add(dictionaryMember.Value);
+//                }
+//            }
+//            return results;
 
-            foreach (var dictionaryMember in this)
-            {
-                if (RsDictionaryHelpers.IsPalindrom(dictionaryMember.Key))
-                {
-                    results.Add(dictionaryMember.Value);
-                }
-            }
-            return results;
+            // NEW VERSION
+            var results = RsDictionaryHelpers.RsDictionaryHelperInvoke(RsDictionaryHelpers.IsPalindrom, this, null).ToList();
+            return results.Cast<T>().ToList();
         }
 
         public override List<T> GetWildcardSet(string wildcard)
         {
-            List<T> results = new List<T>();
+            // OLD VERSION
+//            List<T> results = new List<T>();
+//
+//            foreach (var dictionaryMember in this)
+//            {
+//                if (RsDictionaryHelpers.IsAnagram(wildcard, dictionaryMember.Key))
+//                {
+//                    results.Add(dictionaryMember.Value);
+//                }
+//            }
+//            return results;
 
-            foreach (var dictionaryMember in this)
-            {
-                if (RsDictionaryHelpers.ContainsWildCard(wildcard, dictionaryMember.Key))
-                {
-                    results.Add(dictionaryMember.Value);
-                }
-            }
-            return results;
+            // NEW VERSION
+            var results = RsDictionaryHelpers.RsDictionaryHelperInvoke(RsDictionaryHelpers.ContainsWildCard, this, wildcard).ToList();
+            return results.Cast<T>().ToList();
         }
     }
 }
