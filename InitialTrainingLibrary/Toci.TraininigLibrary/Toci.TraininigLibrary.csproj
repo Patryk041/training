@@ -158,14 +158,6 @@
     <Folder Include="Core\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InitialTrainingLibrary\InitialTrainingLibrary.csproj">
-      <Project>{ccff23ce-5a34-4fa7-ac0e-427fd4fa97b8}</Project>
-      <Name>InitialTrainingLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\InitialUnitTest\InitialUnitTest.csproj">
-      <Project>{7cff86d1-eef3-4e93-a8c5-c62b6d9d1b44}</Project>
-      <Name>InitialUnitTest</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
       <Project>{b39d28c8-a026-48bc-8040-95af3986608e}</Project>
       <Name>Toci.Dal</Name>
