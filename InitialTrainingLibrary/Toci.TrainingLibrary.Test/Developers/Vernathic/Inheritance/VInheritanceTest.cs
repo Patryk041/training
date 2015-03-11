@@ -12,24 +12,28 @@ namespace Toci.TrainingLibrary.Test.Developers.Vernathic.Inheritance
     {
 
         [TestMethod]
-        public void InheritanceTest()
+        public void VernathicInheritanceTest()
         {
             VInheritance<string> myNewDictionary = new VInheritance<string>()
             {
-                {"asdfgfdsa", "p1"},
-                {"tuba", "a1"},
-                {"miśkowiec", "n1"},
-                {"bob", "p2"},
-                {"buta", "a2"},
-                {"tabu", "a3"},
-                {"misiaczek", "m1"},
-                {"radar", "p3"},
-                {"misiowy", "m2"}
+                {"asdfgfdsa",   "p1"},
+                {"tuba",        "a1"},
+                {"miśkowiec",   "n"},
+                {"bob",         "p2"},
+                {"buta",        "a2"},
+                {"tabu",        "a3"},
+                {"misiaczek",   "m1"},
+                {"radar",       "p3"},
+                {"misiowy",     "m2"}
             };
 
             var palindromList = myNewDictionary.GetPalindromSet();
             var anagramList = myNewDictionary.GetAnagramSet("batu");
             var wildcardList = myNewDictionary.GetWildcardSet("mis");
+
+            Assert.IsTrue(palindromList.Count==3);
+            //Assert.IsTrue(anagramList.Count==3);
+            Assert.IsTrue(wildcardList.Count==2);
 
         }
     }
