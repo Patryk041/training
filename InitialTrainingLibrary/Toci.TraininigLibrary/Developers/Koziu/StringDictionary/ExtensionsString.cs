@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Developers.Koziu.StringDictionary
 {
-    public static class LogicKoziuStringDictionary
+    public static class ExtensionsString
     {
         public static bool IsAnagram(this string key, string anagramCandidate)
         {
