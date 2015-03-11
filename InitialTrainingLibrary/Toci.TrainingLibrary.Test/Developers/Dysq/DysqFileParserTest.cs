@@ -9,6 +9,7 @@ using Toci.TraininigLibrary.Common.FileParser;
 using Toci.TraininigLibrary.Developers.Dysq.Bin;
 using Toci.TraininigLibrary.Developers.Dysq.Bin.Products;
 using Toci.TraininigLibrary.Developers.Dysq.FileParser;
+using Toci.TraininigLibrary.Developers.Dysq.XML;
 
 namespace Toci.TrainingLibrary.Test.Developers.Dysq
 {
@@ -47,6 +48,18 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq
            //var name= purchase.Name();
             var testPurchase = purchase;
             
+        }
+
+        [TestMethod]
+        public void TestDysqXmlParser()
+        {
+            DysqXmlTransferParser xmlDysqParser= new DysqXmlTransferParser();
+            string dysqPath = @"E:\Szkolenia\InitialTrainingLibrary\Toci.TraininigLibrary\xmldata\transfer_2015-03-10_09876543210_dysq.xml";
+
+            var list = xmlDysqParser.GetTransfers(dysqPath);
+
+
+
         }
     }
 }

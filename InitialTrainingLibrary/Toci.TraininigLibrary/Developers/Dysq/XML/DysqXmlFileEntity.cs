@@ -35,6 +35,6 @@ namespace Toci.TraininigLibrary.Developers.Dysq.XML
     public class DysqXmlTransfers
     {
         [XmlElement("transfer")]
-        public DysqXmlTransfers [] DysqXmlTrasfersList { get; set; }
+        public DysqXmlFileEntity [] DysqXmlTrasfersList { get; set; }
     }
 }
