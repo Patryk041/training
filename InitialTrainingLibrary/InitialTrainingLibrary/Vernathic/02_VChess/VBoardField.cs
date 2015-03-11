@@ -11,6 +11,7 @@ namespace InitialTrainingLibrary.Vernathic._02_Chess.board
     {
         public bool IsFieldWhite()
         {
+            //return !((x + y) % 2);
             throw new NotImplementedException();
         }
 

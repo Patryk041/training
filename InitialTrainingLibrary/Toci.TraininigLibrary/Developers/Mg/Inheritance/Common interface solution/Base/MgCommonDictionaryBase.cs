@@ -12,5 +12,10 @@ namespace Toci.TraininigLibrary.Developers.Mg.Inheritance.Common_interface_solut
 
         public abstract List<T> GetWildcardSet(string wildcard);
 
+        
+        public void Add(object key, object value)
+        {
+            base.Add(key.ToString(),(T)value);
+        }
     }
 }

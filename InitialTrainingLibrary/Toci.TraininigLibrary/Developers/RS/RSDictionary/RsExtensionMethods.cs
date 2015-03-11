@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Toci.TraininigLibrary.Common.RsStaticClasses;
 
 namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
 {
@@ -7,58 +8,59 @@ namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
     {
         public static List<string> GetAnagramSet(this Dictionary<string, string> dictionary, string anagramCandidate)
         {
-            List<string> results = new List<string>();
+            // OLD VERSION
+//            List<string> results = new List<string>();
+//
+//            foreach (var dictionaryMember in dictionary)
+//            {
+//                if (RsDictionaryHelpers.IsAnagram(anagramCandidate, dictionaryMember.Key))
+//                {
+//                    results.Add(dictionaryMember.Value);
+//                }
+//            }
+//            return results;
 
-            foreach (var dictionaryMember in dictionary)
-            {
-                var anagramCharArray = anagramCandidate.ToLower().ToCharArray().OrderBy(s => s);
-                var dictionaryMemberKeyCharArray = dictionaryMember.Key.ToLower().ToCharArray().OrderBy(s => s);
-
-                if (anagramCharArray.SequenceEqual(dictionaryMemberKeyCharArray))
-                {
-                    results.Add(dictionaryMember.Value);
-                }
-            }
-            return results;
+            // NEW VERSION
+            var results = RsDictionaryHelpers.RsDictionaryHelperInvoke(RsDictionaryHelpers.IsAnagram, dictionary, anagramCandidate).ToList();
+            return results.OfType<string>().ToList();
         }
 
         public static List<string> GetPalindromSet(this Dictionary<string, string> dictionary)
         {
-            List<string> results = new List<string>();
+            // OLD VERSION
+//            List<string> results = new List<string>();
+//
+//            foreach (var dictionaryMember in dictionary)
+//            {
+//                if (RsDictionaryHelpers.IsPalindrom(null, dictionaryMember.Key))
+//                {
+//                    results.Add(dictionaryMember.Value);
+//                }
+//            }
+//            return results;
 
-            foreach (var dictionaryMember in dictionary)
-            {
-                var key = dictionaryMember.Key.ToLower().ToCharArray();
-                var reverseKey = key.Reverse();
-
-                if (key.SequenceEqual(reverseKey))
-                {
-                    results.Add(dictionaryMember.Value);
-                }
-            }
-            return results;
+            // NEW VERSION
+            var results = RsDictionaryHelpers.RsDictionaryHelperInvoke((param1, param2) => RsDictionaryHelpers.IsPalindrom(param1), dictionary, null).ToList();
+            return results.OfType<string>().ToList();
         }
 
         public static List<string> GetWildcardSet(this Dictionary<string, string> dictionary, string wildcard)
         {
-            int wildcardSize = wildcard.Length;
-            List<string> results = new List<string>();
+            // OLD VERSION
+//            List<string> results = new List<string>();
+//
+//            foreach (var dictionaryMember in dictionary)
+//            {
+//                if (RsDictionaryHelpers.ContainsWildCard(wildcard, dictionaryMember.Key))
+//                {
+//                    results.Add(dictionaryMember.Value);
+//                }
+//            }
+//            return results;
 
-            foreach (var dictionaryMember in dictionary)
-            {
-                if (dictionaryMember.Key.Length < wildcardSize)
-                {
-                    continue;
-                }
-
-                string subStringKey = dictionaryMember.Key.Substring(0, wildcardSize);
-
-                if (subStringKey == wildcard)
-                {
-                    results.Add(dictionaryMember.Value);
-                }
-            }
-            return results;
+            // NEW VERSION
+            var results = RsDictionaryHelpers.RsDictionaryHelperInvoke(RsDictionaryHelpers.ContainsWildCard, dictionary, wildcard).ToList();
+            return results.OfType<string>().ToList();
         }
     }
 }

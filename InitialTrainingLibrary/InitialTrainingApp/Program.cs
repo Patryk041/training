@@ -12,7 +12,6 @@ namespace InitialTrainingApp
     {
         static void Main(string[] args)
         {
-
             string dsaf = "dafads";
 
             dsaf.IsPalindrom();

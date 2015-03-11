@@ -280,6 +280,8 @@
     <Compile Include="szymon93\[2] Chess\Coordinates.cs" />
     <Compile Include="szymon93\[2] Chess\Figure.cs" />
     <Compile Include="szymon93\[2] Chess\Figures\Rook.cs" />
+    <Compile Include="TrainingFour\Reflection\PreTest\Flower.cs" />
+    <Compile Include="TrainingFour\Reflection\PreTest\ReflectFlower.cs" />
     <Compile Include="TrainingThree\Extensions\ExtensionsFail.cs" />
     <Compile Include="TrainingThree\Extensions\StringExtension.cs" />
     <Compile Include="TrainingThree\Extensions\TestExtension.cs" />
@@ -305,8 +307,8 @@
     <Compile Include="Vernathic\01_DateValidator\VDay.cs" />
     <Compile Include="Vernathic\01_DateValidator\VLeapYear.cs" />
     <Compile Include="Vernathic\01_DateValidator\VMonth.cs" />
-    <Compile Include="Vernathic\02_VChess\board\VBoard.cs" />
-    <Compile Include="Vernathic\02_VChess\board\VBoardField.cs" />
+    <Compile Include="Vernathic\02_VChess\VBoard.cs" />
+    <Compile Include="Vernathic\02_VChess\VBoardField.cs" />
     <Compile Include="Vernathic\02_VChess\VChess.cs" />
     <Compile Include="Vernathic\02_VChess\VCoordinates.cs" />
     <Compile Include="Vernathic\02_VChess\VFigure.cs" />
@@ -332,6 +334,7 @@
     <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="TrainingFour\Reflection\Training\" />
     <Folder Include="TrainingThree\Db\" />
     <Folder Include="TrainingThree\FileParser\" />
   </ItemGroup>

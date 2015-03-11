@@ -52,19 +52,25 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Developers\Chmura\TrainingThree\ChmuraTrainingThreeTest.cs" />
     <Compile Include="Developers\Domi\DomiFileParserTest.cs" />
     <Compile Include="Developers\Dysq\DysqFileParserTest.cs" />
+    <Compile Include="Developers\Dysq\Inheritance\DysqTest.cs" />
     <Compile Include="Developers\Hipek\HipekFileParserTest.cs" />
     <Compile Include="Developers\Koziu\KoziuFileGeneratorTest.cs" />
     <Compile Include="Developers\Koziu\KoziuStringDictionaryTest.cs" />
     <Compile Include="Developers\Mg\Inheritance\MgInheritanceTest.cs" />
     <Compile Include="Developers\Mg\MgLoadFileTest.cs" />
+    <Compile Include="Developers\Robson\RobsonsShoppingCartTest.cs" />
     <Compile Include="Developers\Mg\MgBasketTest.cs" />
     <Compile Include="Developers\Rs\RsDictionaryTests\RsDictionaryTest.cs" />
     <Compile Include="Developers\Rs\RsDictionaryTests\RsExtensionMethodsTest.cs" />
     <Compile Include="Developers\Rs\RsDictionaryTests\RsHashtableTest.cs" />
     <Compile Include="Developers\Rs\RsFileDetailParserTest.cs" />
     <Compile Include="Developers\Santi\SantiFileParserTest.cs" />
+    <Compile Include="Developers\Sito\Inheritance\SitoInheritanceTests.cs" />
+    <Compile Include="Developers\Sito\Polimorphism\SitoPolimorphismTest.cs" />
+    <Compile Include="Developers\Vernathic\Inheritance\VInheritanceTest.cs" />
     <Compile Include="Developers\Warrior\Db\DbOperationsTest.cs" />
     <Compile Include="Developers\Warrior\WarriorFileParserTest.cs" />
     <Compile Include="Developers\Warrior\WarriorMgSolutionTest.cs" />

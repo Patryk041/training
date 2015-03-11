@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Toci.TraininigLibrary.Common.RsStaticClasses;
 
 namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
 {
@@ -7,58 +8,59 @@ namespace Toci.TraininigLibrary.Developers.RS.RSDictionary
     {
         public override List<T> GetAnagramSet(string anagramCandidate)
         {
-            List<T> results = new List<T>();
+            // OLD VERSION
+//            List<T> results = new List<T>();
+//
+//            foreach (var hashtableMember in Keys)
+//            {
+//                if (RsDictionaryHelpers.IsAnagram(anagramCandidate, hashtableMember.ToString()))
+//                {
+//                    results.Add(this[hashtableMember] as T);
+//                }
+//            }
+//            return results;
 
-            foreach (var hashtableMember in Keys)
-            {
-                var anagramCharArray = anagramCandidate.ToLower().ToCharArray().OrderBy(s => s);
-                var dictionaryMemberKeyCharArray = hashtableMember.ToString().ToLower().ToCharArray().OrderBy(s => s);
-
-                if (anagramCharArray.SequenceEqual(dictionaryMemberKeyCharArray))
-                {
-                    results.Add(this[hashtableMember] as T);
-                }
-            }
-            return results;
+            // NEW VERSION
+            var results = RsDictionaryHelpers.RsDictionaryHelperInvoke(RsDictionaryHelpers.IsAnagram, this, anagramCandidate).ToList();
+            return results.Cast<T>().ToList();
         }
 
         public override List<T> GetPalindromSet()
         {
-            List<T> results = new List<T>();
+            // OLD VERSION
+//            List<T> results = new List<T>();
+//
+//            foreach (var hashtableMember in Keys)
+//            {
+//                if (RsDictionaryHelpers.IsPalindrom(null, hashtableMember.ToString()))
+//                {
+//                    results.Add(this[hashtableMember] as T);
+//                }
+//            }
+//            return results;
 
-            foreach (var hashtableMember in Keys)
-            {
-                var key = hashtableMember.ToString().ToLower().ToCharArray();
-                var reverseKey = key.Reverse();
-
-                if (key.SequenceEqual(reverseKey))
-                {
-                    results.Add(this[hashtableMember] as T);
-                }
-            }
-            return results;
+            // NEW VERSION
+            var results = RsDictionaryHelpers.RsDictionaryHelperInvoke((param1, param2) => RsDictionaryHelpers.IsPalindrom(param1), this, null).ToList();
+            return results.Cast<T>().ToList();
         }
 
         public override List<T> GetWildcardSet(string wildcard)
         {
-            int wildcardSize = wildcard.Length;
-            List<T> results = new List<T>();
+            // OLD VERSION
+//            List<T> results = new List<T>();
+//
+//            foreach (var hashtableMember in Keys)
+//            {
+//                if (RsDictionaryHelpers.ContainsWildCard(wildcard, hashtableMember.ToString()))
+//                {
+//                    results.Add(this[hashtableMember] as T);
+//                }
+//            }
+//            return results;
 
-            foreach (var hashtableMember in Keys)
-            {
-                if (hashtableMember.ToString().Length < wildcardSize)
-                {
-                    continue;
-                }
-
-                string subStringKey = hashtableMember.ToString().Substring(0, wildcardSize);
-
-                if (subStringKey == wildcard)
-                {
-                    results.Add(this[hashtableMember] as T);
-                }
-            }
-            return results;
+            // NEW VERSION
+            var results = RsDictionaryHelpers.RsDictionaryHelperInvoke(RsDictionaryHelpers.ContainsWildCard, this, wildcard).ToList();
+            return results.Cast<T>().ToList();
         }
     }
 }
