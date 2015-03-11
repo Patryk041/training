@@ -50,8 +50,7 @@ namespace Toci.TraininigLibrary.Common.RsStaticClasses
                 {
                     results.Add(dictionaryMember.Value);
                 }
-            }
-
+            }   
             return results;
         }
     }

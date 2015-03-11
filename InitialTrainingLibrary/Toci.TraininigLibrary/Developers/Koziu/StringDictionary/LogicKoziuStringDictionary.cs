@@ -8,17 +8,17 @@ namespace Toci.TraininigLibrary.Developers.Koziu.StringDictionary
 {
     public static class LogicKoziuStringDictionary
     {
-        public static bool IsAnagram(string key, string anagramCandidate)
+        public static bool IsAnagram(this string key, string anagramCandidate)
         {
-            return (key.OrderBy(x => x).SequenceEqual(anagramCandidate.ToLower().OrderBy(x => x)));
+            return (key.ToLower().OrderBy(x => x).SequenceEqual(anagramCandidate.ToLower().OrderBy(x => x)));
 
         }
-        public static bool IsPalindrom(string key)
+        public static bool IsPalindrom(this string key)
         {
             return key.ToLower().ToCharArray().SequenceEqual(key.ToLower().ToCharArray().Reverse());   
         }
 
-        public static bool IsWildcard(string key, string wildcard)
+        public static bool IsWildcard(this string key, string wildcard)
         {
             int size = wildcard.Length;
             bool isWildcard = false;

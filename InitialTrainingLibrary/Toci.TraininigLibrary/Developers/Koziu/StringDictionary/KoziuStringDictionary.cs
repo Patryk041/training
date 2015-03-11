@@ -13,17 +13,17 @@ namespace Toci.TraininigLibrary.Developers.Koziu.StringDictionary
 
         public override List<T> GetAnagramSet(string anagramCandidate)
         {
-            return (from entity in this where LogicKoziuStringDictionary.IsAnagram(entity.Key, anagramCandidate) select entity.Value).ToList();
+            return (from entity in this where entity.Key.IsAnagram(anagramCandidate) select entity.Value).ToList();
         }
 
         public override List<T> GetPalindromSet()
         {
-            return (from entity in this where LogicKoziuStringDictionary.IsPalindrom(entity.Key) select entity.Value).ToList();
+            return (from entity in this where entity.Key.IsPalindrom() select entity.Value).ToList();
         }
 
         public override List<T> GetWildcardSet(string wildcard)
         {
-            return (from entity in this where LogicKoziuStringDictionary.IsWildcard(entity.Key, wildcard) select entity.Value).ToList();
+            return (from entity in this where entity.Key.IsWildcard(wildcard) select entity.Value).ToList();
         }
     }
 
