@@ -30,6 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.2.5.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Npgsql.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -63,14 +71,18 @@
     <Compile Include="Developers\Dysq\Bin\DysqPurchase.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\BootsKind.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\Boots.cs" />
+    <Compile Include="Developers\Dysq\Database\DysqSqlClientBase.cs" />
+    <Compile Include="Developers\Dysq\Database\PostgreSqlClientDysq.cs" />
+    <Compile Include="Developers\Dysq\Database\TransferModelDysq.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileDetailParser.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Base\DysqCommonDictionaryBase.cs" />
     <Compile Include="Developers\Dysq\Inheritance\DysqCommonDictionary.cs" />
     <Compile Include="Developers\Dysq\Inheritance\ExtensionsByDysq.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Interfaces\IDysqCommonDictionaryBase.cs" />
     <Compile Include="Developers\Dysq\Interfaces\IDysqTrasfersParser.cs" />
-    <Compile Include="Developers\Dysq\Polymorphism\DysqTransferParserBase.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\DysqTxtFileParser.cs" />
+    <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqFileExtension.cs" />
+    <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqTransferParsersFactory.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\ReadRowsDysq.cs" />
     <Compile Include="Developers\Dysq\XMLBase\DysqTransfersParserBase.cs" />
     <Compile Include="Developers\Dysq\XML\DysqFileEntityPolymorphism.cs" />
@@ -205,6 +217,7 @@
     <Content Include="xmldata\transfer_2015-03-10_09876543210_dysq.xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Toci.TraininigLibrary.csproj.rej" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
