@@ -69,23 +69,21 @@
     <Compile Include="Developers\Dysq\Inheritance\ExtensionsByDysq.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Interfaces\IDysqCommonDictionaryBase.cs" />
     <Compile Include="Developers\Dysq\Interfaces\IDysqTrasfersParser.cs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
     <Compile Include="Developers\Dysq\Polymorphism\DysqTransferParserBase.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\DysqTxtFileParser.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\ReadRowsDysq.cs" />
->>>>>>> parent of 56c9b3f... Tests for parsers, db connection
+
     <Compile Include="Developers\Dysq\XMLBase\DysqTransfersParserBase.cs" />
     <Compile Include="Developers\Dysq\XML\DysqXmlFileEntity.cs" />
-=======
+
     <Compile Include="Developers\Dysq\Polymorphism\DysqTxtFileParser.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqFileExtension.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqTransferParsersFactory.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\ReadRowsDysq.cs" />
     <Compile Include="Developers\Dysq\XMLBase\DysqTransfersParserBase.cs" />
     <Compile Include="Developers\Dysq\XML\DysqFileEntityPolymorphism.cs" />
->>>>>>> e742ee4b7f8b590769f52675ce84b056e7ffbc9a
+
     <Compile Include="Developers\Dysq\XML\DysqXmlTransferParser.cs" />
     <Compile Include="Developers\Dysq\XML\XmlDysqParser.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileDetailsParser.cs" />
@@ -216,15 +214,10 @@
     <Content Include="xmldata\transfer_2015-03-07_43657284832_warrior.xml" />
     <Content Include="xmldata\transfer_2015-03-10_09876543210_dysq.xml" />
   </ItemGroup>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
   <ItemGroup>
     <None Include="Toci.TraininigLibrary.csproj.rej" />
   </ItemGroup>
->>>>>>> parent of 56c9b3f... Tests for parsers, db connection
-=======
->>>>>>> e742ee4b7f8b590769f52675ce84b056e7ffbc9a
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
