@@ -17,8 +17,9 @@ namespace Toci.TraininigLibrary.Developers.Dysq.XML
             XmlDysqParser<DysqFileEntityPolymorphismTransfers> xmlDysqParser = new XmlDysqParser<DysqFileEntityPolymorphismTransfers>();
             var myresult = xmlDysqParser.DysqGetXmlData(path);
 
-          // return myresult.DysqXmlTrasfersList.ToList();
-            return null;
+
+           return myresult.DysqTransfersList.ToList();
+           
             //List<FileEntityBase> finalResult = new List<FileEntityBase>();
 
             //foreach (var item in myresult.DysqXmlTrasfersList)
