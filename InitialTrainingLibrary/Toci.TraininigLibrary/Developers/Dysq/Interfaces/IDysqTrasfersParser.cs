@@ -9,7 +9,7 @@ using Toci.TraininigLibrary.Developers.Dysq.XML;
 
 namespace Toci.TraininigLibrary.Developers.Dysq.Interfaces
 {
-    public interface IDysqTrasfersParser
+    public interface IDysqTransfersParser
     {
         List<DysqFileEntityPolymorphism> GetTransfers(string path);
     }

@@ -11,8 +11,9 @@ using Toci.TraininigLibrary.Developers.Dysq.XML;
 
 namespace Toci.TraininigLibrary.Developers.Dysq.XMLBase
 {
-    public abstract class DysqTransfersParserBase : IDysqTrasfersParser
+    public abstract class DysqTransfersParserBase : IDysqTransfersParser
     {
         public abstract List<DysqFileEntityPolymorphism> GetTransfers(string path);
+
     }
 }
