@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 namespace Toci.TraininigLibrary.Developers.Dysq.XML
 {
     [XmlRoot ("transfer")]
-    public class DysqXmlFileEntity
+    public class DysqFileEntityPolymorphism
     {
         [XmlAttribute ("bank")]
         public string Bank { get; set; }
@@ -32,9 +32,9 @@ namespace Toci.TraininigLibrary.Developers.Dysq.XML
     }
 
     [XmlRoot("transfers")]
-    public class DysqXmlTransfers
+    public class DysqFileEntityPolymorphismTransfers
     {
         [XmlElement("transfer")]
-        public DysqXmlFileEntity [] DysqXmlTrasfersList { get; set; }
+        public DysqFileEntityPolymorphism [] DysqTransfersList { get; set; }
     }
 }

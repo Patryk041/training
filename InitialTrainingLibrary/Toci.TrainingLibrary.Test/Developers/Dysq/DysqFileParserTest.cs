@@ -9,6 +9,7 @@ using Toci.TraininigLibrary.Common.FileParser;
 using Toci.TraininigLibrary.Developers.Dysq.Bin;
 using Toci.TraininigLibrary.Developers.Dysq.Bin.Products;
 using Toci.TraininigLibrary.Developers.Dysq.FileParser;
+using Toci.TraininigLibrary.Developers.Dysq.Polymorphism;
 using Toci.TraininigLibrary.Developers.Dysq.XML;
 
 namespace Toci.TrainingLibrary.Test.Developers.Dysq
@@ -60,6 +61,14 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq
 
 
 
+        }
+        [TestMethod]
+        public void TestDysqPolymorphism()
+        {
+            string dysqPath = @"E:\Szkolenia\InitialTrainingLibrary\Toci.TraininigLibrary\Developers\Dysq\DataForTest\transfer_2015_03_02_987654321_dysq.txt";
+            DysqTransferParserBase parseMyFileDysq = new DysqTxtFileParser();
+
+            var test = parseMyFileDysq.GetTransfers(dysqPath);
         }
     }
 }
