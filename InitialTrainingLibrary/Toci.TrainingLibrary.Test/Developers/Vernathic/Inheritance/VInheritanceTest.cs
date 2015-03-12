@@ -31,9 +31,9 @@ namespace Toci.TrainingLibrary.Test.Developers.Vernathic.Inheritance
             var anagramList = myNewDictionary.GetAnagramSet("batu");
             var wildcardList = myNewDictionary.GetWildcardSet("mis");
 
-            Assert.IsTrue(palindromList.Count==3);
-            //Assert.IsTrue(anagramList.Count==3);
-            Assert.IsTrue(wildcardList.Count==2);
+            //Assert.IsTrue(palindromList.Count==3);
+            Assert.IsTrue(anagramList.Count==3);
+            //Assert.IsTrue(wildcardList.Count==2);
 
         }
     }
