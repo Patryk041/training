@@ -207,6 +207,7 @@
     <Compile Include="Sito\2\FiguresFactory.cs" />
     <Compile Include="Sito\2\interfaces\IPlayerFigures.cs" />
     <Compile Include="Sito\2\StartFigures.cs" />
+    <Compile Include="Sito\FromDelegatesToLambdas\Lamdas.cs" />
     <Compile Include="syf\algorythmics\Algorythmics.cs" />
     <Compile Include="syf\algorythmics\Palindrom.cs" />
     <Compile Include="syf\algorythmics\stringReplace.cs" />

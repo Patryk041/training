@@ -18,11 +18,11 @@ namespace Toci.TraininigLibrary.Developers.Sito.Polimorphism
             using (StreamReader reader = new StreamReader(path))
             {
                 var entries = new List<SitoTransfer>();
-              
+                var devName = GetDevName(path);
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
-                    var fileEntityBase = SitoTextParserFactory.GetParser(GetDevName(path)).ReadEntry(line);
+                    var fileEntityBase = SitoTextParserFactory.GetParser(devName).ReadEntry(line);
                     entries.Add(new SitoTransfer(){AccountNumber = fileEntityBase.Account,Date = fileEntityBase.Date.ToString(),Name = fileEntityBase.Name,Surname = fileEntityBase.Surname});
 
 

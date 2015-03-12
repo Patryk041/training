@@ -69,8 +69,12 @@
     <Compile Include="Developers\Dysq\Inheritance\ExtensionsByDysq.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Interfaces\IDysqCommonDictionaryBase.cs" />
     <Compile Include="Developers\Dysq\Interfaces\IDysqTrasfersParser.cs" />
+    <Compile Include="Developers\Dysq\Polymorphism\DysqTxtFileParser.cs" />
+    <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqFileExtension.cs" />
+    <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqTransferParsersFactory.cs" />
+    <Compile Include="Developers\Dysq\Polymorphism\ReadRowsDysq.cs" />
     <Compile Include="Developers\Dysq\XMLBase\DysqTransfersParserBase.cs" />
-    <Compile Include="Developers\Dysq\XML\DysqXmlFileEntity.cs" />
+    <Compile Include="Developers\Dysq\XML\DysqFileEntityPolymorphism.cs" />
     <Compile Include="Developers\Dysq\XML\DysqXmlTransferParser.cs" />
     <Compile Include="Developers\Dysq\XML\XmlDysqParser.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileDetailsParser.cs" />
@@ -97,6 +101,8 @@
     <Compile Include="Developers\Koziu\InternetStore\KoziuBin.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuBinCollection.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />
+    <Compile Include="Developers\Koziu\StringDictionary\KoziuStringDictionary.cs" />
+    <Compile Include="Developers\Koziu\StringDictionary\ExtensionsString.cs" />
     <Compile Include="Developers\Mg\Basket\MgBasket.cs" />
     <Compile Include="Developers\Mg\Basket\Products\MgSamsungGalaxy.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileDetailsParser.cs" />
