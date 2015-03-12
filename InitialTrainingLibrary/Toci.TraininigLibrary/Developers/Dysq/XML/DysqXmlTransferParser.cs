@@ -14,13 +14,21 @@ namespace Toci.TraininigLibrary.Developers.Dysq.XML
     {
         public override List<DysqFileEntityPolymorphism> GetTransfers(string path)
         {
-            XmlDysqParser<DysqFileEntityPolymorphismTransfers> xmlDysqParser =
-                new XmlDysqParser<DysqFileEntityPolymorphismTransfers>();
+            XmlDysqParser<DysqFileEntityPolymorphismTransfers> xmlDysqParser = new XmlDysqParser<DysqFileEntityPolymorphismTransfers>();
             var myresult = xmlDysqParser.DysqGetXmlData(path);
 
 
-            return myresult.DysqTransfersList.ToList();
+           return myresult.DysqTransfersList.ToList();
+           
+            //List<FileEntityBase> finalResult = new List<FileEntityBase>();
 
+            //foreach (var item in myresult.DysqXmlTrasfersList)
+            //{
+            //    finalResult.Add(new DysqFileEntity() 
+            //    { Account = item.SourceAccount, Name = item.Name, Date = Convert.ToDateTime(item.DateOfTransaction), Surname = item.Surname });
+            //}
+
+            //return finalResult;
         }
     }
 }
