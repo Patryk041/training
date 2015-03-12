@@ -145,6 +145,7 @@
     <Compile Include="Developers\Sito\Polimorphism\SitoTranferParsersFactory.cs" />
     <Compile Include="Developers\Sito\Polimorphism\SitoXmlTransferParser.cs" />
     <Compile Include="Developers\Sito\Polimorphism\XmlParser.cs" />
+    <Compile Include="Developers\Vernathic\Inheritance\AnagramAdditional.cs" />
     <Compile Include="Developers\Vernathic\Inheritance\VInheritance.cs" />
     <Compile Include="Developers\Sito\Polimorphism\Interfaces\ITransferParser.cs" />
     <Compile Include="Developers\Sito\Polimorphism\SitoTextTransferParser.cs" />

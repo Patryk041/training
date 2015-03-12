@@ -8,21 +8,35 @@ using Toci.TraininigLibrary.Common.Base.Inheritance;
 namespace Toci.TraininigLibrary.Developers.Vernathic.Inheritance
 {
     public class VInheritance<T> : StringDictionary<T>      //StringDictionary<T> : Dictionary<string, T>
-    {      
-        public override List<T> GetAnagramSet(string anagramCandidate)    //radar  raadr
+    {
+        public override List<T> GetAnagramSet(string anagramCandidate) //radar  raadr
         {
             List<T> anagramSet = new List<T>();
+
+            //split anagramCandidate into dictionary anagramCandidateDictionary (letter by letter)
+            //using SplitToDictionary method
+            var splitedAnagramCandidate = AnagramAdditional<T, T>.SplitToDictionary(anagramCandidate);
+            //TODO:: i get null here instead of dictionary<char, int>
+
+            //for each item in VInheritance dictionary
             foreach (var item in this)
             {
-                if (item.Key == anagramCandidate)
+                if (item.Key.Length == anagramCandidate.Length)
                 {
-                    anagramSet.Add(item.Value);
+                    var splitedItemKey = AnagramAdditional<T, T>.SplitToDictionary(item.Key);
+                    //compare if splitedItemKey has the same keys and values as splitedAnagramCandidate
+                    //get 1st element from splitedItemKey, check if splitedAnagramCandidate contains it with the same values
+                    if (AnagramAdditional<char, int>.CompareDictionaries(splitedAnagramCandidate, splitedItemKey)) anagramSet.Add(item.Value);
                 }
             }
+            //DONE - check if the lenght of anagramCandidate equals length of item.Key (dictionary key)
+            //if not: compare with next this.Key
+            //if equals:
+                //DONE - split item.Key
+                    //compare splited item.Key with splited anagramCandidate (the keys and it's values must be the same)
+                    //if equals: anagramSet.Add(item.Value)
+                    //if not: go to next item.key
             return anagramSet;
-            //TODO:: make it working with anagram case, not only comparison
-            //compare dictionary's keys with anagramCandidate
-            //return list of all dictionary values  of the word anagramCandidate
         }
 
         public override List<T> GetPalindromSet()           // cyc radar aerrea
@@ -37,7 +51,6 @@ namespace Toci.TraininigLibrary.Developers.Vernathic.Inheritance
                 }
             }
             return palindromSet;
-            //throw new NotImplementedException();
         }
 
         private static string ReverseKey(string key)
@@ -48,7 +61,6 @@ namespace Toci.TraininigLibrary.Developers.Vernathic.Inheritance
                 reversedKey.Append(key[i]);
             }
             return reversedKey.ToString();
-            //throw new NotImplementedException();
         }
 
         public override List<T> GetWildcardSet(string wildcard)     // test*  :   testdsafda testewqrfqe, testgfe
@@ -62,9 +74,7 @@ namespace Toci.TraininigLibrary.Developers.Vernathic.Inheritance
                     wildcardSet.Add(item.Value);
                 }
             }
-            //TODO:: ensure it works
             return wildcardSet;
-            //throw new NotImplementedException();
         }
     }
 }
