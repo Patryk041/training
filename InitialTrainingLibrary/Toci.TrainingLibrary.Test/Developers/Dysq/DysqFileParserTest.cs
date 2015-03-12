@@ -9,7 +9,10 @@ using Toci.TraininigLibrary.Common.FileParser;
 using Toci.TraininigLibrary.Developers.Dysq.Bin;
 using Toci.TraininigLibrary.Developers.Dysq.Bin.Products;
 using Toci.TraininigLibrary.Developers.Dysq.FileParser;
+using Toci.TraininigLibrary.Developers.Dysq.Polymorphism;
+using Toci.TraininigLibrary.Developers.Dysq.Polymorphism.Factory;
 using Toci.TraininigLibrary.Developers.Dysq.XML;
+using Toci.TraininigLibrary.Developers.Dysq.XMLBase;
 
 namespace Toci.TrainingLibrary.Test.Developers.Dysq
 {
@@ -60,6 +63,42 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq
 
 
 
+        }
+        [TestMethod]
+        public void TestDysqPolymorphism()
+        {
+            string dysqPath = @"E:\Szkolenia\InitialTrainingLibrary\Toci.TraininigLibrary\Developers\Dysq\DataForTest\transfer_2015_03_02_987654321_dysq.txt";
+            DysqTransfersParserBase parseMyFileDysq = new DysqTxtFileParser();
+
+            var test = parseMyFileDysq.GetTransfers(dysqPath);
+
+            string dysqFirstPath = @"E:\Szkolenia\InitialTrainingLibrary\Toci.TraininigLibrary\Developers\Dysq\DataForTest\transfer_2015_03_02_987654321_dysq.txt";
+            string dysqSecondPath = @"E:\Szkolenia\InitialTrainingLibrary\Toci.TraininigLibrary\xmldata\transfer_2015-03-10_09876543210_dysq.xml";
+
+            var extension = DysqFileExtension.GetFileExtension(dysqFirstPath);
+
+            var FirstExtension = DysqFileExtension.GetFileExtension(dysqFirstPath);
+            var SecondExtension = DysqFileExtension.GetFileExtension(dysqSecondPath);
+
+              
+
+            var TestOfTxtParser = DysqTransferParsersFactory.ChoseTransfer(FirstExtension);
+            var TestOfXmlParser = DysqTransferParsersFactory.ChoseTransfer(SecondExtension);
+
+            List<string> fileList = new List<string>()
+            {
+            @"E:\Szkolenia\InitialTrainingLibrary\Toci.TraininigLibrary\Developers\Dysq\DataForTest\transfer_2015_03_02_987654321_dysq.txt",
+            @"E:\Szkolenia\InitialTrainingLibrary\Toci.TraininigLibrary\xmldata\transfer_2015-03-10_09876543210_dysq.xml",
+            };
+
+            List<DysqFileEntityPolymorphism> transfers = new List<DysqFileEntityPolymorphism>();
+
+            foreach (var path in fileList)
+            {
+              var  transfer = DysqTransferParsersFactory.ChoseTransfer(DysqFileExtension.GetFileExtension(path));
+                var result = transfer.GetTransfers(path);
+               
+            }
         }
     }
 }
