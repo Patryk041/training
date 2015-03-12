@@ -100,8 +100,8 @@
     <Compile Include="Developers\Koziu\InternetStore\KoziuBin.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuBinCollection.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />
+    <Compile Include="Developers\Koziu\StringDictionary\ExtensionsString.cs" />
     <Compile Include="Developers\Koziu\StringDictionary\KoziuStringDictionary.cs" />
-    <Compile Include="Developers\Koziu\StringDictionary\LogicKoziuStringDictionary.cs" />
     <Compile Include="Developers\Mg\Basket\MgBasket.cs" />
     <Compile Include="Developers\Mg\Basket\Products\MgSamsungGalaxy.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileDetailsParser.cs" />
