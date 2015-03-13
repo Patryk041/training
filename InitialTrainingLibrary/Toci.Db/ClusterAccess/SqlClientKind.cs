@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Db.Interfaces
+namespace Toci.Db.ClusterAccess
 {
-    public interface IDbCluster
+    public enum SqlClientKind
     {
-        IDbClient GetClient(string id, IDbSharding sharding);
+        MsSql,
+        PostgreSql
     }
 }

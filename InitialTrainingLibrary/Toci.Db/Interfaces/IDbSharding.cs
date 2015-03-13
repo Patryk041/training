@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Toci.Db.Interfaces
 {
-    public interface IDbCluster
+    public interface IDbSharding
     {
-        IDbClient GetClient(string id, IDbSharding sharding);
+        IDbClient GetShard(string id);
     }
 }

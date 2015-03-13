@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System.Transactions;
 using Npgsql;
 using Toci.Db.Interfaces;
 
@@ -16,7 +17,7 @@ namespace Toci.Db.Clients
         }
 
         public override DataSet GetData(string query)
-        {
+        { 
             using (Connection = new NpgsqlConnection(connectionString))
             {
                 NpgsqlCommand command = new NpgsqlCommand(query, Connection);

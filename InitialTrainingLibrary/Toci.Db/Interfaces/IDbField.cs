@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Toci.Db.DbVirtualization;
 
 namespace Toci.Db.Interfaces
 {
-    interface IDbField
+    public interface IDbField<T>
     {
+        string GetColumnName();
+        T GetValue();
+        bool IsWhere();
+        SelectClause GetSelectClause();
     }
 }

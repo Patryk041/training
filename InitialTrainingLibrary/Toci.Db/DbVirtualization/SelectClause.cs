@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Db.Interfaces
+namespace Toci.Db.DbVirtualization
 {
-    public interface IDbCluster
+    public enum SelectClause
     {
-        IDbClient GetClient(string id, IDbSharding sharding);
+        Like,
+        Equal,
+        NotEqual
     }
 }

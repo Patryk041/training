@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Toci.Db.Interfaces
 {
-    public interface IDbCluster
+    public interface ITransaction
     {
-        IDbClient GetClient(string id, IDbSharding sharding);
+        void RunQueries(List<Func<IDbHandle, Func<bool>, int>> queriesList);
     }
 }
