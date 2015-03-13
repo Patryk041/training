@@ -52,6 +52,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Common\Db\DbTests.cs" />
     <Compile Include="Developers\Chmura\TrainingThree\ChmuraTrainingThreeTest.cs" />
     <Compile Include="Developers\Domi\DomiFileParserTest.cs" />
     <Compile Include="Developers\Dysq\DysqFileParserTest.cs" />
@@ -85,6 +86,10 @@
     <ProjectReference Include="..\InitialTrainingLibrary\InitialTrainingLibrary.csproj">
       <Project>{ccff23ce-5a34-4fa7-ac0e-427fd4fa97b8}</Project>
       <Name>InitialTrainingLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
+      <Project>{b39d28c8-a026-48bc-8040-95af3986608e}</Project>
+      <Name>Toci.Dal</Name>
     </ProjectReference>
     <ProjectReference Include="..\Toci.Db\Toci.Db.csproj">
       <Project>{e45ea1c2-f40c-4903-94c3-30a885a71d33}</Project>

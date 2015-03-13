@@ -52,6 +52,7 @@
     <Compile Include="ClusterAccess\DbHandle.cs" />
     <Compile Include="ClusterAccess\DbHandleFactory.cs" />
     <Compile Include="ClusterAccess\SqlClientKind.cs" />
+    <Compile Include="DbVirtualization\DbField.cs" />
     <Compile Include="DbVirtualization\Model.cs" />
     <Compile Include="DbVirtualization\MsSqlQuery\MsSqlDelete.cs" />
     <Compile Include="DbVirtualization\MsSqlQuery\MsSqlInsert.cs" />

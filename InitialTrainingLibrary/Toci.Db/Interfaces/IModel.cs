@@ -9,5 +9,7 @@ namespace Toci.Db.Interfaces
     public interface IModel
     {
         Dictionary<string, IDbField<object>> GetFields();
+        IDbField<object> GetField(string columnName);
+        string GetTableName();
     }
 }

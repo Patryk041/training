@@ -9,9 +9,15 @@ namespace Toci.Db.DbVirtualization.MsSqlQuery
 {
     public class MsSqlInsert : SqlQuery
     {
+        private const string PATTERN = "insert into {0} ({1}) values ({2});";
+
         public override string GetQuery(IModel model)
         {
-            throw new NotImplementedException();
+            string columnNames = string.Join(COLUMNS_DELIMITER, model.GetFields().Select(item => item.Key));
+            string columnValues = string.Join(COLUMNS_DELIMITER, model.GetFields().Select(item => GetSurroundedValue(item.Value.GetValue())));
+
+
+            return string.Format(PATTERN, model.GetTableName(), columnNames, columnValues);
         }
     }
 }

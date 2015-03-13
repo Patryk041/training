@@ -33,7 +33,7 @@ namespace Toci.Db.ClusterAccess
 
         public int InsertData()
         {
-            throw new NotImplementedException();
+            return client.SetData(insert.GetQuery(model));
         }
 
         public int UpdateData()

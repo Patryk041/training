@@ -7,9 +7,9 @@ namespace Toci.Dal.Models
 {
     public class BankAccountTransferModel : Model
     {
-        public bool Save()
+
+        public BankAccountTransferModel() : base("transfer")
         {
-            throw new NotImplementedException();
         }
     }
 }

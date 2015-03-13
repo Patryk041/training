@@ -13,5 +13,8 @@ namespace Toci.Db.Interfaces
         T GetValue();
         bool IsWhere();
         SelectClause GetSelectClause();
+        void SetValue(T value);
+        void SetWhere(bool isWhere);
+        void SetSelectClause(SelectClause clause);
     }
 }
