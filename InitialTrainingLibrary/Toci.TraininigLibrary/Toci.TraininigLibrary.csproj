@@ -69,16 +69,13 @@
     <Compile Include="Developers\Dysq\Inheritance\ExtensionsByDysq.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Interfaces\IDysqCommonDictionaryBase.cs" />
     <Compile Include="Developers\Dysq\Interfaces\IDysqTrasfersParser.cs" />
-
     <Compile Include="Developers\Dysq\Polymorphism\DysqTransferParserBase.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\DysqTxtFileParser.cs" />
-
     <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqFileExtension.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqTransferParsersFactory.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\ReadRowsDysq.cs" />
     <Compile Include="Developers\Dysq\XMLBase\DysqTransfersParserBase.cs" />
     <Compile Include="Developers\Dysq\XML\DysqFileEntityPolymorphism.cs" />
-
     <Compile Include="Developers\Dysq\XML\DysqXmlTransferParser.cs" />
     <Compile Include="Developers\Dysq\XML\XmlDysqParser.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileDetailsParser.cs" />
@@ -112,6 +109,12 @@
     <Compile Include="Developers\Mg\FileParser\MgFileDetailsParser.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileEntity.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileParser.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\MgParsersFactory.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\IMgTransferParser.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\MgTxtTransferParser.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlEntity.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlParserLogic.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlTransferParser.cs" />
     <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\Book.cs" />
     <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\DiscountItem.cs" />
     <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\Item.cs" />
@@ -206,10 +209,11 @@
     <Content Include="data\transfer_2015-03-05_926916819_Koziu.txt" />
     <Content Include="data\transfer_2015_03_02_987654321_dysq.txt" />
     <Content Include="data\transfer_2015_03_06_232325_mg.txt" />
+    <Content Include="Developers\Mg\Polymorphism\Parsers\TxtData\transfer_2015_03_12_4343_mg.txt" />
+    <Content Include="Developers\Mg\Polymorphism\Parsers\XmlData\transfer_2015_03_12_4343_mg.xml" />
     <Content Include="xmldata\transfer_2015-03-07_43657284832_warrior.xml" />
     <Content Include="xmldata\transfer_2015-03-10_09876543210_dysq.xml" />
   </ItemGroup>
-
   <ItemGroup>
     <None Include="Toci.TraininigLibrary.csproj.rej" />
   </ItemGroup>
