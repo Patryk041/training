@@ -72,12 +72,7 @@
 
     <Compile Include="Developers\Dysq\Polymorphism\DysqTransferParserBase.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\DysqTxtFileParser.cs" />
-    <Compile Include="Developers\Dysq\Polymorphism\ReadRowsDysq.cs" />
 
-    <Compile Include="Developers\Dysq\XMLBase\DysqTransfersParserBase.cs" />
-    <Compile Include="Developers\Dysq\XML\DysqXmlFileEntity.cs" />
-
-    <Compile Include="Developers\Dysq\Polymorphism\DysqTxtFileParser.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqFileExtension.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqTransferParsersFactory.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\ReadRowsDysq.cs" />
