@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.DbVirtualization.Interfaces
+namespace Toci.TraininigLibrary.Developers.Dysq.Polymorphism.Factory
 {
-    public interface IModel
+    class DysqTxtFileParser
     {
-        bool Save();
     }
 }

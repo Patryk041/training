@@ -30,6 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.2.5.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Npgsql.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -106,9 +114,18 @@
     <Compile Include="Developers\Koziu\StringDictionary\ExtensionsString.cs" />
     <Compile Include="Developers\Mg\Basket\MgBasket.cs" />
     <Compile Include="Developers\Mg\Basket\Products\MgSamsungGalaxy.cs" />
+    <Compile Include="Developers\Mg\DB\Base\MgClientsBase.cs" />
+    <Compile Include="Developers\Mg\DB\Clients\MgPostgreClient.cs" />
+    <Compile Include="Developers\Mg\DB\Interface\IMgDbClient.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileDetailsParser.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileEntity.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileParser.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\MgParsersFactory.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\Interface\IMgTransferParser.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\MgTxtTransferParser.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlEntity.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlParserLogic.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlTransferParser.cs" />
     <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\Book.cs" />
     <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\DiscountItem.cs" />
     <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\Item.cs" />
@@ -184,10 +201,6 @@
       <Project>{b39d28c8-a026-48bc-8040-95af3986608e}</Project>
       <Name>Toci.Dal</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Toci.DbVirtualization\Toci.DbVirtualization.csproj">
-      <Project>{4770951a-ad44-41ff-a7fa-25964046e9f8}</Project>
-      <Name>Toci.DbVirtualization</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Toci.Db\Toci.Db.csproj">
       <Project>{e45ea1c2-f40c-4903-94c3-30a885a71d33}</Project>
       <Name>Toci.Db</Name>
@@ -206,11 +219,14 @@
     <Content Include="data\transfer_2015-03-05_926916819_Koziu.txt" />
     <Content Include="data\transfer_2015_03_02_987654321_dysq.txt" />
     <Content Include="data\transfer_2015_03_06_232325_mg.txt" />
+    <Content Include="Developers\Mg\Polymorphism\Parsers\TxtData\transfer_2015_03_12_4343_mg.txt" />
+    <Content Include="Developers\Mg\Polymorphism\Parsers\XmlData\transfer_2015_03_12_4343_mg.xml" />
     <Content Include="xmldata\transfer_2015-03-07_43657284832_warrior.xml" />
     <Content Include="xmldata\transfer_2015-03-10_09876543210_dysq.xml" />
     <Content Include="xmldata\transfer_2015-03-13_12345678901_rs.xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Toci.TraininigLibrary.csproj.rej" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
