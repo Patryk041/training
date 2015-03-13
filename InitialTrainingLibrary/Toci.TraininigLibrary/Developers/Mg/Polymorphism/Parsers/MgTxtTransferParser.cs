@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Toci.TraininigLibrary.Common.FileParser;
+using Toci.TraininigLibrary.Developers.Mg.Polymorphism.Parsers.Interface;
 
 
 namespace Toci.TraininigLibrary.Developers.Mg.Polymorphism.Parsers

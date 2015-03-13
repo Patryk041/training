@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Developers.Mg.Polymorphism.Parsers;
+using Toci.TraininigLibrary.Developers.Mg.Polymorphism.Parsers.Interface;
 
 
 namespace Toci.TraininigLibrary.Developers.Mg.Polymorphism
