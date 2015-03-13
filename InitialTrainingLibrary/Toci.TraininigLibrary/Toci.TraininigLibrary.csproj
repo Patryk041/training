@@ -69,16 +69,13 @@
     <Compile Include="Developers\Dysq\Inheritance\ExtensionsByDysq.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Interfaces\IDysqCommonDictionaryBase.cs" />
     <Compile Include="Developers\Dysq\Interfaces\IDysqTrasfersParser.cs" />
-
     <Compile Include="Developers\Dysq\Polymorphism\DysqTransferParserBase.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\DysqTxtFileParser.cs" />
-
     <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqFileExtension.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqTransferParsersFactory.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\ReadRowsDysq.cs" />
     <Compile Include="Developers\Dysq\XMLBase\DysqTransfersParserBase.cs" />
     <Compile Include="Developers\Dysq\XML\DysqFileEntityPolymorphism.cs" />
-
     <Compile Include="Developers\Dysq\XML\DysqXmlTransferParser.cs" />
     <Compile Include="Developers\Dysq\XML\XmlDysqParser.cs" />
     <Compile Include="Developers\Hipek\FileParser\HipekFileDetailsParser.cs" />
@@ -138,6 +135,9 @@
     <Compile Include="Developers\RS\RSDictionary\RsExtensionMethods.cs" />
     <Compile Include="Developers\RS\RSDictionary\RsHashtable.cs" />
     <Compile Include="Developers\RS\RSDictionary\RsHashtableBase.cs" />
+    <Compile Include="Developers\RS\XmlParser\RsTransferEntity.cs" />
+    <Compile Include="Developers\RS\XmlParser\RsXmlParser.cs" />
+    <Compile Include="Developers\RS\XmlParser\RsXmlTransfersParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileDetailParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileEntity.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileFooterParser.cs" />
@@ -208,8 +208,8 @@
     <Content Include="data\transfer_2015_03_06_232325_mg.txt" />
     <Content Include="xmldata\transfer_2015-03-07_43657284832_warrior.xml" />
     <Content Include="xmldata\transfer_2015-03-10_09876543210_dysq.xml" />
+    <Content Include="xmldata\transfer_2015-03-13_12345678901_rs.xml" />
   </ItemGroup>
-
   <ItemGroup>
     <None Include="Toci.TraininigLibrary.csproj.rej" />
   </ItemGroup>
