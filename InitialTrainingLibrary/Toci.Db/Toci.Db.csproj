@@ -49,6 +49,8 @@
     <Compile Include="Clients\SqlClientBase.cs" />
     <Compile Include="Interfaces\IDbClient.cs" />
     <Compile Include="Interfaces\IDbCluster.cs" />
+    <Compile Include="Interfaces\IDbField.cs" />
+    <Compile Include="Interfaces\IModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.DbVirtualization.Interfaces
+namespace Toci.Db.Interfaces
 {
-    interface IInsert
+    interface IDbField
     {
     }
 }

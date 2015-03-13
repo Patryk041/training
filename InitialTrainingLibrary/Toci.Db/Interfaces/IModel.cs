@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.DbVirtualization.Interfaces
+namespace Toci.Db.Interfaces
 {
     public interface IModel
     {
-        bool Save();
     }
 }
