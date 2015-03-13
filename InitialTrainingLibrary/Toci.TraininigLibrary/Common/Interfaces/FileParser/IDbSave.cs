@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Toci.DbVirtualization.Interfaces;
+﻿
+using Toci.Db.Interfaces;
 using Toci.TraininigLibrary.Common.FileParser;
 
 namespace Toci.TraininigLibrary.Common.Interfaces.FileParser
