@@ -70,6 +70,9 @@
     <Compile Include="Developers\Dysq\Bin\DysqPurchase.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\BootsKind.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\Boots.cs" />
+    <Compile Include="Developers\Dysq\Database\DysqSqlClientBase.cs" />
+    <Compile Include="Developers\Dysq\Database\PostgreSqlClientDysq.cs" />
+    <Compile Include="Developers\Dysq\Database\TransferModelDysq.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileDetailParser.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Base\DysqCommonDictionaryBase.cs" />
     <Compile Include="Developers\Dysq\Inheritance\DysqCommonDictionary.cs" />
@@ -218,6 +221,7 @@
     <Content Include="data\transfer_2015-03-05_926916819_Koziu.txt" />
     <Content Include="data\transfer_2015_03_02_987654321_dysq.txt" />
     <Content Include="data\transfer_2015_03_06_232325_mg.txt" />
+    <Content Include="Developers\Dysq\DataForTest\transfer_2015_03_02_987654321_dysq.txt" />
     <Content Include="Developers\Mg\Polymorphism\Parsers\TxtData\transfer_2015_03_12_4343_mg.txt" />
     <Content Include="Developers\Mg\Polymorphism\Parsers\XmlData\transfer_2015_03_12_4343_mg.xml" />
     <Content Include="xmldata\transfer_2015-03-07_43657284832_warrior.xml" />
