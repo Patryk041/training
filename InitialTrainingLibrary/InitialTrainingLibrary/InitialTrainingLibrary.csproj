@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -281,8 +284,24 @@
     <Compile Include="szymon93\[2] Chess\Coordinates.cs" />
     <Compile Include="szymon93\[2] Chess\Figure.cs" />
     <Compile Include="szymon93\[2] Chess\Figures\Rook.cs" />
+    <Compile Include="TrainingFour\DependancyInjection\DbClient.cs" />
+    <Compile Include="TrainingFour\DependancyInjection\DbInsert.cs" />
+    <Compile Include="TrainingFour\DependancyInjection\DbModel.cs" />
+    <Compile Include="TrainingFour\DependancyInjection\DependancyResolver.cs" />
+    <Compile Include="TrainingFour\DependancyInjection\DiDbHandle.cs" />
+    <Compile Include="TrainingFour\DependancyInjection\DiTest.cs" />
+    <Compile Include="TrainingFour\DependancyInjection\NonDiDbHandle.cs" />
+    <Compile Include="TrainingFour\Exceptions\Departures.cs" />
+    <Compile Include="TrainingFour\Exceptions\DeparturesList.cs" />
+    <Compile Include="TrainingFour\Exceptions\WarriorException.cs" />
+    <Compile Include="TrainingFour\Exceptions\WarriorExceptionBase.cs" />
+    <Compile Include="TrainingFour\Exceptions\WarriorExceptionsFun.cs" />
+    <Compile Include="TrainingFour\Exceptions\WarriorSpecificException.cs" />
+    <Compile Include="TrainingFour\Linq\WarriorLinqOperations.cs" />
     <Compile Include="TrainingFour\Reflection\PreTest\Flower.cs" />
     <Compile Include="TrainingFour\Reflection\PreTest\ReflectFlower.cs" />
+    <Compile Include="TrainingFour\Reflection\Training\Kobieta.cs" />
+    <Compile Include="TrainingFour\Reflection\Training\ReflectKobieta.cs" />
     <Compile Include="TrainingThree\Extensions\ExtensionsFail.cs" />
     <Compile Include="TrainingThree\Extensions\StringExtension.cs" />
     <Compile Include="TrainingThree\Extensions\TestExtension.cs" />
@@ -335,15 +354,25 @@
     <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="TrainingFour\Reflection\Training\" />
     <Folder Include="TrainingThree\Db\" />
     <Folder Include="TrainingThree\FileParser\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
+      <Project>{b39d28c8-a026-48bc-8040-95af3986608e}</Project>
+      <Name>Toci.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Db\Toci.Db.csproj">
+      <Project>{e45ea1c2-f40c-4903-94c3-30a885a71d33}</Project>
+      <Name>Toci.Db</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Toci.TraininigLibrary\Toci.TraininigLibrary.csproj">
       <Project>{0ed59b72-4120-4f4e-8684-d3a1d1f6bbf2}</Project>
       <Name>Toci.TraininigLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -30,13 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Mono.Security.dll</HintPath>
+    <Reference Include="Mono.Security">
+      <HintPath>..\Libraries\Mono.Security.dll</HintPath>
     </Reference>
-    <Reference Include="Npgsql, Version=2.2.5.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Npgsql.dll</HintPath>
+    <Reference Include="Npgsql">
+      <HintPath>..\Libraries\Npgsql.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -64,6 +62,7 @@
     <Compile Include="Common\Interfaces\InternetStore\IDiscount.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IPurchase.cs" />
     <Compile Include="Common\RsStaticClasses\RsDictionaryHelpers.cs" />
+    <Compile Include="Common\Utils\WarriorStringUtilities.cs" />
     <Compile Include="Developers\Chmura\ChmuraClass.cs" />
     <Compile Include="Developers\Chmura\ChmuraInheritanceTask\ChmuraStringDictionary.cs" />
     <Compile Include="Developers\Chmura\ChmuraInheritanceTask\ChmuraTrainingThreeExtensions.cs" />
@@ -71,6 +70,9 @@
     <Compile Include="Developers\Dysq\Bin\DysqPurchase.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\BootsKind.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\Boots.cs" />
+    <Compile Include="Developers\Dysq\Database\DysqSqlClientBase.cs" />
+    <Compile Include="Developers\Dysq\Database\PostgreSqlClientDysq.cs" />
+    <Compile Include="Developers\Dysq\Database\TransferModelDysq.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileDetailParser.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Base\DysqCommonDictionaryBase.cs" />
     <Compile Include="Developers\Dysq\Inheritance\DysqCommonDictionary.cs" />
@@ -219,6 +221,7 @@
     <Content Include="data\transfer_2015-03-05_926916819_Koziu.txt" />
     <Content Include="data\transfer_2015_03_02_987654321_dysq.txt" />
     <Content Include="data\transfer_2015_03_06_232325_mg.txt" />
+    <Content Include="Developers\Dysq\DataForTest\transfer_2015_03_02_987654321_dysq.txt" />
     <Content Include="Developers\Mg\Polymorphism\Parsers\TxtData\transfer_2015_03_12_4343_mg.txt" />
     <Content Include="Developers\Mg\Polymorphism\Parsers\XmlData\transfer_2015_03_12_4343_mg.xml" />
     <Content Include="xmldata\transfer_2015-03-07_43657284832_warrior.xml" />
