@@ -335,6 +335,8 @@
     <Compile Include="Vernathic\VFirstClass.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
     <Compile Include="warrior\conflict\ConflictType.cs" />
+    <Compile Include="warrior\EnumerableImplementations\CustomGenericEnumerable.cs" />
+    <Compile Include="warrior\EnumerableImplementations\CustomGenericEnumerator.cs" />
     <Compile Include="warrior\WarriorDateValidator.cs" />
     <Compile Include="Witek\NaszaKlasa.cs" />
   </ItemGroup>
