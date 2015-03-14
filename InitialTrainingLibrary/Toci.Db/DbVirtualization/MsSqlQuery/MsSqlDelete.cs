@@ -9,9 +9,11 @@ namespace Toci.Db.DbVirtualization.MsSqlQuery
 {
     public class MsSqlDelete : SqlQuery
     {
+        private const string PATTERN = "delete from {0} where {1};";
         public override string GetQuery(IModel model)
         {
-            throw new NotImplementedException();
+            //string where = 
+            return string.Format(PATTERN, model.GetTableName(), string.Empty);
         }
     }
 }

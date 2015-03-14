@@ -25,6 +25,5 @@ namespace Toci.Db.DbVirtualization
         {
             return string.Format("{0}{1}{0}", Surroundings.ContainsKey(value.GetType()) ? Surroundings[value.GetType()] : "'", value);
         }
-
     }
 }
