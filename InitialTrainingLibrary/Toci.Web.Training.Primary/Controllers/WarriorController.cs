@@ -15,6 +15,8 @@ namespace Toci.Web.Training.Primary.Controllers
         public ActionResult Index(WarriorModel model)
         {
 
+            //
+
             return View(model);
         }
 
