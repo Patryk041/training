@@ -7,5 +7,11 @@
         public string Name { get; private set; }
         public string SurName { get; private set; }
         public string Description { get; private set; }
+        private string car;
+
+        public string GetCar()
+        {
+            return car;
+        }
     }
 }
