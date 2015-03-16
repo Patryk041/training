@@ -184,6 +184,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\FrogieController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Mg\MgController.cs" />
     <Compile Include="Controllers\RobsonController.cs" />
     <Compile Include="Controllers\WarriorController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -192,6 +193,8 @@
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\FrogieModel.cs" />
+    <Compile Include="Models\Mg\MgFillReflecionModel.cs" />
+    <Compile Include="Models\Mg\MgReflectionModel.cs" />
     <Compile Include="Models\RobsonModel.cs" />
     <Compile Include="Models\WarriorModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -316,6 +319,7 @@
     <Content Include="Views\Warrior\Index.cshtml" />
     <Content Include="Views\Frogie\Zaba.cshtml" />
     <Content Include="Views\Robson\Index.cshtml" />
+    <Content Include="Views\Mg\MgQueryStringAction.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
