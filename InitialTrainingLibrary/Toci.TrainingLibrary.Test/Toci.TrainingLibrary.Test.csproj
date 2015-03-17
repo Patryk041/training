@@ -63,6 +63,7 @@
     <Compile Include="Developers\Mg\Inheritance\MgInheritanceTest.cs" />
     <Compile Include="Developers\Mg\MgLoadFileTest.cs" />
     <Compile Include="Developers\Mg\DbAndParsersTest.cs" />
+    <Compile Include="Developers\Mg\Reflection\WarriorMgControllerReflectionTest.cs" />
     <Compile Include="Developers\Robson\RobsonsShoppingCartTest.cs" />
     <Compile Include="Developers\Mg\MgBasketTest.cs" />
     <Compile Include="Developers\Rs\RsDictionaryTests\RsDictionaryTest.cs" />
@@ -98,6 +99,10 @@
     <ProjectReference Include="..\Toci.TraininigLibrary\Toci.TraininigLibrary.csproj">
       <Project>{0ed59b72-4120-4f4e-8684-d3a1d1f6bbf2}</Project>
       <Name>Toci.TraininigLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Web.Training.Primary\Toci.Web.Training.Primary.csproj">
+      <Project>{70a72d90-af63-46dd-96b8-b0ec430bad67}</Project>
+      <Name>Toci.Web.Training.Primary</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
