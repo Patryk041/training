@@ -12,6 +12,8 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Exceptions
 {
     public class DysqDeparturesList : DepartureList<DysqDepartureEntity>
     {
+
+
         public override bool Add(DysqDepartureEntity element)
         {
             
@@ -40,6 +42,7 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Exceptions
                 throw new DysqValidationException(StatusError.GetStatusMessage("Departuring status"),"");
             }
 
+            base.Add(element);
 
             return true;
         }

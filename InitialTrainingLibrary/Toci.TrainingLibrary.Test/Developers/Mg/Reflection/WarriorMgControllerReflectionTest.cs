@@ -28,21 +28,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Mg.Reflection
 
             fillReflecionModel.GetFilledMgReflectionModelModel();
         }
-
-          /*class dupa
-        {
-              private dupa()
-              {
-              }
-        }
-
-        class dsa
-        {
-            public void test()
-            {
-                var dla = new dupa();)
-            }
-        }*/
     }
 
+    
 }
