@@ -10,10 +10,10 @@ namespace Toci.Web.Training.Primary.Controllers.MgControllers
         //
         // GET: /Mg/
 
-        public ActionResult MgQueryStringAction(string number,string name,string surName,string description)
+        public ActionResult MgQueryStringAction(string number,string name,string surName,string description,string car)
         {
 
-            //http://localhost:64968/Mg/MgQueryStringAction?number=2&name=ahmed&surName=kowalski&description=binladen
+            //http://localhost:64968/Mg/MgQueryStringAction?number=2&name=ahmed&surName=kowalski&description=binladen&car=audi
 
 
             MgFillReflecionModel fillReflecionModel = new MgFillReflecionModel(new Dictionary<string, string>()
@@ -21,7 +21,8 @@ namespace Toci.Web.Training.Primary.Controllers.MgControllers
                 {"NUMBER",number},
                 {"NAME", name},
                 {"SURNAME", surName},
-                {"DESCRIPTION", description}
+                {"DESCRIPTION", description},
+                {"CAR",car}
 
             });
 
