@@ -132,6 +132,8 @@
     <Compile Include="Developers\Mg\DB\Base\MgClientsBase.cs" />
     <Compile Include="Developers\Mg\DB\Clients\MgPostgreClient.cs" />
     <Compile Include="Developers\Mg\DB\Interface\IMgDbClient.cs" />
+    <Compile Include="Developers\Mg\Departures\Helpers\MgExceptionMessages.cs" />
+    <Compile Include="Developers\Mg\Departures\Helpers\MgValidationInvoke.cs" />
     <Compile Include="Developers\Mg\Departures\MgDepartureEntity.cs" />
     <Compile Include="Developers\Mg\Departures\MgDepartureList.cs" />
     <Compile Include="Developers\Mg\Departures\Helpers\MgDepartureValidationHelpers.cs" />

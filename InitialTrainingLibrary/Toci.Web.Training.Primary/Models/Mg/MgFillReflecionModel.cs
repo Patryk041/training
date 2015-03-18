@@ -24,7 +24,7 @@ namespace Toci.Web.Training.Primary.Models.Mg
             foreach (var field in fields)
             {
 
-                var fieldName = field.Name.GetPropertyName();
+                var fieldName = MgReflectionHelper.GetPropertyName(field.Name);
                 if(_mgQueryDictionary.ContainsKey(fieldName)) field.SetValue(mgModel,_mgQueryDictionary[fieldName.ToUpper()]);
                 
 

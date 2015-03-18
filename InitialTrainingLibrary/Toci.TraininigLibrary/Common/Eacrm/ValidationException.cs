@@ -8,5 +8,14 @@ namespace Toci.TraininigLibrary.Common.Eacrm
 {
     public abstract class ValidationException : Exception
     {
+        protected ValidationException()
+        {
+            
+        }
+
+        protected ValidationException(string message):base(message)
+        {
+
+        }
     }
 }

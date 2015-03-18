@@ -5,14 +5,14 @@ using System.Web;
 
 namespace Toci.Web.Training.Primary.Models.Mg
 {
-    public static class MgReflectionExtensions
+    public static class MgReflectionHelper
     {
-       public static string GetPropertyName(this string stringText)
+       public static string GetPropertyName(string stringText)
         {
             const char propertySignOne = '<';
             const char propertySignTwo = '>';
 
-            if (!(stringText.Contains(propertySignOne) || stringText.Contains(propertySignTwo))) return stringText.ToUpper();
+            if (!(stringText.Contains(propertySignOne) && stringText.Contains(propertySignTwo))) return stringText.ToUpper();
            
 
             var start = stringText.IndexOf(propertySignOne) + 1;

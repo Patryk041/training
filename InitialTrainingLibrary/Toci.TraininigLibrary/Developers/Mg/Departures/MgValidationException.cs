@@ -8,9 +8,9 @@ using Toci.TraininigLibrary.Common.Eacrm;
 
 namespace Toci.TraininigLibrary.Developers.Mg.Departures
 {
-    public class MgValidationException : Exception
+    public class MgValidationException : ValidationException
     {
-        MgValidationException(string message) : base(message)
+       public MgValidationException(string message) : base(message)
         {
             
         }

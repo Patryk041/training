@@ -5,25 +5,25 @@ namespace Toci.TraininigLibrary.Developers.Mg.Departures.Helpers
 {
     static class MgDepartureValidationHelpers<T> where T : MgDepartureEntity
     {
-       
+
         private const int DaysAmountInOneWeek = 7;
 
-        public static int CountWeeks(MgDepartureEntity element)
+        internal static int CountWeeks(MgDepartureEntity entity)
         {
-            return (int)((element.ReturnDate - element.DepartureDate).TotalDays / DaysAmountInOneWeek);
+            return (int)((entity.ReturnDate - entity.DepartureDate).TotalDays / DaysAmountInOneWeek);
         }
 
-        public static void CheckReturnDate(MgDepartureEntity entity)
-        {   
-            if(entity.DepartureDate > entity.ReturnDate) throw new Exception("wyjadz później niż powrót");
+        internal static void CheckReturnDate(MgDepartureEntity entity)
+        {
+            if (entity.DepartureDate > entity.ReturnDate) throw new MgValidationException(MgExceptionMessages.DepartureDateIsLaterThanTheReturnDate);
         }
 
-        public static void CheckDepartureInterval(MgDepartureList<T> list, MgDepartureEntity entity)
+        internal static void CheckDepartureInterval(MgDepartureList<T> list, MgDepartureEntity entity)
         {
           
             foreach (var record in list)
             {
-                if (entity.DepartureDate >= record.DepartureDate && entity.ReturnDate <= record.ReturnDate) throw new Exception("daty zachodzą na siebie");
+                if (entity.DepartureDate >= record.DepartureDate && entity.ReturnDate <= record.ReturnDate) throw new MgValidationException(MgExceptionMessages.DepartureDateOverlapsTheDateOfReturn);
 
             }
 
@@ -32,29 +32,27 @@ namespace Toci.TraininigLibrary.Developers.Mg.Departures.Helpers
            
         }
 
-        public static void CheckStatus(MgDepartureList<T> list, MgDepartureEntity entity)
+        internal static void CheckStatus(MgDepartureList<T> list, MgDepartureEntity entity)
         {
             switch (entity.StatusId)
             {
                 case 1:
-                    if (entity.DepartureDate < DateTime.Now && entity.ReturnDate < DateTime.Now) throw new Exception("człowiek już wrócił");
+                    if (entity.DepartureDate < DateTime.Now && entity.ReturnDate < DateTime.Now) throw new MgValidationException(MgExceptionMessages.ThisPersonIsAlreadyBack);
                     break;
                 case 2:
-                    if (entity.DepartureDate > DateTime.Now.AddDays(7)) throw new Exception("wyjazd ja więcej niż 7 dni");
+                    if (entity.DepartureDate > DateTime.Now.AddDays(7)) throw new MgValidationException(MgExceptionMessages.DpeartureDateIsLongerThanSevenDaysFromNow);
                     break;
                 case 3:
-                    if (entity.ReturnDate > DateTime.Now) throw new Exception("nie powrócił jescze");
+                    if (entity.ReturnDate > DateTime.Now) throw new MgValidationException(MgExceptionMessages.ThisPersonIsNotBackYet);
 
                     break;
-                case 4:
-
-                    break;
+        
             }
         }
 
-        public static void SectionIdCheck(Dictionary<int, List<int>> clientsList, int clientId)
+        internal static void SectionIdCheck(Dictionary<int, List<int>> clientsList, int clientId)
         {
-            if (!clientsList.ContainsKey(clientId)) throw new Exception("to id nie może być w tej sekcji");
+            if (!clientsList.ContainsKey(clientId)) throw new MgValidationException(MgExceptionMessages.SectionIdIsNotValidForThisClientId);
         }
        
     }
