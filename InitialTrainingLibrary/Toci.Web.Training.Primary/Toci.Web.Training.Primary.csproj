@@ -193,6 +193,7 @@
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\FrogieModel.cs" />
+    <Compile Include="Models\Mg\MgReflectionExtensions.cs" />
     <Compile Include="Models\Mg\MgFillReflecionModel.cs" />
     <Compile Include="Models\Mg\MgReflectionModel.cs" />
     <Compile Include="Models\RobsonModel.cs" />

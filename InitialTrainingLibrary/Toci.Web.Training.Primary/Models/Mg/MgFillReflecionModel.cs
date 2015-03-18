@@ -18,17 +18,14 @@ namespace Toci.Web.Training.Primary.Models.Mg
             MgReflectionModel mgModel = new MgReflectionModel();
             var fields= mgModel.GetType().GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
 
-            const char propertySignOne = '<';
-            const char propertySignTwo = '>';
+          
 
             foreach (var field in fields)
             {
 
-                var start = field.Name.IndexOf(propertySignOne) + 1;
-                var amount = field.Name.IndexOf(propertySignTwo) - start;
-                var fieldName = field.Name.Contains(propertySignOne.ToString()) ? field.Name.Substring(start, amount) : field.Name;
-                field.SetValue(mgModel,_mgQueryDictionary[fieldName.ToUpper()]);
-           
+                var fieldName = field.Name.GetPropertyName();
+                if(_mgQueryDictionary.ContainsKey(fieldName)) field.SetValue(mgModel,_mgQueryDictionary[fieldName.ToUpper()]);
+                
 
             }
             return mgModel;
