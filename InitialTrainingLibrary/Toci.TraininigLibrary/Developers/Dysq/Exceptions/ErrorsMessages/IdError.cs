@@ -6,16 +6,25 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Developers.Dysq.Exceptions.ErrorsMessages
 {
-    public static class IdError
+    public class IdError : ErrorsMessagesBase
     {
-        private static Dictionary<string, string> _errorIdMessages = new Dictionary<string, string>()
-        {
-            {"Bad id.","Section id doesn't exist for this client id."},
-        };
+        public const string KeyBadId = "Bad id.";
+        private const string MessageBadId = "Section id doesn't exist for this client id.";
 
-        public static string GetClientIdMessage(string key)
+        public IdError()
         {
-            return _errorIdMessages.Where(item => item.Value.Contains(key)).ToString();
+            this.ErrorsDictionary.Add(KeyBadId,MessageBadId);
         }
+
+        //private static Dictionary<string, string> _errorIdMessages = new Dictionary<string, string>()
+        //{
+        //    {"Bad id.","Section id doesn't exist for this client id."},
+        //};
+
+        //public static string GetClientIdMessage(string key)
+        //{
+        //    return _errorIdMessages.Where(item => item.Value.Contains(key)).ToString();
+        //}
+
     }
 }

@@ -9,7 +9,7 @@ using Toci.TraininigLibrary.Common.Eacrm;
 
 namespace Toci.TraininigLibrary.Developers.Dysq.Exceptions.Helpers
 {
-    public static class HelperOfDate
+    public static class DateHelper
     {
         public static bool CheckDates(DysqDepartureEntity element)
         {

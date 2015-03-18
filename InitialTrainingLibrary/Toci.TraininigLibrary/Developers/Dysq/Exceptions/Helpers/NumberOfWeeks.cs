@@ -11,7 +11,8 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Exceptions.Helpers
     {
         public static int CalculateNumberOfWeeks( DateTime dateOfReturnToCalulate, DateTime dateOfDepartureToCalculate)
         {
-           var result= (dateOfReturnToCalulate - dateOfDepartureToCalculate).TotalDays/7;
+            const int totalDaysOfWeek = 7;
+           var result= (dateOfReturnToCalulate - dateOfDepartureToCalculate).TotalDays/totalDaysOfWeek;
 
             return (int)result;
         }

@@ -32,7 +32,7 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Exceptions
 
         private bool CheckSectionId()
         {
-            if (!ClientsList.ContainsKey(ClientId)) throw new Exception("Id doesn't exist on the list.");
+            if (!ClientsList.ContainsKey(ClientId)) throw new DysqValidationException("Id doesn't exist on the list.","");
 
             return ClientsList[ClientId].Contains(SectionId);
         }

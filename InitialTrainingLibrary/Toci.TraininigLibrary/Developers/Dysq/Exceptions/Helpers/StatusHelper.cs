@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Developers.Dysq.Exceptions.Helpers
 {
-    public static class HelperOfStatus
+    public static class StatusHelper
     {
         public static bool CheckStatus(DysqDepartureEntity entity)
         {
