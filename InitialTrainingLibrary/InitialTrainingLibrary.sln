@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialTrainingLibrary", "InitialTrainingLibrary\InitialTrainingLibrary.csproj", "{CCFF23CE-5A34-4FA7-AC0E-427FD4FA97B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialTrainingApp", "InitialTrainingApp\InitialTrainingApp.csproj", "{E4FAA82F-1EA9-4E0D-81B3-058366B786DE}"
@@ -18,6 +20,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.TraininigLibrary", "To
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.TrainingLibrary.Test", "Toci.TrainingLibrary.Test\Toci.TrainingLibrary.Test.csproj", "{192CE854-6FE7-408F-BD34-E3BA1B46F7CF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{70A72D90-AF63-46DD-96B8-B0EC430BAD67} = {70A72D90-AF63-46DD-96B8-B0EC430BAD67}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Db", "Toci.Db\Toci.Db.csproj", "{E45EA1C2-F40C-4903-94C3-30A885A71D33}"
 EndProject

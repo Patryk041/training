@@ -1,13 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Toci.TraininigLibrary.Developers.Chmura.ChmuraInheritanceTask
+namespace Toci.TraininigLibrary.Developers.Chmura.Common
 {
     public static class ChmuraTrainingThreeExtensions
     {
+        public static void ChmuraWriteErrorToLog(this string s)
+        {
+            string cs = "QualityDocHandler";
+            EventLog elog = new EventLog();
+            if (!EventLog.SourceExists(cs))
+                EventLog.CreateEventSource(cs, "Application");
+            elog.Source = cs;
+            elog.EnableRaisingEvents = true;
+            EventLog.WriteEntry(cs, s, EventLogEntryType.Error);
+        }
         public static bool ChmuraIsPalindrom(this string s)
         {
             char[] charArray = s.ToCharArray();
