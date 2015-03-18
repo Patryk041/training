@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Reflection;
 using System.Web.Mvc;
 using Toci.Web.Training.Primary.Models.Mg;
 
-namespace Toci.Web.Training.Primary.Controllers.MgControllers
+namespace Toci.Web.Training.Primary.Controllers.Mg
 {
     public class MgController : Controller
     {
