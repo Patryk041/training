@@ -14,9 +14,9 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq.Exceptions
             [TestMethod]
              public void TestDysqException()
              {
-                DysqTryException exc = new DysqTryException();
+                DysqDepartureLogic exc = new DysqDepartureLogic();
 
-                exc.TryMyException();
+                
 
              }
     }

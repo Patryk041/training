@@ -80,11 +80,12 @@
     <Compile Include="Developers\Dysq\Exceptions\DysqDeparturesList.cs" />
     <Compile Include="Developers\Dysq\Exceptions\DysqTryException.cs" />
     <Compile Include="Developers\Dysq\Exceptions\DysqValidationException.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\ErrorsMessages\ErrorsMessagesBase.cs" />
     <Compile Include="Developers\Dysq\Exceptions\ErrorsMessages\IdError.cs" />
     <Compile Include="Developers\Dysq\Exceptions\ErrorsMessages\DateError.cs" />
     <Compile Include="Developers\Dysq\Exceptions\ErrorsMessages\StatusError.cs" />
-    <Compile Include="Developers\Dysq\Exceptions\Helpers\HelperOfDate.cs" />
-    <Compile Include="Developers\Dysq\Exceptions\Helpers\HelperOfStatus.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\Helpers\DateHelper.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\Helpers\StatusHelper.cs" />
     <Compile Include="Developers\Dysq\Exceptions\Helpers\NumberOfWeeks.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileDetailParser.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Base\DysqCommonDictionaryBase.cs" />

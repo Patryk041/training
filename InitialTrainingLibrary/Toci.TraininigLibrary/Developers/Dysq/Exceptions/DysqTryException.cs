@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Developers.Dysq.Exceptions
 {
-    public class DysqTryException
+    public class DysqDepartureLogic
     {
-        public void TryMyException()
+        public void DysqDepartureLogicFill()
         {
-            try
-            {
+            
                 DysqDeparturesList myTestList = new DysqDeparturesList();
 
                 DysqDepartureEntity entity = new DysqDepartureEntity();
@@ -22,12 +21,8 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Exceptions
                 entity.StatusId = 1;
 
                 myTestList.Add(entity);
-            }
-            catch (DysqValidationException exc )
-            {
-                
-                throw ;
-            }
-        }
-    }
+         }
+            
+     }
 }
+
