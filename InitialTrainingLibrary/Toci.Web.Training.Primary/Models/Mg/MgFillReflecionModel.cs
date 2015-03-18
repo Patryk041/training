@@ -17,6 +17,7 @@ namespace Toci.Web.Training.Primary.Models.Mg
         {
             MgReflectionModel mgModel = new MgReflectionModel();
             var fields= mgModel.GetType().GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
+            var properties= mgModel.GetType().GetProperties( BindingFlags.Instance);
 
           
 
