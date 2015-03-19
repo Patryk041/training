@@ -61,11 +61,9 @@
     <Compile Include="Developers\Hipek\HipekFileParserTest.cs" />
     <Compile Include="Developers\Koziu\KoziuFileGeneratorTest.cs" />
     <Compile Include="Developers\Koziu\KoziuStringDictionaryTest.cs" />
-    <Compile Include="Developers\Mg\Departures\UnitTest1.cs" />
     <Compile Include="Developers\Mg\Inheritance\MgInheritanceTest.cs" />
     <Compile Include="Developers\Mg\MgLoadFileTest.cs" />
     <Compile Include="Developers\Mg\DbAndParsersTest.cs" />
-    <Compile Include="Developers\Mg\MvcReflection\UnitTest1.cs" />
     <Compile Include="Developers\Mg\Reflection\WarriorMgControllerReflectionTest.cs" />
     <Compile Include="Developers\Robson\RobsonsShoppingCartTest.cs" />
     <Compile Include="Developers\Mg\MgBasketTest.cs" />
