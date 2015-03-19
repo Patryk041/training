@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.TraininigLibrary.Developers.Chmura;
 using Toci.TraininigLibrary.Developers.Chmura.ChmuraInheritanceTask;
+using Toci.TraininigLibrary.Developers.Chmura.Common;
 
 namespace Toci.TrainingLibrary.Test.Developers.Chmura.TrainingThree
 {

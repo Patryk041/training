@@ -67,8 +67,13 @@
     <Compile Include="Common\RsStaticClasses\RsDictionaryHelpers.cs" />
     <Compile Include="Common\Utils\WarriorStringUtilities.cs" />
     <Compile Include="Developers\Chmura\ChmuraClass.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraDepartureEntity.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraDepartureList.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraOverlapsException.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraValidationException.cs" />
+    <Compile Include="Developers\Chmura\Common\ChmuraExceptionMessages.cs" />
     <Compile Include="Developers\Chmura\ChmuraInheritanceTask\ChmuraStringDictionary.cs" />
-    <Compile Include="Developers\Chmura\ChmuraInheritanceTask\ChmuraTrainingThreeExtensions.cs" />
+    <Compile Include="Developers\Chmura\Common\ChmuraTrainingThreeExtensions.cs" />
     <Compile Include="Developers\Dysq\Bin\DysqBin.cs" />
     <Compile Include="Developers\Dysq\Bin\DysqPurchase.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\BootsKind.cs" />

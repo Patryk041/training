@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Web.Training.Primary.Models.Mg;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Toci.TrainingLibrary.Test.Developers.Mg.MvcReflection
 {
