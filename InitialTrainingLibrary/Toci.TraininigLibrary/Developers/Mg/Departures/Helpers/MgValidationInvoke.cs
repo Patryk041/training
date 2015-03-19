@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Toci.TraininigLibrary.Common.Eacrm;
 
 namespace Toci.TraininigLibrary.Developers.Mg.Departures.Helpers
 {
-   public class MgValidationInvoke<T> where T:MgDepartureEntity
+    public class MgValidationInvoke<T> where T : DepartureEntity
    {
        private MgDepartureList<T> _list;
-       private MgDepartureEntity _entity;
+       private DepartureEntity _entity;
      //  private Dictionary<int, List<int>> _clientsList;
      //  private int _clientId;
 
@@ -17,7 +18,7 @@ namespace Toci.TraininigLibrary.Developers.Mg.Departures.Helpers
 
        public Invoke InvokeAll;
 
-       public MgValidationInvoke(MgDepartureList<T> list, MgDepartureEntity entity)
+       public MgValidationInvoke(MgDepartureList<T> list, DepartureEntity entity)
        {
            _list = list;
            _entity = entity;
