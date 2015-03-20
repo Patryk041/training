@@ -31,8 +31,7 @@ namespace Toci.TraininigLibrary.Developers.Koziu.Departure.Helpers
                  default  :
                      return false;  
              }   
-         }
-         
+         }     
          
 
          private static bool IsActive(KoziuDepartureEntity entity)
