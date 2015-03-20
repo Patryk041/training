@@ -15,11 +15,8 @@ namespace Toci.TrainingLibrary.Test.Developers.Chmura.TrainingFour
         [TestMethod]
         public void ChmuraDepartureListTest()
         {
-            IEnumerable<CultureInfo> jezyk = CultureInfo.GetCultures(CultureTypes.AllCultures).Where(item => item.Name=="pl-PL");
-            var jey = CultureInfo.InstalledUICulture;
-            ChmuraDepartureEntity departure1 = new ChmuraDepartureEntity(1,2,3,DateTime.Now.AddDays(10),DateTime.Now);
-            var weeks1 = departure1.WeeksCount;
-            ChmuraDepartureList list = new ChmuraDepartureList();
+            ChmuraDepartureEntity departure1 = new ChmuraDepartureEntity(1,2,3,DateTime.Now.AddDays(-10),DateTime.Now.AddDays(10), 7);
+            ChmuraDepartureList<ChmuraDepartureEntity> list = new ChmuraDepartureList<ChmuraDepartureEntity>();
             list.Add(departure1);
         }
     }
