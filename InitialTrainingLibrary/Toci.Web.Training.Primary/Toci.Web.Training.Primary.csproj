@@ -187,6 +187,7 @@
     <Compile Include="Controllers\Mg\MgController.cs" />
     <Compile Include="Controllers\RobsonController.cs" />
     <Compile Include="Controllers\WarriorController.cs" />
+    <Compile Include="Controllers\Warrior\GhostRiderController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -198,6 +199,7 @@
     <Compile Include="Models\Mg\MgReflectionModel.cs" />
     <Compile Include="Models\RobsonModel.cs" />
     <Compile Include="Models\WarriorModel.cs" />
+    <Compile Include="Models\Warrior\GhostRiderModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -321,6 +323,7 @@
     <Content Include="Views\Frogie\Zaba.cshtml" />
     <Content Include="Views\Robson\Index.cshtml" />
     <Content Include="Views\Mg\MgQueryStringAction.cshtml" />
+    <Content Include="Views\GhostRider\GhostRider.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

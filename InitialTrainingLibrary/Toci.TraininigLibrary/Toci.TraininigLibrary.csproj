@@ -129,6 +129,12 @@
     <Compile Include="Developers\Dysq\FileParser\DysqFileFooterParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileHeaderParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileParser.cs" />
+    <Compile Include="Developers\Koziu\Departure\Helpers\CheckDateHelper.cs" />
+    <Compile Include="Developers\Koziu\Departure\Helpers\NumberOfWeeksHelper.cs" />
+    <Compile Include="Developers\Koziu\Departure\Helpers\CheckStatusHelper.cs" />
+    <Compile Include="Developers\Koziu\Departure\KoziuDepartureEntity.cs" />
+    <Compile Include="Developers\Koziu\Departure\KoziuDepartureList.cs" />
+    <Compile Include="Developers\Koziu\Departure\KoziuValidationException.cs" />
     <Compile Include="Developers\Koziu\FileParser\KoziuFileDetailParser.cs" />
     <Compile Include="Developers\Koziu\FileParser\KoziuFileEntity.cs" />
     <Compile Include="Developers\Koziu\FileParser\KoziuFileFooterParserBase.cs" />
@@ -230,6 +236,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
+    <Folder Include="Developers\Koziu\Departure\DepartureExceptionMessage\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">

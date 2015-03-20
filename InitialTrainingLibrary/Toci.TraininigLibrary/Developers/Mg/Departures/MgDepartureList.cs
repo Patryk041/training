@@ -8,7 +8,7 @@ using Toci.TraininigLibrary.Developers.Mg.Departures.Helpers;
 
 namespace Toci.TraininigLibrary.Developers.Mg.Departures
 {
-    public class MgDepartureList<T> : DepartureList<T> where T : MgDepartureEntity
+    public class MgDepartureList<T> : DepartureList<T> where T : DepartureEntity
     {
         public override bool Add(T element)
         {

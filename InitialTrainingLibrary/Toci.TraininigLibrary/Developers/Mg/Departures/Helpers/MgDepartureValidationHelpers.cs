@@ -1,24 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using Toci.TraininigLibrary.Common.Eacrm;
 
 namespace Toci.TraininigLibrary.Developers.Mg.Departures.Helpers
 {
-    static class MgDepartureValidationHelpers<T> where T : MgDepartureEntity
+    static class MgDepartureValidationHelpers<T> where T : DepartureEntity
     {
 
         private const int DaysAmountInOneWeek = 7;
 
-        internal static int CountWeeks(MgDepartureEntity entity)
+        internal static int CountWeeks(DepartureEntity entity)
         {
             return (int)((entity.ReturnDate - entity.DepartureDate).TotalDays / DaysAmountInOneWeek);
         }
 
-        internal static void CheckReturnDate(MgDepartureEntity entity)
+        internal static void CheckReturnDate(DepartureEntity entity)
         {
             if (entity.DepartureDate > entity.ReturnDate) throw new MgValidationException(MgExceptionMessages.DepartureDateIsLaterThanTheReturnDate);
         }
 
-        internal static void CheckDepartureInterval(MgDepartureList<T> list, MgDepartureEntity entity)
+        internal static void CheckDepartureInterval(DepartureList<T> list, DepartureEntity entity)
         {
           
             foreach (var record in list)
@@ -32,7 +33,7 @@ namespace Toci.TraininigLibrary.Developers.Mg.Departures.Helpers
            
         }
 
-        internal static void CheckStatus(MgDepartureList<T> list, MgDepartureEntity entity)
+        internal static void CheckStatus(MgDepartureList<T> list, DepartureEntity entity)
         {
             switch (entity.StatusId)
             {
