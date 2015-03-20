@@ -65,6 +65,7 @@
     <Compile Include="Developers\Mg\DbAndParsersTest.cs" />
     <Compile Include="Developers\Robson\RobsonsShoppingCartTest.cs" />
     <Compile Include="Developers\Mg\MgBasketTest.cs" />
+    <Compile Include="Developers\Robson\RobsonsFileParserTest.cs" />
     <Compile Include="Developers\Rs\RsDictionaryTests\RsDictionaryTest.cs" />
     <Compile Include="Developers\Rs\RsDictionaryTests\RsExtensionMethodsTest.cs" />
     <Compile Include="Developers\Rs\RsDictionaryTests\RsHashtableTest.cs" />
