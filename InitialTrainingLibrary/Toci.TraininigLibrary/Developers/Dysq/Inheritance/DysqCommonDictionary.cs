@@ -31,8 +31,8 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Inheritance
                 for (int i = 0; i < key.Length; i++)
                 {
                     if (arrayOfkey[i] != anagramCandidateArray[i])
-                         isDysqAnagram = false;
-                    break;
+                    {isDysqAnagram = false;
+                    break;}
                 }
                 if(isDysqAnagram) anagramList.Add(this[key]);
                 

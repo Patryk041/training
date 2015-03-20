@@ -1,13 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.CompilerServices;
 
-namespace Toci.TraininigLibrary.Developers.Chmura.ChmuraInheritanceTask
+namespace Toci.TraininigLibrary.Developers.Chmura.Common
 {
     public static class ChmuraTrainingThreeExtensions
     {
+        public static void ChmuraWriteErrorToLog(this string s)
+        {
+
+                Debug.WriteLine(s);
+            //I will have to figure out how to make it works..
+            
+
+        }
         public static bool ChmuraIsPalindrom(this string s)
         {
             char[] charArray = s.ToCharArray();

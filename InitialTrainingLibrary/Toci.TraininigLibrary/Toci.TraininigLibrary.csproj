@@ -67,8 +67,21 @@
     <Compile Include="Common\RsStaticClasses\RsDictionaryHelpers.cs" />
     <Compile Include="Common\Utils\WarriorStringUtilities.cs" />
     <Compile Include="Developers\Chmura\ChmuraClass.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraDepartureEntity.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraDepartureHelpers.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraDepartureList.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraDepartureValidation.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraOverlapsException.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraValidationException.cs" />
+    <Compile Include="Developers\Chmura\Common\ChmuraExceptionMessages.cs" />
     <Compile Include="Developers\Chmura\ChmuraInheritanceTask\ChmuraStringDictionary.cs" />
-    <Compile Include="Developers\Chmura\ChmuraInheritanceTask\ChmuraTrainingThreeExtensions.cs" />
+    <Compile Include="Developers\Chmura\Common\ChmuraLanguageEngine.cs" />
+    <Compile Include="Developers\Chmura\Common\ChmuraTrainingThreeExtensions.cs" />
+    <Compile Include="Developers\Chmura\DateTimeValidator\DateValidator.cs" />
+    <Compile Include="Developers\Chmura\DateTimeValidator\Day.cs" />
+    <Compile Include="Developers\Chmura\DateTimeValidator\IDateValidator.cs" />
+    <Compile Include="Developers\Chmura\DateTimeValidator\Month.cs" />
+    <Compile Include="Developers\Chmura\DateTimeValidator\Year.cs" />
     <Compile Include="Developers\Dysq\Bin\DysqBin.cs" />
     <Compile Include="Developers\Dysq\Bin\DysqPurchase.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\BootsKind.cs" />
@@ -76,6 +89,17 @@
     <Compile Include="Developers\Dysq\Database\DysqSqlClientBase.cs" />
     <Compile Include="Developers\Dysq\Database\PostgreSqlClientDysq.cs" />
     <Compile Include="Developers\Dysq\Database\TransferModelDysq.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\DysqDepartureEntity.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\DysqDeparturesList.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\DysqTryException.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\DysqValidationException.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\ErrorsMessages\ErrorsMessagesBase.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\ErrorsMessages\IdError.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\ErrorsMessages\DateError.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\ErrorsMessages\StatusError.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\Helpers\DateHelper.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\Helpers\StatusHelper.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\Helpers\NumberOfWeeks.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileDetailParser.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Base\DysqCommonDictionaryBase.cs" />
     <Compile Include="Developers\Dysq\Inheritance\DysqCommonDictionary.cs" />
@@ -105,6 +129,12 @@
     <Compile Include="Developers\Dysq\FileParser\DysqFileFooterParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileHeaderParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileParser.cs" />
+    <Compile Include="Developers\Koziu\Departure\Helpers\CheckDateHelper.cs" />
+    <Compile Include="Developers\Koziu\Departure\Helpers\NumberOfWeeksHelper.cs" />
+    <Compile Include="Developers\Koziu\Departure\Helpers\CheckStatusHelper.cs" />
+    <Compile Include="Developers\Koziu\Departure\KoziuDepartureEntity.cs" />
+    <Compile Include="Developers\Koziu\Departure\KoziuDepartureList.cs" />
+    <Compile Include="Developers\Koziu\Departure\KoziuValidationException.cs" />
     <Compile Include="Developers\Koziu\FileParser\KoziuFileDetailParser.cs" />
     <Compile Include="Developers\Koziu\FileParser\KoziuFileEntity.cs" />
     <Compile Include="Developers\Koziu\FileParser\KoziuFileFooterParserBase.cs" />
@@ -122,6 +152,12 @@
     <Compile Include="Developers\Mg\DB\Base\MgClientsBase.cs" />
     <Compile Include="Developers\Mg\DB\Clients\MgPostgreClient.cs" />
     <Compile Include="Developers\Mg\DB\Interface\IMgDbClient.cs" />
+    <Compile Include="Developers\Mg\Departures\Helpers\MgExceptionMessages.cs" />
+    <Compile Include="Developers\Mg\Departures\Helpers\MgValidationInvoke.cs" />
+    <Compile Include="Developers\Mg\Departures\MgDepartureEntity.cs" />
+    <Compile Include="Developers\Mg\Departures\MgDepartureList.cs" />
+    <Compile Include="Developers\Mg\Departures\Helpers\MgDepartureValidationHelpers.cs" />
+    <Compile Include="Developers\Mg\Departures\MgValidationException.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileDetailsParser.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileEntity.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileParser.cs" />
@@ -206,6 +242,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
+    <Folder Include="Developers\Koziu\Departure\DepartureExceptionMessage\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">

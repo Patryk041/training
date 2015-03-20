@@ -8,6 +8,11 @@ namespace Toci.TraininigLibrary.Common.Eacrm
 {
     public abstract class DepartureList<T> : List<T> where T : DepartureEntity
     {
-        public new abstract bool Add(T element);
+        public new virtual bool Add(T element)
+        {
+            base.Add(element);
+
+            return true;
+        }
     }
 }

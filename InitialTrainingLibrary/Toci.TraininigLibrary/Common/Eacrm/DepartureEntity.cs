@@ -9,7 +9,8 @@ namespace Toci.TraininigLibrary.Common.Eacrm
     public abstract class DepartureEntity
     {
         protected static Dictionary<int, List<int>> ClientsList = new Dictionary<int, List<int>>()
-        {
+        {   //lista sekcji
+            //klucz to id klienta
             { 1, new List<int> {1,2,3,4} },
             { 2, new List<int> {5,6,7} },
             { 3, new List<int> {8,9,10} },
