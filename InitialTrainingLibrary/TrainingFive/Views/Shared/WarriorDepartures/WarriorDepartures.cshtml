@@ -1,0 +1,13 @@
+﻿@model Toci.TraininigLibrary.Developers.Chmura.ChmuraDeparture.ChmuraDepartureList
+
+@foreach (var item in Model)
+        {
+    //        @Html.Raw("<div>" + item.ClientId + "</div >")
+            <div>
+                @item.ConsultantId
+                @item.DepartureDate
+                @item.ReturnDate
+            </div>
+
+            //@:"<div>" + item.ClientId + "</div >";
+        }
