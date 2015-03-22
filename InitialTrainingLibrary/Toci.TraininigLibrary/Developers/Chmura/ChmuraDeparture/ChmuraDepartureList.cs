@@ -9,49 +9,36 @@ using Toci.TraininigLibrary.Developers.Chmura.Common;
 
 namespace Toci.TraininigLibrary.Developers.Chmura.ChmuraDeparture
 {
-    public class ChmuraDepartureList : DepartureList<ChmuraDepartureEntity>
+    public class ChmuraDepartureList<T> : DepartureList<T> where T : DepartureEntity
     {
-        public override bool Add(ChmuraDepartureEntity element)
+        public override bool Add(T element)
         {
-            try
+            foreach (var task in ChmuraDepartureValidation<T>.ValidationTasks)
             {
-                CheckDates(element.DepartureDate, element.ReturnDate);
-            }
-            catch (ChmuraValidationException ex)
-            {
-                ex.Message.ChmuraWriteErrorToLog();
-                ex.StackTrace.ChmuraWriteErrorToLog();
+                try
+                {
+                    task.Value.Invoke(element, this);
+                }
+
+                    //catch should be level up, so its just proof of concepts
+                catch (ChmuraValidationException ex)
+                {
+                    ex.Msg[ChmuraLanguageEngine.GetLanguage()].ChmuraWriteErrorToLog();
+                    ex.Message.ChmuraWriteErrorToLog();
+                    ex.OptionalMessage.ChmuraWriteErrorToLog();
+                }
+                catch (ChmuraValidationLoicException ex)
+                {
+                    ex.Msg[ChmuraLanguageEngine.GetLanguage()].ChmuraWriteErrorToLog();
+                    ex.Message.ChmuraWriteErrorToLog();
+                    ex.OptionalMessage.ChmuraWriteErrorToLog();
+                }
+                
             }
 
             base.Add(element);
 
             return true;
         }
-
-        private void CheckDates(DateTime d1, DateTime d2)
-        {
-            try
-            {
-                if (d1 > d2)
-                {
-                    throw new ChmuraValidationException(ChmuraExceptionMessages.ReturnBeforeDepartureEx);
-                }
-            }
-            catch (ChmuraValidationException ex)
-            {
-                ex.Message.ChmuraWriteErrorToLog();
-                ex.StackTrace.ChmuraWriteErrorToLog();
-            }
-            
-            if (
-                this.FirstOrDefault(element => (element.DepartureDate <= d1 && element.ReturnDate >= d2) ||
-                                               (element.DepartureDate >= d1 && element.ReturnDate <= d2) ||
-                                               (element.DepartureDate >= d1 && element.ReturnDate <= d2)) != null
-                )
-            {
-                throw new ChmuraOverlapsException(ChmuraExceptionMessages.DateOverlaps);
-            }
-        }
-
     }
 }

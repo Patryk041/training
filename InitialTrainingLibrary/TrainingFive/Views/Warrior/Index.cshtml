@@ -1,0 +1,29 @@
+﻿@model TrainingFive.Models.WarriorModel
+
+@{
+    ViewBag.Title = "Index";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+@*    <script src="http://azg.pl/js/swfobject.js"></script>*@
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("save", "warrior", FormMethod.Post))
+{
+
+    <div>
+        @Html.TextBoxFor(item => item.Name, new {placeholder = "Mg", pattern = "[0-9]{2,}"})
+    </div>
+    <div>
+        @Html.DropDownListFor(item => item.DropDownValue, Model.DropDownSource)
+    </div>
+
+    
+        @Html.Partial("WarriorDepartures/WarriorDepartures", Model.ListOfDepartures)
+    
+
+    <input type="submit" name="dupa" value="pocisnij" />
+}

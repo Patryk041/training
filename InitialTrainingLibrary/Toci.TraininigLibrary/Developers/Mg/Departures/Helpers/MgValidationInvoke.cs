@@ -14,9 +14,9 @@ namespace Toci.TraininigLibrary.Developers.Mg.Departures.Helpers
      //  private Dictionary<int, List<int>> _clientsList;
      //  private int _clientId;
 
-       public delegate void Invoke();
+       private delegate void Invoke();
 
-       public Invoke InvokeAll;
+       private MgValidationInvoke<T>.Invoke InvokeAllDelegate;
 
        public MgValidationInvoke(MgDepartureList<T> list, DepartureEntity entity)
        {
@@ -25,10 +25,10 @@ namespace Toci.TraininigLibrary.Developers.Mg.Departures.Helpers
           // _clientsList = clientsList;
           // _clientId = clientId;
 
-           InvokeAll += CountWeeks;
-           InvokeAll += CheckReturnDate;
-           InvokeAll += CheckDepartureInterval;
-           InvokeAll += CheckStatus;
+           InvokeAllDelegate += CountWeeks;
+           InvokeAllDelegate += CheckReturnDate;
+           InvokeAllDelegate += CheckDepartureInterval;
+           InvokeAllDelegate += CheckStatus;
           // InvokeAll += SectionIdCheck;
        }
 
@@ -53,6 +53,10 @@ namespace Toci.TraininigLibrary.Developers.Mg.Departures.Helpers
            
        }
 
+       public void InvokeAll()
+        {
+            InvokeAllDelegate();
+        }
 
        //private void SectionIdCheck()
        //{

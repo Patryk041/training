@@ -10,10 +10,12 @@ namespace Toci.TraininigLibrary.Developers.Chmura.ChmuraDeparture
 {
     public class ChmuraValidationException : ValidationException
     {
-        private Dictionary<CultureInfo, string> _message;
-        public ChmuraValidationException(Dictionary<CultureInfo, string> message)
+        public Dictionary<CultureInfo, string> Msg;
+        public string OptionalMessage;
+        public ChmuraValidationException(Dictionary<CultureInfo, string> message, string optionalMessage = null)
         {
-            this._message = message;
+            this.Msg = message;
+            this.OptionalMessage = optionalMessage;
         }
     }
 }

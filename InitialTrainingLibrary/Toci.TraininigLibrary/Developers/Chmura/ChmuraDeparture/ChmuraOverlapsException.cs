@@ -8,18 +8,14 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Developers.Chmura.ChmuraDeparture
 {
-    public class ChmuraOverlapsException : Exception
+    public class ChmuraValidationLoicException : Exception
     {
-        private Dictionary<CultureInfo, string> _message;
-        protected ChmuraOverlapsException()
-        {            
-        }
-        protected ChmuraOverlapsException(string message):base(message)
+        public Dictionary<CultureInfo, string> Msg;
+        public string OptionalMessage;
+        public ChmuraValidationLoicException(Dictionary<CultureInfo, string> message, string optionalMessage = null)
         {
-        }
-        public ChmuraOverlapsException(Dictionary<CultureInfo, string> message)
-        {
-            this._message = message;
+            this.Msg = message;
+            this.OptionalMessage = optionalMessage;
         }
     }
 }

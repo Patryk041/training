@@ -23,7 +23,7 @@ namespace Toci.TraininigLibrary.Common.FileParser
 
         //protected abstract FileEntityBase ReadRow();
 
-        public FileEntityBase GetParsedData(string line)
+        public virtual FileEntityBase GetParsedData(string line)
         {
             // TODO
             //TDetails details = new TDetails();

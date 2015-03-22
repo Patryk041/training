@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace Toci.TraininigLibrary.Developers.Chmura.Common
 {
@@ -8,13 +9,11 @@ namespace Toci.TraininigLibrary.Developers.Chmura.Common
     {
         public static void ChmuraWriteErrorToLog(this string s)
         {
-            string cs = "QualityDocHandler";
-            EventLog elog = new EventLog();
-            if (!EventLog.SourceExists(cs))
-                EventLog.CreateEventSource(cs, "Application");
-            elog.Source = cs;
-            elog.EnableRaisingEvents = true;
-            EventLog.WriteEntry(cs, s, EventLogEntryType.Error);
+
+                Debug.WriteLine(s);
+            //I will have to figure out how to make it works..
+            
+
         }
         public static bool ChmuraIsPalindrom(this string s)
         {

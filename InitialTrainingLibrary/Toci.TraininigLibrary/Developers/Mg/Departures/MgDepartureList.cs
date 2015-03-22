@@ -13,6 +13,7 @@ namespace Toci.TraininigLibrary.Developers.Mg.Departures
         public override bool Add(T element)
         {
             MgValidationInvoke<T> validationInvoke = new MgValidationInvoke<T>(this,element);
+          
             validationInvoke.InvokeAll();
 
             base.Add(element);
