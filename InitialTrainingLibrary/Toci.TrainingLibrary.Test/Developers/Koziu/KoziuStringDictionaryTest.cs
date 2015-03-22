@@ -33,6 +33,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Koziu
             resultAnagram = koziuStringDictionary.GetAnagramSet("radar");
             resultPalindrom= koziuStringDictionary.GetPalindromSet();
             resultWildcard = koziuStringDictionary.GetWildcardSet("kajak");
+            
 
         }
     }

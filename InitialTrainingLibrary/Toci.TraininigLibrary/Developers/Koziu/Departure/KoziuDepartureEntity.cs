@@ -23,7 +23,7 @@ namespace Toci.TraininigLibrary.Developers.Koziu.Departure
 
         public override int WeeksCount
         {
-            get { return NumberOfWeeksHelper.NumberOfWeeks(this.ReturnDate, this.DepartureDate); }
+            get { return NumberOfWeeksHelper.NumberOfWeeks(this); }
         }
         public bool CheckClientId(int clientId)
         {  
