@@ -40,16 +40,47 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
+    <Compile Include="TrainingOne\Delegates\DelegatesShowdown.cs" />
+    <Compile Include="TrainingOne\Dysq\FootballTrick.cs" />
+    <Compile Include="TrainingOne\Dysq\Helper\SportsmanSkillValidator.cs" />
+    <Compile Include="TrainingOne\Dysq\SportsmanSkill.cs" />
+    <Compile Include="TrainingOne\Dysq\VolleyballPlayer.cs" />
+    <Compile Include="TrainingOne\Excercise\IDateValidator.cs" />
+    <Compile Include="TrainingOne\Excercise\ITextOperationsSets.cs" />
+    <Compile Include="TrainingOne\Factory\CarFactory.cs" />
+    <Compile Include="TrainingOne\Factory\CarFactoryGenerics.cs" />
+    <Compile Include="TrainingOne\Factory\ICar.cs" />
+    <Compile Include="TrainingOne\Factory\Opel.cs" />
+    <Compile Include="TrainingOne\Factory\Porsche.cs" />
+    <Compile Include="TrainingOne\Factory\Volswagen.cs" />
+    <Compile Include="TrainingOne\IEnumerableShowdown\IAmEnumerable.cs" />
+    <Compile Include="TrainingOne\IEnumerableShowdown\Loop.cs" />
+    <Compile Include="TrainingOne\IEnumerableShowdown\TypeEnumerator.cs" />
+    <Compile Include="TrainingOne\Interfaces\IHuman.cs" />
+    <Compile Include="TrainingOne\Interfaces\ISportSkill.cs" />
+    <Compile Include="TrainingOne\Interfaces\ISportsMan.cs" />
+    <Compile Include="TrainingOne\ListsOfItems\StringList.cs" />
+    <Compile Include="TrainingOne\ListsOfItems\TestGeneric.cs" />
+    <Compile Include="TrainingOne\President.cs" />
+    <Compile Include="TrainingOne\ReferenceTypes\CorLogic.cs" />
+    <Compile Include="TrainingOne\ReferenceTypes\IChainOfResponsibilityFriendly.cs" />
+    <Compile Include="TrainingOne\ReferenceTypes\IRandomEntity.cs" />
+    <Compile Include="TrainingOne\ReferenceTypes\ManipulateNameHandle.cs" />
+    <Compile Include="TrainingOne\ReferenceTypes\ManipulateNickHandle.cs" />
+    <Compile Include="TrainingOne\ReferenceTypes\ManipulateSkillHandle.cs" />
+    <Compile Include="TrainingOne\ReferenceTypes\RandomEntity.cs" />
+    <Compile Include="TrainingOne\SocialMediaPeople.cs" />
+    <Compile Include="TrainingOne\Warrior\DaysValidation.cs" />
+    <Compile Include="TrainingOne\Warrior\FilterSets.cs" />
+    <Compile Include="TrainingOne\Warrior\TextUtils.cs" />
+    <Compile Include="TrainingOne\Warrior\WarriorDateValidator.cs" />
     <Compile Include="WarriorTest.cs" />
-=======
     <Compile Include="TrainingOne\Dysq\Helper\AllowedToPlay.cs" />
     <Compile Include="TrainingOne\Dysq\Player.cs" />
     <Compile Include="TrainingOne\Dysq\SportsMan.cs" />
     <Compile Include="TrainingOne\Dysq\Team.cs" />
     <Compile Include="TrainingOne\Mg\Dysqu.cs" />
     <Compile Include="TrainingOne\Mg\klasa2.cs" />
->>>>>>> 3454de9191fc06e86c8443a3dc647e02f45e64b6
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
