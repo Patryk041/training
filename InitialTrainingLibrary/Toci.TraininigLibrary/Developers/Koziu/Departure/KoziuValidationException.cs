@@ -8,8 +8,12 @@ using Toci.TraininigLibrary.Developers.Koziu.Departure.Helpers;
 
 namespace Toci.TraininigLibrary.Developers.Koziu.Departure
 {
-    class KoziuValidationException : ValidationException
+    public class KoziuValidationException : ValidationException
     {
+        public KoziuValidationException(string message)
+        {
+            
+        }
                
     }
 }

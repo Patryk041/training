@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Developers.Koziu.Departure.Helpers
 {
-    static class NumberOfWeeksHelper
+    public static class NumberOfWeeksHelper
     {
         private const int DaysOfWeek = 7;
-        public static int NumberOfWeeks(DateTime DepartureDate, DateTime ReturnDate)
+        public static int NumberOfWeeks(KoziuDepartureEntity entity)
         {
-            return (int) (ReturnDate - DepartureDate).TotalDays/DaysOfWeek;
+            return (int) (entity.ReturnDate - entity.DepartureDate).TotalDays/DaysOfWeek;
         }
     }
 }

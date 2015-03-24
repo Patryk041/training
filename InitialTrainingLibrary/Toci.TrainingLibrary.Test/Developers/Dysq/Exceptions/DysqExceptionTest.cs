@@ -17,7 +17,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq.Exceptions
                 DysqDepartureLogic exc = new DysqDepartureLogic();
 
                 
-
+                exc.DysqDepartureLogicFill();
              }
     }
 }

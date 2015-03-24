@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 namespace Toci.TraininigLibrary.Developers.Koziu.Departure.Helpers
 {
 
-     public class CheckStatusHelper
+     public  class CheckStatusHelper
      {
          
-         public const int maxDay = 7;
+         private const int maxDay = 7; 
+         
          public static bool CheckStatus(KoziuDepartureEntity entity, KoziuDepartureList departureList)
          {    
              switch (entity.StatusId)

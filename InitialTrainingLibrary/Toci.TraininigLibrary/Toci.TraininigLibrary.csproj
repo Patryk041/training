@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -129,7 +130,9 @@
     <Compile Include="Developers\Dysq\FileParser\DysqFileFooterParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileHeaderParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileParser.cs" />
+    <Compile Include="Developers\Koziu\Departure\DepartureExceptions\DataException.cs" />
     <Compile Include="Developers\Koziu\Departure\Helpers\CheckDateHelper.cs" />
+    <Compile Include="Developers\Koziu\Departure\Helpers\FactoryHelper.cs" />
     <Compile Include="Developers\Koziu\Departure\Helpers\NumberOfWeeksHelper.cs" />
     <Compile Include="Developers\Koziu\Departure\Helpers\CheckStatusHelper.cs" />
     <Compile Include="Developers\Koziu\Departure\KoziuDepartureEntity.cs" />
@@ -145,6 +148,7 @@
     <Compile Include="Developers\Koziu\InternetStore\KoziuBin.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuBinCollection.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />
+    <Compile Include="Developers\Koziu\Departure\KoziuDeparture.cs" />
     <Compile Include="Developers\Koziu\StringDictionary\KoziuStringDictionary.cs" />
     <Compile Include="Developers\Koziu\StringDictionary\ExtensionsString.cs" />
     <Compile Include="Developers\Mg\Basket\MgBasket.cs" />

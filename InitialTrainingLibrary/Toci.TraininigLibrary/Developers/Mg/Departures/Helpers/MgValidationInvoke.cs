@@ -25,10 +25,10 @@ namespace Toci.TraininigLibrary.Developers.Mg.Departures.Helpers
           // _clientsList = clientsList;
           // _clientId = clientId;
 
-           InvokeAll += CountWeeks;
-           InvokeAll += CheckReturnDate;
-           InvokeAll += CheckDepartureInterval;
-           InvokeAll += CheckStatus;
+           InvokeAllDelegate += CountWeeks;
+           InvokeAllDelegate += CheckReturnDate;
+           InvokeAllDelegate += CheckDepartureInterval;
+           InvokeAllDelegate += CheckStatus;
           // InvokeAll += SectionIdCheck;
        }
 

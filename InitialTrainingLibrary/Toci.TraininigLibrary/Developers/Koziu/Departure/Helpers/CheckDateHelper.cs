@@ -21,8 +21,9 @@ namespace Toci.TraininigLibrary.Developers.Koziu.Departure.Helpers
                 if((departure.ReturnDate <= entity.DepartureDate) || (departure.DepartureDate >= entity.ReturnDate)) result = false; 
             }
             return result;
-        }
-        
+        }      
+      
+
 
     }
 }
