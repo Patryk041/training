@@ -12,7 +12,8 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Exceptions.ErrorsMessages
 
         public string GetMessage(string key)
         {
-            return ErrorsDictionary.Where(item => item.Key == key).ToDictionary(item => item.Key, item => item.Value).First().Value;
+            //return ErrorsDictionary.Where(item => item.Key == key).ToDictionary(item => item.Key, item => item.Value).First().Value;
+            return ErrorsDictionary.Where(item => item.Key == key).ToString();
         }
 
 
