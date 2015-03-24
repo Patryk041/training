@@ -15,8 +15,8 @@ namespace Toci.TraininigLibrary.Developers.Robson.RobsonsDictionaryInheritance
 
             foreach(var item in this)
             {
-                char[] firstString = (char[])(item.Key.ToArray()).Where(c => c >= 'a' && c <= 'z');
-                char[] secondString = (char[])(anagramCandidate.ToArray()).Where(c => c >= 'a' && c <= 'z');
+                var firstString = item.Key.ToArray().Where(c => c >= 'a' && c <= 'z');
+                var secondString = anagramCandidate.ToArray().Where(c => c >= 'a' && c <= 'z');
 
                 if(firstString.OrderBy(c => c).SequenceEqual(secondString.OrderBy(c => c)))
                 {
@@ -32,7 +32,7 @@ namespace Toci.TraininigLibrary.Developers.Robson.RobsonsDictionaryInheritance
 
             foreach(var item in this)
             {
-                if(item.Key.Reverse() == item.Key)
+                if((string)item.Key.Reverse() == (string)item.Key)
                 {
                     list.Add(item.Value);
                 }
@@ -47,7 +47,7 @@ namespace Toci.TraininigLibrary.Developers.Robson.RobsonsDictionaryInheritance
 
             foreach (var item in this)
             {
-                if(item.Key.StartsWith(wildcard))
+                if(item.Key.ToString().StartsWith(wildcard))
                 {
                     list.Add(item.Value);
                 }
