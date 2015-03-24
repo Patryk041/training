@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Common.Base.Inheritance;
+using Toci.TraininigLibrary.Developers.Robson.RobsonExtendedDictionary;
 
 namespace Toci.TraininigLibrary.Developers.Robson.RobsonsDictionaryInheritance
 {
@@ -25,19 +26,27 @@ namespace Toci.TraininigLibrary.Developers.Robson.RobsonsDictionaryInheritance
             }
             return list;
         }
-
+        
         public override List<ExampleClass> GetPalindromSet()
         {
             List<ExampleClass> list = new List<ExampleClass>();
 
             foreach(var item in this)
             {
-                if((string)item.Key.Reverse() == (string)item.Key)
+                string firstString = item.Key.ToString();
+                StringBuilder secondString = new StringBuilder(firstString.Length);
+                for (int i = firstString.Length - 1; i >= 0; i-- )
                 {
-                    list.Add(item.Value);
+                    secondString.Append(firstString[i]);
                 }
-            }
 
+                    if (firstString == secondString.ToString())
+                    {
+                        list.Add(item.Value);
+                    }
+            }
+            
+            
             return list;
         }
 
