@@ -161,6 +161,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Dysq\Controllers\MyController.cs" />
+    <Compile Include="Areas\Dysq\DysqAreaRegistration.cs" />
     <Compile Include="Areas\Mg\Controllers\HomeController.cs" />
     <Compile Include="Areas\Mg\MgAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -252,6 +254,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Areas\Mg\Views\Shared\_MgLayout.cshtml" />
     <Content Include="Areas\Mg\Views\Partials\AboutPartial.cshtml" />
+    <Content Include="Areas\Dysq\Views\Web.config" />
+    <Content Include="Areas\Dysq\Views\index.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -315,6 +319,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Dysq\Models\" />
+    <Folder Include="Areas\Dysq\Views\Shared\" />
     <Folder Include="Areas\Mg\Models\" />
   </ItemGroup>
   <ItemGroup>

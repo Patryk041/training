@@ -171,6 +171,9 @@
     <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlEntity.cs" />
     <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlParserLogic.cs" />
     <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlTransferParser.cs" />
+    <Compile Include="Developers\Robson\RobsonExtendedDictionary\RobsonsUtilityClass.cs" />
+    <Compile Include="Developers\Robson\RobsonsDictionaryInheritance\ExampleClass.cs" />
+    <Compile Include="Developers\Robson\RobsonsDictionaryInheritance\RobsonsDictionary.cs" />
     <Compile Include="Developers\Robson\RobsonFileParser\RobsonFileDetails.cs" />
     <Compile Include="Developers\Robson\RobsonFileParser\RobsonFileEntity.cs" />
     <Compile Include="Developers\Robson\RobsonFileParser\RobsonFileFooter.cs" />
