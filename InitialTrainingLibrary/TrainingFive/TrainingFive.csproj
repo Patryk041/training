@@ -180,6 +180,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Dysq\Content\style\Dysq_style.css" />
     <Content Include="Areas\Mg\Content\de.png" />
     <Content Include="Areas\Mg\Content\en.png" />
     <Content Include="Areas\Mg\Content\lang-bar-background.png" />
@@ -259,6 +260,7 @@
     <Content Include="Areas\Dysq\Views\Web.config" />
     <Content Include="Areas\Dysq\Views\index.cshtml" />
     <Content Include="Areas\Mg\Views\Partials\FindOfferPartial.cshtml" />
+    <Content Include="Areas\Dysq\Views\Shared\DysqAzg\_DysqLayout.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -322,8 +324,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Dysq\Content\image\" />
     <Folder Include="Areas\Dysq\Models\" />
-    <Folder Include="Areas\Dysq\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

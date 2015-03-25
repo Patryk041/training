@@ -1,0 +1,22 @@
+﻿body {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+#test_logo {
+    background: aqua;
+}
+
+#logo {
+    /*width: 233px;
+    height: 176px;*/
+    width: 803px;
+    height: 556px;
+    background: url(http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/logo.png);
+    position: absolute;
+    cursor: pointer;
+}
