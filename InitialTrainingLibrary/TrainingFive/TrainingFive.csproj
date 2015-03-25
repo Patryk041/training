@@ -176,6 +176,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Mg\Content\de.png" />
+    <Content Include="Areas\Mg\Content\en.png" />
+    <Content Include="Areas\Mg\Content\lang-bar-background.png" />
+    <Content Include="Areas\Mg\Content\mg_main_style.css" />
+    <Content Include="Areas\Mg\Content\pl.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -245,6 +250,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Areas\Mg\Views\Shared\_MgLayout.cshtml" />
+    <Content Include="Areas\Mg\Views\Partials\AboutPartial.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -309,7 +316,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Mg\Models\" />
-    <Folder Include="Areas\Mg\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

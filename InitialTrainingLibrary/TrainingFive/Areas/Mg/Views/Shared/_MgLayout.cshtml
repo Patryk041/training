@@ -1,0 +1,122 @@
+﻿@{
+    Layout = null;
+
+}
+<!--  <div class="col-lg-7 info-col">-->
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/Areas/Mg/Content/mg_main_style.css" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+
+    <!--content-->
+    <div id="content-container-div" class="container-fluid">
+        <!--content row-->
+        <div id="content-row-div" class="row">
+            <!--content col-->
+            <div id="content-col-div" class="col-lg-8 col-lg-offset-2">
+
+                <!--gora-->
+                <div id="navbar-top" class="container-fluid">
+                    <div id="navbar-top-logo-and-offers-row" class="row">
+                        <div id="logo-and-pair" class="col-lg-2">
+                            <div id="logo-row" class="row">
+                                <div id="logo-col" class="col-lg-12">
+
+                                </div>
+                            </div>
+                            <div id="pair-row" class="row">
+                                <div id="pair-col" class="col-lg-12">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="offer-and-lang-bar" class="col-lg-10">
+                            <div id="lang-row" class="row">
+                                <div id="date-col" class="col-lg-9">
+                                    <p style="padding: 10px 50px; font-weight: bold;">Dzisiaj jest: @ViewBag.CurrentDate</p>
+
+                                </div>
+                                <div id="lang-col" class="col-lg-3">
+                                    Wybierz język:
+                                    <span id="flags-span">
+                                        <img src="../../Areas/Mg/Content/pl.png" />
+                                        <img src="../../Areas/Mg/Content/de.png" />
+                                        <img src="../../Areas/Mg/Content/en.png" />
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div id="offer-row" class="row">
+                                <div id="flat-col" class="col-lg-2">
+
+                                </div>
+                                <div id="house-col" class="col-lg-2">
+
+                                </div>
+                                <div id="ground-col" class="col-lg-2">
+
+                                </div>
+                                <div id="commercial-col" class="col-lg-2">
+
+                                </div>
+                                <div id="developer-col" class="col-lg-2">
+
+                                </div>
+                                <div id="other-col" class="col-lg-2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="navbar-top-buttons-row" class="row">
+                        <div id="navbar-top-buttons" class="col-lg-12">
+                            <ul id="navbar-top-buttons-list">
+                                <li>Ipsum.</li>
+                                <li>Dolor.</li>
+                                <li>Sit.</li>
+                                <li>Amet.</li>
+                                <li>Consectetur.</li>
+                                <li>Adipiscing.</li>
+                                <li>Elit.</li>
+                                <li>Fusce.</li>
+                                <li>Vel.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--lewo-->
+                <div id="navbar-left-and-content" class="container-fluid">
+                    <div id="navbar-left-and-content-row" class="row">
+                        <div id="navbar-left"class="col-lg-2">
+                            Ut arcu enim, dictum quis ultrices id, sagittis eget nulla sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget elementum euismod, orci enim vestibulum orci, nec suscipit urna odio et tellus entum vitae duis placerat laoreet risus, sit amet eleifend 
+                        </div>
+                        <div id="content" class="col-lg-10">
+                            @RenderBody()
+                        </div>
+                    </div>
+                </div>
+                <!--srodek-->
+              
+
+            </div>
+
+            <div id="rest-of-columuns" class="col-lg-2"></div>
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>
