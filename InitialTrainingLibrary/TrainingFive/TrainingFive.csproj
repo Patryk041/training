@@ -161,6 +161,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Domi\DomiAreaRegistration.cs" />
     <Compile Include="Areas\Dysq\Controllers\MyController.cs" />
     <Compile Include="Areas\Dysq\DysqAreaRegistration.cs" />
     <Compile Include="Areas\Mg\Controllers\HomeController.cs" />
@@ -180,6 +181,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Domi\Content\DomiAzg_StyleSheet.css" />
     <Content Include="Areas\Dysq\Content\style\Dysq_style.css" />
     <Content Include="Areas\Mg\Content\de.png" />
     <Content Include="Areas\Mg\Content\en.png" />
@@ -261,6 +263,8 @@
     <Content Include="Areas\Dysq\Views\index.cshtml" />
     <Content Include="Areas\Mg\Views\Partials\FindOfferPartial.cshtml" />
     <Content Include="Areas\Dysq\Views\Shared\DysqAzg\_DysqLayout.cshtml" />
+    <Content Include="Areas\Domi\Views\Web.config" />
+    <Content Include="Areas\Domi\Views\Shared\DomiAzg\DomiAzgMain_LayoutPage.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -324,6 +328,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Domi\Controllers\" />
+    <Folder Include="Areas\Domi\Models\" />
     <Folder Include="Areas\Dysq\Content\image\" />
     <Folder Include="Areas\Dysq\Models\" />
   </ItemGroup>
