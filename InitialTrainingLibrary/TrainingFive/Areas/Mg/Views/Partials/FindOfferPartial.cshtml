@@ -1,0 +1,41 @@
+﻿@model TrainingFive.Areas.Mg.Models.MgFindOfferModel
+@{
+    Layout = null;
+}
+
+@Html.DropDownListFor(x => x.offerType, new[]
+                                    {
+                                        new SelectListItem() {Text="Wszystkie", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.OfferType.All.ToString()},
+                                        new SelectListItem() {Text="Sprzedaż", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.OfferType.Sale.ToString()},
+                                        new SelectListItem() {Text="Wynajem", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.OfferType.Rent.ToString()},
+                                    })
+
+@Html.DropDownListFor(x => x.propertyType, new[]
+                                    {
+                                        new SelectListItem() {Text="Wszystkie", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.PropertyType.All.ToString()},
+                                        new SelectListItem() {Text="Mieszkania", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.PropertyType.Flat.ToString()},
+                                        new SelectListItem() {Text="Domy", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.PropertyType.House.ToString()},
+                                        new SelectListItem() {Text="Działki", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.PropertyType.Ground.ToString()},
+                                        new SelectListItem() {Text="Lokale", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.PropertyType.Premis.ToString()},
+                                        new SelectListItem() {Text="Hale", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.PropertyType.Hall.ToString()},
+                                        new SelectListItem() {Text="Obiekty", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.PropertyType.Object.ToString()},
+                                    })
+
+@Html.DropDownListFor(x => x.city, new[]
+                                    {
+                                        new SelectListItem() {Text="Opole", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.City.Opole.ToString()},
+                                        new SelectListItem() {Text="Wrocław", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.City.Wroclaw.ToString()},
+                                        new SelectListItem() {Text="Warszawa", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.City.Warszawa.ToString()},
+
+                                    })
+
+@Html.DropDownListFor(x => x.numberOfRooms, new[]
+                                    {
+                                        new SelectListItem() {Text="Wszystkie", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.NumberOfRooms.All.ToString()},
+                                        new SelectListItem() {Text="1 pokojowe", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.NumberOfRooms.One.ToString()},
+                                        new SelectListItem() {Text="2 pokojowe", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.NumberOfRooms.Two.ToString()},
+                                        new SelectListItem() {Text="3 pokojweo", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.NumberOfRooms.Three.ToString()},
+                                        new SelectListItem() {Text="4 pokojweo", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.NumberOfRooms.Four.ToString()},
+                                        new SelectListItem() {Text="5 pokojowe i więcej", Value= TrainingFive.Areas.Mg.Models.MgOfferTypeEnum.NumberOfRooms.FiveOrMore.ToString()},
+
+                                    })
