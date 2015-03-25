@@ -73,66 +73,50 @@
 
 }
 #logo-col {
-    background: url('http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/logo.png');
+    /*background: url('http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/logo.png');
     height: 176px;
     width: 233px;
-    margin: 15px;
+    margin: 15px;*/
+
+ 
 }
 #pair-col {
-    background:url('http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/para.png');
+    /*background:url('http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/para.png');
     height: 146px;
     width: 272px;
-    padding: inherit;
+    padding: inherit;*/
     margin-top: -12px;
+
    
 }
 
+#offer-and-lang-bar {
+    padding: 0;
+    margin: 0;
 
+}
 #lang-row {
-    height: 56px;
+    max-height: 41px;
     background-image: url('lang-bar-background.png');
-    background-size: contain;
+    background-size:100% 150%;
     margin: 0;
   
 }
+
 #offer-row  {
   
     background-color: #fff;
     margin-top: 5px;
-    margin-left: 40px;
+    margin: 0;
+    padding: 0;
+
 }
 
 #lang-col {
-    padding: 10px 15px;
+    padding: 10px 0;
 }
 #flags-span >img {
     padding: 0 3px;
-}
-
-#flat-col,#house-col, #ground-col, #commercial-col, #developer-col{
-    height: 255px;
-    width: 150px;
-    background-size: cover;
-    margin-left: 5px;
-   
-    
-}
-
-#flat-col {
-        background-image: url('http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/mieszkania-background.png');
-}
-
-#house-col {
-        background-image: url('http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/domy-background.png');
-}
-#ground-col {
-        background-image: url('http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/dzialki-background.png');
-}
-#commercial-col {
-        background-image: url('http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/komercyjne-background.png');
-}
-#developer-col {
-        background-image: url('http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/deweloperskie-background.png');
 }
 
 #navbar-left-and-content {
@@ -148,8 +132,45 @@
     height: 100%;
     padding: 20px;
 }
-
+#date-col {
+    padding: 0;
+}
 #content {
     height: 100%;
-    padding: 20px;
+    padding: 0;
 }
+#content-render-col {
+    padding: 15px 25px;
+}
+
+#offer-type-dd-list,#property-type-dd-list,#city-dd-list,#number-of-rooms-dd-list {
+    width: 100%;
+    margin: 5px 5px;
+}
+
+#find-offer-img {
+    padding-bottom: 15px;
+}
+
+#content-beam-img {
+    width: 100%;
+}
+
+#navbar-top-sub-buttons-row {
+    background-color: #f9f9f9;
+    min-height: 25px;
+}
+               
+    #area-p {
+        margin: 10px 5px;
+    }
+    #min-area,#max-area {
+        position: absolute;
+        right: 10px;
+        margin: 5px;
+        width: 30%;
+    }                
+/*#flat-col,#house-col,#ground-col,#ground-col,#commercial-col,#developer-col {
+
+
+}*/

@@ -43,7 +43,7 @@
                         <div id="offer-and-lang-bar" class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                             <div id="lang-row" class="row">
                                 <div id="date-col" class="col-md-9">
-                                    <p style="padding: 10px 30px; font-weight: bold;">Dzisiaj jest: @ViewBag.CurrentDate</p>
+                                    <p style="padding: 10px 50px; font-weight: bold;">Dzisiaj jest: @ViewBag.CurrentDate</p>
 
                                 </div>
                                 <div id="lang-col" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
@@ -57,7 +57,7 @@
                             </div>
 
                             <div id="offer-row" class="row">
-                                @*<div id="flat-col" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                <div id="flat-col" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                                     <img src="http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/mieszkania-background.png" class="img-responsive" />
                                 </div>
                                 <div id="house-col" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
@@ -70,17 +70,13 @@
                                     <img src="http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/komercyjne-background.png" class="img-responsive" />
                                 </div>
                                 <div id="developer-col" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                                    <img src="http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/deweloperskie-background.png" class="img-responsive"/>
+                                    <img src="http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/deweloperskie-background.png" class="img-responsive" />
                                 </div>
-                                <div id="" class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>*@
-                                <div id="developer-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <img src="http://www.freshpalace.com/wp-content/uploads/2012/12/AR-House-La-Calera-Colombia-1.jpg" class="img-responsive" style="max-height: 255px; margin: auto;" />
-                                </div>
-
-                         </div>
+                                <div id="other-col" class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                            </div>
                         </div>
                     </div>
-                    <!--menu gorne-->
+
                     <div id="navbar-top-buttons-row" class="row">
                         <div id="navbar-top-buttons" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <ul id="navbar-top-buttons-list">
@@ -96,20 +92,12 @@
                             </ul>
                         </div>
                     </div>
-                    <!--sub menu-->
-
-                    <div id="navbar-top-sub-buttons-row" class="row">
-                        <div id="navbar-top-sub-buttons" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    
-                        </div>
-                    </div>
-
                 </div>
 
                 <!--lewo-->
                 <div id="navbar-left-and-content" class="container-fluid">
                     <div id="navbar-left-and-content-row" class="row">
-                        <div id="navbar-left" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <div id="navbar-left" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                             @*Ut arcu enim, dictum quis ultrices id, sagittis eget nulla sed nunc mi, congue ut ultricies ac,
             varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante,
             ut dictum risus lectus vel quam integer ultricies, nunc eget elementum euismod, orci enim vestibulum
@@ -123,19 +111,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="content" class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                            <div id="content-beam-row" class="row">
-                                <div id="content-beam-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <img src="http://www.azg.pl/img/right_beam_blue.png" id="content-beam-img" class="img-responsive"/>
-                                </div>
-                            </div>
-                            <div id="content-render-row" class="row">
-                                <div id="content-render-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    @RenderBody()
-                                </div>
-                            </div>
-
-                        
+                        <div id="content" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                            @RenderBody()
                         </div>
                     </div>
                 </div>
