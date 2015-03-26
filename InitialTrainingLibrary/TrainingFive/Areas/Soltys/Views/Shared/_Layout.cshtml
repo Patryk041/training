@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>AZGWARANCJA Opole Nieruchomości, Sprzedaż, Wynajem, Mieszkania, Domy, Lokale</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="~/Areas/Soltys/Content/bootstrap.css" type="text/css" rel="stylesheet"/>
+        <link href="~/Areas/Soltys/Content/site.css" type="text/css" rel="stylesheet" />
+        <script src="~/Areas/Soltys/Scripts/modernizr-2.6.2.js"></script>
+    </head>
+    <body>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        @Html.ActionLink("AZG", "Index", "Home", new { area = "Soltys" }, new { @class = "navbar-brand" })
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <div role="tabpanel">
+                            <ul class="nav nav-tabs" role="tablist" id="mainTabPanel">
+                                <li role="presentation" class="active"><a href="#oFirmie" role="tab" data-toggle="tab">O firmie</a></li>
+                                <li role="presentation"><a href="#informacje" role="tab" data-toggle="tab">Informacje</a></li>
+                                <li role="presentation"><a href="#uslugi" role="tab" data-toggle="tab">Usługi</a></li>
+                                <li role="presentation"><a href="#kalkulator" role="tab" data-toggle="tab">Kalkulator</a></li>
+                                <li role="presentation"><a href="#zglos" role="tab" data-toggle="tab">Zgłoś</a></li>
+                                <li role="presentation"><a href="#subskrypcja" role="tab" data-toggle="tab">Subskrypcja</a></li>
+                                <li role="presentation"><a href="#notatnik" role="tab" data-toggle="tab">Notatnik</a></li>
+                                <li role="presentation"><a href="#kontakt" role="tab" data-toggle="tab">Kontakt</a></li>
+                                <li role="presentation"><a href="#mapaStrony" role="tab" data-toggle="tab">Mapa Strony</a></li>
+                            </ul>
+                            
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="oFirmie">...</div>
+                                <div role="tabpanel" class="tab-pane" id="informacje">...</div>
+                                <div role="tabpanel" class="tab-pane" id="uslugi">...</div>
+                                <div role="tabpanel" class="tab-pane" id="kalkulator">...</div>
+                                <div role="tabpanel" class="tab-pane" id="zglos">...</div>
+                                <div role="tabpanel" class="tab-pane" id="subskrypcja">...</div>
+                                <div role="tabpanel" class="tab-pane" id="notatnik">...</div>
+                                <div role="tabpanel" class="tab-pane" id="kontakt">...</div>
+                                <div role="tabpanel" class="tab-pane" id="mapaStrony">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container body-content">
+                @RenderBody()
+                <hr />
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - AZG by Soltys</p>
+                </footer>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+
+            <script src="~/Areas/Soltys/Scripts/jquery-1.10.2.js"></script>
+            <script src="~/Areas/Soltys/Scripts/bootstrap.js"></script>
+        <script src="~/Areas/Soltys/Scripts/respond.js"></script>
+        <script src="~/Areas/Soltys/Scripts/CustomScripts/NavTabsBehavior.js"></script>
+            @RenderSection("scripts", required: false)
+</body>
+</html>

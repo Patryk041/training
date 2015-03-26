@@ -17,9 +17,9 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -161,10 +161,15 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Domi\DomiAreaRegistration.cs" />
     <Compile Include="Areas\Dysq\Controllers\MyController.cs" />
     <Compile Include="Areas\Dysq\DysqAreaRegistration.cs" />
     <Compile Include="Areas\Mg\Controllers\HomeController.cs" />
     <Compile Include="Areas\Mg\MgAreaRegistration.cs" />
+    <Compile Include="Areas\Mg\Models\MgFindOfferModel.cs" />
+    <Compile Include="Areas\Mg\Models\MgOfferTypeEnum.cs" />
+    <Compile Include="Areas\Soltys\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Soltys\SoltysAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\WarriorController.cs" />
@@ -178,6 +183,34 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Dysq\Content\image\de.png" />
+    <Content Include="Areas\Dysq\Content\image\eng.png" />
+    <Content Include="Areas\Dysq\Content\image\pl.png" />
+    <Content Include="Areas\Domi\Content\DomiAzg_StyleSheet.css" />
+    <Content Include="Areas\Dysq\Content\style\Dysq_style.css" />
+    <Content Include="Areas\Mg\Content\de.png" />
+    <Content Include="Areas\Mg\Content\en.png" />
+    <Content Include="Areas\Mg\Content\lang-bar-background.png" />
+    <Content Include="Areas\Mg\Content\mg_main_style.css" />
+    <Content Include="Areas\Mg\Content\pl.png" />
+    <Content Include="Areas\Soltys\Content\bootstrap.css" />
+    <Content Include="Areas\Soltys\Content\bootstrap.min.css" />
+    <Content Include="Areas\Soltys\Content\Site.css" />
+    <Content Include="Areas\Soltys\Scripts\bootstrap.js" />
+    <Content Include="Areas\Soltys\Scripts\bootstrap.min.js" />
+    <None Include="Areas\Soltys\Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Areas\Soltys\Scripts\CustomScripts\NavTabsBehavior.js" />
+    <Content Include="Areas\Soltys\Scripts\jquery-1.10.2.js" />
+    <Content Include="Areas\Soltys\Scripts\jquery-1.10.2.min.js" />
+    <None Include="Areas\Soltys\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Areas\Soltys\Scripts\jquery.validate.js" />
+    <Content Include="Areas\Soltys\Scripts\jquery.validate.min.js" />
+    <Content Include="Areas\Soltys\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Areas\Soltys\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Areas\Soltys\Scripts\modernizr-2.6.2.js" />
+    <Content Include="Areas\Soltys\Scripts\respond.js" />
+    <Content Include="Areas\Soltys\Scripts\respond.min.js" />
+    <None Include="Areas\Soltys\Scripts\_references.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -247,8 +280,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Areas\Mg\Views\Shared\_MgLayout.cshtml" />
+    <Content Include="Areas\Mg\Views\Partials\AboutPartial.cshtml" />
     <Content Include="Areas\Dysq\Views\Web.config" />
     <Content Include="Areas\Dysq\Views\index.cshtml" />
+    <Content Include="Areas\Mg\Views\Partials\FindOfferPartial.cshtml" />
+    <Content Include="Areas\Dysq\Views\Shared\DysqAzg\_DysqLayout.cshtml" />
+    <Content Include="Areas\Domi\Views\Web.config" />
+    <Content Include="Areas\Domi\Views\Shared\DomiAzg\DomiAzgMain_LayoutPage.cshtml" />
+    <Content Include="Areas\Soltys\Views\Web.config" />
+    <Content Include="Areas\Soltys\Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Areas\Soltys\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Soltys\Views\Shared\_Layout.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -312,10 +355,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Domi\Controllers\" />
+    <Folder Include="Areas\Domi\Models\" />
+    <Folder Include="Areas\Dysq\Content\image\" />
     <Folder Include="Areas\Dysq\Models\" />
-    <Folder Include="Areas\Dysq\Views\Shared\" />
-    <Folder Include="Areas\Mg\Models\" />
-    <Folder Include="Areas\Mg\Views\Shared\" />
+    <Folder Include="Areas\Soltys\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

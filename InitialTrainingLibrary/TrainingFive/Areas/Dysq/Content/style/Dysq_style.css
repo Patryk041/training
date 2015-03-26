@@ -1,0 +1,147 @@
+﻿body {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+#row-top {
+    
+    height: 40%;
+    background: #f9f9f9;
+}
+#data-header {
+    padding: 12px 0px 0px;
+    padding-top: 12px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    color: #102D57;
+    font-size: 12px;
+    float: left;
+    font-family: Tahoma;
+}
+
+
+
+#logo {
+    /*width: 233px;
+    height: 176px;*/
+    width: 803px;
+    height: 556px;
+    background: url(http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/logo.png);
+    position: absolute;
+    cursor: pointer;
+}
+
+#data-jezyk {
+    height: 41px;
+    width: 800px;
+    padding: 12px 0px 0px;
+    color: #102D57;
+    font-size: 12px;
+    line-height: 18px;
+    float: left;
+    font-family: Tahoma;
+}
+#flagi-jezyk {
+    padding-left: 5px;
+}
+
+#jezyk {
+    float: right;
+}
+
+#row-top-test {
+    height:80%;
+   
+    background: blue;
+}
+#nested-col-mieszkania {
+    float: left;
+    width: 156px;
+    height: 246px;
+    margin: 0px 0px 0px 3px;
+    background: url(http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/mieszkania-background.png);
+    background-attachment: scroll;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+
+#nested-col-domy{
+    float: left;
+    width: 156px;
+    height: 246px;
+    margin: 0px 0px 0px 3px;
+    background-image: url(http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/domy-background.png);
+    background-attachment: scroll;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+
+#nested-col-dzialki {
+    float: left;
+    width: 156px;
+    height: 246px;
+    margin: 0px 0px 0px 3px;
+    background-image: url(http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/dzialki-background.png);
+    background-attachment: scroll;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+
+#nested-col-komercyjne{
+    float: left;
+    width: 156px;
+    height: 246px;
+    margin: 0px 0px 0px 3px;
+    background-image: url(http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/komercyjne-background.png);
+    background-attachment: scroll;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+
+#nested-col-deweloperskie{
+    float: left;
+    width: 156px;
+    height: 246px;
+    margin: 0px 0px 0px 3px;
+    background-image: url(http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/deweloperskie-background.png);
+    background-attachment: scroll;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+
+
+#menu-oferta {
+    width: 150px;
+    padding: 145px 0px 0px 0px;
+    margin-left: -15px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}

@@ -291,7 +291,9 @@
     <Content Include="Developers\Robson\RobsonsUniversalFileParser\Data\transfer_2015-03-17_61666662266_Robson.txt" />
     <Content Include="Developers\Robson\RobsonsUniversalFileParser\Data\transfer_2015-03-17_61666662266_Robson.xml" />
     <Content Include="xmldata\transfer_2015-03-07_43657284832_warrior.xml" />
-    <Content Include="xmldata\transfer_2015-03-10_09876543210_dysq.xml" />
+    <Content Include="xmldata\transfer_2015-03-10_09876543210_dysq.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="xmldata\transfer_2015-03-13_12345678901_rs.xml" />
   </ItemGroup>
   <ItemGroup>

@@ -13,6 +13,7 @@ namespace TrainingFive.Areas.Dysq.Controllers
 
         public ActionResult Index()
         {
+            ViewBag.CurrentTime = DateTime.Now;
             return View("~/Areas/Dysq/Views/Index.cshtml");
         }
 
