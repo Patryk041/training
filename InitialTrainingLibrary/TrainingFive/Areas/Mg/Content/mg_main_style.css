@@ -96,10 +96,11 @@
 
 }
 #lang-row {
-    max-height: 41px;
+    height: 41px;
     background-image: url('lang-bar-background.png');
     background-size:100% 150%;
     margin: 0;
+    padding: 10px;
   
 }
 
@@ -109,14 +110,16 @@
     margin-top: 5px;
     margin: 0;
     padding: 0;
+    margin-top: 50px;
 
 }
 
 #lang-col {
     padding: 10px 0;
 }
-#flags-span >img {
+#flags-span {
     padding: 0 3px;
+    float: right;
 }
 
 #navbar-left-and-content {
