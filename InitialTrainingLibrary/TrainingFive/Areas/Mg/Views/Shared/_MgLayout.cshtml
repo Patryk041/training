@@ -1,7 +1,7 @@
 ﻿
 @{
     Layout = null;
-@model TrainingFive.Areas.Mg.Models.MgFindOfferModel
+
 }
 <!--  <div class="col-md-7 info-col">-->
 <!DOCTYPE html>
@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="~/Areas/Mg/Content/mg_main_style.css" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
 
-
 </head>
 <body>
 
@@ -23,130 +22,37 @@
         <div id="content-row-div" class="row">
             <!--content col-->
             <div id="content-col-div" class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-
                 <!--gora-->
-                <div id="navbar-top" class="container-fluid">
-                    <div id="navbar-top-logo-and-offers-row" class="row">
-                        <div id="logo-and-pair" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div id="logo-row" class="row">
-                                <div id="logo-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <img src="http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/logo.png" class="img-responsive" />
-                                </div>
-                            </div>
-                            <div id="pair-row" class="row">
-                                <div id="pair-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <img src="http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/para.png" class="img-responsive" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="offer-and-lang-bar" class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                            <div id="lang-row" class="row">
-                                <div id="date-col" class="col-md-9">
-                                    <p style="padding: 10px 30px; font-weight: bold;">Dzisiaj jest: @ViewBag.CurrentDate</p>
-
-                                </div>
-                                <div id="lang-col" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                    Wybierz język:
-                                    <span id="flags-span">
-                                        <img src="../../Areas/Mg/Content/pl.png" />
-                                        <img src="../../Areas/Mg/Content/de.png" />
-                                        <img src="../../Areas/Mg/Content/en.png" />
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div id="offer-row" class="row">
-                                @*<div id="flat-col" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                                    <img src="http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/mieszkania-background.png" class="img-responsive" />
-                                </div>
-                                <div id="house-col" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                                    <img src="http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/domy-background.png" class="img-responsive" />
-                                </div>
-                                <div id="ground-col" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                                    <img src="http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/dzialki-background.png" class="img-responsive" />
-                                </div>
-                                <div id="commercial-col" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                                    <img src="http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/komercyjne-background.png" class="img-responsive" />
-                                </div>
-                                <div id="developer-col" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                                    <img src="http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/deweloperskie-background.png" class="img-responsive"/>
-                                </div>
-                                <div id="" class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>*@
-                                <div id="developer-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <img src="http://www.freshpalace.com/wp-content/uploads/2012/12/AR-House-La-Calera-Colombia-1.jpg" class="img-responsive" style="max-height: 255px; margin: auto;" />
-                                </div>
-
-                         </div>
-                        </div>
-                    </div>
-                    <!--menu gorne-->
-                    <div id="navbar-top-buttons-row" class="row">
-                        <div id="navbar-top-buttons" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <ul id="navbar-top-buttons-list">
-                                <li>Ipsum.</li>
-                                <li>Dolor.</li>
-                                <li>Sit.</li>
-                                <li>Amet.</li>
-                                <li>Consectetur.</li>
-                                <li>Adipiscing.</li>
-                                <li>Elit.</li>
-                                <li>Fusce.</li>
-                                <li>Vel.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--sub menu-->
-
-                    <div id="navbar-top-sub-buttons-row" class="row">
-                        <div id="navbar-top-sub-buttons" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    
-                        </div>
-                    </div>
-
-                </div>
-
-                <!--lewo-->
+                @{
+                    Html.RenderPartial("~/Areas/Mg/Views/Partials/LayoutTopPartial.cshtml");
+                }
+                <!--lewo i srodek -->
                 <div id="navbar-left-and-content" class="container-fluid">
                     <div id="navbar-left-and-content-row" class="row">
-                        <div id="navbar-left" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            @*Ut arcu enim, dictum quis ultrices id, sagittis eget nulla sed nunc mi, congue ut ultricies ac,
-            varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante,
-            ut dictum risus lectus vel quam integer ultricies, nunc eget elementum euismod, orci enim vestibulum
-            orci, nec suscipit urna odio et tellus entum vitae duis placerat laoreet risus, sit amet eleifend*@
-
-                            <div id="find-offer-row" class="row">
-                                <div id="find-offer-col" class="col-md-12">
-                                    @{
-                                        Html.RenderPartial("~/Areas/Mg/Views/Partials/FindOfferPartial.cshtml");
-                                    }
-                                </div>
-                            </div>
-                        </div>
+                    <!--lewo menu-->
+                        @{
+                            Html.RenderPartial("~/Areas/Mg/Views/Partials/LayoutLeftMenuPartial.cshtml");
+                        }
                         <div id="content" class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                             <div id="content-beam-row" class="row">
                                 <div id="content-beam-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                     <img src="http://www.azg.pl/img/right_beam_blue.png" id="content-beam-img" class="img-responsive"/>
                                 </div>
                             </div>
+
+                            <!--srodek-->
                             <div id="content-render-row" class="row">
                                 <div id="content-render-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                     @RenderBody()
                                 </div>
                             </div>
-
-                        
                         </div>
                     </div>
                 </div>
-                <!--srodek-->
-
 
             </div>
 
             <div id="rest-of-columuns" class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
-
-
         </div>
 
     </div>

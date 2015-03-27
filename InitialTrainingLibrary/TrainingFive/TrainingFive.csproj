@@ -201,6 +201,8 @@
     <Content Include="Areas\Soltys\Scripts\bootstrap.js" />
     <Content Include="Areas\Soltys\Scripts\bootstrap.min.js" />
     <Content Include="Areas\Dysq\Views\Partial\FindOfferPartial.cshtml" />
+    <Content Include="Areas\Mg\Views\Partials\LayoutTopPartial.cshtml" />
+    <Content Include="Areas\Mg\Views\Partials\LayoutLeftMenuPartial.cshtml" />
     <None Include="Areas\Soltys\Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Areas\Soltys\Scripts\CustomScripts\NavTabsBehavior.js" />
     <Content Include="Areas\Soltys\Scripts\jquery-1.10.2.js" />
