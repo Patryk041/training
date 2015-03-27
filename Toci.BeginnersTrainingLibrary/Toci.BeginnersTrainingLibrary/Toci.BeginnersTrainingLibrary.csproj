@@ -63,9 +63,18 @@
     <Compile Include="TrainingOne\Interfaces\IHuman.cs" />
     <Compile Include="TrainingOne\Interfaces\ISportSkill.cs" />
     <Compile Include="TrainingOne\Interfaces\ISportsMan.cs" />
+    <Compile Include="TrainingOne\Kielich\Day.cs" />
+    <Compile Include="TrainingOne\Kielich\KielichDateValidator.cs" />
+    <Compile Include="TrainingOne\Kielich\Month.cs" />
+    <Compile Include="TrainingOne\Kielich\Validator.cs" />
+    <Compile Include="TrainingOne\Kielich\Year.cs" />
     <Compile Include="TrainingOne\ListsOfItems\StringList.cs" />
     <Compile Include="TrainingOne\ListsOfItems\TestGeneric.cs" />
     <Compile Include="TrainingOne\President.cs" />
+    <Compile Include="TrainingOne\Recha\DateValidator.cs" />
+    <Compile Include="TrainingOne\Recha\Day.cs" />
+    <Compile Include="TrainingOne\Recha\Month.cs" />
+    <Compile Include="TrainingOne\Recha\Year.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\CorLogic.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\IChainOfResponsibilityFriendly.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\IRandomEntity.cs" />
@@ -86,6 +95,7 @@
     <Compile Include="TrainingOne\Mg\Dysqu.cs" />
     <Compile Include="TrainingOne\Mg\klasa2.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
