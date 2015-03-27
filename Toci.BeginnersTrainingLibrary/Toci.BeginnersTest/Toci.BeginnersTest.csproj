@@ -56,6 +56,7 @@
     <Compile Include="TrainingOne\WarriorHomeworkTest.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Kielich.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.BeginnersTrainingLibrary\Toci.BeginnersTrainingLibrary.csproj">
