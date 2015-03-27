@@ -1,1 +1,0 @@
-﻿fromIBAN; fromName; fromAdress; toIBAN; toBIC; toName; toAddress; transferDateTime; 
