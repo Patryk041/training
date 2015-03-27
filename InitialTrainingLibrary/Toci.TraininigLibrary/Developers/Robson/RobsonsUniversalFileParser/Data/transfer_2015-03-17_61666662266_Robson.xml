@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <transfer>
+    <name>Robert</name>
+    <surname>Winkler</surname>
+    <date>2015-03-20</date>
+    <account>12345678909</account>
+    <title>Twarzowe</title>
+    <money>9999999</money>
+  </transfer>
+  <transfer>
+    <name>Grzegorz</name>
+    <surname>Brzeczyszczykiewicz</surname>
+    <date>2015-03-20</date>
+    <account>66666666666</account>
+    <title>Bo tak</title>
+    <money>07001234</money>
+  </transfer>
+</root>
+  

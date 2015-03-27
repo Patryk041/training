@@ -180,6 +180,16 @@
     <Compile Include="Developers\Robson\RobsonFileParser\RobsonFileHeader.cs" />
     <Compile Include="Developers\Robson\RobsonFileParser\RobsonsFileParser.cs" />
     <Compile Include="Developers\Robson\RobsonFileParser\RobsonsFileReader.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\Entities\FileEntity.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\Entities\TxtFileEntity.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\Entities\XmlFileEntity.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\Factories\ParserFactory.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\FileParsers\FileParser.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\FileParsers\TxtFileParser.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\FileParsers\XmlFileParser.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\Interfaces\IParsable.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\Interfaces\IReadable.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\RobsonsUniversalFileParser.cs" />
     <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\Book.cs" />
     <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\DiscountItem.cs" />
     <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\Item.cs" />
@@ -278,6 +288,8 @@
     <Content Include="Developers\Dysq\DataForTest\transfer_2015_03_02_987654321_dysq.txt" />
     <Content Include="Developers\Mg\Polymorphism\Parsers\TxtData\transfer_2015_03_12_4343_mg.txt" />
     <Content Include="Developers\Mg\Polymorphism\Parsers\XmlData\transfer_2015_03_12_4343_mg.xml" />
+    <Content Include="Developers\Robson\RobsonsUniversalFileParser\Data\transfer_2015-03-17_61666662266_Robson.txt" />
+    <Content Include="Developers\Robson\RobsonsUniversalFileParser\Data\transfer_2015-03-17_61666662266_Robson.xml" />
     <Content Include="xmldata\transfer_2015-03-07_43657284832_warrior.xml" />
     <Content Include="xmldata\transfer_2015-03-10_09876543210_dysq.xml">
       <SubType>Designer</SubType>

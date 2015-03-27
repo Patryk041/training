@@ -183,6 +183,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Dysq\Content\image\de.png" />
+    <Content Include="Areas\Dysq\Content\image\eng.png" />
+    <Content Include="Areas\Dysq\Content\image\pl.png" />
     <Content Include="Areas\Domi\Content\DomiAzg_StyleSheet.css" />
     <Content Include="Areas\Dysq\Content\style\Dysq_style.css" />
     <Content Include="Areas\Mg\Content\de.png" />

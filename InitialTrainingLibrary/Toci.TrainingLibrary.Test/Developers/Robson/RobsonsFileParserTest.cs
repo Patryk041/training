@@ -2,6 +2,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.TraininigLibrary.Developers.Robson.RobsonFileParser;
 using Toci.TraininigLibrary.Common.FileParser;
+using Toci.TraininigLibrary.Developers.Robson.RobsonsUniversalFileParser;
+
 namespace Toci.TrainingLibrary.Test.Developers.Robson
 {
     [TestClass]
@@ -45,6 +47,17 @@ namespace Toci.TrainingLibrary.Test.Developers.Robson
                 Assert.IsTrue(parsedData.Title == "Twarzowe");
                 Assert.IsTrue(parsedData.Money == 9999999);
             }
+        }
+
+        [TestMethod]
+        public void TestUniversalFileParser()
+        {
+            RobsonsUniversalFileParser parser = new RobsonsUniversalFileParser();
+            string txtFilePath = @"..\..\..\Toci.TraininigLibrary\Developers\Robson\RobsonsUniversalFileParser\Data\transfer_2015-03-17_61666662266_Robson.txt";
+            string xmlFilePath = @"..\..\..\Toci.TraininigLibrary\Developers\Robson\RobsonsUniversalFileParser\Data\transfer_2015-03-17_61666662266_Robson.xml";
+
+            parser.ParseFile(txtFilePath);
+            parser.ParseFile(xmlFilePath);
         }
 
     }
