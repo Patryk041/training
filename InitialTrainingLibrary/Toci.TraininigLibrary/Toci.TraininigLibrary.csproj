@@ -151,6 +151,7 @@
     <Compile Include="Developers\Sito\Polimorphism\SitoTranferParsersFactory.cs" />
     <Compile Include="Developers\Sito\Polimorphism\SitoXmlTransferParser.cs" />
     <Compile Include="Developers\Sito\Polimorphism\XmlParser.cs" />
+    <Compile Include="Developers\Vernathic\FileParser\VParser.cs" />
     <Compile Include="Developers\Vernathic\Inheritance\AnagramAdditional.cs" />
     <Compile Include="Developers\Vernathic\Inheritance\VInheritance.cs" />
     <Compile Include="Developers\Sito\Polimorphism\Interfaces\ITransferParser.cs" />
@@ -202,6 +203,7 @@
     <Content Include="data\transfer_2015-03-05_926916819_Koziu.txt" />
     <Content Include="data\transfer_2015_03_02_987654321_dysq.txt" />
     <Content Include="data\transfer_2015_03_06_232325_mg.txt" />
+    <Content Include="Developers\Vernathic\FileParser\transfers.txt" />
     <Content Include="xmldata\transfer_2015-03-07_43657284832_warrior.xml" />
     <Content Include="xmldata\transfer_2015-03-10_09876543210_dysq.xml" />
   </ItemGroup>
