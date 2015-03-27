@@ -66,6 +66,10 @@
     <Compile Include="TrainingOne\ListsOfItems\StringList.cs" />
     <Compile Include="TrainingOne\ListsOfItems\TestGeneric.cs" />
     <Compile Include="TrainingOne\President.cs" />
+    <Compile Include="TrainingOne\Recha\DateValidator.cs" />
+    <Compile Include="TrainingOne\Recha\Day.cs" />
+    <Compile Include="TrainingOne\Recha\Month.cs" />
+    <Compile Include="TrainingOne\Recha\Year.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\CorLogic.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\IChainOfResponsibilityFriendly.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\IRandomEntity.cs" />
