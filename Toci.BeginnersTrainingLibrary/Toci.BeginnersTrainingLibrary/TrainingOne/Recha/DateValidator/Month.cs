@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Toci.BeginnersTrainingLibrary.TrainingOne.Recha
+namespace Toci.BeginnersTrainingLibrary.TrainingOne.Recha.DateValidator
 {
     public class Month
     {

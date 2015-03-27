@@ -1,9 +1,9 @@
 ﻿using System;
 using Toci.BeginnersTrainingLibrary.TrainingOne.Excercise;
 
-namespace Toci.BeginnersTrainingLibrary.TrainingOne.Recha
+namespace Toci.BeginnersTrainingLibrary.TrainingOne.Recha.DateValidator
 {
-    public class DateValidator : IDateValidator
+    public class DateValidate : IDateValidator
     {
         public bool CheckDate(int y, int m, int d)
         {
