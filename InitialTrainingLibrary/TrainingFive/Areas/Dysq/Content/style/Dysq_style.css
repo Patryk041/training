@@ -7,6 +7,21 @@
     font-family: Tahoma, Geneva, sans-serif;
 }
 
+#content-container {
+    height: inherit;
+    width: inherit;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+}
+#content-container-left {
+    height: inherit;
+    width: inherit;
+    margin-left: 9.4%;
+    padding: 0;
+    background-color: #F9F9F9;
+}
+
 #row-top {
     
     height: 40%;
@@ -29,11 +44,12 @@
 #logo {
     /*width: 233px;
     height: 176px;*/
-    width: 803px;
+    /*width: 803px;
     height: 556px;
     background: url(http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/logo.png);
     position: absolute;
-    cursor: pointer;
+    cursor: pointer;*/
+    z-index: 2;
 }
 
 #data-jezyk {
@@ -54,11 +70,7 @@
     float: right;
 }
 
-#row-top-test {
-    height:80%;
-   
-    background: blue;
-}
+
 #nested-col-mieszkania {
     float: left;
     width: 156px;
@@ -144,4 +156,44 @@
     text-transform: uppercase;
     font-weight: bold;
 
+}
+
+#navbar-row {
+    background: url(http://p2.galapp.net/OP/0006/Web/aebf8e2b/Grafika/main-menu-background.png);
+    height: 49px;
+    width: 70%;
+    margin: 4px 0px 0px 0px;
+    margin-left: 130px;
+}
+#navbar-list-col{
+    padding: 15px 0px;
+}
+
+#navbar-buttons-list >li {
+    color: white;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#navbar-buttons-list >li:hover {
+    color: #0c2548;
+    background: white;
+}
+
+#left-menu {
+    height: 100%;
+    padding: 20px;
+    background: #FFFFFF;
+    
+}
+
+#offer-type-dd-list,#property-type-dd-list,#city-dd-list {
+    width: 100%;
+    margin: 5px 5px;
 }

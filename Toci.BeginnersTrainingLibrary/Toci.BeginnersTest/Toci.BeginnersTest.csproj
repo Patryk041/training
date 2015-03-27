@@ -51,7 +51,9 @@
   </Choose>
   <ItemGroup>
     <Compile Include="TrainingOne\CorRefTypesTest.cs" />
+    <Compile Include="TrainingOne\denio\TestDate.cs" />
     <Compile Include="TrainingOne\EnumerableTestWarrior.cs" />
+    <Compile Include="TrainingOne\Recha\UnitTest1.cs" />
     <Compile Include="TrainingOne\StringUtilsTest.cs" />
     <Compile Include="TrainingOne\WarriorHomeworkTest.cs" />
     <Compile Include="UnitTest1.cs" />

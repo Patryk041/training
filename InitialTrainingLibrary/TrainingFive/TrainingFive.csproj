@@ -164,6 +164,8 @@
     <Compile Include="Areas\Domi\DomiAreaRegistration.cs" />
     <Compile Include="Areas\Dysq\Controllers\MyController.cs" />
     <Compile Include="Areas\Dysq\DysqAreaRegistration.cs" />
+    <Compile Include="Areas\Dysq\Models\DysqFindOfferModel.cs" />
+    <Compile Include="Areas\Dysq\Models\DysqOfferTypeEnum.cs" />
     <Compile Include="Areas\Mg\Controllers\HomeController.cs" />
     <Compile Include="Areas\Mg\MgAreaRegistration.cs" />
     <Compile Include="Areas\Mg\Models\MgFindOfferModel.cs" />
@@ -198,6 +200,9 @@
     <Content Include="Areas\Soltys\Content\Site.css" />
     <Content Include="Areas\Soltys\Scripts\bootstrap.js" />
     <Content Include="Areas\Soltys\Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Dysq\Views\Partial\FindOfferPartial.cshtml" />
+    <Content Include="Areas\Mg\Views\Partials\LayoutTopPartial.cshtml" />
+    <Content Include="Areas\Mg\Views\Partials\LayoutLeftMenuPartial.cshtml" />
     <None Include="Areas\Soltys\Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Areas\Soltys\Scripts\CustomScripts\NavTabsBehavior.js" />
     <Content Include="Areas\Soltys\Scripts\jquery-1.10.2.js" />
@@ -357,8 +362,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Domi\Controllers\" />
     <Folder Include="Areas\Domi\Models\" />
-    <Folder Include="Areas\Dysq\Content\image\" />
-    <Folder Include="Areas\Dysq\Models\" />
     <Folder Include="Areas\Soltys\Models\" />
   </ItemGroup>
   <ItemGroup>
