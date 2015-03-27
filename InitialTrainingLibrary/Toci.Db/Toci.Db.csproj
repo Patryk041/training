@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,10 +46,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clients\MsSqlClient.cs" />
     <Compile Include="Clients\PostgreSqlClient.cs" />
     <Compile Include="Clients\SqlClientBase.cs" />
+    <Compile Include="ClusterAccess\DbHandle.cs" />
+    <Compile Include="ClusterAccess\DbHandleFactory.cs" />
+    <Compile Include="ClusterAccess\SqlClientKind.cs" />
+    <Compile Include="DbVirtualization\DbField.cs" />
+    <Compile Include="DbVirtualization\Model.cs" />
+    <Compile Include="DbVirtualization\MsSqlQuery\MsSqlDelete.cs" />
+    <Compile Include="DbVirtualization\MsSqlQuery\MsSqlInsert.cs" />
+    <Compile Include="DbVirtualization\MsSqlQuery\MsSqlSelect.cs" />
+    <Compile Include="DbVirtualization\MsSqlQuery\MsSqlUpdate.cs" />
+    <Compile Include="DbVirtualization\PostgreSqlQuery\PostgreSqlDelete.cs" />
+    <Compile Include="DbVirtualization\PostgreSqlQuery\PostgreSqlInsert.cs" />
+    <Compile Include="DbVirtualization\PostgreSqlQuery\PostgreSqlSelect.cs" />
+    <Compile Include="DbVirtualization\PostgreSqlQuery\PostgreSqlUpdate.cs" />
+    <Compile Include="DbVirtualization\SelectClause.cs" />
+    <Compile Include="DbVirtualization\SqlQuery.cs" />
     <Compile Include="Interfaces\IDbClient.cs" />
     <Compile Include="Interfaces\IDbCluster.cs" />
+    <Compile Include="Interfaces\IDbField.cs" />
+    <Compile Include="Interfaces\IDbHandle.cs" />
+    <Compile Include="Interfaces\IDbSharding.cs" />
+    <Compile Include="Interfaces\IModel.cs" />
+    <Compile Include="Interfaces\IQuery.cs" />
+    <Compile Include="Interfaces\ITransaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

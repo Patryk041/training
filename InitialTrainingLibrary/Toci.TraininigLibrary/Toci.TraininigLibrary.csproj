@@ -30,8 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mono.Security">
+      <HintPath>..\Libraries\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\Libraries\Npgsql.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +49,9 @@
     <Compile Include="Common\Base\Inheritance\StringDictionary.cs" />
     <Compile Include="Common\Base\InternetStore\BinBase.cs" />
     <Compile Include="Common\Base\InternetStore\BinBaseCollection.cs" />
+    <Compile Include="Common\Eacrm\DepartureEntity.cs" />
+    <Compile Include="Common\Eacrm\DepartureList.cs" />
+    <Compile Include="Common\Eacrm\ValidationException.cs" />
     <Compile Include="Common\FileParser\FileDetailParserBase.cs" />
     <Compile Include="Common\FileParser\FileEntityBase.cs" />
     <Compile Include="Common\FileParser\FileFooterParserBase.cs" />
@@ -56,19 +66,48 @@
     <Compile Include="Common\Interfaces\InternetStore\IDiscount.cs" />
     <Compile Include="Common\Interfaces\InternetStore\IPurchase.cs" />
     <Compile Include="Common\RsStaticClasses\RsDictionaryHelpers.cs" />
+    <Compile Include="Common\Utils\WarriorStringUtilities.cs" />
     <Compile Include="Developers\Chmura\ChmuraClass.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraDepartureEntity.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraDepartureHelpers.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraDepartureList.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraDepartureValidation.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraOverlapsException.cs" />
+    <Compile Include="Developers\Chmura\ChmuraDeparture\ChmuraValidationException.cs" />
+    <Compile Include="Developers\Chmura\Common\ChmuraExceptionMessages.cs" />
     <Compile Include="Developers\Chmura\ChmuraInheritanceTask\ChmuraStringDictionary.cs" />
-    <Compile Include="Developers\Chmura\ChmuraInheritanceTask\ChmuraTrainingThreeExtensions.cs" />
+    <Compile Include="Developers\Chmura\Common\ChmuraLanguageEngine.cs" />
+    <Compile Include="Developers\Chmura\Common\ChmuraTrainingThreeExtensions.cs" />
+    <Compile Include="Developers\Chmura\DateTimeValidator\DateValidator.cs" />
+    <Compile Include="Developers\Chmura\DateTimeValidator\Day.cs" />
+    <Compile Include="Developers\Chmura\DateTimeValidator\IDateValidator.cs" />
+    <Compile Include="Developers\Chmura\DateTimeValidator\Month.cs" />
+    <Compile Include="Developers\Chmura\DateTimeValidator\Year.cs" />
     <Compile Include="Developers\Dysq\Bin\DysqBin.cs" />
     <Compile Include="Developers\Dysq\Bin\DysqPurchase.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\BootsKind.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\Boots.cs" />
+    <Compile Include="Developers\Dysq\Database\DysqSqlClientBase.cs" />
+    <Compile Include="Developers\Dysq\Database\PostgreSqlClientDysq.cs" />
+    <Compile Include="Developers\Dysq\Database\TransferModelDysq.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\DysqDepartureEntity.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\DysqDeparturesList.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\DysqTryException.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\DysqValidationException.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\ErrorsMessages\ErrorsMessagesBase.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\ErrorsMessages\IdError.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\ErrorsMessages\DateError.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\ErrorsMessages\StatusError.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\Helpers\DateHelper.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\Helpers\StatusHelper.cs" />
+    <Compile Include="Developers\Dysq\Exceptions\Helpers\NumberOfWeeks.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileDetailParser.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Base\DysqCommonDictionaryBase.cs" />
     <Compile Include="Developers\Dysq\Inheritance\DysqCommonDictionary.cs" />
     <Compile Include="Developers\Dysq\Inheritance\ExtensionsByDysq.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Interfaces\IDysqCommonDictionaryBase.cs" />
     <Compile Include="Developers\Dysq\Interfaces\IDysqTrasfersParser.cs" />
+    <Compile Include="Developers\Dysq\Polymorphism\DysqTransferParserBase.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\DysqTxtFileParser.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqFileExtension.cs" />
     <Compile Include="Developers\Dysq\Polymorphism\Factory\DysqTransferParsersFactory.cs" />
@@ -91,6 +130,14 @@
     <Compile Include="Developers\Dysq\FileParser\DysqFileFooterParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileHeaderParser.cs" />
     <Compile Include="Developers\Dysq\FileParser\DysqFileParser.cs" />
+    <Compile Include="Developers\Koziu\Departure\DepartureExceptions\DataException.cs" />
+    <Compile Include="Developers\Koziu\Departure\Helpers\CheckDateHelper.cs" />
+    <Compile Include="Developers\Koziu\Departure\Helpers\FactoryHelper.cs" />
+    <Compile Include="Developers\Koziu\Departure\Helpers\NumberOfWeeksHelper.cs" />
+    <Compile Include="Developers\Koziu\Departure\Helpers\CheckStatusHelper.cs" />
+    <Compile Include="Developers\Koziu\Departure\KoziuDepartureEntity.cs" />
+    <Compile Include="Developers\Koziu\Departure\KoziuDepartureList.cs" />
+    <Compile Include="Developers\Koziu\Departure\KoziuValidationException.cs" />
     <Compile Include="Developers\Koziu\FileParser\KoziuFileDetailParser.cs" />
     <Compile Include="Developers\Koziu\FileParser\KoziuFileEntity.cs" />
     <Compile Include="Developers\Koziu\FileParser\KoziuFileFooterParserBase.cs" />
@@ -101,13 +148,48 @@
     <Compile Include="Developers\Koziu\InternetStore\KoziuBin.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuBinCollection.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />
+    <Compile Include="Developers\Koziu\Departure\KoziuDeparture.cs" />
     <Compile Include="Developers\Koziu\StringDictionary\KoziuStringDictionary.cs" />
     <Compile Include="Developers\Koziu\StringDictionary\ExtensionsString.cs" />
     <Compile Include="Developers\Mg\Basket\MgBasket.cs" />
     <Compile Include="Developers\Mg\Basket\Products\MgSamsungGalaxy.cs" />
+    <Compile Include="Developers\Mg\DB\Base\MgClientsBase.cs" />
+    <Compile Include="Developers\Mg\DB\Clients\MgPostgreClient.cs" />
+    <Compile Include="Developers\Mg\DB\Interface\IMgDbClient.cs" />
+    <Compile Include="Developers\Mg\Departures\Helpers\MgExceptionMessages.cs" />
+    <Compile Include="Developers\Mg\Departures\Helpers\MgValidationInvoke.cs" />
+    <Compile Include="Developers\Mg\Departures\MgDepartureEntity.cs" />
+    <Compile Include="Developers\Mg\Departures\MgDepartureList.cs" />
+    <Compile Include="Developers\Mg\Departures\Helpers\MgDepartureValidationHelpers.cs" />
+    <Compile Include="Developers\Mg\Departures\MgValidationException.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileDetailsParser.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileEntity.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileParser.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\MgParsersFactory.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\Interface\IMgTransferParser.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\MgTxtTransferParser.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlEntity.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlParserLogic.cs" />
+    <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlTransferParser.cs" />
+    <Compile Include="Developers\Robson\RobsonExtendedDictionary\RobsonsUtilityClass.cs" />
+    <Compile Include="Developers\Robson\RobsonsDictionaryInheritance\ExampleClass.cs" />
+    <Compile Include="Developers\Robson\RobsonsDictionaryInheritance\RobsonsDictionary.cs" />
+    <Compile Include="Developers\Robson\RobsonFileParser\RobsonFileDetails.cs" />
+    <Compile Include="Developers\Robson\RobsonFileParser\RobsonFileEntity.cs" />
+    <Compile Include="Developers\Robson\RobsonFileParser\RobsonFileFooter.cs" />
+    <Compile Include="Developers\Robson\RobsonFileParser\RobsonFileHeader.cs" />
+    <Compile Include="Developers\Robson\RobsonFileParser\RobsonsFileParser.cs" />
+    <Compile Include="Developers\Robson\RobsonFileParser\RobsonsFileReader.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\Entities\FileEntity.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\Entities\TxtFileEntity.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\Entities\XmlFileEntity.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\Factories\ParserFactory.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\FileParsers\FileParser.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\FileParsers\TxtFileParser.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\FileParsers\XmlFileParser.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\Interfaces\IParsable.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\Interfaces\IReadable.cs" />
+    <Compile Include="Developers\Robson\RobsonsUniversalFileParser\RobsonsUniversalFileParser.cs" />
     <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\Book.cs" />
     <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\DiscountItem.cs" />
     <Compile Include="Developers\Robson\ShoppingCartv2\CartItems\Item.cs" />
@@ -134,6 +216,9 @@
     <Compile Include="Developers\RS\RSDictionary\RsExtensionMethods.cs" />
     <Compile Include="Developers\RS\RSDictionary\RsHashtable.cs" />
     <Compile Include="Developers\RS\RSDictionary\RsHashtableBase.cs" />
+    <Compile Include="Developers\RS\XmlParser\RsTransferEntity.cs" />
+    <Compile Include="Developers\RS\XmlParser\RsXmlParser.cs" />
+    <Compile Include="Developers\RS\XmlParser\RsXmlTransfersParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileDetailParser.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileEntity.cs" />
     <Compile Include="Developers\Santi\FileParser\SantiFileFooterParser.cs" />
@@ -174,15 +259,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
+    <Folder Include="Developers\Koziu\Departure\DepartureExceptionMessage\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
       <Project>{b39d28c8-a026-48bc-8040-95af3986608e}</Project>
       <Name>Toci.Dal</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Toci.DbVirtualization\Toci.DbVirtualization.csproj">
-      <Project>{4770951a-ad44-41ff-a7fa-25964046e9f8}</Project>
-      <Name>Toci.DbVirtualization</Name>
     </ProjectReference>
     <ProjectReference Include="..\Toci.Db\Toci.Db.csproj">
       <Project>{e45ea1c2-f40c-4903-94c3-30a885a71d33}</Project>
@@ -200,10 +282,23 @@
     <Content Include="data\transfer_2015-03-05_265015678_Koziu.txt" />
     <Content Include="data\transfer_2015-03-05_495662414_Koziu.txt" />
     <Content Include="data\transfer_2015-03-05_926916819_Koziu.txt" />
+    <Content Include="data\transfer_2015-03-17_61666662266_Robson.txt" />
     <Content Include="data\transfer_2015_03_02_987654321_dysq.txt" />
     <Content Include="data\transfer_2015_03_06_232325_mg.txt" />
+    <Content Include="Developers\Dysq\DataForTest\transfer_2015_03_02_987654321_dysq.txt" />
+    <Content Include="Developers\Mg\Polymorphism\Parsers\TxtData\transfer_2015_03_12_4343_mg.txt" />
+    <Content Include="Developers\Mg\Polymorphism\Parsers\XmlData\transfer_2015_03_12_4343_mg.xml" />
+    <Content Include="Developers\Robson\RobsonsUniversalFileParser\Data\transfer_2015-03-17_61666662266_Robson.txt" />
+    <Content Include="Developers\Robson\RobsonsUniversalFileParser\Data\transfer_2015-03-17_61666662266_Robson.xml" />
     <Content Include="xmldata\transfer_2015-03-07_43657284832_warrior.xml" />
-    <Content Include="xmldata\transfer_2015-03-10_09876543210_dysq.xml" />
+    <Content Include="xmldata\transfer_2015-03-10_09876543210_dysq.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="xmldata\transfer_2015-03-13_12345678901_rs.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Toci.TraininigLibrary.csproj.rej" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Toci.TraininigLibrary.Common.Utils;
 using Toci.TraininigLibrary.Developers.Mg.Inheritance.Common_interface_solution.Base;
 
 namespace Toci.TraininigLibrary.Developers.Mg.Inheritance.Common_interface_solution
@@ -13,32 +14,12 @@ namespace Toci.TraininigLibrary.Developers.Mg.Inheritance.Common_interface_solut
         {
             List<T> itemList = new List<T>();
 
-
-            var anagramCandidateArray = anagramCandidate.ToUpper().ToArray();
-            Array.Sort(anagramCandidateArray);
-            bool isAnagram;
-
-            foreach (var key in this.Keys)
+            foreach (var item in this)
             {
-
-                var array = key.ToUpper().ToArray();
-
-                if (array.Length != anagramCandidateArray.Length) continue;
-
-                Array.Sort(array);
-                // isAnagram = !array.Where((t, i) => t != anagramCandidateArray[i]).Any();
-
-                isAnagram = true;
-                for (int i = 0; i < array.Length; i++)
+                if (item.Key.WarriorIsAnagram(anagramCandidate))
                 {
-                    if (array[i] != anagramCandidateArray[i])
-                    {
-                        isAnagram = false;
-                        break;
-                    }
+                    itemList.Add(this[item.Key]);
                 }
-
-                if (isAnagram) itemList.Add(this[key]);
 
             }
             return itemList;

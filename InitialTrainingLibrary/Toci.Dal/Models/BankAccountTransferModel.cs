@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Toci.DbVirtualization.Interfaces;
+using Toci.Db.DbVirtualization;
+using Toci.Db.Interfaces;
 
 namespace Toci.Dal.Models
 {
-    public class BankAccountTransferModel : IModel
+    public class BankAccountTransferModel : Model
     {
-        public bool Save()
+
+        public BankAccountTransferModel() : base("transfer")
         {
-            throw new NotImplementedException();
         }
     }
 }

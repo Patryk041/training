@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Common.Base.Inheritance;
+using Toci.TraininigLibrary.Developers.Chmura.Common;
 
 namespace Toci.TraininigLibrary.Developers.Chmura.ChmuraInheritanceTask
 {

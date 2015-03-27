@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Toci.TraininigLibrary.Common.Utils;
 using Toci.TraininigLibrary.Developers.Mg.Inheritance.Common_interface_solution;
 using Toci.TraininigLibrary.Developers.Mg.Inheritance.Common_interface_solution.Interfaces;
 using Toci.TraininigLibrary.Developers.Mg.Inheritance.Simple_Inheritance;
@@ -11,7 +12,16 @@ namespace Toci.TrainingLibrary.Test.Developers.Mg.Inheritance
     public class MgInheritanceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void MgWarriorStringUtilsTest()
+        {
+            Assert.IsTrue("raska".WarriorIsAnagram("raksa"));
+            Assert.IsTrue("radar".WarriorIsAnagram("raadr"));
+            Assert.IsFalse("raddr".WarriorIsAnagram("raadr"));
+            Assert.IsFalse("raska".WarriorIsAnagram("raksaa"));
+        }
+
+        [TestMethod]
+        public void MgStringOperationsTest()
         { 
             
             //simple inheritance

@@ -1,0 +1,16 @@
+﻿@model Toci.Web.Training.Primary.Models.Warrior.GhostRiderModel
+
+@{
+    ViewBag.Title = "GhostRider";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>GhostRider</h2>
+
+@using (Html.BeginForm("index", "GhostRider", FormMethod.Post))
+{
+
+    @Html.DropDownListFor(item => item.DropDownValue, Model.DropDownContent)
+
+    <input type="Submit" value="Pocisnij" name="zatwierdz" />
+}

@@ -15,7 +15,8 @@ namespace InitialTrainingLibrary.Sito.FromDelegatesToLambdas
         {
             List<int> list = new List<int>() {20, 1, 4, 6, 9, 44};
 
-            //tworzymy delegat typu Predicate (który może przyjmować pojedynczy typ i zwraca typ bool) i przypisujemy metodę która pasuje do sygnatury
+            //tworzymy delegat typu Predicate (który może przyjmować pojedynczy typ i zwraca typ bool) i przypisujemy metodę 
+            //która pasuje do sygnatury
             //dlaczego taki delegat? metoda FindAll właśnie taki wymaga
            Predicate<int> call = new Predicate<int>(IsEvenNumber);
             //wykonujemy na liście zdeklarowany delegat
