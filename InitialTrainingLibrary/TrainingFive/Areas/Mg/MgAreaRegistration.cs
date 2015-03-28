@@ -17,7 +17,7 @@ namespace TrainingFive.Areas.Mg
             context.MapRoute(
                 "Mg_default",
                 "Mg/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new { controller = "home", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

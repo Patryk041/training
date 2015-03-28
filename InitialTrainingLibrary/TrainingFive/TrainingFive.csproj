@@ -181,6 +181,7 @@
     </Compile>
     <Compile Include="Logic\DeparturesLogic.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\HcModel.cs" />
     <Compile Include="Models\WarriorModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

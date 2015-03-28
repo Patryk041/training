@@ -18,8 +18,27 @@ namespace TrainingFive.Models
             new SelectListItem() {Text = "Dysq", Value = "disk"},
         };
 
+        public Dictionary<string, string> Lista = new Dictionary<string, string>
+        {
+            {"dsafasd", "dsafasd"},
+            {"gh", "dsafasd"},
+            {"gfehfd", "dsafasd"},
+            {"fjdksgo", "dsafasd"},
+            {"fjdsgos", "dsafasd"},
+            {"fdsj", "dsafasd"},
+            {"fndwjg", "dsafasd"},
+            {"htrerghd", "fnhewdwbngh"},
+            {"fndjgdwws", "dsafasd"},
+            {"dsafgadsgdsfgh", "6tyghfffds"},
+            {"fjuiogdsngs", "dsafasd"},
+            {"fmidgojdsf", "dsafasd"},
+            {"fjsorewg", "dsafasd"},
+            {"dsafafjdwioguesd", "dsafasd"},
+        }; 
 
         public string Name { get; set; }
+
+        public string GhostRider { get; set; }
 
         public string DropDownValue { get; set; }
 

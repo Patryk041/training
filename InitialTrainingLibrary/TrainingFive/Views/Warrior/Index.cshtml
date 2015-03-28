@@ -9,7 +9,18 @@
 @*    <script src="http://azg.pl/js/swfobject.js"></script>*@
 }
 
-<h2>Index</h2>
+
+<input  type="submit" onclick="dupa();">
+
+<div id="zabapodrywachmure">
+    </div>
+
+<form method="GET" action="/" data-ajax="true">
+
+<input id="testowyinput" type="submit" name="ghostrider" value="warrior ajax" >
+    
+    </form>
+<h2>ZAWsZE TO</h2>
 
 @using (Html.BeginForm("save", "warrior", FormMethod.Post))
 {
@@ -22,8 +33,68 @@
     </div>
 
     
-        @Html.Partial("WarriorDepartures/WarriorDepartures", Model.ListOfDepartures)
+@*        @Html.Partial("WarriorDepartures/WarriorDepartures", Model.ListOfDepartures)*@
     
 
     <input type="submit" name="dupa" value="pocisnij" />
 }
+
+<div id="testowyDiv">
+
+    @if (Model.GhostRider != null && Model.GhostRider.StartsWith("warrior"))
+    {
+        @Model.GhostRider
+    }
+    
+</div>
+
+<script type="text/javascript">
+
+    function FillAjax(url) {
+        console.log('fill ajax in action');
+        $.ajax(
+        {
+            url: url,
+            //method: "GET",
+            success: function(result) {
+                RenderHtml('testowyDiv', result);
+            }
+        });
+    }
+
+    function RenderHtml(divId, content) {
+        console.log('dfsagdsfgfs', content);
+        //$("#" + divId).html = content;
+
+        document.getElementById(divId).innerHTML = content;
+    }
+
+    var test = document.getElementById('testowyinput');
+
+//test.click = heca;
+    //test.addEventListener('click', heca);
+
+    //test.addEventListener('mouseover', FillAjax);
+
+    function heca() {
+        var div = document.getElementById('zabapodrywachmure');
+
+        @foreach (var item in Model.Lista)
+        {
+            //            @Html.Raw("alert('heca');")
+            @Html.Raw("div.innerHTML += '<span>" + item.Value + "</span>';")
+            ;
+        }
+    }
+
+    function dupa() {
+        //document.getElementById
+        //$("#")
+        //$.ready = fu
+        console.log($("[data-ajax='true']"));
+        //$("[data-ajax='true']").on("submit", function () { alert('submit'); } ); // = "";
+        $("[data-ajax='true']").on("submit", function () {
+            console.log('starting ajax submit'); FillAjax("http://localhost:51763"); return  false;}); // = "";
+    }
+
+</script>

@@ -19,6 +19,13 @@ namespace TrainingFive.Areas.Domi
                 "Domi/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional }
             );
+
+//            context.MapRoute(
+//               "Domi_default",
+//               "{controller}/{action}/{id}",
+//               new { controller = "Home", action = "Index", id = UrlParameter.Optional } //, area = "Soltys" 
+//                // namespaces: new[] { "TrainingFive.Areas.Soltys.Controllers" }
+//           );
         }
     }
 }
