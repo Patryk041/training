@@ -17,7 +17,6 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
     <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
   </PropertyGroup>
@@ -164,6 +163,8 @@
     <Compile Include="Areas\Domi\DomiAreaRegistration.cs" />
     <Compile Include="Areas\Dysq\Controllers\MyController.cs" />
     <Compile Include="Areas\Dysq\DysqAreaRegistration.cs" />
+    <Compile Include="Areas\Hipek\Controllers\HomeHipekController.cs" />
+    <Compile Include="Areas\Hipek\HipekAreaRegistration.cs" />
     <Compile Include="Areas\Dysq\Models\DysqFindOfferModel.cs" />
     <Compile Include="Areas\Dysq\Models\DysqOfferTypeEnum.cs" />
     <Compile Include="Areas\Mg\Controllers\HomeController.cs" />
@@ -182,6 +183,7 @@
     </Compile>
     <Compile Include="Logic\DeparturesLogic.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\HcModel.cs" />
     <Compile Include="Models\WarriorModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -191,6 +193,7 @@
     <Content Include="Areas\Dysq\Content\image\pl.png" />
     <Content Include="Areas\Domi\Content\DomiAzg_StyleSheet.css" />
     <Content Include="Areas\Dysq\Content\style\Dysq_style.css" />
+    <Content Include="Areas\Hipek\Content\Style\styleAzg.css" />
     <Content Include="Areas\Mg\Content\de.png" />
     <Content Include="Areas\Mg\Content\en.png" />
     <Content Include="Areas\Mg\Content\lang-bar-background.png" />
@@ -292,6 +295,9 @@
     <Content Include="Areas\Dysq\Views\index.cshtml" />
     <Content Include="Areas\Mg\Views\Partials\FindOfferPartial.cshtml" />
     <Content Include="Areas\Dysq\Views\Shared\DysqAzg\_DysqLayout.cshtml" />
+    <Content Include="Areas\Hipek\Views\Web.config" />
+    <Content Include="Areas\Hipek\Views\Index.cshtml" />
+    <Content Include="Areas\Hipek\Views\Shared\_HipekLayout.cshtml" />
     <Content Include="Areas\Domi\Views\Web.config" />
     <Content Include="Areas\Domi\Views\Shared\DomiAzg\DomiAzgMain_LayoutPage.cshtml" />
     <Content Include="Areas\Soltys\Views\Web.config" />
@@ -362,6 +368,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Dysq\Content\image\" />
+    <Folder Include="Areas\Dysq\Models\" />
+    <Folder Include="Areas\Hipek\Models\" />
+    <Folder Include="Areas\Hipek\Views\HomeHipek\" />
     <Folder Include="Areas\Domi\Controllers\" />
     <Folder Include="Areas\Domi\Models\" />
     <Folder Include="Areas\Soltys\Models\" />

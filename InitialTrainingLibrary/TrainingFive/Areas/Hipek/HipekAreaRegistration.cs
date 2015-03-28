@@ -1,23 +1,23 @@
 ﻿using System.Web.Mvc;
 
-namespace TrainingFive.Areas.Mg
+namespace TrainingFive.Areas.Hipek
 {
-    public class MgAreaRegistration : AreaRegistration
+    public class HipekAreaRegistration : AreaRegistration
     {
         public override string AreaName
         {
             get
             {
-                return "Mg";
+                return "Hipek";
             }
         }
 
         public override void RegisterArea(AreaRegistrationContext context)
         {
             context.MapRoute(
-                "Mg_default",
-                "Mg/{controller}/{action}/{id}",
-                new { controller = "home", action = "Index", id = UrlParameter.Optional }
+                "Hipek_default",
+                "Hipek/{controller}/{action}/{id}",
+                new { action = "Index", id = UrlParameter.Optional }
             );
         }
     }

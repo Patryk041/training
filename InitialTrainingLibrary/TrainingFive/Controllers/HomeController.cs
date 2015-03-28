@@ -1,18 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Web;
+using System.Web.Helpers;
 using System.Web.Mvc;
+using TrainingFive.Models;
 
 namespace TrainingFive.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        [ActionName("inaczej")]
+        public ActionResult Index(HcModel model)
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+            var DSd = RouteData.Values["id"];
+            var fdsgfds = model.Id;
 
-            return View();
+            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+            ViewBag.dbshqgvdhfad = "dsafadsfads";
+
+            dynamic dsafads = new ExpandoObject();// new DynamicJsonArray(new [] {"dsafa"}); //= new {};
+            dsafads.dbshqfibvdshfbsfad = model;
+
+
+            return View("~/Views/Home/Index.cshtml", model);
         }
 
         public ActionResult About()
