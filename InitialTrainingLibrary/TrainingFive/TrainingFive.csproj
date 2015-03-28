@@ -163,6 +163,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Dysq\Controllers\MyController.cs" />
     <Compile Include="Areas\Dysq\DysqAreaRegistration.cs" />
+    <Compile Include="Areas\Hipek\Controllers\HomeHipekController.cs" />
+    <Compile Include="Areas\Hipek\HipekAreaRegistration.cs" />
     <Compile Include="Areas\Mg\Controllers\HomeController.cs" />
     <Compile Include="Areas\Mg\MgAreaRegistration.cs" />
     <Compile Include="Areas\Mg\Models\MgFindOfferModel.cs" />
@@ -181,6 +183,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Dysq\Content\style\Dysq_style.css" />
+    <Content Include="Areas\Hipek\Content\Style\styleAzg.css" />
     <Content Include="Areas\Mg\Content\de.png" />
     <Content Include="Areas\Mg\Content\en.png" />
     <Content Include="Areas\Mg\Content\lang-bar-background.png" />
@@ -261,6 +264,9 @@
     <Content Include="Areas\Dysq\Views\index.cshtml" />
     <Content Include="Areas\Mg\Views\Partials\FindOfferPartial.cshtml" />
     <Content Include="Areas\Dysq\Views\Shared\DysqAzg\_DysqLayout.cshtml" />
+    <Content Include="Areas\Hipek\Views\Web.config" />
+    <Content Include="Areas\Hipek\Views\Index.cshtml" />
+    <Content Include="Areas\Hipek\Views\Shared\_HipekLayout.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -326,6 +332,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Dysq\Content\image\" />
     <Folder Include="Areas\Dysq\Models\" />
+    <Folder Include="Areas\Hipek\Models\" />
+    <Folder Include="Areas\Hipek\Views\HomeHipek\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
