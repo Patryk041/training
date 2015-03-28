@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using InitialTrainingLibrary.koziu.DateValidator;
 using InitialTrainingLibrary.Wiosna.DateValidator.WiosnaInterfaces;
 
 namespace InitialTrainingLibrary.Wiosna.DateValidator
@@ -12,7 +11,7 @@ namespace InitialTrainingLibrary.Wiosna.DateValidator
     {
         public bool MonthValid(int _month)
         {
-            return (_month > 0 && _month < 13); //return true if month is beetween 0 and 13
+            return (_month > 0 && _month < 13); 
         }
     }
 }

@@ -9,7 +9,7 @@ namespace InitialTrainingLibrary.Wiosna.DateValidator.WiosnaInterfaces
 {
     public interface IDayValidation 
     {
-        bool DayValid(int _day,int _month);
+        bool DayValid(int _day,int _month,int _year);
 
         
     }

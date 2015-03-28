@@ -12,6 +12,7 @@ namespace InitialUnitTest.Wiosna
         {
             WiosnaDateValidator date =  new WiosnaDateValidator();
 
+            Assert.IsTrue(date.DateValidate(29, 02,2012));
             Assert.IsTrue(date.DateValidate(01, 09, 2015));
             Assert.IsTrue(date.DateValidate(13, 05, 1993));
             Assert.IsTrue(date.DateValidate(04,03,2000));

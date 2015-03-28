@@ -12,7 +12,7 @@ namespace InitialTrainingLibrary.Wiosna.DateValidator
     {
         public MonthList MonthE;
 
-        public bool GetMonth(int m,int d)
+        public bool GetMonth(int m,int d, int y)
         {
             switch (m)
             {
@@ -22,6 +22,10 @@ namespace InitialTrainingLibrary.Wiosna.DateValidator
                     
                 case 02:
                     MonthE = MonthList.February;
+                    if (((y % 4 == 0 && y % 100 != 0) || y % 400 == 0))
+                    {
+                        return (d > 0 && d <= 29);
+                    }
                     return (d > 0 && d <= 28);
                     
                 case 03:

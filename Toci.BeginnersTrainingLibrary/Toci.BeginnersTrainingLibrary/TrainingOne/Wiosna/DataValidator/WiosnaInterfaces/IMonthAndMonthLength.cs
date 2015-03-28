@@ -9,6 +9,6 @@ namespace InitialTrainingLibrary.Wiosna.DateValidator.WiosnaInterfaces
 {
     interface IMonthAndMonthLength
     {
-        bool GetMonth(int month, int day);
+        bool GetMonth(int month, int day,int year);
     }
 }

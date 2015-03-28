@@ -14,15 +14,11 @@ namespace InitialTrainingLibrary.Wiosna.DateValidator
         {
             
             DayValidation Day = new DayValidation();
-            Day.DayValid(day, month);
-
             MonthValidation Month = new MonthValidation();
-            Month.MonthValid(month);
-
             YearValidation Year = new YearValidation();
-            Year.YearValid(year);
+            
 
-            return (Day.DayValid(day, month) && Month.MonthValid(month) && Year.YearValid(year));
+            return (Day.DayValid(day, month,year) && Month.MonthValid(month) && Year.YearValid(year));
         }
 
     public string GetName()

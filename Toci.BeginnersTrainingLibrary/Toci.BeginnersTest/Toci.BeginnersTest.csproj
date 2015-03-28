@@ -56,6 +56,7 @@
     <Compile Include="TrainingOne\Recha\DateValidator\DateTest.cs" />
     <Compile Include="TrainingOne\Recha\TextOperations\TextOperationsTest.cs" />
     <Compile Include="TrainingOne\StringUtilsTest.cs" />
+    <Compile Include="TrainingOne\WiosnaUnitTests\WiosnaDateValidatorTest.cs" />
     <Compile Include="TrainingOne\ZlyUnitTests\ZlyStringUtilsTest.cs" />
     <Compile Include="TrainingOne\ZlyUnitTests\ZlyDateValidatorTest.cs" />
     <Compile Include="TrainingOne\WarriorHomeworkTest.cs" />
