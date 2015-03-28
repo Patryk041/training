@@ -74,6 +74,13 @@
     <Compile Include="TrainingOne\Warrior\FilterSets.cs" />
     <Compile Include="TrainingOne\Warrior\TextUtils.cs" />
     <Compile Include="TrainingOne\Warrior\WarriorDateValidator.cs" />
+    <Compile Include="TrainingOne\Zly\DateValidator\DayValidation.cs" />
+    <Compile Include="TrainingOne\Zly\DateValidator\MonthValidation.cs" />
+    <Compile Include="TrainingOne\Zly\DateValidator\YearValidation.cs" />
+    <Compile Include="TrainingOne\Zly\DateValidator\ZlyDateValidator.cs" />
+    <Compile Include="TrainingOne\Zly\TextOpeartionsSet\ZlyFilterSets.cs" />
+    <Compile Include="TrainingOne\Zly\TextOpeartionsSet\ZlyTextOperationsSets.cs" />
+    <Compile Include="TrainingOne\Zly\TextOpeartionsSet\ZlyTextUtils.cs" />
     <Compile Include="WarriorTest.cs" />
     <Compile Include="TrainingOne\Dysq\Helper\AllowedToPlay.cs" />
     <Compile Include="TrainingOne\Dysq\Player.cs" />
