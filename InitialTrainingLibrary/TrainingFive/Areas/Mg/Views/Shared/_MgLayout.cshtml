@@ -21,38 +21,38 @@
         <!--content row-->
         <div id="content-row-div" class="row">
             <!--content col-->
-            <div id="content-col-div" class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+            <div id="content-col-div" class="col-xs-8 col-xs-offset-2">
                 <!--gora-->
                 @{
                     Html.RenderPartial("~/Areas/Mg/Views/Partials/LayoutTopPartial.cshtml");
                 }
                 <!--lewo i srodek -->
-                <div id="navbar-left-and-content" class="container-fluid">
+           
                     <div id="navbar-left-and-content-row" class="row">
                     <!--lewo menu-->
                         @{
                             Html.RenderPartial("~/Areas/Mg/Views/Partials/LayoutLeftMenuPartial.cshtml");
                         }
-                        <div id="content" class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                        <div id="content" class="col-xs-9">
                             <div id="content-beam-row" class="row">
-                                <div id="content-beam-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div id="content-beam-col" class="col-xs-12">
                                     <img src="http://www.azg.pl/img/right_beam_blue.png" id="content-beam-img" class="img-responsive"/>
                                 </div>
                             </div>
 
                             <!--srodek-->
                             <div id="content-render-row" class="row">
-                                <div id="content-render-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div id="content-render-col" class="col-xs-12">
                                     @RenderBody()
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                
 
             </div>
 
-            <div id="rest-of-columuns" class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+            <div id="rest-of-columuns" class="col-xs-2"></div>
         </div>
 
     </div>
