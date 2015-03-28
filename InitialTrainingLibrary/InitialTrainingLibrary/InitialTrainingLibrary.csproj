@@ -55,6 +55,10 @@
     <Compile Include="Chmura\OtherChess\ChessGame.cs" />
     <Compile Include="Chmura\OtherChess\Figure\ChessFigure.cs" />
     <Compile Include="Chmura\OtherChess\Figure\SpecificFigure.cs" />
+    <Compile Include="denio\DateValidator\DateValidator.cs" />
+    <Compile Include="denio\DateValidator\Day.cs" />
+    <Compile Include="denio\DateValidator\Month.cs" />
+    <Compile Include="denio\DateValidator\Year.cs" />
     <Compile Include="Domi\Game\Board\ChessBoard.cs" />
     <Compile Include="Domi\Game\Board\ChessFactory.cs" />
     <Compile Include="Domi\Game\Board\ChessField.cs" />
@@ -332,6 +336,8 @@
     <Compile Include="Vernathic\02_VChess\VChess.cs" />
     <Compile Include="Vernathic\02_VChess\VCoordinates.cs" />
     <Compile Include="Vernathic\02_VChess\VFigure.cs" />
+    <Compile Include="Vernathic\Cyrograph\VernathicException.cs" />
+    <Compile Include="Vernathic\Cyrograph\WarriorCyrographException.cs" />
     <Compile Include="Vernathic\VFirstClass.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
     <Compile Include="warrior\conflict\ConflictType.cs" />
@@ -356,6 +362,7 @@
     <Content Include="syf\fileoperations\xml\data\data.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="denio\Interfaces\" />
     <Folder Include="TrainingThree\Db\" />
     <Folder Include="TrainingThree\FileParser\" />
   </ItemGroup>

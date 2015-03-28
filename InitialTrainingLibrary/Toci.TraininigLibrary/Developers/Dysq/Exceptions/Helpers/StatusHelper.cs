@@ -15,7 +15,7 @@ namespace Toci.TraininigLibrary.Developers.Dysq.Exceptions.Helpers
             switch (entity.StatusId)
             {
                 case 1:
-                    if (entity.DepartureDate < DateTime.Now && entity.DepartureDate > DateTime.Now)
+                    if (entity.DepartureDate < DateTime.Now && entity.ReturnDate > DateTime.Now)
                         status = false;
                     break;
 
