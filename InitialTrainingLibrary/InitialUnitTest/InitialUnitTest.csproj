@@ -80,6 +80,7 @@
     <Compile Include="warrior\TrainingFour\LinqTests.cs" />
     <Compile Include="warrior\TrainingThree\Tests.cs" />
     <Compile Include="warrior\WarriorTest.cs" />
+    <Compile Include="Wiosna\WiosnaUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\InitialTrainingApp\InitialTrainingApp.csproj">

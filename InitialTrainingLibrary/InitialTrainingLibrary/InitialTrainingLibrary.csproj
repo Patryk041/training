@@ -344,6 +344,16 @@
     <Compile Include="warrior\EnumerableImplementations\CustomGenericEnumerable.cs" />
     <Compile Include="warrior\EnumerableImplementations\CustomGenericEnumerator.cs" />
     <Compile Include="warrior\WarriorDateValidator.cs" />
+    <Compile Include="Wiosna\DateParts\MonthList.cs" />
+    <Compile Include="Wiosna\DayValidation.cs" />
+    <Compile Include="Wiosna\MonthAndMonthLength.cs" />
+    <Compile Include="Wiosna\MonthValidation.cs" />
+    <Compile Include="Wiosna\WiosnaDateValidator.cs" />
+    <Compile Include="Wiosna\WiosnaInterfaces\IDayValidation.cs" />
+    <Compile Include="Wiosna\WiosnaInterfaces\IMonthAndMonthLength.cs" />
+    <Compile Include="Wiosna\WiosnaInterfaces\IMonthValidation.cs" />
+    <Compile Include="Wiosna\WiosnaInterfaces\IYearValidation.cs" />
+    <Compile Include="Wiosna\YearValidation.cs" />
     <Compile Include="Witek\NaszaKlasa.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -92,6 +92,16 @@
     <Compile Include="TrainingOne\Warrior\FilterSets.cs" />
     <Compile Include="TrainingOne\Warrior\TextUtils.cs" />
     <Compile Include="TrainingOne\Warrior\WarriorDateValidator.cs" />
+    <Compile Include="TrainingOne\Wiosna\DataValidator\DateParts\MonthList.cs" />
+    <Compile Include="TrainingOne\Wiosna\DataValidator\DayValidation.cs" />
+    <Compile Include="TrainingOne\Wiosna\DataValidator\MonthAndMonthLength.cs" />
+    <Compile Include="TrainingOne\Wiosna\DataValidator\MonthValidation.cs" />
+    <Compile Include="TrainingOne\Wiosna\DataValidator\WiosnaDateValidator.cs" />
+    <Compile Include="TrainingOne\Wiosna\DataValidator\WiosnaInterfaces\IDayValidation.cs" />
+    <Compile Include="TrainingOne\Wiosna\DataValidator\WiosnaInterfaces\IMonthAndMonthLength.cs" />
+    <Compile Include="TrainingOne\Wiosna\DataValidator\WiosnaInterfaces\IMonthValidation.cs" />
+    <Compile Include="TrainingOne\Wiosna\DataValidator\WiosnaInterfaces\IYearValidation.cs" />
+    <Compile Include="TrainingOne\Wiosna\DataValidator\YearValidation.cs" />
     <Compile Include="TrainingOne\Zly\DateValidator\DayValidation.cs" />
     <Compile Include="TrainingOne\Zly\DateValidator\MonthValidation.cs" />
     <Compile Include="TrainingOne\Zly\DateValidator\YearValidation.cs" />
