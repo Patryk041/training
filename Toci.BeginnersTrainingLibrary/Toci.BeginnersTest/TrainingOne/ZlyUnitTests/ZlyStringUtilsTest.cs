@@ -11,7 +11,18 @@ namespace Toci.BeginnersTest.TrainingOne.ZlyUnitTests
         [TestMethod]
         public void TestTextUtilPalindrom()
         {
+          
+            Assert.IsTrue(ZlyTextUtils.IsPalindrom("radar"));
+        }
+
+
+        [TestMethod]
+        public void TestTextUtilsAnagram()
+        {
            
+            ZlyFilterSets sets = new ZlyFilterSets();
+            var result = sets.GetAnagrams((new[] {"test", "set", "sratata", "knowalia", "ailawonk"}), "konwalia");
+            Assert.AreEqual(result.Length, 2);
         }
 
 
