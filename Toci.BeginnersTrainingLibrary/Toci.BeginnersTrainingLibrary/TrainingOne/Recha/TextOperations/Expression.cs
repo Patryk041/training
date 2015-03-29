@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingOne.Recha.TextOperations
 {
@@ -22,6 +23,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Recha.TextOperations
                 {
                     listOfCorrectWords.Add(word);
                     Console.WriteLine(word);
+                    //Debug.WriteLine();
                 }
             }
             return listOfCorrectWords.ToArray();

@@ -35,5 +35,11 @@ namespace Toci.BeginnersTest.TrainingOne.ZlyUnitTests
 
            
         }
+
+        [TestMethod]
+        public void TestWarriorZlyAnagram()
+        {
+            Assert.IsFalse(ZlyTextUtils.IsAnagram("ad", "cb"));
+        }
     }
 }

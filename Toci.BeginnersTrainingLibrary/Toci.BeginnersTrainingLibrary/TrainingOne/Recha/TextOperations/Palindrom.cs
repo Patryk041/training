@@ -8,6 +8,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Recha.TextOperations
 
         protected override bool isWordCorrectCheck(string word)
         {
+            //this.selectCorrectWords()
             if (word.Length % 2 == 0 || word.Length < 3)
                 return false;
             else if (word != reverse(word))

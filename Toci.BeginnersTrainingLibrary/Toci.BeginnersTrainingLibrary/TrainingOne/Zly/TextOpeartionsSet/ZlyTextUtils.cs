@@ -21,13 +21,18 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Zly.TextOpeartionsSet
 
         }
 
+        private static int GetAsciSum(string text)
+        {
+            return 0;
+        }
+
         public static bool IsAnagram(string pattern, string checkingWord)
         {
             var patternLetter = pattern.ToCharArray();
             var checkingLetter = checkingWord.ToCharArray();
 
-            int asciSumOfpatternWord = 0;
-            int asciSumOfcheckingWord = 0;
+            int asciSumOfpatternWord = 0; //GetAsciSum
+            int asciSumOfcheckingWord = 0; //GetAsciSum
 
             for (int i = 0; i < patternLetter.Length; i++)
             {
