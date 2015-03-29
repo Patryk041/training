@@ -119,6 +119,7 @@
     <Compile Include="TrainingTwo\Linq\LinqShowdown.cs" />
     <Compile Include="TrainingTwo\Oil.cs" />
     <Compile Include="TrainingTwo\Streams\RandomGenericFileParser.cs" />
+    <Compile Include="TrainingTwo\Streams\TranfersAggregator.cs" />
     <Compile Include="TrainingTwo\Streams\TransferEntity.cs" />
     <Compile Include="TrainingTwo\Streams\TransferFileParser.cs" />
     <Compile Include="WarriorTest.cs" />

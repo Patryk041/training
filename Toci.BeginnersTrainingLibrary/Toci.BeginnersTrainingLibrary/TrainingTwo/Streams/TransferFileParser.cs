@@ -9,17 +9,20 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Streams
 {
     public abstract class TransferFileParser
     {
-        public void OpenFile(string filePath)
+        public List<TransferEntity> OpenFile(string filePath)
         {
             //FileStream str = new FileStream();
             StreamReader reader = new StreamReader(filePath);
+            var result = new List<TransferEntity>();
 
             while (!reader.EndOfStream)
             {
-                GetRow(reader.ReadLine());
+                result.Add(GetRow(reader.ReadLine()));
             }
 
             //Directory.GetFiles("")
+
+            return result;
         }
 
         protected abstract TransferEntity GetRow(string row);
