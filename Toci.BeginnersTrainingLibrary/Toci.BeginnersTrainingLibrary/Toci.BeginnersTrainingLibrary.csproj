@@ -49,6 +49,13 @@
     <Compile Include="TrainingOne\Dysq\Helper\SportsmanSkillValidator.cs" />
     <Compile Include="TrainingOne\Dysq\SportsmanSkill.cs" />
     <Compile Include="TrainingOne\Dysq\VolleyballPlayer.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\ErleyManipulateDayHandle.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\ErleyDateEntity.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\ErleyDateValidator.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\ErleyManipulateMonthHandle.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\ErleyManipulateYearHandle.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\IErleyChor.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\IErleyDateEntity.cs" />
     <Compile Include="TrainingOne\Excercise\IDateValidator.cs" />
     <Compile Include="TrainingOne\Excercise\ITextOperationsSets.cs" />
     <Compile Include="TrainingOne\Factory\CarFactory.cs" />
