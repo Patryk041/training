@@ -7,19 +7,12 @@ using Toci.BeginnersTrainingLibrary.TrainingOne.Excercise;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingOne.denio.DateValidator
 {
-    public class DateValidator : IDateValidator
+    public class DenioDateValidator : IDateValidator
     {
 
-        private int day;
-        private int month;
-        private int year;
-
-        public bool CheckDate(int ye, int mo, int da)
+        public bool CheckDate(int year, int month, int day)
         {
-            day = da;
-            month = mo;
-            year = ye;
-
+            
             Day d = new Day();
             Month m = new Month();
             Year y = new Year();
