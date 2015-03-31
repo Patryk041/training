@@ -73,12 +73,14 @@
     <Compile Include="UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vernathic\01_VUnitTest.cs" />
+    <Compile Include="Vernathic\VExceptionTest.cs" />
     <Compile Include="warrior\TrainingFour\CustomGenericEnumerableTest.cs" />
     <Compile Include="warrior\TrainingFour\DepInjectionTest.cs" />
     <Compile Include="warrior\TrainingFour\ExceptionsTest.cs" />
     <Compile Include="warrior\TrainingFour\LinqTests.cs" />
     <Compile Include="warrior\TrainingThree\Tests.cs" />
     <Compile Include="warrior\WarriorTest.cs" />
+    <Compile Include="Wiosna\WiosnaUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\InitialTrainingApp\InitialTrainingApp.csproj">

@@ -10,16 +10,16 @@ namespace Toci.TraininigLibrary.Developers.Chmura.ChmuraDeparture
 {
     public class ChmuraDepartureValidation<T> where T : DepartureEntity
     {
-        private ChmuraDepartureEntity _departure;
-        private ChmuraDepartureList<T> _list;
+        private DepartureEntity _departure;
+        private DepartureList<T> _list;
 
-        public ChmuraDepartureValidation(ChmuraDepartureList<T> myEntity, ChmuraDepartureEntity myList )
+        public ChmuraDepartureValidation(DepartureList<T> myEntity, DepartureEntity myList )
         {
             this._list = myEntity;
             this._departure = myList;
         }
 
-        public static Dictionary<string, Func<DepartureEntity, ChmuraDepartureList<T>, bool>> ValidationTasks = new ChmuraStringDictionary<Func<DepartureEntity, ChmuraDepartureList<T>, bool>>
+        public static Dictionary<string, Func<DepartureEntity, DepartureList<T>, bool>> ValidationTasks = new ChmuraStringDictionary<Func<DepartureEntity, DepartureList<T>, bool>>
         {
             {"Check if dates are overall correct", (x, y) => ChmuraDepartureHelpers<T>.CheckCorrectnessOfDates(x)},
             {"Validate the date", (x, y) => ChmuraDepartureHelpers<T>.ValidateTheDate(x)},

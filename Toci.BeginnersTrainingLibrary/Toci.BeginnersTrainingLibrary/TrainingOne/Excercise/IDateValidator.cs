@@ -11,5 +11,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Excercise
         bool CheckDate(int year, int month, int day);
 
         string GetNick();
+
+        //bool Whatever();
     }
 }

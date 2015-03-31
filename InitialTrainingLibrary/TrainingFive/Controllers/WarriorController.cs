@@ -19,8 +19,11 @@ namespace TrainingFive.Controllers
         [HttpGet]
         public ActionResult Index(WarriorModel model)
         {
-            
-            //if (Request.IsAjaxRequest())
+
+            if (Request.IsAjaxRequest())
+            {
+                return Content("sito");
+            }
 
             DeparturesLogic logic = new DeparturesLogic();
 

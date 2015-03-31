@@ -46,7 +46,7 @@ namespace Toci.TraininigLibrary.Developers.Chmura.ChmuraDeparture
             return true;
         }
         
-        public static bool DateOverlaps(DepartureEntity myEntity, ChmuraDepartureList<T> myList)
+        public static bool DateOverlaps(DepartureEntity myEntity, DepartureList<T> myList)
         {
             if (
                 myList.FirstOrDefault(
@@ -65,7 +65,7 @@ namespace Toci.TraininigLibrary.Developers.Chmura.ChmuraDeparture
             return Math.Abs(myEntity.ReturnDate.Subtract(myEntity.DepartureDate).Days)/7;
         }
 
-        public static bool CheckStatus(DepartureEntity myEntity, ChmuraDepartureList<T> myList)
+        public static bool CheckStatus(DepartureEntity myEntity, DepartureList<T> myList)
         {
             if (GenerateDepartureStatus(myEntity, myList) != myEntity.StatusId)
             {
@@ -74,7 +74,7 @@ namespace Toci.TraininigLibrary.Developers.Chmura.ChmuraDeparture
             return true;
         }
 
-        public static int GenerateDepartureStatus(DepartureEntity myEntity, ChmuraDepartureList<T> myList)
+        public static int GenerateDepartureStatus(DepartureEntity myEntity, DepartureList<T> myList)
         {
             DateTime now = new DateTime();
             now = DateTime.Now;

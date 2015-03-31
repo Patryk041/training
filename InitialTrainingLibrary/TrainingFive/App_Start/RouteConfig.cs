@@ -14,9 +14,16 @@ namespace TrainingFive
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "warrior",
+                url: "{controller}",
+                defaults: new { controller = "Warrior", action = "Index"},
+                namespaces: new[] { "TrainingFive.Controllers" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                url: "{controller}/{action}/{id}/{name}",
+                defaults: new { controller = "Home", action = "Index", name = UrlParameter.Optional }, //id = UrlParameter.Optional
                 namespaces:new[] { "TrainingFive.Controllers" }
             );
         }

@@ -17,9 +17,9 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
     <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <IISExpressAnonymousAuthentication />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -164,6 +164,8 @@
     <Compile Include="Areas\Domi\DomiAreaRegistration.cs" />
     <Compile Include="Areas\Dysq\Controllers\MyController.cs" />
     <Compile Include="Areas\Dysq\DysqAreaRegistration.cs" />
+    <Compile Include="Areas\Hipek\Controllers\HomeHipekController.cs" />
+    <Compile Include="Areas\Hipek\HipekAreaRegistration.cs" />
     <Compile Include="Areas\Dysq\Models\DysqFindOfferModel.cs" />
     <Compile Include="Areas\Dysq\Models\DysqOfferTypeEnum.cs" />
     <Compile Include="Areas\Mg\Controllers\HomeController.cs" />
@@ -171,6 +173,11 @@
     <Compile Include="Areas\Mg\Models\MgFindOfferModel.cs" />
     <Compile Include="Areas\Mg\Models\MgOfferTypeEnum.cs" />
     <Compile Include="Areas\Soltys\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Soltys\Controllers\SearchController.cs" />
+    <Compile Include="Areas\Soltys\Controllers\SubscriptionsController.cs" />
+    <Compile Include="Areas\Soltys\Models\OfferTypeEnum.cs" />
+    <Compile Include="Areas\Soltys\Models\PropertyTypeEnum.cs" />
+    <Compile Include="Areas\Soltys\Models\SearchFormModel.cs" />
     <Compile Include="Areas\Soltys\SoltysAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -181,6 +188,7 @@
     </Compile>
     <Compile Include="Logic\DeparturesLogic.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\HcModel.cs" />
     <Compile Include="Models\WarriorModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -190,6 +198,7 @@
     <Content Include="Areas\Dysq\Content\image\pl.png" />
     <Content Include="Areas\Domi\Content\DomiAzg_StyleSheet.css" />
     <Content Include="Areas\Dysq\Content\style\Dysq_style.css" />
+    <Content Include="Areas\Hipek\Content\Style\styleAzg.css" />
     <Content Include="Areas\Mg\Content\de.png" />
     <Content Include="Areas\Mg\Content\en.png" />
     <Content Include="Areas\Mg\Content\lang-bar-background.png" />
@@ -201,6 +210,8 @@
     <Content Include="Areas\Soltys\Scripts\bootstrap.js" />
     <Content Include="Areas\Soltys\Scripts\bootstrap.min.js" />
     <Content Include="Areas\Dysq\Views\Partial\FindOfferPartial.cshtml" />
+    <Content Include="Areas\Mg\Views\Partials\LayoutTopPartial.cshtml" />
+    <Content Include="Areas\Mg\Views\Partials\LayoutLeftMenuPartial.cshtml" />
     <None Include="Areas\Soltys\Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Areas\Soltys\Scripts\CustomScripts\NavTabsBehavior.js" />
     <Content Include="Areas\Soltys\Scripts\jquery-1.10.2.js" />
@@ -289,12 +300,18 @@
     <Content Include="Areas\Dysq\Views\index.cshtml" />
     <Content Include="Areas\Mg\Views\Partials\FindOfferPartial.cshtml" />
     <Content Include="Areas\Dysq\Views\Shared\DysqAzg\_DysqLayout.cshtml" />
+    <Content Include="Areas\Hipek\Views\Web.config" />
+    <Content Include="Areas\Hipek\Views\Index.cshtml" />
+    <Content Include="Areas\Hipek\Views\Shared\_HipekLayout.cshtml" />
     <Content Include="Areas\Domi\Views\Web.config" />
     <Content Include="Areas\Domi\Views\Shared\DomiAzg\DomiAzgMain_LayoutPage.cshtml" />
     <Content Include="Areas\Soltys\Views\Web.config" />
     <Content Include="Areas\Soltys\Scripts\jquery-1.10.2.min.map" />
     <Content Include="Areas\Soltys\Views\Home\Index.cshtml" />
     <Content Include="Areas\Soltys\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Soltys\Views\Subscriptions\Index.cshtml" />
+    <Content Include="Areas\Soltys\Views\Shared\_MainMenuPartial.cshtml" />
+    <Content Include="Areas\Soltys\Views\Search\SearchPartial.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -360,7 +377,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Domi\Controllers\" />
     <Folder Include="Areas\Domi\Models\" />
-    <Folder Include="Areas\Soltys\Models\" />
+    <Folder Include="Areas\Hipek\Models\" />
+    <Folder Include="Areas\Hipek\Views\HomeHipek\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

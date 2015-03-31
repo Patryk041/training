@@ -336,12 +336,24 @@
     <Compile Include="Vernathic\02_VChess\VChess.cs" />
     <Compile Include="Vernathic\02_VChess\VCoordinates.cs" />
     <Compile Include="Vernathic\02_VChess\VFigure.cs" />
+    <Compile Include="Vernathic\Cyrograph\VernathicException.cs" />
+    <Compile Include="Vernathic\Cyrograph\WarriorCyrographException.cs" />
     <Compile Include="Vernathic\VFirstClass.cs" />
     <Compile Include="warrior\chess\figures\Figure.cs" />
     <Compile Include="warrior\conflict\ConflictType.cs" />
     <Compile Include="warrior\EnumerableImplementations\CustomGenericEnumerable.cs" />
     <Compile Include="warrior\EnumerableImplementations\CustomGenericEnumerator.cs" />
     <Compile Include="warrior\WarriorDateValidator.cs" />
+    <Compile Include="Wiosna\DateParts\MonthList.cs" />
+    <Compile Include="Wiosna\DayValidation.cs" />
+    <Compile Include="Wiosna\MonthAndMonthLength.cs" />
+    <Compile Include="Wiosna\MonthValidation.cs" />
+    <Compile Include="Wiosna\WiosnaDateValidator.cs" />
+    <Compile Include="Wiosna\WiosnaInterfaces\IDayValidation.cs" />
+    <Compile Include="Wiosna\WiosnaInterfaces\IMonthAndMonthLength.cs" />
+    <Compile Include="Wiosna\WiosnaInterfaces\IMonthValidation.cs" />
+    <Compile Include="Wiosna\WiosnaInterfaces\IYearValidation.cs" />
+    <Compile Include="Wiosna\YearValidation.cs" />
     <Compile Include="Witek\NaszaKlasa.cs" />
   </ItemGroup>
   <ItemGroup>
