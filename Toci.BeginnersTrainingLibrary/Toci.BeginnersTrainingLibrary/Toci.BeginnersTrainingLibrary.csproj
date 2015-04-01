@@ -45,10 +45,6 @@
     <Compile Include="TrainingOne\denio\DateValidator\Day.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\Month.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\Year.cs" />
-    <Compile Include="TrainingOne\denio\PalindromAnagramWildcard\FilterSets.cs" />
-    <Compile Include="TrainingOne\denio\PalindromAnagramWildcard\TestAnagram.cs" />
-    <Compile Include="TrainingOne\denio\PalindromAnagramWildcard\TextOperations.cs" />
-    <Compile Include="TrainingOne\denio\PalindromAnagramWildcard\TextUtils.cs" />
     <Compile Include="TrainingOne\Dysq\FootballTrick.cs" />
     <Compile Include="TrainingOne\Dysq\Helper\SportsmanSkillValidator.cs" />
     <Compile Include="TrainingOne\Dysq\SportsmanSkill.cs" />
