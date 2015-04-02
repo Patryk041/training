@@ -6,9 +6,8 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Zielu.DateValidator
     {
         public bool CheckDate(int year, int month, int day)
         {
-            var dzien = new ZieluDayValidator();
-            var miesiac = new ZieluMonthValidator();
-            return dzien.Validate(day, month, year) && miesiac.Validate(month);
+            var whatDay = new ZieluDayValidator();
+            return whatDay.Validate(day, month, year);
         }
 
         public string GetNick()

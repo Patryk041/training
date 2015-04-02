@@ -9,15 +9,10 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Zielu.DateValidator
     public class ZieluDayValidator
     {
 
-        public bool Validate(int Day, int Month, int Year)
+        public bool Validate(int day, int month, int year)
         {
-            int[] longer = {1, 3, 5, 7, 8, 10, 12};
-            int[] shorter = {4, 6, 9, 11};
-            if (Day < 0) return false;
-            var cos = new ZieluYearValidator();
-            if (longer.Any(number=> Month==number)) return 32 > Day;
-            if (shorter.Any(number => Month == number)) return 31 > Day;
-            else return cos.Validate(Year) ? 30 > Day : 29 > Day;
+            var whatMonth = new ZieluMonthValidator();
+            return whatMonth.Validate(year, month) > day && day > 0;
         }
     }
 }

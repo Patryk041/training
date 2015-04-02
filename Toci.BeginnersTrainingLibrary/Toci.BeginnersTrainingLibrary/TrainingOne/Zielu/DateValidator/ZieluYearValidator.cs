@@ -8,9 +8,9 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Zielu.DateValidator
 {
     public class ZieluYearValidator
     {
-        public bool Validate(int Year)
+        public bool Validate(int year)
         {
-            return ((Year%4 == 0 && Year%100 != 0) || Year%400 == 0);
+            return ((year%4 == 0 && year%100 != 0) || year%400 == 0);
         }
     }
 }
