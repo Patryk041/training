@@ -82,6 +82,9 @@
     <Compile Include="TrainingOne\Recha\DateValidator\Day.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\Month.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\Year.cs" />
+    <Compile Include="TrainingOne\Recha\omr\IO.cs" />
+    <Compile Include="TrainingOne\Recha\omr\Properties.cs" />
+    <Compile Include="TrainingOne\Recha\omr\Translator.cs" />
     <Compile Include="TrainingOne\Recha\TextOperations\Anagram.cs" />
     <Compile Include="TrainingOne\Recha\TextOperations\Expression.cs" />
     <Compile Include="TrainingOne\Recha\TextOperations\Palindrom.cs" />
