@@ -59,6 +59,7 @@
     <Compile Include="Developers\Dysq\DysqFileParserTest.cs" />
     <Compile Include="Developers\Dysq\Exceptions\DysqExceptionTest.cs" />
     <Compile Include="Developers\Dysq\Inheritance\DysqTest.cs" />
+    <Compile Include="Developers\Dysq\omr\DysqOmrTest.cs" />
     <Compile Include="Developers\Hipek\HipekFileParserTest.cs" />
     <Compile Include="Developers\Koziu\KoziuFileGeneratorTest.cs" />
     <Compile Include="Developers\Koziu\KoziuStringDictionaryTest.cs" />
