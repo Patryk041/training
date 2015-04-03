@@ -17,13 +17,11 @@ namespace TrainingFive.Controllers
         //public WarriorController(IDeparturesLogic deplogic)
 
         [HttpGet]
+        //[OutputCache]
         public ActionResult Index(WarriorModel model)
         {
-
-            if (Request.IsAjaxRequest())
-            {
-                return Content("sito");
-            }
+            
+            //if (Request.IsAjaxRequest())
 
             DeparturesLogic logic = new DeparturesLogic();
 

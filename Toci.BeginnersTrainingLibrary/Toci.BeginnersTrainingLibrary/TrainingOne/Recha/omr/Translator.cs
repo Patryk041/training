@@ -13,7 +13,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Recha.omr
             _newClass = new List<string>();
         }
 
-        public void GenerateClass()
+        public void GenerateClass(string className, string namespaceName)
         {
             var properties = GetProperties(_atomicDefinitionOfTable);
             _newClass.AddRange(GenerateBeginOfClass());
