@@ -77,6 +77,10 @@
     <Compile Include="TrainingOne\Kielich\Year.cs" />
     <Compile Include="TrainingOne\ListsOfItems\StringList.cs" />
     <Compile Include="TrainingOne\ListsOfItems\TestGeneric.cs" />
+    <Compile Include="TrainingOne\Matwie\DayValidator.cs" />
+    <Compile Include="TrainingOne\Matwie\MatwieDateValidator.cs" />
+    <Compile Include="TrainingOne\Matwie\MonthValidator.cs" />
+    <Compile Include="TrainingOne\Matwie\YearValidator.cs" />
     <Compile Include="TrainingOne\President.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\DateValidate.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\Day.cs" />
