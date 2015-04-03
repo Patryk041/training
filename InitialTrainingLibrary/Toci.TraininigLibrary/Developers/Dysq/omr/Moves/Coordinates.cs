@@ -4,9 +4,9 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr.Moves
 {
     public class Coordinates : ICoordinates
     {
-        private int xCoordinate;
-        private int yCoordinate;
-        private int zCoordinate;
+        private readonly int xCoordinate;
+        private readonly int yCoordinate;
+        private readonly int zCoordinate;
 
 
         public Coordinates(int x, int y, int z)
