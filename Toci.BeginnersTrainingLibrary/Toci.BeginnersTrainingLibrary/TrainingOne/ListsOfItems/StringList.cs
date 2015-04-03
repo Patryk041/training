@@ -7,7 +7,7 @@ using Toci.BeginnersTrainingLibrary.TrainingOne.ReferenceTypes;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingOne.ListsOfItems
 {
-    public class StringList<TList, TKeys> where TList : IChainOfResponsibilityFriendly where TKeys : new()
+    public class StringList<TList, TKeys> where TList : IChainOfResponsibilityFriendly, new()
     {
         protected TList[] tablica = new TList[10];
 
