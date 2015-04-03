@@ -22,10 +22,10 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq.omr
                 testPlayer.LearnSkill();
 
                 testPlayer.MoveHead(0, 3, 4);
-                testPlayer.MoveRightHand(0, 3, 4);
-                testPlayer.MoveLeftHand(0, 4, 5);
-                testPlayer.MoveRightLeg(3, 5, 0);
-                testPlayer.MoveLeftLeg(4, 6, 0);
+                //testPlayer.MoveRightHand(0, 3, 4);
+                //testPlayer.MoveLeftHand(0, 4, 5);
+                //testPlayer.MoveRightLeg(3, 5, 0);
+                //testPlayer.MoveLeftLeg(4, 6, 0);
               
             }
 
