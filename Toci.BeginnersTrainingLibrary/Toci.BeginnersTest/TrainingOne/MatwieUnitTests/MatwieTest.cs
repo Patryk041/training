@@ -41,5 +41,28 @@ namespace Toci.BeginnersTest.TrainingOne.MatwieUnitTests
             Assert.IsFalse(a.MatchToExpression("test", "ettt"));
     
         }*/
+
+        [TestMethod]
+        public void TestTextUtils()
+        {
+            string[] possiblyPalindroms = new string[]{"kajak", "aab", "aabbaa"};
+            string[] palindroms = new string[]{"kajak", "aabbaa"};
+            string[] possiblyAnagrams = new string[] {"kajak", "aab", "aabbaa"};
+            string[] anagrams = new string[] {"aabbaa"};
+            const string anagramPattern = "aaaabb";
+            string[] possiblyWildcards = new string[] { "kajak", "aab", "aabbaa" };
+            string[] wildcards = new string[] { "aab", "aabbaa" };
+            const string wildcardPattern = "aa"; 
+
+            MatwieTextUtils mtu = new MatwieTextUtils(possiblyPalindroms, possiblyAnagrams, possiblyWildcards);
+            Assert.AreEqual(mtu.GetPalindromsSet()[0], palindroms[0]);
+            Assert.AreEqual(mtu.GetPalindromsSet()[1], palindroms[1]);
+            Assert.AreEqual(mtu.GetAnagramsSet(anagramPattern)[0], anagrams[0]);
+            Assert.AreEqual(mtu.GetWildCardSet(wildcardPattern)[0], wildcards[0]);
+            Assert.AreEqual(mtu.GetWildCardSet(wildcardPattern)[1], wildcards[1]);
+
+        }
     }
+
+
 }

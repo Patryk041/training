@@ -2,33 +2,27 @@
 {
     public abstract class Expressions
     {
-        protected string[] candidates;
-        protected string[] results;
+        protected string[] Candidates;
+        protected string[] Results;
 
         protected Expressions(string[] words)
         {
-            candidates = words;
-            results = new string[candidates.Length];
-        }
-
-        public string[] Get()
-        {
-            int i = 0;
-            foreach (string candidate in candidates)
-                if (MatchToExpression(candidate, null))
-                    results[i++] = candidate;
-
-            return results;
+            Candidates = words;
+            Results = new string[Candidates.Length];
         }
 
         public string[] Get(string pattern)
         {
             int i = 0;
-            foreach (string candidate in candidates)
+            foreach (string candidate in Candidates)
                 if (MatchToExpression(candidate, pattern))
-                    results[i++] = candidate;
+                    Results[i++] = candidate;
 
-            return results;
+            string[] returnedArray = new string[i];
+            for (int j = 0; j < i; j++)
+                returnedArray[j] = Results[j];
+
+            return returnedArray;
         }
 
         protected abstract bool MatchToExpression(string word, string pattern);
