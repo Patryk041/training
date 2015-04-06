@@ -2,7 +2,7 @@
 
 namespace Toci.BeginnersTrainingLibrary.TrainingOne.Matwie.TextUtils
 {
-    class MatwieTextUtils :ITextOperationsSets
+    public class MatwieTextUtils :ITextOperationsSets
     {
         private Palindroms palindroms;
         private Anagrams anagrams;
@@ -22,7 +22,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Matwie.TextUtils
 
         public string[] GetPalindromsSet()
         {
-            return palindroms.Get();
+            return palindroms.Get(null);
         }
 
         public string[] GetAnagramsSet(string anagram)

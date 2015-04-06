@@ -107,6 +107,7 @@
     <Compile Include="Developers\Dysq\Inheritance\ExtensionsByDysq.cs" />
     <Compile Include="Developers\Dysq\Inheritance\Interfaces\IDysqCommonDictionaryBase.cs" />
     <Compile Include="Developers\Dysq\Interfaces\IDysqTrasfersParser.cs" />
+    <Compile Include="Developers\Dysq\omr\FootballPlayer.cs" />
     <Compile Include="Developers\Dysq\omr\Moves\BodyPartsUseBase.cs" />
     <Compile Include="Developers\Dysq\omr\Moves\BodyPartsMovesBase.cs" />
     <Compile Include="Developers\Dysq\omr\Moves\BodyPartsStartPositionsBase.cs" />

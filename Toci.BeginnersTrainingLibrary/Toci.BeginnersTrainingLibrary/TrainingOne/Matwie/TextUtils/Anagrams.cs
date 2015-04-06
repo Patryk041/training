@@ -12,6 +12,9 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Matwie.TextUtils
 
         protected override bool MatchToExpression(string word, string pattern)
         {
+            if (word.Length != pattern.Length)
+                return false;
+
             List<char> charListWord = word.ToList();
             char[] charTablePattern = pattern.ToCharArray();
 
