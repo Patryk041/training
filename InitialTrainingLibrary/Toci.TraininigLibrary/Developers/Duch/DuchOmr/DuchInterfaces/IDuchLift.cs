@@ -9,6 +9,8 @@ namespace Toci.TraininigLibrary.Developers.Duch.DuchOmr.DuchInterfaces
 	public interface IDuchLift
 	{
 		string GetName();
-		bool Lift();
+		string LiftName { get; set; }
+		string Lift(IDuchRider rider);
+		
 	}
 }

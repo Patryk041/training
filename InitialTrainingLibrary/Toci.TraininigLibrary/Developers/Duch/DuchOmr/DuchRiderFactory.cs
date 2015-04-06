@@ -9,17 +9,22 @@ using Toci.TraininigLibrary.Developers.Duch.DuchOmr.DuchUtilities;
 
 namespace Toci.TraininigLibrary.Developers.Duch.DuchOmr
 {
-	public static class DuchRiderFactory
+	public  class DuchRiderFactory
 	{
-		private static Dictionary<DuchUtilitiesClass.RiderType,Func<IDuchRider>> RidersList = new Dictionary<DuchUtilitiesClass.RiderType, Func<IDuchRider>>()
+		private static Dictionary<DuchUtilitiesClass.RiderType,Func<IDuchRider>> RidersDictionary = new Dictionary<DuchUtilitiesClass.RiderType, Func<IDuchRider>>()
 		{
-		  {DuchUtilitiesClass.RiderType.Skier, ()=> new DuchSkierClass()},
-		  {DuchUtilitiesClass.RiderType.Snowboarder, ()=> new DuchSnowboarderClass()}
+		  {DuchUtilitiesClass.RiderType.Skier, ()=> new DuchSkierClass("Skier")},
+		  {DuchUtilitiesClass.RiderType.Snowboarder, ()=> new DuchSnowboarderClass("Snowboarder")}
 		};
+
+		 
 
 		public static IDuchRider CreateRiderInstance(DuchUtilitiesClass.RiderType riderType)
 		{
-			return RidersList.ContainsKey(riderType) ? RidersList[riderType]() : null;
+			return RidersDictionary.ContainsKey(riderType) ? RidersDictionary[riderType]() : null;
+
 		}
+
+		
 	}
 }
