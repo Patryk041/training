@@ -12,9 +12,9 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr.SportsManModel
         protected string Surname { get; set; }
         protected double Height { get; set; }
         protected double Weight { get; set; }
-        public string SkillName { get; set; }
+       // public string SkillName { get; set; }
 
-        protected SportsManBase(int age, string name, string surname, double height, double weight, int agi, int str, KindOfSport sportName, int exp)
+        protected SportsManBase(int age, string name, string surname, double height, double weight, int agi, int str, int exp)
         {
 
         }
@@ -25,21 +25,13 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr.SportsManModel
         protected int ExperienceInYears { get; set; }
 
         
-        public List<SkillBase> SportsManSkills = new List<SkillBase>();
+        protected List<SkillBase> SportsManSkills;
 
+        public abstract List<SkillBase> GetPlayerSkills();
+        public abstract void LearnSkill(string skillName, int qualityOfPerformance, int speedOfPerformance);
+        public abstract SkillBase UseSkill(string skillName);
+        public abstract void ImproveSkill(string skillName, int quality, int speed);
 
-        public virtual void LearnFootballSkill(SkillBase skill)
-        { 
-           
-            SportsManSkills.Add(new FootballSkill(SkillName,(int)((Height + Weight / 2) + ExperienceInYears+Strenght+Agility),
-                Agility+Strenght+ExperienceInYears));
-
-        }
-
-        public virtual void LearnDriveSkills()
-        {}
-        public virtual void LearnVolleyballSkills()
-        { }
 
     }
 }

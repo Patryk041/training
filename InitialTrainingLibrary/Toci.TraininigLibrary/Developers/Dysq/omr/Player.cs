@@ -10,22 +10,14 @@ using Toci.TraininigLibrary.Developers.Dysq.omr.SportsManModel;
 
 namespace Toci.TraininigLibrary.Developers.Dysq.omr
 {
-    public class Player : SportsManBase
+    public abstract class Player : SportsManBase
     {
       
         private BodyPartsMovesBase _moveSomething;
 
-        public Player(int age, string name, string surname, double height, double weight, int agi, int str, KindOfSport sportName, int exp) : base(age, name, surname, height, weight, agi, str, sportName, exp)
+       protected Player(int age, string name, string surname, double height, double weight, int agi, int str, int exp) : base(age, name, surname, height, weight, agi, str, exp)
         {
-            this.Age = age;
-            this.Name = name;
-            this.Surname = surname;
-            this.Height = height;
-            this.Weight = weight;
-            this.Agility = agi;
-            this.Strenght = str;
-            this.SportsField = sportName;
-            this.ExperienceInYears = exp;
+           
             
         }
 

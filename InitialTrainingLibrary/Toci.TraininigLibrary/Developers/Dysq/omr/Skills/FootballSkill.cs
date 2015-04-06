@@ -16,9 +16,14 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr.Skills
             DoTrick();
         }
 
-        protected override void DoTrick()
+        public override void DoTrick()
         {
             
+        }
+
+        public override void ImproveSkill()
+        {
+            throw new NotImplementedException();
         }
     }
 }
