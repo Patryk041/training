@@ -107,6 +107,12 @@
     <Compile Include="TrainingOne\ReferenceTypes\ManipulateNickHandle.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\ManipulateSkillHandle.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\RandomEntity.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntDateValidator.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntDayValidation.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntMonthValidation.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntYearValidation.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\Text\S2yfr4ntTextOpertionsSets.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\Text\S2yfr4ntTextUtils.cs" />
     <Compile Include="TrainingOne\SocialMediaPeople.cs" />
     <Compile Include="TrainingOne\Warrior\DaysValidation.cs" />
     <Compile Include="TrainingOne\Warrior\FilterSets.cs" />
