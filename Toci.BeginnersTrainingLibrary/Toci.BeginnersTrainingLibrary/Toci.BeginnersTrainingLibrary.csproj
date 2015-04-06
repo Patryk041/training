@@ -87,10 +87,15 @@
     <Compile Include="TrainingOne\Kielich\Omr\Sensor.cs" />
     <Compile Include="TrainingOne\ListsOfItems\StringList.cs" />
     <Compile Include="TrainingOne\ListsOfItems\TestGeneric.cs" />
-    <Compile Include="TrainingOne\Matwie\DayValidator.cs" />
-    <Compile Include="TrainingOne\Matwie\MatwieDateValidator.cs" />
-    <Compile Include="TrainingOne\Matwie\MonthValidator.cs" />
-    <Compile Include="TrainingOne\Matwie\YearValidator.cs" />
+    <Compile Include="TrainingOne\Matwie\DateValidator\DayValidator.cs" />
+    <Compile Include="TrainingOne\Matwie\DateValidator\MatwieDateValidator.cs" />
+    <Compile Include="TrainingOne\Matwie\DateValidator\MonthValidator.cs" />
+    <Compile Include="TrainingOne\Matwie\TextUtils\Anagrams.cs" />
+    <Compile Include="TrainingOne\Matwie\TextUtils\Expressions.cs" />
+    <Compile Include="TrainingOne\Matwie\TextUtils\MatwieTextUtils.cs" />
+    <Compile Include="TrainingOne\Matwie\TextUtils\Palindroms.cs" />
+    <Compile Include="TrainingOne\Matwie\DateValidator\YearValidator.cs" />
+    <Compile Include="TrainingOne\Matwie\TextUtils\Wildcards.cs" />
     <Compile Include="TrainingOne\President.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\DateValidate.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\Day.cs" />
@@ -165,6 +170,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOne\Zielu\TextValidator\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
