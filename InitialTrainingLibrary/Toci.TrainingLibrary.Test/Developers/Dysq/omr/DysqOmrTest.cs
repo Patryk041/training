@@ -30,7 +30,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq.omr
 
                 testPlayer.ImproveSkill("zonglerka",2,3);
 
-                var skillToUse=testPlayer.UseSkill("strzal");
+                var skillToUse=testPlayer.ChoseAndUseSkill("strzal");
 
                 testPlayer.MoveHead(0, 3, 4);
                 //testPlayer.MoveRightHand(0, 3, 4);

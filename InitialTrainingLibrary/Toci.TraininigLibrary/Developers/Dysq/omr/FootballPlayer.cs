@@ -38,12 +38,13 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr
             return this.SportsManSkills;
         }
 
-        public override SkillBase UseSkill(string skillName)
+        public override SkillBase ChoseAndUseSkill(string skillName)
         {
             SkillBase skillToUse=null;
             foreach (var skill in this.SportsManSkills.Where(skill=>skill.Name.Equals(skillName)))
             {
                 skillToUse= skill;
+                skillToUse.DoTrick();
             }
             return skillToUse;
         }

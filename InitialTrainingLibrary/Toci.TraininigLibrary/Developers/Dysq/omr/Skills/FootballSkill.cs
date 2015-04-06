@@ -13,7 +13,7 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr.Skills
             Name = name;
             QualityOfPerformance = quality;
             SpeedOfPerformance = speed;
-            DoTrick();
+           
         }
 
         public override void DoTrick()
@@ -21,9 +21,6 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr.Skills
             
         }
 
-        public override void ImproveSkill()
-        {
-            throw new NotImplementedException();
-        }
+   
     }
 }

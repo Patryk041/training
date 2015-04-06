@@ -29,7 +29,7 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr.SportsManModel
 
         public abstract List<SkillBase> GetPlayerSkills();
         public abstract void LearnSkill(string skillName, int qualityOfPerformance, int speedOfPerformance);
-        public abstract SkillBase UseSkill(string skillName);
+        public abstract SkillBase ChoseAndUseSkill(string skillName);
         public abstract void ImproveSkill(string skillName, int quality, int speed);
 
 

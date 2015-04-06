@@ -26,7 +26,7 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr.Skills
         protected int CountOfFailTricks { get; set; }
 
         public abstract void DoTrick();
-        public abstract void ImproveSkill();
+        
 
 
     }
