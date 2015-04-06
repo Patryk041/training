@@ -8,7 +8,7 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr.Skills
 {
     public class FootballSkill : SkillBase
     {
-        public FootballSkill(string name, int quality, int speed)
+        public FootballSkill(string name, int quality, int speed) : base(name,quality,speed)
         {
             Name = name;
             QualityOfPerformance = quality;

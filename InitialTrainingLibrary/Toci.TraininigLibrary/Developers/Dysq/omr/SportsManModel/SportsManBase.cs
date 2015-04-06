@@ -1,4 +1,5 @@
-﻿using System.Management.Instrumentation;
+﻿using System.Collections.Generic;
+using System.Management.Instrumentation;
 using Toci.TraininigLibrary.Developers.Dysq.omr.Moves;
 using Toci.TraininigLibrary.Developers.Dysq.omr.Skills;
 
@@ -24,15 +25,21 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr.SportsManModel
         protected int ExperienceInYears { get; set; }
 
         
-        public SkillBase SportsManSkill;
+        public List<SkillBase> SportsManSkills = new List<SkillBase>();
 
 
-        public virtual SkillBase LearnSkill()
+        public virtual void LearnFootballSkill(SkillBase skill)
         { 
-            return SportsManSkill = 
-           new FootballSkill(SkillName, (int)((Height + Weight / 2) + ExperienceInYears+Strenght+Agility), Agility+Strenght+ExperienceInYears);
-            
+           
+            SportsManSkills.Add(new FootballSkill(SkillName,(int)((Height + Weight / 2) + ExperienceInYears+Strenght+Agility),
+                Agility+Strenght+ExperienceInYears));
+
         }
+
+        public virtual void LearnDriveSkills()
+        {}
+        public virtual void LearnVolleyballSkills()
+        { }
 
     }
 }

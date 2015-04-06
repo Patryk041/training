@@ -55,6 +55,6 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr
             _moveSomething = new PlayerMoves(x, y, z);
             _moveSomething.MoveLeftLeg(x, y, z);
         }
-
+        
     }
 }

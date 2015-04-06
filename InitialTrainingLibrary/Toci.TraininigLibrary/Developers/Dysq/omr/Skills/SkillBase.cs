@@ -8,6 +8,16 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr.Skills
 {
     public abstract class SkillBase
     {
+         protected SkillBase(string name, int quality, int speed)
+        {
+            Name = name;
+            QualityOfPerformance = quality;
+            SpeedOfPerformance = speed;
+            
+        }
+
+      
+
         protected string Name { get; set; }
         protected int QualityOfPerformance { get; set; }
         protected int SpeedOfPerformance { get; set; }
