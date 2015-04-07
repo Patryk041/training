@@ -17,7 +17,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Matwie.DateValidator
             {
                 checkDateDelegate(year, month, day);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return false;
             }

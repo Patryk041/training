@@ -4,19 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Developers.Duch.DuchOmr.DuchInterfaces;
+using Toci.TraininigLibrary.Developers.Duch.DuchOmr.DuchLiftClasses;
 
 namespace Toci.TraininigLibrary.Developers.Duch.DuchOmr
 {
-	class DuchLift			  : IDuchLift
+	public class DuchLift			  : DuchLiftBase
 	{
-		public string GetName()
+		public DuchLift(string liftname) : base(liftname)
 		{
-			throw new NotImplementedException();
-		}
-
-		public bool Lift()
-		{
-			throw new NotImplementedException();
 		}
 	}
 }

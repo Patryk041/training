@@ -18,10 +18,10 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Recha.omr
         public virtual void GenerateClass(string namespaceName, string className)
         {
             //in override create instance of parser derivative class
-            //then  var properties = _parser.GetProperties(_atomicDefinitionOfTable);
+            var properties = _parser.GetProperties(_atomicDefinitionOfTable);
 
             _newClass.AddRange(GenerateBeginOfClass(namespaceName, className));
-            foreach (var property in _properties)
+            foreach (var property in properties)
             {
                 _newClass.AddRange(GenerateProperty(property));
             }

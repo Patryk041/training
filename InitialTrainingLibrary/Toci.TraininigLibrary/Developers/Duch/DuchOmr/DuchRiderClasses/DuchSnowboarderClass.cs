@@ -7,11 +7,15 @@ using Toci.TraininigLibrary.Developers.Duch.DuchOmr.DuchInterfaces;
 
 namespace Toci.TraininigLibrary.Developers.Duch.DuchOmr.DuchRiderClasses
 {
-	class DuchSnowboarderClass	  : IDuchRider
+	public class DuchSnowboarderClass	  : DuchRiderBase
 	{
-		public string GetName()
+		public DuchSnowboarderClass(string name) : base(name)
 		{
-			return "snowboarder";
+		}
+
+		public override string WhatAmIRiding()
+		{
+			return "snowboard";
 		}
 	}
 }
