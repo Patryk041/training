@@ -11,7 +11,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Mg
 
         public int pole;
 
-        private int _wlasciwosci ;
+        //private int _wlasciwosci ;
 
       
 

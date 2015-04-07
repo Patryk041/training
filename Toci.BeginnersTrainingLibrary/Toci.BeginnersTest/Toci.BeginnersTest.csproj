@@ -53,10 +53,13 @@
     <Compile Include="TrainingOne\CorRefTypesTest.cs" />
     <Compile Include="TrainingOne\denio\TestDate.cs" />
     <Compile Include="TrainingOne\EnumerableTestWarrior.cs" />
+    <Compile Include="TrainingOne\Kielich\Robot\Robot.cs" />
     <Compile Include="TrainingOne\MatwieUnitTests\MatwieTest.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\DateTest.cs" />
     <Compile Include="TrainingOne\Recha\TextOperations\TextOperationsTest.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\DateValidator\DateTest.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\SplitTestSeparatorTExt.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\TextOperationsTest\TextUtilsTest.cs" />
     <Compile Include="TrainingOne\StringUtilsTest.cs" />
     <Compile Include="TrainingOne\WiosnaUnitTests\WiosnaDateValidatorTest.cs" />
     <Compile Include="TrainingOne\Zielu\DateValidator\ZieluDateValidator.cs" />
@@ -66,7 +69,7 @@
     <Compile Include="TrainingTwo\TestLambdas.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Kielich.cs" />
+    <Compile Include="TrainingOne\Kielich\DateValidator\Kielich.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.BeginnersTrainingLibrary\Toci.BeginnersTrainingLibrary.csproj">

@@ -8,6 +8,8 @@ namespace Toci.TraininigLibrary.Developers.Duch.DuchOmr.DuchInterfaces
 {
 	 public interface IDuchRider
 	{
-		string GetName();
+		string GetRiderType();
+		string RiderType { get; set; }
+		string WhatAmIRiding();
 	}
 }
