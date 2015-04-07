@@ -56,6 +56,7 @@
     <Compile Include="Developers\Chmura\TrainingFour\ChmuraDepartureVariousTests.cs" />
     <Compile Include="Developers\Chmura\TrainingThree\ChmuraTrainingThreeTest.cs" />
     <Compile Include="Developers\Domi\DomiFileParserTest.cs" />
+    <Compile Include="Developers\Duch\DuchOmrTest\DuchRiderFactoryTest.cs" />
     <Compile Include="Developers\Dysq\DysqFileParserTest.cs" />
     <Compile Include="Developers\Dysq\Exceptions\DysqExceptionTest.cs" />
     <Compile Include="Developers\Dysq\Inheritance\DysqTest.cs" />

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace InitialTrainingLibrary.syf.disposable
     {
         public void Dispose()
         {
+            //ConcurrentBag<int>
             this.Clear();
 
             GC.ReRegisterForFinalize(this);
