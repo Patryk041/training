@@ -83,6 +83,15 @@
     <Compile Include="Developers\Chmura\DateTimeValidator\IDateValidator.cs" />
     <Compile Include="Developers\Chmura\DateTimeValidator\Month.cs" />
     <Compile Include="Developers\Chmura\DateTimeValidator\Year.cs" />
+    <Compile Include="Developers\Duch\DuchOmr\DuchInterfaces\IDuchLift.cs" />
+    <Compile Include="Developers\Duch\DuchOmr\DuchInterfaces\IDuchRider.cs" />
+    <Compile Include="Developers\Duch\DuchOmr\DuchLiftClasses\DuchLift.cs" />
+    <Compile Include="Developers\Duch\DuchOmr\DuchLiftClasses\DuchLiftBase.cs" />
+    <Compile Include="Developers\Duch\DuchOmr\DuchRiderClasses\DuchRiderBase.cs" />
+    <Compile Include="Developers\Duch\DuchOmr\DuchRiderClasses\DuchSkierClass.cs" />
+    <Compile Include="Developers\Duch\DuchOmr\DuchRiderClasses\DuchSnowboarderClass.cs" />
+    <Compile Include="Developers\Duch\DuchOmr\DuchRiderFactory.cs" />
+    <Compile Include="Developers\Duch\DuchOmr\DuchUtilities\DuchUtilitiesClass.cs" />
     <Compile Include="Developers\Dysq\Bin\DysqBin.cs" />
     <Compile Include="Developers\Dysq\Bin\DysqPurchase.cs" />
     <Compile Include="Developers\Dysq\Bin\Products\BootsKind.cs" />
