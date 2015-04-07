@@ -21,12 +21,12 @@ namespace Toci.TraininigLibrary.Developers.Duch.DuchOmr.DuchLiftClasses
 			return LiftName;
 		}
 
-		
+        public string Lift(IDuchRider rider)
+        {
+            return rider.WhatAmIRiding();
 
-		public string Lift(IDuchRider rider)
-		{
-			return rider.WhatAmIRiding();
-			
-		}
+        }
+
+		
 	}
 }
