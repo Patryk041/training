@@ -6,9 +6,5 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Developers.Mg.Omr.Helpers
 {
-    public enum SexEnum
-    {
-        Male,
-        Female
-    }
+  
 }

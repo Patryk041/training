@@ -1,36 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-
-using Toci.TraininigLibrary.Developers.Mg.Omr.Base;
-using Toci.TraininigLibrary.Developers.Mg.Omr.Enums;
-using Toci.TraininigLibrary.Developers.Mg.Omr.Spines;
+using Toci.TraininigLibrary.Developers.Mg.Omr.Base.Structure.Skeleton;
+using Toci.TraininigLibrary.Developers.Mg.Omr.Base.Structure.Skeleton.Spines;
 
 namespace Toci.TraininigLibrary.Developers.Mg.Omr.Helpers
 {
     public static class SpineHelperFactory
     {
 
-        public static Dictionary<VertebraeAnimalsNameEnum, Func<MammalSpineBase>> GetProperSpine = new Dictionary
-            <VertebraeAnimalsNameEnum, Func<MammalSpineBase>>()
+        public static Dictionary<VertebrataAnimalsNameEnum, Func<SpineBase>> GetProperSpine = new Dictionary
+            <VertebrataAnimalsNameEnum, Func<SpineBase>>()
         {
-            {VertebraeAnimalsNameEnum.Cow, () => new CowSpine()},
-            {VertebraeAnimalsNameEnum.Horse, () => new HorseSpine()},
-            {VertebraeAnimalsNameEnum.Pig, () => new PigSpine()}
+            {VertebrataAnimalsNameEnum.Cow, () => new CowSpine()},
+            {VertebrataAnimalsNameEnum.Horse, () => new HorseSpine()},
+            {VertebrataAnimalsNameEnum.Pig, () => new PigSpine()}
         };
-
-        public static Dictionary<SpineSegmentEnum, Func<int, SpineSegment>> GetSpineSegment = new Dictionary<SpineSegmentEnum, Func<int, SpineSegment>>()
-        {
-            {SpineSegmentEnum.Cervical,  vertebraeNumber=>new SpineSegment(){NumberOfVertebrae = vertebraeNumber,SegmentName = SpineSegmentEnum.Cervical}},
-            {SpineSegmentEnum.Thoracic,  vertebraeNumber=>new SpineSegment(){NumberOfVertebrae = vertebraeNumber,SegmentName = SpineSegmentEnum.Thoracic}},
-            {SpineSegmentEnum.Lumbar,  vertebraeNumber=>new SpineSegment(){NumberOfVertebrae = vertebraeNumber,SegmentName = SpineSegmentEnum.Lumbar}},
-            {SpineSegmentEnum.Sacral,  vertebraeNumber=>new SpineSegment(){NumberOfVertebrae = vertebraeNumber,SegmentName = SpineSegmentEnum.Sacral}},
-            {SpineSegmentEnum.Caudal,  vertebraeNumber=>new SpineSegment(){NumberOfVertebrae = vertebraeNumber,SegmentName = SpineSegmentEnum.Caudal}},
-   
-        };
-
-
- 
 
     }
 }
