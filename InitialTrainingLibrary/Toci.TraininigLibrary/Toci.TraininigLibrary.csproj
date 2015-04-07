@@ -225,6 +225,14 @@
     <Compile Include="Developers\RS\FileParser\RsFileFooterParser.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileHeaderParser.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileParser.cs" />
+    <Compile Include="Developers\RS\Omr\Abstract\EmployeeBase.cs" />
+    <Compile Include="Developers\RS\Omr\Abstract\OrganizationalUnitBase.cs" />
+    <Compile Include="Developers\RS\Omr\Concrete\Manager.cs" />
+    <Compile Include="Developers\RS\Omr\Concrete\Departament.cs" />
+    <Compile Include="Developers\RS\Omr\Concrete\RegularEmployee.cs" />
+    <Compile Include="Developers\RS\Omr\Concrete\test.cs" />
+    <Compile Include="Developers\RS\Omr\Interfaces\IEmployee.cs" />
+    <Compile Include="Developers\RS\Omr\Interfaces\IManager.cs" />
     <Compile Include="Developers\RS\RSDictionary\RsDictionary.cs" />
     <Compile Include="Developers\RS\RSDictionary\RsExtensionMethods.cs" />
     <Compile Include="Developers\RS\RSDictionary\RsHashtable.cs" />
