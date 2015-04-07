@@ -196,12 +196,12 @@
     <Compile Include="Developers\Mg\Omr\Base\SpineBase.cs" />
     <Compile Include="Developers\Mg\Omr\Base\SpineSegment.cs" />
     <Compile Include="Developers\Mg\Omr\Base\VertebrataBase.cs" />
-    <Compile Include="Developers\Mg\Omr\Helpers\BodyTemperatureEnum.cs" />
+    <Compile Include="Developers\Mg\Omr\Enums\BodyTemperatureEnum.cs" />
     <Compile Include="Developers\Mg\Omr\Helpers\SexEnum.cs" />
-    <Compile Include="Developers\Mg\Omr\Helpers\SpineSegmentEnum.cs" />
-    <Compile Include="Developers\Mg\Omr\Helpers\VertebraeAnimalsNameEnum.cs" />
+    <Compile Include="Developers\Mg\Omr\Enums\SpineSegmentEnum.cs" />
+    <Compile Include="Developers\Mg\Omr\Enums\VertebraeAnimalsNameEnum.cs" />
     <Compile Include="Developers\Mg\Omr\Helpers\SpineHelperFactory.cs" />
-    <Compile Include="Developers\Mg\Omr\Helpers\MultiplicationEnum.cs" />
+    <Compile Include="Developers\Mg\Omr\Enums\MultiplicationEnum.cs" />
     <Compile Include="Developers\Mg\Omr\Interfaces\IVertebrae.cs" />
     <Compile Include="Developers\Mg\Omr\Mammals\Cow.cs" />
     <Compile Include="Developers\Mg\Omr\Mammals\Horse.cs" />

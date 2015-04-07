@@ -2,6 +2,7 @@
 
 using System;
 using System.Linq;
+using Toci.TraininigLibrary.Developers.Mg.Omr.Enums;
 using Toci.TraininigLibrary.Developers.Mg.Omr.Helpers;
 
 namespace Toci.TraininigLibrary.Developers.Mg.Omr.Base
