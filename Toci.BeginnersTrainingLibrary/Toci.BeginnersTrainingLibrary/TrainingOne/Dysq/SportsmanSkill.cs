@@ -9,7 +9,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Dysq
 {
     public abstract class SportsmanSkill
     {
-        private int tosieniedziedziczy;
+        //private int tosieniedziedziczy;
 
         protected string Type { get; set; }
         protected string Name { get; set; }

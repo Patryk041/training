@@ -12,11 +12,6 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Kielich
         {
             Validator vali = new Validator();
             return vali.Validation(year, month, day);
-
-            var dsa = new Dictionary<string, string>();
-            //dsa.
-
-            //"radar".is
         }
 
         public string GetNick()
