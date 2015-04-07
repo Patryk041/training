@@ -59,7 +59,7 @@
     <Compile Include="TrainingOne\Recha\TextOperations\TextOperationsTest.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\DateValidator\DateTest.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\SplitTestSeparatorTExt.cs" />
-    <Compile Include="TrainingOne\S2yfr4nt\TextOperationsTest\TextOperationsTest.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\TextOperationsTest\TextUtilsTest.cs" />
     <Compile Include="TrainingOne\StringUtilsTest.cs" />
     <Compile Include="TrainingOne\WiosnaUnitTests\WiosnaDateValidatorTest.cs" />
     <Compile Include="TrainingOne\Zielu\DateValidator\ZieluDateValidator.cs" />
