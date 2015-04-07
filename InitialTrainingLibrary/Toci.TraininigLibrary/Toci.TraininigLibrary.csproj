@@ -161,6 +161,11 @@
     <Compile Include="Developers\Koziu\InternetStore\KoziuBinCollection.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />
     <Compile Include="Developers\Koziu\Departure\KoziuDeparture.cs" />
+    <Compile Include="Developers\Koziu\OMR\BedBase.cs" />
+    <Compile Include="Developers\Koziu\OMR\Interfaces\IBed.cs" />
+    <Compile Include="Developers\Koziu\OMR\Interfaces\IModule.cs" />
+    <Compile Include="Developers\Koziu\OMR\Interfaces\IRoom.cs" />
+    <Compile Include="Developers\Koziu\OMR\RoomBase.cs" />
     <Compile Include="Developers\Koziu\StringDictionary\KoziuStringDictionary.cs" />
     <Compile Include="Developers\Koziu\StringDictionary\ExtensionsString.cs" />
     <Compile Include="Developers\Mg\Basket\MgBasket.cs" />
