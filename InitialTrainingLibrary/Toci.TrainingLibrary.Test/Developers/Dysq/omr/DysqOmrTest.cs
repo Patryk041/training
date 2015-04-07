@@ -19,6 +19,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Dysq.omr
             {
               var testPlayer = new FootballPlayer(18,"Jan","Kowalski",1.84, 80.00, 8, 8, 2);
 
+                var testSecondPlayer = new FootballPlayer(20, "Marek", "Nowak", 1.70, 75, 9, 7, 1);
                 
                 testPlayer.LearnSkill("zonglerka",8,7);
                 
