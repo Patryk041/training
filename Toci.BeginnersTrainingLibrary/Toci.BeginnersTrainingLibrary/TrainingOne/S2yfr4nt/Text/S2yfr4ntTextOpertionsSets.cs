@@ -7,8 +7,21 @@ using Toci.BeginnersTrainingLibrary.TrainingOne.Excercise;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingOne.S2yfr4nt.Text
 {
-    class S2yfr4ntTextOpertionsSets: ITextOperationsSets
+    public class S2yfr4ntTextOpertionsSets: ITextOperationsSets
     {
+        private string[] palindroms;
+        private string[] anagrams;
+        private string[] wildcards;
+
+        public S2yfr4ntTextOpertionsSets(string[] _palindroms, string[] _anagrams, string[] _wildcards)
+        {
+            palindroms = _palindroms;
+            anagrams = _anagrams;
+            wildcards = _wildcards;
+        }
+
+        S2yfr4ntFilterSets filterSets = new S2yfr4ntFilterSets();
+
         public string GetNick()
         {
             return "S2yfr4nt";
@@ -16,17 +29,17 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.S2yfr4nt.Text
 
         public string[] GetPalindromsSet()
         {
-            throw new NotImplementedException();
+            return filterSets.GetPalindroms(palindroms);  
         }
 
         public string[] GetAnagramsSet(string anagram)
         {
-            throw new NotImplementedException();
+            return filterSets.GetAnagrams(anagrams, anagram);  
         }
 
         public string[] GetWildCardSet(string wildcard)
         {
-            throw new NotImplementedException();
+            return filterSets.GetWildCards(wildcards, wildcard); 
         }
     }
 }

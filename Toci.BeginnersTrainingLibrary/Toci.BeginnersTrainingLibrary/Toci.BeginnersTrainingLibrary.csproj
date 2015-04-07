@@ -121,6 +121,7 @@
     <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntDayValidation.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntMonthValidation.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntYearValidation.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\Text\S2yfr4ntFilterSets.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\Text\S2yfr4ntTextOpertionsSets.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\Text\S2yfr4ntTextUtils.cs" />
     <Compile Include="TrainingOne\SocialMediaPeople.cs" />
