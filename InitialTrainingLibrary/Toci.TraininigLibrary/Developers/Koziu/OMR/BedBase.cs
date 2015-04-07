@@ -29,10 +29,7 @@ namespace Toci.TraininigLibrary.Developers.Koziu.OMR
         }
 
 
-        public abstract int GetSize()
-        {
-            return 0;
-        }
+        public abstract int GetSize();
 
 
         public int Widht

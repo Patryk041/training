@@ -170,7 +170,6 @@
     <Compile Include="Developers\Koziu\InternetStore\KoziuBin.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuBinCollection.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />
-    <Compile Include="Developers\Koziu\Departure\KoziuDeparture.cs" />
     <Compile Include="Developers\Koziu\OMR\BedBase.cs" />
     <Compile Include="Developers\Koziu\OMR\Interfaces\IBed.cs" />
     <Compile Include="Developers\Koziu\OMR\Interfaces\IModule.cs" />

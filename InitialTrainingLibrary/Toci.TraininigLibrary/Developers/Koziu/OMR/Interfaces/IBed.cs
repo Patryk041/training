@@ -15,7 +15,8 @@ namespace Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces
         int Height { get; set; }
         int GetSize();  
     }
-    enum BedKind
+
+    public enum BedKind
     {
         SingleBed,
         DoubleBed,
