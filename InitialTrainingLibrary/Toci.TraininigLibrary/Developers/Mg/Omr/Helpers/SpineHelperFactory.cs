@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Toci.TraininigLibrary.Developers.Mg.Omr.Base;
+using Toci.TraininigLibrary.Developers.Mg.Omr.Enums;
 using Toci.TraininigLibrary.Developers.Mg.Omr.Spines;
 
 namespace Toci.TraininigLibrary.Developers.Mg.Omr.Helpers

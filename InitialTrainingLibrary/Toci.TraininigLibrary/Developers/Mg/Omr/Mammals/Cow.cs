@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Developers.Mg.Omr.Base;
+using Toci.TraininigLibrary.Developers.Mg.Omr.Enums;
 using Toci.TraininigLibrary.Developers.Mg.Omr.Helpers;
 using Toci.TraininigLibrary.Developers.Mg.Omr.Spines;
 

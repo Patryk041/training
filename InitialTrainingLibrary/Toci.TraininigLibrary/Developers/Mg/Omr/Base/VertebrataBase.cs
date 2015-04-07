@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Toci.TraininigLibrary.Developers.Mg.Omr.Enums;
 using Toci.TraininigLibrary.Developers.Mg.Omr.Helpers;
 using Toci.TraininigLibrary.Developers.Mg.Omr.Interfaces;
 
