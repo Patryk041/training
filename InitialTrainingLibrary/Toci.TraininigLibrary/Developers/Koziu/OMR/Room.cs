@@ -7,7 +7,7 @@ using Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces;
 
 namespace Toci.TraininigLibrary.Developers.Koziu.OMR
 {
-    public abstract class RoomBase : IRoom
+    public class Room : IRoom
     {
         List<IModule> modules;
         List<IBed> beds;

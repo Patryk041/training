@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces
 {
-    interface IRoom 
+    public interface IRoom 
     {
         int Number { get; set; }
-        bool Status { get; set; }                  
+        bool Status { get; set; }          
     }
 }

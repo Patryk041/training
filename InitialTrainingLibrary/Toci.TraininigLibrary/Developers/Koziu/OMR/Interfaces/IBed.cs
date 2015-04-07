@@ -6,19 +6,12 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces
 {
-    interface IBed
-    {
-        string Name { get; set; }
-        BedKind kind {get; set; }
+    public interface IBed     {
+       
+        string Kind {get; set; }
         int MaxAdults { get; set; }
-        int Widht { get; set; }
+        int Width { get; set; }
         int Height { get; set; }
-        int GetSize();  
-    }
-    enum BedKind
-    {
-        SingleBed,
-        DoubleBed,
-
-    }
+        string GetSize();  
+    }      
 }

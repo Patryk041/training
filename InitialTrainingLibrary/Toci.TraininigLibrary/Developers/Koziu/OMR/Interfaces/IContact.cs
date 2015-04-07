@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces
 {
-    /// <summary>
-    /// Moduły hotelowe do przyłączenia do hotelu i pokoju (siłownie, restauracje, korty tenioswe, baseny, etc.)
-    /// </summary>
-    public interface IModule
+    public interface IContact
     {
         string Name { get; set; }
-        List<IModule> Module {get; set;}
-
+        string Surname { get; set; }
+        string Phone { get; set; }
+        string Email { get; set; }                 
     }
 }
