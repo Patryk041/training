@@ -66,6 +66,7 @@
     <Compile Include="TrainingOne\ZlyUnitTests\ZlyStringUtilsTest.cs" />
     <Compile Include="TrainingOne\ZlyUnitTests\ZlyDateValidatorTest.cs" />
     <Compile Include="TrainingOne\WarriorHomeworkTest.cs" />
+    <Compile Include="TrainingTwo\Matwie\UnitTest1.cs" />
     <Compile Include="TrainingTwo\TestLambdas.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
