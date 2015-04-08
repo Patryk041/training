@@ -164,6 +164,10 @@
     <Compile Include="TrainingTwo\FuelInjector.cs" />
     <Compile Include="TrainingTwo\Lambdas\DelegatesShowdown.cs" />
     <Compile Include="TrainingTwo\Linq\LinqShowdown.cs" />
+    <Compile Include="TrainingTwo\Matwie\IngTransferFileParser.cs" />
+    <Compile Include="TrainingTwo\Matwie\MultibankTransferFileParser.cs" />
+    <Compile Include="TrainingTwo\Matwie\TransferFileParserFactory.cs" />
+    <Compile Include="TrainingTwo\Matwie\MatwieTransfers.cs" />
     <Compile Include="TrainingTwo\Oil.cs" />
     <Compile Include="TrainingTwo\Streams\RandomGenericFileParser.cs" />
     <Compile Include="TrainingTwo\Streams\TranfersAggregator.cs" />
@@ -181,9 +185,13 @@
     <Content Include="TrainingTwo\data\ing.txt" />
     <Content Include="TrainingTwo\data\multibank.txt" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <Folder Include="TrainingTwo\Matwie\" />
   </ItemGroup>
+=======
+  <ItemGroup />
+>>>>>>> 264131e83adbfecbb532e6b67425bdc76cc60b5c
   <ItemGroup />
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
