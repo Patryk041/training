@@ -9,52 +9,16 @@ namespace Toci.TraininigLibrary.Developers.Koziu.OMR
 {
     public class Room : IRoom
     {
-        public int Number
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public int Number { get; set; }
+      
 
-        public bool Status
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public bool Status { get; set; }
+       
 
-        public List<IModule> ModuleList
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public List<IModule> ModuleList { get; set; }
+       
 
-        public List<IBed> BedsList
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public List<IBed> BedsList { get; set; }
+       
     }
 }

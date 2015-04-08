@@ -13,9 +13,9 @@ namespace Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces
         IContact Contact { get; set; }
         IAddress Address { get; set; }
         string AddPhoto(string path);
-        IHotel AddHotel();
-        IRoom AddRoom();
-        IModule AddModule();
-
+        IHotel AddHotel(string name, string description, int stars, IAddress address, IContact contact);
+        IRoom AddRoom(int number, List<IBed> beds);
+        IBed AddBed(string kind, int maxAdults, int width, int height);
+        IModule AddModule(string Name);   
     }
 }

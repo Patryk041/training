@@ -13,7 +13,7 @@ namespace Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces
         int Stars { get; set; }
         IAddress Address { get; set; }     // adres hotelu
         IContact Contact { get; set; }
-        void AddPhoto(string path);
+        void AddPhoto(string path);            
         List<IRoom> RoomsList { get; set; }
         List<IModule> ModuleList { get; set; }
 
