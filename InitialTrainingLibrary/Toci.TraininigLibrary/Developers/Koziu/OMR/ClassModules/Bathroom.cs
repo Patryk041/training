@@ -21,7 +21,9 @@ namespace Toci.TraininigLibrary.Developers.Koziu.OMR.ClassModules
             }
         }
 
-        public List<IModule> Module
+       
+
+        public List<IModule> ModuleList
         {
             get
             {

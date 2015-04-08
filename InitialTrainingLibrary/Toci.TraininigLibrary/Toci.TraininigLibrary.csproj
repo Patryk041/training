@@ -169,15 +169,11 @@
     <Compile Include="Developers\Koziu\InternetStore\Bike.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuBin.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuBinCollection.cs" />
-    <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />
-<<<<<<< HEAD
+    <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />  
     <Compile Include="Developers\Koziu\OMR\Bed.cs" />
     <Compile Include="Developers\Koziu\OMR\ClassModules\Bathroom.cs" />
     <Compile Include="Developers\Koziu\OMR\Hotel.cs" />
-    <Compile Include="Developers\Koziu\OMR\Interfaces\IAddress.cs" />
-=======
-    <Compile Include="Developers\Koziu\OMR\BedBase.cs" />
->>>>>>> be0099251d400d27461618206d512626c8c311a2
+    <Compile Include="Developers\Koziu\OMR\Interfaces\IAddress.cs" />           
     <Compile Include="Developers\Koziu\OMR\Interfaces\IBed.cs" />
     <Compile Include="Developers\Koziu\OMR\Interfaces\IContact.cs" />
     <Compile Include="Developers\Koziu\OMR\Interfaces\IHotel.cs" />

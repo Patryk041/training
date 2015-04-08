@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces
 {
-    public interface IBed     {
-       
-        string Kind {get; set; }
+    public interface IBed
+    {
+
+        string Kind { get; set; }
         int MaxAdults { get; set; }
         int Width { get; set; }
         int Height { get; set; }
-<<<<<<< HEAD
-        string GetSize();  
-    }      
-=======
-        int GetSize();  
+        string GetSize();
+                                    
     }
 
     public enum BedKind
@@ -25,5 +23,5 @@ namespace Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces
         DoubleBed,
 
     }
->>>>>>> be0099251d400d27461618206d512626c8c311a2
+
 }
