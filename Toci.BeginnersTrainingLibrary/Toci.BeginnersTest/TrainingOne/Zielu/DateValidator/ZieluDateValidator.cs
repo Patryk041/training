@@ -9,7 +9,7 @@ namespace Toci.BeginnersTest.TrainingOne.Zielu.DateValidator
         [TestMethod]
         public void Test()
         {
-            ZieluDateValidator blah = new ZieluDateValidator();
+            var blah = new ZieluDateValidator();
             Assert.IsFalse(blah.CheckDate(1998,17,14));
             Assert.IsTrue(blah.CheckDate(2004,2,29));
         }
