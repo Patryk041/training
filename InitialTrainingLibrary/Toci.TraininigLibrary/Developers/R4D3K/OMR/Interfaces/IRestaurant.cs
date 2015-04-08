@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Developers.R4D3K.OMR.Employee;
+using Toci.TraininigLibrary.Developers.R4D3K.OMR.Restaurant;
 
 namespace Toci.TraininigLibrary.Developers.R4D3K.OMR.Interfaces
 {
-    public interface IEmployee
+    public interface IRestaurant
     {
-        decimal GetSalary(KindOfJob koj, int workingHours);
-        KindOfJob GetPosition();
-        int GetWorkingHours();
+        List<IEmployee> GetEmployees();
+        List<IService> GetService();
+        Address GetAddress();
+        string GetName();
+        string DoWork();
     }
 }

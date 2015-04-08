@@ -8,7 +8,12 @@ namespace Toci.TraininigLibrary.Developers.R4D3K.OMR.Abstract_Class
 {
     public abstract class MenuBase
     {
-        protected DateTime CreateDate { get; set; }
-        protected List<Dishes> ListOfDishes { get; set; }
+        protected abstract DateTime CreateDate { get; set; }
+        protected abstract List<Dishes> ListOfDishes { get; set; }
+
+        protected MenuBase(DateTime create, List<Dishes> list)
+        {
+
+        }
     }
 }

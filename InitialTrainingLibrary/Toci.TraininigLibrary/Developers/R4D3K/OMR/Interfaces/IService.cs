@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Developers.R4D3K.OMR.Interfaces
 {
-    interface IService
+    public interface IService
     {
+       
     }
 }
