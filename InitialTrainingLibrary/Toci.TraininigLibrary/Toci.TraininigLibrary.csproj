@@ -170,12 +170,16 @@
     <Compile Include="Developers\Koziu\InternetStore\KoziuBin.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuBinCollection.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />
-    <Compile Include="Developers\Koziu\Departure\KoziuDeparture.cs" />
-    <Compile Include="Developers\Koziu\OMR\BedBase.cs" />
+    <Compile Include="Developers\Koziu\OMR\Bed.cs" />
+    <Compile Include="Developers\Koziu\OMR\ClassModules\Bathroom.cs" />
+    <Compile Include="Developers\Koziu\OMR\Hotel.cs" />
+    <Compile Include="Developers\Koziu\OMR\Interfaces\IAddress.cs" />
     <Compile Include="Developers\Koziu\OMR\Interfaces\IBed.cs" />
+    <Compile Include="Developers\Koziu\OMR\Interfaces\IContact.cs" />
+    <Compile Include="Developers\Koziu\OMR\Interfaces\IHotel.cs" />
     <Compile Include="Developers\Koziu\OMR\Interfaces\IModule.cs" />
     <Compile Include="Developers\Koziu\OMR\Interfaces\IRoom.cs" />
-    <Compile Include="Developers\Koziu\OMR\RoomBase.cs" />
+    <Compile Include="Developers\Koziu\OMR\Room.cs" />
     <Compile Include="Developers\Koziu\StringDictionary\KoziuStringDictionary.cs" />
     <Compile Include="Developers\Koziu\StringDictionary\ExtensionsString.cs" />
     <Compile Include="Developers\Mg\Basket\MgBasket.cs" />
@@ -192,6 +196,23 @@
     <Compile Include="Developers\Mg\FileParser\MgFileDetailsParser.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileEntity.cs" />
     <Compile Include="Developers\Mg\FileParser\MgFileParser.cs" />
+    <Compile Include="Developers\Mg\Omr\Base\MammalBase.cs" />
+    <Compile Include="Developers\Mg\Omr\Base\MammalSpineBase.cs" />
+    <Compile Include="Developers\Mg\Omr\Base\SpineBase.cs" />
+    <Compile Include="Developers\Mg\Omr\Base\SpineSegment.cs" />
+    <Compile Include="Developers\Mg\Omr\Base\VertebrataBase.cs" />
+    <Compile Include="Developers\Mg\Omr\Helpers\BodyTemperatureEnum.cs" />
+    <Compile Include="Developers\Mg\Omr\Helpers\SexEnum.cs" />
+    <Compile Include="Developers\Mg\Omr\Helpers\SpineSegmentEnum.cs" />
+    <Compile Include="Developers\Mg\Omr\Helpers\VertebraeAnimalsNameEnum.cs" />
+    <Compile Include="Developers\Mg\Omr\Helpers\SpineHelperFactory.cs" />
+    <Compile Include="Developers\Mg\Omr\Helpers\MultiplicationEnum.cs" />
+    <Compile Include="Developers\Mg\Omr\Interfaces\IVertebrae.cs" />
+    <Compile Include="Developers\Mg\Omr\Mammals\Cow.cs" />
+    <Compile Include="Developers\Mg\Omr\Mammals\Horse.cs" />
+    <Compile Include="Developers\Mg\Omr\Spines\PigSpine.cs" />
+    <Compile Include="Developers\Mg\Omr\Spines\HorseSpine.cs" />
+    <Compile Include="Developers\Mg\Omr\Spines\CowSpine.cs" />
     <Compile Include="Developers\Mg\Polymorphism\MgParsersFactory.cs" />
     <Compile Include="Developers\Mg\Polymorphism\Parsers\Interface\IMgTransferParser.cs" />
     <Compile Include="Developers\Mg\Polymorphism\Parsers\MgTxtTransferParser.cs" />
@@ -239,6 +260,14 @@
     <Compile Include="Developers\RS\FileParser\RsFileFooterParser.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileHeaderParser.cs" />
     <Compile Include="Developers\RS\FileParser\RsFileParser.cs" />
+    <Compile Include="Developers\RS\Omr\Abstract\EmployeeBase.cs" />
+    <Compile Include="Developers\RS\Omr\Abstract\OrganizationalUnitBase.cs" />
+    <Compile Include="Developers\RS\Omr\Concrete\Manager.cs" />
+    <Compile Include="Developers\RS\Omr\Concrete\Departament.cs" />
+    <Compile Include="Developers\RS\Omr\Concrete\RegularEmployee.cs" />
+    <Compile Include="Developers\RS\Omr\Concrete\test.cs" />
+    <Compile Include="Developers\RS\Omr\Interfaces\IEmployee.cs" />
+    <Compile Include="Developers\RS\Omr\Interfaces\IManager.cs" />
     <Compile Include="Developers\RS\RSDictionary\RsDictionary.cs" />
     <Compile Include="Developers\RS\RSDictionary\RsExtensionMethods.cs" />
     <Compile Include="Developers\RS\RSDictionary\RsHashtable.cs" />
@@ -287,6 +316,7 @@
   <ItemGroup>
     <Folder Include="Core\" />
     <Folder Include="Developers\Koziu\Departure\DepartureExceptionMessage\" />
+    <Folder Include="Developers\Koziu\OMR\InterfaceModules\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
@@ -324,6 +354,7 @@
     <Content Include="xmldata\transfer_2015-03-13_12345678901_rs.xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Toci.TraininigLibrary.csproj.rej" />
   </ItemGroup>

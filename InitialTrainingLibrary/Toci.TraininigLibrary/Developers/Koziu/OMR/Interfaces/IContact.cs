@@ -11,6 +11,6 @@ namespace Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces
         string Name { get; set; }
         string Surname { get; set; }
         string Phone { get; set; }
-        string Email { get; set; }                 
+        string Email { get; set; }
     }
 }

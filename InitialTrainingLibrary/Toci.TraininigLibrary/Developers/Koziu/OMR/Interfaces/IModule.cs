@@ -12,7 +12,7 @@ namespace Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces
     public interface IModule
     {
         string Name { get; set; }
-        List<IModule> Module {get; set;}
+        List<IModule> ModuleList {get; set;}
 
     }
 }

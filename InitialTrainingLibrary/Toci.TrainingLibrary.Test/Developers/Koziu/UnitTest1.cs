@@ -11,8 +11,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Koziu
         [TestMethod]
         public void TestMethod1()
         {
-            KoziuDeparture test = new KoziuDeparture();
-            test.test();
+
         }
     }
 }

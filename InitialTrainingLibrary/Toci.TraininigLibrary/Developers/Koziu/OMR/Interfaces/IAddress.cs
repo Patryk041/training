@@ -13,7 +13,7 @@ namespace Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces
         string City { get; set; }
         string Province { get; set; }
         string ZipCode { get; set; }
-        string Country { get; set; }  
+        string Country { get; set; }
 
     }
 }

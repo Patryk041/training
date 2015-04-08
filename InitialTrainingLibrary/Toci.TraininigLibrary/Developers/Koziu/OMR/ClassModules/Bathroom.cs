@@ -5,15 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces;
 
-namespace Toci.TraininigLibrary.Developers.Koziu.OMR
+namespace Toci.TraininigLibrary.Developers.Koziu.OMR.ClassModules
 {
-    public class Room : IRoom
+    class Bathroom : IModule
     {
-       
-        public int Number { get; set; }
-        public bool Status { get; set; }
-
-        public List<IModule> ModuleList
+        public string Name
         {
             get
             {
@@ -25,8 +21,7 @@ namespace Toci.TraininigLibrary.Developers.Koziu.OMR
             }
         }
 
-
-        public List<IBed> BedsList
+        public List<IModule> Module
         {
             get
             {
