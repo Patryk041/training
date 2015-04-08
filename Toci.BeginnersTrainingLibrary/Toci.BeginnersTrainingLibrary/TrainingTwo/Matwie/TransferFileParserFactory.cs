@@ -1,18 +1,18 @@
-﻿
-using System.Collections.Generic;
-using System.IO;
-using Toci.BeginnersTrainingLibrary.TrainingOne.Factory;
+﻿using System;
 using Toci.BeginnersTrainingLibrary.TrainingTwo.Streams;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Matwie
 {
     class TransferFileParserFactory
     {
-        public static TransferFileParser CreateTransferFileParser()
+        public static TransferFileParser CreateTransferFileParser(string path)
         {
-            var files = Directory.GetFiles(@"..\data\");
-
-            return new IngTransferFileParser();
+            if (path.Contains("ing.txt"))
+                return new IngTransferFileParser();
+            else if (path.Contains("multibank.txt"))
+                return new MultibankTransferFileParser();
+            else 
+                throw new Exception();
         }
     }
 }

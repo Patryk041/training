@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Toci.BeginnersTrainingLibrary.TrainingTwo.common;
 using Toci.BeginnersTrainingLibrary.TrainingTwo.Streams;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Matwie
@@ -11,7 +7,18 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Matwie
     {
         protected override TransferEntity GetRow(string row)
         {
-            throw new NotImplementedException();
+            //nazwisko; imie; konto; kwota; data; nadawaca;
+            var data = StringHelper.GetSeparatedItems("; ", row);
+            TransferEntity entity = new TransferEntity();
+
+            entity.Surname = data[0];
+            entity.Name = data[1];
+            entity.Account = data[2];
+            entity.Amount = data[3];
+            entity.Date = data[4];
+            entity.Sender = data[5];
+
+            return entity;
         }
     }
 }
