@@ -160,8 +160,9 @@
     <Compile Include="TrainingTwo\Lambdas\DelegatesShowdown.cs" />
     <Compile Include="TrainingTwo\Linq\LinqShowdown.cs" />
     <Compile Include="TrainingTwo\Matwie\IngTransferFileParser.cs" />
+    <Compile Include="TrainingTwo\Matwie\MultibankTransferFileParser.cs" />
     <Compile Include="TrainingTwo\Matwie\TransferFileParserFactory.cs" />
-    <Compile Include="TrainingTwo\Matwie\Transfers.cs" />
+    <Compile Include="TrainingTwo\Matwie\MatwieTransfers.cs" />
     <Compile Include="TrainingTwo\Oil.cs" />
     <Compile Include="TrainingTwo\Streams\RandomGenericFileParser.cs" />
     <Compile Include="TrainingTwo\Streams\TranfersAggregator.cs" />
