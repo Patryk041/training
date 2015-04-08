@@ -18,6 +18,7 @@ namespace Toci.TraininigLibrary.Developers.Koziu.OMR
         {
             return "Bed size: " + Width + " " + Height + ".";
         }
-
+             
+       
     }
 }
