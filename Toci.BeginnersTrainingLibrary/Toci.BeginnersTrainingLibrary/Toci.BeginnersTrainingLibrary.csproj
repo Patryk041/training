@@ -176,9 +176,7 @@
     <Content Include="TrainingTwo\data\ing.txt" />
     <Content Include="TrainingTwo\data\multibank.txt" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup />
-=======
   <ItemGroup>
     <Folder Include="TrainingOne\Zielu\TextValidator\" />
     <Folder Include="TrainingTwo\Matwie\" />
@@ -186,7 +184,6 @@
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
->>>>>>> 5d3e73cd9d8facedc2da5e980bc3884e4b5a12d1
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
