@@ -113,6 +113,7 @@
     <Compile Include="TrainingOne\Zielu\DateValidator\ZieluDayValidator.cs" />
     <Compile Include="TrainingOne\Zielu\DateValidator\ZieluMonthValidator.cs" />
     <Compile Include="TrainingOne\Zielu\DateValidator\ZieluYearValidator.cs" />
+    <Compile Include="TrainingOne\Zielu\TextValidator\ZieluAnagram.cs" />
     <Compile Include="TrainingOne\Zly\DateValidator\DayValidation.cs" />
     <Compile Include="TrainingOne\Zly\DateValidator\MonthValidation.cs" />
     <Compile Include="TrainingOne\Zly\DateValidator\YearValidation.cs" />
@@ -145,9 +146,7 @@
     <Content Include="TrainingTwo\data\ing.txt" />
     <Content Include="TrainingTwo\data\multibank.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TrainingOne\Zielu\TextValidator\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
