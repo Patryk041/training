@@ -139,11 +139,16 @@
     <Compile Include="TrainingOne\Wiosna\DataValidator\WiosnaInterfaces\IMonthValidation.cs" />
     <Compile Include="TrainingOne\Wiosna\DataValidator\WiosnaInterfaces\IYearValidation.cs" />
     <Compile Include="TrainingOne\Wiosna\DataValidator\YearValidation.cs" />
+    <Compile Include="TrainingOne\Zielu\DateValidator\AllowedDays.cs" />
     <Compile Include="TrainingOne\Zielu\DateValidator\ZieluDateValidator.cs" />
     <Compile Include="TrainingOne\Zielu\DateValidator\ZieluDayValidator.cs" />
     <Compile Include="TrainingOne\Zielu\DateValidator\ZieluMonthValidator.cs" />
     <Compile Include="TrainingOne\Zielu\DateValidator\ZieluYearValidator.cs" />
-    <Compile Include="TrainingOne\Zielu\TextValidator\ZieluAnagram.cs" />
+    <Compile Include="TrainingOne\Zielu\TextValidator\ZieluAnagramValidation.cs" />
+    <Compile Include="TrainingOne\Zielu\TextValidator\ZieluPalindromValidation.cs" />
+    <Compile Include="TrainingOne\Zielu\TextValidator\ZieluTextValidation.cs" />
+    <Compile Include="TrainingOne\Zielu\TextValidator\ZieluWildcardValidation.cs" />
+    <Compile Include="TrainingOne\Zielu\TextValidator\ZieluTexts.cs" />
     <Compile Include="TrainingOne\Zly\DateValidator\DayValidation.cs" />
     <Compile Include="TrainingOne\Zly\DateValidator\MonthValidation.cs" />
     <Compile Include="TrainingOne\Zly\DateValidator\YearValidation.cs" />
@@ -176,11 +181,10 @@
     <Content Include="TrainingTwo\data\ing.txt" />
     <Content Include="TrainingTwo\data\multibank.txt" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Folder Include="TrainingOne\Zielu\TextValidator\" />
     <Folder Include="TrainingTwo\Matwie\" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>

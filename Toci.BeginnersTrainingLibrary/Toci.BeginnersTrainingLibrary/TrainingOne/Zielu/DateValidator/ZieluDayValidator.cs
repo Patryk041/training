@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Toci.BeginnersTrainingLibrary.TrainingOne.Zielu.DateValidator
+﻿namespace Toci.BeginnersTrainingLibrary.TrainingOne.Zielu.DateValidator
 {
     public class ZieluDayValidator
     {
-
+        readonly AllowedDays _maxDayEnabler = new AllowedDays();
         public bool Validate(int day, int month, int year)
         {
-            var whatMonth = new ZieluMonthValidator();
-            return whatMonth.Validate(year, month) > day && day > 0;
+            var maxDay = _maxDayEnabler.MaxAllowedDay(year, month);
+            return maxDay > day && day > 0;
         }
     }
 }
