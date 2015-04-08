@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.TraininigLibrary.Developers.R4D3K.OMR.Restaurant
+namespace Toci.TraininigLibrary.Developers.R4D3K.OMR.Interfaces
 {
-    class Kitchen
+    public class IRoom
     {
+
     }
 }

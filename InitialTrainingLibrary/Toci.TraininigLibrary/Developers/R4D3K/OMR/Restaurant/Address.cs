@@ -15,7 +15,10 @@ namespace Toci.TraininigLibrary.Developers.R4D3K.OMR.Restaurant
 
         public Address(string country, string city, string streetname, int number)
         {
-
+            this.Country = country;
+            this.City = city;
+            this.StreetName = streetname;
+            this.SteetNumber = number;
         }
     }
 }
