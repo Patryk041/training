@@ -12,6 +12,18 @@ namespace Toci.TraininigLibrary.Developers.Koziu.OMR.Interfaces
         int MaxAdults { get; set; }
         int Width { get; set; }
         int Height { get; set; }
+<<<<<<< HEAD
         string GetSize();  
     }      
+=======
+        int GetSize();  
+    }
+
+    public enum BedKind
+    {
+        SingleBed,
+        DoubleBed,
+
+    }
+>>>>>>> be0099251d400d27461618206d512626c8c311a2
 }

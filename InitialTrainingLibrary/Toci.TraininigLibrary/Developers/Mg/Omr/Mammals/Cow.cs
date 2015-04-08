@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Toci.TraininigLibrary.Developers.Mg.Omr.Base;
 using Toci.TraininigLibrary.Developers.Mg.Omr.Helpers;
-using Toci.TraininigLibrary.Developers.Mg.Omr.Spines;
 
 namespace Toci.TraininigLibrary.Developers.Mg.Omr.Mammals
 {
@@ -15,10 +14,11 @@ namespace Toci.TraininigLibrary.Developers.Mg.Omr.Mammals
        
        private const float AverageCowBloodPercentage = 0.08f;
 
-       public Cow(int weight, int height, int age):base(VertebraeAnimalsNameEnum.Cow,  weight,  height,age,SexEnum.Female)
+       public Cow(int weight, int height, int age):base(VertebrataAnimalsNameEnum.Cow,  weight,  height,age,SexEnum.Female)
        {
-           this.AmountOfBlood = AverageCowBloodPercentage * weight;
-           this.Spine = new CowSpine();
+           CirculatorySystem.AmountOfBlood = AverageCowBloodPercentage * weight;
+
+
        }
 
        public override string MakeNoise()

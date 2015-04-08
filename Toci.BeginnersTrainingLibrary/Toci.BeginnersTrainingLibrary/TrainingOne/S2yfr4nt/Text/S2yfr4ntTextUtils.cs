@@ -10,7 +10,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.S2yfr4nt.Text
     {
         public static bool IsPalindrom(string text)
         {
-            return text.Equals(text.Reverse());
+            return text.SequenceEqual(text.Reverse());
         }
 
         public static bool IsAnagram(string text, string anagram)

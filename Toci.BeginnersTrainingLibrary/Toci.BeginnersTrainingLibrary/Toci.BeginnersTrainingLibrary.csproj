@@ -177,6 +177,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOne\Zielu\TextValidator\" />
+    <Folder Include="TrainingTwo\Matwie\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
