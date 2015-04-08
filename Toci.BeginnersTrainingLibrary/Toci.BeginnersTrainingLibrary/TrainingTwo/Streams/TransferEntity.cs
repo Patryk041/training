@@ -9,9 +9,10 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Streams
     public class TransferEntity
     {
         public string Name { get; set; }
-        public string SurName { get; set; }
-        public string Dupa { get; set; }
-        public string Wiosna  { get; set; }
-        public string Perla { get; set; }
+        public string Surname { get; set; }
+        public string Account { get; set; }
+        public string Amount  { get; set; }
+        public string Date { get; set; }
+        public string Sender { get; set; }
     }
 }

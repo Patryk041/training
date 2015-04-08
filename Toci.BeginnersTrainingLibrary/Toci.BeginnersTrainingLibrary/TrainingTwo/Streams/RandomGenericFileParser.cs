@@ -47,7 +47,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Streams
 
             var entity = new TransferEntity();
 
-            entity.Dupa = elements[0]; //konto
+            entity.Name = elements[0]; //konto
 
             return entity;
         }
