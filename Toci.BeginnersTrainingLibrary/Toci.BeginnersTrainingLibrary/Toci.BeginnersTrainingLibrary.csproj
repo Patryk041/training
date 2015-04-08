@@ -101,6 +101,12 @@
     <Compile Include="TrainingOne\Recha\DateValidator\Day.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\Month.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\Year.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\BmpFormat.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\FileProcessing.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\FilesFormat.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\PacksFormat.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\RarFormat.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\ZipFormat.cs" />
     <Compile Include="TrainingOne\Recha\omr\Io.cs" />
     <Compile Include="TrainingOne\Recha\omr\Parser.cs" />
     <Compile Include="TrainingOne\Recha\omr\Properties.cs" />
@@ -185,9 +191,7 @@
     <Content Include="TrainingTwo\data\ing.txt" />
     <Content Include="TrainingTwo\data\multibank.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TrainingTwo\Matwie\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup />
   <ItemGroup />
   <ItemGroup>
