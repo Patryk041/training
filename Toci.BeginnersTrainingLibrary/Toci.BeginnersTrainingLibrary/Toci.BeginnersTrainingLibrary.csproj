@@ -185,13 +185,10 @@
     <Content Include="TrainingTwo\data\ing.txt" />
     <Content Include="TrainingTwo\data\multibank.txt" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <Folder Include="TrainingTwo\Matwie\" />
   </ItemGroup>
-=======
   <ItemGroup />
->>>>>>> 264131e83adbfecbb532e6b67425bdc76cc60b5c
   <ItemGroup />
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
