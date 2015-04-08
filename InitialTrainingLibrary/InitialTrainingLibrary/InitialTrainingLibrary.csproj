@@ -164,6 +164,17 @@
     <Compile Include="mg\DateValidator\ValidatorLogic.cs" />
     <Compile Include="mg\Chess\InitializeBoard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="R4D3K\Chess\ChessFactory.cs" />
+    <Compile Include="R4D3K\Chess\ChessFigure.cs" />
+    <Compile Include="R4D3K\Chess\Figure.cs" />
+    <Compile Include="R4D3K\Chess\Coordinates.cs" />
+    <Compile Include="R4D3K\Chess\Figures\Bishop.cs" />
+    <Compile Include="R4D3K\Chess\Figures\King.cs" />
+    <Compile Include="R4D3K\Chess\Figures\Horse.cs" />
+    <Compile Include="R4D3K\Chess\Figures\Pawn.cs" />
+    <Compile Include="R4D3K\Chess\Figures\Queen.cs" />
+    <Compile Include="R4D3K\Chess\Figures\Rook.cs" />
+    <Compile Include="R4D3K\DataValidator\Class1.cs" />
     <Compile Include="robson\ChessGame\ChessBoard.cs" />
     <Compile Include="robson\ChessGame\ChessBoardField.cs" />
     <Compile Include="robson\ChessGame\ChessBoardFieldCoordinates.cs" />

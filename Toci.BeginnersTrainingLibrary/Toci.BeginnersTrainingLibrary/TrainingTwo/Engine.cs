@@ -10,9 +10,9 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo
     {
         private const int MaximumFuelQuotient = 5;
 
-        protected FuelInjector injector;
-        protected Oil oil;
-        protected int FuelConsumptionSpeedQuotient;
+        //protected FuelInjector injector;
+        //protected Oil oil;
+        protected int FuelConsumptionSpeedQuotient = 0;
 
         public int GetFuelConsumptionSpeed()
         {
