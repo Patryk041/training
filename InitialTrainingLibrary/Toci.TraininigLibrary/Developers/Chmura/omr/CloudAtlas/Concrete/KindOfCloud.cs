@@ -32,6 +32,11 @@ namespace Toci.TraininigLibrary.Developers.Chmura.omr.CloudAtlas.Concrete
             get { return _additionalCharacteristics ?? "No extra characteristic"; }
             set { _additionalCharacteristics = value; }
         }
+
+        public KindOfCloud()
+        {
+            
+        }
         public KindOfCloud(string fullName, string details, string baseShape, List<ICloudType> matchedTypes,
             List<ICloudSubType> matchedSubTypes, List<IPhenomenon> matchedPhenomeons)
         {

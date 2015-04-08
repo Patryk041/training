@@ -14,6 +14,7 @@
         Congestus,
         Fractus,
         Calvus,
-        Capillatus
+        Capillatus,
+        Mediocris
     }
 }

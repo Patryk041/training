@@ -1,14 +1,17 @@
 ﻿
+using System;
+using System.Linq;
 using Toci.TraininigLibrary.Developers.Chmura.omr.CloudAtlas.Abstract;
 using Toci.TraininigLibrary.Developers.Chmura.omr.CloudAtlas.Interface;
+using Toci.TraininigLibrary.Developers.Chmura.omr.CloudAtlas.Statics;
 
 namespace Toci.TraininigLibrary.Developers.Chmura.omr.CloudAtlas.Concrete
 {
     public class ParticularCloud : Cloud
     {
-        public ParticularCloud(KindOfCloud kind, CloudOccurances occurance, int height)
+        public ParticularCloud(Func<IKindOfCloud> kind, CloudOccurances occurance, int height)
         {
-            this.Kind = kind;
+            this.Kind = kind.Invoke();
             this.CloudOccurance = occurance;
             this.HeightInKmAsl = height;
         }
@@ -20,6 +23,14 @@ namespace Toci.TraininigLibrary.Developers.Chmura.omr.CloudAtlas.Concrete
             this.MotherKind = mother;
         }
 
+        public IKindOfCloud GetKind()
+        {
+            return this.Kind;
+        }
+        public override string GetFullName()
+        {
+            return Kind.Name + " " + CloudType.Name + " " + CloudSubType.Name;
+        }
         public override CloudHeightTypes GetHeightType()
         {
             return CloudAtlasHelpers.ComputeHeightType(this.HeightInKmAsl, CloudOccurance);
@@ -58,6 +69,11 @@ namespace Toci.TraininigLibrary.Developers.Chmura.omr.CloudAtlas.Concrete
                 return true;
             }
             return false;
+        }
+
+        public bool CanStorm()
+        {
+            return Phenomeons.Any(item => item.GetType() == typeof(IStrormable));
         }
     }
 }

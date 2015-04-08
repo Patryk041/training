@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Common\Db\DbTests.cs" />
+    <Compile Include="Developers\Chmura\omrTest\omrCloudTest.cs" />
     <Compile Include="Developers\Chmura\TrainingFour\ChmuraDepartureVariousTests.cs" />
     <Compile Include="Developers\Chmura\TrainingThree\ChmuraTrainingThreeTest.cs" />
     <Compile Include="Developers\Domi\DomiFileParserTest.cs" />

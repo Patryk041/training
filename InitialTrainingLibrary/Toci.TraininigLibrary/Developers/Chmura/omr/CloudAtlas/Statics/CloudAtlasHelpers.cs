@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Toci.TraininigLibrary.Developers.Chmura.omr.CloudAtlas.Abstract;
+using Toci.TraininigLibrary.Developers.Chmura.omr.CloudAtlas.Concrete;
 
-namespace Toci.TraininigLibrary.Developers.Chmura.omr.CloudAtlas.Concrete
+namespace Toci.TraininigLibrary.Developers.Chmura.omr.CloudAtlas.Statics
 {
     public class CloudAtlasHelpers
     {

@@ -8,8 +8,8 @@ namespace Toci.TraininigLibrary.Developers.Chmura.omr.CloudAtlas.Abstract
 {
     public abstract class Cloud : ICloud
     {
-        protected KindOfCloud Kind;
-        protected KindOfCloud MotherKind;
+        protected IKindOfCloud Kind;
+        protected IKindOfCloud MotherKind;
         protected ICloudType CloudType;
         protected ICloudSubType CloudSubType;
         protected List<IPhenomenon> Phenomeons; 
