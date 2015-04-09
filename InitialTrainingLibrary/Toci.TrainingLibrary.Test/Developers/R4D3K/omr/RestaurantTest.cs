@@ -11,16 +11,11 @@ namespace Toci.TrainingLibrary.Test.Developers.R4D3K.omr
     [TestClass]
     public class RestaurantTest
     {
-        // arrange
+        private PizzeriaRestaurant p;
 
-        // act
-
-        // assert
-
-        [TestMethod]
-        public void PizzeriaKind()
+        [TestInitialize]
+        public void InitializeTest()
         {
-            // arrange
             List<IRoom> rooms = new List<IRoom>();
             rooms.Add(new Bar());
             rooms.Add(new Kitchen());
@@ -28,11 +23,19 @@ namespace Toci.TrainingLibrary.Test.Developers.R4D3K.omr
             services.Add(new ServiceKatering(1, "Katering Basic", 100));
             List<IEmployee> employees = new List<IEmployee>();
             employees.Add(new Barman(1, "Franek", "Dolas"));
-            var pizza = new PizzeriaRestaurant("Poland", "Radoszewice", "Super", 22, "Łasuch", services, employees, rooms);
-            // act
+            p = new PizzeriaRestaurant("Poland", "Radoszewice", "Super", 22, "Łasuch", services, employees, rooms);
+        }
+        [TestMethod]
+        public void PizzeriaKind()
+        {
+         
             var kind = KindOfResteurant.Pizzeria;
+            //var serLis = new List<IService>();
+            //serLis.Add(new ServiceKatering(1, "Katering Basic", 100));
             // assert
-            Assert.AreEqual(kind, pizza.GetKind());
+            Assert.AreEqual(kind, p.GetKind());
+            Assert.AreEqual("Łasuch", p.GetName());
+            //Assert.AreEqual(serLis, p.GetService());
         }
     }
 }
