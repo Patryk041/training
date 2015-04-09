@@ -243,6 +243,10 @@
     <Compile Include="Developers\Sito\Polimorphism\TextParserFactory.cs" />
     <Compile Include="Developers\Sito\Polimorphism\TransferModels\SitoTransfer.cs" />
     <Compile Include="Developers\Sito\Polimorphism\SitoTransferParserBase.cs" />
+    <Compile Include="Developers\Vernathic\OMR2\CoffeeBeverage.cs" />
+    <Compile Include="Developers\Vernathic\OMR2\CoffeeMachine.cs" />
+    <Compile Include="Developers\Vernathic\OMR2\Milk.cs" />
+    <Compile Include="Developers\Vernathic\OMR2\Substance.cs" />
     <Compile Include="Developers\Warrior\Db\Models\ModelBase.cs" />
     <Compile Include="Developers\Warrior\Db\Models\TransferModel.cs" />
     <Compile Include="Developers\Warrior\FileParser\WarriorFileDetailParser.cs" />

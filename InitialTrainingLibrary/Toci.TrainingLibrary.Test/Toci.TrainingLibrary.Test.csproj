@@ -80,6 +80,7 @@
     <Compile Include="Developers\Sito\Inheritance\SitoInheritanceTests.cs" />
     <Compile Include="Developers\Sito\Polimorphism\SitoPolimorphismTest.cs" />
     <Compile Include="Developers\Vernathic\Inheritance\VInheritanceTest.cs" />
+    <Compile Include="Developers\Vernathic\VCoffeeMachineTest.cs" />
     <Compile Include="Developers\Warrior\Db\DbOperationsTest.cs" />
     <Compile Include="Developers\Warrior\WarriorFileParserTest.cs" />
     <Compile Include="Developers\Warrior\WarriorMgSolutionTest.cs" />
