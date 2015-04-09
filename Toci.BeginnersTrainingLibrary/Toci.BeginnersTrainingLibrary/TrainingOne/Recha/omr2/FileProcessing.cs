@@ -2,33 +2,42 @@
 {
     public abstract class FileProcessing<TPackFormat, TFileFormat>
         where TPackFormat : PackFormats
-        where TFileFormat : FilesFormat
+        where TFileFormat : IFilesFormat
     {
         private TPackFormat _packFormat;
         private TFileFormat _fileFormat;
+        private string _urlPath;
         private string _filePath;
         private string _extractPath;
+        private bool _download;
 
-        protected FileProcessing(string filePath, TPackFormat packFormat, TFileFormat fileFormat)
+        protected FileProcessing(string path, TPackFormat packFormat, TFileFormat fileFormat, bool download)
         {
             _packFormat = packFormat;
             _fileFormat = fileFormat;
-            _filePath = filePath;
+            _download = download;
+            if (_download) _urlPath = path;
+            else _filePath = path;
         }
 
-        public string DownloadPack(string downloadPath)
+        public void DownloadPack(string downloadPath)
         {
-            return _packFormat.DownloadPack(_filePath, downloadPath); //url, download path
+            _filePath = _packFormat.DownloadPack(_urlPath, downloadPath);
         }
 
-        public string UnpackFiles(string extractPath)
+        public void UnpackFiles(string extractPath)
         {
-            return _packFormat.Unpack(_filePath, extractPath); //pack path, extract path
+            _extractPath = _packFormat.Unpack(_filePath, extractPath);
         }
 
-        public virtual void ProcessingOnExtractedFiles()
+        public virtual void ReadFiles()
         {
-            _fileFormat.FileProcessing(_extractPath);
+            var fileNamesList = _packFormat.GetFileNames();
+
+            foreach (var fileName in fileNamesList)
+            {
+                _fileFormat.FileProcessing(_extractPath + fileName);
+            }
         }
     }
 }
