@@ -53,12 +53,15 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Common\Db\DbTests.cs" />
+    <Compile Include="Developers\Chmura\omrTest\omrCloudTest.cs" />
     <Compile Include="Developers\Chmura\TrainingFour\ChmuraDepartureVariousTests.cs" />
     <Compile Include="Developers\Chmura\TrainingThree\ChmuraTrainingThreeTest.cs" />
     <Compile Include="Developers\Domi\DomiFileParserTest.cs" />
+    <Compile Include="Developers\Duch\DuchOmrTest\DuchRiderFactoryTest.cs" />
     <Compile Include="Developers\Dysq\DysqFileParserTest.cs" />
     <Compile Include="Developers\Dysq\Exceptions\DysqExceptionTest.cs" />
     <Compile Include="Developers\Dysq\Inheritance\DysqTest.cs" />
+    <Compile Include="Developers\Dysq\omr\DysqOmrTest.cs" />
     <Compile Include="Developers\Hipek\HipekFileParserTest.cs" />
     <Compile Include="Developers\Koziu\KoziuFileGeneratorTest.cs" />
     <Compile Include="Developers\Koziu\KoziuStringDictionaryTest.cs" />
@@ -66,11 +69,13 @@
     <Compile Include="Developers\Mg\Inheritance\MgInheritanceTest.cs" />
     <Compile Include="Developers\Mg\MgLoadFileTest.cs" />
     <Compile Include="Developers\Mg\DbAndParsersTest.cs" />
+    <Compile Include="Developers\Mg\Omr\MgOmrTest.cs" />
     <Compile Include="Developers\Mg\Reflection\WarriorMgControllerReflectionTest.cs" />
     <Compile Include="Developers\Robson\RobsonsShoppingCartTest.cs" />
     <Compile Include="Developers\Mg\MgBasketTest.cs" />
     <Compile Include="Developers\Robson\RobsonsFileParserTest.cs" />
     <Compile Include="Developers\Robson\RobsonsInheritanceTest.cs" />
+    <Compile Include="Developers\Robson\RobsonsCarTest.cs" />
     <Compile Include="Developers\Rs\RsDictionaryTests\RsDictionaryTest.cs" />
     <Compile Include="Developers\Rs\RsDictionaryTests\RsExtensionMethodsTest.cs" />
     <Compile Include="Developers\Rs\RsDictionaryTests\RsHashtableTest.cs" />

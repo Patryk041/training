@@ -4,11 +4,11 @@ using System.IO;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingOne.Recha.omr
 {
-    public static class IO
+    public class Io
     {
-        public static void Save(List<string> newClass)
+        public virtual void Save(List<string> newClass, string fileName)
         {
-            TextWriter tw = new StreamWriter("class.cs");
+            TextWriter tw = new StreamWriter(fileName);
 
             foreach (var line in newClass)
             {
