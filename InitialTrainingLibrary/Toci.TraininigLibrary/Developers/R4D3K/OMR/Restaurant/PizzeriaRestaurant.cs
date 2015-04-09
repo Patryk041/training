@@ -7,7 +7,7 @@ using Toci.TraininigLibrary.Developers.R4D3K.OMR.Interfaces;
 
 namespace Toci.TraininigLibrary.Developers.R4D3K.OMR.Restaurant
 {
-    class PizzeriaRestaurant : Restaurant
+    public class PizzeriaRestaurant : Restaurant
     {
         public PizzeriaRestaurant(string country, string city, string street, int number, string name, List<IService> serList, List<IEmployee> empList, List<IRoom> roomlist) 
             : base(country,city,street,number,name,serList,empList,roomlist)
