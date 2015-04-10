@@ -41,5 +41,9 @@ namespace Toci.TraininigLibrary.Developers.R4D3K.OMR.Restaurant
         {
             return "DoOrder";
         }
+        public KindOfResteurant GetKind()
+        {
+            return KindRestaurant;
+        }
     }
 }

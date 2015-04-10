@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -103,10 +104,10 @@
     <Compile Include="TrainingOne\Recha\DateValidator\Year.cs" />
     <Compile Include="TrainingOne\Recha\omr2\BmpFormat.cs" />
     <Compile Include="TrainingOne\Recha\omr2\FileProcessing.cs" />
-    <Compile Include="TrainingOne\Recha\omr2\FilesFormat.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\IFilesFormat.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\IBmpFormat.cs" />
     <Compile Include="TrainingOne\Recha\omr2\PacksFormat.cs" />
     <Compile Include="TrainingOne\Recha\omr2\RarFormat.cs" />
-    <Compile Include="TrainingOne\Recha\omr2\ZipFormat.cs" />
     <Compile Include="TrainingOne\Recha\omr\Io.cs" />
     <Compile Include="TrainingOne\Recha\omr\Parser.cs" />
     <Compile Include="TrainingOne\Recha\omr\Properties.cs" />
@@ -180,6 +181,12 @@
     <Compile Include="TrainingTwo\Matwie\TransferFileParserFactory.cs" />
     <Compile Include="TrainingTwo\Matwie\MatwieTransfers.cs" />
     <Compile Include="TrainingTwo\Oil.cs" />
+    <Compile Include="TrainingTwo\Santi\Extensions\StringExtensions.cs" />
+    <Compile Include="TrainingTwo\Santi\SantiStringHelper.cs" />
+    <Compile Include="TrainingTwo\Santi\SantiTransferFileParserFactory.cs" />
+    <Compile Include="TrainingTwo\Santi\SantiTransferFileParserING.cs" />
+    <Compile Include="TrainingTwo\Santi\SantiTransferFileParserMultibank.cs" />
+    <Compile Include="TrainingTwo\Santi\SantiTransfers.cs" />
     <Compile Include="TrainingTwo\Streams\RandomGenericFileParser.cs" />
     <Compile Include="TrainingTwo\Streams\TranfersAggregator.cs" />
     <Compile Include="TrainingTwo\Streams\TransferEntity.cs" />

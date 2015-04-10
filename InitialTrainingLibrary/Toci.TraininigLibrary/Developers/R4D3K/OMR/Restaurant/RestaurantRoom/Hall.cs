@@ -7,7 +7,7 @@ using Toci.TraininigLibrary.Developers.R4D3K.OMR.Abstract_Class;
 
 namespace Toci.TraininigLibrary.Developers.R4D3K.OMR.Restaurant.RestaurantRoom
 {
-    class Hall : RoomBase
+    public class Hall : RoomBase
     {
     }
 }

@@ -302,6 +302,7 @@
     <Compile Include="Developers\R4D3K\OMR\Restaurant\RestaurantRoom\Magazine.cs" />
     <Compile Include="Developers\R4D3K\OMR\Service\KindOfService.cs" />
     <Compile Include="Developers\R4D3K\OMR\Service\Service.cs" />
+    <Compile Include="Developers\R4D3K\OMR\Service\ServiceKatering.cs" />
     <Compile Include="Developers\Robson\OMR\BaseClasses\Vehicle.cs" />
     <Compile Include="Developers\Robson\OMR\CarComponents\Airconditioner.cs" />
     <Compile Include="Developers\Robson\OMR\CarComponents\Radio.cs" />

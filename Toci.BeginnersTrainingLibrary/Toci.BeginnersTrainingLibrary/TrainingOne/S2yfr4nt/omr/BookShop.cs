@@ -22,12 +22,12 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.S2yfr4nt.omr
             fileStream = new FileStream(path, FileMode.Truncate);
             StreamWriter streamWriter = new StreamWriter(fileStream);
 
-            string[] feature = bookShopFeatures.BillInformation();
+            List<string> features = bookShopFeatures.BillInformation();
 
             streamWriter.WriteLine(bookShopName);
-            for (int i = 0; i < feature.Length; i++)
+            foreach (var item in features)
             {
-                streamWriter.WriteLine(feature[i]);
+                streamWriter.WriteLine(item);
             }
 
             streamWriter.Close();

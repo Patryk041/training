@@ -14,9 +14,9 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.S2yfr4nt.omr
         protected double price;
         protected int pieces;
 
-        public abstract string[] GetInformation();
+        public abstract List<string> GetInformation();
         public abstract void GetInformation(string path);
-        public abstract string[] BillInformation();
+        public abstract List<string> BillInformation();
 
 
     }

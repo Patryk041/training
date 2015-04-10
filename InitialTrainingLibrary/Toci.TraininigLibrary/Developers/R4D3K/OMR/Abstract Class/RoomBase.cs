@@ -7,7 +7,7 @@ using Toci.TraininigLibrary.Developers.R4D3K.OMR.Interfaces;
 
 namespace Toci.TraininigLibrary.Developers.R4D3K.OMR.Abstract_Class
 {
-    class RoomBase : IRoom
+    public class RoomBase : IRoom
     {
 
     }

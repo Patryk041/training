@@ -24,7 +24,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.S2yfr4nt.omr
             pieces = _pieces;
         }
 
-        public override string[] GetInformation()
+        public override List<string> GetInformation()
         {
             throw new NotImplementedException();
         }
@@ -34,9 +34,9 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.S2yfr4nt.omr
             throw new NotImplementedException();
         }
 
-        public override string[] BillInformation()
+        public override List<string> BillInformation()
         {
-            return new string[] { author, title, (price * pieces).ToString() }; 
+            return new List<string> { author, title, (price * pieces).ToString() }; 
         }
     }
 }

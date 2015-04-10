@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Toci.TraininigLibrary.Developers.R4D3K.OMR.Employee.Employees
 {
-    class Barman : Employee
+    public class Barman : Employee
     {
         public Barman(int id, string fname, string lname) : base(id, fname, lname)
         {
