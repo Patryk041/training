@@ -19,6 +19,7 @@
     <IISExpressSSLPort />
     <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <IISExpressAnonymousAuthentication />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -172,7 +173,11 @@
     <Compile Include="Areas\Mg\Models\MgFindOfferModel.cs" />
     <Compile Include="Areas\Mg\Models\MgOfferTypeEnum.cs" />
     <Compile Include="Areas\Soltys\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Soltys\Controllers\SearchController.cs" />
     <Compile Include="Areas\Soltys\Controllers\SubscriptionsController.cs" />
+    <Compile Include="Areas\Soltys\Models\OfferTypeEnum.cs" />
+    <Compile Include="Areas\Soltys\Models\PropertyTypeEnum.cs" />
+    <Compile Include="Areas\Soltys\Models\SearchFormModel.cs" />
     <Compile Include="Areas\Soltys\SoltysAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -305,6 +310,8 @@
     <Content Include="Areas\Soltys\Views\Home\Index.cshtml" />
     <Content Include="Areas\Soltys\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Soltys\Views\Subscriptions\Index.cshtml" />
+    <Content Include="Areas\Soltys\Views\Shared\_MainMenuPartial.cshtml" />
+    <Content Include="Areas\Soltys\Views\Search\SearchPartial.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -365,16 +372,14 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Warrior\Index.cshtml" />
     <Content Include="Views\Shared\WarriorDepartures\WarriorDepartures.cshtml" />
+    <Content Include="Views\Home\JavascriptEvents.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Dysq\Content\image\" />
-    <Folder Include="Areas\Dysq\Models\" />
-    <Folder Include="Areas\Hipek\Models\" />
-    <Folder Include="Areas\Hipek\Views\HomeHipek\" />
     <Folder Include="Areas\Domi\Controllers\" />
     <Folder Include="Areas\Domi\Models\" />
-    <Folder Include="Areas\Soltys\Models\" />
+    <Folder Include="Areas\Hipek\Models\" />
+    <Folder Include="Areas\Hipek\Views\HomeHipek\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

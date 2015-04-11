@@ -8,6 +8,6 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo
 {
     class Clutch
     {
-        protected Engine engine;
+        //protected Engine engine;
     }
 }

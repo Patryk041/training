@@ -8,27 +8,25 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.denio.DateValidator
 {
     public class Year
     {
-        private int liczba;
+        
         private int year;
+        private const int MinimumYear = 1900;
+        private const int MaximumYear = 2100;
 
-        public int Przestepny(int y)
+        public bool Przestepny(int y)
         {
             if ((y % 4 == 0) && (y % 100 != 0) || (y % 400 == 0))
             {
-                liczba = 29;
-                return liczba;
+                
+                return true;
             }
-            else
-            {
-                liczba = 28;
-                return liczba;
-            }
+            return false;
         }
 
         public bool ValidYear(int y)
         {
             year = y;
-            return year >= 1900 && year < 2100;
+            return year >= MinimumYear && year < MaximumYear;
         }
     }
 }

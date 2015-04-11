@@ -2,16 +2,11 @@
 
 namespace InitialTrainingLibrary.warrior.conflict
 {
-    class ConflictType : ISourceTreeConflictType
+    public static class ConflictType //: ISourceTreeConflictType
     {
-        public bool IsConflict()
+        public static void test()
         {
-            return true;
-        }
-
-        public string GetName()
-        {
-            throw new System.NotImplementedException();
+            //var test1 = new ConflictType();
         }
     }
 }

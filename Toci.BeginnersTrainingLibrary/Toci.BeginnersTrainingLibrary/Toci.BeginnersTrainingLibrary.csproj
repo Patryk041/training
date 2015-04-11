@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,7 +42,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrainingOne\Delegates\DelegatesShowdown.cs" />
-    <Compile Include="TrainingOne\denio\DateValidator\DateValidator.cs" />
+    <Compile Include="TrainingOne\denio\DateValidator\DenioDateValidator.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\Day.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\Month.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\Year.cs" />
@@ -59,6 +60,13 @@
     <Compile Include="TrainingOne\Dysq\Helper\SportsmanSkillValidator.cs" />
     <Compile Include="TrainingOne\Dysq\SportsmanSkill.cs" />
     <Compile Include="TrainingOne\Dysq\VolleyballPlayer.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\ErleyManipulateDayHandle.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\ErleyDateEntity.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\ErleyDateValidator.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\ErleyManipulateMonthHandle.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\ErleyManipulateYearHandle.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\IErleyChor.cs" />
+    <Compile Include="TrainingOne\Erley\ErleyDateValidator\IErleyDateEntity.cs" />
     <Compile Include="TrainingOne\Excercise\IDateValidator.cs" />
     <Compile Include="TrainingOne\Excercise\ITextOperationsSets.cs" />
     <Compile Include="TrainingOne\Factory\CarFactory.cs" />
@@ -73,18 +81,47 @@
     <Compile Include="TrainingOne\Interfaces\IHuman.cs" />
     <Compile Include="TrainingOne\Interfaces\ISportSkill.cs" />
     <Compile Include="TrainingOne\Interfaces\ISportsMan.cs" />
-    <Compile Include="TrainingOne\Kielich\Day.cs" />
-    <Compile Include="TrainingOne\Kielich\KielichDateValidator.cs" />
-    <Compile Include="TrainingOne\Kielich\Month.cs" />
-    <Compile Include="TrainingOne\Kielich\Validator.cs" />
-    <Compile Include="TrainingOne\Kielich\Year.cs" />
+    <Compile Include="TrainingOne\Kielich\DateValidator\Day.cs" />
+    <Compile Include="TrainingOne\Kielich\DateValidator\KielichDateValidator.cs" />
+    <Compile Include="TrainingOne\Kielich\DateValidator\Month.cs" />
+    <Compile Include="TrainingOne\Kielich\DateValidator\Validator.cs" />
+    <Compile Include="TrainingOne\Kielich\DateValidator\Year.cs" />
+    <Compile Include="TrainingOne\Kielich\Omr\Battery.cs" />
+    <Compile Include="TrainingOne\Kielich\Omr\Computer.cs" />
+    <Compile Include="TrainingOne\Kielich\Omr\Device.cs" />
+    <Compile Include="TrainingOne\Kielich\Omr\Effector.cs" />
+    <Compile Include="TrainingOne\Kielich\Omr\ElectricEngine.cs" />
+    <Compile Include="TrainingOne\Kielich\Omr\Engine.cs" />
+    <Compile Include="TrainingOne\Kielich\Omr\Machine.cs" />
+    <Compile Include="TrainingOne\Kielich\Omr\Power.cs" />
+    <Compile Include="TrainingOne\Kielich\Omr\Robot.cs" />
+    <Compile Include="TrainingOne\Kielich\Omr\Sensor.cs" />
     <Compile Include="TrainingOne\ListsOfItems\StringList.cs" />
     <Compile Include="TrainingOne\ListsOfItems\TestGeneric.cs" />
+    <Compile Include="TrainingOne\Matwie\DateValidator\DayValidator.cs" />
+    <Compile Include="TrainingOne\Matwie\DateValidator\MatwieDateValidator.cs" />
+    <Compile Include="TrainingOne\Matwie\DateValidator\MonthValidator.cs" />
+    <Compile Include="TrainingOne\Matwie\TextUtils\Anagrams.cs" />
+    <Compile Include="TrainingOne\Matwie\TextUtils\Expressions.cs" />
+    <Compile Include="TrainingOne\Matwie\TextUtils\MatwieTextUtils.cs" />
+    <Compile Include="TrainingOne\Matwie\TextUtils\Palindroms.cs" />
+    <Compile Include="TrainingOne\Matwie\DateValidator\YearValidator.cs" />
+    <Compile Include="TrainingOne\Matwie\TextUtils\Wildcards.cs" />
     <Compile Include="TrainingOne\President.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\DateValidate.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\Day.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\Month.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\Year.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\BmpFormat.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\FileProcessing.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\IFilesFormat.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\IBmpFormat.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\PacksFormat.cs" />
+    <Compile Include="TrainingOne\Recha\omr2\RarFormat.cs" />
+    <Compile Include="TrainingOne\Recha\omr\Io.cs" />
+    <Compile Include="TrainingOne\Recha\omr\Parser.cs" />
+    <Compile Include="TrainingOne\Recha\omr\Properties.cs" />
+    <Compile Include="TrainingOne\Recha\omr\Generator.cs" />
     <Compile Include="TrainingOne\Recha\TextOperations\Anagram.cs" />
     <Compile Include="TrainingOne\Recha\TextOperations\Expression.cs" />
     <Compile Include="TrainingOne\Recha\TextOperations\Palindrom.cs" />
@@ -97,6 +134,18 @@
     <Compile Include="TrainingOne\ReferenceTypes\ManipulateNickHandle.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\ManipulateSkillHandle.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\RandomEntity.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntDateValidator.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntDayValidation.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntMonthValidation.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntYearValidation.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\omr\AudioBook.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\omr\Book.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\omr\BookShop.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\omr\BookShopFeatures.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\omr\NewsPaper.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\Text\S2yfr4ntFilterSets.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\Text\S2yfr4ntTextOpertionsSets.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\Text\S2yfr4ntTextUtils.cs" />
     <Compile Include="TrainingOne\SocialMediaPeople.cs" />
     <Compile Include="TrainingOne\Warrior\DaysValidation.cs" />
     <Compile Include="TrainingOne\Warrior\FilterSets.cs" />
@@ -112,6 +161,16 @@
     <Compile Include="TrainingOne\Wiosna\DataValidator\WiosnaInterfaces\IMonthValidation.cs" />
     <Compile Include="TrainingOne\Wiosna\DataValidator\WiosnaInterfaces\IYearValidation.cs" />
     <Compile Include="TrainingOne\Wiosna\DataValidator\YearValidation.cs" />
+    <Compile Include="TrainingOne\Zielu\DateValidator\AllowedDays.cs" />
+    <Compile Include="TrainingOne\Zielu\DateValidator\ZieluDateValidator.cs" />
+    <Compile Include="TrainingOne\Zielu\DateValidator\ZieluDayValidator.cs" />
+    <Compile Include="TrainingOne\Zielu\DateValidator\ZieluMonthValidator.cs" />
+    <Compile Include="TrainingOne\Zielu\DateValidator\ZieluYearValidator.cs" />
+    <Compile Include="TrainingOne\Zielu\TextValidator\ZieluAnagramValidation.cs" />
+    <Compile Include="TrainingOne\Zielu\TextValidator\ZieluPalindromValidation.cs" />
+    <Compile Include="TrainingOne\Zielu\TextValidator\ZieluTextValidation.cs" />
+    <Compile Include="TrainingOne\Zielu\TextValidator\ZieluWildcardValidation.cs" />
+    <Compile Include="TrainingOne\Zielu\TextValidator\ZieluTexts.cs" />
     <Compile Include="TrainingOne\Zly\DateValidator\DayValidation.cs" />
     <Compile Include="TrainingOne\Zly\DateValidator\MonthValidation.cs" />
     <Compile Include="TrainingOne\Zly\DateValidator\YearValidation.cs" />
@@ -127,7 +186,17 @@
     <Compile Include="TrainingTwo\FuelInjector.cs" />
     <Compile Include="TrainingTwo\Lambdas\DelegatesShowdown.cs" />
     <Compile Include="TrainingTwo\Linq\LinqShowdown.cs" />
+    <Compile Include="TrainingTwo\Matwie\IngTransferFileParser.cs" />
+    <Compile Include="TrainingTwo\Matwie\MultibankTransferFileParser.cs" />
+    <Compile Include="TrainingTwo\Matwie\TransferFileParserFactory.cs" />
+    <Compile Include="TrainingTwo\Matwie\MatwieTransfers.cs" />
     <Compile Include="TrainingTwo\Oil.cs" />
+    <Compile Include="TrainingTwo\Santi\Extensions\StringExtensions.cs" />
+    <Compile Include="TrainingTwo\Santi\SantiStringHelper.cs" />
+    <Compile Include="TrainingTwo\Santi\SantiTransferFileParserFactory.cs" />
+    <Compile Include="TrainingTwo\Santi\SantiTransferFileParserING.cs" />
+    <Compile Include="TrainingTwo\Santi\SantiTransferFileParserMultibank.cs" />
+    <Compile Include="TrainingTwo\Santi\SantiTransfers.cs" />
     <Compile Include="TrainingTwo\Streams\RandomGenericFileParser.cs" />
     <Compile Include="TrainingTwo\Streams\TranfersAggregator.cs" />
     <Compile Include="TrainingTwo\Streams\TransferEntity.cs" />
@@ -145,6 +214,11 @@
     <Content Include="TrainingTwo\data\multibank.txt" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
