@@ -45,6 +45,16 @@
     <Compile Include="TrainingOne\denio\DateValidator\Day.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\Month.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\Year.cs" />
+    <Compile Include="TrainingOne\Doktor\DateValidator\DayValidator.cs" />
+    <Compile Include="TrainingOne\Doktor\DateValidator\DoktorDateValidator.cs" />
+    <Compile Include="TrainingOne\Doktor\DateValidator\Interfaces\IDayValidator.cs" />
+    <Compile Include="TrainingOne\Doktor\DateValidator\Interfaces\IMonthValid.cs" />
+    <Compile Include="TrainingOne\Doktor\DateValidator\Interfaces\IMonthValidator.cs" />
+    <Compile Include="TrainingOne\Doktor\DateValidator\Interfaces\IYearValidator.cs" />
+    <Compile Include="TrainingOne\Doktor\DateValidator\MonthList.cs" />
+    <Compile Include="TrainingOne\Doktor\DateValidator\MonthValid.cs" />
+    <Compile Include="TrainingOne\Doktor\DateValidator\MonthValidator.cs" />
+    <Compile Include="TrainingOne\Doktor\DateValidator\YearValidator.cs" />
     <Compile Include="TrainingOne\Dysq\FootballTrick.cs" />
     <Compile Include="TrainingOne\Dysq\Helper\SportsmanSkillValidator.cs" />
     <Compile Include="TrainingOne\Dysq\SportsmanSkill.cs" />

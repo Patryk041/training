@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="TrainingOne\CorRefTypesTest.cs" />
     <Compile Include="TrainingOne\denio\TestDate.cs" />
+    <Compile Include="TrainingOne\DoktorUnitTests\DoktorDateValidatorTest.cs" />
     <Compile Include="TrainingOne\EnumerableTestWarrior.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\DateTest.cs" />
     <Compile Include="TrainingOne\Recha\TextOperations\TextOperationsTest.cs" />
