@@ -44,5 +44,55 @@
 
         @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required: false)
+        
+        
+        <script type="text/javascript">
+            function wywolanie() {
+                console.log('teraz dzioala');
+            }
+
+            function TakToSieRobi() {
+                var input = document.getElementById('id_tresc');
+                //var stos = input.onblur;
+
+                input.onblur(function (e) {
+                  //  stos();
+                    console.log('teraz tez dziala', e);
+                });
+
+                // onblur="wywolanie();" onmouseover="console.log('cokolwiek 2');"
+
+
+                $("#id_tresc").on('change', function (e) { console.log('change in effect', e); });
+                $("#id_tresc").on('blur', function (e) { wywolanie(); });
+                $("#id_tresc").on('mouseover', function (e) { console.log('cokolwiek mouseover 2'); });
+            }
+
+            //setTimeout(TakToSieRobi, 1000);
+
+            $(document).ready(function () {
+                console.log('1 ready');
+                TakToSieRobi();
+            });
+
+            $(document).ready(function () {
+                console.log('2 ready');
+            });
+
+
+            function getAllFields(id) {
+                var field = document.getElementById(id);
+
+                for (var item in field) {
+                    if (item.substr(0, 2) === 'on' && field[item] != null) {
+
+                        //field.onblur onchange
+
+                        console.log(' event ' + item, field[item]);
+                    }
+                }
+            }
+
+</script>
     </body>
 </html>

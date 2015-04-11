@@ -3,19 +3,24 @@ using System.Collections.Generic;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingOne.Recha.omr2
 {
-    public class BmpFormat : FilesFormat
+    public class BmpFormat : IFilesFormat
     {
-        public override List<string> SetFileNames()
+        public List<string> SetFileNames()
         {
             throw new NotImplementedException();
         }
 
-        public override void OpenFile(string extractPath)
+        public void OpenFile(string extractPath)
         {
             throw new System.NotImplementedException();
         }
 
-        public override void SaveFile(string filePath, string fileName)
+        public void SaveFile(string filePath, string fileName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void FileProcessing(string filePath)
         {
             throw new NotImplementedException();
         }

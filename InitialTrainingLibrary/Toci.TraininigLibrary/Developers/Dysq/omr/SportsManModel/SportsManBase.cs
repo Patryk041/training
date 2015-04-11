@@ -14,7 +14,8 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr.SportsManModel
         protected double Weight { get; set; }
        // public string SkillName { get; set; }
 
-        protected SportsManBase(int age, string name, string surname, double height, double weight, int agi, int str, int exp)
+        protected SportsManBase(
+            int age, string name, string surname, double height, double weight, int agi, int str, int exp)
         {
 
         }

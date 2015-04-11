@@ -2,7 +2,7 @@
 {
     public abstract class FileProcessing<TPackFormat, TFileFormat>
         where TPackFormat : PackFormats
-        where TFileFormat : FilesFormat
+        where TFileFormat : IFilesFormat
     {
         private TPackFormat _packFormat;
         private TFileFormat _fileFormat;

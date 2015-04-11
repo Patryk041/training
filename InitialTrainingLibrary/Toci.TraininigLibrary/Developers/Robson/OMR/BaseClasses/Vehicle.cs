@@ -17,7 +17,11 @@ namespace Toci.TraininigLibrary.Developers.Robson.OMR.BaseClasses
 
         public abstract void SpeedUP(int value);
         public abstract void SlowDown(int value);
-        public abstract void StartEngine();
+
+        public virtual void StartEngine()
+        {
+            Engine.StartEngine();
+        }
         public abstract void StopEngine();
         public abstract void TurnLightsOn(bool state);
         public abstract void TurnLightsOff(bool state);

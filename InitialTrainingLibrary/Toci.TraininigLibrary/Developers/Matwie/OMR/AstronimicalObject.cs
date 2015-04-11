@@ -4,6 +4,15 @@ namespace Toci.TraininigLibrary.Developers.Matwie.OMR
 {
     abstract class AstronimicalObject
     {
+        protected static double jakisstalyparametr ;
+
+        static AstronimicalObject()
+        {
+            jakisstalyparametr = 1.33;
+
+            ///
+        }
+
         protected string Name;
         protected long Mass;
         protected long Age;
@@ -14,6 +23,7 @@ namespace Toci.TraininigLibrary.Developers.Matwie.OMR
 
         protected AstronimicalObject(string name, long mass, long age, long radius, double velocity)
         {
+            
             Name = name;
             Mass = mass;
             Age = age;
@@ -24,7 +34,7 @@ namespace Toci.TraininigLibrary.Developers.Matwie.OMR
 
         public double GetDensity()
         {
-            return Mass / (1.33 * Math.PI * Math.Pow(Radius, 3));
+            return Mass / (jakisstalyparametr * Math.PI * Math.Pow(Radius, 3));
         }
 
         protected void Rotate(int rotationSpeed)

@@ -5,12 +5,21 @@ using System.Linq;
 using System.Web;
 using System.Web.Helpers;
 using System.Web.Mvc;
+using TrainingFive.Common;
 using TrainingFive.Models;
 
 namespace TrainingFive.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult JavascriptEvents(HcModel model)
+        {
+            SessionWrapper.SaveInSession(Session, "mg", new Dictionary<string, string>());
+            //Session["mg"] = new Dictionary<string, string>();
+
+            return View();
+        }
+
         [ActionName("inaczej")]
         public ActionResult Index(HcModel model)
         {
