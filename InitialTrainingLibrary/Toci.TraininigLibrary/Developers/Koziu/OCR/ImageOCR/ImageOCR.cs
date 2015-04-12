@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 using tessnet2;
 
 
-namespace Toci.TraininigLibrary.Developers.Koziu.ORC.ImageORC
+namespace Toci.TraininigLibrary.Developers.Koziu.OCR.ImageOCR
 {
     public static class ImageOCR
     {
         static string resultText;
+        const string fileName = @"..\..\..\Toci.TraininigLibrary\Developers\Koziu\OCR\img\ex1.jpg";     
         static Bitmap image = new Bitmap(fileName);
-        const string fileName = "C:/Users/Mateusz/Documents/szkolenie/InitialTrainingLibrary/Toci.TraininigLibrary/Developers/Koziu/OCR/img/ex4.png";
         public static void Test()
         {
 
