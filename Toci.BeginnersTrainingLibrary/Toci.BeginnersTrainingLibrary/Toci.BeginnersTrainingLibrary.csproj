@@ -201,6 +201,10 @@
     <Compile Include="TrainingTwo\Streams\TranfersAggregator.cs" />
     <Compile Include="TrainingTwo\Streams\TransferEntity.cs" />
     <Compile Include="TrainingTwo\Streams\TransferFileParser.cs" />
+    <Compile Include="TrainingTwo\Wiosna\WiosnaTransfers.cs" />
+    <Compile Include="TrainingTwo\Wiosna\WiosnaFileParserING.cs" />
+    <Compile Include="TrainingTwo\Wiosna\WiosnaFileParserMultiBank.cs" />
+    <Compile Include="TrainingTwo\Wiosna\WiosnaFileParserFactory.cs" />
     <Compile Include="TrainingTwo\Zielu\Extensions\ZieluStringExtensions.cs" />
     <Compile Include="TrainingTwo\Zielu\ZieluFileAggregator.cs" />
     <Compile Include="TrainingTwo\Zielu\ZieluingTransferFileParser.cs" />

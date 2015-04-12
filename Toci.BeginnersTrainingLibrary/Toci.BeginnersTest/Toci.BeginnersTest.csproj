@@ -71,6 +71,7 @@
     <Compile Include="TrainingTwo\Matwie\UnitTest1.cs" />
     <Compile Include="TrainingTwo\Santi\SantiTestClass.cs" />
     <Compile Include="TrainingTwo\TestLambdas.cs" />
+    <Compile Include="TrainingTwo\Wiosna\WiosnaUnitTest.cs" />
     <Compile Include="TrainingTwo\Zielu\ZieluUnitTest.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
