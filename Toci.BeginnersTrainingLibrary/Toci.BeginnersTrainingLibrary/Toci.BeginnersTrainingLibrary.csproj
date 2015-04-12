@@ -191,6 +191,7 @@
     <Compile Include="TrainingTwo\Matwie\TransferFileParserFactory.cs" />
     <Compile Include="TrainingTwo\Matwie\MatwieTransfers.cs" />
     <Compile Include="TrainingTwo\Oil.cs" />
+    <Compile Include="TrainingTwo\S2yfr4nt\S2yfr4ntTransferFileParserING.cs" />
     <Compile Include="TrainingTwo\Santi\Extensions\StringExtensions.cs" />
     <Compile Include="TrainingTwo\Santi\SantiStringHelper.cs" />
     <Compile Include="TrainingTwo\Santi\SantiTransferFileParserFactory.cs" />
