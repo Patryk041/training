@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Common\Db\DbTests.cs" />
+    <Compile Include="Developers\Chmura\omrTest\omrCloudTest.cs" />
     <Compile Include="Developers\Chmura\TrainingFour\ChmuraDepartureVariousTests.cs" />
     <Compile Include="Developers\Chmura\TrainingThree\ChmuraTrainingThreeTest.cs" />
     <Compile Include="Developers\Domi\DomiFileParserTest.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Developers\Mg\DbAndParsersTest.cs" />
     <Compile Include="Developers\Mg\Omr\MgOmrTest.cs" />
     <Compile Include="Developers\Mg\Reflection\WarriorMgControllerReflectionTest.cs" />
+    <Compile Include="Developers\R4D3K\omr\RestaurantTest.cs" />
     <Compile Include="Developers\Robson\RobsonsShoppingCartTest.cs" />
     <Compile Include="Developers\Mg\MgBasketTest.cs" />
     <Compile Include="Developers\Robson\RobsonsFileParserTest.cs" />
@@ -85,6 +87,7 @@
     <Compile Include="Developers\Sito\Inheritance\SitoInheritanceTests.cs" />
     <Compile Include="Developers\Sito\Polimorphism\SitoPolimorphismTest.cs" />
     <Compile Include="Developers\Vernathic\Inheritance\VInheritanceTest.cs" />
+    <Compile Include="Developers\Vernathic\VCoffeeMachineTest.cs" />
     <Compile Include="Developers\Warrior\Db\DbOperationsTest.cs" />
     <Compile Include="Developers\Warrior\WarriorFileParserTest.cs" />
     <Compile Include="Developers\Warrior\WarriorMgSolutionTest.cs" />

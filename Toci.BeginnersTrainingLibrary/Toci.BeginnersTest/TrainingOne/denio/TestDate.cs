@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.BeginnersTrainingLibrary.TrainingOne.denio.DateValidator;
+using Toci.BeginnersTrainingLibrary.TrainingOne.denio.PalindromAnagramWildcard;
 //using Toci.BeginnersTrainingLibrary.TrainingOne.denio.PalindromAnagramWildcard;
-using Toci.BeginnersTrainingLibrary.TrainingOne.Warrior;
+using TextUtils = Toci.BeginnersTrainingLibrary.TrainingOne.Warrior.TextUtils;
 
 
 namespace Toci.BeginnersTest.TrainingOne.denio
@@ -35,8 +37,8 @@ namespace Toci.BeginnersTest.TrainingOne.denio
         [TestMethod]
         public void denioTestPalindromsSet()
         {
-            FilterSets sets = new FilterSets();
-            var result = sets.GetPalindroms(new[] { "radar", "fdsabhfda", "cyc", "fxafdagdsgsdf", "agga" });
+            denioFilterSets sets = new denioFilterSets();
+            var result = sets.GetPalindroms(new List<string>() { "radar", "fdsabhfda", "cyc", "fxafdagdsgsdf", "agga" });
 
             Assert.AreEqual(result.Length, 3);
         }
@@ -44,10 +46,17 @@ namespace Toci.BeginnersTest.TrainingOne.denio
         [TestMethod]
         public void denioTestAnagram()
         {
-//            TestAnagram test = new TestAnagram();
-//            var result = test.tAnagram();
-//
-//            Assert.AreEqual(result.Length, 2);
+            Anagram test = new Anagram();
+            var result = test.tAnagram("Mother In Law", "The moral win");
+           Assert.AreEqual(result.Length, 2);
+        }
+
+        [TestMethod]
+        public void testWildcard()
+        {
+            Wildcard wild = new Wildcard();
+            var result = wild.GetWildcard("radar", new List<string>() {"radarowo", "radarnia", "vjcaJnxjsuxsj", "radarynka"});
+            Assert.AreEqual(result.Length, 3);
         }
     }
 }
