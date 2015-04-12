@@ -31,7 +31,9 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.denio.PalindromAnagramWildca
 
         public string[] GetWildCardSet(string wildcard)
         {
-            throw new NotImplementedException();
+            Wildcard wild = new Wildcard();
+            var result = wild.GetWildcard("radar",new List<string>() {"radarowo", "radarnia", "vjcaJnxjsuxsj", "radarynka"});
+            return result;
         }
     }
 }

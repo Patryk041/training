@@ -50,6 +50,7 @@
     <Compile Include="TrainingOne\denio\PalindromAnagramWildcard\denioFilterSets.cs" />
     <Compile Include="TrainingOne\denio\PalindromAnagramWildcard\TextOperations.cs" />
     <Compile Include="TrainingOne\denio\PalindromAnagramWildcard\TextUtils.cs" />
+    <Compile Include="TrainingOne\denio\PalindromAnagramWildcard\Wildcard.cs" />
     <Compile Include="TrainingOne\Doktor\DateValidator\DayValidator.cs" />
     <Compile Include="TrainingOne\Doktor\DateValidator\DoktorDateValidator.cs" />
     <Compile Include="TrainingOne\Doktor\DateValidator\Interfaces\IDayValidator.cs" />

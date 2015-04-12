@@ -50,5 +50,13 @@ namespace Toci.BeginnersTest.TrainingOne.denio
             var result = test.tAnagram("Mother In Law", "The moral win");
            Assert.AreEqual(result.Length, 2);
         }
+
+        [TestMethod]
+        public void testWildcard()
+        {
+            Wildcard wild = new Wildcard();
+            var result = wild.GetWildcard("radar", new List<string>() {"radarowo", "radarnia", "vjcaJnxjsuxsj", "radarynka"});
+            Assert.AreEqual(result.Length, 3);
+        }
     }
 }
