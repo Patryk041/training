@@ -64,6 +64,7 @@
     <Compile Include="Developers\Hipek\HipekFileParserTest.cs" />
     <Compile Include="Developers\Koziu\KoziuFileGeneratorTest.cs" />
     <Compile Include="Developers\Koziu\KoziuStringDictionaryTest.cs" />
+    <Compile Include="Developers\Koziu\OCR\ImageOCRTest.cs" />
     <Compile Include="Developers\Koziu\UnitTest1.cs" />
     <Compile Include="Developers\Mg\Inheritance\MgInheritanceTest.cs" />
     <Compile Include="Developers\Mg\MgLoadFileTest.cs" />

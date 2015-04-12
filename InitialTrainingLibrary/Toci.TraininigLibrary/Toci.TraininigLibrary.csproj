@@ -30,20 +30,40 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Interop.TIGERLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\.NET Libaries\ORC\meocrlib100\meocrlib100\Bin\Interop.TIGERLib.dll</HintPath>
+    </Reference>
+    <Reference Include="meocrlib100, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\.NET Libaries\ORC\meocrlib100\meocrlib100\Bin\meocrlib100.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Security">
       <HintPath>..\Libraries\Mono.Security.dll</HintPath>
     </Reference>
     <Reference Include="Npgsql">
       <HintPath>..\Libraries\Npgsql.dll</HintPath>
     </Reference>
+    <Reference Include="Puma.Net">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Puma.NET\Assemblies\Puma.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="rtfl210, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\.NET Libaries\ORC\meocrlib100\meocrlib100\Bin\rtfl210.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="tessnet2_32">
+      <HintPath>..\..\..\.NET Libaries\ORC\tessnet2\Release32\tessnet2_32.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Base\Inheritance\StringDictionary.cs" />
@@ -169,17 +189,19 @@
     <Compile Include="Developers\Koziu\InternetStore\Bike.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuBin.cs" />
     <Compile Include="Developers\Koziu\InternetStore\KoziuBinCollection.cs" />
-    <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />  
+    <Compile Include="Developers\Koziu\InternetStore\KoziuDiscount.cs" />
     <Compile Include="Developers\Koziu\OMR\Bed.cs" />
     <Compile Include="Developers\Koziu\OMR\ClassModules\Bathroom.cs" />
     <Compile Include="Developers\Koziu\OMR\Hotel.cs" />
-    <Compile Include="Developers\Koziu\OMR\Interfaces\IAddress.cs" />           
+    <Compile Include="Developers\Koziu\OMR\Interfaces\IAddress.cs" />
     <Compile Include="Developers\Koziu\OMR\Interfaces\IBed.cs" />
+    <Compile Include="Developers\Koziu\OMR\Interfaces\IClient.cs" />
     <Compile Include="Developers\Koziu\OMR\Interfaces\IContact.cs" />
     <Compile Include="Developers\Koziu\OMR\Interfaces\IHotel.cs" />
     <Compile Include="Developers\Koziu\OMR\Interfaces\IModule.cs" />
     <Compile Include="Developers\Koziu\OMR\Interfaces\IRoom.cs" />
     <Compile Include="Developers\Koziu\OMR\Room.cs" />
+    <Compile Include="Developers\Koziu\OCR\ImageOCR\ImageOCR.cs" />
     <Compile Include="Developers\Koziu\StringDictionary\KoziuStringDictionary.cs" />
     <Compile Include="Developers\Koziu\StringDictionary\ExtensionsString.cs" />
     <Compile Include="Developers\Matwie\OMR\Asteroid.cs" />
@@ -373,6 +395,7 @@
     <Content Include="data\transfer_2015_03_02_987654321_dysq.txt" />
     <Content Include="data\transfer_2015_03_06_232325_mg.txt" />
     <Content Include="Developers\Dysq\DataForTest\transfer_2015_03_02_987654321_dysq.txt" />
+    <Content Include="Developers\Koziu\OCR\img\ex1.jpg" />
     <Content Include="Developers\Mg\Polymorphism\Parsers\TxtData\transfer_2015_03_12_4343_mg.txt" />
     <Content Include="Developers\Mg\Polymorphism\Parsers\XmlData\transfer_2015_03_12_4343_mg.xml" />
     <Content Include="Developers\Robson\RobsonsUniversalFileParser\Data\transfer_2015-03-17_61666662266_Robson.txt" />
