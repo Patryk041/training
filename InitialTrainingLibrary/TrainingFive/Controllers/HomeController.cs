@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Helpers;
 using System.Web.Mvc;
-using TrainingFive.Common;
+//using TrainingFive.Common;
 using TrainingFive.Models;
 
 namespace TrainingFive.Controllers
@@ -14,7 +14,7 @@ namespace TrainingFive.Controllers
     {
         public ActionResult JavascriptEvents(HcModel model)
         {
-            SessionWrapper.SaveInSession(Session, "mg", new Dictionary<string, string>());
+            //SessionWrapper.SaveInSession(Session, "mg", new Dictionary<string, string>());
             //Session["mg"] = new Dictionary<string, string>();
 
             return View();

@@ -68,9 +68,15 @@
     <Compile Include="TrainingOne\ZlyUnitTests\ZlyStringUtilsTest.cs" />
     <Compile Include="TrainingOne\ZlyUnitTests\ZlyDateValidatorTest.cs" />
     <Compile Include="TrainingOne\WarriorHomeworkTest.cs" />
+    <Compile Include="TrainingThree\TplWarrior\WarriorTplXml.cs" />
+    <Compile Include="TrainingThree\WarriorGenerics\GenericsTest.cs" />
+    <Compile Include="TrainingThree\Xml\ParserTest.cs" />
     <Compile Include="TrainingTwo\Matwie\UnitTest1.cs" />
     <Compile Include="TrainingTwo\Santi\SantiTestClass.cs" />
     <Compile Include="TrainingTwo\TestLambdas.cs" />
+    <Compile Include="TrainingTwo\Warrior\FileParsersTest.cs" />
+    <Compile Include="TrainingTwo\Wiosna\WiosnaUnitTest.cs" />
+    <Compile Include="TrainingTwo\Zielu\ZieluUnitTest.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrainingOne\Kielich\DateValidator\Kielich.cs" />
