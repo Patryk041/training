@@ -28,5 +28,10 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Santi
 
 			return AllTransfers;
 		}
+
+	    public override List<string> SearchTransferFiles()
+	    {
+            return ReadTransferFiles();
+	    }
 	}
 }

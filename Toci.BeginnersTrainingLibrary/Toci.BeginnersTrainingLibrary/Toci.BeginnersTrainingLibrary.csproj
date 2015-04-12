@@ -178,6 +178,16 @@
     <Compile Include="TrainingOne\Zly\TextOpeartionsSet\ZlyFilterSets.cs" />
     <Compile Include="TrainingOne\Zly\TextOpeartionsSet\ZlyTextOperationsSets.cs" />
     <Compile Include="TrainingOne\Zly\TextOpeartionsSet\ZlyTextUtils.cs" />
+    <Compile Include="TrainingThree\Generics\AnotherExampleClass.cs" />
+    <Compile Include="TrainingThree\Generics\ExampleClass.cs" />
+    <Compile Include="TrainingThree\Generics\GenericFactory.cs" />
+    <Compile Include="TrainingThree\Generics\IErley.cs" />
+    <Compile Include="TrainingThree\Tpl\TplShowdown.cs" />
+    <Compile Include="TrainingThree\Xml\Entities\Car.cs" />
+    <Compile Include="TrainingThree\Xml\Entities\Colour.cs" />
+    <Compile Include="TrainingThree\Xml\Entities\Engine.cs" />
+    <Compile Include="TrainingThree\Xml\Entities\Garage.cs" />
+    <Compile Include="TrainingThree\Xml\XmlParser.cs" />
     <Compile Include="TrainingTwo\Clutch.cs" />
     <Compile Include="TrainingTwo\common\StringHelper.cs" />
     <Compile Include="TrainingTwo\DieselEngine.cs" />
@@ -219,6 +229,9 @@
     <Compile Include="TrainingOne\Mg\klasa2.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TrainingThree\Xml\data\garage - Copy %2810%29.xml" />
+    <Content Include="TrainingThree\Xml\data\garage - Copy %2811%29.xml" />
+    <Content Include="TrainingThree\Xml\data\garage.xml" />
     <Content Include="TrainingTwo\data\ing.txt" />
     <Content Include="TrainingTwo\data\multibank.txt" />
   </ItemGroup>

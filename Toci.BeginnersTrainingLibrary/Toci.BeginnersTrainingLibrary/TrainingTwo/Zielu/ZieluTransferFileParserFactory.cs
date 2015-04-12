@@ -14,7 +14,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Zielu
             {Ing,() => new ZieluingTransferFileParser()},
             {Multibank, () => new ZielumultibankTransferFileParser()}
         };
-        public TransferFileParser GetTransferFileParser(string file)
+        public static TransferFileParser GetTransferFileParser(string file)
         {
             return BankDictionary.ContainsKey(file) ? BankDictionary[file]() : null;
         }

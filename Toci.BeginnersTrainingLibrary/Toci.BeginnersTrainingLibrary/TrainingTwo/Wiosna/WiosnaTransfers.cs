@@ -26,5 +26,10 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Wiosna
 
             return completeListOftraTransferEntities;
         }
+
+        public override List<string> SearchTransferFiles()
+        {
+            return FilesList();
+        }
     }
 }

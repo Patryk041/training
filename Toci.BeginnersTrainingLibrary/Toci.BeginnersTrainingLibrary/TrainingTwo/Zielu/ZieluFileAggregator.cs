@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Toci.BeginnersTrainingLibrary.TrainingTwo.Streams;
@@ -11,9 +12,27 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Zielu
         private const string FilePath = @"..\..\..\Toci.BeginnersTrainingLibrary\TrainingTwo\data";
         public override List<TransferEntity> GetAllTransfers(List<string> filePathsList)
         {
-            ZieluTransferFileParserFactory bankFactory = new ZieluTransferFileParserFactory();
+            //ZieluTransferFileParserFactory bankFactory = new ZieluTransferFileParserFactory();
             var transfers = new List<TransferEntity>();
-            return filePathsList.Aggregate(transfers, (current, item) => current.Concat(bankFactory.GetTransferFileParser(item.GetFileName()).OpenFile(item)).ToList());
+            //GetAllTransfers(GetFilePath())
+            try
+            {
+                return filePathsList.Aggregate(transfers,
+                    (current, item) =>
+                        current.Concat(
+                            ZieluTransferFileParserFactory.GetTransferFileParser(item.GetFileName()).OpenFile(item))
+                            .ToList());
+            }
+            catch (Exception e)
+            {
+                var test = e;
+                return null;
+            }
+        }
+
+        public override List<string> SearchTransferFiles()
+        {
+            return GetFilePath();
         }
 
         private List<string> GetFilePath()

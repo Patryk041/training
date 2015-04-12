@@ -5,7 +5,7 @@ using Toci.BeginnersTrainingLibrary.TrainingTwo.Zielu.Extensions;
 namespace Toci.BeginnersTest.TrainingTwo.Zielu
 {
     [TestClass]
-    class ZieluUnitTest
+    public class ZieluUnitTest
     {
         [TestMethod]
         public void TestStuffIWrote()
