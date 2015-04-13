@@ -9,6 +9,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Matwie
         {
             //nazwisko; imie; konto; kwota; data; nadawaca;
             var data = StringHelper.GetSeparatedItems("; ", row);
+            //data.Count ==  6 ?
             TransferEntity entity = new TransferEntity();
 
             entity.Surname = data[0];

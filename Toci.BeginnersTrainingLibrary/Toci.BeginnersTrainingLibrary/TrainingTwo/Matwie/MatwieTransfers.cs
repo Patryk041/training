@@ -5,7 +5,7 @@ using Toci.BeginnersTrainingLibrary.TrainingTwo.Streams;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Matwie
 {
-    public sealed class MatwieTransfers : TranfersAggregator
+    public class MatwieTransfers : TranfersAggregator
     {
 
         private List<TransferEntity> _transfers = new List<TransferEntity>();
@@ -15,7 +15,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Matwie
             GetAllTransfers(SearchTransferFiles());    
         }
 
-        public List<string> SearchTransferFiles()
+        public override List<string> SearchTransferFiles()
         {
             return Directory.GetFiles(@"..\..\..\Toci.BeginnersTrainingLibrary\TrainingTwo\data").ToList();
         }
