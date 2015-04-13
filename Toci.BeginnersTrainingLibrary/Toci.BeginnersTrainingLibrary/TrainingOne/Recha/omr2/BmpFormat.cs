@@ -1,23 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Drawing;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingOne.Recha.omr2
 {
-    public class BmpFormat : FilesFormat
+    public class BmpFormat : IFilesFormat, IBmpFormat
     {
-        public override List<string> SetFileNames()
+        public void FileProcessing(string filePath)
         {
-            throw new NotImplementedException();
+            var bmp = OpenFile(filePath);
+            bmp.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            Save(bmp, filePath);
         }
 
-        public override void OpenFile(string extractPath)
+        public Bitmap OpenFile(string filePath)
         {
-            throw new System.NotImplementedException();
+            return new Bitmap(@"D:\aaa.bmp");
         }
 
-        public override void SaveFile(string filePath, string fileName)
+        public void Save(Bitmap bmp, string filePath)
         {
-            throw new NotImplementedException();
+            bmp.Save(@"D:\bbb.bmp", System.Drawing.Imaging.ImageFormat.Bmp);
         }
     }
 }
