@@ -303,6 +303,14 @@
     <Compile Include="Developers\R4D3K\OMR\Service\KindOfService.cs" />
     <Compile Include="Developers\R4D3K\OMR\Service\Service.cs" />
     <Compile Include="Developers\R4D3K\OMR\Service\ServiceKatering.cs" />
+    <Compile Include="Developers\R4D3K\Store\Bin\R4D3KBin.cs" />
+    <Compile Include="Developers\R4D3K\Store\Interfaces\IProduct.cs" />
+    <Compile Include="Developers\R4D3K\Store\ProductBase\ProductCategory.cs" />
+    <Compile Include="Developers\R4D3K\Store\Products\Books\Book.cs" />
+    <Compile Include="Developers\R4D3K\Store\Products\Books\KindOfBook.cs" />
+    <Compile Include="Developers\R4D3K\Store\ProductBase\Product.cs" />
+    <Compile Include="Developers\R4D3K\Store\ProductBase\ProductDiscount.cs" />
+    <Compile Include="Developers\R4D3K\Store\Purchases\Purchase.cs" />
     <Compile Include="Developers\Robson\OMR\BaseClasses\Vehicle.cs" />
     <Compile Include="Developers\Robson\OMR\CarComponents\Airconditioner.cs" />
     <Compile Include="Developers\Robson\OMR\CarComponents\Radio.cs" />
@@ -419,6 +427,9 @@
     <Folder Include="Core\" />
     <Folder Include="Developers\Koziu\Departure\DepartureExceptionMessage\" />
     <Folder Include="Developers\Koziu\OMR\InterfaceModules\" />
+    <Folder Include="Developers\R4D3K\Store\Products\Clothes\" />
+    <Folder Include="Developers\R4D3K\Store\Products\Games\" />
+    <Folder Include="Developers\R4D3K\Store\Products\Toys\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
