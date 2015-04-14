@@ -236,7 +236,6 @@
     <Compile Include="Developers\Koziu\OMR\Interfaces\IModule.cs" />
     <Compile Include="Developers\Koziu\OMR\Interfaces\IRoom.cs" />
     <Compile Include="Developers\Koziu\OMR\Room.cs" />
-    <Compile Include="Developers\Koziu\OCR\ImageOCR\ImageOCR.cs" />
     <Compile Include="Developers\Koziu\StringDictionary\KoziuStringDictionary.cs" />
     <Compile Include="Developers\Koziu\StringDictionary\ExtensionsString.cs" />
     <Compile Include="Developers\Matwie\OMR\Asteroid.cs" />
@@ -292,6 +291,9 @@
     <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlEntity.cs" />
     <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlParserLogic.cs" />
     <Compile Include="Developers\Mg\Polymorphism\Parsers\MgXmlTransferParser.cs" />
+    <Compile Include="Developers\R4D3K\Inheritance\Base\R4D3KDictionaryBase.cs" />
+    <Compile Include="Developers\R4D3K\Inheritance\Interfaces\IR4D3KInterface.cs" />
+    <Compile Include="Developers\R4D3K\Inheritance\R4D3KDictionary.cs" />
     <Compile Include="Developers\R4D3K\OMR\Abstract Class\EmployeeBase.cs" />
     <Compile Include="Developers\R4D3K\OMR\Abstract Class\MenuBase.cs" />
     <Compile Include="Developers\R4D3K\OMR\Abstract Class\RestaurantBase.cs" />
@@ -325,14 +327,6 @@
     <Compile Include="Developers\R4D3K\OMR\Service\KindOfService.cs" />
     <Compile Include="Developers\R4D3K\OMR\Service\Service.cs" />
     <Compile Include="Developers\R4D3K\OMR\Service\ServiceKatering.cs" />
-    <Compile Include="Developers\R4D3K\Store\Bin\R4D3KBin.cs" />
-    <Compile Include="Developers\R4D3K\Store\Interfaces\IProduct.cs" />
-    <Compile Include="Developers\R4D3K\Store\ProductBase\ProductCategory.cs" />
-    <Compile Include="Developers\R4D3K\Store\Products\Books\Book.cs" />
-    <Compile Include="Developers\R4D3K\Store\Products\Books\KindOfBook.cs" />
-    <Compile Include="Developers\R4D3K\Store\ProductBase\Product.cs" />
-    <Compile Include="Developers\R4D3K\Store\ProductBase\ProductDiscount.cs" />
-    <Compile Include="Developers\R4D3K\Store\Purchases\Purchase.cs" />
     <Compile Include="Developers\Robson\OMR\BaseClasses\Vehicle.cs" />
     <Compile Include="Developers\Robson\OMR\CarComponents\Airconditioner.cs" />
     <Compile Include="Developers\Robson\OMR\CarComponents\Radio.cs" />
@@ -449,9 +443,6 @@
     <Folder Include="Core\" />
     <Folder Include="Developers\Koziu\Departure\DepartureExceptionMessage\" />
     <Folder Include="Developers\Koziu\OMR\InterfaceModules\" />
-    <Folder Include="Developers\R4D3K\Store\Products\Clothes\" />
-    <Folder Include="Developers\R4D3K\Store\Products\Games\" />
-    <Folder Include="Developers\R4D3K\Store\Products\Toys\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
@@ -478,7 +469,6 @@
     <Content Include="data\transfer_2015_03_02_987654321_dysq.txt" />
     <Content Include="data\transfer_2015_03_06_232325_mg.txt" />
     <Content Include="Developers\Dysq\DataForTest\transfer_2015_03_02_987654321_dysq.txt" />
-    <Content Include="Developers\Koziu\OCR\img\ex1.jpg" />
     <Content Include="Developers\Mg\Polymorphism\Parsers\TxtData\transfer_2015_03_12_4343_mg.txt" />
     <Content Include="Developers\Mg\Polymorphism\Parsers\XmlData\transfer_2015_03_12_4343_mg.xml" />
     <Content Include="Developers\Robson\RobsonsUniversalFileParser\Data\transfer_2015-03-17_61666662266_Robson.txt" />
