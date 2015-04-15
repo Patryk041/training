@@ -12,24 +12,9 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Zielu
         private const string FilePath = @"..\..\..\Toci.BeginnersTrainingLibrary\TrainingTwo\data";
         public override List<TransferEntity> GetAllTransfers(List<string> filePathsList)
         {
-            var transfers = new List<TransferEntity>();
-            try
-            {
-//                return filePathsList.Aggregate(transfers,
-//                    (current, item) =>
-//                        current.Concat(
-//                            ZieluTransferFileParserFactory.GetTransferFileParser(item.GetFileName()).OpenFile(item))
-//                            .ToList());
-                foreach (var item in filePathsList)
-                {
-                   transfers.AddRange(ZieluTransferFileParserFactory.GetTransferFileParser(item.GetFileName()).OpenFile(item));
-                }
+            List<TransferEntity> transfers = new List<TransferEntity>();
+                filePathsList.ForEach(item => transfers.AddRange(ZieluTransferFileParserFactory.GetTransferFileParser(item).OpenFile(item)));
                 return transfers;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
         }
 
         public override List<string> SearchTransferFiles()
