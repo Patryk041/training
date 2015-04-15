@@ -12,37 +12,34 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Zielu
         private const string FilePath = @"..\..\..\Toci.BeginnersTrainingLibrary\TrainingTwo\data";
         public override List<TransferEntity> GetAllTransfers(List<string> filePathsList)
         {
-            //ZieluTransferFileParserFactory bankFactory = new ZieluTransferFileParserFactory();
             var transfers = new List<TransferEntity>();
-            //GetAllTransfers(GetFilePath())
             try
             {
-                return filePathsList.Aggregate(transfers,
-                    (current, item) =>
-                        current.Concat(
-                            ZieluTransferFileParserFactory.GetTransferFileParser(item.GetFileName()).OpenFile(item))
-                            .ToList());
+//                return filePathsList.Aggregate(transfers,
+//                    (current, item) =>
+//                        current.Concat(
+//                            ZieluTransferFileParserFactory.GetTransferFileParser(item.GetFileName()).OpenFile(item))
+//                            .ToList());
+                foreach (var item in filePathsList)
+                {
+                   transfers.AddRange(ZieluTransferFileParserFactory.GetTransferFileParser(item.GetFileName()).OpenFile(item));
+                }
+                return transfers;
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                var test = e;
                 return null;
             }
         }
 
         public override List<string> SearchTransferFiles()
         {
-            return GetFilePath();
-        }
-
-        private List<string> GetFilePath()
-        {
             return Directory.GetFiles(FilePath).ToList();
         }
 
         public List<TransferEntity> ZieluGetAllTransfers()
         {
-            return GetAllTransfers(GetFilePath());
+            return GetAllTransfers(SearchTransferFiles());
         }
     }
 }
