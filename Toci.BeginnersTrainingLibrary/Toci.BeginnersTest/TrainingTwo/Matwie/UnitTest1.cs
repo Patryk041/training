@@ -25,8 +25,8 @@ namespace Toci.BeginnersTest.TrainingTwo.Matwie
         public void TransfersTest()
         {
             MatwieTransfers transfers = new MatwieTransfers();
-            transfers.GetAllTransfers(transfers.SearchTransferFiles());
+            var res = transfers.GetAllTransfers(transfers.SearchTransferFiles());
+            Assert.AreEqual(18, res.Count);
         }
-
     }
 }

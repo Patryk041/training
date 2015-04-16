@@ -7,7 +7,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Matwie.TextUtils
     {
         public Anagrams(string[] potentiallyAnagrams) : base(potentiallyAnagrams)
         {
-
+            
         }
 
         protected override bool MatchToExpression(string word, string pattern)

@@ -18,5 +18,6 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Zielu
         {
             return BankDictionary.ContainsKey(file) ? BankDictionary[file]() : null;
         }
+
     }
 }

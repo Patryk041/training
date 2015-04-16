@@ -7,13 +7,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Matwie
 {
     public class MatwieTransfers : TranfersAggregator
     {
-
         private List<TransferEntity> _transfers = new List<TransferEntity>();
- 
-        public MatwieTransfers()
-        {
-            GetAllTransfers(SearchTransferFiles());    
-        }
 
         public override List<string> SearchTransferFiles()
         {
