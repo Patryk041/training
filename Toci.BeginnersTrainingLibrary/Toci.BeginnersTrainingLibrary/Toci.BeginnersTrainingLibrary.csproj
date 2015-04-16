@@ -225,6 +225,7 @@
     <Compile Include="TrainingTwo\Zielu\ZieluFileAggregator.cs" />
     <Compile Include="TrainingTwo\Zielu\ZieluingTransferFileParser.cs" />
     <Compile Include="TrainingTwo\Zielu\ZielumultibankTransferFileParser.cs" />
+    <Compile Include="TrainingTwo\Zielu\ZieluTransferFileParserDummy.cs" />
     <Compile Include="TrainingTwo\Zielu\ZieluTransferFileParserFactory.cs" />
     <Compile Include="WarriorTest.cs" />
     <Compile Include="TrainingOne\Dysq\Helper\AllowedToPlay.cs" />
