@@ -5,7 +5,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.Zielu
 {
     class ZielumultibankTransferFileParser: TransferFileParser
     {
-        private const string Separator = "/t";
+        private const string Separator = "\t";
         protected override TransferEntity GetRow(string row)
         {
             var transfer = StringHelper.GetSeparatedItems(Separator, row);
