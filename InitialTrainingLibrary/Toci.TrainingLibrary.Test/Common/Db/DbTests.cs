@@ -28,9 +28,9 @@ namespace Toci.TrainingLibrary.Test.Common.Db
         public void DbHandleInsertTransferTest()
         {
 
-            IDbHandle handle = DbHandleFactory.GetHandle(SqlClientKind.MsSql, new BankAccountTransferModel(){Id = 1}, "", "", ".\\SQLEXPRESS", "toci");
+            IDbHandle handle = DbHandleFactory.GetHandle(SqlClientKind.MsSql,  "", "", ".\\SQLEXPRESS", "toci");
             
-            handle.InsertData();
+            handle.InsertData(new BankAccountTransferModel(){Id = 1});
         }
     }
 }

@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Toci.Dal.Models;
+using Toci.Db.Interfaces;
 using Toci.TraininigLibrary.Common.Eacrm;
 using Toci.TraininigLibrary.Developers.Chmura.ChmuraDeparture;
 
@@ -42,6 +45,10 @@ namespace TrainingFive.Models
 
         public string DropDownValue { get; set; }
 
+        public DataSet TransferLists { get; set; }
+
         public ChmuraDepartureList<DepartureEntity> ListOfDepartures { get; set; }
+
+        public List<IModel> TransferList { get; set; } 
     }
 }

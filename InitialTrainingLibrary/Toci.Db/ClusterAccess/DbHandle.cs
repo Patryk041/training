@@ -11,27 +11,25 @@ namespace Toci.Db.ClusterAccess
     public class DbHandle : IDbHandle
     {
         protected IDbClient client;
-        protected IModel model;
         protected IQuery select;
         protected IQuery insert;
         protected IQuery update;
         protected IQuery delete;
 
-        public DbHandle(IDbClient client, IModel model, IQuery select, IQuery insert, IQuery update, IQuery delete)
+        public DbHandle(IDbClient client, IQuery select, IQuery insert, IQuery update, IQuery delete)
         {
             this.client = client;
-            this.model = model;
             this.select = select;
             this.update = update;
             this.delete = delete;
             this.insert = insert;
         }
-        public DataSet GetData()
+        public DataSet GetData(IModel model)
         {
-            throw new NotImplementedException();
+            return client.GetData(select.GetQuery(model));
         }
 
-        public int InsertData()
+        public int InsertData(IModel model)
         {
             return client.SetData(insert.GetQuery(model));
         }

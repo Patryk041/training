@@ -380,7 +380,9 @@
     <Content Include="syf\fileoperations\xmltpl\data\data7.xml" />
     <Content Include="syf\fileoperations\xmltpl\data\data8.xml" />
     <Content Include="syf\fileoperations\xmltpl\data\data9.xml" />
-    <Content Include="syf\fileoperations\xml\data\data.xml" />
+    <Content Include="syf\fileoperations\xml\data\data.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="denio\Interfaces\" />

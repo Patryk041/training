@@ -12,14 +12,14 @@ namespace Toci.Db.ClusterAccess
 {
     public static class DbHandleFactory
     {
-        public static IDbHandle GetHandle(SqlClientKind kind, IModel model, string name, string password, string dbAddress, string dbName)
+        public static IDbHandle GetHandle(SqlClientKind kind, string name, string password, string dbAddress, string dbName)
         {
             switch (kind)
             {
                 case SqlClientKind.MsSql:
-                    return new DbHandle(new MsSqlClient(name, password, dbAddress, dbName), model, new MsSqlSelect(), new MsSqlInsert(), new MsSqlUpdate(), new MsSqlDelete());
+                    return new DbHandle(new MsSqlClient(name, password, dbAddress, dbName), new MsSqlSelect(), new MsSqlInsert(), new MsSqlUpdate(), new MsSqlDelete());
                 case SqlClientKind.PostgreSql:
-                    return new DbHandle(new PostgreSqlClient(name, password, dbAddress, dbName), model, new PostgreSqlSelect(), new PostgreSqlInsert(), new PostgreSqlUpdate(), new PostgreSqlDelete());
+                    return new DbHandle(new PostgreSqlClient(name, password, dbAddress, dbName), new PostgreSqlSelect(), new PostgreSqlInsert(), new PostgreSqlUpdate(), new PostgreSqlDelete());
                 default:
                     return null;
             }

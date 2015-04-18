@@ -4,7 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.SessionState;
+using Toci.Dal.Models;
+using Toci.Db.Clients;
+using Toci.Db.ClusterAccess;
+using Toci.Db.DbVirtualization.PostgreSqlQuery;
+using Toci.TraininigLibrary.Developers.Warrior.Db.Models;
 using TrainingFive.Logic;
+using TrainingFive.Logic.Autorization;
 using TrainingFive.Models;
 
 namespace TrainingFive.Controllers
@@ -17,37 +23,69 @@ namespace TrainingFive.Controllers
         //public WarriorController(IDeparturesLogic deplogic)
 
         [HttpGet]
+        public ActionResult Index()
+        {
+            WarriorModel model = new WarriorModel();
+
+            return View(model);
+        }
+
+        //[CustomAuthorize]
+        [ValidateAntiForgeryToken]
+    [HttpPost]
         //[OutputCache]
         public ActionResult Index(WarriorModel model)
         {
-            
-            //if (Request.IsAjaxRequest())
+            //if (Session != null && Session["power"] != null && (bool)Session["power"])
+           // {
 
-            DeparturesLogic logic = new DeparturesLogic();
+                //DbHandleFactory
+                BankAccountTransferModel transfer = new BankAccountTransferModel();
 
-            if (Session["dysq"] != null)
+                var postgreDbHandle = new DbHandle(new PostgreSqlClient("postgres", "beatka", "localhost", "postgres"),
+                    new PostgreSqlSelect(), new PostgreSqlInsert(), new PostgreSqlUpdate(), new PostgreSqlDelete());
+
+                //if (Request.IsAjaxRequest())
+
+                DeparturesLogic logic = new DeparturesLogic();
+
+                if (Session["dysq"] != null)
+                {
+                    //model = (WarriorModel) Session["dysq"];
+                }
+
+                model.ListOfDepartures = logic.GetDepartures();
+
+            if (model.GhostRider != null && model.GhostRider.Length > 1)
             {
-                model = (WarriorModel)Session["dysq"];
-            }
+                transfer.Nazwa = model.GhostRider;
+                transfer.Id = new Random().Next(100);
+                postgreDbHandle.InsertData(transfer);
 
-            model.ListOfDepartures = logic.GetDepartures();
+                transfer.SetWhere(BankAccountTransferModel.NAZWA);
+                var dataset = postgreDbHandle.GetData(transfer);
+                model.TransferLists = dataset;
+
+                model.TransferList = transfer.GetDataRowsList(dataset);
+            }
+            //}
 
             //return Redirect("http://google.pl");
 
             return View(model);
         }
 
-        [HttpPost]
-        public ActionResult Save(WarriorModel model)
-        {
-            //save
+        //[HttpPost]
+        //public ActionResult Save(WarriorModel model)
+        //{
+        //    //save
 
-            //Response.Headers.Add("Content-Type", "application/x-www-form-urlencoded");
-            //Response.
-            Session.Add("dysq", model);
+        //    //Response.Headers.Add("Content-Type", "application/x-www-form-urlencoded");
+        //    //Response.
+        //    Session.Add("dysq", model);
             
-            return Redirect("index");
-        }
+        //    return Redirect("index");
+        //}
 
         
         public ActionResult SitoiMgToLubia()

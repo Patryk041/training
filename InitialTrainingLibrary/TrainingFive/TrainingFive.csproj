@@ -46,6 +46,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Mvc">
+      <HintPath>..\packages\Mvc2Futures.2.0.50217.0\lib\Microsoft.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcContrib">
+      <HintPath>..\packages\MvcContrib.2.0.95.0\lib\MvcContrib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -192,6 +198,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logic\Autorization\CustomAuthorize.cs" />
     <Compile Include="Logic\DeparturesLogic.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\HcModel.cs" />
@@ -391,6 +398,14 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
+      <Project>{b39d28c8-a026-48bc-8040-95af3986608e}</Project>
+      <Name>Toci.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Db\Toci.Db.csproj">
+      <Project>{e45ea1c2-f40c-4903-94c3-30a885a71d33}</Project>
+      <Name>Toci.Db</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Toci.TraininigLibrary\Toci.TraininigLibrary.csproj">
       <Project>{0ed59b72-4120-4f4e-8684-d3a1d1f6bbf2}</Project>
       <Name>Toci.TraininigLibrary</Name>

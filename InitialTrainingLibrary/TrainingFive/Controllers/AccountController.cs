@@ -35,8 +35,20 @@ namespace TrainingFive.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Login(LoginModel model, string returnUrl)
         {
-            if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
+
+
+            //if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
+            if ((model.UserName == "warrior" || model.UserName == "mg") && model.Password == "beatka")
             {
+                if (model.UserName == "warrior")
+                {
+                    Session["power"] = true;
+                }
+                else
+                {
+                    Session["power"] = false;
+                }
+
                 return RedirectToLocal(returnUrl);
             }
 

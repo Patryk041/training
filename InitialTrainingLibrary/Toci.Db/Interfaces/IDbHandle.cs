@@ -9,9 +9,9 @@ namespace Toci.Db.Interfaces
 {
     public interface IDbHandle
     {
-        DataSet GetData();
+        DataSet GetData(IModel model);
 
-        int InsertData();
+        int InsertData(IModel model);
         int UpdateData();
         int DeleteData();
 

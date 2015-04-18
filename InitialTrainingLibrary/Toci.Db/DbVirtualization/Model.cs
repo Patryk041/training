@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace Toci.Db.DbVirtualization
     public abstract class Model : IModel
     {
         public const string ID = "id";
+
         protected Dictionary<string, IDbField<object>> Fields = new Dictionary<string, IDbField<object>>();
         protected string TableName;
 
@@ -55,5 +57,46 @@ namespace Toci.Db.DbVirtualization
                 Fields.Add(key, new DbField<object>(key, value));
             }
         }
+
+        protected void SetValue<T>(Model model, string key, T value)
+        {
+            if (model.Fields.ContainsKey(key))
+            {
+                model.Fields[key].SetValue(value);
+            }
+            else
+            {
+                model.Fields.Add(key, new DbField<object>(key, value));
+            }
+        }
+
+        public void SetWhere(string columnName)
+        {
+            if (Fields.ContainsKey(columnName))
+            {
+                Fields[columnName].SetWhere(true);
+            }
+        }
+
+        public List<IModel> GetDataRowsList(DataSet table)
+        {
+
+            return table.Tables[0].Rows.OfType<DataRow>().Select(item => GetDataRow(item, table.Tables[0].Columns)).ToList();
+
+        }
+
+        protected virtual IModel GetDataRow(DataRow row, DataColumnCollection columns)
+        {
+            var _model = GetInstance();   
+
+            foreach (DataColumn column in columns)
+            {
+               SetValue((Model)_model,column.ColumnName, row[column.ColumnName]);
+            }
+
+            return _model;
+        }
+
+        protected abstract IModel GetInstance();
     }
 }

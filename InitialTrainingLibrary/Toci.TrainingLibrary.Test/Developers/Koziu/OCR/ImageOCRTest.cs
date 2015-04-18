@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;  
-using Toci.TraininigLibrary.Developers.Koziu.OCR.ImageOCR;
+//using Toci.TraininigLibrary.Developers.Koziu.OCR.ImageOCR;
 
 namespace Toci.TrainingLibrary.Test.Developers.Koziu.OCR
 {
@@ -11,7 +11,7 @@ namespace Toci.TrainingLibrary.Test.Developers.Koziu.OCR
         [TestMethod]
         public void Test()
         {
-            ImageOCR.Test();
+            //ImageOCR.Test();
         }
     }
 }
