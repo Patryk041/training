@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<garage test="I am garage">
+  <car name="Porsche">
+    <engine name="Boxer">
+      <engine>TDI</engine>
+    </engine>
+    <colour name="Metalic">Red</colour>
+  </car>
+  <car name="Ford">
+    <engine name="A1">benzine</engine>
+    <colour name="A2">Blue</colour>
+  </car>
+  <car name="Skoda" />
+</garage>

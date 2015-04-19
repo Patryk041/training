@@ -12,16 +12,17 @@ namespace Toci.BeginnersTrainingLibrary.TrainingThree.Tpl
 {
     public class TplShowdown
     {
+        private static object lockObject = new object();
         //D:\self\trainings\Dropbox\szkolenie\v 2.0\code\Toci.BeginnersTrainingLibrary\Toci.BeginnersTrainingLibrary\TrainingThree\Xml\data\
         protected List<Garage> AllGarages = new List<Garage>();
 
-        public List<Garage> GetAllParsedDealersCars(string path)
+        public List<Garage> GetAllParsedDealersCars(string path, int threadsCount)
         {
             AllGarages.Clear();
 
             var files = Directory.GetFiles(path);
 
-            files.AsParallel().WithDegreeOfParallelism(500).ForAll(GetGarage);
+            files.AsParallel().WithDegreeOfParallelism(threadsCount).ForAll(GetGarage);
 
             return AllGarages;
         }
@@ -34,7 +35,12 @@ namespace Toci.BeginnersTrainingLibrary.TrainingThree.Tpl
 
             // lock // sum // stopwatch
             //Stopwatch
-            AllGarages.Add(result);
+            
+            lock (lockObject)
+            {
+                AllGarages.Add(result);
+            }
+            
         }
     }
 }

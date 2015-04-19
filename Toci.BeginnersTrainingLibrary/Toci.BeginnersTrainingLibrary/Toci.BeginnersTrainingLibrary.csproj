@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\InitialTrainingLibrary\Libraries\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\InitialTrainingLibrary\Libraries\Npgsql.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -41,6 +47,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrainingFour\DataBase\DAL\CarModel.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\Clients\PostgresqlCient.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\Field.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\Handle.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\Model.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\Queries\PostgresqlInsert.cs" />
+    <Compile Include="TrainingFour\DataBase\Interfaces\IClient.cs" />
+    <Compile Include="TrainingFour\DataBase\Interfaces\IField.cs" />
+    <Compile Include="TrainingFour\DataBase\Interfaces\IHandle.cs" />
+    <Compile Include="TrainingFour\DataBase\Interfaces\IInsert.cs" />
+    <Compile Include="TrainingFour\DataBase\Interfaces\IModel.cs" />
+    <Compile Include="TrainingFour\DataBase\Interfaces\IQuery.cs" />
+    <Compile Include="TrainingFour\Disposables\DisposableTester.cs" />
+    <Compile Include="TrainingFour\Disposables\FileFetcher.cs" />
+    <Compile Include="TrainingFour\Disposables\GcRefTypeTest.cs" />
     <Compile Include="TrainingOne\Delegates\DelegatesShowdown.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\DenioDateValidator.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\Day.cs" />
@@ -188,6 +209,7 @@
     <Compile Include="TrainingThree\Generics\GenericFactory.cs" />
     <Compile Include="TrainingThree\Generics\IErley.cs" />
     <Compile Include="TrainingThree\Tpl\TplShowdown.cs" />
+    <Compile Include="TrainingFour\Disposables\DisposableList.cs" />
     <Compile Include="TrainingThree\Xml\Entities\Car.cs" />
     <Compile Include="TrainingThree\Xml\Entities\Colour.cs" />
     <Compile Include="TrainingThree\Xml\Entities\Engine.cs" />
@@ -238,6 +260,7 @@
     <Compile Include="TrainingOne\Mg\klasa2.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TrainingFour\Disposables\Data\Transfer.txt" />
     <Content Include="TrainingThree\Xml\data\garage - Copy %2810%29.xml" />
     <Content Include="TrainingThree\Xml\data\garage - Copy %2811%29.xml" />
     <Content Include="TrainingThree\Xml\data\garage.xml" />

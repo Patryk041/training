@@ -50,6 +50,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="TrainingFour\DB\DbTests.cs" />
+    <Compile Include="TrainingFour\Disposables\DisposablesTest.cs" />
     <Compile Include="TrainingOne\CorRefTypesTest.cs" />
     <Compile Include="TrainingOne\denio\TestDate.cs" />
     <Compile Include="TrainingOne\DoktorUnitTests\DoktorDateValidatorTest.cs" />

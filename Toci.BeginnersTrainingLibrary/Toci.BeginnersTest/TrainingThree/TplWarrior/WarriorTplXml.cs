@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.BeginnersTrainingLibrary.TrainingThree.Tpl;
+using Toci.BeginnersTrainingLibrary.TrainingThree.Xml.Entities;
 
 namespace Toci.BeginnersTest.TrainingThree.TplWarrior
 {
@@ -18,19 +20,28 @@ namespace Toci.BeginnersTest.TrainingThree.TplWarrior
 
             var showdown = new TplShowdown();
 
+            Stopwatch stw = new Stopwatch();
 
-            for (int i = 0; i < 10; i++)
+            stw.Start();
+            //Stopwatch.StartNew();
+            var result = new List<Garage>();
+            //for (int i = 0; i < 10; i++)
             {
 
 
-                var result = showdown.GetAllParsedDealersCars(
-                    @"D:\self\trainings\Dropbox\szkolenie\v 2.0\code\Toci.BeginnersTrainingLibrary\Toci.BeginnersTrainingLibrary\TrainingThree\Xml\data\");
+                result = showdown.GetAllParsedDealersCars(
+                    @"D:\self\trainings\Dropbox\szkolenie\v 2.0\code\Toci.BeginnersTrainingLibrary\Toci.BeginnersTrainingLibrary\TrainingThree\Xml\data\",
+                    4);
 
                 var test = result.Count;
             }
 
+            var timeElapsed = stw.Elapsed;
+            Debug.WriteLine("Zeszlo czasu: {0}", timeElapsed);
+            stw.Stop();
+            Debug.WriteLine("Num of procs: {0}", Environment.ProcessorCount);
 
-            //Assert.AreEqual(result.Count, 14092);
+            Assert.AreEqual(result.Count, 10768);
         }
     }
 }
