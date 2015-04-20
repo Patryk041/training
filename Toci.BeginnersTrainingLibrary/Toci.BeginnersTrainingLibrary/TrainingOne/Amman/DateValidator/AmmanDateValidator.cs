@@ -3,14 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Toci.BeginnersTrainingLibrary.TrainingOne.Amman.DateValidator.Workers;
+using Toci.BeginnersTrainingLibrary.TrainingOne.Excercise;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingOne.Amman.DateValidator
 {
-    public class AmmanDateValidator
+    public class AmmanDateValidator : IDateValidator
     {
-        public void xyz()
+        public bool CheckDate(int year, int month, int day)
         {
-            throw new NotImplementedException();
+            if (MonthValidator.isValid(month) && DayValidator.isValid(day, month, year)) 
+                return true;
+            else
+                return false;
+        }
+
+        public string GetNick()
+        {
+            return "Amman";
         }
     }
 }
