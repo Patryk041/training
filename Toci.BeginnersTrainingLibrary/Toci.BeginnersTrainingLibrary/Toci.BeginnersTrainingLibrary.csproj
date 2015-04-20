@@ -62,6 +62,10 @@
     <Compile Include="TrainingFour\Disposables\DisposableTester.cs" />
     <Compile Include="TrainingFour\Disposables\FileFetcher.cs" />
     <Compile Include="TrainingFour\Disposables\GcRefTypeTest.cs" />
+    <Compile Include="TrainingOne\Amman\DateValidator\AmmanDateValidator.cs" />
+    <Compile Include="TrainingOne\Amman\DateValidator\Workers\DayValidator.cs" />
+    <Compile Include="TrainingOne\Amman\DateValidator\Workers\MonthValidator.cs" />
+    <Compile Include="TrainingOne\Amman\DateValidator\Workers\YearValidator.cs" />
     <Compile Include="TrainingOne\Delegates\DelegatesShowdown.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\DenioDateValidator.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\Day.cs" />
