@@ -62,10 +62,6 @@
     <Compile Include="TrainingFour\Disposables\DisposableTester.cs" />
     <Compile Include="TrainingFour\Disposables\FileFetcher.cs" />
     <Compile Include="TrainingFour\Disposables\GcRefTypeTest.cs" />
-    <Compile Include="TrainingOne\Amman\DateValidator\AmmanDateValidator.cs" />
-    <Compile Include="TrainingOne\Amman\DateValidator\Workers\DayValidator.cs" />
-    <Compile Include="TrainingOne\Amman\DateValidator\Workers\MonthValidator.cs" />
-    <Compile Include="TrainingOne\Amman\DateValidator\Workers\YearValidator.cs" />
     <Compile Include="TrainingOne\Delegates\DelegatesShowdown.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\DenioDateValidator.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\Day.cs" />
@@ -137,8 +133,9 @@
     <Compile Include="TrainingOne\Matwie\TextUtils\Palindroms.cs" />
     <Compile Include="TrainingOne\Matwie\DateValidator\YearValidator.cs" />
     <Compile Include="TrainingOne\Matwie\TextUtils\Wildcards.cs" />
-    <Compile Include="TrainingOne\Perla\WeightLifter\BodyPart.cs" />
-    <Compile Include="TrainingOne\Perla\WeightLifter\Motion.cs" />
+    <Compile Include="TrainingOne\Perla\WeightLifter\IBodyPart.cs" />
+    <Compile Include="TrainingOne\Perla\WeightLifter\IExercise.cs" />
+    <Compile Include="TrainingOne\Perla\WeightLifter\IMotion.cs" />
     <Compile Include="TrainingOne\Perla\WeightLifter\WeightLifter.cs" />
     <Compile Include="TrainingOne\Perla\WeightLifter\Sportsman.cs" />
     <Compile Include="TrainingOne\President.cs" />
