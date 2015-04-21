@@ -137,6 +137,10 @@
     <Compile Include="TrainingOne\Matwie\TextUtils\Palindroms.cs" />
     <Compile Include="TrainingOne\Matwie\DateValidator\YearValidator.cs" />
     <Compile Include="TrainingOne\Matwie\TextUtils\Wildcards.cs" />
+    <Compile Include="TrainingOne\Mes\DateValidator\DayValidator.cs" />
+    <Compile Include="TrainingOne\Mes\DateValidator\MesDateValidator.cs" />
+    <Compile Include="TrainingOne\Mes\DateValidator\MonthValidator.cs" />
+    <Compile Include="TrainingOne\Mes\DateValidator\YearValidator.cs" />
     <Compile Include="TrainingOne\Perla\WeightLifter\IBodyPart.cs" />
     <Compile Include="TrainingOne\Perla\WeightLifter\IExercise.cs" />
     <Compile Include="TrainingOne\Perla\WeightLifter\IMotion.cs" />
@@ -276,7 +280,9 @@
     <Content Include="TrainingTwo\data\ing.txt" />
     <Content Include="TrainingTwo\data\multibank.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="TrainingOne\Mes\TextUtils\" />
+  </ItemGroup>
   <ItemGroup />
   <ItemGroup />
   <ItemGroup>
