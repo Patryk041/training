@@ -29,6 +29,7 @@ namespace Toci.BeginnersTest.TrainingOne.Mes.DateValidator
             Assert.IsTrue(mv.CheckDate(12, 2, 2013));
             Assert.IsTrue(mv.CheckDate(29, 2, 2000));
             Assert.IsFalse(mv.CheckDate(29, 2, 2001));
+            Assert.IsFalse(mv.CheckDate(35, 2, 2001));
         }
     }
 }
