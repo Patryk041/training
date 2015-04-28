@@ -1,11 +1,6 @@
-﻿using DateValidator.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Toci.BeginnersTrainingLibrary.TrainingOne.Rubi.Interfaces;
 
-namespace DateValidator
+namespace Toci.BeginnersTrainingLibrary.TrainingOne.Rubi
 {
     public class MonthValidation:IMonthValidation
     {

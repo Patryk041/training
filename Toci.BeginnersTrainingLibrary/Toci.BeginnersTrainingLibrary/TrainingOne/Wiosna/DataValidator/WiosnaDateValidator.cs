@@ -1,12 +1,4 @@
-﻿using InitialTrainingLibrary;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-namespace InitialTrainingLibrary.Wiosna.DateValidator
+﻿namespace Toci.BeginnersTrainingLibrary.TrainingOne.Wiosna.DataValidator
 {
     public class WiosnaDateValidator : Toci.BeginnersTrainingLibrary.TrainingOne.Excercise.IDateValidator
     {

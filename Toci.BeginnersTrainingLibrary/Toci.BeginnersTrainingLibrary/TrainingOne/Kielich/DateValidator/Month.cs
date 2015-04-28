@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace Toci.BeginnersTrainingLibrary.TrainingOne.Kielich
+namespace Toci.BeginnersTrainingLibrary.TrainingOne.Kielich.DateValidator
 {
     public class Month
     {
