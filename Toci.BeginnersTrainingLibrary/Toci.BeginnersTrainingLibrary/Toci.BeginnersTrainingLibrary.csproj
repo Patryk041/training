@@ -181,10 +181,11 @@
     <Compile Include="TrainingOne\Rubi\DateValidator.cs" />
     <Compile Include="TrainingOne\Rubi\DayValidation.cs" />
     <Compile Include="TrainingOne\Rubi\Interfaces\IDateValidator.cs" />
-    <Compile Include="TrainingOne\Rubi\Interfaces\IDayList.cs" />
     <Compile Include="TrainingOne\Rubi\Interfaces\IDayValidation.cs" />
     <Compile Include="TrainingOne\Rubi\Interfaces\IMonthValidation.cs" />
     <Compile Include="TrainingOne\Rubi\Interfaces\IYearValidation.cs" />
+    <Compile Include="TrainingOne\Rubi\LeapsedCheck.cs" />
+    <Compile Include="TrainingOne\Rubi\MonthsCheck.cs" />
     <Compile Include="TrainingOne\Rubi\MonthValidation.cs" />
     <Compile Include="TrainingOne\Rubi\YearValidation.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntDateValidator.cs" />

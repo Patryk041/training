@@ -11,5 +11,16 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Rubi
         {
             return month>MinMonthIndex && month<=MaxMonthIndex;
         }
+
+
+        public bool CheckMonth(int month)
+        {
+            return month%2==0 && month!=2;
+        }
+
+        public bool CheckFebruary(int month)
+        {
+            return month == 2; 
+        }
     }
 }

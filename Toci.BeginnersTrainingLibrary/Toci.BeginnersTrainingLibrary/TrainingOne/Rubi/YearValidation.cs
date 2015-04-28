@@ -16,5 +16,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Rubi
         {
             return year % 4 == 0 ? true : false;
         }
+
+
     }
 }

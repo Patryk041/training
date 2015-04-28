@@ -1,4 +1,5 @@
-﻿using Toci.BeginnersTrainingLibrary.TrainingOne.Rubi.Interfaces;
+﻿using System;
+using Toci.BeginnersTrainingLibrary.TrainingOne.Rubi.Interfaces;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingOne.Rubi
 {
@@ -6,23 +7,26 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Rubi
     {
         public bool CheckDate(int year, int month, int day)
         {
-            YearValidation yV = new YearValidation();
-            var k = yV.ValidYear(year);
-            var l = yV.ValidLeapsed(year);
-            MonthValidation mV = new MonthValidation();
-            mV.ValidMonth(month);
-            DayValidation dV = new DayValidation();
-            //dV.
+            YearValidation years = new YearValidation();
+            var yV = years.ValidYear(year);
 
-            
+            LeapsedCheck leapsed = new LeapsedCheck();
+            var CL = leapsed.CheckLeapsed(day, month, year);
+
+            MonthsCheck months = new MonthsCheck();
+            var LongDays = months.CheckLongDaysInMonth(day, month);
+            var ShortDays = months.CheckShortDaysInMonth(day, month);
+            var FebruaryDays = months.CheckDayInFebruary(day, month);
 
 
-            return true;
+
+
+            return (yV && (LongDays || ShortDays || FebruaryDays)) || (yV && CL);
         }
 
         public string GetNick()
         {
-            return "Rubi";
+            return "Rubi//Rafał Rubiszewski";
         }
     }
 }

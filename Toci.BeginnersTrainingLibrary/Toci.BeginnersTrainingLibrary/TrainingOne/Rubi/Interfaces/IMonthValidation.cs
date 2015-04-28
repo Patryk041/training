@@ -4,5 +4,7 @@
     {
 
         bool ValidMonth(int month);
+        bool CheckMonth(int month);
+        bool CheckFebruary(int month);
     }
 }

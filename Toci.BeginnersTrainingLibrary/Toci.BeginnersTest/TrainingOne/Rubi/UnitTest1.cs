@@ -14,8 +14,8 @@ namespace Toci.BeginnersTest.TrainingOne.Rubi
         [TestMethod]
         public void TestMethod1()
         {
-            
-           // Assert.IsTrue(x.CheckDate(2012, 02, 29));
+            var x = new DateValidator();
+           Assert.IsTrue(x.CheckDate(2013, 02, 29));
         }
     }
 }
