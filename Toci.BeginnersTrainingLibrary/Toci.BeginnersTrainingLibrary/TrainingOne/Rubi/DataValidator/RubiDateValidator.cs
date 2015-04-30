@@ -1,9 +1,9 @@
 ﻿using System;
-using Toci.BeginnersTrainingLibrary.TrainingOne.Rubi.Interfaces;
+using Toci.BeginnersTrainingLibrary.TrainingOne.Excercise;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingOne.Rubi
 {
-    public class DateValidator:IDateValidator
+    public class RubiDateValidator:IDateValidator
     {
         public bool CheckDate(int year, int month, int day)
         {
