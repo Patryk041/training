@@ -19,7 +19,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Rubi
             var cM=months.CheckMonth(month);
             var vs =days.VerifyShortMonthDay(day);
 
-            return vM.Equals(cM.Equals(vs));
+            return vM==cM==vs;
         }
         public bool CheckShortDaysInMonth(int day, int month)
         {
@@ -30,7 +30,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Rubi
             var cM = months.CheckMonth(month);
             var vs = days.VerifyLongMonthDay(day);
 
-            return !cM && vM.Equals(vs);
+            return !cM && vM==vs;
         }
 
         public bool CheckDayInFebruary(int day, int month)
@@ -42,7 +42,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Rubi
             var cF = months.CheckFebruary(month);
             var vSF = days.VerifyShortFebruaryDay(day);
 
-            return vM.Equals(cF.Equals(vSF));
+            return vM==cF==vSF;
 
         }
 

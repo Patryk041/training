@@ -8,7 +8,11 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Rubi
         public bool CheckDate(int year, int month, int day)
         {
             YearValidation years = new YearValidation();
+            DayValidation days = new DayValidation();
+            MonthValidation monthValid = new MonthValidation();
             var yV = years.ValidYear(year);
+            var dV = days.VerifyLongMonthDay(day);
+            var mV = monthValid.ValidMonth(month);
 
             LeapsedCheck leapsed = new LeapsedCheck();
             var CL = leapsed.CheckLeapsed(day, month, year);
@@ -21,7 +25,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Rubi
 
 
 
-            return (yV && (LongDays || ShortDays || FebruaryDays)) || (yV && CL);
+            return yV && dV && mV && CL || yV && dV && mV && LongDays && ShortDays && FebruaryDays;
         }
 
         public string GetNick()

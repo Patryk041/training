@@ -23,7 +23,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Rubi
             var dV = days.VerifyLongFebruaryDay(day);
 
 
-            return vY.Equals(vL.Equals(vM.Equals(cF.Equals(dV))));
+            return vY==vL==vM==cF==dV ? true:false;
         }
         
     }
