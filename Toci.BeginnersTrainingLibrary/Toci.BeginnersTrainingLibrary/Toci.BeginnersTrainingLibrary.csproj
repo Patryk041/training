@@ -244,6 +244,8 @@
     <Compile Include="TrainingTwo\S2yfr4nt\IS2yfr4ntTransferHelper.cs" />
     <Compile Include="TrainingTwo\S2yfr4nt\S2yfr4ntIngTransferFileParser.cs" />
     <Compile Include="TrainingTwo\S2yfr4nt\S2yfr4ntMultiBankTransferFileParser.cs" />
+    <Compile Include="TrainingTwo\S2yfr4nt\S2yfr4ntTransferFileParserFactory.cs" />
+    <Compile Include="TrainingTwo\S2yfr4nt\S2yfr4ntTransfersAggregator.cs" />
     <Compile Include="TrainingTwo\Santi\Extensions\StringExtensions.cs" />
     <Compile Include="TrainingTwo\Santi\SantiStringHelper.cs" />
     <Compile Include="TrainingTwo\Santi\SantiTransferFileParserFactory.cs" />
