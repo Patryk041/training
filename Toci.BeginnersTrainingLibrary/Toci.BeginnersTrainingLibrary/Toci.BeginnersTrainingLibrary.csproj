@@ -141,6 +141,11 @@
     <Compile Include="TrainingOne\Mes\DateValidator\MesDateValidator.cs" />
     <Compile Include="TrainingOne\Mes\DateValidator\MonthValidator.cs" />
     <Compile Include="TrainingOne\Mes\DateValidator\YearValidator.cs" />
+    <Compile Include="TrainingOne\Mes\TextUtils\Anagrams.cs" />
+    <Compile Include="TrainingOne\Mes\TextUtils\FilterList.cs" />
+    <Compile Include="TrainingOne\Mes\TextUtils\MesTextUtils.cs" />
+    <Compile Include="TrainingOne\Mes\TextUtils\Palindroms.cs" />
+    <Compile Include="TrainingOne\Mes\TextUtils\Wildcards.cs" />
     <Compile Include="TrainingOne\Perla\WeightLifter\IBodyPart.cs" />
     <Compile Include="TrainingOne\Perla\WeightLifter\IExercise.cs" />
     <Compile Include="TrainingOne\Perla\WeightLifter\IMotion.cs" />
@@ -173,6 +178,21 @@
     <Compile Include="TrainingOne\ReferenceTypes\ManipulateNickHandle.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\ManipulateSkillHandle.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\RandomEntity.cs" />
+    <Compile Include="TrainingOne\Rubi\DataValidator\DateValidator.cs" />
+    <Compile Include="TrainingOne\Rubi\DataValidator\DayValidation.cs" />
+    <Compile Include="TrainingOne\Rubi\DataValidator\Interfaces\IDayValidation.cs" />
+    <Compile Include="TrainingOne\Rubi\DataValidator\Interfaces\IMonthValidation.cs" />
+    <Compile Include="TrainingOne\Rubi\DataValidator\Interfaces\IYearValidation.cs" />
+    <Compile Include="TrainingOne\Rubi\DataValidator\LeapsedCheck.cs" />
+    <Compile Include="TrainingOne\Rubi\DataValidator\MonthsCheck.cs" />
+    <Compile Include="TrainingOne\Rubi\DataValidator\MonthValidation.cs" />
+    <Compile Include="TrainingOne\Rubi\DataValidator\YearValidation.cs" />
+    <Compile Include="TrainingOne\Rubi\TextUtils\Anagram.cs" />
+    <Compile Include="TrainingOne\Rubi\TextUtils\Interfaces\IAnagram.cs" />
+    <Compile Include="TrainingOne\Rubi\TextUtils\Interfaces\IPalindrom.cs" />
+    <Compile Include="TrainingOne\Rubi\TextUtils\Palindrom.cs" />
+    <Compile Include="TrainingOne\Rubi\TextUtils\TextOperationsSets.cs" />
+    <Compile Include="TrainingOne\Rubi\TextUtils\WildCard.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntDateValidator.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntDayValidation.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\DateValidator\S2yfr4ntMonthValidation.cs" />
@@ -282,9 +302,7 @@
     <Content Include="TrainingTwo\data\ing.txt" />
     <Content Include="TrainingTwo\data\multibank.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TrainingOne\Mes\TextUtils\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup />
   <ItemGroup />
   <ItemGroup>

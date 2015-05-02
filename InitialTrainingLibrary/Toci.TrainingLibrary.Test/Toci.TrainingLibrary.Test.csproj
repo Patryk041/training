@@ -37,6 +37,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.XML" />
   </ItemGroup>
   <Choose>
@@ -92,7 +94,13 @@
     <Compile Include="Developers\Warrior\Db\DbOperationsTest.cs" />
     <Compile Include="Developers\Warrior\WarriorFileParserTest.cs" />
     <Compile Include="Developers\Warrior\WarriorMgSolutionTest.cs" />
+    <Compile Include="Developers\Warrior\WcfTesting\WcfWarriorTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\WarriorWcf\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\Entities\" />
@@ -118,6 +126,46 @@
       <Project>{70a72d90-af63-46dd-96b8-b0ec430bad67}</Project>
       <Name>Toci.Web.Training.Primary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\WarriorWcf\Service1.wsdl" />
+    <None Include="Service References\WarriorWcf\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WarriorWcf\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WarriorWcf\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WarriorWcf\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WarriorWcf\Toci.TrainingLibrary.Test.WarriorWcf.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WarriorWcf\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WarriorWcf\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WarriorWcf\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WarriorWcf\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WarriorWcf\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

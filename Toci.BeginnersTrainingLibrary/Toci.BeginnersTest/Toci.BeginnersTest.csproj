@@ -60,8 +60,10 @@
     <Compile Include="TrainingOne\Kielich\Robot\Robot.cs" />
     <Compile Include="TrainingOne\MatwieUnitTests\MatwieTest.cs" />
     <Compile Include="TrainingOne\Mes\DateValidator\Mes.cs" />
+    <Compile Include="TrainingOne\Mes\TextUtils\Mes.cs" />
     <Compile Include="TrainingOne\Recha\DateValidator\DateTest.cs" />
     <Compile Include="TrainingOne\Recha\TextOperations\TextOperationsTest.cs" />
+    <Compile Include="TrainingOne\Rubi\UnitTest1.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\DateValidator\DateTest.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\SplitTestSeparatorTExt.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\TextOperationsTest\TextUtilsTest.cs" />

@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using InitialTrainingLibrary.Wiosna.DateValidator.DateParts;
-using InitialTrainingLibrary.Wiosna.DateValidator.WiosnaInterfaces;
+﻿using Toci.BeginnersTrainingLibrary.TrainingOne.Wiosna.DataValidator.WiosnaInterfaces;
 
-namespace InitialTrainingLibrary.Wiosna.DateValidator
+namespace Toci.BeginnersTrainingLibrary.TrainingOne.Wiosna.DataValidator
 {
     public class DayValidation : IDayValidation
     {

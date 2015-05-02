@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Schema;
+﻿using System.Collections.Generic;
 
-namespace Toci.BeginnersTrainingLibrary.TrainingOne.Zly
+namespace Toci.BeginnersTrainingLibrary.TrainingOne.Zly.DateValidator
 {
     public class MonthValidation
     {

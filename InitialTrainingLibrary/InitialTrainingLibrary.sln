@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialTrainingLibrary", "InitialTrainingLibrary\InitialTrainingLibrary.csproj", "{CCFF23CE-5A34-4FA7-AC0E-427FD4FA97B8}"
 EndProject
@@ -22,6 +22,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.TrainingLibrary.Test", "Toci.TrainingLibrary.Test\Toci.TrainingLibrary.Test.csproj", "{192CE854-6FE7-408F-BD34-E3BA1B46F7CF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{70A72D90-AF63-46DD-96B8-B0EC430BAD67} = {70A72D90-AF63-46DD-96B8-B0EC430BAD67}
+		{9F6E12E1-9131-4F3E-B6EC-4D2660729916} = {9F6E12E1-9131-4F3E-B6EC-4D2660729916}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Db", "Toci.Db\Toci.Db.csproj", "{E45EA1C2-F40C-4903-94C3-30A885A71D33}"
@@ -33,6 +34,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingFive", "TrainingFive\TrainingFive.csproj", "{937C6381-C83E-4F93-A2E7-D5176B3A84C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWrappers", "MvcWrappers\MvcWrappers.csproj", "{CE2F1DA4-D9AD-4153-BAE6-F2CACE3C817D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Toci.Webservices", "Toci.Webservices", "{6075E9A3-2AF6-4785-B964-0EFFF9EDF5C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingNineWcf", "TrainingNineWcf\TrainingNineWcf.csproj", "{9F6E12E1-9131-4F3E-B6EC-4D2660729916}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -84,6 +89,10 @@ Global
 		{CE2F1DA4-D9AD-4153-BAE6-F2CACE3C817D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE2F1DA4-D9AD-4153-BAE6-F2CACE3C817D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE2F1DA4-D9AD-4153-BAE6-F2CACE3C817D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F6E12E1-9131-4F3E-B6EC-4D2660729916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F6E12E1-9131-4F3E-B6EC-4D2660729916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F6E12E1-9131-4F3E-B6EC-4D2660729916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F6E12E1-9131-4F3E-B6EC-4D2660729916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,5 +101,6 @@ Global
 		{70A72D90-AF63-46DD-96B8-B0EC430BAD67} = {EEDEA193-B73F-4A9C-B1CB-A52B092826B1}
 		{937C6381-C83E-4F93-A2E7-D5176B3A84C9} = {EEDEA193-B73F-4A9C-B1CB-A52B092826B1}
 		{CE2F1DA4-D9AD-4153-BAE6-F2CACE3C817D} = {EEDEA193-B73F-4A9C-B1CB-A52B092826B1}
+		{9F6E12E1-9131-4F3E-B6EC-4D2660729916} = {6075E9A3-2AF6-4785-B964-0EFFF9EDF5C0}
 	EndGlobalSection
 EndGlobal

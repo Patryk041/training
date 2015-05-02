@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Toci.BeginnersTrainingLibrary.TrainingOne.Excercise;
+﻿using Toci.BeginnersTrainingLibrary.TrainingOne.Excercise;
 
-namespace Toci.BeginnersTrainingLibrary.TrainingOne.Zly
+namespace Toci.BeginnersTrainingLibrary.TrainingOne.Zly.DateValidator
 {
     public class ZlyDateValidator : IDateValidator
     {

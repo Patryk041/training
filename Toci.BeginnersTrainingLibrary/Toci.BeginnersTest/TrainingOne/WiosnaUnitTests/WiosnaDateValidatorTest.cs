@@ -1,6 +1,6 @@
 ﻿using System;
-using InitialTrainingLibrary.Wiosna.DateValidator;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Toci.BeginnersTrainingLibrary.TrainingOne.Wiosna.DataValidator;
 
 namespace Toci.BeginnersTest.TrainingOne.WiosnaUnitTests
 {
