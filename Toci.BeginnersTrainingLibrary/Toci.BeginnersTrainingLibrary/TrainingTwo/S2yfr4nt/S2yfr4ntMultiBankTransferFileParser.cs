@@ -12,7 +12,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.S2yfr4nt
     {
         const int entities = 5;
 
-        private string multiBankSeparator = "/t";
+        private string multiBankSeparator = "\t";
 
         public string IngSeparator
         {

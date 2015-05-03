@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,13 +9,20 @@ using Toci.BeginnersTrainingLibrary.TrainingTwo.Streams;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingTwo.S2yfr4nt
 {
-    class S2yfr4ntTransfersAggregator: TranfersAggregator
+    public class S2yfr4ntTransfersAggregator : TranfersAggregator
     {
-        private const string FilePath = @"\..\..\..\Toci.BeginnersTrainingLibrary\TrainingTwo\data";
+        private const string FilePath = @"..\..\..\Toci.BeginnersTrainingLibrary\TrainingTwo\data";
 
         public override List<TransferEntity> GetAllTransfers(List<string> filePathsList)
         {
-            throw new NotImplementedException();
+            List<TransferEntity> transfers = new List<TransferEntity>();
+            foreach (var item in filePathsList)
+            {
+                //var res = S2yfr4ntTransferFileParserFactory.FilesListDelegate.ContainsKey(item) ? S2yfr4ntTransferFileParserFactory.FilesListDelegate[item]() : throw new Exception("Nie ma takiego banku");
+
+                transfers.AddRange(S2yfr4ntTransferFileParserFactory.FilesListDelegate[Path.GetFileName(item)]().OpenFile(item));
+            }
+            return transfers;
         }
 
         public override List<string> SearchTransferFiles()

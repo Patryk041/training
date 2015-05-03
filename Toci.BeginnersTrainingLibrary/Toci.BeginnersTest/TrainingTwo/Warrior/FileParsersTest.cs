@@ -9,6 +9,7 @@ using Toci.BeginnersTrainingLibrary.TrainingTwo.Santi;
 using Toci.BeginnersTrainingLibrary.TrainingTwo.Streams;
 using Toci.BeginnersTrainingLibrary.TrainingTwo.Wiosna;
 using Toci.BeginnersTrainingLibrary.TrainingTwo.Zielu;
+using Toci.BeginnersTrainingLibrary.TrainingTwo.S2yfr4nt;
 
 namespace Toci.BeginnersTest.TrainingTwo.Warrior
 {
@@ -24,6 +25,7 @@ namespace Toci.BeginnersTest.TrainingTwo.Warrior
                 new SantiTransfers(),
                 new WiosnaTransfers(),
                 new ZieluFileAggregator(),
+                new S2yfr4ntTransfersAggregator(),
             };
 
             foreach (var item in transfers)

@@ -32,8 +32,6 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.S2yfr4nt
             var elements = StringHelper.GetSeparatedItems(ingSeparator, row);
 
                 return EntityFill(elements);
-
-
         }
 
 
