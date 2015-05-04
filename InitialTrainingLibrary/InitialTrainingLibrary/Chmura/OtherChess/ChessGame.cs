@@ -1,10 +1,11 @@
 ﻿
 using InitialTrainingLibrary.Chmura.OtherChess.Board;
 using InitialTrainingLibrary.Chmura.OtherChess.Figure;
+using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.Chmura.OtherChess
 {
-    public class ChessGame
+    public class ChessGame : IGame
     {
         protected ChessBoard myBoard;
         public void DrawBoard()
@@ -14,17 +15,17 @@ namespace InitialTrainingLibrary.Chmura.OtherChess
             SpecificFigure.ResetCounter();
         }
 
-        public ChessBoard MyBoard
-        {
-            get { return myBoard; }
-        }
-
         public void moveFigure(Coordinates oldCoor, Coordinates newCoor)
         {
            myBoard.fields[newCoor.GetX(), newCoor.GetY()].SetFigure(myBoard.fields[oldCoor.GetX(),oldCoor.GetY()].GetFigure());
            myBoard.fields[oldCoor.GetX(),oldCoor.GetY()].RemoveFigure();
         }
 
-        
+
+        public IBoard GetBoard()
+        {
+            DrawBoard();
+            return myBoard;
+        }
     }
 }
