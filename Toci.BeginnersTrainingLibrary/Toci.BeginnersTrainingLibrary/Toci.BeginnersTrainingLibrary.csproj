@@ -79,6 +79,13 @@
     <Compile Include="TrainingOne\Amman\DateValidator\Workers\DayValidator.cs" />
     <Compile Include="TrainingOne\Amman\DateValidator\Workers\MonthValidator.cs" />
     <Compile Include="TrainingOne\Amman\DateValidator\Workers\YearValidator.cs" />
+    <Compile Include="TrainingOne\coousey\DateValidator\CoouseyDateValidator.cs" />
+    <Compile Include="TrainingOne\coousey\DateValidator\Date.cs" />
+    <Compile Include="TrainingOne\coousey\DateValidator\DayValidator.cs" />
+    <Compile Include="TrainingOne\coousey\DateValidator\IDateValidator.cs" />
+    <Compile Include="TrainingOne\coousey\DateValidator\IValidator.cs" />
+    <Compile Include="TrainingOne\coousey\DateValidator\MonthValidator.cs" />
+    <Compile Include="TrainingOne\coousey\DateValidator\YearValidator.cs" />
     <Compile Include="TrainingOne\Delegates\DelegatesShowdown.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\DenioDateValidator.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\Day.cs" />
