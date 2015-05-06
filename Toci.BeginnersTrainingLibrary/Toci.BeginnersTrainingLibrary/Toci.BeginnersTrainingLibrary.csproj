@@ -178,7 +178,7 @@
     <Compile Include="TrainingOne\ReferenceTypes\ManipulateNickHandle.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\ManipulateSkillHandle.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\RandomEntity.cs" />
-    <Compile Include="TrainingOne\Rubi\DataValidator\DateValidator.cs" />
+    <Compile Include="TrainingOne\Rubi\DataValidator\RubiDateValidator.cs" />
     <Compile Include="TrainingOne\Rubi\DataValidator\DayValidation.cs" />
     <Compile Include="TrainingOne\Rubi\DataValidator\Interfaces\IDayValidation.cs" />
     <Compile Include="TrainingOne\Rubi\DataValidator\Interfaces\IMonthValidation.cs" />
