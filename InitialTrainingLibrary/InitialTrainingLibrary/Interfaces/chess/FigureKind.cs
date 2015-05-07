@@ -8,11 +8,11 @@ namespace InitialTrainingLibrary.Interfaces.chess
 {
     public enum FigureKind
     {
-        Rook,
-        Horse,
-        Bishop, 
-        King,
-        Queen,
-        Pawn
+        Rook, // wieza
+        Horse, // kon
+        Bishop, // goniec
+        King, // krol
+        Queen, // hetman
+        Pawn // pion
     }
 }
