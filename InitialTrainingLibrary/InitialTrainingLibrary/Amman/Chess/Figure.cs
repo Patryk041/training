@@ -37,7 +37,12 @@ namespace InitialTrainingLibrary.Amman.Chess
         public bool Move(ICoordinates newCoordinates)
         {
             var temp = (Coordinates) newCoordinates;
-            return temp.AreCorrect();
+            if (temp.AreCorrect())
+            {
+                actualCoordinates = temp;
+                return true;
+            }
+            return false;
         }
     }
 }
