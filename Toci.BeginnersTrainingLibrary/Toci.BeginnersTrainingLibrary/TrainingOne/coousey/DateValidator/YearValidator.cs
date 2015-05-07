@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Toci.BeginnersTrainingLibrary.TrainingOne.coousey.DateValidator
 {
     class YearValidator : IValidator
     {
+        private const int MinYear = 0;
+        private const int MaxYear = 9999;
+
         public void Validate(Date date)
         {          
-            if((date.Year < 0) || (date.Year > 9999))
+            if((date.Year < MinYear) || (date.Year > MaxYear))
             {
                  date.YearIsValid = false;
             }

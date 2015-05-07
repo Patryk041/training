@@ -321,7 +321,9 @@
     <Content Include="TrainingTwo\data\ing.txt" />
     <Content Include="TrainingTwo\data\multibank.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="TrainingOne\coousey\DateValidator 2\" />
+  </ItemGroup>
   <ItemGroup />
   <ItemGroup />
   <ItemGroup>
