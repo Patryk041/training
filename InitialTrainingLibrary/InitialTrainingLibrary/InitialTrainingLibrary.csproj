@@ -33,6 +33,7 @@
     <Reference Include="Autofac">
       <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -43,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Amman\Chess\Board.cs" />
+    <Compile Include="Amman\Chess\Coordinates.cs" />
+    <Compile Include="Amman\Chess\Field.cs" />
+    <Compile Include="Amman\Chess\Figure.cs" />
+    <Compile Include="Amman\Chess\Game.cs" />
+    <Compile Include="Amman\UnitTests\DebugChessTest.cs" />
     <Compile Include="Chmura\DateTimeValidator\DateValidator.cs" />
     <Compile Include="Chmura\DateTimeValidator\Day.cs" />
     <Compile Include="Chmura\DateTimeValidator\Month.cs" />
@@ -406,6 +413,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
