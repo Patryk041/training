@@ -367,6 +367,9 @@
     <Compile Include="Wiosna\WiosnaInterfaces\IYearValidation.cs" />
     <Compile Include="Wiosna\YearValidation.cs" />
     <Compile Include="Witek\NaszaKlasa.cs" />
+    <Compile Include="Zielu\Chess\ZieluBoard.cs" />
+    <Compile Include="Zielu\Chess\ZieluBoardField.cs" />
+    <Compile Include="Zielu\Chess\Zielu2DCoordinates.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="frogie\data\dane.txt" />
@@ -389,6 +392,7 @@
     <Folder Include="denio\Interfaces\" />
     <Folder Include="TrainingThree\Db\" />
     <Folder Include="TrainingThree\FileParser\" />
+    <Folder Include="Zielu\Chess\ZieluFigures\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
