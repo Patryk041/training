@@ -86,6 +86,11 @@
     <Compile Include="TrainingOne\coousey\DateValidator\IValidator.cs" />
     <Compile Include="TrainingOne\coousey\DateValidator\MonthValidator.cs" />
     <Compile Include="TrainingOne\coousey\DateValidator\YearValidator.cs" />
+    <Compile Include="TrainingOne\coousey\TextUtils\AnagramValidator.cs" />
+    <Compile Include="TrainingOne\coousey\TextUtils\CoouseyTextUtils.cs" />
+    <Compile Include="TrainingOne\coousey\TextUtils\ExpresionValidator.cs" />
+    <Compile Include="TrainingOne\coousey\TextUtils\PalindromValidator.cs" />
+    <Compile Include="TrainingOne\coousey\TextUtils\WildCardValidator.cs" />
     <Compile Include="TrainingOne\Delegates\DelegatesShowdown.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\DenioDateValidator.cs" />
     <Compile Include="TrainingOne\denio\DateValidator\Day.cs" />
@@ -321,9 +326,7 @@
     <Content Include="TrainingTwo\data\ing.txt" />
     <Content Include="TrainingTwo\data\multibank.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TrainingOne\coousey\DateValidator 2\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup />
   <ItemGroup />
   <ItemGroup>
