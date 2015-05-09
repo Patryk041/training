@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingNineWcf", "Training
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingEight", "TrainingEight\TrainingEight.csproj", "{7061882C-5B7F-42CE-A9EE-5C0BB934779B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingNine", "TrainingNine\TrainingNine.csproj", "{F1ECC181-6BC0-4C73-997E-868F91CF2B63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{7061882C-5B7F-42CE-A9EE-5C0BB934779B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7061882C-5B7F-42CE-A9EE-5C0BB934779B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7061882C-5B7F-42CE-A9EE-5C0BB934779B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1ECC181-6BC0-4C73-997E-868F91CF2B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1ECC181-6BC0-4C73-997E-868F91CF2B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1ECC181-6BC0-4C73-997E-868F91CF2B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1ECC181-6BC0-4C73-997E-868F91CF2B63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,5 +115,6 @@ Global
 		{CE2F1DA4-D9AD-4153-BAE6-F2CACE3C817D} = {EEDEA193-B73F-4A9C-B1CB-A52B092826B1}
 		{9F6E12E1-9131-4F3E-B6EC-4D2660729916} = {6075E9A3-2AF6-4785-B964-0EFFF9EDF5C0}
 		{7061882C-5B7F-42CE-A9EE-5C0BB934779B} = {EEDEA193-B73F-4A9C-B1CB-A52B092826B1}
+		{F1ECC181-6BC0-4C73-997E-868F91CF2B63} = {EEDEA193-B73F-4A9C-B1CB-A52B092826B1}
 	EndGlobalSection
 EndGlobal
