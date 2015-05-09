@@ -12,7 +12,7 @@ namespace InitialTrainingLibrary.Zielu.Chess.ZieluFigures
 
         public override bool Move(ICoordinates newCoordinates)
         {
-            Position.HorseValidation(newCoordinates);
+            return Position.HorseValidation(newCoordinates);
         }
     }
 }
