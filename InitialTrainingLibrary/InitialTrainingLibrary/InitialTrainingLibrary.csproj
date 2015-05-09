@@ -382,9 +382,20 @@
     <Compile Include="Wiosna\WiosnaInterfaces\IYearValidation.cs" />
     <Compile Include="Wiosna\YearValidation.cs" />
     <Compile Include="Witek\NaszaKlasa.cs" />
+    <Compile Include="Zielu\Chess\FigureFactory.cs" />
     <Compile Include="Zielu\Chess\ZieluBoard.cs" />
     <Compile Include="Zielu\Chess\ZieluBoardField.cs" />
     <Compile Include="Zielu\Chess\Zielu2DCoordinates.cs" />
+    <Compile Include="Zielu\Chess\ZieluFigures\ZieluBishop.cs" />
+    <Compile Include="Zielu\Chess\ZieluFigures\ZieluFigureDummy.cs" />
+    <Compile Include="Zielu\Chess\ZieluFigures\ZieluHorse.cs" />
+    <Compile Include="Zielu\Chess\ZieluFigures\ZieluKing.cs" />
+    <Compile Include="Zielu\Chess\ZieluFigures\ZieluPawn.cs" />
+    <Compile Include="Zielu\Chess\ZieluFigures\ZieluQueen.cs" />
+    <Compile Include="Zielu\Chess\ZieluFigures\ZieluRook.cs" />
+    <Compile Include="Zielu\Chess\ZieluGame.cs" />
+    <Compile Include="Zielu\Extensions\ChessExtensions.cs" />
+    <Compile Include="Zielu\Extensions\IntExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="frogie\data\dane.txt" />
@@ -407,7 +418,6 @@
     <Folder Include="denio\Interfaces\" />
     <Folder Include="TrainingThree\Db\" />
     <Folder Include="TrainingThree\FileParser\" />
-    <Folder Include="Zielu\Chess\ZieluFigures\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">

@@ -1,4 +1,5 @@
 ﻿using InitialTrainingLibrary.Interfaces.chess;
+using InitialTrainingLibrary.Zielu.Extensions;
 
 namespace InitialTrainingLibrary.Zielu.Chess
 {
@@ -11,7 +12,7 @@ namespace InitialTrainingLibrary.Zielu.Chess
         public ZieluBoardField(int x, int y)
         {
             _boardCoordinates = new Zielu2DCoordinates(x,y);
-            _white = (x + y)%2 == 0;
+            _white = (x + y).IsEven();
         }
 
         public bool IsFieldWhite()
