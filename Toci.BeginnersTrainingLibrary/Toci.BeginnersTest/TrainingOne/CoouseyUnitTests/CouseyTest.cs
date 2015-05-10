@@ -1,6 +1,4 @@
 ﻿
-using System;
-using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.BeginnersTrainingLibrary.TrainingOne.coousey.DateValidator;
 using Toci.BeginnersTrainingLibrary.TrainingOne.coousey.TextUtils;
