@@ -1,0 +1,17 @@
+﻿@model TrainingFive.Models.DepartureEntityModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts
+{ 
+<script src="~/Scripts/Departures.js"></script>
+}
+
+<h2>Departure entitny fill form</h2>
+
+<div id="formContainer">
+    @Html.Partial("FormPartial", Model)
+</div>

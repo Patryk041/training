@@ -63,6 +63,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="TrainingOne\AmmanUnitTests\AmmanDateValidatorTest.cs" />
+    <Compile Include="TrainingOne\CoouseyUnitTests\CouseyTest.cs" />
     <Compile Include="TrainingOne\CorRefTypesTest.cs" />
     <Compile Include="TrainingOne\denio\TestDate.cs" />
     <Compile Include="TrainingOne\DoktorUnitTests\DoktorDateValidatorTest.cs" />

@@ -193,6 +193,7 @@
     <Compile Include="Areas\Soltys\SoltysAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RiderController.cs" />
     <Compile Include="Controllers\WarriorController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -201,6 +202,7 @@
     <Compile Include="Logic\Autorization\CustomAuthorize.cs" />
     <Compile Include="Logic\DeparturesLogic.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\DepartureEntityModel.cs" />
     <Compile Include="Models\HcModel.cs" />
     <Compile Include="Models\WarriorModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -328,6 +330,7 @@
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Departures.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
@@ -386,6 +389,8 @@
     <Content Include="Views\Warrior\Index.cshtml" />
     <Content Include="Views\Shared\WarriorDepartures\WarriorDepartures.cshtml" />
     <Content Include="Views\Home\JavascriptEvents.cshtml" />
+    <Content Include="Views\Rider\Index.cshtml" />
+    <Content Include="Views\Rider\FormPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
