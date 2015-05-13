@@ -2,7 +2,7 @@
 
 namespace Toci.TraininigLibrary.Developers.Dysq.omr.Moves
 {
-    public abstract class BodyPartsMovesBase : BodyPartsStartPositionsBase , IMove
+    public abstract class BodyPartsMovesBase : BodyPartsStartPositionsBase
     {
         public int xCoordinate { get; set; }
         public int yCoordinate { get; set; }
@@ -18,7 +18,7 @@ namespace Toci.TraininigLibrary.Developers.Dysq.omr.Moves
         {
         }
 
-        public virtual void MoveHead( int x, int y, int z)
+        public override void MoveHead( int x, int y, int z)
         {
             HeadAfterMove = new Coordinates(x + this.HeadStartPosition.GetX(), y + this.HeadStartPosition.GetY(), z + this.HeadStartPosition.GetZ());
             

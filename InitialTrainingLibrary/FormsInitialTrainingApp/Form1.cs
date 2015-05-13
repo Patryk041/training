@@ -47,9 +47,8 @@ namespace FormsInitialTrainingApp
                 (liczba) => new InitialTrainingLibrary.Sito._2.Board(),
                 (liczba) =>
                 {
-                    var board = new InitialTrainingLibrary.Chmura.OtherChess.ChessGame();
-                    board.DrawBoard();
-                    return board.MyBoard;
+                    var board = new ChessGame();
+                    return board.GetBoard();
                 },
                 (liczba) =>
                 {
@@ -100,8 +99,8 @@ namespace FormsInitialTrainingApp
 
 
             ChessGame game = new ChessGame();
-            game.DrawBoard();
-            var chessBoard = game.MyBoard;
+
+            var chessBoard = game.GetBoard();
 
             var chessBoardFields = chessBoard.GetFields();
 

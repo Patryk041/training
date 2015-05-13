@@ -132,6 +132,7 @@
     <Compile Include="Interfaces\chess\IBoardField.cs" />
     <Compile Include="Interfaces\chess\ICoordinates.cs" />
     <Compile Include="Interfaces\chess\IFigure.cs" />
+    <Compile Include="Interfaces\chess\IGame.cs" />
     <Compile Include="Interfaces\IDateValidator.cs" />
     <Compile Include="koziu\Chees\BoardCheesField.cs" />
     <Compile Include="koziu\Chees\CheesBoard.cs" />

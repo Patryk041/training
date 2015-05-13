@@ -9,7 +9,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.S2yfr4nt
 {
     interface IS2yfr4ntTransferHelper
     {
-        List<string> RowFill(List<string> elements);
+
         TransferEntity EntityFill(List<string> elements);
     }
 }

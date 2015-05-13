@@ -48,17 +48,30 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrainingFour\DataBase\DAL\CarModel.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\Clients\MssqlClient.cs" />
     <Compile Include="TrainingFour\DataBase\DbVirtualization\Clients\PostgresqlCient.cs" />
     <Compile Include="TrainingFour\DataBase\DbVirtualization\Field.cs" />
     <Compile Include="TrainingFour\DataBase\DbVirtualization\Handle.cs" />
     <Compile Include="TrainingFour\DataBase\DbVirtualization\Model.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\Queries\MsSqlDelete.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\Queries\MsSqlInsert.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\Queries\MsSqlSelect.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\Queries\MsSqlUpdate.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\Queries\PostgreSqlDelete.cs" />
     <Compile Include="TrainingFour\DataBase\DbVirtualization\Queries\PostgresqlInsert.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\Queries\PostgreSqlSelect.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\Queries\PostgreSqlUpdate.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\SelectClause.cs" />
+    <Compile Include="TrainingFour\DataBase\DbVirtualization\SqlQuery.cs" />
     <Compile Include="TrainingFour\DataBase\Interfaces\IClient.cs" />
+    <Compile Include="TrainingFour\DataBase\Interfaces\IDelete.cs" />
     <Compile Include="TrainingFour\DataBase\Interfaces\IField.cs" />
     <Compile Include="TrainingFour\DataBase\Interfaces\IHandle.cs" />
     <Compile Include="TrainingFour\DataBase\Interfaces\IInsert.cs" />
     <Compile Include="TrainingFour\DataBase\Interfaces\IModel.cs" />
     <Compile Include="TrainingFour\DataBase\Interfaces\IQuery.cs" />
+    <Compile Include="TrainingFour\DataBase\Interfaces\ISelect.cs" />
+    <Compile Include="TrainingFour\DataBase\Interfaces\IUpdate.cs" />
     <Compile Include="TrainingFour\Disposables\DisposableTester.cs" />
     <Compile Include="TrainingFour\Disposables\FileFetcher.cs" />
     <Compile Include="TrainingFour\Disposables\GcRefTypeTest.cs" />
@@ -178,7 +191,6 @@
     <Compile Include="TrainingOne\ReferenceTypes\ManipulateNickHandle.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\ManipulateSkillHandle.cs" />
     <Compile Include="TrainingOne\ReferenceTypes\RandomEntity.cs" />
-    <Compile Include="TrainingOne\Rubi\DataValidator\RubiDateValidator.cs" />
     <Compile Include="TrainingOne\Rubi\DataValidator\DayValidation.cs" />
     <Compile Include="TrainingOne\Rubi\DataValidator\Interfaces\IDayValidation.cs" />
     <Compile Include="TrainingOne\Rubi\DataValidator\Interfaces\IMonthValidation.cs" />
@@ -264,6 +276,8 @@
     <Compile Include="TrainingTwo\S2yfr4nt\IS2yfr4ntTransferHelper.cs" />
     <Compile Include="TrainingTwo\S2yfr4nt\S2yfr4ntIngTransferFileParser.cs" />
     <Compile Include="TrainingTwo\S2yfr4nt\S2yfr4ntMultiBankTransferFileParser.cs" />
+    <Compile Include="TrainingTwo\S2yfr4nt\S2yfr4ntTransferFileParserFactory.cs" />
+    <Compile Include="TrainingTwo\S2yfr4nt\S2yfr4ntTransfersAggregator.cs" />
     <Compile Include="TrainingTwo\Santi\Extensions\StringExtensions.cs" />
     <Compile Include="TrainingTwo\Santi\SantiStringHelper.cs" />
     <Compile Include="TrainingTwo\Santi\SantiTransferFileParserFactory.cs" />

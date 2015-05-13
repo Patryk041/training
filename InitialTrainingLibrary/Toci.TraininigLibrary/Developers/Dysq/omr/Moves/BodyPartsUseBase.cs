@@ -1,6 +1,8 @@
-﻿namespace Toci.TraininigLibrary.Developers.Dysq.omr.Moves
+﻿using Toci.TraininigLibrary.Developers.Dysq.omr.Interface;
+
+namespace Toci.TraininigLibrary.Developers.Dysq.omr.Moves
 {
-    public abstract class BodyPartsUseBase
+    public abstract class BodyPartsUseBase : IMove
     {
         protected bool HeadTouch = false;
         protected bool RightHandTouch = false;
@@ -32,5 +34,26 @@
             return LeftLegTouch;
         }
 
+        public abstract void MoveHead(int x, int y, int z);
+
+        public void MoveRightHand(int x, int y, int z)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void MoveLeftHand(int x, int y, int z)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void MoveRightLeg(int x, int y, int z)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void MoveLeftLeg(int x, int y, int z)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

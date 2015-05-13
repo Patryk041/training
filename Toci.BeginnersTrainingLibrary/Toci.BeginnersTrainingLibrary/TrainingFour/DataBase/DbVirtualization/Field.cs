@@ -6,6 +6,8 @@ namespace Toci.BeginnersTrainingLibrary.TrainingFour.DataBase.DbVirtualization
     {
         protected string ColumnName;
         protected T FieldValue;
+        protected bool FieldIsWhere;
+        protected SelectClause Clause;
 
         public Field(string columnName)
         {
@@ -15,6 +17,19 @@ namespace Toci.BeginnersTrainingLibrary.TrainingFour.DataBase.DbVirtualization
         {
             this.ColumnName = columnName;
             this.FieldValue = value;
+        }
+        public Field(string columnName, T value, bool isWhere)
+        {
+            this.ColumnName = columnName;
+            this.FieldValue = value;
+            this.FieldIsWhere = isWhere;
+        }
+        public Field(string columnName, T value, bool isWhere, SelectClause clause)
+        {
+            this.ColumnName = columnName;
+            this.FieldValue = value;
+            this.FieldIsWhere = isWhere;
+            this.Clause = clause;
         }
 
         public T GetValue()
@@ -32,5 +47,24 @@ namespace Toci.BeginnersTrainingLibrary.TrainingFour.DataBase.DbVirtualization
             FieldValue = value;
         }
 
+        public bool IsWhere()
+        {
+            return FieldIsWhere;
+        }
+
+        public void SetWhere(bool isWhere)
+        {
+            FieldIsWhere = isWhere;
+        }
+
+        public void SetSelectClause(SelectClause clause)
+        {
+            this.Clause = clause;
+        }
+
+        public SelectClause GetSelectClause()
+        {
+            return Clause;
+        }
     }
 }

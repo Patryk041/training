@@ -12,7 +12,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.S2yfr4nt
     {
         const int entities = 5;
 
-        private string multiBankSeparator = "/t";
+        private string multiBankSeparator = "\t";
 
         public string IngSeparator
         {
@@ -31,24 +31,10 @@ namespace Toci.BeginnersTrainingLibrary.TrainingTwo.S2yfr4nt
         {
             var elements = StringHelper.GetSeparatedItems(multiBankSeparator, row);
 
-            if (elements.Count == entities)
-            {
                 return EntityFill(elements);
-            }
-
-            elements = RowFill(elements);
-            return EntityFill(elements);
-
         }
 
-        public List<string> RowFill(List<string> elements)
-        {
-            for (int i = 0; i < elements.Count - entities; i++)
-            {
-                elements.Add("");
-            }
-            return elements;
-        }
+
 
         public TransferEntity EntityFill(List<string> elements)
         {
