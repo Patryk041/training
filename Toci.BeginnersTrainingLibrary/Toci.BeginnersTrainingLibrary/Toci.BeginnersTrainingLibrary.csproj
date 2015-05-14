@@ -209,6 +209,7 @@
     <Compile Include="TrainingOne\Rubi\DataValidator\LeapsedCheck.cs" />
     <Compile Include="TrainingOne\Rubi\DataValidator\MonthsCheck.cs" />
     <Compile Include="TrainingOne\Rubi\DataValidator\MonthValidation.cs" />
+    <Compile Include="TrainingOne\Rubi\DataValidator\RubiDateValidator.cs" />
     <Compile Include="TrainingOne\Rubi\DataValidator\YearValidation.cs" />
     <Compile Include="TrainingOne\Rubi\TextUtils\Anagram.cs" />
     <Compile Include="TrainingOne\Rubi\TextUtils\Interfaces\IAnagram.cs" />
