@@ -7,6 +7,7 @@ using System.Text;
 using System.Web.Http;
 using System.Web.Http.Results;
 using Newtonsoft.Json;
+using TrainingNine.Attributes;
 using TrainingNine.Models;
 using TrainingNine.Seeding;
 
@@ -16,6 +17,7 @@ namespace TrainingNine.Controllers
     {
         //[Route("api/people/betti")]
         [HttpGet]
+        [OwnAuthorize]
         public PeopleCollection People([FromUri] FilterModel filters) //FilterModel filters
         {
             var items = Seeder.SeedPeople();
