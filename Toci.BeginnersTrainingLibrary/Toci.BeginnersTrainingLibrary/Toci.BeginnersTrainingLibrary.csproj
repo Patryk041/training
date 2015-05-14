@@ -151,7 +151,6 @@
     <Compile Include="TrainingOne\Kielich\Omr\Robot.cs" />
     <Compile Include="TrainingOne\Kielich\Omr\Sensor.cs" />
     <Compile Include="TrainingOne\Ksebal\DateValidator\KsebalDateValidator.cs" />
-    <Compile Include="TrainingOne\Ksebal\DateValidator\IDateValidator.cs" />
     <Compile Include="TrainingOne\Ksebal\DateValidator\ValidatorStaticClass.cs" />
     <Compile Include="TrainingOne\Ksebal\TextChecker\FilterSets.cs" />
     <Compile Include="TrainingOne\Ksebal\TextChecker\ITextOPerationsSets.cs" />

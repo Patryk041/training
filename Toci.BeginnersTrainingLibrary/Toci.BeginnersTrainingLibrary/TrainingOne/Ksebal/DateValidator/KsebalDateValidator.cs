@@ -1,4 +1,6 @@
-﻿namespace Toci.BeginnersTrainingLibrary.TrainingOne.Ksebal.DateValidator
+﻿using Toci.BeginnersTrainingLibrary.TrainingOne.Excercise;
+
+namespace Toci.BeginnersTrainingLibrary.TrainingOne.Ksebal.DateValidator
 
 {
     public class KsebalDateValidator : IDateValidator
