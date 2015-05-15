@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Toci.BeginnersTrainingLibrary.TrainingOne.Matwie.DateValidator
+﻿namespace Toci.BeginnersTrainingLibrary.TrainingOne.Matwie.DateValidator
 {
     class MonthValidator
     {
@@ -9,10 +7,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Matwie.DateValidator
 
         public static bool IsValid(int year, int month, int day)
         {
-            if (month >= MinMonth && month <= MaxMonth)
-                return true;
-
-            throw new Exception();
+            return (month >= MinMonth && month <= MaxMonth);
         }
     }
 }
