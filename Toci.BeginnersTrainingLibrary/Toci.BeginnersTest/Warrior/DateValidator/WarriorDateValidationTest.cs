@@ -121,7 +121,6 @@ namespace Toci.BeginnersTest.Warrior.DateValidator
                     }
                     catch (Exception ex)
                     {
-                        res = false;
                         resContainer.TotalExceptions += 1;
                         err = 1;
                     }
