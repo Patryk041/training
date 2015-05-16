@@ -8,11 +8,15 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using TrainingTen.Attributes;
+using TrainingTen.Managers;
 using TrainingTen.Models;
+using TrainingTen.Logic.Login;
+using TrainingTen.Wrappers;
 
 namespace TrainingTen.Controllers
 {
-    [Authorize]
+    [CustomAuthorization]
     public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;
@@ -21,6 +25,8 @@ namespace TrainingTen.Controllers
         public AccountController()
         {
         }
+
+      
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
         {
@@ -57,6 +63,19 @@ namespace TrainingTen.Controllers
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
+
+            var userManager = new UserManager();
+
+            if (userManager.IsLogged())
+            {
+            
+                var model = new LoginViewModel();
+                ModelState.AddModelError("", string.Format("{0} is logged in", userManager.GetLoggedUserName()));
+
+
+                return View(model);
+            }
+
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
@@ -66,7 +85,7 @@ namespace TrainingTen.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
+        public ActionResult Login(LoginViewModel model, string returnUrl)
         {
             if (!ModelState.IsValid)
             {
@@ -75,20 +94,20 @@ namespace TrainingTen.Controllers
 
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
-            switch (result)
-            {
-                case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
-                case SignInStatus.LockedOut:
-                    return View("Lockout");
-                case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-                case SignInStatus.Failure:
-                default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
-                    return View(model);
-            }
+            //var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+
+
+            var userManager = new UserManager();
+            var result = userManager.LogInUser(model.Login, model.Password);
+
+            //pukniecie do bazy
+            //zapis w sesji
+
+            if (result) return RedirectToAction(returnUrl);
+
+          
+            ModelState.AddModelError("", "Invalid login attempt.");
+                                return View(model);
         }
 
         //
