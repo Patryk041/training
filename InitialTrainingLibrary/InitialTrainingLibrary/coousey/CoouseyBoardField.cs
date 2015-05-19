@@ -10,7 +10,6 @@ namespace InitialTrainingLibrary.coousey
         public CoouseyBoardField(ICoordinates coordinates)
         {
             _coordinates = coordinates;
-            _figure = null;
         }
 
         public bool IsFieldWhite()

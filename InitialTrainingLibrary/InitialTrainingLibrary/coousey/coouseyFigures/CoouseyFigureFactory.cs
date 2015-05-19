@@ -37,7 +37,7 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
             return FigureFactoryDirectory[CoordinatesToFigureKind(coordinates)](coordinates);
         }
 
-        private static readonly Func<ICoordinates, FigureKind> CoordinatesToFigureKind = coordinates =>
+        private static  FigureKind CoordinatesToFigureKind(ICoordinates coordinates)
         {
             switch (coordinates.GetY())
             {
@@ -61,10 +61,12 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
                             return FigureKind.Queen;
                         case KingColumn:
                             return FigureKind.King;
+                        default:
+                            return 0;
                     }
-                    break;
-            }
-            return 0;
-        };
+                default:
+                    return 0;
+            }           
+        }
     }
 }
