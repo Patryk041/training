@@ -9,7 +9,7 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
 {
     class CoouseyPawn : CoouseyFigure
     {
-        public CoouseyPawn(bool isWhite, CoouseyCoordinates coordinates, FigureKind figureKind) : base(isWhite, coordinates, figureKind)
+        public CoouseyPawn(CoouseyCoordinates coordinates, FigureKind figureKind) : base(coordinates, figureKind)
         {
         }
 

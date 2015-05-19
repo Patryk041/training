@@ -1,30 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using InitialTrainingLibrary.Interfaces.chess;
+﻿using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.coousey
 {
     class CoouseyBoardField : IBoardField
     {
-        private bool _isWhite;
-        private ICoordinates _coordinates;
-        private bool _hasFigure;
+        private readonly ICoordinates _coordinates;
         private IFigure _figure;
 
-        public CoouseyBoardField(bool isWhite, ICoordinates coordinates)
+        public CoouseyBoardField(ICoordinates coordinates)
         {
-            _isWhite = isWhite;
             _coordinates = coordinates;
-            _hasFigure = false;
             _figure = null;
         }
 
         public bool IsFieldWhite()
         {
-            return _isWhite;
+            return (_coordinates.GetX() + _coordinates.GetY()) % 2 == 0;
         }
 
         public ICoordinates GetCoordinates()
@@ -34,7 +25,7 @@ namespace InitialTrainingLibrary.coousey
 
         public bool HasFigure()
         {
-            return _hasFigure;
+            return _figure != null;
         }
 
         public void SetFigure(IFigure figure)

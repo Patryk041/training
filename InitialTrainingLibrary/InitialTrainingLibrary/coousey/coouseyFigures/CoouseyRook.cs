@@ -9,7 +9,7 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
 {
     class CoouseyRook : CoouseyFigure
     {
-        public CoouseyRook(bool isWhite, CoouseyCoordinates coordinates, FigureKind figureKind) : base(isWhite, coordinates, figureKind)
+        public CoouseyRook(CoouseyCoordinates coordinates, FigureKind figureKind) : base(coordinates, figureKind)
         {
         }
 

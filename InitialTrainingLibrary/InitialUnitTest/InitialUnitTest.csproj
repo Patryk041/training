@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Chmura\ChessTests.cs" />
     <Compile Include="Chmura\SprawdzTo.cs" />
+    <Compile Include="coousey\ChessTest.cs" />
     <Compile Include="denio\TestDate.cs" />
     <Compile Include="Domi\Game\DomiUnitTestGame.cs" />
     <Compile Include="Domi\Validator\DomiUnitTestValidator.cs" />

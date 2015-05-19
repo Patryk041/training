@@ -1,18 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using InitialTrainingLibrary.Interfaces.chess;
-using InitialTrainingLibrary.Wiosna.Chess;
+﻿using InitialTrainingLibrary.Interfaces.chess;
+
 
 namespace InitialTrainingLibrary.coousey
 {
-    class CoouseyChessGame : IGame
+    public class CoouseyChessGame : IGame
     {
+        private readonly IBoard _board;
+
+        public CoouseyChessGame()
+        {
+            _board = new CoouseyBoard(8,8);
+        }
+
         public IBoard GetBoard()
         {
-            throw new NotImplementedException();
+            return _board;
         }
     }
 }
