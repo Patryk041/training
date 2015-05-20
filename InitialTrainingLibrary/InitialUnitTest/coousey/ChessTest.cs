@@ -13,13 +13,15 @@ namespace InitialUnitTest.coousey
         [TestMethod]
         public void CoouseyFieldColorTest()
         {
+            // white
             Assert.IsTrue(_chessGame.GetBoard().GetFields()[0, 0].IsFieldWhite());
             Assert.IsTrue(_chessGame.GetBoard().GetFields()[0, 2].IsFieldWhite());
             Assert.IsTrue(_chessGame.GetBoard().GetFields()[0, 4].IsFieldWhite());
             Assert.IsTrue(_chessGame.GetBoard().GetFields()[2, 0].IsFieldWhite());
             Assert.IsTrue(_chessGame.GetBoard().GetFields()[4, 0].IsFieldWhite());
             Assert.IsTrue(_chessGame.GetBoard().GetFields()[1, 1].IsFieldWhite());
-
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[7, 7].IsFieldWhite());
+            // black
             Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 1].IsFieldWhite());
             Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 3].IsFieldWhite());
             Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 5].IsFieldWhite());
@@ -53,8 +55,8 @@ namespace InitialUnitTest.coousey
             Assert.IsTrue(_chessGame.GetBoard().GetFields()[4, 1].GetFigure().IsFigureWhite());
             // buttom
             Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 7].GetFigure().IsFigureWhite());
-            Assert.IsTrue(_chessGame.GetBoard().GetFields()[7, 7].GetFigure().IsFigureWhite());
-            Assert.IsTrue(_chessGame.GetBoard().GetFields()[4, 6].GetFigure().IsFigureWhite());
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[7, 7].GetFigure().IsFigureWhite());
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[4, 6].GetFigure().IsFigureWhite());
         }
 
         [TestMethod]
@@ -75,9 +77,6 @@ namespace InitialUnitTest.coousey
             // pawn row
             Assert.AreEqual(_chessGame.GetBoard().GetFields()[5, 1].GetFigure().GetFigureKind(), FigureKind.Pawn);
             Assert.AreEqual(_chessGame.GetBoard().GetFields()[5, 6].GetFigure().GetFigureKind(), FigureKind.Pawn);
-            // empty field
-            Assert.AreEqual(_chessGame.GetBoard().GetFields()[3, 3].GetFigure().GetFigureKind(), 0);
-            Assert.AreEqual(_chessGame.GetBoard().GetFields()[4, 4].GetFigure().GetFigureKind(), 0);
         }
     }
 }

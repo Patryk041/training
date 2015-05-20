@@ -5,12 +5,12 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
 {
     abstract class CoouseyFigure : IFigure
     {
-        protected readonly CoouseyCoordinates Coordinates;
+        protected readonly ICoordinates Coordinates;
         protected readonly FigureKind FigureKind;
 
         private const int UpperBlackRow = 4;
 
-        protected CoouseyFigure(CoouseyCoordinates coordinates, FigureKind figureKind)
+        protected CoouseyFigure(ICoordinates coordinates, FigureKind figureKind)
         {
             Coordinates = coordinates;
             FigureKind = figureKind;
