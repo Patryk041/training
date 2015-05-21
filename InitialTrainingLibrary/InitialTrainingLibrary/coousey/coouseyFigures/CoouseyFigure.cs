@@ -31,29 +31,41 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
             return FigureKind;
         }
 
-        public bool Move(ICoordinates newCoordinates)
-        {
-            return (ValidateMove(newCoordinates));
-        }
-
-        protected virtual bool ValidateMove(ICoordinates newCoordinates)
-        {
-            return
-            //    (BoardFields[newCoordinates.GetX(), newCoordinates.GetY()].GetFigure() == null ||           // empty field
-            //    (IsWhite &&
-             //   !BoardFields[newCoordinates.GetX(),newCoordinates.GetY()].GetFigure().IsFigureWhite()) ||   // white on black 
-            //   (!IsWhite &&
-            //    BoardFields[newCoordinates.GetX(), newCoordinates.GetY()].GetFigure().IsFigureWhite())) &&      // black on white 
-
-                newCoordinates.GetX() <= 7 && newCoordinates.GetX() >= 0 &&     // not out of boud
-                newCoordinates.GetY() <= 7 && newCoordinates.GetY() >= 0 &&
-               (newCoordinates.GetX() != Coordinates.GetX() ||                 // not the same position 
-                newCoordinates.GetY() != Coordinates.GetY());
-        }
-
         public static void SetBoardFields(IBoardField[,] boardFields)
         {
             BoardFields = boardFields;
         }
+
+        public bool Move(ICoordinates newCoordinates)
+        {
+            return
+                InsideBounds(newCoordinates) &&
+                NotTheSamePosition(newCoordinates) &&
+                NoFriendOnField(newCoordinates) &&
+                ValidDestination(Coordinates) &&    
+                WayIsEmpty(newCoordinates);
+        }
+
+        private bool InsideBounds(ICoordinates newCoordinates)
+        {
+            return newCoordinates.GetX() <= 7 && newCoordinates.GetX() >= 0 &&
+                   newCoordinates.GetY() <= 7 && newCoordinates.GetY() >= 0;
+        }
+
+        private bool NotTheSamePosition(ICoordinates newCoordinates)
+        {
+            return Coordinates.GetX() != newCoordinates.GetX() ||
+                   Coordinates.GetY() != newCoordinates.GetY();
+        }
+
+        private bool NoFriendOnField(ICoordinates newCoordinates)
+        {
+            return
+                   BoardFields[newCoordinates.GetX(), newCoordinates.GetY()].HasFigure() &&
+                   BoardFields[newCoordinates.GetX(), newCoordinates.GetY()].GetFigure().IsFigureWhite() != IsWhite;
+        }
+
+        protected abstract bool WayIsEmpty(ICoordinates newCoordinates);
+        protected abstract bool ValidDestination(ICoordinates newCoordinates);
     }
 }

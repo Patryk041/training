@@ -9,13 +9,27 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
         {
         }
 
-        protected override bool ValidateMove(ICoordinates newCoordinates)
+        protected override bool ValidDestination(ICoordinates newCoo)
         {
-            return
-                base.ValidateMove(newCoordinates) &&                        // not the same position or out of bound
-                Math.Abs(newCoordinates.GetX() - Coordinates.GetX()) ==     // the same distance in both directions
-                Math.Abs(newCoordinates.GetY() - Coordinates.GetY());    
+            return                        
+                Math.Abs(newCoo.GetX() - Coordinates.GetX()) ==     
+                Math.Abs(newCoo.GetY() - Coordinates.GetY());    
+        }
 
+        protected override bool WayIsEmpty(ICoordinates newCoo)
+        {
+            int xDir = newCoo.GetX() > Coordinates.GetX() ? 1 : -1;
+            int yDir = newCoo.GetY() > Coordinates.GetY() ? 1 : -1;
+            int d = Math.Abs(newCoo.GetX() - Coordinates.GetX());
+
+            for (int i = 1; i < d; i++) 
+            {
+                if (BoardFields[Coordinates.GetX() + i*xDir, Coordinates.GetY() + i*yDir].HasFigure())
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

@@ -9,14 +9,18 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
         {
         }
 
-        protected override bool ValidateMove(ICoordinates newCoordinates)
+        protected override bool ValidDestination(ICoordinates newCoo)
         {
             return
-                base.ValidateMove(newCoordinates) &&                        // not the same position or out of bound
-                (Math.Abs(newCoordinates.GetX() - Coordinates.GetX()) ==    // the same distance in both directions
-                 Math.Abs(newCoordinates.GetY() - Coordinates.GetY()) || 
-                ((Coordinates.GetX() != newCoordinates.GetX() ^             // change in exactly one direction
-                 Coordinates.GetY() != newCoordinates.GetY())));
+                Math.Abs(newCoo.GetX() - Coordinates.GetX()) ==      // the same distance in both directions
+                Math.Abs(newCoo.GetY() - Coordinates.GetY()) || 
+              (Coordinates.GetX() != newCoo.GetX() ^             // change in exactly one direction
+                Coordinates.GetY() != newCoo.GetY());
+        }
+
+        protected override bool WayIsEmpty(ICoordinates newCoordinates)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -8,18 +8,22 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
         {
         }
 
-        protected override bool ValidateMove(ICoordinates newCoordinates)
+        protected override bool ValidDestination(ICoordinates newCoo)
         {
-            return 
-                base.ValidateMove(newCoordinates) &&
-                ((Coordinates.GetX() - 1 == newCoordinates.GetX() && Coordinates.GetY() - 1 == newCoordinates.GetY()) ||    // diagonal
-                 (Coordinates.GetX() - 1 == newCoordinates.GetX() && Coordinates.GetY() + 1 == newCoordinates.GetY()) ||
-                 (Coordinates.GetX() + 1 == newCoordinates.GetX() && Coordinates.GetY() - 1 == newCoordinates.GetY()) ||
-                 (Coordinates.GetX() + 1 == newCoordinates.GetX() && Coordinates.GetY() + 1 == newCoordinates.GetY()) ||
-                 (Coordinates.GetX() + 1 == newCoordinates.GetX() && Coordinates.GetY() == newCoordinates.GetY()) ||        // horizontal and vertical
-                 (Coordinates.GetX() - 1 == newCoordinates.GetX() && Coordinates.GetY() == newCoordinates.GetY()) ||
-                 (Coordinates.GetX() == newCoordinates.GetX() && Coordinates.GetY() + 1 == newCoordinates.GetY()) ||
-                 (Coordinates.GetX() == newCoordinates.GetX() && Coordinates.GetY() - 1 == newCoordinates.GetY())); 
+            return
+                (Coordinates.GetX() - 1 == newCoo.GetX() && Coordinates.GetY() - 1 == newCoo.GetY()) ||    // diagonal
+                (Coordinates.GetX() - 1 == newCoo.GetX() && Coordinates.GetY() + 1 == newCoo.GetY()) ||
+                (Coordinates.GetX() + 1 == newCoo.GetX() && Coordinates.GetY() - 1 == newCoo.GetY()) ||
+                (Coordinates.GetX() + 1 == newCoo.GetX() && Coordinates.GetY() + 1 == newCoo.GetY()) ||
+                (Coordinates.GetX() + 1 == newCoo.GetX() && Coordinates.GetY() == newCoo.GetY()) ||        // horizontal and vertical
+                (Coordinates.GetX() - 1 == newCoo.GetX() && Coordinates.GetY() == newCoo.GetY()) ||
+                (Coordinates.GetX() == newCoo.GetX() && Coordinates.GetY() + 1 == newCoo.GetY()) ||
+                (Coordinates.GetX() == newCoo.GetX() && Coordinates.GetY() - 1 == newCoo.GetY()); 
+        }
+
+        protected override bool WayIsEmpty(ICoordinates newCoordinates)
+        {
+            return true;
         }
     }
 }

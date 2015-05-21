@@ -8,21 +8,25 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
         {
         }
 
-        protected override bool ValidateMove(ICoordinates newCoordinates)
+        protected override bool ValidDestination(ICoordinates newCoo)
         {
             return
-                base.ValidateMove(newCoordinates) &&                     // not the same position or out of bound
-                Coordinates.GetX() == newCoordinates.GetX() &&           // only vertical
+                Coordinates.GetX() == newCoo.GetX() &&           // only vertical
                 
-               ((IsWhite &&                                              // white
-                (Coordinates.GetY() + 1 == newCoordinates.GetY()) ||     // one down               
-                (Coordinates.GetY() == 1 &&                              // if first move
-                 Coordinates.GetY() + 2 == newCoordinates.GetY()))||     // two down
+              ((IsWhite &&                                              // white
+               (Coordinates.GetY() + 1 == newCoo.GetY()) ||     // one down               
+               (Coordinates.GetY() == 1 &&                              // if first move
+                Coordinates.GetY() + 2 == newCoo.GetY()))||     // two down
 
-                (!IsWhite &&                                             // white
-                (Coordinates.GetY() - 1 == newCoordinates.GetY()) ||     // one up               
-                (Coordinates.GetY() == 1 &&                              // if first move
-                 Coordinates.GetY() - 2 == newCoordinates.GetY())));      // two up 
+               (!IsWhite &&                                             // white
+               (Coordinates.GetY() - 1 == newCoo.GetY()) ||     // one up               
+               (Coordinates.GetY() == 1 &&                              // if first move
+                Coordinates.GetY() - 2 == newCoo.GetY())));      // two up 
+        }
+
+        protected override bool WayIsEmpty(ICoordinates newCoordinates)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
