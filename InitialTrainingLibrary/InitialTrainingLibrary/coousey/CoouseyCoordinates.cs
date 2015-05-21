@@ -2,7 +2,7 @@
 
 namespace InitialTrainingLibrary.coousey
 {
-    class CoouseyCoordinates : ICoordinates
+    public class CoouseyCoordinates : ICoordinates
     {
         private int _x;
         private int _y;

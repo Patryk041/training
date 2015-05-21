@@ -9,7 +9,7 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
         private const int WhitePawnRow = 1;
         private const int BlackPawnRow = 6;
         private const int WhiteMainRow = 0;
-        private const int BlacMainRow = 7;
+        private const int BlackMainRow = 7;
 
         private const int LeftRookColumn = 0;
         private const int RightRookColumn = 7;
@@ -20,47 +20,52 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
         private const int QueenColumn = 3;
         private const int KingColumn = 4;
 
-        private static readonly Dictionary<FigureKind, Func<ICoordinates, IFigure>> FigureFactoryDirectory
-            = new Dictionary<FigureKind, Func<ICoordinates, IFigure>>
+        private const int UpperBlackRow = 5;
+
+        private static readonly Dictionary<FigureKind, Func<ICoordinates, bool, IFigure>> FigureFactoryDirectory
+            = new Dictionary<FigureKind, Func<ICoordinates, bool, IFigure>>
        {
-           {FigureKind.Pawn, coordinates => new CoouseyPawn(coordinates, FigureKind.Pawn)},
-           {FigureKind.Rook, coordinates => new CoouseyRook(coordinates, FigureKind.Rook)},
-           {FigureKind.Horse, coordinates => new CoouseyHorse(coordinates, FigureKind.Horse)},
-           {FigureKind.Bishop, coordinates => new CoouseyBishop(coordinates, FigureKind.Bishop)},
-           {FigureKind.Queen, coordinates => new CoouseyQueen(coordinates, FigureKind.Queen)},
-           {FigureKind.King, coordinates => new CoouseyKing(coordinates, FigureKind.King)} 
+           {FigureKind.Pawn, (coordinates, isWhite) => new CoouseyPawn(coordinates, FigureKind.Pawn, isWhite)},
+           {FigureKind.Rook, (coordinates, isWhite) => new CoouseyRook(coordinates, FigureKind.Rook, isWhite)},
+           {FigureKind.Horse, (coordinates, isWhite) => new CoouseyHorse(coordinates, FigureKind.Horse, isWhite)},
+           {FigureKind.Bishop, (coordinates, isWhite) => new CoouseyBishop(coordinates, FigureKind.Bishop, isWhite)},
+           {FigureKind.Queen, (coordinates, isWhite) => new CoouseyQueen(coordinates, FigureKind.Queen, isWhite)},
+           {FigureKind.King, (coordinates, isWhite) => new CoouseyKing(coordinates, FigureKind.King, isWhite)} 
        };
 
-        public static IFigure GetNewFigure(ICoordinates coordinates)
+        public static IFigure GetNewFigureForCoordinate(ICoordinates coordinates)
         {
+            var isWhite = coordinates.GetY() < UpperBlackRow;
+
             switch (coordinates.GetY())
             {
                 case WhitePawnRow:
                 case BlackPawnRow:
-                    return FigureFactoryDirectory[FigureKind.Pawn](coordinates);
+                    return FigureFactoryDirectory[FigureKind.Pawn](coordinates, isWhite);
                 case WhiteMainRow:
-                case BlacMainRow:
+                case BlackMainRow:
                     switch (coordinates.GetX())
                     {
                         case LeftRookColumn:
                         case RightRookColumn:
-                            return FigureFactoryDirectory[FigureKind.Rook](coordinates);
+                            return FigureFactoryDirectory[FigureKind.Rook](coordinates, isWhite);
                         case LeftHorseColumn:
                         case RightHorseColumn:
-                            return FigureFactoryDirectory[FigureKind.Horse](coordinates);
+                            return FigureFactoryDirectory[FigureKind.Horse](coordinates, isWhite);
                         case LeftBishopColumn:
                         case RightBishopColumn:
-                            return FigureFactoryDirectory[FigureKind.Bishop](coordinates);
+                            return FigureFactoryDirectory[FigureKind.Bishop](coordinates, isWhite);
                         case QueenColumn:
-                            return FigureFactoryDirectory[FigureKind.Queen](coordinates);
+                            return FigureFactoryDirectory[FigureKind.Queen](coordinates, isWhite);
                         case KingColumn:
-                            return FigureFactoryDirectory[FigureKind.King](coordinates);
+                            return FigureFactoryDirectory[FigureKind.King](coordinates, isWhite);
                         default:
                             return null;
                     }
                 default:
                     return null;
-            } 
+            }
         }
     }
 }
+

@@ -4,12 +4,13 @@ namespace InitialTrainingLibrary.coousey
 {
     class CoouseyBoardField : IBoardField
     {
-        private readonly ICoordinates _coordinates;
+        private readonly ICoordinates _coordinates = null;
         private IFigure _figure;
 
-        public CoouseyBoardField(ICoordinates coordinates)
+        public CoouseyBoardField(ICoordinates coordinates, IFigure figure)
         {
             _coordinates = coordinates;
+            _figure = figure;
         }
 
         public bool IsFieldWhite()

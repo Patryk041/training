@@ -9,7 +9,7 @@ namespace InitialTrainingLibrary.coousey
 
         public CoouseyChessGame()
         {
-            _board = new CoouseyBoard(8,8);
+            _board = new CoouseyBoard();
         }
 
         public IBoard GetBoard()

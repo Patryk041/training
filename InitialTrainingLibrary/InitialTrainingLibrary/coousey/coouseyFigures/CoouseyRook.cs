@@ -4,13 +4,16 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
 {
     class CoouseyRook : CoouseyFigure
     {
-        public CoouseyRook(ICoordinates coordinates, FigureKind figureKind) : base(coordinates, figureKind)
+        public CoouseyRook(ICoordinates coordinates, FigureKind figureKind, bool isWhite) : base(coordinates, figureKind, isWhite)
         {
         }
 
-        public new bool Move(ICoordinates newCoordinates)
+        protected override bool ValidateMove(ICoordinates newCoordinates)
         {
-            return true;
+            return
+                base.ValidateMove(newCoordinates) &&                // not the same position or out of bound
+                (Coordinates.GetX() != newCoordinates.GetX() ^      // change in exactly one direction
+                 Coordinates.GetY() != newCoordinates.GetY());
         }
     }
 }

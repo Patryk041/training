@@ -78,5 +78,64 @@ namespace InitialUnitTest.coousey
             Assert.AreEqual(_chessGame.GetBoard().GetFields()[5, 1].GetFigure().GetFigureKind(), FigureKind.Pawn);
             Assert.AreEqual(_chessGame.GetBoard().GetFields()[5, 6].GetFigure().GetFigureKind(), FigureKind.Pawn);
         }
+
+        [TestMethod]
+        public void CoouseyPawnMoveTest()
+        {
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[0, 1].GetFigure().Move(new CoouseyCoordinates(0,2)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[0, 1].GetFigure().Move(new CoouseyCoordinates(0,3)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 1].GetFigure().Move(new CoouseyCoordinates(0,4)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 1].GetFigure().Move(new CoouseyCoordinates(1, 2)));
+        }
+
+        [TestMethod]
+        public void CoouseyRookMoveTest()
+        {
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[0, 0].GetFigure().Move(new CoouseyCoordinates(0, 6)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[0, 0].GetFigure().Move(new CoouseyCoordinates(3, 0)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 0].GetFigure().Move(new CoouseyCoordinates(6, 6)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 0].GetFigure().Move(new CoouseyCoordinates(1, 2)));
+        }
+
+        [TestMethod]
+        public void CoouseyHorseMoveTest()
+        {
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[1, 0].GetFigure().Move(new CoouseyCoordinates(0, 2)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[1, 0].GetFigure().Move(new CoouseyCoordinates(2, 2)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[1, 0].GetFigure().Move(new CoouseyCoordinates(3, 1)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[1, 0].GetFigure().Move(new CoouseyCoordinates(0, 0)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[1, 0].GetFigure().Move(new CoouseyCoordinates(1, 2)));
+            // out of bounds
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[1, 0].GetFigure().Move(new CoouseyCoordinates(-1, -1)));
+            
+        }
+
+        [TestMethod]
+        public void CoouseyBishopMoveTest()
+        {
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[2, 0].GetFigure().Move(new CoouseyCoordinates(3, 1)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[2, 0].GetFigure().Move(new CoouseyCoordinates(0, 2)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[2, 0].GetFigure().Move(new CoouseyCoordinates(3, 0)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[2, 0].GetFigure().Move(new CoouseyCoordinates(2, 2)));
+        }
+
+        [TestMethod]
+        public void CoouseyQueenMoveTest()
+        {
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[3, 0].GetFigure().Move(new CoouseyCoordinates(3, 3)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[3, 0].GetFigure().Move(new CoouseyCoordinates(1, 2)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[3, 0].GetFigure().Move(new CoouseyCoordinates(2, 2)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[3, 0].GetFigure().Move(new CoouseyCoordinates(0, 1)));
+        }
+
+        [TestMethod]
+        public void CoouseyKingMoveTest()
+        {
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[4, 0].GetFigure().Move(new CoouseyCoordinates(4, 1)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[4, 0].GetFigure().Move(new CoouseyCoordinates(5, 0)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[4, 0].GetFigure().Move(new CoouseyCoordinates(5, 1)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[4, 0].GetFigure().Move(new CoouseyCoordinates(2, 2)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[4, 0].GetFigure().Move(new CoouseyCoordinates(0, 1)));
+        }  
     }
 }

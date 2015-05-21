@@ -8,18 +8,20 @@ namespace InitialTrainingLibrary.coousey
     {
         private readonly IBoardField[,] _boardFields;
 
-        public CoouseyBoard(int x, int y)
+        public CoouseyBoard()
         {
-            _boardFields = new IBoardField[x, y];
+            _boardFields = new IBoardField[8, 8];
 
-            for (int i = 0; i < _boardFields.GetLength(0); i++)
-                for (int j = 0; j < _boardFields.GetLength(1); j++)
+            for (var i = 0; i < _boardFields.GetLength(0); i++)
+            {
+                for (var j = 0; j < _boardFields.GetLength(1); j++)
                 {
-                    CoouseyCoordinates coordinates = new CoouseyCoordinates(i, j);
-
-                    _boardFields[i, j] = new CoouseyBoardField(coordinates);
-                    _boardFields[i, j].SetFigure(CoouseyFigureFactory.GetNewFigure(coordinates));
+                    var coordinates = new CoouseyCoordinates(j, i);
+                    _boardFields[j, i] = new CoouseyBoardField(coordinates, CoouseyFigureFactory.GetNewFigureForCoordinate(coordinates));
                 }
+            }
+
+            CoouseyFigure.SetBoardFields(_boardFields);
         }
 
         public IBoardField[,] GetFields()
