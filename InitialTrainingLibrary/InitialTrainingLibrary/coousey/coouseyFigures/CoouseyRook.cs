@@ -3,27 +3,25 @@ using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.coousey.coouseyFigures
 {
-    class CoouseyRook : CoouseyFigure
+    public class CoouseyRook : CoouseyFigure
     {
         public CoouseyRook(ICoordinates coordinates, FigureKind figureKind, bool isWhite) : base(coordinates, figureKind, isWhite)
         {
         }
 
-        protected override bool ValidDestination(ICoordinates newCoo)
+        public override bool ValidDestination(ICoordinates newCoo)
         {
             return
                 Coordinates.GetX() != newCoo.GetX() ^      
                 Coordinates.GetY() != newCoo.GetY();
         }
 
-        protected override bool WayIsEmpty(ICoordinates newCoordinates)
+        public override bool WayIsEmpty(ICoordinates newCoordinates)
         {
-            bool horizontal = Coordinates.GetX() != newCoordinates.GetX();
-
             int dir;
             int d;
 
-            if (horizontal)
+            if (Coordinates.GetX() != newCoordinates.GetX())
             {
                 dir = newCoordinates.GetX() > Coordinates.GetX() ? 1 : -1;
                 d = Math.Abs(newCoordinates.GetX() - Coordinates.GetX());

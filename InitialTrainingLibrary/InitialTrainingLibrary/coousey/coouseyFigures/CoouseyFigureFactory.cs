@@ -4,7 +4,7 @@ using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.coousey.coouseyFigures
 {
-    class CoouseyFigureFactory
+    public class CoouseyFigureFactory
     {
         private const int WhitePawnRow = 1;
         private const int BlackPawnRow = 6;
@@ -33,6 +33,12 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
            {FigureKind.King, (coordinates, isWhite) => new CoouseyKing(coordinates, FigureKind.King, isWhite)} 
        };
 
+        // for tests
+        public static IFigure GetNewFigureByKind(FigureKind kind,ICoordinates coordinates, bool isWhite)
+        {
+            return FigureFactoryDirectory[kind](coordinates, isWhite);
+        }
+
         public static IFigure GetNewFigureForCoordinate(ICoordinates coordinates)
         {
             var isWhite = coordinates.GetY() < UpperBlackRow;
@@ -42,6 +48,7 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
                 case WhitePawnRow:
                 case BlackPawnRow:
                     return FigureFactoryDirectory[FigureKind.Pawn](coordinates, isWhite);
+
                 case WhiteMainRow:
                 case BlackMainRow:
                     switch (coordinates.GetX())
@@ -49,18 +56,23 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
                         case LeftRookColumn:
                         case RightRookColumn:
                             return FigureFactoryDirectory[FigureKind.Rook](coordinates, isWhite);
+
                         case LeftHorseColumn:
                         case RightHorseColumn:
                             return FigureFactoryDirectory[FigureKind.Horse](coordinates, isWhite);
+
                         case LeftBishopColumn:
                         case RightBishopColumn:
                             return FigureFactoryDirectory[FigureKind.Bishop](coordinates, isWhite);
+
                         case QueenColumn:
                             return FigureFactoryDirectory[FigureKind.Queen](coordinates, isWhite);
+
                         case KingColumn:
                             return FigureFactoryDirectory[FigureKind.King](coordinates, isWhite);
+
                         default:
-                            return null;
+                            throw new Exception("wrong Coordinates, out of bounds");
                     }
                 default:
                     return null;

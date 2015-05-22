@@ -82,6 +82,10 @@
     <Compile Include="coousey\coouseyFigures\CoouseyPawn.cs" />
     <Compile Include="coousey\coouseyFigures\CoouseyQueen.cs" />
     <Compile Include="coousey\coouseyFigures\CoouseyRook.cs" />
+    <Compile Include="coousey\validators\InsideBounds.cs" />
+    <Compile Include="coousey\validators\IValidator.cs" />
+    <Compile Include="coousey\validators\NoFriendOnField.cs" />
+    <Compile Include="coousey\validators\NotTheSamePosition.cs" />
     <Compile Include="denio\DateValidator\DateValidator.cs" />
     <Compile Include="denio\DateValidator\Day.cs" />
     <Compile Include="denio\DateValidator\Month.cs" />

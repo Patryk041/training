@@ -1,10 +1,11 @@
-﻿using InitialTrainingLibrary.Interfaces.chess;
+﻿using InitialTrainingLibrary.coousey.coouseyFigures;
+using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.coousey
 {
     class CoouseyBoardField : IBoardField
     {
-        private readonly ICoordinates _coordinates = null;
+        private readonly ICoordinates _coordinates;
         private IFigure _figure;
 
         public CoouseyBoardField(ICoordinates coordinates, IFigure figure)
