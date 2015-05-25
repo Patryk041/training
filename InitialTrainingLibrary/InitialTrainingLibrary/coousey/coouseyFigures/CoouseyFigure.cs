@@ -1,5 +1,4 @@
-﻿using System;
-using InitialTrainingLibrary.Interfaces.chess;
+﻿using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.coousey.coouseyFigures
 {
@@ -9,20 +8,12 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
         protected readonly FigureKind FigureKind;
         protected readonly bool IsWhite;
         protected static IBoardField[,] BoardFields;
-        protected delegate bool MoveValidationDelegate(ICoordinates newCoordinates);
 
         protected CoouseyFigure(ICoordinates coordinates, FigureKind figureKind, bool isWhite)
         {
             Coordinates = coordinates;
             FigureKind = figureKind;
             IsWhite = isWhite;
-
-           /* MoveValidationDelegate moveValidationDelegate =
-                new MoveValidationDelegate(InsideBounds) +
-                NotTheSamePosition +
-                NoFriendOnField +
-                ValidDestination +
-                WayIsEmpty;*/
         }
 
         public bool IsFigureWhite()
@@ -40,19 +31,15 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
             return FigureKind;
         }
 
-        public static void SetBoardFields(IBoardField[,] boardFields)
-        {
-            BoardFields = boardFields;
-        }
-
         public bool Move(ICoordinates newCoordinates)
         {
-            return
+            return 
                 InsideBounds(newCoordinates) &&
                 NotTheSamePosition(newCoordinates) &&
                 NoFriendOnField(newCoordinates) &&
-                ValidDestination(Coordinates) &&    
-                WayIsEmpty(newCoordinates);
+                ValidDestination(newCoordinates) &&
+                WayIsEmpty(newCoordinates) &&
+                TryMove(newCoordinates);           
         }
 
         public bool InsideBounds(ICoordinates newCoordinates)
@@ -76,13 +63,26 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
             return true;
         }
 
-        public static IBoardField[,] GetBordFields()
+        public static void SetBoardFields(IBoardField[,] boardFields)
         {
-            return BoardFields;
+            BoardFields = boardFields;
+        }
+
+        protected void SetCoordinates(ICoordinates coordinates)
+        {
+            Coordinates = coordinates;
         }
 
         public abstract bool ValidDestination(ICoordinates newCoordinates);
         public abstract bool WayIsEmpty(ICoordinates newCoordinates);
-        
+
+        public virtual bool TryMove(ICoordinates newCoordinates)
+        {
+            BoardFields[newCoordinates.GetX(), newCoordinates.GetY()].SetFigure(this);
+            BoardFields[Coordinates.GetX(), Coordinates.GetY()].SetFigure(null);
+            SetCoordinates(newCoordinates);
+
+            return true;
+        }
     }
 }

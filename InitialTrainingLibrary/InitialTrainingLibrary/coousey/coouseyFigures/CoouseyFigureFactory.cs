@@ -25,7 +25,10 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
         private static readonly Dictionary<FigureKind, Func<ICoordinates, bool, IFigure>> FigureFactoryDirectory
             = new Dictionary<FigureKind, Func<ICoordinates, bool, IFigure>>
        {
-           {FigureKind.Pawn, (coordinates, isWhite) => new CoouseyPawn(coordinates, FigureKind.Pawn, isWhite)},
+           {FigureKind.Pawn, (coordinates, isWhite) => isWhite
+               ? (CoouseyFigure) (new CoouseyWhitePawn(coordinates, FigureKind.Pawn, true))
+               : (CoouseyFigure) (new CoouseyBlackPawn(coordinates, FigureKind.Pawn, false))
+           },
            {FigureKind.Rook, (coordinates, isWhite) => new CoouseyRook(coordinates, FigureKind.Rook, isWhite)},
            {FigureKind.Horse, (coordinates, isWhite) => new CoouseyHorse(coordinates, FigureKind.Horse, isWhite)},
            {FigureKind.Bishop, (coordinates, isWhite) => new CoouseyBishop(coordinates, FigureKind.Bishop, isWhite)},
@@ -33,7 +36,7 @@ namespace InitialTrainingLibrary.coousey.coouseyFigures
            {FigureKind.King, (coordinates, isWhite) => new CoouseyKing(coordinates, FigureKind.King, isWhite)} 
        };
 
-        // for tests
+        // for tests only
         public static IFigure GetNewFigureByKind(FigureKind kind,ICoordinates coordinates, bool isWhite)
         {
             return FigureFactoryDirectory[kind](coordinates, isWhite);

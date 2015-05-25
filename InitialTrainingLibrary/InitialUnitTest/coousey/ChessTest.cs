@@ -1,4 +1,5 @@
 ﻿
+using System.Diagnostics;
 using InitialTrainingLibrary.coousey;
 using InitialTrainingLibrary.coousey.coouseyFigures;
 using InitialTrainingLibrary.Interfaces.chess;
@@ -9,7 +10,7 @@ namespace InitialUnitTest.coousey
     [TestClass]
     public class CoouseyChessTest
     {
-        readonly CoouseyChessGame _chessGame = new CoouseyChessGame();
+        CoouseyChessGame _chessGame = new CoouseyChessGame();
 
         [TestMethod]
         public void CoouseyFieldColorTest()
@@ -269,5 +270,55 @@ namespace InitialUnitTest.coousey
             Assert.IsFalse(((CoouseyQueen)_chessGame.GetBoard().GetFields()[3, 0].GetFigure()).WayIsEmpty(new CoouseyCoordinates(3, 7)));
             Assert.IsTrue(((CoouseyQueen)_chessGame.GetBoard().GetFields()[3, 0].GetFigure()).WayIsEmpty(new CoouseyCoordinates(7, 4)));
         }
+
+        [TestMethod]
+        public void CoouseyFinalChessTest()
+        {
+            _chessGame = new CoouseyChessGame();
+
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 1].GetFigure().Move(new CoouseyCoordinates(1, 1)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[0, 1].GetFigure().Move(new CoouseyCoordinates(0, 3)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 3].GetFigure().Move(new CoouseyCoordinates(0, 2)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 3].GetFigure().Move(new CoouseyCoordinates(1, 3)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 3].GetFigure().Move(new CoouseyCoordinates(1, 4)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[0, 3].GetFigure().Move(new CoouseyCoordinates(0, 4)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[0, 4].GetFigure().Move(new CoouseyCoordinates(0, 5)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 6].GetFigure().Move(new CoouseyCoordinates(0, 4)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 5].GetFigure().Move(new CoouseyCoordinates(0, 6)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[0, 5].GetFigure().Move(new CoouseyCoordinates(1, 6)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[0, 6].GetFigure().Move(new CoouseyCoordinates(0, 4)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[0, 0].GetFigure().Move(new CoouseyCoordinates(0, 6)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[0, 0].GetFigure().Move(new CoouseyCoordinates(0, 4)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[1, 0].GetFigure().Move(new CoouseyCoordinates(2, 2)));
+            Assert.IsFalse(_chessGame.GetBoard().GetFields()[2, 0].GetFigure().Move(new CoouseyCoordinates(0, 2)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[1, 1].GetFigure().Move(new CoouseyCoordinates(1, 2)));
+            Assert.IsTrue(_chessGame.GetBoard().GetFields()[2, 0].GetFigure().Move(new CoouseyCoordinates(0, 2)));
+            DrawBoard(_chessGame);
+        }
+
+        public void DrawBoard(CoouseyChessGame chessGame)
+        {
+            string s;
+            string c;
+
+            for (int i = 0; i < _chessGame.GetBoard().GetFields().GetLength(0); i++)
+            {
+                s = "";
+
+                for (int j = 0; j < _chessGame.GetBoard().GetFields().GetLength(1); j++)
+                {
+                    if (_chessGame.GetBoard().GetFields()[j, i].HasFigure())
+                    {
+                        c = _chessGame.GetBoard().GetFields()[j, i].GetFigure().IsFigureWhite() ? "w" : "b";
+                        s += ("[" + c + _chessGame.GetBoard().GetFields()[j, i].GetFigure().GetFigureKind().ToString()[0] + "]");
+                    }
+                    else s += "[  ]";
+                }
+
+                Debug.Print(s);
+            }
+            Debug.Print("\n");
+        }	
+
     }
 }

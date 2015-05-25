@@ -1,66 +1,47 @@
-﻿using System;
-using InitialTrainingLibrary.Interfaces.chess;
+﻿using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.coousey.coouseyFigures
 {
-    public class CoouseyPawn : CoouseyFigure
+    public abstract class CoouseyPawn : CoouseyFigure
     {
-        public CoouseyPawn(ICoordinates coordinates, FigureKind figureKind, bool isWhite) : base(coordinates, figureKind, isWhite)
+        protected CoouseyPawn(ICoordinates coordinates, FigureKind figureKind, bool isWhite) : base(coordinates, figureKind, isWhite)
         {
         }
 
         public override bool ValidDestination(ICoordinates newCoordinates)
         {
             return
-                (IsWhite &&
-                (WhiteOneStepForward(newCoordinates) ||
-                 WhiteTwoStepsForward(newCoordinates))) ||
-
-                (!IsWhite &&
-                (BlackOneStepForward(newCoordinates) ||
-                BlackTwoStepsForward(newCoordinates)));
+                OneStepForward(newCoordinates) ||
+                TwoStepsForward(newCoordinates) ||
+                LeftStep(newCoordinates) ||
+                RightStep(newCoordinates);
         }
 
-        public override bool WayIsEmpty(ICoordinates newCoordinates)
+        public abstract override bool WayIsEmpty(ICoordinates newCoordinates);
+
+        public override bool TryMove(ICoordinates newCoordinates)
         {
-            if (Math.Abs(newCoordinates.GetY() - Coordinates.GetY()) == 2)
+            if ((OneStepForward(newCoordinates) &&
+                 !BoardFields[newCoordinates.GetX(), newCoordinates.GetY()].HasFigure()) ||
+                (TwoStepsForward(newCoordinates) &&
+                !BoardFields[newCoordinates.GetX(), newCoordinates.GetY()].HasFigure()) ||
+                (LeftStep(newCoordinates) &&
+                 BoardFields[newCoordinates.GetX(), newCoordinates.GetY()].HasFigure()) ||
+                (RightStep(newCoordinates) &&
+                BoardFields[newCoordinates.GetX(), newCoordinates.GetY()].HasFigure()))
             {
-                if ((IsWhite &&
-                     !BoardFields[Coordinates.GetX(), Coordinates.GetY() + 1].HasFigure()) ||
-                    (!IsWhite &&
-                     !BoardFields[Coordinates.GetX(), Coordinates.GetY() - 1].HasFigure()))
-                {
-                    return true;
-                }
-                return false;
+                base.TryMove(newCoordinates);
+                return true;
             }
-            return true;
-        }
-                                                                           
-        private bool WhiteOneStepForward(ICoordinates newCoordinates)   //   .
-        {                                                               //  /|\
-            return Coordinates.GetY() + 1 == newCoordinates.GetY() &&   
-                  (Coordinates.GetX() == newCoordinates.GetX() || Coordinates.GetX() + 1 == newCoordinates.GetX() || Coordinates.GetX() - 1 == newCoordinates.GetX());
+            return false;
         }
 
-        private bool BlackOneStepForward(ICoordinates newCoordinates)   //  \|/
-        {                                                               //   '
-            return Coordinates.GetY() - 1 == newCoordinates.GetY() &&
-                  (Coordinates.GetX() == newCoordinates.GetX() || Coordinates.GetX() + 1 == newCoordinates.GetX() || Coordinates.GetX() - 1 == newCoordinates.GetX());
-        }
+        protected abstract bool OneStepForward(ICoordinates newCoordinates);
 
-        private bool WhiteTwoStepsForward(ICoordinates newCoordinates)
-        {
-            return                                                      //   .
-                Coordinates.GetY() + 2 == newCoordinates.GetY() &&      //   |
-                Coordinates.GetX() == newCoordinates.GetX();            //   |
-        }   
+        protected abstract bool TwoStepsForward(ICoordinates newCoordinates);
 
-        private bool BlackTwoStepsForward(ICoordinates newCoordinates)   //  |
-        {                                                                //  |
-            return                                                       //  '
-                Coordinates.GetY() - 2 == newCoordinates.GetY() &&
-                Coordinates.GetX() == newCoordinates.GetX();
-        }
+        protected abstract bool LeftStep(ICoordinates newCoordinates);
+
+        protected abstract bool RightStep(ICoordinates newCoordinates);
     }
 }

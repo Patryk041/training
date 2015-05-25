@@ -75,6 +75,7 @@
     <Compile Include="coousey\CoouseyChessGame.cs" />
     <Compile Include="coousey\CoouseyCoordinates.cs" />
     <Compile Include="coousey\coouseyFigures\CoouseyBishop.cs" />
+    <Compile Include="coousey\coouseyFigures\CoouseyBlackPawn.cs" />
     <Compile Include="coousey\coouseyFigures\CoouseyFigure.cs" />
     <Compile Include="coousey\coouseyFigures\CoouseyFigureFactory.cs" />
     <Compile Include="coousey\coouseyFigures\CoouseyHorse.cs" />
@@ -82,10 +83,7 @@
     <Compile Include="coousey\coouseyFigures\CoouseyPawn.cs" />
     <Compile Include="coousey\coouseyFigures\CoouseyQueen.cs" />
     <Compile Include="coousey\coouseyFigures\CoouseyRook.cs" />
-    <Compile Include="coousey\validators\InsideBounds.cs" />
-    <Compile Include="coousey\validators\IValidator.cs" />
-    <Compile Include="coousey\validators\NoFriendOnField.cs" />
-    <Compile Include="coousey\validators\NotTheSamePosition.cs" />
+    <Compile Include="coousey\coouseyFigures\CoouseyWhitePawn.cs" />
     <Compile Include="denio\DateValidator\DateValidator.cs" />
     <Compile Include="denio\DateValidator\Day.cs" />
     <Compile Include="denio\DateValidator\Month.cs" />

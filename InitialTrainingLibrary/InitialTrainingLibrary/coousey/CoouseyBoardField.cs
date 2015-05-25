@@ -1,5 +1,4 @@
-﻿using InitialTrainingLibrary.coousey.coouseyFigures;
-using InitialTrainingLibrary.Interfaces.chess;
+﻿using InitialTrainingLibrary.Interfaces.chess;
 
 namespace InitialTrainingLibrary.coousey
 {

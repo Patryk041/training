@@ -1,16 +1,16 @@
 ﻿using InitialTrainingLibrary.coousey.coouseyFigures;
 using InitialTrainingLibrary.Interfaces.chess;
 
-
 namespace InitialTrainingLibrary.coousey
 {
     class CoouseyBoard : IBoard
     {
         private readonly IBoardField[,] _boardFields;
+        private const int Size = 8;
 
         public CoouseyBoard()
         {
-            _boardFields = new IBoardField[8, 8];
+            _boardFields = new IBoardField[Size, Size];
 
             for (var i = 0; i < _boardFields.GetLength(0); i++)
             {
