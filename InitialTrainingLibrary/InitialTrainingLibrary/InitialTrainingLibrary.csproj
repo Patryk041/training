@@ -216,6 +216,17 @@
     <Compile Include="RS\DateValidator\Complex\MonthDateValidator.cs" />
     <Compile Include="RS\DateValidator\Complex\YearDateValidator.cs" />
     <Compile Include="RS\DateValidator\Simple\DateValidator.cs" />
+    <Compile Include="Rubi\Figures\King.cs" />
+    <Compile Include="Rubi\Figures\Pawn.cs" />
+    <Compile Include="Rubi\Figures\Horse.cs" />
+    <Compile Include="Rubi\Figures\Queen.cs" />
+    <Compile Include="Rubi\Figures\Bishop.cs" />
+    <Compile Include="Rubi\Figures\Rook.cs" />
+    <Compile Include="Rubi\RubiCooridnates.cs" />
+    <Compile Include="Rubi\RubiBoardField.cs" />
+    <Compile Include="Rubi\RubiFigure.cs" />
+    <Compile Include="Rubi\RubiBoard.cs" />
+    <Compile Include="Rubi\RubiGame.cs" />
     <Compile Include="Sito\1\DateParts.cs" />
     <Compile Include="Sito\1\DatePartValidator.cs" />
     <Compile Include="Sito\1\DatePartValidatorFactory.cs" />
