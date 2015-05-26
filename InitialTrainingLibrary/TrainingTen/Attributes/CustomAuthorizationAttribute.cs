@@ -2,6 +2,7 @@
 
 using System.Web;
 using System.Web.Mvc;
+using TrainingTen.Managers;
 
 namespace TrainingTen.Attributes
 {
@@ -9,9 +10,15 @@ namespace TrainingTen.Attributes
     {
         protected override bool AuthorizeCore(HttpContextBase httpContext)
         {
-            
-            return false;
-            return base.AuthorizeCore(httpContext);
+            var test = httpContext;
+
+            if (httpContext.Request.IsAjaxRequest())
+            {
+                return false;
+            }
+
+            UserManager userManager = new UserManager();
+            return userManager.IsLogged();
         }
     }
 }

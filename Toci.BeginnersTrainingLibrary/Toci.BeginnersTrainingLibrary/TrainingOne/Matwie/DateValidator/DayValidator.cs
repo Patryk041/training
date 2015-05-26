@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Toci.BeginnersTrainingLibrary.TrainingOne.Matwie.DateValidator
+﻿namespace Toci.BeginnersTrainingLibrary.TrainingOne.Matwie.DateValidator
 {
     class DayValidator
     {
@@ -12,10 +10,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.Matwie.DateValidator
 
         public static bool IsValid(int year, int month, int day)
         {
-            if (day >= MinDay && day <= DaysInMonth(year, month))
-                return true;
-        
-            throw new Exception();
+            return (day >= MinDay && day <= DaysInMonth(year, month));
         }
 
         private static bool IsLeapYear(int year)

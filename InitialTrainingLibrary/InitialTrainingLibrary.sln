@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingNine", "TrainingNin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingTen", "TrainingTen\TrainingTen.csproj", "{731AB793-2F43-433F-A727-3E265E7A65E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.ExampleService", "Toci.ExampleService\Toci.ExampleService.csproj", "{CA743A0E-9155-4537-8FC1-F26CE43ADC7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{731AB793-2F43-433F-A727-3E265E7A65E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{731AB793-2F43-433F-A727-3E265E7A65E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{731AB793-2F43-433F-A727-3E265E7A65E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA743A0E-9155-4537-8FC1-F26CE43ADC7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA743A0E-9155-4537-8FC1-F26CE43ADC7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA743A0E-9155-4537-8FC1-F26CE43ADC7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA743A0E-9155-4537-8FC1-F26CE43ADC7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

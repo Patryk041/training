@@ -7,7 +7,7 @@ using Toci.BeginnersTrainingLibrary.TrainingOne.Excercise;
 
 namespace Toci.BeginnersTrainingLibrary.TrainingOne.denio.PalindromAnagramWildcard
 {
-    class TextOperations : ITextOperationsSets
+    public class TextOperations : ITextOperationsSets
     {
         public string GetNick()
         {

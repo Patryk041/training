@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TrainingTen.Attributes;
 
 namespace TrainingTen.Controllers
 {
@@ -10,6 +11,19 @@ namespace TrainingTen.Controllers
     {
         public ActionResult Index()
         {
+            return View();
+        }
+
+        [CustomAuthorization]
+        public ActionResult MgAction()
+        {
+
+//            Response.Clear();
+//            Response.ContentType = "application/pdf";
+//            Response.AppendHeader("Content-Disposition", "attachment; filename=foo.pdf");
+//            Response.;
+//            Response.End();
+
             return View();
         }
 

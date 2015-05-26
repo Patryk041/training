@@ -97,6 +97,8 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrainingOne\Kielich\DateValidator\Kielich.cs" />
+    <Compile Include="Warrior\DateValidator\WarriorStringOperationsTest.cs" />
+    <Compile Include="Warrior\DateValidator\WarriorDateValidationTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.BeginnersTrainingLibrary\Toci.BeginnersTrainingLibrary.csproj">
