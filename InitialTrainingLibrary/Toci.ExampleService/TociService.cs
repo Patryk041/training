@@ -15,6 +15,7 @@ namespace Toci.ExampleService
         public TociService()
         {
             InitializeComponent();
+            
         }
 
         protected override void OnStart(string[] args)

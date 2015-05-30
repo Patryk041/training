@@ -34,17 +34,9 @@
       <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.WebRequest" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,20 +62,6 @@
     <Compile Include="Chmura\OtherChess\ChessGame.cs" />
     <Compile Include="Chmura\OtherChess\Figure\ChessFigure.cs" />
     <Compile Include="Chmura\OtherChess\Figure\SpecificFigure.cs" />
-    <Compile Include="coousey\CoouseyBoard.cs" />
-    <Compile Include="coousey\CoouseyBoardField.cs" />
-    <Compile Include="coousey\CoouseyChessGame.cs" />
-    <Compile Include="coousey\CoouseyCoordinates.cs" />
-    <Compile Include="coousey\coouseyFigures\CoouseyBishop.cs" />
-    <Compile Include="coousey\coouseyFigures\CoouseyBlackPawn.cs" />
-    <Compile Include="coousey\coouseyFigures\CoouseyFigure.cs" />
-    <Compile Include="coousey\coouseyFigures\CoouseyFigureFactory.cs" />
-    <Compile Include="coousey\coouseyFigures\CoouseyHorse.cs" />
-    <Compile Include="coousey\coouseyFigures\CoouseyKing.cs" />
-    <Compile Include="coousey\coouseyFigures\CoouseyPawn.cs" />
-    <Compile Include="coousey\coouseyFigures\CoouseyQueen.cs" />
-    <Compile Include="coousey\coouseyFigures\CoouseyRook.cs" />
-    <Compile Include="coousey\coouseyFigures\CoouseyWhitePawn.cs" />
     <Compile Include="denio\DateValidator\DateValidator.cs" />
     <Compile Include="denio\DateValidator\Day.cs" />
     <Compile Include="denio\DateValidator\Month.cs" />
@@ -230,17 +208,6 @@
     <Compile Include="RS\DateValidator\Complex\MonthDateValidator.cs" />
     <Compile Include="RS\DateValidator\Complex\YearDateValidator.cs" />
     <Compile Include="RS\DateValidator\Simple\DateValidator.cs" />
-    <Compile Include="Rubi\Figures\King.cs" />
-    <Compile Include="Rubi\Figures\Pawn.cs" />
-    <Compile Include="Rubi\Figures\Horse.cs" />
-    <Compile Include="Rubi\Figures\Queen.cs" />
-    <Compile Include="Rubi\Figures\Bishop.cs" />
-    <Compile Include="Rubi\Figures\Rook.cs" />
-    <Compile Include="Rubi\RubiCooridnates.cs" />
-    <Compile Include="Rubi\RubiBoardField.cs" />
-    <Compile Include="Rubi\RubiFigure.cs" />
-    <Compile Include="Rubi\RubiBoard.cs" />
-    <Compile Include="Rubi\RubiGame.cs" />
     <Compile Include="Sito\1\DateParts.cs" />
     <Compile Include="Sito\1\DatePartValidator.cs" />
     <Compile Include="Sito\1\DatePartValidatorFactory.cs" />
@@ -395,42 +362,24 @@
     <Compile Include="warrior\conflict\ConflictType.cs" />
     <Compile Include="warrior\EnumerableImplementations\CustomGenericEnumerable.cs" />
     <Compile Include="warrior\EnumerableImplementations\CustomGenericEnumerator.cs" />
+    <Compile Include="warrior\sharding\ShardingAlgorithm.cs" />
+    <Compile Include="warrior\tpl\PalindromParallelTester.cs" />
+    <Compile Include="warrior\tpl\ParallelProcessing.cs" />
     <Compile Include="warrior\WarriorDateValidator.cs" />
-    <Compile Include="Wiosna\Chess\Board.cs" />
-    <Compile Include="Wiosna\Chess\BoardField.cs" />
-    <Compile Include="Wiosna\Chess\Coordinates.cs" />
-    <Compile Include="Wiosna\Chess\Figure.cs" />
-    <Compile Include="Wiosna\Chess\Figures\Bishop.cs" />
-    <Compile Include="Wiosna\Chess\Figures\Horse.cs" />
-    <Compile Include="Wiosna\Chess\Figures\King.cs" />
-    <Compile Include="Wiosna\Chess\Figures\Pawn.cs" />
-    <Compile Include="Wiosna\Chess\Figures\Queen.cs" />
-    <Compile Include="Wiosna\Chess\Figures\Rook.cs" />
     <Compile Include="Wiosna\DateParts\MonthList.cs" />
-    <Compile Include="Wiosna\DateValidator\DayValidation.cs" />
-    <Compile Include="Wiosna\DateValidator\MonthAndMonthLength.cs" />
-    <Compile Include="Wiosna\DateValidator\MonthValidation.cs" />
-    <Compile Include="Wiosna\DateValidator\WiosnaDateValidator.cs" />
-    <Compile Include="Wiosna\DateValidator\WiosnaInterfaces\IDayValidation.cs" />
-    <Compile Include="Wiosna\DateValidator\WiosnaInterfaces\IMonthAndMonthLength.cs" />
-    <Compile Include="Wiosna\DateValidator\WiosnaInterfaces\IMonthValidation.cs" />
-    <Compile Include="Wiosna\DateValidator\WiosnaInterfaces\IYearValidation.cs" />
-    <Compile Include="Wiosna\DateValidator\YearValidation.cs" />
+    <Compile Include="Wiosna\DayValidation.cs" />
+    <Compile Include="Wiosna\MonthAndMonthLength.cs" />
+    <Compile Include="Wiosna\MonthValidation.cs" />
+    <Compile Include="Wiosna\WiosnaDateValidator.cs" />
+    <Compile Include="Wiosna\WiosnaInterfaces\IDayValidation.cs" />
+    <Compile Include="Wiosna\WiosnaInterfaces\IMonthAndMonthLength.cs" />
+    <Compile Include="Wiosna\WiosnaInterfaces\IMonthValidation.cs" />
+    <Compile Include="Wiosna\WiosnaInterfaces\IYearValidation.cs" />
+    <Compile Include="Wiosna\YearValidation.cs" />
     <Compile Include="Witek\NaszaKlasa.cs" />
-    <Compile Include="Zielu\Chess\FigureFactory.cs" />
     <Compile Include="Zielu\Chess\ZieluBoard.cs" />
     <Compile Include="Zielu\Chess\ZieluBoardField.cs" />
     <Compile Include="Zielu\Chess\Zielu2DCoordinates.cs" />
-    <Compile Include="Zielu\Chess\ZieluFigures\ZieluBishop.cs" />
-    <Compile Include="Zielu\Chess\ZieluFigures\ZieluFigureDummy.cs" />
-    <Compile Include="Zielu\Chess\ZieluFigures\ZieluHorse.cs" />
-    <Compile Include="Zielu\Chess\ZieluFigures\ZieluKing.cs" />
-    <Compile Include="Zielu\Chess\ZieluFigures\ZieluPawn.cs" />
-    <Compile Include="Zielu\Chess\ZieluFigures\ZieluQueen.cs" />
-    <Compile Include="Zielu\Chess\ZieluFigures\ZieluRook.cs" />
-    <Compile Include="Zielu\Chess\ZieluGame.cs" />
-    <Compile Include="Zielu\Extensions\ChessExtensions.cs" />
-    <Compile Include="Zielu\Extensions\IntExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="frogie\data\dane.txt" />
@@ -453,6 +402,7 @@
     <Folder Include="denio\Interfaces\" />
     <Folder Include="TrainingThree\Db\" />
     <Folder Include="TrainingThree\FileParser\" />
+    <Folder Include="Zielu\Chess\ZieluFigures\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Dal\Toci.Dal.csproj">
