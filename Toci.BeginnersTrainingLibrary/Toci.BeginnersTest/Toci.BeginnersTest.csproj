@@ -54,6 +54,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Hornets\Algorythmics\AnagramsTest.cs" />
+    <Compile Include="Hornets\Algorythmics\Jakkolwiek.cs" />
     <Compile Include="TrainingFour\DB\DbTests.cs" />
     <Compile Include="TrainingFour\Disposables\DisposablesTest.cs" />
     <Compile Include="TrainingFour\Form1.cs">
@@ -101,15 +103,15 @@
     <Compile Include="Warrior\DateValidator\WarriorDateValidationTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="TrainingFour\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Toci.BeginnersTrainingLibrary\Toci.BeginnersTrainingLibrary.csproj">
       <Project>{7461f541-dce1-41e4-9a31-b1a97d654462}</Project>
       <Name>Toci.BeginnersTrainingLibrary</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="TrainingFour\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
