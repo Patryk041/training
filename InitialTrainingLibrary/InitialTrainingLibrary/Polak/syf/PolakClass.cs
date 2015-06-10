@@ -21,5 +21,6 @@ namespace InitialTrainingLibrary.Polak.syf
         }
 
         //nie mozna odwolac sie do prywatnego pola klasy, poza tą klasą.
+        //komentarz 2
     }
 }
