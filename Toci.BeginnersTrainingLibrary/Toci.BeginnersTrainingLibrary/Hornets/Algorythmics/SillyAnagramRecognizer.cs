@@ -7,6 +7,8 @@ namespace Toci.BeginnersTrainingLibrary.Hornets.Algorythmics
 {
     public class SillyAnagramRecognizer
     {
+        private Dictionary<int, List<string>> anagramsDictionary;
+
         public bool IsAnagram(string candidate, string secondCandidate)
         {
             var candidateArray = candidate.ToCharArray();
@@ -42,29 +44,39 @@ namespace Toci.BeginnersTrainingLibrary.Hornets.Algorythmics
             return sum;
         }
 
-        public string[] ExtractAnagramArray(string[] anagramArray)
+        public Dictionary<int,List<string>> ExtractAnagramsDictionary(List<string> candidatesList)
         {
-            List<string> resultArrayList = new List<string>();
+            anagramsDictionary = new Dictionary<int, List<string>>();
+            int countOfSublist = 0;
+            List<string> currentAnagramsList = new List<string>();
 
-            for (int i = 0; i < anagramArray.Count(); i++)
+            for (int i = 0; i < candidatesList.Count - 1; i++)
             {
-                for (int j = 0; j < anagramArray.Count(); j++)
-                {
-                   
+                if(!currentAnagramsList.Contains(candidatesList[i])){
+                    countOfSublist = candidatesList.Count - (i + 1);
+                    currentAnagramsList.AddRange( ExtractAnagramsList(candidatesList[i], candidatesList.GetRange(i + 1, countOfSublist )) );
                 }
-
             }
-            
-            return resultArrayList.ToArray();
-
+            return anagramsDictionary;
         }
 
-        protected virtual bool MatchAnagrams(string candidate,string secondCandidate)
+        protected virtual bool MatchAnagrams(string candidate, string secondCandidate)
         {
-
             return (IsAnagram(candidate, secondCandidate));
-
         }
 
+        private List<String> ExtractAnagramsList(string pattern, List<string> candidateList)
+        {
+            var anagramsList = (from candidate in candidateList
+                        where MatchAnagrams(pattern,candidate)
+                        select candidate).ToList();
+            if (anagramsList.Count > 0)
+            {
+                anagramsList.Add(pattern);
+                anagramsDictionary.Add(anagramsDictionary.Count, anagramsList);
+                
+            }
+            return anagramsList;
+        }
     }
 }
