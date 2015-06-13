@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Rzeszow.Startu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Legnica.Startup", "Toci.Hornets.Legnica.Startup\Toci.Hornets.Legnica.Startup.csproj", "{AF471312-A476-4659-A409-6487B1DA42C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GorzowWlkpCode", "GorzowWlkpCode\GorzowWlkpCode.csproj", "{EF8F89F6-DA86-4174-9ED8-9FBD490EFB17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.GorzowWlkp.Startup", "GorzowWlkpCode\Toci.Hornets.GorzowWlkp.Startup.csproj", "{EF8F89F6-DA86-4174-9ED8-9FBD490EFB17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
