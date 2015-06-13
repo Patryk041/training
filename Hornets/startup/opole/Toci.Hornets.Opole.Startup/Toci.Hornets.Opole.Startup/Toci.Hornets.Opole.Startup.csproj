@@ -47,6 +47,7 @@
   <ItemGroup>
     <Folder Include="TrainingOne\Erley\" />
     <Folder Include="TrainingOne\Polak\" />
+    <Folder Include="TrainingOne\S2yfr4nt\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\ghostrider\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
