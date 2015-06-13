@@ -7,8 +7,8 @@
     <ProjectGuid>{8716B607-ACDA-4091-AF8D-E423B6163A98}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Toci.Hornets.Rzeszów.Startup</RootNamespace>
-    <AssemblyName>Toci.Hornets.Rzeszów.Startup</AssemblyName>
+    <RootNamespace>Toci.Hornets.Rzeszow.Startup</RootNamespace>
+    <AssemblyName>Toci.Hornets.Rzeszow.Startup</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
