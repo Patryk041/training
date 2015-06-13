@@ -42,6 +42,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="GhostRiderTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="S2yfr4nt\rqwerqrew.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ghostrider\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
@@ -50,40 +51,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-
     <Folder Include="Amman\" />
     <Folder Include="Chmura\" />
-    <Folder Include="Dysq\" />
-    <Folder Include="Kobra\" />
-
-
-
-
-
-    <Folder Include="Tomek\" />
-
-
-
-    <Folder Include="Chmura\" />
-
-    <Folder Include="Kobra\" />
-    <Folder Include="Amman\" />
     <Folder Include="Dysq\" />
     <Folder Include="GhostRider\" />
-
-    <Folder Include="Dysq\" />
-
-    <Folder Include="SherpinTraining\" />
-    <Folder Include="Amman\" />
-
-
-
+    <Folder Include="Kobra\" />
     <Folder Include="Polak1\" />
-    <Folder Include="S2yfr4nt\" />
-
-    <Folder Include="Polak1\" />
-
     <Folder Include="SherpinTraining\" />
+    <Folder Include="Tomek\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
