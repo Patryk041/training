@@ -43,6 +43,7 @@
     <Compile Include="TrainingOne\Duch\ExampleClass.cs" />
     <Compile Include="TrainingOne\Duch\ExampleClassClone.cs" />
     <Compile Include="TrainingOne\Duch\ExampleClassCopy.cs" />
+    <Compile Include="TrainingOne\GhostRider\Whatever.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOne\Erley\" />
