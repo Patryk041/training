@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 using Toci.BeginnersTrainingLibrary.Hornets.AccessModifiers;
 using Toci.BeginnersTrainingLibrary.Hornets.Algorythmics;
 using Toci.BeginnersTrainingLibrary.Hornets.Strategy;
@@ -41,11 +42,13 @@ namespace Toci.BeginnersTest.Hornets.Algorythmics
 
             var recognizer = new SillyAnagramRecognizer();
 
-            var anagramsArray = new[] {"asdasd", "michal", "imchal", "rower", "worer", "sadasdas", "rfdfadsfs"};
+            var anagramsArray = new[] {"asdasd", "michal", "imchal", "rower", "worer", "sadasdas", "rfdfadsfs","lmicha"};
 
-            var array = recognizer.ExtractAnagramArray(anagramsArray);
+            Dictionary<int, List<string>> anagramsDictonary = recognizer.ExtractAnagramsDictionary(new List<string>(anagramsArray));
 
-            Assert.AreEqual(2,array.Length);
+            Assert.AreEqual(2, anagramsDictonary.Count);
+            Assert.AreEqual(3,anagramsDictonary[0].Count);
+            Assert.AreEqual(2, anagramsDictonary[1].Count);
 
           
 
@@ -58,13 +61,23 @@ namespace Toci.BeginnersTest.Hornets.Algorythmics
             AnagramRecognizer ASCIIRecognizer = new ASCIIAnagramRecognizer();
             AnagramRecognizer SortRecognizer = new SortAnagramRecognizer();
 
-            AnagramsExtractor extractor = new AnagramsExtractor();
+            AnagramsExtractor extractor = new AnagramsExtractor(SortRecognizer);
 
-            var anagramsArray = new[] {"asdasd", "michal", "imchal", "rower", "worer", "sadasdas", "rfdfadsfs"};
+            var anagramsArray = new[] { "asdasd", "michal", "imchal", "rower", "worer", "sadasdas", "rfdfadsfs", "lmicha" };
 
-            Assert.AreEqual(2,extractor.ExtractAnagrams(ASCIIRecognizer, anagramsArray));
+            Dictionary<int, List<string>> anagramsDictonary = extractor.ExtractAnagramsDictionary(new List<string>(anagramsArray));
 
-            Assert.AreEqual(2,extractor.ExtractAnagrams(SortRecognizer, anagramsArray));
+            Assert.AreEqual(2, anagramsDictonary.Count);
+            Assert.AreEqual(3, anagramsDictonary[0].Count);
+            Assert.AreEqual(2, anagramsDictonary[1].Count);
+
+            anagramsArray = new[] { "ad","bc" };
+            //setter
+            extractor.AnagramRecognizer = ASCIIRecognizer;
+
+            anagramsDictonary = extractor.ExtractAnagramsDictionary(new List<string>(anagramsArray));
+
+            //Assert.AreEqual(0, anagramsDictonary.Count);
         }
     }
 }

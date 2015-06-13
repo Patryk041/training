@@ -17,3 +17,4 @@ namespace Toci.BeginnersTest.Hornets.Algorythmics
         }
     }
 }
+
