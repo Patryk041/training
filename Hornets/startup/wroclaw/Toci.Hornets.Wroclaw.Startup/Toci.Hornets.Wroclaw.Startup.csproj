@@ -50,15 +50,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
+
 
 
     <Folder Include="Tomek\" />
 
 
-=======
+    <Folder Include="Kobra\" />
+
     <Folder Include="Dysq\" />
->>>>>>> d73770c0d54de9279a63c6d56c4d2813e0f062d3
+
     <Folder Include="SherpinTraining\" />
     <Folder Include="Amman\" />
 
