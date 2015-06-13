@@ -50,13 +50,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Chmura\" />
-    <Folder Include="Kobra\" />
-    <Folder Include="Dysq\" />
-    <Folder Include="SherpinTraining\" />
     <Folder Include="Amman\" />
+    <Folder Include="Chmura\" />
+    <Folder Include="Dysq\" />
+    <Folder Include="Kobra\" />
     <Folder Include="Polak1\" />
-
+    <Folder Include="S2yfr4nt\" />
+    <Folder Include="SherpinTraining\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
