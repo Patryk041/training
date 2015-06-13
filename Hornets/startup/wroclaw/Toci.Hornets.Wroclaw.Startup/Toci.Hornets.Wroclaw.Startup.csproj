@@ -50,6 +50,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+
+    <Folder Include="Kobra\" />
+    <Folder Include="Dysq\" />
+    <Folder Include="SherpinTraining\" />
     <Folder Include="Amman\" />
     <Folder Include="Dysq\" />
     <Folder Include="GhostRider\" />
