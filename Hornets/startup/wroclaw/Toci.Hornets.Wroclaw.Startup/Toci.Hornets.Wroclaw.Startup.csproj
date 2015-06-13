@@ -51,9 +51,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Vernathic\" />
-    <Folder Include="Dysq\" />
-    <Folder Include="SherpinTraining\" />
     <Folder Include="Amman\" />
     <Folder Include="Chmura\" />
     <Folder Include="Dysq\" />
@@ -61,7 +58,9 @@
     <Folder Include="Kobra\" />
     <Folder Include="Polak1\" />
     <Folder Include="SherpinTraining\" />
+    <Folder Include="Squla\" />
     <Folder Include="Tomek\" />
+    <Folder Include="Vernathic\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
