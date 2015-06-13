@@ -51,7 +51,13 @@
   </ItemGroup>
   <ItemGroup>
 
+
     <Folder Include="Tomek\" />
+
+
+    <Folder Include="SherpinTraining\" />
+
+    <Folder Include="Amman\" />
 
     <Folder Include="Polak1\" />
 
