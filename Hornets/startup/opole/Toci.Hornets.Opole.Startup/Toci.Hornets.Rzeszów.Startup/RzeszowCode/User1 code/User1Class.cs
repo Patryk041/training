@@ -9,5 +9,6 @@ namespace Toci.Hornets.Rzeszów.Startup.RzeszowCode.User1_code
     class User1Class
     {
         //user 1 code here
+        //kod dla brancha rzeszow
     }
 }
