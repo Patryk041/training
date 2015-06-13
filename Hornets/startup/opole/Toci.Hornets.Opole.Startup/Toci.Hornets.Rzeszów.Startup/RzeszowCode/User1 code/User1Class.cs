@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Hornets.Rzeszow.Startup.RzeszowCode.User1_code
+namespace Toci.Hornets.Rzeszów.Startup.RzeszowCode.User1_code
 {
     class User1Class
     {
