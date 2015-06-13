@@ -53,8 +53,12 @@
 
 
 
+
     <Folder Include="Tomek\" />
 
+
+
+    <Folder Include="Chmura\" />
 
     <Folder Include="Kobra\" />
 
