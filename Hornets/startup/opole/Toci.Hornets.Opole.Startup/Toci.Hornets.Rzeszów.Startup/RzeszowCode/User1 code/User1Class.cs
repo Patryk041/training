@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Hornets.Rzeszów.Startup
+namespace Toci.Hornets.Rzeszów.Startup.RzeszowCode.User1_code
 {
-    public class Class1
+    class User1Class
     {
+        //user 1 code here
     }
 }
