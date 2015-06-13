@@ -43,7 +43,6 @@
     <Compile Include="PolakClassTest.cs" />
     <Compile Include="GhostRiderTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="S2yfr4nt\rqwerqrew.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ghostrider\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
@@ -58,6 +57,7 @@
     <Folder Include="GhostRider\" />
     <Folder Include="Kobra\" />
     <Folder Include="Polak1\" />
+    <Folder Include="S2yfr4nt\" />
     <Folder Include="SherpinTraining\" />
     <Folder Include="Squla\" />
     <Folder Include="Tomek\" />
