@@ -67,6 +67,9 @@
     <Folder Include="Chmura\" />
 
     <Folder Include="Kobra\" />
+    <Folder Include="Amman\" />
+    <Folder Include="Dysq\" />
+    <Folder Include="GhostRider\" />
 
     <Folder Include="Dysq\" />
 
@@ -74,8 +77,12 @@
     <Folder Include="Amman\" />
 
 
+
     <Folder Include="Polak1\" />
     <Folder Include="S2yfr4nt\" />
+
+    <Folder Include="Polak1\" />
+
     <Folder Include="SherpinTraining\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
