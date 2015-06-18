@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{20D21FF1-352C-4885-AA58-F21699658ACA}</ProjectGuid>
+    <ProjectGuid>{8DB040BC-2311-4E87-A0A4-5E7A26E65DE5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Toci.Hornets.Wroclaw.Startup</RootNamespace>
-    <AssemblyName>Toci.Hornets.Wroclaw.Startup</AssemblyName>
+    <RootNamespace>Toci.Hornets.Bytom.Startup</RootNamespace>
+    <AssemblyName>Toci.Hornets.Bytom.Startup</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,25 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="GhostRiderTest.cs" />
+    <Compile Include="NajmilszeMiastoWPolsceXD\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\ghostrider\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
-      <Project>{0aff2f49-28c1-4255-be12-a9341e4e5045}</Project>
-      <Name>Toci.Hornets.GhostRider</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Amman\" />
-    <Folder Include="Chmura\" />
-    <Folder Include="Dysq\" />
-    <Folder Include="GhostRider\" />
-    <Folder Include="Kobra\" />
-    <Folder Include="Polak1\" />
-    <Folder Include="SherpinTraining\" />
-    <Folder Include="Tomek\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
