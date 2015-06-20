@@ -44,8 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\ghostrider\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
-      <Project>{0aff2f49-28c1-4255-be12-a9341e4e5045}</Project>
+      <Project>{0AFF2F49-28C1-4255-BE12-A9341E4E5045}</Project>
       <Name>Toci.Hornets.GhostRider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Hornets.Bytom.Startup\Toci.Hornets.Bytom.Startup.csproj">
+      <Project>{8db040bc-2311-4e87-a0a4-5e7a26e65de5}</Project>
+      <Name>Toci.Hornets.Bytom.Startup</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

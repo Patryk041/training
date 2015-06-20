@@ -41,7 +41,41 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrainingOne\AccessModifiers\AccessModifiersExamples.cs" />
+    <Compile Include="TrainingTwo\Delegates\SomeModel.cs" />
+    <Compile Include="TrainingTwo\Delegates\WarriorWhatever.cs" />
+    <Compile Include="TrainingTwo\DllShowdown\KlasaZBanki.cs" />
+    <Compile Include="TrainingTwo\ExtensionMethods\FrogieExtensions.cs" />
+    <Compile Include="TrainingTwo\ExtensionMethods\IFrogie.cs" />
+    <Compile Include="TrainingTwo\ExtensionMethods\NiceFrogie.cs" />
+    <Compile Include="TrainingTwo\ExtensionMethods\TestExtensionMethods.cs" />
+    <Compile Include="TrainingTwo\ExtensionMethods\VeryNiceFrogie.cs" />
+    <Compile Include="TrainingTwo\Generics\Collections\GenericCollection.cs" />
+    <Compile Include="TrainingTwo\Generics\Collections\IntCollection.cs" />
+    <Compile Include="TrainingTwo\Generics\Collections\StringCollection.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\Bishop.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\CarsFactory.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\ChessFactory.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\ChessFiguresGenericFactory.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\DictChessFactory.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\Figure.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\FigureType.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\GenericFactory.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\King.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\Rook.cs" />
+    <Compile Include="TrainingTwo\Generics\TestGenerics.cs" />
+    <Compile Include="TrainingTwo\Homework\GhostRoderPeselValidator.cs" />
+    <Compile Include="TrainingTwo\Homework\PeselValidator.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Abstraction\DataTransmision.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Interfaces\ICommunicationMessage.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Messages\CommunicationMessage.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Messages\VoiceMessage.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Polymorphism.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\PolyShowdown.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Transmission\InternetTransmission.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Transmission\PigeonTransmission.cs" />
+    <Compile Include="TrainingTwo\Omr\Fridge.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

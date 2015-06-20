@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Opole.Startup", "Toci.Hornets.Opole.Startup\Toci.Hornets.Opole.Startup.csproj", "{3E3B7364-0E57-45FC-B2EB-65C9C2A7D588}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Wroclaw.Startup", "..\..\wroclaw\Toci.Hornets.Wroclaw.Startup\Toci.Hornets.Wroclaw.Startup.csproj", "{20D21FF1-352C-4885-AA58-F21699658ACA}"
@@ -18,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Ruchocice.Startup", "Toci.Hornets.Ruchocice.Startup\Toci.Hornets.Ruchocice.Startup.csproj", "{BA1488C6-3B62-4CC1-B2AD-8B955B2F2ACC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Bytom.Startup", "Toci.Hornets.Bytom.Startup\Toci.Hornets.Bytom.Startup.csproj", "{8DB040BC-2311-4E87-A0A4-5E7A26E65DE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.All.Startup.Test", "Toci.Hornets.All.Startup.Test\Toci.Hornets.All.Startup.Test.csproj", "{F2A4915C-7E08-411E-9F60-6241EE914F84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +57,10 @@ Global
 		{8DB040BC-2311-4E87-A0A4-5E7A26E65DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DB040BC-2311-4E87-A0A4-5E7A26E65DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DB040BC-2311-4E87-A0A4-5E7A26E65DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2A4915C-7E08-411E-9F60-6241EE914F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A4915C-7E08-411E-9F60-6241EE914F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A4915C-7E08-411E-9F60-6241EE914F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A4915C-7E08-411E-9F60-6241EE914F84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
