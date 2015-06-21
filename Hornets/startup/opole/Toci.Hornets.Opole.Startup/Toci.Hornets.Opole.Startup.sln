@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Opole.Startup", "Toci.Hornets.Opole.Startup\Toci.Hornets.Opole.Startup.csproj", "{3E3B7364-0E57-45FC-B2EB-65C9C2A7D588}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Wroclaw.Startup", "..\..\wroclaw\Toci.Hornets.Wroclaw.Startup\Toci.Hornets.Wroclaw.Startup.csproj", "{20D21FF1-352C-4885-AA58-F21699658ACA}"
