@@ -49,8 +49,10 @@
     <Compile Include="Clients\MsSqlClient.cs" />
     <Compile Include="Clients\PostgreSqlClient.cs" />
     <Compile Include="Clients\SqlClientBase.cs" />
+    <Compile Include="ClusterAccess\DbCluster.cs" />
     <Compile Include="ClusterAccess\DbHandle.cs" />
     <Compile Include="ClusterAccess\DbHandleFactory.cs" />
+    <Compile Include="ClusterAccess\ModularDbSharding.cs" />
     <Compile Include="ClusterAccess\SqlClientKind.cs" />
     <Compile Include="DbVirtualization\DbField.cs" />
     <Compile Include="DbVirtualization\Model.cs" />

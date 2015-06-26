@@ -326,7 +326,9 @@
     <Content Include="TrainingTwo\data\ing.txt" />
     <Content Include="TrainingTwo\data\multibank.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Hornets\Algorythmics\" />
+  </ItemGroup>
   <ItemGroup />
   <ItemGroup />
   <ItemGroup>

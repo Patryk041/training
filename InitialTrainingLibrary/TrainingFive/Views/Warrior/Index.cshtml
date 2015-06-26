@@ -9,7 +9,10 @@
 }
 
 @section scripts{
-@*    <script src="http://azg.pl/js/swfobject.js"></script>*@
+    @*    <script src="http://azg.pl/js/swfobject.js"></script>*@
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <script src="~/Scripts/namespaceTesting.js"></script>
+    <script src="~/Scripts/pagejs.js"></script>
 }
 
 
@@ -74,7 +77,20 @@ foreach (DataColumn item in Model.TransferLists.Tables[0].Columns)
     }).Empty("There are no people.");
 }
 
+<input type="text" id="TestowanieSelektora" class="klasaPodSelektor" name="TestowanieSelektora" value="cokolwiek">
+<input type="text" id="TestowanieSelektora2" class="klasaPodSelektor" name="TestowanieSelektora" value="cokolwiek">
+
+<div class="colouredred">div 1
+    </div>
+<div class="colouredred">div 2
+    </div>
+<div class="colouredred">
+    div 3
+</div>
+
 <script type="text/javascript">
+
+    
 
     function FillAjax(url) {
         console.log('fill ajax in action');

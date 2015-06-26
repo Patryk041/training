@@ -362,6 +362,9 @@
     <Compile Include="warrior\conflict\ConflictType.cs" />
     <Compile Include="warrior\EnumerableImplementations\CustomGenericEnumerable.cs" />
     <Compile Include="warrior\EnumerableImplementations\CustomGenericEnumerator.cs" />
+    <Compile Include="warrior\sharding\ShardingAlgorithm.cs" />
+    <Compile Include="warrior\tpl\PalindromParallelTester.cs" />
+    <Compile Include="warrior\tpl\ParallelProcessing.cs" />
     <Compile Include="warrior\WarriorDateValidator.cs" />
     <Compile Include="Wiosna\DateParts\MonthList.cs" />
     <Compile Include="Wiosna\DayValidation.cs" />

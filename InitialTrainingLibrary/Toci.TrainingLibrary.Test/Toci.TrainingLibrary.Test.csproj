@@ -92,6 +92,7 @@
     <Compile Include="Developers\Vernathic\Inheritance\VInheritanceTest.cs" />
     <Compile Include="Developers\Vernathic\VCoffeeMachineTest.cs" />
     <Compile Include="Developers\Warrior\Db\DbOperationsTest.cs" />
+    <Compile Include="Developers\Warrior\Tpl\PalindromParallelTesterTest.cs" />
     <Compile Include="Developers\Warrior\WarriorFileParserTest.cs" />
     <Compile Include="Developers\Warrior\WarriorMgSolutionTest.cs" />
     <Compile Include="Developers\Warrior\WcfTesting\WcfWarriorTest.cs" />
