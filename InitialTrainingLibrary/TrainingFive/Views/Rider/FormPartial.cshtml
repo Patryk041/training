@@ -1,0 +1,16 @@
+﻿@model TrainingFive.Models.DepartureEntityModel
+    
+<form id="DeparturesForm" method="POST" action="rider">
+
+    @Html.DropDownListFor(model => model.ClientId, Model.ClientsList)
+
+    @Html.DropDownListFor(model => model.SectionId, Model.SectionsList[Model.ClientId])
+
+    @Html.TextBoxFor(model => model.WeeksCount)
+
+    @Html.DropDownListFor(model => model.ConsultantId, Model.ConsultantsList)
+
+    @Html.DropDownListFor(model => model.StatusId, Model.StatusList)
+
+    <input type="submit" name="confirm" value="Zatwierdz">
+</form>

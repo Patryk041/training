@@ -11,7 +11,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.S2yfr4nt.DateValidator
     class S2yfr4ntDayValidation
     {
         private const int february = 2;
-        private const int minDayLimit = 2;
+        private const int minDayLimit = 1;
         private static int _month;
         private static int _year;
 
@@ -33,7 +33,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.S2yfr4nt.DateValidator
         private static int MaxDayLimit()
         {
             if (_month == february)
-                return (S2yfr4ntYearValidation.isLeapYear(_year) ? 28 : 27);
+                return (S2yfr4ntYearValidation.isLeapYear(_year) ? 29 : 28);
 
             if (monthDay.ContainsKey(_month))
                 return monthDay[_month];
@@ -47,7 +47,7 @@ namespace Toci.BeginnersTrainingLibrary.TrainingOne.S2yfr4nt.DateValidator
             _month = month;
             _year = year;
             
-            return (day>minDayLimit && day <=MaxDayLimit());
+            return (day>=minDayLimit && day <=MaxDayLimit());
         }
     }
 }
