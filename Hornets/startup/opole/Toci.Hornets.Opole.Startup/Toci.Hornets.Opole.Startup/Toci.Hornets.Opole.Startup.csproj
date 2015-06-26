@@ -59,7 +59,6 @@
     <Compile Include="TrainingOne\GhostRider\Whatever.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="S2yfr4nt\" />
     <Folder Include="TrainingOne\Erley\" />
     <Folder Include="TrainingOne\Polak\" />
     <Folder Include="TrainingOne\S2yfr4nt\" />
