@@ -1,0 +1,1 @@
+this is the correct folder for hornets trainings
