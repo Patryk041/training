@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Toci.Hornets.Bytom
 {
-    public class Class1
-    {
-    }
+	class VFirstClass
+	{
+		public string MojaPropercja { get; set; }
+	}
 }
