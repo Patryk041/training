@@ -44,6 +44,7 @@
     <Compile Include="Quicksilver\testByQuicksilver.cs" />
     <Compile Include="TypowyAdam\ExampleClass.cs" />
     <Compile Include="UCantTouchThis\ImSoBadAss.cs" />
+    <Compile Include="Undergroun1Task\Interface\IStringComparator.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
