@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Toci.Hornets.Rzeszow.Malwina
 {
-    class DoIt
+    class Class1
     {
     }
 }
