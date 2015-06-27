@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E3B7364-0E57-45FC-B2EB-65C9C2A7D588}</ProjectGuid>
+    <ProjectGuid>{9E9EC7C9-B279-42A1-8BE4-90F814C37FDB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Toci.Hornets.Opole.Startup</RootNamespace>
-    <AssemblyName>Toci.Hornets.Opole.Startup</AssemblyName>
+    <RootNamespace>Toci.Hornets.Legnica</RootNamespace>
+    <AssemblyName>Toci.Hornets.Legnica</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,36 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Omr\UCantTouchThis\Lamp\BaseLamp.cs" />
-    <Compile Include="Omr\UCantTouchThis\Lamp\Base\BaseType.cs" />
-    <Compile Include="Omr\UCantTouchThis\Lamp\Base\HangingLamp.cs" />
-    <Compile Include="Omr\UCantTouchThis\Lamp\Base\StandingLamp.cs" />
-    <Compile Include="Omr\UCantTouchThis\Lamp\Interfaces\ILamp.cs" />
-    <Compile Include="Omr\UCantTouchThis\Lamp\LampInstance.cs" />
-    <Compile Include="Omr\UCantTouchThis\Lamp\LightSources\Bulb.cs" />
-    <Compile Include="Omr\UCantTouchThis\Lamp\LightSources\ElectricSource.cs" />
-    <Compile Include="Omr\UCantTouchThis\Lamp\LightSources\Flame.cs" />
-    <Compile Include="Omr\UCantTouchThis\Lamp\Lamp.cs" />
-    <Compile Include="Omr\UCantTouchThis\Lamp\LightSources\LED.cs" />
-    <Compile Include="Omr\UCantTouchThis\Lamp\LightSources\BaseLightSource.cs" />
-    <Compile Include="Omr\UCantTouchThis\Lamp\LightSources\OilSource.cs" />
+    <Compile Include="Patryk_Stulczewski\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TrainingOne\Duch\ExampleClass.cs" />
-    <Compile Include="TrainingOne\Duch\ExampleClassClone.cs" />
-    <Compile Include="TrainingOne\Duch\ExampleClassCopy.cs" />
-    <Compile Include="TrainingOne\GhostRider\Whatever.cs" />
-    <Compile Include="TrainingOne\S2yfr4nt\S2yfr4ntPeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="TrainingOne\Erley\" />
-    <Folder Include="TrainingOne\Polak\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\ghostrider\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
-      <Project>{0aff2f49-28c1-4255-be12-a9341e4e5045}</Project>
+    <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
+      <Project>{878b2eca-9cc0-42cf-aca6-cd6e44c47451}</Project>
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
