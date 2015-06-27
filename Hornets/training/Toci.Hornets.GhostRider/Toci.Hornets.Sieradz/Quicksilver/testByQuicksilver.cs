@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Hornets.Sieradz.Natalia_Radomska
+namespace Toci.Hornets.Sieradz.Quicksilver
 {
-    class Quicksilver
+    class testByQuicksilver
     {
-        //sth
     }
 }
