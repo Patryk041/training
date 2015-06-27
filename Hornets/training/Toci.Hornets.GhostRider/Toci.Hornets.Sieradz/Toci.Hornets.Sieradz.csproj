@@ -53,6 +53,10 @@
       <Project>{878b2eca-9cc0-42cf-aca6-cd6e44c47451}</Project>
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Toci.Hornets.UnitTests\Toci.Hornets.UnitTests.csproj">
+      <Project>{0fac1228-c619-413b-ab31-7f82ecb44ebd}</Project>
+      <Name>Toci.Hornets.UnitTests</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
