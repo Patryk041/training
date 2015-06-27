@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Hornets.Wroclaw
+namespace Toci.Hornets.Wroclaw.Perła
 {
-    public class Class1
+    class test
     {
     }
 }
