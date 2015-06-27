@@ -1,13 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
+<<<<<<< HEAD
 VisualStudioVersion = 12.0.30501.0
+=======
+VisualStudioVersion = 12.0.31101.0
+>>>>>>> d290f5f6c1defbf57bfdc518749cbbb5831807a7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.GhostRider", "Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj", "{878B2ECA-9CC0-42CF-ACA6-CD6E44C47451}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.UnitTests", "Toci.Hornets.UnitTests\Toci.Hornets.UnitTests.csproj", "{0FAC1228-C619-413B-AB31-7F82ECB44EBD}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Bytom", "Toci.Hornets.Bytom\Toci.Hornets.Bytom.csproj", "{B7F17D8A-C620-4239-A086-79DBEF372755}"
+=======
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Opole", "Toci.Hornets.Opole\Toci.Hornets.Opole.csproj", "{76565C63-6DC2-47B8-98D0-E2C57E1DD6E7}"
+EndProject
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Legnica", "Toci.Hornets.Legnica\Toci.Hornets.Legnica.csproj", "{9E9EC7C9-B279-42A1-8BE4-90F814C37FDB}"
+>>>>>>> d290f5f6c1defbf57bfdc518749cbbb5831807a7
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +35,23 @@ Global
 		{0FAC1228-C619-413B-AB31-7F82ECB44EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FAC1228-C619-413B-AB31-7F82ECB44EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FAC1228-C619-413B-AB31-7F82ECB44EBD}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{B7F17D8A-C620-4239-A086-79DBEF372755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B7F17D8A-C620-4239-A086-79DBEF372755}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7F17D8A-C620-4239-A086-79DBEF372755}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7F17D8A-C620-4239-A086-79DBEF372755}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+
+		{76565C63-6DC2-47B8-98D0-E2C57E1DD6E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76565C63-6DC2-47B8-98D0-E2C57E1DD6E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76565C63-6DC2-47B8-98D0-E2C57E1DD6E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76565C63-6DC2-47B8-98D0-E2C57E1DD6E7}.Release|Any CPU.Build.0 = Release|Any CPU
+
+		{9E9EC7C9-B279-42A1-8BE4-90F814C37FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E9EC7C9-B279-42A1-8BE4-90F814C37FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E9EC7C9-B279-42A1-8BE4-90F814C37FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E9EC7C9-B279-42A1-8BE4-90F814C37FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> d290f5f6c1defbf57bfdc518749cbbb5831807a7
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
