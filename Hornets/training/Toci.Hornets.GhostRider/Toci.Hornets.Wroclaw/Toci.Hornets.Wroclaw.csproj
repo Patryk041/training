@@ -39,7 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
     <Compile Include="AdamPast\MergeTestAP.cs" />
+    <Compile Include="Ayuu\NewTestClass.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Kollwing\test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
