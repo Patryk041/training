@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Lausion\ExampeClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="S2yfr4nt\Branch.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
