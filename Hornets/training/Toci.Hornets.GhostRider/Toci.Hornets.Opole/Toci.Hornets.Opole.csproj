@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="GhostRider\HowDoWeWorkOnBranches.cs" />
     <Compile Include="Lausion\ExampeClass.cs" />
+    <Compile Include="Maly\TestBranch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="S2yfr4nt\Branch.cs" />
   </ItemGroup>
