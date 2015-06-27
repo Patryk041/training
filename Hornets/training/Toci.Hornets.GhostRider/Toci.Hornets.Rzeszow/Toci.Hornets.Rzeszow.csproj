@@ -42,6 +42,12 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
+      <Project>{878b2eca-9cc0-42cf-aca6-cd6e44c47451}</Project>
+      <Name>Toci.Hornets.GhostRider</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
