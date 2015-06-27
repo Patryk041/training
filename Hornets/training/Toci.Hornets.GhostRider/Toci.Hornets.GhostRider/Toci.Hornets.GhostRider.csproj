@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="AccessModifiers\Didi\KlasaDidi.cs" />
     <Compile Include="AccessModifiers\Example.cs" />
+    <Compile Include="AccessModifiers\Kollwing\KlasaKollwing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
