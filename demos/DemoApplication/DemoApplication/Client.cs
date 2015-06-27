@@ -1,4 +1,5 @@
-﻿using DemoApplication.Interfaces;
+﻿using System;
+using DemoApplication.Interfaces;
 
 namespace DemoApplication
 {
