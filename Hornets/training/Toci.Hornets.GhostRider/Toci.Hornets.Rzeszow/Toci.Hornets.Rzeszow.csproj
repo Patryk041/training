@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agata\Test2yagha.cs" />
     <Compile Include="Agata\TestBranchesAga.cs" />
     <Compile Include="Chojnecki\AndrzejJestem.cs" />
     <Compile Include="Class1.cs" />
