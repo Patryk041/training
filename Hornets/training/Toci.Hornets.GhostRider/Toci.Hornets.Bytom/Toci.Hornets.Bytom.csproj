@@ -39,13 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KamilS\KamilS.cs" />
+
+    <Compile Include="Class1.cs" />
+    <Compile Include="Coffee13\CoffeeTestClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-
- <Compile Include="Szary\KlasaSzarego.cs" />
-
-    <Compile Include="VFirstClass.cs" />
-
+    <Compile Include="Szary\KlasaSzarego.cs" />
+    <Compile Include="Vernathic\VFirstClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
