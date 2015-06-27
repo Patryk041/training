@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Hornets.Bytom
+namespace Toci.Hornets.Bytom.AdamP
 {
-    public class Class1
+    class Class1
     {
     }
 }
