@@ -53,6 +53,12 @@
     <Compile Include="Sieradz\Duch\Underground1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toci.Hornets.Sieradz\Toci.Hornets.Sieradz.csproj">
+      <Project>{1109fd72-7199-4d6f-b150-918976558e66}</Project>
+      <Name>Toci.Hornets.Sieradz</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
