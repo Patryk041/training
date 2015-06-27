@@ -41,7 +41,11 @@
   <ItemGroup>
     <Compile Include="KamilS\KamilS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
+ <Compile Include="Szary\KlasaSzarego.cs" />
+
     <Compile Include="VFirstClass.cs" />
+
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
