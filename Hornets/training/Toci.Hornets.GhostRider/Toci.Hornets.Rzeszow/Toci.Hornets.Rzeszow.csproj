@@ -43,6 +43,7 @@
     <Compile Include="Agata\TestBranchesAga.cs" />
     <Compile Include="Chojnecki\AndrzejJestem.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="KSebal\Class1.cs" />
     <Compile Include="KubaT\TestClass.cs" />
     <Compile Include="Polak\PolakStuff.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
