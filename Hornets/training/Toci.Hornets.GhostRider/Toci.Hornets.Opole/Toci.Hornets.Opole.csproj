@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dziusio\Andrzej.cs" />
     <Compile Include="GhostRider\HowDoWeWorkOnBranches.cs" />
     <Compile Include="Lausion\ExampeClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
