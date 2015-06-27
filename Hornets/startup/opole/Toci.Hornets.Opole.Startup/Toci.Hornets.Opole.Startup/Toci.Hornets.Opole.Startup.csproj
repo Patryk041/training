@@ -57,11 +57,11 @@
     <Compile Include="TrainingOne\Duch\ExampleClassClone.cs" />
     <Compile Include="TrainingOne\Duch\ExampleClassCopy.cs" />
     <Compile Include="TrainingOne\GhostRider\Whatever.cs" />
+    <Compile Include="TrainingOne\S2yfr4nt\S2yfr4ntPeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOne\Erley\" />
     <Folder Include="TrainingOne\Polak\" />
-    <Folder Include="TrainingOne\S2yfr4nt\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\ghostrider\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
