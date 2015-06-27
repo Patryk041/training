@@ -39,6 +39,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Omr\UCantTouchThis\Lamp\BaseLamp.cs" />
+    <Compile Include="Omr\UCantTouchThis\Lamp\Base\BaseType.cs" />
+    <Compile Include="Omr\UCantTouchThis\Lamp\Base\HangingLamp.cs" />
+    <Compile Include="Omr\UCantTouchThis\Lamp\Base\StandingLamp.cs" />
+    <Compile Include="Omr\UCantTouchThis\Lamp\Interfaces\ILamp.cs" />
+    <Compile Include="Omr\UCantTouchThis\Lamp\LampInstance.cs" />
+    <Compile Include="Omr\UCantTouchThis\Lamp\LightSources\Bulb.cs" />
+    <Compile Include="Omr\UCantTouchThis\Lamp\LightSources\ElectricSource.cs" />
+    <Compile Include="Omr\UCantTouchThis\Lamp\LightSources\Flame.cs" />
+    <Compile Include="Omr\UCantTouchThis\Lamp\Lamp.cs" />
+    <Compile Include="Omr\UCantTouchThis\Lamp\LightSources\LED.cs" />
+    <Compile Include="Omr\UCantTouchThis\Lamp\LightSources\BaseLightSource.cs" />
+    <Compile Include="Omr\UCantTouchThis\Lamp\LightSources\OilSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrainingOne\Duch\ExampleClass.cs" />
     <Compile Include="TrainingOne\Duch\ExampleClassClone.cs" />
