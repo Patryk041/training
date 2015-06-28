@@ -6,7 +6,7 @@ require_once 'funkcje.php';
 function OpenFile($plik)
 {
 	if(Rudi_getend($plik,4)==".php")
-	echo file_get_contents($plik);
+	 require_once "$plik";
 }
 
 
@@ -17,7 +17,7 @@ function ReadDirectory($directory)
 	while($katalog = readdir($handle))
 	{
 		if($katalog!="." && $katalog!="..")
-		echo $katalog."\n";
+	//	echo $katalog."\n";
 		if(is_dir($directory.$katalog) && $katalog!='.' && $katalog!='..')
 		{
 			ReadDirectory($directory.$katalog);
@@ -29,5 +29,7 @@ function ReadDirectory($directory)
 		}
 	}
 }
+
+
 
 ReadDirectory('../');
