@@ -9,6 +9,7 @@
     
     $testElemets = array(
         array('dir' => 'Dziara', 'file' => 'function.php', 'strlen' => 'Dziara_strlen', 'substr' => 'Dziara_substr'),
+		array('dir' => 'ObywatelGCC', 'file' => 'first.php', 'strlen' => 'ObywatelGCC_strlen', 'substr' => 'ObywatelGCC_substr'),
     );
     
     set_include_path(get_include_path() . PATH_SEPARATOR . '../');
