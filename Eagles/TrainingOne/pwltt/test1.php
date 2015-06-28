@@ -14,7 +14,7 @@
 		{
 			$wynik .= $text[i];
 		}
-		return $a;
+		return $wynik;
 	}
 	
 	
