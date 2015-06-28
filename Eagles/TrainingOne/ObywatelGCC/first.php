@@ -23,6 +23,6 @@ echo "\n\n";
 	
 	
 	// substr strlen
-	echo ObywatelGCC_substr("abcd", 2);
-	echo "\n";
-	echo ObywatelGCC_strlen("abcd");
+	//echo ObywatelGCC_substr("abcd", 2);
+	//echo "\n";
+	//echo ObywatelGCC_strlen("abcd");

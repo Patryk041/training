@@ -154,3 +154,7 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+Eagles/.buildpath
+Eagles/.project
+Eagles/.settings/org.eclipse.wst.common.project.facet.core.xml
+Eagles/.settings/org.eclipse.php.core.prefs
