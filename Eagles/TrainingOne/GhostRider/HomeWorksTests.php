@@ -16,6 +16,7 @@
     	array('dir' => 'Kollwing', 'file' => 'functions.php', 'strlen' => 'Kollwing_strlen', 'substr' => 'Kollwing_substr'),
   	 	array('dir' => 'Rudi', 'file' => 'funkcje.php', 'strlen' => 'Rudi_strlen', 'substr' => 'Rudi_substr'),
     	array('dir' => 'Dziusio', 'file' => 'test.php', 'strlen' => 'Dziusio_strlen', 'substr' => 'Dziusio_substr'),
+    	array('dir' => 'Olsztyniak', 'file' => 'first.php', 'strlen' => 'Olsztyniak_strlen', 'substr' => 'Olsztyniak_substr'),
     );
     
     set_include_path(get_include_path() . PATH_SEPARATOR . '../');
