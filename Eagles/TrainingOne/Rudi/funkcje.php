@@ -1,5 +1,6 @@
 <?php
 
+
 function Rudi_strlen($text)
 {
 	$counter=0;
