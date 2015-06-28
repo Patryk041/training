@@ -13,6 +13,7 @@
 		array('dir' => 'ObywatelGCC', 'file' => 'first.php', 'strlen' => 'ObywatelGCC_strlen', 'substr' => 'ObywatelGCC_substr'),
         array('dir' => 'Vernathic', 'file' => 'TextOperationsVernathic.php', 'strlen' => 'Vernathic_strlen', 'substr' => 'Vernathic_substr'),
     );
+	array('dir' => 'Kollwing', 'file' => 'functions.php', 'strlen' => 'Kollwing_strlen', 'substr' => 'Kollwing_substr'),
     
     set_include_path(get_include_path() . PATH_SEPARATOR . '../');
     

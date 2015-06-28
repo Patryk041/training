@@ -3,7 +3,7 @@
 	function Kollwing_strlen($text)
 	{
 		$wynik = 0;
-		for ($i=0;isset($text);$i++)
+		for ($i=0;i<=isset($text);$i++)
 		{
 			$wynik++;
 		}
@@ -22,7 +22,7 @@
 		
 		for ($i=0;$count;i++)
 		{
-			$text_cunt .= $text[$i];
+			$text_count .= $text[$i];
 		}
 		
 		return $text_count;
