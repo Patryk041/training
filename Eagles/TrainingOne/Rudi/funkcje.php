@@ -1,5 +1,7 @@
 <?php
 
+jakaszmiana
+
 function Rudi_strlen($text)
 {
 	$counter=0;
