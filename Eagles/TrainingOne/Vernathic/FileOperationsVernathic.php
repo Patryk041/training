@@ -13,11 +13,15 @@
     );
     
     
+    $functionParameters = array(
+            'stringParam' => array('Natalia', 'Kazik', 'Owieczki hasają po łące.'),
+            'substrCount' => array(3, 4, 12)
+    ); 
+    
+    
     function OpenFile($filePath)
     {
-        $content = require_once $filePath;
-        
-        return $content;
+        require_once $filePath;
     }
     
     
@@ -32,19 +36,28 @@
                 ReadDirectory($directory.$katalog);
             }
             //echo 'RIDER: '.$directory.'/'.$katalog."\n";
-            /* if (is_file($directory.'/'.$katalog))
+            if (is_file($directory.'/'.$katalog))
             {
                 OpenFile($directory.'/'.$katalog);
-            } */
+            }
         }
     }
     
     
-    function TestStrlen($functionName, $funcrionParameters)
+    function TestStrlen($functionName, $functionParameter)
     {
         //here test $functionName with given $functionParameters
         
+        $functionResult =  $functionName($functionParameter);
         
+        if($functionResult == strlen($functionParameter))
+        {
+            echo "Function ". $functionName . " works fine.";
+        }
+        else
+        {
+            echo "Dear programmer, your function called ". $functionName . " doesn't work very well.";
+        }
     }
     
     
@@ -52,7 +65,14 @@
     {
         //here run TestStrlen for each strlen function in $functionNames array
         
-        
+        foreach ($functionNames as $key => $value)
+        {
+            $fnName = $value['strlen'];
+            foreach ($functionParameters['stringParam'] as $k => $v)
+            {
+                TestStrlen($fnName, $v);
+            }
+        }
     }
-
     
+    RunTests_strlen();
