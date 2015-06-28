@@ -1,8 +1,5 @@
 <?php
-
-	
-	
-	function pwltt_strlen($text)
+	function pwltt_str($text)
 	{
 		$count = 0;
 		for($i = 0; isset($text[$i]); $i++)
