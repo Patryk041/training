@@ -2,6 +2,7 @@
 {
     public class FirstTestClass
     {
-         
+
+        private string test = " my test";
     }
 }
