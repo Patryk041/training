@@ -21,3 +21,5 @@ echo "\n\n";
 	
 	// substr strlen
 	echo GhostRider_reverse('natalia');
+	$testowaZmienna = 'GhostRider_reverse';
+	echo $testowaZmienna('bartek');
