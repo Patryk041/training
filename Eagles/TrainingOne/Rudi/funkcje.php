@@ -13,7 +13,7 @@ function Rudi_substr($text,$start)
 {
 	$wynik='';
 
-	for($i=$start;$i<Rudi_strlen($text);$i++)
+	for($i=0;$i<$start;$i++)
 	{
 		$wynik .=$text[$i];
 	}
