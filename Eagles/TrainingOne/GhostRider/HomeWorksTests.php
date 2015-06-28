@@ -9,7 +9,6 @@
     
     $testElemets = array(
         array('dir' => 'Dziara', 'file' => 'function.php', 'strlen' => 'Dziara_strlen', 'substr' => 'Dziara_substr'),
-        array('dir' => 'Rudi', 'file' => 'funkcje.php', 'strlen' => 'Rudi_strlen', 'substr' => 'Rudi_substr'),
     );
     
     set_include_path(get_include_path() . PATH_SEPARATOR . '../');
