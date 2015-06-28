@@ -21,7 +21,7 @@
 	echo pwltt_strlen('programowanie');
 	echo pwltt_substring('programowanie',5);
 	
-	
+	?>
 	
 	
 	
