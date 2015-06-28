@@ -1,9 +1,13 @@
 <?php
+	
+
 	function Dziara_strlen($text)
 	{
 		$count = 0;
 		for($i = 0; isset($text[$i]); $i++)
+		{
 			$count++;
+		}
 		
 		return $count;
 	}
@@ -13,7 +17,9 @@
 		$new_text = '';
 		
 		if(Dziara_strlen($text) < $count) 
-			return $new_text;
+		{
+			return $text;
+		}
 
 		for($i = 0; $i < $count; $i++)
 		{
@@ -22,3 +28,4 @@
 		
 		return $new_text;
 	}
+	
