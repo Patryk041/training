@@ -9,7 +9,11 @@
     
     $testElemets = array(
         array('dir' => 'Dziara', 'file' => 'function.php', 'strlen' => 'Dziara_strlen', 'substr' => 'Dziara_substr'),
+<<<<<<< HEAD
     	array('dir' => 'pwltt' , 'file' => 'function.php', 'strlen' => 'pwltt_strlen', 'substr' => 'pwltt_substr'),
+=======
+		array('dir' => 'ObywatelGCC', 'file' => 'first.php', 'strlen' => 'ObywatelGCC_strlen', 'substr' => 'ObywatelGCC_substr'),
+>>>>>>> a14ac6e8f2643445020b9a205b45d2aa46b4dfd5
     );
     
     set_include_path(get_include_path() . PATH_SEPARATOR . '../');
