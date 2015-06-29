@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Sieradz\Duch\Underground1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
     <Compile Include="Sieradz\UCantTouchThis\Undergtound1Test.cs" />
   </ItemGroup>
   <ItemGroup />
