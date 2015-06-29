@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
 using Toci.Hornets.Sieradz.UCantTouchThis.Underground1Task;
 using Toci.Hornets.Sieradz.UCantTouchThis.Underground1Task.RandomStringGenerator;
 
@@ -17,7 +16,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
         [TestMethod]
         public void StringComparatorsBenchmark()
         {
-            List<string[]> stringsToCompare = UCTT_RandomStingGenerator.GenerateRandomStringPaitList(100000, 1000);
+            List<string[]> stringsToCompare = UCTT_RandomStingGenerator.GenerateRandomStringPaitList(1000000, 32);
 
             foreach (var item in StringComparatorsFactory.ComparatorsFactory)
             {

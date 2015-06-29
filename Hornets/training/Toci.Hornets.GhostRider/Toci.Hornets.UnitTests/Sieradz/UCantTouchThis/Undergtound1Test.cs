@@ -12,7 +12,8 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
         [TestMethod]
         public void UCantTouchThisStringComparatorTest()
         {
-            var comp = new UCantTouchThisStringComparator();
+            //var comp = new UCantTouchThisStringComparator();
+            var comp = new UCTT_AutismStringComparator();
             List<string[]> stringsToTest = new List<string[]>
             {
                 new []{"lol", "yol123"},

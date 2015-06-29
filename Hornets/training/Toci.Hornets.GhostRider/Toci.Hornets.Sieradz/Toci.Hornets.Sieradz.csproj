@@ -47,10 +47,11 @@
     <Compile Include="TypowyAdam\ExampleClass.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\UndergroundTask1.cs" />
     <Compile Include="UCantTouchThis\ImSoBadAss.cs" />
-    <Compile Include="UCantTouchThis\Underground1Task\RandomStringGenerator\DummyStringComparator.cs" />
-    <Compile Include="UCantTouchThis\Underground1Task\RandomStringGenerator\StringComparatorsFactory.cs" />
+    <Compile Include="UCantTouchThis\Underground1Task\DummyStringComparator.cs" />
+    <Compile Include="UCantTouchThis\Underground1Task\StringComparatorsFactory.cs" />
     <Compile Include="UCantTouchThis\Underground1Task\RandomStringGenerator\UCTT_RandomStingGenerator.cs" />
     <Compile Include="UCantTouchThis\Underground1Task\UCantTouchThisStringComparator.cs" />
+    <Compile Include="UCantTouchThis\Underground1Task\UCTT_AutismStringComparator.cs" />
     <Compile Include="Undergroun1Task\Interface\IStringComparator.cs" />
   </ItemGroup>
   <ItemGroup>
