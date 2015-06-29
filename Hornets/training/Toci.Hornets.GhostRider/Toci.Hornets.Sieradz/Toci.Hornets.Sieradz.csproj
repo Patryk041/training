@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Crash\Crash.cs" />
+    <Compile Include="Crash\Crash2.cs" />
     <Compile Include="Duch\DuchClassLoL.cs" />
     <Compile Include="Duch\U1task\DuchStringComparator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
