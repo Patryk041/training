@@ -12,7 +12,7 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
 
         public bool CompareTwoStrings(string s1, string s2)
         {
-            return true;
+            return s1.Where(char.IsLetter).Count() == s2.Where(char.IsLetter).Count();
         }
     }
 }
