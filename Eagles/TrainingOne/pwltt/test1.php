@@ -23,7 +23,3 @@
 	echo pwltt_substring('programowanie',5);
 	
 	?>
-	
-	
-	
-	
