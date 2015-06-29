@@ -21,13 +21,6 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
                 new []{"DadD", "^*asd^&^^7&^Q3123"},
                 new []{"DadD", "DadD"}
             };
-            
-            //List<bool> restultLis = stringsToTest.Select(item => comp.CompareTwoStrings(item[0], item[1])).ToList();
-
-//            foreach (var item in stringsToTest)
-//            {
-//                Assert.IsTrue(comp.CompareTwoStrings(item[0],item[1]));
-//            }
 
             stringsToTest.ForEach(item => Assert.IsTrue(comp.CompareTwoStrings(item[0], item[1])));
         }
