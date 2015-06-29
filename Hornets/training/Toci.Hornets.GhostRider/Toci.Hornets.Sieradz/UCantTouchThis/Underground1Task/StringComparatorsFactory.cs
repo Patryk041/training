@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Toci.Hornets.Sieradz.Duch;
 using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.Underground1Task
@@ -12,6 +13,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.Underground1Task
              {"TypowyAdam", new UndergroundTask1().CompareTwoStrings},
              {"UCantTouchThis", new UCantTouchThisStringComparator().CompareTwoStrings},
              {"UCTT_Autism", new UCTT_AutismStringComparator().CompareTwoStrings},
+             {"Duch", new DuchStringComparator().CompareTwoStrings}
 
          };
     }
