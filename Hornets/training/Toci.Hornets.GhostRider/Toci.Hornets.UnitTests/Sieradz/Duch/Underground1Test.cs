@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets;
 using Toci.Hornets.Sieradz.Duch;
@@ -11,8 +12,13 @@ namespace Toci.Hornets.UnitTests.Duch
         [TestMethod]
         public void TestMethod1()
         {
+           
+          
             var comp = new DuchStringComparator();
             Assert.IsTrue(comp.CompareTwoStrings("aaa","bbb"));
+            Assert.IsFalse(comp.CompareTwoStrings("aaa", "bbb"));
         }
+
+        
     }
 }
