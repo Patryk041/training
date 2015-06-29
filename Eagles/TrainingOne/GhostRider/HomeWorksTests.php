@@ -9,7 +9,7 @@
     
     $testElemets = array(
         array('dir' => 'Dziara', 'file' => 'function.php', 'strlen' => 'Dziara_strlen', 'substr' => 'Dziara_substr'),
-    	array('dir' => 'pwltt' , 'file' => 'function.php', 'strlen' => 'pwltt_strlen', 'substr' => 'pwltt_substr'),
+    	array('dir' => 'pwltt' , 'file' => 'test1.php', 'strlen' => 'pwltt_str', 'substr' => 'pwltt_substr'),
 		array('dir' => 'ObywatelGCC', 'file' => 'first.php', 'strlen' => 'ObywatelGCC_strlen', 'substr' => 'ObywatelGCC_substr'),
         array('dir' => 'Vernathic', 'file' => 'TextOperationsVernathic.php', 'strlen' => 'Vernathic_strlen', 'substr' => 'Vernathic_substr'),
         array('dir' => 'jake', 'file' => 'first.php', 'strlen' => 'jake_strlen', 'substr' => 'jake_substr'),
