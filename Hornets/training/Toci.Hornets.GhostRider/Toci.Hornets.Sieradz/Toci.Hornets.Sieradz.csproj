@@ -53,7 +53,7 @@
     <Compile Include="UCantTouchThis\Underground1Task\RandomStringGenerator\UCTT_RandomStingGenerator.cs" />
     <Compile Include="UCantTouchThis\Underground1Task\UCantTouchThisStringComparator.cs" />
     <Compile Include="UCantTouchThis\Underground1Task\UCTT_AutismStringComparator.cs" />
-    <Compile Include="Undergroun1Task\Interface\IStringComparator.cs" />
+    <Compile Include="UndergroundTasks\Interface\IStringComparator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
