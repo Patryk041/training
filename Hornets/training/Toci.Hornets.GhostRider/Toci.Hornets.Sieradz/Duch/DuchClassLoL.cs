@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Hornets.Bytom
+namespace Toci.Hornets.Sieradz.Duch
 {
-    public class Class1
+    class DuchClassLoL
     {
     }
 }
