@@ -7,12 +7,12 @@ using Toci.Hornets.Sieradz.Undergroun1Task.Interface;
 
 namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
 {
-    class UndergroundTask1 : IStringComparator
+    public class UndergroundTask1 : IStringComparator
     {
 
         public bool CompareTwoStrings(string s1, string s2)
         {
-            return true;
+            return s1.Where(char.IsLetter).Count() == s2.Where(char.IsLetter).Count();
         }
     }
 }
