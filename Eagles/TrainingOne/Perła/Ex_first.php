@@ -2,7 +2,7 @@
 
 function Perla_reverse($text) {
     $wynik = '';
-    $i = length($text) - 1;
+    $i = count($text) - 1;
     while ($i >= 0) {
         $wynik .= $text[$i];
         $i--;
@@ -22,4 +22,5 @@ function Perla_strlen($text) {
     {
         return 'Podaj ciąg mający więcej niż 0 znaków!';
     }
+    echo Perla_reverse('perła');
 }
