@@ -14,6 +14,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.Underground1Task
              {"UCantTouchThis", new UCantTouchThisStringComparator().CompareTwoStrings},
              {"UCTT_Autism", new UCTT_AutismStringComparator().CompareTwoStrings},
              {"Duch", new DuchStringComparator().CompareTwoStrings}
+            //,{"TypowyAdamMultitask", new ExtraStringParser().CompareTwoStrings}
 
          };
     }
