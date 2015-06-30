@@ -10,8 +10,8 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.Underground1Task
         public static Dictionary<string, Func<string, string, bool>> ComparatorsFactory = new Dictionary<string, Func<string, string, bool>>()
          {
              {"Dummy", new DummyStringComparator().CompareTwoStrings},
-           //  {"TypowyAdamMultitask", new ExtraStringParser().CompareTwoStrings},
-             {"TypowyAdam", new UndergroundTask1().CompareTwoStrings},
+           //  {"TypowyAdamMultitask", new MultiTypicalStringComparator().CompareTwoStrings},
+             {"TypowyAdam", new SimpleTypicalStringComparator().CompareTwoStrings},
              {"UCantTouchThis", new UCantTouchThisStringComparator().CompareTwoStrings},
              {"UCTT_Autism", new UCTT_AutismStringComparator().CompareTwoStrings},
              {"Duch", new DuchStringComparator().CompareTwoStrings}

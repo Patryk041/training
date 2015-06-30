@@ -10,7 +10,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
         [TestMethod]
         public void TestMethod1()
         {
-            var StringCompare = new ExtraStringParser();
+            var StringCompare = new MultiTypicalStringComparator();
             Assert.IsTrue(StringCompare.CompareTwoStrings("a1aa111", "b2b3b54"));
             Assert.IsFalse(StringCompare.CompareTwoStrings("a1avcvca111", "b2b3b54"));
 
