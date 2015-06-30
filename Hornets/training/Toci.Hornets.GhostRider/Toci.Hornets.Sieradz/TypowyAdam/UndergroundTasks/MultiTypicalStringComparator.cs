@@ -6,7 +6,7 @@ using Toci.Hornets.Sieradz.Undergroun1Task.Interface;
 
 namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
 {
-    public class MultiTypicalStringComparator : IStringComparator
+    public class ExtraStringParser : IStringComparator
     {
 
         private int s1LetterAmount, s2LetterAmount;
