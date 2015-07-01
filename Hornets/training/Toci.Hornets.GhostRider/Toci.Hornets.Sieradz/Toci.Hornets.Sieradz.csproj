@@ -50,6 +50,7 @@
     <Compile Include="TypowyAdam\UndergroundTasks\MultiTypicalStringComparator.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\Pentagram.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\SimpleTypicalStringComparator.cs" />
+    <Compile Include="TypowyAdam\UndergroundTasks\TypowyAdamPeselValidator.cs" />
     <Compile Include="UCantTouchThis\ImSoBadAss.cs" />
     <Compile Include="UCantTouchThis\Underground1Task\DummyStringComparator.cs" />
     <Compile Include="UCantTouchThis\Underground1Task\StringComparatorsFactory.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="UCantTouchThis\Underground1Task\UCantTouchThisStringComparator.cs" />
     <Compile Include="UCantTouchThis\Underground1Task\UCTT_AutismStringComparator.cs" />
     <Compile Include="UndergroundTasks\Interface\IStringComparator.cs" />
+    <Compile Include="UndergroundTasks\Interface\IPeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
