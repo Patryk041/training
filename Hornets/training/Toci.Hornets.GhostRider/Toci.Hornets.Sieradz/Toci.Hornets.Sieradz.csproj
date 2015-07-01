@@ -40,11 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeeJay\ExampleDeeJayClass.cs" />
     <Compile Include="Duch\DuchClassLoL.cs" />
     <Compile Include="Duch\U1task\DuchStringComparator.cs" />
     <Compile Include="Jake\JakeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quicksilver\testByQuicksilver.cs" />
+    <Compile Include="Quicksilver\UndergroundTasks\StringComparator.cs" />
     <Compile Include="TypowyAdam\ExampleClass.cs" />
     <Compile Include="Duch\U1task\U1Utils.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\MultiTypicalStringComparator.cs" />
