@@ -3,7 +3,7 @@
 	function Kollwing_strlen($text)
 	{
 		$wynik = 0;
-		for ($i=0;isset($text);$i++)
+		for ($i=0;isset($text[$i]);$i++)
 		{
 			$wynik++;
 		}
@@ -20,15 +20,14 @@
 	{	
 		$text_count;
 		
-		for ($i=0;$count;i++)
+		for($i = 0; $i < $count; $i++)
 		{
-			$text_cunt .= $text[$i];
+			$text_count .=$text[$i];
+			
+			return $text_count;
 		}
+
 		
 		return $text_count;
 	}
 
-	$test2 = Kollwing_substr('jakistekst2', 3);
-
-	echo '\n\n';
-	echo &test2;
