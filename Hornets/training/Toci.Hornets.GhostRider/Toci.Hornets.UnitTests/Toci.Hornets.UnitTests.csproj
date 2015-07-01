@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
     <Compile Include="Sieradz\Duch\Underground1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
