@@ -59,7 +59,9 @@
     <Compile Include="Sieradz\UCantTouchThis\StringComparatorsBenchmarks.cs" />
     <Compile Include="Sieradz\UCantTouchThis\Undergtound1Test.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Sieradz\Quicksilver\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.Sieradz\Toci.Hornets.Sieradz.csproj">
       <Project>{1109fd72-7199-4d6f-b150-918976558e66}</Project>
