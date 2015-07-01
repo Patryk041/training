@@ -52,11 +52,13 @@
     <Compile Include="TypowyAdam\UndergroundTasks\SimpleTypicalStringComparator.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\TypowyAdamPeselValidator.cs" />
     <Compile Include="UCantTouchThis\ImSoBadAss.cs" />
-    <Compile Include="UCantTouchThis\Underground1Task\DummyStringComparator.cs" />
-    <Compile Include="UCantTouchThis\Underground1Task\StringComparatorsFactory.cs" />
-    <Compile Include="UCantTouchThis\Underground1Task\RandomStringGenerator\UCTT_RandomStingGenerator.cs" />
-    <Compile Include="UCantTouchThis\Underground1Task\UCantTouchThisStringComparator.cs" />
-    <Compile Include="UCantTouchThis\Underground1Task\UCTT_AutismStringComparator.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\DateValidatorUtils.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCantTouchThisPeselValisator.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\DummyStringComparator.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\StringComparatorsFactory.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\RandomStringGenerator\UCTT_RandomStingGenerator.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\UCantTouchThisStringComparator.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\UCTT_AutismStringComparator.cs" />
     <Compile Include="UndergroundTasks\Interface\IStringComparator.cs" />
     <Compile Include="UndergroundTasks\Interface\IPeselValidator.cs" />
   </ItemGroup>

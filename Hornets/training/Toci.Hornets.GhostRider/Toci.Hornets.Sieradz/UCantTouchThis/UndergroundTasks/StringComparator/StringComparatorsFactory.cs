@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Toci.Hornets.Sieradz.Duch;
 using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
 
-namespace Toci.Hornets.Sieradz.UCantTouchThis.Underground1Task
+namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.StringComparator
 {
     public static class StringComparatorsFactory
     {

@@ -1,6 +1,6 @@
 ﻿using Toci.Hornets.Sieradz.Undergroun1Task.Interface;
 
-namespace Toci.Hornets.Sieradz.UCantTouchThis.Underground1Task
+namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.StringComparator
 {
     public class DummyStringComparator : IStringComparator
     {

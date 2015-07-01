@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Toci.Hornets.Sieradz.UCantTouchThis.Underground1Task.RandomStringGenerator
+namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.RandomStringGenerator
 {
     public static class UCTT_RandomStingGenerator
     {

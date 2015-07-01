@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.Sieradz.UCantTouchThis.Underground1Task.RandomStringGenerator;
+using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.RandomStringGenerator;
 
 namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
 {
