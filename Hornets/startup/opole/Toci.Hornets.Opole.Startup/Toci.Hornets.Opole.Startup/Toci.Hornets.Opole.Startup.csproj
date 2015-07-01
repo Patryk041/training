@@ -58,6 +58,8 @@
     <Compile Include="TrainingOne\Duch\ExampleClassCopy.cs" />
     <Compile Include="TrainingOne\GhostRider\Whatever.cs" />
     <Compile Include="TrainingOne\S2yfr4nt\S2yfr4ntPeselValidator.cs" />
+    <Compile Include="TrainingOne\Zielu\ZieluDateValidation.cs" />
+    <Compile Include="TrainingOne\Zielu\ZieluPeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOne\Erley\" />
