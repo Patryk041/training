@@ -7,15 +7,14 @@ using Toci.Hornets.Sieradz.Undergroun1Task.Interface;
 
 namespace Toci.Hornets.Sieradz.Quicksilver.UndergroundTasks
 {
-    class StringComparator : IStringComparator
+    public class StringComparator : IStringComparator
     {
 
 
         public bool CompareTwoStrings(string s1, string s2)
         {
-           
 
-         
+            return true;
         }
     }
 

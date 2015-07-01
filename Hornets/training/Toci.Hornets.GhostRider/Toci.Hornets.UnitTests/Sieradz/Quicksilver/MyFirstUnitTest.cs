@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Toci.Hornets.Sieradz.Quicksilver.UndergroundTasks;
 
 namespace Toci.Hornets.UnitTests.Sieradz.Quicksilver
 {
@@ -9,6 +11,11 @@ namespace Toci.Hornets.UnitTests.Sieradz.Quicksilver
         [TestMethod]
         public void TestMethod1()
         {
+           StringComparator comparator = new StringComparator();
+           //comparator.CompareTwoStrings("aaaa", "bbb");
+           Assert.IsTrue(comparator.CompareTwoStrings("a123b", "ab"));
+            Debug.WriteLine("Patrz jak wypisuje!");
+            Assert.IsFalse(comparator.CompareTwoStrings("a", "1 23werdfscvdfdf"));
         }
     }
 }

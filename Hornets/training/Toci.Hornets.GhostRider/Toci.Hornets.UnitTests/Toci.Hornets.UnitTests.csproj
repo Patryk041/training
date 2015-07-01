@@ -53,15 +53,14 @@
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
     <Compile Include="Sieradz\Duch\Underground1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
     <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
     <Compile Include="Sieradz\TypowyAdam\PentagramTest.cs" />
     <Compile Include="Sieradz\UCantTouchThis\RandomStringGeneratorTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\StringComparatorsBenchmarks.cs" />
     <Compile Include="Sieradz\UCantTouchThis\Undergtound1Test.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Sieradz\Quicksilver\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.Sieradz\Toci.Hornets.Sieradz.csproj">
       <Project>{1109fd72-7199-4d6f-b150-918976558e66}</Project>
