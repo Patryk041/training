@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
@@ -12,7 +13,6 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
         [TestMethod]
         public void TestMethod1()
         {
-            /*POTEM ZROBIE FABRYKE WALIDATORÓW :)*/
             List<string> validPeselList = new List<string>();
             List<string> invalidPeselLIst = new List<string>();
             List<string> uncommonCasesList = new List<string>()
@@ -39,21 +39,34 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
                     invalidPeselLIst.Add(sr.ReadLine());
                 }
             }
-            TypowyAdamPeselValidator peselValidator = new TypowyAdamPeselValidator();
-            
-            foreach (string testPesel in validPeselList)
+         
+            foreach (var item in ValidatorFactory)
             {
-                Assert.IsTrue(peselValidator.IsPeselValid(testPesel));
+                foreach (string testPesel in validPeselList)
+                {
+                    Assert.IsTrue(item.Value(testPesel));
+                }
+                foreach (string testPesel in invalidPeselLIst)
+                {
+                    Assert.IsFalse(item.Value(testPesel));
+                }
+                foreach (string testPesel in uncommonCasesList)
+                {
+                    Assert.IsFalse(item.Value(testPesel));
+                    
+                }
             }
-            foreach (string testPesel in invalidPeselLIst)
-            {
-                Assert.IsFalse(peselValidator.IsPeselValid(testPesel));
-            }
-            foreach (var testPesel in uncommonCasesList)
-            {
-                Assert.IsFalse(peselValidator.IsPeselValid(testPesel));
-            }
-            
+
         }
+        public static Dictionary<string, Func<string, bool>> ValidatorFactory = new Dictionary<string, Func<string, bool>>()
+         {
+             //sorki Adam że zjechałem :P
+             {
+                 "TypowyAdam",
+                 new TypowyAdamPeselValidator().IsPeselValid
+             }
+         };
     }
+
+
 }
