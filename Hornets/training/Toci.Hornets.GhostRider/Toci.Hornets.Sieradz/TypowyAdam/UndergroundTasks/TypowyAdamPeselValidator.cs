@@ -6,7 +6,7 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
     {
         public bool IsPeselValid(string pesel)
         {
-            throw new System.NotImplementedException();
+            return true; // ValidateDate(x,x,x) == PeselValidatorUtils.CheckCheckSum(x,x);
         }
 
         public bool ValidateDate(int year, int month, int day)
