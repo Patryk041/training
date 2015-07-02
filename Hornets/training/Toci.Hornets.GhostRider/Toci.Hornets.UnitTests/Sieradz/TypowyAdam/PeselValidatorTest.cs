@@ -15,7 +15,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
         {
             List<string> validPeselList = new List<string>();
             List<string> invalidPeselLIst = new List<string>();
-            List<string> uncommonCasesList = new List<string>()
+            List<string> uncommonCasesList = new List<string>
             {
                 "93022912345",
                 "asdasdasdasd",
@@ -23,7 +23,6 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
                 "12345678901A"
                 //dodawajcie coś bo mi się nie chce 
             };
-            List<bool> testList = new List<bool>();
 
             using (StreamReader sr = new StreamReader(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\Sieradz\TypowyAdam\validPeselList.txt")))
             {
@@ -42,19 +41,26 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
          
             foreach (var item in ValidatorFactory)
             {
-                foreach (string testPesel in validPeselList)
+                Stopwatch benchmark = new Stopwatch();
+                benchmark.Start();
+                for (int i = 0; i < 100; i++) //bez tego wykonuje się w 10ms co jest trochę za krótkie
                 {
-                    Assert.IsTrue(item.Value(testPesel));
+                    foreach (string testPesel in validPeselList)
+                    {
+                        Assert.IsTrue(item.Value(testPesel));
+                    }
+                    foreach (string testPesel in invalidPeselLIst)
+                    {
+                        Assert.IsFalse(item.Value(testPesel));
+                    }
+                    foreach (string testPesel in uncommonCasesList)
+                    {
+                        Assert.IsFalse(item.Value(testPesel));
+
+                    }
                 }
-                foreach (string testPesel in invalidPeselLIst)
-                {
-                    Assert.IsFalse(item.Value(testPesel));
-                }
-                foreach (string testPesel in uncommonCasesList)
-                {
-                    Assert.IsFalse(item.Value(testPesel));
-                    
-                }
+                benchmark.Stop();
+                Debug.Print("{0}: {1}ms", item.Key, Convert.ToString(benchmark.ElapsedMilliseconds));
             }
 
         }
