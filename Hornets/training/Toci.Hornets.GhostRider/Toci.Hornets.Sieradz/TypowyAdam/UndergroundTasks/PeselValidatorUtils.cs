@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
 {
@@ -27,15 +28,14 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
             int[] vages = {1, 3, 7, 9, 1, 3, 7, 9, 1, 3};
             for (int i = 0; i < vages.Length; i++)
             {
-                int test = pesel[i];
-                checkSum += (vages[i]*(pesel[i]-48));
+                checkSum += (vages[i]*((int)Char.GetNumericValue(pesel[i])));
             }
             if (checkSum%10 != 0)
             {
-                if ((10 - checkSum%10) == (pesel.Last()-48)) return true;
+                if ((10 - checkSum%10) == ((int)Char.GetNumericValue(pesel.Last()))) return true;
                 return false;
             }
-            if (checkSum%10 == 0 && (pesel.Last()-48) == 0) return true;
+            if (checkSum%10 == 0 && ((int)Char.GetNumericValue(pesel.Last())) == 0) return true;
             return false;
 
         }

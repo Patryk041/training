@@ -15,10 +15,8 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
             int year = Convert.ToInt32(pesel.Substring(0,2));
             int month = Convert.ToInt32(pesel.Substring(2,2));
             int day = Convert.ToInt32(pesel.Substring(4, 2));
-            bool date = ValidateDate(year, month, day);
-            bool sum = PeselValidatorUtils.CheckCheckSum(pesel);
-            if (date && sum) return true;
-            else return false;
+            return ValidateDate(year, month, day) && PeselValidatorUtils.CheckCheckSum(pesel);
+
         }
 
         public bool ValidateDate(int year, int month, int day)
