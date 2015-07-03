@@ -22,7 +22,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
             {
                 var measuredTime = MeasureComparisionTime(stringsToCompare, item.Value);
                 Debug.WriteLine(Pattern, item.Key, measuredTime);
-            }
+            } 
         }
 
         private long MeasureComparisionTime(List<string[]> testList, Func<string,string, bool> comparatorFunc)
