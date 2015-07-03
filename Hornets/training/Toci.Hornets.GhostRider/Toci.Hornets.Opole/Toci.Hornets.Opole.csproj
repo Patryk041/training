@@ -46,6 +46,11 @@
     <Compile Include="Maly\TestBranch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="S2yfr4nt\Branch.cs" />
+    <Compile Include="S2yfr4nt\Homework\PeselValidator.cs" />
+    <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntDayValidation.cs" />
+    <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntMonthValidation.cs" />
+    <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntYearValidation.cs" />
+    <Compile Include="S2yfr4nt\Homework\S2yfr4ntPeselValidator\S2yfr4ntPeselValidator.cs" />
     <Compile Include="Szpula\HowTo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +59,7 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

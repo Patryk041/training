@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9590AF43-66F3-4582-BC44-D8A630F1216C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DemoApplication</RootNamespace>
+    <AssemblyName>DemoApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbAccess\Application.cs" />
+    <Compile Include="DbAccess\DbAccess.cs" />
+    <Compile Include="DbAccess\Interfaces\IDbClient.cs" />
+    <Compile Include="DbAccess\JsonStorageDbClient.cs" />
+    <Compile Include="DbAccess\MySqlDbClient.cs" />
+    <Compile Include="DbAccess\XmlStorageDbClient.cs" />
+    <Compile Include="Demo\AccessModifiers\Brain.cs" />
+    <Compile Include="Demo\AccessModifiers\ChildEye.cs" />
+    <Compile Include="Demo\AccessModifiers\Crowd.cs" />
+    <Compile Include="Demo\AccessModifiers\Eye.cs" />
+    <Compile Include="Demo\AccessModifiers\Human.cs" />
+    <Compile Include="Demo\AccessModifiers\Man.cs" />
+    <Compile Include="Demo\AccessModifiers\Woman.cs" />
+    <Compile Include="Demo\FirstClass.cs" />
+    <Compile Include="Demo\Interfaces\IBrain.cs" />
+    <Compile Include="Demo\Interfaces\ICreature.cs" />
+    <Compile Include="Demo\Interfaces\IExampleInterface.cs" />
+    <Compile Include="Demo\Interfaces\IHuman.cs" />
+    <Compile Include="Demo\Interfaces\IMammal.cs" />
+    <Compile Include="Demo\Interfaces\IRobot.cs" />
+    <Compile Include="Demo\SealedEx.cs" />
+    <Compile Include="Demo\StaticChildEXample.cs" />
+    <Compile Include="Demo\StaticExample.cs" />
+    <Compile Include="Demo\WordExample\GenerateDocument.cs" />
+    <Compile Include="Demo\WordExample\SaveFile.cs" />
+    <Compile Include="Demo\WordExample\SaveVideoFile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -44,6 +44,7 @@
     <Compile Include="Kollwing\test.cs" />
     <Compile Include="Perła\test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tszulczewski\Example.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
