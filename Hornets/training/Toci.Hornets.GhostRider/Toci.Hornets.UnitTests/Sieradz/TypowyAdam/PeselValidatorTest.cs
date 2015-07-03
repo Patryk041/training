@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
+using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator;
 
 namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
 {
@@ -67,10 +68,13 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
         public static Dictionary<string, Func<string, bool>> ValidatorFactory = new Dictionary<string, Func<string, bool>>()
          {
              //sorki Adam że zjechałem :P
-             {
-                 "TypowyAdam",
-                 new TypowyAdamPeselValidator().IsPeselValid
-             }
+
+
+             // "Nie bądź jak leń co śmierdzący jest!"
+             //                                 UCCT
+
+             { "TypowyAdam", new TypowyAdamPeselValidator().IsPeselValid },
+             { "UCantTouchThisAutism", new UCantTouchThisAutismPeselValisator().IsPeselValid }
          };
     }
 

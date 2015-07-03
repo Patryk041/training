@@ -21,7 +21,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
                 new []{"123", "22222"},
                 new []{"DadD", "^*asd^&^^7&^Q3123"},
                 new []{"DadD", "^*asd^&^^7&^Q3123"},
-                new []{"DadD", "DadD"}
+                new []{"DadDz", "DadDZ"}
             };
 
             stringsToTest.ForEach(item => Assert.IsTrue(comp.CompareTwoStrings(item[0], item[1])));

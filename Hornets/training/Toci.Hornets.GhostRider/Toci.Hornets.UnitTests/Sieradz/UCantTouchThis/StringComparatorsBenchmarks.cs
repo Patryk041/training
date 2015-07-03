@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks;
 using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.RandomStringGenerator;
 using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.StringComparator;
 
@@ -15,7 +14,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
 
 
         [TestMethod]
-        public void StringComparatorsBenchmark()
+        public void UCTTStringComparatorsBenchmark()
         {
             List<string[]> stringsToCompare = UCTT_RandomStingGenerator.GenerateRandomStringPaitList(1000000, 32);
 
@@ -24,9 +23,6 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
                 var measuredTime = MeasureComparisionTime(stringsToCompare, item.Value);
                 Debug.WriteLine(Pattern, item.Key, measuredTime);
             }
-
-
-            int a = 5;
         }
 
         private long MeasureComparisionTime(List<string[]> testList, Func<string,string, bool> comparatorFunc)

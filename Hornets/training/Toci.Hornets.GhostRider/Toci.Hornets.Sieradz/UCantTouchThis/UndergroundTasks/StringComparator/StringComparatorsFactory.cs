@@ -11,14 +11,14 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.StringComparator
         public static Dictionary<string, Func<string, string, bool>> ComparatorsFactory = new Dictionary<string, Func<string, string, bool>>()
          {
              {"Dummy", new DummyStringComparator().CompareTwoStrings},
-             {"Quicksilver", new Quicksilver.UndergroundTasks.CasualStringComparator().CompareTwoStrings},
-             {"Quicksilver's LessCasual", new Quicksilver.UndergroundTasks.LessCasualStringComparator().CompareTwoStrings},
+             {"Quicksilver", new CasualStringComparator().CompareTwoStrings},
+             {"Quicksilver's LessCasual", new LessCasualStringComparator().CompareTwoStrings},
 
            //  {"TypowyAdamMultitask", new MultiTypicalStringComparator().CompareTwoStrings},
              {"TypowyAdam", new SimpleTypicalStringComparator().CompareTwoStrings},
              {"UCantTouchThis", new UCantTouchThisStringComparator().CompareTwoStrings},
              {"UCTT_Autism", new UCTT_AutismStringComparator().CompareTwoStrings},
-             {"Duch", new DuchStringComparator().CompareTwoStrings}
+           // Za wolne, szkoda czasu  {"Duch", new DuchStringComparator().CompareTwoStrings}
 
          };
     }
