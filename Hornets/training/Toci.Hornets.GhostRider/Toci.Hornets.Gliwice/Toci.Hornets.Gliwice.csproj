@@ -46,6 +46,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rudi\Rudis.cs" />
     <Compile Include="Soltys\HelloWorld.cs" />
+    <Compile Include="usppat\classiscoming.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
