@@ -1,7 +1,6 @@
-﻿
-namespace Toci.Hornets.Bytom.Mes
+﻿namespace Toci.Hornets.Bytom.Mes
 {
-    class testClass
+    class TestClass
     {
     }
 }
