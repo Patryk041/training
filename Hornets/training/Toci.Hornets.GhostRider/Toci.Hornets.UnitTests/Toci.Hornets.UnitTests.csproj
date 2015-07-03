@@ -55,6 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sieradz\Kamil\KamilTest1.cs" />
     <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
+    <Compile Include="Sieradz\Quicksilver\LessCasualSC.cs" />
     <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
     <Compile Include="Sieradz\TypowyAdam\PentagramTest.cs" />
     <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest.cs" />

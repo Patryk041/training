@@ -14,7 +14,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.Quicksilver
            CasualStringComparator comparator = new CasualStringComparator();
            //comparator.CompareTwoStrings("aaaa", "bbb");
            Assert.IsTrue(comparator.CompareTwoStrings("a123b", "ab"));
-            Debug.WriteLine("Patrz jak wypisuje!");
+            //Debug.WriteLine("Patrz jak wypisuje!");
             Assert.IsFalse(comparator.CompareTwoStrings("a", "1 23werdfscvdfdf"));
             
         }
