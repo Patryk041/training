@@ -42,6 +42,7 @@
     <Compile Include="Didi\WorkWithBranchClass.cs" />
     <Compile Include="Dziara\TestClass.cs" />
     <Compile Include="Hipek\Example.cs" />
+    <Compile Include="MoWerr\MoWerrClass.cs" />
     <Compile Include="PiotrekJ\szkolenie1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rudi\Rudis.cs" />
