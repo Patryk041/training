@@ -12,6 +12,8 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.StringComparator
          {
              {"Dummy", new DummyStringComparator().CompareTwoStrings},
              {"Quicksilver", new Quicksilver.UndergroundTasks.CasualStringComparator().CompareTwoStrings},
+             {"Quicksilver's LessCasual", new Quicksilver.UndergroundTasks.LessCasualStringComparator().CompareTwoStrings},
+
            //  {"TypowyAdamMultitask", new MultiTypicalStringComparator().CompareTwoStrings},
              {"TypowyAdam", new SimpleTypicalStringComparator().CompareTwoStrings},
              {"UCantTouchThis", new UCantTouchThisStringComparator().CompareTwoStrings},
