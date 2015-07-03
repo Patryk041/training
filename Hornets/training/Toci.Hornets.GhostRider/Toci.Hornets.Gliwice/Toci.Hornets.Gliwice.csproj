@@ -45,6 +45,7 @@
     <Compile Include="PiotrekJ\szkolenie1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rudi\Rudis.cs" />
+    <Compile Include="Snajper\FirstClass.cs" />
     <Compile Include="Soltys\HelloWorld.cs" />
     <Compile Include="usppat\classiscoming.cs" />
   </ItemGroup>
