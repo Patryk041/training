@@ -24,9 +24,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
                 var measuredTime = MeasureComparisionTime(stringsToCompare, item.Value);
                 Debug.WriteLine(Pattern, item.Key, measuredTime);
             }
-
-
-            int a = 5;
+            //breakpointa można dać też na "}" i zadziała a nie będzie warninga 
         }
 
         private long MeasureComparisionTime(List<string[]> testList, Func<string,string, bool> comparatorFunc)
