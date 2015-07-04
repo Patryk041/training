@@ -51,6 +51,7 @@
     <Compile Include="Quicksilver\UndergroundTasks\LessCasualStringComparator.cs" />
     <Compile Include="TypowyAdam\ExampleClass.cs" />
     <Compile Include="Duch\U1task\U1Utils.cs" />
+    <Compile Include="TypowyAdam\TelephoneTask\TypowyAdamTelephoneTask.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\MultiTypicalStringComparator.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\Pentagram.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\PeselValidatorUtils.cs" />
