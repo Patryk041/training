@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="AdamP\Class1.cs" />
     <Compile Include="AdamP\TelephoneTask\TelephoneTaskChooser.cs" />
+    <Compile Include="Bossu\TelephoneTask\MyTelephoneInterpreter.cs" />
     <Compile Include="Coffee13\CoffeeTestClass.cs" />
     <Compile Include="Coffee13\TelephoneTask\TaskOneTelephone.cs" />
     <Compile Include="Common\Interfaces\IPeselValidator.cs" />
