@@ -159,3 +159,8 @@ Eagles/.settings/org.eclipse.core.resources.prefs
 Eagles/.settings/org.eclipse.php.core.prefs
 Eagles/.buildpath
 Eagles/.settings/org.eclipse.wst.common.project.facet.core.xml
+<<<<<<< HEAD
+=======
+Eagles/.settings/org.eclipse.core.resources.prefs
+/Eagles/nbproject/private/
+>>>>>>> bf33720ac3570c4eda59569a613b59abec611af9

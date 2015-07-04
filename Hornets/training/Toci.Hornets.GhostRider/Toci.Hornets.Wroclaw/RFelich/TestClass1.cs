@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Hornets.Kalisz.Amman
+namespace Toci.Hornets.Wroclaw.RFelich
 {
-    class KingOfTheHillClass
+    class TestClass1
     {
     }
 }
