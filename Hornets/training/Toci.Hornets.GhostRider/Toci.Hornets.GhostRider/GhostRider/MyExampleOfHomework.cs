@@ -5,7 +5,7 @@ namespace Toci.Hornets.GhostRider.GhostRider
 {
     public class MyExampleOfHomework : TelephoneInterpreter
     {
-        protected override ITelephoneCommunication ChooseMedium(int chosenOption)
+        protected override string ChooseMedium(int chosenOption)
         {
             //ifologia i returny
             
