@@ -20,6 +20,8 @@ namespace Toci.Hornets.Kalisz.Adrianowsky94
                     VoiceCommunication voiceCommunication = new VoiceCommunication();
                     break;
             }
+
+            return null;
         }
 
         protected override string MyNick()

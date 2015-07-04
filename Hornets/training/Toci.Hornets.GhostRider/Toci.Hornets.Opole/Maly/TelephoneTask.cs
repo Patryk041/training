@@ -3,7 +3,7 @@ using Toci.Hornets.GhostRider.YourWork.TelephoneTask;
 
 namespace Toci.Hornets.Opole.Maly
 {
-    public class TelephoneTask :TelephoneInterpreter
+    public class TelephoneTask : TelephoneInterpreter
     {
         protected override ITelephoneCommunication ChooseMedium(int chosenOption)
         {
