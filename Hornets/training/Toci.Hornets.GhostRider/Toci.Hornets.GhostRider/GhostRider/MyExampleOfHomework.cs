@@ -12,6 +12,8 @@ namespace Toci.Hornets.GhostRider.GhostRider
             
             //throw new System.NotImplementedException();
             return new SmsCommunication();
+
+            throw new System.NotImplementedException();
         }
 
         protected override string MyNick()
