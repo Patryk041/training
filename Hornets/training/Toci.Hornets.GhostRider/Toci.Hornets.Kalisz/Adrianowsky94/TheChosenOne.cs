@@ -8,20 +8,21 @@ namespace Toci.Hornets.Kalisz.Adrianowsky94
     {
         protected override ITelephoneCommunication ChooseMedium(int chosenOption)
         {
+            ITelephoneCommunication communication = null;
             switch (chosenOption)
             {
                 case 1:
-                    PhotoCommunication photoCommunication = new PhotoCommunication();
+                    communication = new PhotoCommunication();
                     break;
                 case 2:
-                    SmsCommunication smsCommunication = new SmsCommunication();
+                    communication = new SmsCommunication();
                     break;
                 case 3:
-                    VoiceCommunication voiceCommunication = new VoiceCommunication();
+                    communication = new VoiceCommunication();
                     break;
             }
 
-            return null;
+            return communication;
         }
 
         protected override string MyNick()

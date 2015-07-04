@@ -2,7 +2,7 @@
 using Toci.Hornets.GhostRider.TElephoneCommunication;
 using Toci.Hornets.GhostRider.YourWork.TelephoneTask;
 
-namespace Toci.Hornets.GhostRider.GhostRider
+namespace Toci.Hornets.Gliwice.usppat.telephone
 {
     public class TelephoneHomework : TelephoneInterpreter
     {
