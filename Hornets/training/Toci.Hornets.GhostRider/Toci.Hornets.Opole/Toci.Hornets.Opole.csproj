@@ -42,6 +42,7 @@
     <Compile Include="BartoszF\MojaKlasa.cs" />
     <Compile Include="Dziusio\Andrzej.cs" />
     <Compile Include="GhostRider\HowDoWeWorkOnBranches.cs" />
+    <Compile Include="Hoosarr\TestClass.cs" />
     <Compile Include="Lausion\ExampeClass.cs" />
     <Compile Include="Maly\TestBranch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

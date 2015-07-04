@@ -54,6 +54,7 @@
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
     <Compile Include="Sieradz\Duch\Underground1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
     <Compile Include="Sieradz\Kamil\KamilTest1.cs" />
     <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
     <Compile Include="Sieradz\Quicksilver\LessCasualSC.cs" />
@@ -82,6 +83,14 @@
   <ItemGroup>
     <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
+
+    <Compile Include="S2yfr4nt\PeselVaidator\PeselValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toci.Hornets.Opole\Toci.Hornets.Opole.csproj">
+      <Project>{76565C63-6DC2-47B8-98D0-E2C57E1DD6E7}</Project>
+      <Name>Toci.Hornets.Opole</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
