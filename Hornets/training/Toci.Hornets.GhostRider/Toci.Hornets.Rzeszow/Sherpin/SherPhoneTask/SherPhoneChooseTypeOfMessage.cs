@@ -17,7 +17,7 @@ namespace Toci.Hornets.Rzeszow.Sherpin.SherPhoneTask1
                 case 3:
                     return new VoiceCommunication();
                 default:
-                    return new SmsCommunication();
+                   throw new System.NotImplementedException();
             }
         }
 
