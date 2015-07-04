@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Toci.Hornets.GhostRider.AccessModifiers
 {
-    public class Example
-    {
-        Array
+//    public class Example
+//    {
+//        Array
 }

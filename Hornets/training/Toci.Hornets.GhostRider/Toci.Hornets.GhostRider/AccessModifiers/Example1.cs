@@ -1,6 +1,6 @@
 ﻿namespace Toci.Hornets.GhostRider.AccessModifiers
 {
-    public class Example1 : Example
+    public class Example1
     {
          
     }

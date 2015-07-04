@@ -50,7 +50,6 @@
     <Compile Include="AccessModifiers\Example1.cs" />
     <Compile Include="AccessModifiers\GhostRider\GrTest.cs" />
     <Compile Include="AccessModifiers\GhostRider\WarriorLibraryExample.cs" />
-    <Compile Include="AccessModifiers\Kollwing\KlasaKollwing.cs" />
     <Compile Include="ClassObjectStatic\Demonstration.cs" />
     <Compile Include="ClassObjectStatic\FbChatMessageContainer.cs" />
     <Compile Include="ClassObjectStatic\MicrosoftWordSimpleExample\Editor.cs" />
@@ -68,6 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AccessModifiers\Kollwing\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
