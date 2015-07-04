@@ -20,6 +20,7 @@ namespace Toci.Hornets.Legnica.TelefonTask
             {
                 return new VoiceCommunication();
             }
+            return null;
         }
 
         protected override string MyNick()
@@ -27,5 +28,4 @@ namespace Toci.Hornets.Legnica.TelefonTask
             return "beaver1";
         }
     }
-}
 }
