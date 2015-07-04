@@ -2,6 +2,9 @@
 {
     public class WarriorLibraryExample
     {
-         
+        public void LibraryOperation(string test)
+        {
+            //AutoMapper.
+        }
     }
 }
