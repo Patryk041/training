@@ -45,6 +45,7 @@
     <Compile Include="Hipek\Example.cs" />
     <Compile Include="MoWerr\MoWerrClass.cs" />
     <Compile Include="PiotrekJ\Homework\TelephoneTask.cs" />
+    <Compile Include="MoWerr\TelephoneTask\SendTypeImplementation.cs" />
     <Compile Include="PiotrekJ\szkolenie1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rudi\Rudis.cs" />
