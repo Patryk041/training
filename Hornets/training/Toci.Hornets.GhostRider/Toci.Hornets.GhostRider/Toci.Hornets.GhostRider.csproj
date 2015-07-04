@@ -50,7 +50,20 @@
     <Compile Include="AccessModifiers\GhostRider\GrTest.cs" />
     <Compile Include="AccessModifiers\GhostRider\WarriorLibraryExample.cs" />
     <Compile Include="AccessModifiers\Kollwing\KlasaKollwing.cs" />
+    <Compile Include="ClassObjectStatic\Demonstration.cs" />
+    <Compile Include="ClassObjectStatic\FbChatMessageContainer.cs" />
+    <Compile Include="ClassObjectStatic\MicrosoftWordSimpleExample\Editor.cs" />
+    <Compile Include="ClassObjectStatic\MicrosoftWordSimpleExample\SaveFile.cs" />
+    <Compile Include="ClassObjectStatic\StaticClassExample.cs" />
+    <Compile Include="ClassObjectStatic\StaticExExtending.cs" />
+    <Compile Include="GhostRider\MyExampleOfHomework.cs" />
+    <Compile Include="InterfacesExtending\ITelephoneCommunication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TElephoneCommunication\PhotoCommunication.cs" />
+    <Compile Include="TElephoneCommunication\SmsCommunication.cs" />
+    <Compile Include="TElephoneCommunication\Telephone.cs" />
+    <Compile Include="TElephoneCommunication\VoiceCommunication.cs" />
+    <Compile Include="YourWork\TelephoneTask\TelephoneInterpreter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
