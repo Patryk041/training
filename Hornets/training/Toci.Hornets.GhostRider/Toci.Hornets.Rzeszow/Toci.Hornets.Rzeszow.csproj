@@ -60,6 +60,7 @@
     <Compile Include="SemiRafista\SRTest.cs" />
     <Compile Include="Sherpin\SherPhoneTask\SherPhoneChooseTypeOfMessage.cs" />
     <Compile Include="Sherpin\SherpinClass.cs" />
+    <Compile Include="Terry\TelephoneHomework\TerryTelephoneHomework.cs" />
     <Compile Include="Terry\TerryTest.cs" />
   </ItemGroup>
   <ItemGroup>
