@@ -50,7 +50,38 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
+    <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
+    <Compile Include="Sieradz\Duch\Underground1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sieradz\Kamil\KamilTest1.cs" />
+    <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
+    <Compile Include="Sieradz\Quicksilver\LessCasualSC.cs" />
+    <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PentagramTest.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest.cs" />
+    <Compile Include="Sieradz\UCantTouchThis\DateValidatorTests.cs" />
+    <Compile Include="Sieradz\UCantTouchThis\RandomStringGeneratorTests.cs" />
+    <Compile Include="Sieradz\UCantTouchThis\StringComparatorsBenchmarks.cs" />
+    <Compile Include="Sieradz\UCantTouchThis\Undergtound1Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
+      <Project>{878B2ECA-9CC0-42CF-ACA6-CD6E44C47451}</Project>
+      <Name>Toci.Hornets.GhostRider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Hornets.Rzeszow\Toci.Hornets.Rzeszow.csproj">
+      <Project>{5d3ebbde-dc75-4be2-866c-0dbdd84a46a8}</Project>
+      <Name>Toci.Hornets.Rzeszow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Hornets.Sieradz\Toci.Hornets.Sieradz.csproj">
+      <Project>{1109fd72-7199-4d6f-b150-918976558e66}</Project>
+      <Name>Toci.Hornets.Sieradz</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
+    <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
