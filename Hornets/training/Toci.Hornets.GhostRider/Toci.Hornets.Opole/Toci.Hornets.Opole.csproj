@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="BartoszF\MojaKlasa.cs" />
     <Compile Include="Dziusio\Andrzej.cs" />
+    <Compile Include="Dziusio\MyPhoneTask\HomeworkTenMinutes.cs" />
     <Compile Include="GhostRider\HowDoWeWorkOnBranches.cs" />
     <Compile Include="Hoosarr\TestClass.cs" />
     <Compile Include="Lausion\ExampeClass.cs" />
