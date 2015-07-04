@@ -40,7 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adrianowsky94\TheChosenOne.cs" />
-    <Compile Include="Amman\KingOfTheHillClass.cs" />
+    <Compile Include="Amman\APhone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
