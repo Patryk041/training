@@ -11,6 +11,12 @@ namespace Toci.Hornets.GhostRider.YourWork.TelephoneTask
         {
             ITelephoneCommunication communication = ChooseMedium(chosenOption);
 
+            if (communication == null)
+            {
+                Debug.WriteLine("{0} has not  created {1} for {2}", MyNick(), "type :D ", chosenOption);
+                return;
+            }
+
             tosieniedziedziczy = 8;
 
             Telephone phone = new Telephone();
