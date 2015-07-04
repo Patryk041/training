@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="AccessModifiers\Didi\KlasaDidi.cs" />
     <Compile Include="AccessModifiers\Example.cs" />
+    <Compile Include="AccessModifiers\Example1.cs" />
     <Compile Include="AccessModifiers\GhostRider\GrTest.cs" />
     <Compile Include="AccessModifiers\GhostRider\WarriorLibraryExample.cs" />
     <Compile Include="AccessModifiers\Kollwing\KlasaKollwing.cs" />
