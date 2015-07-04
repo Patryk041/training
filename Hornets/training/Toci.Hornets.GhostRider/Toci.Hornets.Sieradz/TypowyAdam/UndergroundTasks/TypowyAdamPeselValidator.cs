@@ -9,15 +9,20 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
     {
         public bool IsPeselValid(string pesel)
         {
+            if (!PeselValidatorUtils.CheckCheckSum(pesel))
+                return false;
             if (pesel.Where(char.IsDigit).Count() != 11 && pesel.Length != 11)
                 return false;
+
 
             int year = Convert.ToInt32(pesel.Substring(0,2));
             int month = Convert.ToInt32(pesel.Substring(2,2));
             int day = Convert.ToInt32(pesel.Substring(4, 2));
-            return ValidateDate(year, month, day) && PeselValidatorUtils.CheckCheckSum(pesel);
+            return ValidateDate(year, month, day);
 
         }
+
+
 
         public bool ValidateDate(int year, int month, int day)
         {
