@@ -5,17 +5,9 @@ namespace Toci.Hornets.Opole.Maly
 {
     public class TelephoneTask :TelephoneInterpreter
     {
-        protected override string ChooseMedium(int chosenOption)
+        protected override ITelephoneCommunication ChooseMedium(int chosenOption)
         {
-            switch (chosenOption)
-            {
-                case 1:
-                    return "../photo.jpg";
-                case 2:
-                    return "To jest sms od Małego";
-                case 3:
-                    return "lallallal";
-            }
+            return null;
         }
 
         protected override string MyNick()

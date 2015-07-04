@@ -21,7 +21,7 @@ namespace Toci.Hornets.GhostRider.YourWork.TelephoneTask
             //communication.SendInformation()
         }
 
-        protected abstract string ChooseMedium(int chosenOption);// dla 1 - photo, 2 - sms, 3 voice
+        protected abstract ITelephoneCommunication ChooseMedium(int chosenOption);// dla 1 - photo, 2 - sms, 3 voice
 
         protected abstract string MyNick();
     }
