@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Configuration;
 using Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntDateValidator;
 
 namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntPeselValidator
@@ -10,6 +11,7 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntPeselValidator
         private int year;
         private int month;
         private int day;
+        const int NUMBERS_IN_ASCII = 48;
 
         protected override bool ValidateDate(int year, int month, int day)
         {
@@ -20,7 +22,8 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntPeselValidator
         public override bool IsPeselValid(string pesel)
         {
             GetDate(pesel);
-
+            bool b = ControlSum(pesel);
+            bool a = ValidateDate(year, month, day);
             return ValidateDate(year, month, day) && ControlSum(pesel);
         }
         
@@ -31,10 +34,10 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntPeselValidator
             day = Int32.Parse(pesel.Substring(4, 2));
 
             var key = peselYears.Keys.FirstOrDefault(x => x.Contains((month/10)));
-            List<int> list = peselYears[key].Invoke(month, year);
+            int[] list = peselYears[key].Invoke(month, year).ToArray();
 
-            month = list.IndexOf(0);
-            year = list.IndexOf(1);
+            month = list[0];
+            year = list[1];
         }
 
         private Dictionary<List<int>, Func<int, int, List<int>>> peselYears = new Dictionary<List<int>, Func<int, int, List<int>>>()
@@ -49,21 +52,21 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntPeselValidator
         private bool ControlSum(string pesel)
         {
             
-            var charArray = pesel.Split();
-            if (charArray.Length != 11)
+            var peselArray = pesel.ToCharArray();
+            if (peselArray.Length != 11)
                 return false;
 
-            int[] peselNums = new int[charArray.Length];
+            int[] peselNums = new int[peselArray.Length];
             int[] controlNums = new int[]{1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 0};
             int suma = 0;
 
-            for (int i = 0; i < charArray.Length; i++)
+            for (int i = 0; i < peselArray.Length; i++)
             {
-                peselNums[i] = Int32.Parse(charArray[i]);
+                peselNums[i] = peselArray[i] - NUMBERS_IN_ASCII;
                 suma += peselNums[i]*controlNums[i];
             }
 
-            return (10 - suma%10) == peselNums[charArray.Length];
+            return (10 - suma % 10) == peselNums[peselArray.Length-1];
 
         }
     }
