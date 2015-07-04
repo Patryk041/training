@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="BartoszF\MojaKlasa.cs" />
     <Compile Include="Dziusio\Andrzej.cs" />
+    <Compile Include="Dziusio\MyPhoneTask\HomeworkTenMinutes.cs" />
     <Compile Include="GhostRider\HowDoWeWorkOnBranches.cs" />
     <Compile Include="Hoosarr\TestClass.cs" />
     <Compile Include="Lausion\ExampeClass.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntMonthValidation.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntYearValidation.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntPeselValidator\S2yfr4ntPeselValidator.cs" />
+    <Compile Include="S2yfr4nt\TelephoneHomework\S2yfr4ntTelephoneInterpreter.cs" />
     <Compile Include="Szpula\HowTo.cs" />
   </ItemGroup>
   <ItemGroup>
