@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Filip Sokolowski\test.cs" />
+    <Compile Include="Mateusz_Malolepszy\NewTestClass.cs" />
     <Compile Include="Michał Zembik\Arbak.cs" />
     <Compile Include="Patryk_Stulczewski\Class1.cs" />
     <Compile Include="Patryk_Stulczewski\Test.cs" />
