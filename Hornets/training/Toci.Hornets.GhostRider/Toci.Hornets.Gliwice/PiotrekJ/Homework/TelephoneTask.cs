@@ -6,28 +6,29 @@ namespace Toci.Hornets.Gliwice.PiotrekJ.Homework
 {
     public class TelephoneTask : TelephoneInterpreter
     {
-        /*protected override ITelephoneCommunication ChoseMedium(int chosenOption)
-        {
-            if chosenOption =  1
-            return 1;
-
-
-        }
-
-        protected override string MyNick()
-        {
-        
-            return "PiotrekJ";
-        }
-        */
         protected override ITelephoneCommunication ChooseMedium(int chosenOption)
         {
-            throw new System.NotImplementedException();
+            if (chosenOption == 1)
+            {
+                return new PhotoCommunication();
+            }
+            else if (chosenOption == 2)
+            {
+                return new SmsCommunication();
+            }
+            else if (chosenOption == 3)
+            {
+                return new VoiceCommunication();
+            }
+            else
+            {
+                return null;
+            }
         }
 
         protected override string MyNick()
         {
-            throw new System.NotImplementedException();
+            return "PiotrekJ";
         }
     }
 }
