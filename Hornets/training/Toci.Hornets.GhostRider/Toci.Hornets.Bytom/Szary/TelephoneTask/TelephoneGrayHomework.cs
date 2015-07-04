@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics;
+﻿
 using Toci.Hornets.GhostRider.TElephoneCommunication;
 using Toci.Hornets.GhostRider.YourWork.TelephoneTask;
 
@@ -18,9 +17,9 @@ namespace Toci.Hornets.Bytom.Szary.TelephoneTask
                 return new VoiceCommunication();
             else
             {
-                Debug.WriteLine("Wrong number of option choosen");
+                return null;
             }
-            throw new System.NotImplementedException();
+
         }
 
         protected override string MyNick()
