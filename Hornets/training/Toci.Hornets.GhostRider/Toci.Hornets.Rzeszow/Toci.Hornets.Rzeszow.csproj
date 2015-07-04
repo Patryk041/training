@@ -50,6 +50,7 @@
     <Compile Include="KubaT\TestClass.cs" />
     <Compile Include="Malwina\ExtendingWarrior.cs" />
     <Compile Include="Malwina\IBaseForWyroznienie.cs" />
+    <Compile Include="Malwina\Telephone\ChooseRedOrBlue.cs" />
     <Compile Include="Malwina\WyrozniajacaSieKlasaMalwiny.cs" />
     <Compile Include="Malwina\WyrozniajacaSieKlasaMalwinyChild.cs" />
     <Compile Include="Malwina\WyrozniajacaSieKlasaMalwinyYetOtherChild.cs" />
