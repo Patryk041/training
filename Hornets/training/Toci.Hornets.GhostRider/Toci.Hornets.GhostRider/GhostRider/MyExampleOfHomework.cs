@@ -8,7 +8,7 @@ namespace Toci.Hornets.GhostRider.GhostRider
         protected override ITelephoneCommunication ChooseMedium(int chosenOption)
         {
             //ifologia i returny
-            
+
             throw new System.NotImplementedException();
         }
 
