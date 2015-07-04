@@ -18,7 +18,7 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.TelephoneTask
                     {2, new SmsCommunication()},
                     {1, new PhotoCommunication()}
                 };
-                return objects.ContainsKey(chosenOption) ? objects[chosenOption] : null;
+                return objects[chosenOption];
             }
 
             protected override string MyNick()
