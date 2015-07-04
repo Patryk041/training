@@ -46,10 +46,16 @@
     <Compile Include="Class1.cs" />
     <Compile Include="KSebal\Class1.cs" />
     <Compile Include="KubaT\TestClass.cs" />
-    <Compile Include="Malwina\Class1.cs" />
+    <Compile Include="Malwina\ExtendingWarrior.cs" />
+    <Compile Include="Malwina\IBaseForWyroznienie.cs" />
+    <Compile Include="Malwina\WyrozniajacaSieKlasaMalwiny.cs" />
+    <Compile Include="Malwina\WyrozniajacaSieKlasaMalwinyChild.cs" />
+    <Compile Include="Malwina\WyrozniajacaSieKlasaMalwinyYetOtherChild.cs" />
     <Compile Include="Polak\PolakStuff.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SemiRafista\SRTest.cs" />
+    <Compile Include="Sherpin\SherpinClass.cs" />
+    <Compile Include="Terry\TerryTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
@@ -57,7 +63,6 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

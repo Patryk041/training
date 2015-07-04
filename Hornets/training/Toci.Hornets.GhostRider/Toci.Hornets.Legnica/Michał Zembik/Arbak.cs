@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Hornets.Rzeszow.Malwina
+namespace Toci.Hornets.Legnica.Michał_Zembik
 {
-    class Class1
+    class Arbak
     {
     }
 }

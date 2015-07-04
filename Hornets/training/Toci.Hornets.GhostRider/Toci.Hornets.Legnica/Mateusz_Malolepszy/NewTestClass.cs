@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Hornets.Gliwice.Dziara
+namespace Toci.Hornets.Legnica.Mateusz_Malolepszy
 {
-    public class TestClass
+    class NewTestClass
     {
-       
     }
 }
