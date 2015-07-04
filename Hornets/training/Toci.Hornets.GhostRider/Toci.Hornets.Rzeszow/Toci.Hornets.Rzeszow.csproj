@@ -41,8 +41,10 @@
   <ItemGroup>
     <Compile Include="Agata\Test2yagha.cs" />
     <Compile Include="Agata\TestBranchesAga.cs" />
+    <Compile Include="Agata\YaghaTelephoneTask\YaghaCommunicationsMethods.cs" />
     <Compile Include="AndrzejD\Class1.cs" />
     <Compile Include="Chojnecki\AndrzejJestem.cs" />
+    <Compile Include="Chojnecki\TelePhone\MyPhone.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="KSebal\Class1.cs" />
     <Compile Include="KubaT\TestClass.cs" />
@@ -52,8 +54,10 @@
     <Compile Include="Malwina\WyrozniajacaSieKlasaMalwinyChild.cs" />
     <Compile Include="Malwina\WyrozniajacaSieKlasaMalwinyYetOtherChild.cs" />
     <Compile Include="Polak\PolakStuff.cs" />
+    <Compile Include="Polak\TelephoneTask1\TepelhoneTask1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SemiRafista\SRTest.cs" />
+    <Compile Include="Sherpin\SherPhoneTask\SherPhoneChooseTypeOfMessage.cs" />
     <Compile Include="Sherpin\SherpinClass.cs" />
     <Compile Include="Terry\TerryTest.cs" />
   </ItemGroup>
@@ -63,6 +67,7 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
