@@ -1,4 +1,5 @@
-﻿using Toci.Hornets.GhostRider.InterfacesExtending;
+﻿using System;
+using Toci.Hornets.GhostRider.InterfacesExtending;
 using Toci.Hornets.GhostRider.TElephoneCommunication;
 using Toci.Hornets.GhostRider.YourWork.TelephoneTask;
 
@@ -8,15 +9,26 @@ namespace Toci.Hornets.Bytom.Pr0fes0r.TelephoneTask
     {
         protected override ITelephoneCommunication ChooseMedium(int chosenOption)
         {
-            switch (chosenOption)
+            if (chosenOption == 1)
             {
-                case 1: { return new PhotoCommunication();}
-                case 2: { return new SmsCommunication();}
-                case 3:
+                return new PhotoCommunication();
+            }
+            else
+            {
+                if (chosenOption == 2)
                 {
-                    return new VoiceCommunication();
+                    return new SmsCommunication();
                 }
-                default:break;
+                else
+                {
+                    if (chosenOption == 3)
+                    {
+                        return new VoiceCommunication();
+                    }
+                    else
+                    {
+                        throw new NotImplementedException();
+                    }
                 }
             }
         }
@@ -27,3 +39,4 @@ namespace Toci.Hornets.Bytom.Pr0fes0r.TelephoneTask
         }
     }
 }
+ 
