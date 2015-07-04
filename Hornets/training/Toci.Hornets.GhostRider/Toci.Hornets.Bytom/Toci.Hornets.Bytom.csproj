@@ -46,6 +46,7 @@
     <Compile Include="Common\Interfaces\IPeselValidator.cs" />
     <Compile Include="KamilS\KamilS.cs" />
     <Compile Include="KamilS\TelephoneTask\TelephoneTaskClass.cs" />
+    <Compile Include="Pr0fes0r\TelephoneTask\Telefon.cs" />
     <Compile Include="Pr0fes0r\Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Szary\KlasaSzarego.cs" />
