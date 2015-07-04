@@ -1,4 +1,5 @@
 ﻿using Toci.Hornets.GhostRider.InterfacesExtending;
+using Toci.Hornets.GhostRider.TElephoneCommunication;
 using Toci.Hornets.GhostRider.YourWork.TelephoneTask;
 
 namespace Toci.Hornets.GhostRider.GhostRider
@@ -9,7 +10,8 @@ namespace Toci.Hornets.GhostRider.GhostRider
         {
             //ifologia i returny
             
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+            return new SmsCommunication();
         }
 
         protected override string MyNick()
@@ -17,7 +19,9 @@ namespace Toci.Hornets.GhostRider.GhostRider
             //GetUserChoice(1);
             
             //return "ktrokolwiek";
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+
+            return "Me myself";
         }
     }
 }
