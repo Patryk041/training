@@ -74,6 +74,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
              //                                 UCCT
 
              { "TypowyAdam", new TypowyAdamPeselValidatorOld().IsPeselValid },
+             { "TypowyAdam4GhostWarrior", new TypowyAdamPeselValidator().IsPeselValid },
              { "UCantTouchThisAutism", new UCantTouchThisAutismPeselValisator().IsPeselValid }
          };
     }
