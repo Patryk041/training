@@ -1,5 +1,5 @@
 <?php
-require_once '../GhostRider/Homework/StringOperationsObj.php';
+//require_once '../GhostRider/Homework/StringOperationsObj.php';
 
 class ObywatelGCCStringOperability extends GhostRiderStringOperability
 {

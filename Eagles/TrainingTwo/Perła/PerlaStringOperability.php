@@ -1,6 +1,6 @@
 <?php
 
-require_once 'GhostRider/Homework/StringOperationsObj.php';
+//require_once 'GhostRider/Homework/StringOperationsObj.php';
 
 class PerlaStringOperability extends GhostRiderStringOperability {
 
