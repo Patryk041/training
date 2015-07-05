@@ -1,9 +1,11 @@
 <?php
-	class ObywatelGCCDate
+	require_once '../GhostRider/Homework/PeselValidation.php';
+	
+	class OGCCDate
 	{
-		private $year;
-		private $month;
-		private $day;
+		public $year;
+		public $month;
+		public $day;
 		
 		private $daysCount = array(1 => 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 		
@@ -56,7 +58,49 @@
 			return !$result;
 		}
 		
-		protected function DateValidation(ObywatelGCCDate $date)
+		protected function CutOffDate($pesel)
+		{
+			$year;
+			$month;
+			$day;
+			
+			if($pesel[2] == 8 || $pesel[2] == 9) { $year = 1800; }
+			else if($pesel[2] == 0 || $pesel[2] == 1) { $year = 1900; }
+			else if($pesel[2] == 2 || $pesel[2] == 3) { $year = 2000; }
+			else if($pesel[2] == 4 || $pesel[2] == 5) { $year = 2100; }
+			else if($pesel[2] == 6 || $pesel[2] == 7) { $year = 2200; }
+			$year += 10 * $pesel[0] + $pesel[1];
+			
+			if($pesel[2] % 2 == 1) $month = 10;
+			$month += $pesel[3];
+			
+			$day = 10 * $pesel[4] + $pesel[5];
+			
+			$date = new OGCCDate($year, $month, $day);
+			return $date;
+		}
+		
+		protected function CheckSum($pesel)
+		{
+			/*1*a + 3*b + 7*c + 9*d + 1*e + 3*f + 7*g + 9*h + 1*i + 3*j
+Nastêpnie nale¿y odj¹æ ostatni¹ cyfrê otrzymanego wyniku od 10. Jeœli otrzymany wynik nie jest równy cyfrze kontrolnej, to znaczy, ¿e numer zawiera b³¹d[22].*/
+			$tempValue = 1 * $pesel[0] + $pesel[1] $pesel[2] + $pesel[3] + $pesel[4] + $pesel[5] + $pesel[6] + $pesel[7] + $pesel[8] + $pesel[9] + $pesel[10]
+		}
+		
+		public function ValidatePesel($pesel)
+		{
+			if(strlen($pesel) != 11) return false;
+			$result = false;
+			
+			$date = $this->CutOffDate($pesel);
+			var_dump($date);
+			$result = $result | !$this->DateValidationFromOCCDate($date);
+			//$result = $result | !$this->DateValidation($date->year, $date->month, $date->day)
+			//$result = $result | !$this->CheckSum($pesel);
+			return !$result;
+		}
+		
+		protected function DateValidationFromOCCDate(OGCCDate $date)
 		{
 			$result = false;
 			$result = $result | !$date->IsValidYear();
@@ -64,33 +108,10 @@
 			$result = $result | !$date->IsValidDay();
 			return !$result;
 		}
-		// 1984 02 29
-		// 1986 02 29 ?
-		// 2011 13 01 ?
-		// 2011 11 31 ?
-		// 2011 03 31 ?
-		// 2011 04 31 ?
-		
-		protected function CutOffDate($pesel)
-		{
-			
-			$date = new ObywatelGCCDate($year, $month, $day);
-			return $date;
-		}
-		
-		protected function CheckSum($pesel)
-		{
-			
-		}
-		
-		public function ValidatePesel($pesel)
-		{
-			if(strlen($pesel) != 11) return false;
-			
-			$date = $this->CutOffDate($pesel);
-			$this->DateValidation($date);
-			//$this->DateValidation($year, $month, $day)
-			//DateValidation
-			//CheckSum
-		}
 	}
+	
+	$validator = new ObywatelGCCPeselValidation();
+	if($validator->ValidatePesel('12345678901') == true)
+		echo "Valid";
+	else
+		echo "Invalid";
