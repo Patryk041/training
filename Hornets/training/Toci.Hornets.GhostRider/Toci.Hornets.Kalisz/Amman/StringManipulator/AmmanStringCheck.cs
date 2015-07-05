@@ -1,4 +1,5 @@
 ﻿using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
+using Toci.Hornets.Kalisz.Amman.StringManipulator.Workers;
 
 namespace Toci.Hornets.Kalisz.Amman.StringManipulator
 {
@@ -6,45 +7,39 @@ namespace Toci.Hornets.Kalisz.Amman.StringManipulator
     {
         protected override bool IsStringInString(string subject, string seek)
         {
-            throw new System.NotImplementedException();
+            return Stringception.IsStringcepted(subject, seek);
         }
 
         protected override bool IsStringElementsInString(string subject, string seek)
         {
-            throw new System.NotImplementedException();
+            return StringElement.IsElement(subject, seek);
         }
 
         protected override bool IsStringAnagramOfString(string subject, string seek)
         {
-            throw new System.NotImplementedException();
+            return Anagram.IsAnagram(subject, seek);
         }
 
         protected override string GetNick()
         {
-            throw new System.NotImplementedException();
+            return "Amman";
         }
 
         public override StringManipulationsResults RunStringOperations(string subject, string seek)
         {
-            throw new System.NotImplementedException();
-        }
-
-        protected override StringManipulationsResults Run(string subject, string seek)
-        {
-            var result = new StringManipulationsResults();
-
-            result.Nick = GetNick();
-            result.Subject = subject;
-            result.Seek = seek;
-
-            result.Type = this.GetType();
-            
-            // TODO OPTIMIZATION
-            result.IsAnagram = IsStringAnagramOfString(subject, seek);
-            result.IsStringElementsInString = IsStringElementsInString(subject, seek);
-            result.IsStringInString = IsStringInString(subject, seek);
+            var result = new StringManipulationsResults
+            {
+                Nick = GetNick(),
+                Subject = subject,
+                Seek = seek,
+                Type = GetType(),
+                IsAnagram = IsStringAnagramOfString(subject, seek),
+                IsStringElementsInString = IsStringElementsInString(subject, seek),
+                IsStringInString = IsStringInString(subject, seek)
+            };
 
             return result;
         }
+        
+        }
     }
-}
