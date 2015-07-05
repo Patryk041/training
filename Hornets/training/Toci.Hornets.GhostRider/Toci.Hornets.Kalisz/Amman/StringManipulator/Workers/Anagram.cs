@@ -4,7 +4,9 @@
     {
         static public bool IsAnagram(string big, string small)
         {
-            return big.Length == small.Length && StringElement.IsElement(big, small); 
+            return big.Length == small.Length && StringElement.IsElement(big, small) && StringElement.IsElement(small, big); 
         }
+
+         
     }
 }
