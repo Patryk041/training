@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Filip Sokolowski\test.cs" />
+    <Compile Include="Mateusz Smigowski\NewClass.cs" />
     <Compile Include="Mateusz_Malolepszy\NewTestClass.cs" />
     <Compile Include="Michał Zembik\Arbak.cs" />
     <Compile Include="Patryk_Stulczewski\Class1.cs" />
@@ -55,9 +56,7 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Mateusz Smigowski\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
