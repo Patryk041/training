@@ -23,4 +23,9 @@ abstract class jakeStringOperability extends GhostRiderStringOperability
 		
 		return $count;
 	}
+	
+	public function GetNick()
+	{
+		return 'jake';
+	}
 }
