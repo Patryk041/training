@@ -26,5 +26,9 @@ class PerlaStringOperability extends GhostRiderStringOperability {
             return FALSE;
         }
     }
+    public function GetNick()
+    {
+        return 'Perla';
+    }
 
 }
