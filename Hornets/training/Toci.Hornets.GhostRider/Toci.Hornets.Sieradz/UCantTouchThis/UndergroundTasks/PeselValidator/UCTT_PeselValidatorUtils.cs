@@ -5,11 +5,13 @@ using System.Linq;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
 {
-    public static class UCTT_DateValidatorUtils
+    public static class UCTT_PeselValidatorUtils
     {
         private const int MinYear = 1800;
         private const int MonthLowerBoundary = 0;
         private const int MonthUpperBoundary = 13;
+        private static int[] _wages = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 1 };
+
 
         private static Dictionary<int[], Func<int,int>> _dayMap = new Dictionary<int[], Func<int, int>>()
         {
@@ -51,6 +53,16 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
         public static bool IsDateValid(int day, int month, int year)
         {
             return IsMonthValid(month) && IsDayValid(day, month, year);
+        }
+
+        public static bool IsChecksumOk(char[] peselArray)
+        {
+            int checksum = 0;
+            for (int i = 0; i < peselArray.Length; i++)
+            {
+                checksum += (peselArray[i] - 48) * _wages[i];
+            }
+            return (checksum % 10) == 0;
         }
     }
 }

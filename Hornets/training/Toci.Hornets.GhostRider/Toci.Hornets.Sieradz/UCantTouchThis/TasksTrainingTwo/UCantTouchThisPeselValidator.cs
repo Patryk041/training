@@ -8,22 +8,15 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo
     public class UCantTouchThisPeselValidator : PeselValidator
     {
         //Not final
-        private readonly int[] _wages = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 1 };
+        private static readonly int[] _wages = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 1 };
 
         private int _day, _month, _year;
 
         public override bool IsPeselValid(string pesel)
         {
-            if (!ArePeselDigitsOk(pesel)) return false;
+            if (pesel.Length != 11 || !Checksum(pesel)) return false;
             ExtractDate(CutOffDate(pesel));
-            if (!ValidateDate(_year, _month, _day)) return false;
-            return Checksum(pesel);
-        }
-
-        private bool ArePeselDigitsOk(string pesel)
-        {
-            var numberOfDigits = pesel.Count(Char.IsNumber);
-            return numberOfDigits == 11 || pesel.Length != 11;
+            return ValidateDate(_year, _month, _day);
         }
 
         protected override string CutOffDate(string pesel)
@@ -33,15 +26,15 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo
 
         private void ExtractDate(string dateString)
         {
-            Int32.TryParse(dateString.Substring(0, 2), out _year);
-            Int32.TryParse(dateString.Substring(2, 2), out _month);
-            Int32.TryParse(dateString.Substring(4, 2), out _day);            
+            _year = (dateString[0] - 48) * 10 + (dateString[1] - 48);
+            _month = (dateString[2] - 48) * 10 + (dateString[3] - 48);
+            _day = (dateString[4] - 48) * 10 + (dateString[5] - 48);
         }
 
         protected override bool ValidateDate(int year, int month, int day)
         {
             SetMonthAndYear(ref year, ref month);
-            return UCTT_DateValidatorUtils.IsDateValid(day, month, year);
+            return UCTT_PeselValidatorUtils.IsDateValid(day, month, year);
         }
 
         protected override bool Checksum(string pesel)

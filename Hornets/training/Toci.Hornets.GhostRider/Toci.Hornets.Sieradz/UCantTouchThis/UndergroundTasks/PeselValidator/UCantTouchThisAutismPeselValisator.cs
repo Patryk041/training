@@ -7,20 +7,16 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
         //normal version coming soon
         //autism not final
 
+        private int _day, _month, _year;
+
         private const int UpperBoundary = '9' + 1;
 
         public bool IsPeselValid(string pesel)
         {
-            int day, month, year;
             char[] peselArray = pesel.ToCharArray();
-
-            if (!ArePeselDigitsOk(peselArray)) return false;
-
-            GetDateFromPesel(peselArray, out day, out month, out year);
-
-            if (!ValidateDate(year, month, day)) return false;
-
-            return IsChecksumOk(peselArray);
+            if (pesel.Length != 11 || ! UCTT_PeselValidatorUtils.IsChecksumOk(peselArray)) return false;
+            GetDateFromPesel(peselArray);
+            return ValidateDate(_year, _month, _day);
         }
 
         public bool ValidateDate(int year, int month, int day)
@@ -50,36 +46,14 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
                 year += 1900;
             }
 
-            return UCTT_DateValidatorUtils.IsDateValid(day, month, year);
+            return UCTT_PeselValidatorUtils.IsDateValid(day, month, year);
         }
 
-        private void GetDateFromPesel(char[] peselArray, out int day, out int month, out int year)
+        private void GetDateFromPesel(char[] peselArray)
         {
-            year = (peselArray[0] - '0') * 10 + (peselArray[1] - '0');
-            month = (peselArray[2] - '0') * 10 + (peselArray[3] - '0');
-            day = (peselArray[4] - '0') * 10 + (peselArray[5] - '0');
-        }
-
-        private bool ArePeselDigitsOk(char[] peselArray)
-        {
-            int numberOfDigits = 0;
-
-            for (int i = 0; i < peselArray.Length; i++)
-            {
-                numberOfDigits += ((~((peselArray[i] - '0') >> 31) & ((peselArray[i] - UpperBoundary) >> 31))) & 1;
-            }
-            return numberOfDigits == 11 || peselArray.Length != 11;
-        }
-
-        private bool IsChecksumOk(char[] peselArray)
-        {
-            int[] wages = {1,3,7,9,1,3,7,9,1,3,1};
-            int checksum = 0;
-            for (int i = 0; i < peselArray.Length; i++)
-            {
-                checksum += peselArray[i] * wages[i];
-            }
-            return (checksum % 10) == 0;
+            _year = (peselArray[0] - '0') * 10 + (peselArray[1] - '0');
+            _month = (peselArray[2] - '0') * 10 + (peselArray[3] - '0');
+            _day = (peselArray[4] - '0') * 10 + (peselArray[5] - '0');
         }
     }
 }
