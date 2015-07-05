@@ -2,8 +2,9 @@
 
     function OpenFile($filePath)
     {
+        set_include_path(get_include_path() . PATH_SEPARATOR . '../');
         //$zmienna = file_get_contents($filePath);
-        
+        require_once $filePath;
         //echo $zmienna;
     }
 
