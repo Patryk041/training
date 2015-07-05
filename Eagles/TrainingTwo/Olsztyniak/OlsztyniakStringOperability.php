@@ -1,5 +1,5 @@
 <?php
-require_once('../GhostRider/Homework/StringOperationsObj.php');
+//require_once('../GhostRider/Homework/StringOperationsObj.php');
 
 class OlsztyniakStringOperability extends GhostRiderStringOperability {
 	
@@ -18,5 +18,8 @@ public function SubString($text, $count) {
 	}
 	return $wynik;
 }
-	
+	public function GetNick()
+	{
+	    return "olsztyniak";
+	}
 }
