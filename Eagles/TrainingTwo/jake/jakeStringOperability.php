@@ -2,7 +2,7 @@
 
 abstract class jakeStringOperability extends GhostRiderStringOperability
 {
-	public function jake_substr($string, $length)
+	public function SubString($string, $length)
 	{
 		$result = '';
 		for ($i = 0; $i <= $lenght; $i++)
