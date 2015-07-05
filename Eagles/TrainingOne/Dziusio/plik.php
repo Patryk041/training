@@ -20,8 +20,6 @@ $testStrlenValuess = array(
 		);
 
 
-
-	
 	
 		for($i=0;isset($testElemetss);$i++)
 		{
@@ -34,7 +32,4 @@ $testStrlenValuess = array(
 			
 		}
 		
-
-
-	
 	ReadDirectorys('../');
