@@ -11,18 +11,18 @@ $czymTestujemy = array(
 $testujemy = Array(
 		'Dziusio_strlen',
 		'pwltt_str',
-		'Kollwing_strlen'
+		'Kollwing_strlen',
 		'Vernathic_strlen',
 		'jake_strlen',
 		'Rudi_strlen'
 		);
-
+ReadDirectory('../');
 		for($n=0;isset($testujemy);$i++)
 		{
 			for($j=0;$j<7;$j++)
 			{
-				echo $testujemy[i]($czymTestujemy[0]);
+				echo $testujemy[$i]($czymTestujemy[0]);
 			}
 		}
 
-ReadDirectorys('../');
+
