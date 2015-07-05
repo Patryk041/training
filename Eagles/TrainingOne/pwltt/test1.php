@@ -8,7 +8,7 @@
 		return $count;
 	}
 	
-	function pwltt_substring($text,$count)
+	function pwltt_substr($text,$count)
 	{
 	    $wynik = '';
 		for( $i = 0; $i <=$count; $i++)
@@ -19,7 +19,7 @@
 	}
 	
 	
-	echo pwltt_str('programowanie');
-	echo pwltt_substring('programowanie',5);
+	echo pwltt_str('programowanie')."\n";
+	echo pwltt_substr('programowanie',5);
 	
 	?>
