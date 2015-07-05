@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Adrianowsky94\TheChosenOne.cs" />
     <Compile Include="Amman\APhone.cs" />
+    <Compile Include="LidiaM\mojaklasa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
