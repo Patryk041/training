@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
 {
-    public static class DateValidatorUtils
+    public static class UCTT_DateValidatorUtils
     {
         private const int MinYear = 1800;
         private const int MonthLowerBoundary = 0;
@@ -13,8 +13,8 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
 
         private static Dictionary<int[], Func<int,int>> _dayMap = new Dictionary<int[], Func<int, int>>()
         {
-            {new []{1,3,5,7,8,10,12}, year => 31},
-            {new []{4,6,9,11}, year => 30},
+            {new []{1,3,5,7,8,10,12}, x => 31},
+            {new []{4,6,9,11}, x => 30},
             {new []{2}, year => (IsYearLeap(year) ? 29 : 28)}
         };
 
@@ -36,19 +36,19 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
 
         static bool IsDayValid(int day, int month, int year)
         {
-            if (day == 0) return false;
+            if (day < 1 || day > 31) return false;
             var key = _dayMap.Keys.FirstOrDefault(x => x.Contains(month));
             return day <= _dayMap[key].Invoke(year);
         }
 
-        public static bool IsDateValid(int day, int month, int year)
+        public static bool IsDateValid_SlowVersion(int day, int month, int year)
         {
             DateTime date;
             return DateTime.TryParse(month + "/" + day + "/" + year, CultureInfo.CreateSpecificCulture("en-US"), DateTimeStyles.None, out date);
 //            return DateTime.TryParse(month + "/" + day + "/" + year, out date);
         }
 
-        public static bool IsDateValidAndAutistic(int day, int month, int year)
+        public static bool IsDateValid(int day, int month, int year)
         {
             return IsMonthValid(month) && IsDayValid(day, month, year);
         }
