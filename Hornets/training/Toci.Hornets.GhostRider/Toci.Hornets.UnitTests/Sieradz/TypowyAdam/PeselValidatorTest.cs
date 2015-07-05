@@ -73,7 +73,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
              // "Nie bądź jak leń co śmierdzący jest!"
              //                                 UCCT
 
-             { "TypowyAdam", new TypowyAdamPeselValidator().IsPeselValid },
+             { "TypowyAdam", new TypowyAdamPeselValidatorOld().IsPeselValid },
              { "UCantTouchThisAutism", new UCantTouchThisAutismPeselValisator().IsPeselValid }
          };
     }

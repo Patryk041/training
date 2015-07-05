@@ -60,6 +60,7 @@
     <Compile Include="TypowyAdam\UndergroundTasks\PeselValidatorUtils.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\SimpleTypicalStringComparator.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\TypowyAdamPeselValidator.cs" />
+    <Compile Include="TypowyAdam\UndergroundTasks\TypowyAdamPeselValidatorOld.cs" />
     <Compile Include="UCantTouchThis\ImSoBadAss.cs" />
     <Compile Include="UCantTouchThis\TelephoneTask\UCantTouchThisTelephoneTask.cs" />
     <Compile Include="UCantTouchThis\TelephoneTask\UCTT_TelephoneTaskFactory.cs" />
