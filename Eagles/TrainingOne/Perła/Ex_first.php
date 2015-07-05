@@ -23,4 +23,5 @@ function Perla_strlen($text) {
         return 'Podaj ciąg mający więcej niż 0 znaków!';
     }
     echo Perla_reverse('perła');
+    //test
 }
