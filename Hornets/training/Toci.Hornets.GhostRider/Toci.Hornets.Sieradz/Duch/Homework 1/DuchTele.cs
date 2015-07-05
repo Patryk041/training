@@ -10,14 +10,15 @@ namespace Toci.Hornets.Sieradz.Duch.Homework_1
 {
     public class DuchTele : TelephoneInterpreter
     {
+        private readonly DuchTelephoneFactory aaa = new DuchTelephoneFactory();
 
         protected override ITelephoneCommunication ChooseMedium(int chosenOption)
         {
-            var aaa = new DuchTelephoneFactory();
+            //var aaa = new DuchTelephoneFactory();
             
             return aaa.GetInstance(chosenOption)();
         }
-
+        
         protected override string MyNick()
         {
             return "Duch";

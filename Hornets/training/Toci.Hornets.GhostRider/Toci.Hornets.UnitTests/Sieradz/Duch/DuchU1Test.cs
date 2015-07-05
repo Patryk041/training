@@ -22,9 +22,9 @@ namespace Toci.Hornets.UnitTests.Sieradz.Duch
         [TestMethod]
         public void TelephoneTest()
         {
-            //var dd = new DuchTele();
-            
+           // var dd = new DuchTele();
 
+            //var xxx = dd.Abc(1);
 
         }
 
