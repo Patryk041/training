@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
+using Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo;
 using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator;
 
 namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
@@ -74,7 +75,9 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
              //                                 UCCT
 
              { "TypowyAdam", new TypowyAdamPeselValidator().IsPeselValid },
-             { "UCantTouchThisAutism", new UCantTouchThisAutismPeselValisator().IsPeselValid }
+             { "TypowyAdam4GhostWarrior", new TypowyAdamPeselValidator().IsPeselValid },
+             { "UCantTouchThisAutism", new UCantTouchThisAutismPeselValisator().IsPeselValid },
+             { "UCantTouchThis", new UCantTouchThisPeselValidator().IsPeselValid }
          };
     }
 

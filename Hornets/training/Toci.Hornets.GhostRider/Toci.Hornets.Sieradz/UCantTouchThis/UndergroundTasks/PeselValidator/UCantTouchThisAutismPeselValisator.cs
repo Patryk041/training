@@ -7,7 +7,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
         //normal version coming soon
         //autism not final
 
-        private const int upperBoundary = '9' + 1;
+        private const int UpperBoundary = '9' + 1;
 
         public bool IsPeselValid(string pesel)
         {
@@ -50,7 +50,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
                 year += 1900;
             }
 
-            return DateValidatorUtils.IsDateValidAndAutistic(day, month, year);
+            return UCTT_DateValidatorUtils.IsDateValid(day, month, year);
         }
 
         private void GetDateFromPesel(char[] peselArray, out int day, out int month, out int year)
@@ -66,7 +66,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
 
             for (int i = 0; i < peselArray.Length; i++)
             {
-                numberOfDigits += ((~((peselArray[i] - '0') >> 31) & ((peselArray[i] - upperBoundary) >> 31))) & 1;
+                numberOfDigits += ((~((peselArray[i] - '0') >> 31) & ((peselArray[i] - UpperBoundary) >> 31))) & 1;
             }
             return numberOfDigits == 11 || peselArray.Length != 11;
         }
