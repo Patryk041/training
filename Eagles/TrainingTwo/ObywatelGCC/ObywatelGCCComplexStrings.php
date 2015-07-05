@@ -1,43 +1,40 @@
 <?php
-	require_once '../GhostRider/Homework/ComplexStrings.php'; //do w³asnych testów
+	//require_once '../GhostRider/Homework/CompexStrings.php'; //do w³asnych testów
 	
-	class ObywatelGCCComplexStrings
+	class ObywatelGCCComplexStrings extends ComplexStrings
 	{
 		private $seekLength;
 		private $subjectLength;
-		// true: beata ata, eata, ta
-		// false: beata aa, eb
+
 		protected function IsStringInString($subject, $seek)
 		{
 			$currentSeekIndex = 0;
 			
-			for($i = 0; $i < $subjectLength; $i++)
+			for($i = 0; $i < $this->subjectLength; $i++)
 			{
 				if($subject[$i] == $seek[$currentSeekIndex]) { $currentSeekIndex++; }
 				else { $currentSeekIndex = 0; }
 				
-				if($seekLength == $currentSeekIndex) { return true; }
+				if($this->seekLength == $currentSeekIndex) { return true; }
 			}
 			return false;
 		}
 	
-		// true: beata aa, ae, ea, be, eb, ebt
-		// false: beata aaa
 		protected function IsStringLettersInString($subject, $seek)
 		{
-			if($seekLength > $subjectLength) return false;
+			if($this->seekLength > $this->subjectLength) return false;
 			
 			$letterUsesState = array();
-			for($i = 0; $i < $subjectLength; $i++)
+			for($i = 0; $i < $this->subjectLength; $i++)
 			{
 				$letterUses[] = false;
 			}
 			
 			$letterUsesCount = 0;
-			for($i = 0; $i < $seekLength; $i++)
+			for($i = 0; $i < $this->seekLength; $i++)
 			{
 				$j = 0;
-				for(; $j < $subjectLength; $j++)
+				for(; $j < $this->subjectLength; $j++)
 				{
 					if($seek[$i] == $subject[$j] && $letterUsesState[$j] == false)
 					{
@@ -46,30 +43,28 @@
 						break;
 					}
 				}
-				if($j == $subjectLength) //nie znaleziono litery w subject
+				if($j == $this->subjectLength) //nie znaleziono litery w subject
 				{
 					return false;
 				}
 			}
-			return $letterUsesCount == $seekLength;
+			return $letterUsesCount == $this->seekLength;
 		}
 	
-		// true: beata ataeb, aateb,
-		// false: beata ataeba, aatebb, aaet
 		protected function IsAnagram($subject, $seek)
 		{
-			if($seekLength != $subjectLength) return false;
-			return IsStringLettersInString($subject, $seek);
+			if($this->seekLength != $this->subjectLength) return false;
+			return $this->IsStringLettersInString($subject, $seek);
 		}
 	
-		// return array(true, true, true)
 		public function CheckStrings($subject, $seek)
 		{
-			$seekLength = strlen($seek);
-			$subjectLength = strlen($subject);
+			$this->seekLength = strlen($seek);
+			$this->subjectLength = strlen($subject);
 			
 			return array($this->IsStringInString($subject, $seek), 
 					$this->IsStringLettersInString($subject, $seek), 
 					$this->IsAnagram($subject, $seek));
 		}
 	}
+	
