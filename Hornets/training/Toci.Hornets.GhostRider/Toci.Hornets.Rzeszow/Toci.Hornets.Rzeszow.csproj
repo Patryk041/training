@@ -65,6 +65,7 @@
     <Compile Include="Terry\TrainingTwo\Pesel\DayValidator.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\MonthValidator.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\PeselDate.cs" />
+    <Compile Include="Terry\TrainingTwo\Pesel\TerryPeselValidator.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\YearValidator.cs" />
   </ItemGroup>
   <ItemGroup>

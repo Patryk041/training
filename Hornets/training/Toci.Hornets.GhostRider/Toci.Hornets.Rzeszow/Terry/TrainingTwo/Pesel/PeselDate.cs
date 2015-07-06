@@ -10,11 +10,11 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingTwo.Pesel
         public bool IsLeapYear { get; set; }
         public int Century { get; set; }
 
-        public PeselDate(string peselPart)
+        public PeselDate(int year, int month, int day)
         {
-            Day = Int32.Parse(peselPart.Substring(4));
-            Month = Int32.Parse(peselPart.Substring(2,3));
-            Year = Int32.Parse(peselPart.Substring(0,1));
+            Year = year;
+            Month = month;
+            Day = day;
         }
     }
 }
