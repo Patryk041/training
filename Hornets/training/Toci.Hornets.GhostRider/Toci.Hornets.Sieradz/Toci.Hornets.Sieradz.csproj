@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeeJay\ExampleDeeJayClass.cs" />
-    <Compile Include="Duch\DuchClassLoL.cs" />
+    <Compile Include="Duch\DuchTelephoneFactory.cs" />
+    <Compile Include="Duch\DuchGenFactory.cs" />
+    <Compile Include="Duch\Homework 1\DuchTele.cs" />
     <Compile Include="Duch\U1task\DuchStringComparator.cs" />
     <Compile Include="Jake\JakeTest.cs" />
     <Compile Include="Kamil\ClassKamil.cs" />
@@ -59,6 +61,9 @@
     <Compile Include="TypowyAdam\UndergroundTasks\SimpleTypicalStringComparator.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\TypowyAdamPeselValidator.cs" />
     <Compile Include="UCantTouchThis\ImSoBadAss.cs" />
+    <Compile Include="UCantTouchThis\TelephoneTask\UCantTouchThisTelephoneTask.cs" />
+    <Compile Include="UCantTouchThis\TelephoneTask\UCTT_TelephoneTaskFactory.cs" />
+    <Compile Include="UCantTouchThis\UCTTGenericFactory.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\DateValidatorUtils.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCantTouchThisAutismPeselValisator.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\DummyStringComparator.cs" />
@@ -74,6 +79,9 @@
       <Project>{878b2eca-9cc0-42cf-aca6-cd6e44c47451}</Project>
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Duch\Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
