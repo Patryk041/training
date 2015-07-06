@@ -16,6 +16,8 @@ namespace Toci.Hornets.Rzeszow.Malwina.Telephone
 
             if (chosenOption == 3)
             { return new VoiceCommunication();}
+
+            return null;
         }
 
         protected override string MyNick()

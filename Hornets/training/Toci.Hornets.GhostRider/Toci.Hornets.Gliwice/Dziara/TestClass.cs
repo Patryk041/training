@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Toci.Hornets.Gliwice.Dziara
 {
-    class TestClass
+    public class TestClass
     {
+       
     }
 }
