@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator;
 
@@ -8,8 +7,6 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo
     public class UCantTouchThisPeselValidator : PeselValidator
     {
         //Not final
-        private static readonly int[] _wages = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 1 };
-
         private int _day, _month, _year;
 
         public override bool IsPeselValid(string pesel)
@@ -26,50 +23,19 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo
 
         private void ExtractDate(string dateString)
         {
-            _year = (dateString[0] - 48) * 10 + (dateString[1] - 48);
-            _month = (dateString[2] - 48) * 10 + (dateString[3] - 48);
-            _day = (dateString[4] - 48) * 10 + (dateString[5] - 48);
+            _year = dateString.TryToGetNumber(0, 1);
+            _month = dateString.TryToGetNumber(2, 3);
+            _day = dateString.TryToGetNumber(4, 5);
         }
 
         protected override bool ValidateDate(int year, int month, int day)
         {
-            SetMonthAndYear(ref year, ref month);
-            return UCTT_PeselValidatorUtils.IsDateValid(day, month, year);
+            return UCTT_PeselValidatorUtils.ValidateDate(year, month, day);
         }
 
         protected override bool Checksum(string pesel)
         {
-            int checksum = pesel.Select((t, i) => t * _wages[i]).Sum();
-            return (checksum % 10) == 0;
-        }
-
-        private void SetMonthAndYear(ref int year, ref int month)
-        {
-            //  TODO: Get rid of those ifs
-            if (month > 80)
-            {
-                month -= 80;
-                year += 1800;
-            }
-            else if (month > 60)
-            {
-                month -= 60;
-                year += 2200;
-            }
-            else if (month > 40)
-            {
-                month -= 40;
-                year += 2100;
-            }
-            else if (month > 20)
-            {
-                month -= 20;
-                year += 2000;
-            }
-            else
-            {
-                year += 1900;
-            }
+            return UCTT_PeselValidatorUtils.IsChecksumOk(pesel.ToCharArray());
         }
 
         public override string GetNick()

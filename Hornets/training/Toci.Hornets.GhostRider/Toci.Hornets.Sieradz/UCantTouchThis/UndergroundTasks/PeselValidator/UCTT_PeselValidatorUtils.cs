@@ -7,13 +7,12 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
 {
     public static class UCTT_PeselValidatorUtils
     {
-        private const int MinYear = 1800;
         private const int MonthLowerBoundary = 0;
         private const int MonthUpperBoundary = 13;
-        private static int[] _wages = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 1 };
+        private static readonly int[] Wages = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 1 };
 
 
-        private static Dictionary<int[], Func<int,int>> _dayMap = new Dictionary<int[], Func<int, int>>()
+        private static readonly Dictionary<int[], Func<int,int>> DayMap = new Dictionary<int[], Func<int, int>>()
         {
             {new []{1,3,5,7,8,10,12}, x => 31},
             {new []{4,6,9,11}, x => 30},
@@ -25,12 +24,6 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
             return year % 4 == 0 && (year % 100 != 0 || year % 400 == 0);
         }
 
-        //not needed in pesel validation
-        static bool IsYearValid(int year)
-        {
-            return year > MinYear;
-        }
-
         static bool IsMonthValid(int month)
         {
             return month > MonthLowerBoundary && month < MonthUpperBoundary;
@@ -39,11 +32,11 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
         static bool IsDayValid(int day, int month, int year)
         {
             if (day < 1 || day > 31) return false;
-            var key = _dayMap.Keys.FirstOrDefault(x => x.Contains(month));
-            return day <= _dayMap[key].Invoke(year);
+            var key = DayMap.Keys.FirstOrDefault(x => x.Contains(month));
+            return key != null && day <= DayMap[key].Invoke(year);
         }
 
-        public static bool IsDateValid_SlowVersion(int day, int month, int year)
+        public static bool IsDateValid_SlowAndLameVersion(int day, int month, int year)
         {
             DateTime date;
             return DateTime.TryParse(month + "/" + day + "/" + year, CultureInfo.CreateSpecificCulture("en-US"), DateTimeStyles.None, out date);
@@ -60,9 +53,48 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
             int checksum = 0;
             for (int i = 0; i < peselArray.Length; i++)
             {
-                checksum += (peselArray[i] - 48) * _wages[i];
+                checksum += (peselArray[i] - 48) * Wages[i];
             }
             return (checksum % 10) == 0;
+        }
+
+        public static void GetDateFromPesel(char[] peselArray, int[] dateArray)
+        {
+            dateArray[0] = (peselArray[0] - '0') * 10 + (peselArray[1] - '0'); //year
+            dateArray[1] = (peselArray[2] - '0') * 10 + (peselArray[3] - '0'); //month
+            dateArray[2] = (peselArray[4] - '0') * 10 + (peselArray[5] - '0'); //day
+        }
+
+        public static bool ValidateDate(int year, int month, int day)
+        {
+            // TODO: Get rid of those ifs
+
+            if (month > 80)
+            {
+                month -= 80;
+                year += 1800;
+            }
+            else if (month > 60)
+            {
+                month -= 60;
+                year += 2200;
+            }
+            else if (month > 40)
+            {
+                month -= 40;
+                year += 2100;
+            }
+            else if (month > 20)
+            {
+                month -= 20;
+                year += 2000;
+            }
+            else
+            {
+                year += 1900;
+            }
+
+            return IsDateValid(day, month, year);
         }
     }
 }
