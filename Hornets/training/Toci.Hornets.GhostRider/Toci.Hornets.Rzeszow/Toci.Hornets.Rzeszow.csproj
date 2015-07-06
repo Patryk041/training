@@ -62,6 +62,10 @@
     <Compile Include="Sherpin\SherpinClass.cs" />
     <Compile Include="Terry\TelephoneHomework\TerryTelephoneHomework.cs" />
     <Compile Include="Terry\TerryTest.cs" />
+    <Compile Include="Terry\TrainingTwo\Pesel\DayValidator.cs" />
+    <Compile Include="Terry\TrainingTwo\Pesel\MonthValidator.cs" />
+    <Compile Include="Terry\TrainingTwo\Pesel\PeselDate.cs" />
+    <Compile Include="Terry\TrainingTwo\Pesel\YearValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
