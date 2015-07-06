@@ -1,7 +1,7 @@
 <?php
 class DziusioPeselValidation extends PeselValidation
 {
-	function CutOffDate($pesel)
+	protected function CutOffDate($pesel)
 	{
 		
 		$data = Dziusio_substr($pesel, 6);
@@ -41,7 +41,7 @@ class DziusioPeselValidation extends PeselValidation
 	
 	
 	
-	function DateValidation($year, $month, $day)
+	protected function DateValidation($year, $month, $day)
 	{	if(Day($year, $month, $day) == true && Month($year, $month, $day) == true && (Year($year, $month, $day)>=1800 && Year($year, $month, $day) <=2299 ) )
 		{		
 			return true;
@@ -52,7 +52,7 @@ class DziusioPeselValidation extends PeselValidation
 			return false;
 		}
 	}
-	function CheckSum($pesel)
+	protected function CheckSum($pesel)
 	{	$tab=array{1,3,7,9}
 		$temp=0;
 		$wynik=0;
@@ -75,7 +75,7 @@ class DziusioPeselValidation extends PeselValidation
 		
 	
 	}
-	function ValidateCheckSum($pesel)
+	protected function ValidateCheckSum($pesel)
 	{
 		
 		$temp=CheckSum($pesel);
@@ -94,7 +94,7 @@ class DziusioPeselValidation extends PeselValidation
 		}
 	}
 	
-	function ValidatePesel($pesel)
+	public function ValidatePesel($pesel)
 	{
 		
 		if(DateValidation(ReturnYear($pesel), ReturnMonth($pesel), ReturnDay($pesel) == true && ValidateCheckSum($pesel)==true)
