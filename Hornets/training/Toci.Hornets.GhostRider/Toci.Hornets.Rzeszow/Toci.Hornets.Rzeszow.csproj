@@ -45,6 +45,7 @@
     <Compile Include="AndrzejD\Class1.cs" />
     <Compile Include="Chojnecki\AndrzejJestem.cs" />
     <Compile Include="Chojnecki\TelePhone\MyPhone.cs" />
+    <Compile Include="Chojnecki\TrainingTwo\StringCheck.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="KSebal\Class1.cs" />
     <Compile Include="KubaT\TestClass.cs" />
