@@ -14,9 +14,15 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis
 
         public static int TryToGetNumber(this string stringWithNumber, int startIndex, int endIndex)
         {
-            if (stringWithNumber != null || stringWithNumber.Length != endIndex)
+            if (!AreIndexesOk(startIndex, endIndex)) return 0;
+            if (stringWithNumber != null && stringWithNumber.Length != endIndex)
                 return GetNumber(stringWithNumber, startIndex, endIndex);
             return 0;
+        }
+
+        private static bool AreIndexesOk(int startIndex, int endIndex)
+        {
+            return !(startIndex < 0 || startIndex > endIndex);
         }
 
         private static int GetNumber(string stringWithNumber, int startIndex, int endIndex)

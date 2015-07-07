@@ -8,7 +8,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis
 
         public virtual TValue GetInstance(TKey key)
         {
-            return Factory[key];
+            return (Factory.ContainsKey(key)) ? Factory[key] : default(TValue);
         }
     }
 }
