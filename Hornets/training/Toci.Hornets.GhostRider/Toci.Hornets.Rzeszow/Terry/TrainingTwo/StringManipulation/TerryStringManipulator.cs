@@ -20,10 +20,10 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingTwo.StringManipulation
             var seekInSubList = new List<char[]>();
             var seekList = new List<char[]>();
 
-            for (int i = 0; i < seekArr.Length; i++)
+            foreach (var seekChar in seekArr)
             {
-                 seekInSubList.Add(Array.FindAll(subArr, c => c == seekArr[i]));
-                 seekList.Add(Array.FindAll(seekArr, c => c == seekArr[i]));
+                seekInSubList.Add(Array.FindAll(subArr, c => c == seekChar));
+                seekList.Add(Array.FindAll(seekArr, c => c == seekChar));
             }
             
             var seekResult = TrimListsOfCharArrays(seekList);
@@ -63,7 +63,7 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingTwo.StringManipulation
             var listToArr = list.ToArray();
             var result = new char[listToArr.Length];
 
-            for (int i = 0; i < listToArr.Length; i++)
+            for (var i = 0; i < listToArr.Length; i++)
             {
                 result[i] = listToArr[i].First();
             }
