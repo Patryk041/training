@@ -9,30 +9,26 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingTwo.StringManipulation
     {
         protected override bool IsStringInString(string subject, string seek)
         {
-            return subject.Contains(seek);
+            return subject.Contains(seek) && seek.Length !=0;
         }
 
         protected override bool IsStringElementsInString(string subject, string seek)
         {
             var seekArr = seek.ToCharArray();
             var subArr = subject.ToCharArray();
-  
             var seekInSubList = new List<char[]>();
-            var seekList = new List<char[]>();
-
+           
             foreach (var seekChar in seekArr)
             {
                 seekInSubList.Add(Array.FindAll(subArr, c => c == seekChar));
-                seekList.Add(Array.FindAll(seekArr, c => c == seekChar));
             }
             
-            var seekResult = TrimListsOfCharArrays(seekList);
             var subResult = TrimListsOfCharArrays(seekInSubList);
 
-            Array.Sort(seekResult);
+            Array.Sort(seekArr);
             Array.Sort(subResult);
-          
-            return subResult.SequenceEqual(seekResult);
+
+            return subResult.SequenceEqual(seekArr) && seekArr.Length != 0;
 
         }
 

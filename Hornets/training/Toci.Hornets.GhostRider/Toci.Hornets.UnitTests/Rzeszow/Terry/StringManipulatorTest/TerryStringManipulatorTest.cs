@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 using Toci.Hornets.Rzeszow.Terry.TrainingTwo.StringManipulation;
 
 namespace Toci.Hornets.UnitTests.Rzeszow.Terry.StringManipulatorTest
@@ -11,11 +10,8 @@ namespace Toci.Hornets.UnitTests.Rzeszow.Terry.StringManipulatorTest
 
         public void StringManipulatorTest()
         {
-            TerryStringManipulator stringManipulator = new TerryStringManipulator();
-            
-          var test = stringManipulator.RunStringOperations("beata", "baosdhf");
-
-            
+            var stringManipulator = new TerryStringManipulator();
+            stringManipulator.RunStringOperations("beata", "taa");
         }
     }
 }
