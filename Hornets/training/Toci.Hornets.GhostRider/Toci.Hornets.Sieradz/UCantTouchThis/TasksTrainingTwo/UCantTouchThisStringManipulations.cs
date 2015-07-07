@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Linq;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo
@@ -12,19 +12,14 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo
 
         protected override bool IsStringElementsInString(string subject, string seek)
         {
-            throw new System.NotImplementedException();
+            var initialSubjectLength = subject.Length;
+            subject = seek.Aggregate(subject, (current, letter) => current.TryRemove(letter.ToString()));
+            return (initialSubjectLength - subject.Length) == seek.Length;
         }
 
         protected override bool IsStringAnagramOfString(string subject, string seek)
         {
-            return SortString(subject) == SortString(seek);
-        }
-
-        private char[] SortString(string stringToSort)
-        {
-            var array = stringToSort.ToCharArray();
-            Array.Sort(array);
-            return array;
+            return subject.OrderBy(x => x).SequenceEqual(seek.OrderBy(x => x));
         }
 
         protected override string GetNick()
@@ -34,7 +29,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo
 
         public override StringManipulationsResults RunStringOperations(string subject, string seek)
         {
-            throw new System.NotImplementedException();
+            return Run(subject, seek);
         }
     }
 }
