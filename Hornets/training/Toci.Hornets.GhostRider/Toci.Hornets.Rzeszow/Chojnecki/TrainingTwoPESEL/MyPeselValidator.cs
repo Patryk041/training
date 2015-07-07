@@ -33,6 +33,7 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoPESEL
 
         public override bool IsPeselValid(string pesel)
         {
+            if (pesel.Length != 11) return false;
             if (Checksum(pesel) == false) return false;
             return ValidateDate(int.Parse(CutOffDate(pesel).Substring(0, 2)),
                 int.Parse(CutOffDate(pesel).Substring(3, 2)),
