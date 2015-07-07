@@ -70,10 +70,6 @@
       <Project>{878B2ECA-9CC0-42CF-ACA6-CD6E44C47451}</Project>
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Toci.Hornets.Gliwice\Toci.Hornets.Gliwice.csproj">
-      <Project>{bfe04213-e553-481b-9b82-44312e146379}</Project>
-      <Name>Toci.Hornets.Gliwice</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Toci.Hornets.Rzeszow\Toci.Hornets.Rzeszow.csproj">
       <Project>{5d3ebbde-dc75-4be2-866c-0dbdd84a46a8}</Project>
       <Name>Toci.Hornets.Rzeszow</Name>
@@ -86,9 +82,6 @@
   <ItemGroup>
     <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Gliwice\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
