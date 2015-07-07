@@ -45,7 +45,10 @@
     <Compile Include="AndrzejD\Class1.cs" />
     <Compile Include="Chojnecki\AndrzejJestem.cs" />
     <Compile Include="Chojnecki\TelePhone\MyPhone.cs" />
-    <Compile Include="Chojnecki\TrainingTwo\StringCheck.cs" />
+    <Compile Include="Chojnecki\TrainingTwoPESEL\Calendar.cs" />
+    <Compile Include="Chojnecki\TrainingTwoPESEL\PeselControler.cs" />
+    <Compile Include="Chojnecki\TrainingTwoPESEL\MyPeselValidator.cs" />
+    <Compile Include="Chojnecki\TrainingTwoString\StringCheck.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="KSebal\telephone\Telephone.cs" />
     <Compile Include="KSebal\traning2Homework\KsebalStringManipulationClass.cs" />
