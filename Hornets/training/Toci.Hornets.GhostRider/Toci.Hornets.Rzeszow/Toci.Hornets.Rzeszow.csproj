@@ -54,6 +54,7 @@
     <Compile Include="KSebal\traning2Homework\KsebalStringManipulationClass.cs" />
     <Compile Include="KubaT\TelephoneTask\TelephonTaskHomework.cs" />
     <Compile Include="KubaT\TestClass.cs" />
+    <Compile Include="KubaT\TrainingTwoStringOperation\KubaTStringOperations.cs" />
     <Compile Include="Malwina\ExtendingWarrior.cs" />
     <Compile Include="Malwina\IBaseForWyroznienie.cs" />
     <Compile Include="Malwina\Telephone\ChooseRedOrBlue.cs" />
