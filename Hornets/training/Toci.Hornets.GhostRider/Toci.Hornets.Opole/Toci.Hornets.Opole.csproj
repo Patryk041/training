@@ -45,6 +45,11 @@
     <Compile Include="GhostRider\HowDoWeWorkOnBranches.cs" />
     <Compile Include="Hoosarr\TestClass.cs" />
     <Compile Include="Lausion\ExampeClass.cs" />
+    <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Day.cs" />
+    <Compile Include="Lausion\TasksTraningTwo\PeselValidator\LausionPeselValidator.cs" />
+    <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Month.cs" />
+    <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Year.cs" />
+    <Compile Include="Lausion\TasksTraningTwo\StringManipulation\LausionStringManipulation.cs" />
     <Compile Include="Maly\TelephoneTask.cs" />
     <Compile Include="Lausion\TelephoneTask\SendMessage.cs" />
     <Compile Include="Maly\TestBranch.cs" />
