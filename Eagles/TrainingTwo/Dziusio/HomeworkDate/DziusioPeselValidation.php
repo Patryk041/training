@@ -9,7 +9,7 @@ class DziusioPeselValidation extends PeselValidation
 		$temp = Dziusio_substr($data, 4);
 		$month = Dziusio_substr_rev($temp, 2);
 		$day = Dziusio_substr_rev($Data, 2);
-		return array{$year, $month, $day};
+		return array($year, $month, $day);
 	
 	}
 
@@ -53,17 +53,17 @@ class DziusioPeselValidation extends PeselValidation
 		}
 	}
 	protected function CheckSum($pesel)
-	{	$tab=array{1,3,7,9}
+	{	$tab=array(1,3,7,9);
 		$temp=0;
 		$wynik=0;
 		
 		$lengthPesel=Dziusio_strlen($pesel); //isset
-		Something=1;
-		for($i = 0; $i < $lengthPesel-1; i++)
+		$Something=1;
+		for($i = 0; $i < $lengthPesel-1; $i++)
 		{
 			if ($i % 4 ==0)
 			{
-				temp=0;
+				$temp=0;
 			}
 			
 			$wynik+=$tab[temp]*$pesel[$i];
@@ -97,8 +97,11 @@ class DziusioPeselValidation extends PeselValidation
 	public function ValidatePesel($pesel)
 	{
 		
-		if(DateValidation(ReturnYear($pesel), ReturnMonth($pesel), ReturnDay($pesel) == true && ValidateCheckSum($pesel)==true)
-		return true;		
+		if(DateValidation(ReturnYear($pesel), ReturnMonth($pesel), ReturnDay($pesel) == true && ValidateCheckSum($pesel)==true))
+		{
+			return true;
+		}
+				
 	}
 	
 	

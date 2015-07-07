@@ -1,12 +1,7 @@
 <?php
 class Date
 {
-	$ArrayDay1 = new Array{31,28,31,30,31,30,31,31,30,31,30,31};
-	$ArrayDay2 = new Array{31,29,31,30,31,30,31,31,30,31,30,31};
-	
-
-	
-	function YearLeast($year, $month, $day)
+function YearLeast($year, $month, $day)
 	{	
 		$YearAll=0;
 		if (Month($year, $month, $day)==true)
@@ -22,8 +17,9 @@ class Date
 			return false;
 		}
 	}
-
-	function Month($year, $month, $day)
+	
+	
+function Month($year, $month, $day)
 	{
 		$variable = MonthOfYears($year, $month, $day);
 		if ( $variable>= 1 && $variable <= 12)
@@ -36,11 +32,11 @@ class Date
 		}
 	}
 	
-	function MonthOfYears($year, $month, $day)
+function MonthOfYears($year, $month, $day)
 	{
 		for($i=0;$i<=5;$i++)
 		{		$i=$i*20;
-			if ($month >= ($+1) && $month <=($i+12)
+			if ($month >= ($i+1) && $month <=($i+12))
 					{
 						return $month-$i;
 					}
@@ -50,14 +46,13 @@ class Date
 			}
 		}
 	}
-	
-	
-	function Year($year, $month, $day)
+		
+function Year($year, $month, $day)
 	{
 		for($i=0;$i<=5;$i++)
 		{
 		$i=$i*20;
-		if ($month >= ($i+1) && $month <=($i+12)
+		if ($month >= ($i+1) && $month <=($i+12))
 		{
 		switch ($i) {
     case 0:
@@ -83,6 +78,8 @@ class Date
 	
 	function Day($year, $month, $day)
 	{
+		$ArrayDay1 = Array(31,28,31,30,31,30,31,31,30,31,30,31);
+		$ArrayDay2 = Array(31,29,31,30,31,30,31,31,30,31,30,31);
 		if (Month($year, $month, $day)==true)
 		{
 			$WhichMonth=MonthOfYears($year, $month, $day);
@@ -113,8 +110,23 @@ class Date
 				}
 			}
 		}
-		
-		
 	}
-	
 }
+	
+	
+
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+
+
