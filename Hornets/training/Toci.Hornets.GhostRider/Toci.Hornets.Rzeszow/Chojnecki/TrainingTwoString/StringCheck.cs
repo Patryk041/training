@@ -1,7 +1,7 @@
 ﻿using System;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
-namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwo
+namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoString
 {
     public class StringCheck : GhostRiderStringManipulationsBase
     {

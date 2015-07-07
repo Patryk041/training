@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.Rzeszow.Chojnecki.TrainingTwo;
+using Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoString;
 
 namespace Toci.Hornets.UnitTests.Rzeszow.Chojnecki.StringCheckTest
 {

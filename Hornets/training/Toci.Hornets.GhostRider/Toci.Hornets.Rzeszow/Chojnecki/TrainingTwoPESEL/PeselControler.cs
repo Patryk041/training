@@ -7,7 +7,7 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoPESEL
         //Cyfra kontrolna i sprawdzanie poprawności numeru
 
 
-        public static bool peselContor(string pesel)
+        public static bool PeselContor(string pesel)
         {
             var peselInt = Array.ConvertAll(pesel.ToCharArray(), c => (int) char.GetNumericValue(c));
             var peselTest = 1*peselInt[0] + 3*peselInt[1] + 7*peselInt[2] + 9*peselInt[3] + 1*peselInt[4] +

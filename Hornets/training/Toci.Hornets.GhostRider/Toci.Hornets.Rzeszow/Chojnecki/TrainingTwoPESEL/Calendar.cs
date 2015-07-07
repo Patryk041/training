@@ -2,62 +2,61 @@
 {
     public class Calendar
     {
-        private readonly int day;
-        private int month;
-        private int year;
+        private readonly int _day;
+        private int _month;
+        private int _year;
 
         public Calendar(string pesel)
         {
-            month = int.Parse(pesel.Substring(2, 2));
-            year = int.Parse(pesel.Substring(0, 2));
-            day = int.Parse(pesel.Substring(4, 2));
-            date();
+            _month = int.Parse(pesel.Substring(2, 2));
+            _year = int.Parse(pesel.Substring(0, 2));
+            _day = int.Parse(pesel.Substring(4, 2));
+            Date();
         }
 
-        private int date()
+        private void Date()
         {
-            if (month > 80 && month < 93)
+            if (_month > 80 && _month < 93)
             {
-                year += 1800;
-                month -= 80;
+                _year += 1800;
+                _month -= 80;
             }
-            else if (month > 0 && month < 13)
+            else if (_month > 0 && _month < 13)
             {
-                year += 1900;
+                _year += 1900;
             }
-            else if (month > 20 && month < 33)
+            else if (_month > 20 && _month < 33)
             {
-                year += 2000;
-                month -= 20;
+                _year += 2000;
+                _month -= 20;
             }
-            else if (month > 40 && month < 53)
+            else if (_month > 40 && _month < 53)
             {
-                year += 2100;
-                month -= 40;
+                _year += 2100;
+                _month -= 40;
             }
-            else if (month > 60 && month < 73)
+            else if (_month > 60 && _month < 73)
             {
-                year += 2200;
-                month -= 60;
+                _year += 2200;
+                _month -= 60;
             }
-            return year;
         }
 
-        public string getYear()
+        public string GetYear()
         {
-            return year.ToString();
+            return _year.ToString();
         }
 
-        public string getMonth()
+        public string GetMonth()
         {
-            if (month < 10) return "0" + month;
-            return month.ToString();
+            if (_month < 10) return "0" + _month;
+            return _month.ToString();
         }
 
-        public string getDay()
+        public string GetDay()
         {
-            if (day < 10) return "0" + day;
-            return day.ToString();
+            if (_day < 10) return "0" + _day;
+            return _day.ToString();
         }
     }
 }

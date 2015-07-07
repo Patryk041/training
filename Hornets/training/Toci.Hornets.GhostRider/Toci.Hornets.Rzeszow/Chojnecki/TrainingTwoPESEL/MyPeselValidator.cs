@@ -2,17 +2,17 @@
 
 namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoPESEL
 {
-    public class Pesel_Validator : PeselValidator
+    public class MyPeselValidator : PeselValidator
     {
         protected override string CutOffDate(string pesel)
         {
             var myCalendar = new Calendar(pesel);
-            return myCalendar.getDay() + "." + myCalendar.getMonth() + "." + myCalendar.getYear();
+            return myCalendar.GetDay() + "." + myCalendar.GetMonth() + "." + myCalendar.GetYear();
         }
 
         protected override bool Checksum(string pesel)
         {
-            return PeselControler.peselContor(pesel);
+            return PeselControler.PeselContor(pesel);
         }
 
         protected override bool ValidateDate(int year, int month, int day)
