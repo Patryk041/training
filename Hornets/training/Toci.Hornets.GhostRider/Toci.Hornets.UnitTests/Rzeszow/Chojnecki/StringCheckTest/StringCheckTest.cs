@@ -7,7 +7,7 @@ namespace Toci.Hornets.UnitTests.Rzeszow.Chojnecki.StringCheckTest
     public class StringCheckTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Test()
         {
             StringCheck sCheck = new StringCheck();      
             //anagramy
