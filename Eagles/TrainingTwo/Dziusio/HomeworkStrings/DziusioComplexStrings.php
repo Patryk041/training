@@ -1,5 +1,5 @@
 <?php
-
+require_once('Functionality.php');
 
 class DziusioComplexStrings extends ComplexStrings
 {
