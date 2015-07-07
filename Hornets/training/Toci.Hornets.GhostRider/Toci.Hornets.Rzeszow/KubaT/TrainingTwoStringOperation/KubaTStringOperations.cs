@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Globalization;
 using System.Linq;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
@@ -18,21 +17,21 @@ namespace Toci.Hornets.Rzeszow.KubaT.TrainingTwoStringOperation
             char[] SeekArray;
             SubjectArray = subject.ToCharArray();
             SeekArray = seek.ToCharArray();
-            int SeekCharQuantity = SeekArray.Length;
+            int seekCharQuantity = SeekArray.Length;
             for (int i = 0; i < SeekArray.Length; i += 1)
             {
                 for (int j = 0; j < SubjectArray.Length; j += 1)
                 {
                     if (SeekArray[i] == SubjectArray[j])
                     {
-                        SeekCharQuantity -= 1;
+                        seekCharQuantity -= 1;
                         break;
                     }
                     
                 }
                 
             }
-            if (SeekCharQuantity == 0)
+            if (seekCharQuantity == 0)
             {
                 return true;
             }
