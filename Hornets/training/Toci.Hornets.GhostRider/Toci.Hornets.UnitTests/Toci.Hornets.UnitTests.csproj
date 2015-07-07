@@ -52,10 +52,19 @@
   <ItemGroup>
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
 
+
     <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
 
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
     <Compile Include="Kalisz\Amman\UnitTester.cs" />
+
+    <Compile Include="Rzeszow\Chojnecki\PeselTest\PESELTest.cs" />
+    <Compile Include="Rzeszow\Chojnecki\StringCheckTest\StringCheckTest.cs" />
+    <Compile Include="Rzeszow\Ksebal\Testy.cs" />
+    <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
+    <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
+    <Compile Include="Kalisz\Amman\UnitTester.cs" />
+    <Compile Include="Rzeszow\Terry\StringManipulatorTest\TerryStringManipulatorTest.cs" />
 
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
     <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
