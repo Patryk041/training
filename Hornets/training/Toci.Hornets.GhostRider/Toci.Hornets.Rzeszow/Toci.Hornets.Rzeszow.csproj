@@ -70,6 +70,7 @@
     <Compile Include="Terry\TrainingTwo\Pesel\PeselDate.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\TerryPeselValidator.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\YearValidator.cs" />
+    <Compile Include="Terry\TrainingTwo\StringManipulation\TerryStringManipulator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
