@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Diagnostics;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
-namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwo
+namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoString
 {
     public class StringCheck : GhostRiderStringManipulationsBase
     {
@@ -18,17 +17,17 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwo
         protected override bool IsStringElementsInString(string subject, string seek)
         {
             if (seek == "") return false;
-            char[] subjectlist = subject.ToCharArray();
-            char[] seeklist = seek.ToCharArray();
-            for(int x=0;x<seeklist.Length;x++)
+            var subjectlist = subject.ToCharArray();
+            var seeklist = seek.ToCharArray();
+            for (var x = 0; x < seeklist.Length; x++)
             {
-                int subjectCount = 0;
-                int seekCount = 0;
-                for (int i = 0; i < subjectlist.Length; i++)
+                var subjectCount = 0;
+                var seekCount = 0;
+                for (var i = 0; i < subjectlist.Length; i++)
                 {
                     if (subjectlist[i] == seeklist[x]) subjectCount++;
                 }
-                for (int i = 0; i < seeklist.Length; i++)
+                for (var i = 0; i < seeklist.Length; i++)
                 {
                     if (seeklist[i] == seeklist[x]) seekCount++;
                 }
@@ -41,7 +40,14 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwo
         {
             return (Alphabetize(subject) == Alphabetize(seek));
         }
-
+        
+        private string Alphabetize(string word)
+        {
+            var newWord = word.ToCharArray();
+            Array.Sort(newWord);
+            return new string(newWord);
+        }
+       
         protected override string GetNick()
         {
             return "Andrzej";
@@ -55,17 +61,17 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwo
             result.Subject = subject;
             result.Seek = seek;
 
-            result.Type = this.GetType();
+            result.Type = GetType();
             result.IsAnagram = IsStringAnagramOfString(subject, seek);
 
-            if (result.IsAnagram == true)
+            if (result.IsAnagram)
             {
                 result.IsStringElementsInString = true;
             }
             else
             {
                 result.IsStringElementsInString = IsStringElementsInString(subject, seek);
-            }     
+            }
             if (result.IsStringElementsInString == false)
             {
                 result.IsStringInString = false;
@@ -74,17 +80,11 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwo
             {
                 result.IsStringInString = IsStringInString(subject, seek);
             }
-            
+
 
             return result;
         }
 
-        private string Alphabetize(string word)
-        {
-            var newWord = word.ToCharArray();
-            Array.Sort(newWord);
-            return new string(newWord);
-        }
-
+       
     }
 }
