@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agata\TasksTrainingTwo\Date.cs" />
+    <Compile Include="Agata\TasksTrainingTwo\YaghaPeselValidator.cs" />
+    <Compile Include="Agata\TasksTrainingTwo\YaghaStringManipulations.cs" />
     <Compile Include="Agata\Test2yagha.cs" />
     <Compile Include="Agata\TestBranchesAga.cs" />
     <Compile Include="Agata\YaghaTelephoneTask\YaghaCommunicationsMethods.cs" />
