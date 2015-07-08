@@ -11,7 +11,7 @@ namespace Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW.PeselManipulationMe
             if (pesel.Length < 12 && !pesel.Contains("0123456789"))
             {
                 throw new Exception("PESEL IS INVALID");
-
+                
                 //return null;
             }
             else
