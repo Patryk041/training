@@ -11,9 +11,7 @@ namespace Toci.Hornets.Sieradz.Quicksilver.TasksTrainingTwoQs
 
             if (string.IsNullOrEmpty(subject) || string.IsNullOrEmpty(seek))
                 return false;
-            if (subject.Length != seek.Length)
-                return false;
-
+            
             subject.ToLower();
             seek.ToLower();
 
@@ -32,8 +30,7 @@ namespace Toci.Hornets.Sieradz.Quicksilver.TasksTrainingTwoQs
         {
             if (string.IsNullOrEmpty(subject) || string.IsNullOrEmpty(seek))
                 return false;
-            if (subject.Length != seek.Length)
-                return false;
+            
 
             subject.ToLower();
             seek.ToLower();
@@ -90,7 +87,7 @@ namespace Toci.Hornets.Sieradz.Quicksilver.TasksTrainingTwoQs
 
         public override StringManipulationsResults RunStringOperations(string subject, string seek)
         {
-            var result = new StringManipulationsResults();
+           /* var result = new StringManipulationsResults();
 
             result.Nick = GetNick();
             result.Subject = subject;
@@ -103,6 +100,8 @@ namespace Toci.Hornets.Sieradz.Quicksilver.TasksTrainingTwoQs
             result.IsStringInString = IsStringInString(subject, seek);
 
             return result;
+            */
+            return Run(subject, seek);
         }
     }
 }
