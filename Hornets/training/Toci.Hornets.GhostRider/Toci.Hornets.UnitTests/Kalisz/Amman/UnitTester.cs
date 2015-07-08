@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
+using Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW;
 using Toci.Hornets.Kalisz.Amman.PeselValidator;
 using Toci.Hornets.Kalisz.Amman.StringManipulator;
 using Toci.Hornets.Kalisz.Amman.StringManipulator.Workers;
@@ -67,7 +68,8 @@ namespace Toci.Hornets.UnitTests.Kalisz.Amman
                 "28491619596",
                 "58912209819",
                 "44682908368",
-                "56680804126"
+                "56680804126",
+                "95121715083"
             };
 
             var invalidPesels = new List<string> //just random numbers, let's hope it's not actual PESEL
@@ -96,7 +98,6 @@ namespace Toci.Hornets.UnitTests.Kalisz.Amman
             }
 
         }
-
         [TestMethod]
         public void BatchAnagramTest()
         {
