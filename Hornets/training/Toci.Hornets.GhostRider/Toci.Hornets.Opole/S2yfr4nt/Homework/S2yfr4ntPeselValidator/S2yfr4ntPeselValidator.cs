@@ -24,7 +24,7 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntPeselValidator
 
         protected override string CutOffDate(string pesel)
         {
-            return pesel.Remove(DATE_LENGTH);
+            return pesel.Length >= DATE_LENGTH ? pesel.Remove(DATE_LENGTH) : "ERROR - PESEL TOO SHORT";
         }
 
         protected override bool Checksum(string pesel)
@@ -50,9 +50,6 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntPeselValidator
 
         public override bool IsPeselValid(string pesel)
         {
-            bool a = GetDate(CutOffDate(pesel));
-            bool b = ValidateDate(year, month, day);
-            bool c = Checksum(pesel);
             return GetDate(CutOffDate(pesel)) && ValidateDate(year, month, day) && Checksum(pesel);
         }
         
