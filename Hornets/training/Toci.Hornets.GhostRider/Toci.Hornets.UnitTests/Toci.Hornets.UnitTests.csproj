@@ -64,6 +64,7 @@
     <Compile Include="Sieradz\UCantTouchThis\RandomStringGeneratorTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\StringComparatorsBenchmarks.cs" />
     <Compile Include="Sieradz\UCantTouchThis\Undergtound1Test.cs" />
+    <Compile Include="Wrocław\gipson\PeselValidatorTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
@@ -77,6 +78,10 @@
     <ProjectReference Include="..\Toci.Hornets.Sieradz\Toci.Hornets.Sieradz.csproj">
       <Project>{1109fd72-7199-4d6f-b150-918976558e66}</Project>
       <Name>Toci.Hornets.Sieradz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Hornets.Wroclaw\Toci.Hornets.Wroclaw.csproj">
+      <Project>{5B12A0E8-9563-4D82-93A7-DB9013C945F0}</Project>
+      <Name>Toci.Hornets.Wroclaw</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

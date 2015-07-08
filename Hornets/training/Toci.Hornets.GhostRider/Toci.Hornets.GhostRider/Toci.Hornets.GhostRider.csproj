@@ -63,6 +63,9 @@
     <Compile Include="TElephoneCommunication\SmsCommunication.cs" />
     <Compile Include="TElephoneCommunication\Telephone.cs" />
     <Compile Include="TElephoneCommunication\VoiceCommunication.cs" />
+    <Compile Include="YourWork\TasksTrainingTwo\GhostRiderStringManipulationsBase.cs" />
+    <Compile Include="YourWork\TasksTrainingTwo\PeselValidator.cs" />
+    <Compile Include="YourWork\TasksTrainingTwo\StringManipulationsResults.cs" />
     <Compile Include="YourWork\TelephoneTask\TelephoneInterpreter.cs" />
   </ItemGroup>
   <ItemGroup>
