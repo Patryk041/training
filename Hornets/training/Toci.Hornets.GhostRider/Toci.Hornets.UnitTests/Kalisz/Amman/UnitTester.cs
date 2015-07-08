@@ -1,10 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 using Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW;
-using Toci.Hornets.Kalisz.Amman.PeselValidator;
 using Toci.Hornets.Kalisz.Amman.StringManipulator;
-using Toci.Hornets.Kalisz.Amman.StringManipulator.Workers;
 
 namespace Toci.Hornets.UnitTests.Kalisz.Amman
 {
@@ -16,21 +13,21 @@ namespace Toci.Hornets.UnitTests.Kalisz.Amman
         {
             string[][] words =
             {
-                new string[] {"Amman", "mm"}, 
-                new string[]{"Amman", "Amm"}, 
-                new string[]{"Amman", "amm"}, 
-                new string[]{"Amman", "man"}, 
-                new string[]{"Amman", "nam"},
-                new string[]{"Amman", "b"}, 
-                new string[]{"Amman", "dsa"}, 
-                new string[]{"fsdsfad", "fdsfds"}, 
-                new string[]{"Amman", "nammA"}, 
-                new string[]{"Amman", "Aammn"}, 
-                new string[]{"Amman", "aAnmn"}, 
-                new string[]{"fdsff", "njvkdsb"},
-                new string[]{"quid est veritas", "vir est quiadest"}, 
-                new string[]{"salvador dali", "avida dollars"}, 
-                new string[]{"julian tuwim", "lutni ujawmi"}, 
+                new[] {"Amman", "mm"}, 
+                new[]{"Amman", "Amm"}, 
+                new[]{"Amman", "amm"}, 
+                new[]{"Amman", "man"}, 
+                new[]{"Amman", "nam"},
+                new[]{"Amman", "b"}, 
+                new[]{"Amman", "dsa"}, 
+                new[]{"fsdsfad", "fdsfds"}, 
+                new[]{"Amman", "nammA"}, 
+                new[]{"Amman", "Aammn"}, 
+                new[]{"Amman", "aAnmn"}, 
+                new[]{"fdsff", "njvkdsb"},
+                new[]{"quid est veritas", "vir est quiadest"}, 
+                new[]{"salvador dali", "avida dollars"}, 
+                new[]{"julian tuwim", "lutni ujawmi"} 
 
             };
             var stringceptions = new List<string[]>();
@@ -74,6 +71,7 @@ namespace Toci.Hornets.UnitTests.Kalisz.Amman
 
             var invalidPesels = new List<string> //just random numbers, let's hope it's not actual PESEL
             {
+                "2",
                 "123489611468",
                 "1f6ds1f64f4",
                 "123132456",
@@ -87,7 +85,7 @@ namespace Toci.Hornets.UnitTests.Kalisz.Amman
                 "1",
                 "71022507223"
             };
-            var validator = new AmmanPeselValidator();
+            var validator = new A94PeselValidator();
             foreach (var psl in validPesels)
             {
                 Assert.IsTrue(validator.IsPeselValid(psl));
@@ -123,6 +121,13 @@ namespace Toci.Hornets.UnitTests.Kalisz.Amman
 
         }
 
+        [TestMethod]
+        public void ContainsTest()
+        {
+            var a1 = "0123456789";
+            var a2 = "675834625784";
+            var result = a2.Contains(a1);
+        }
 
     }
 }
