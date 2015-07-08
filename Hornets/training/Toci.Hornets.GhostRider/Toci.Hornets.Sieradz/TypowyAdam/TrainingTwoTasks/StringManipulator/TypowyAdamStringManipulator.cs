@@ -8,7 +8,7 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.TrainingTwoTasks.StringManipulator
 {
     public class TypowyAdamStringManipulator : GhostRiderStringManipulationsBase
     {
-        protected override bool IsStringInString(string subject, string seek)//fastest
+        protected override bool IsStringInString(string subject, string seek)
         {
             if(subject.Length > seek.Length)
                 return Regex.IsMatch(subject, seek); 
@@ -17,7 +17,7 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.TrainingTwoTasks.StringManipulator
 
         protected override bool IsStringElementsInString(string subject, string seek)
         {
-            foreach (var character in seek)//middle one
+            foreach (var character in seek)
             {
                 if (subject.Contains(character))
                     continue;
@@ -26,9 +26,8 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.TrainingTwoTasks.StringManipulator
             return true;
         }
 
-        protected override bool IsStringAnagramOfString(string subject, string seek)//slowest
+        protected override bool IsStringAnagramOfString(string subject, string seek)
         {
-
             if (subject.Length != seek.Length) return false;
             char[] subjectArray = subject.ToCharArray().AsParallel().WithDegreeOfParallelism(4).OrderBy(c => c).ToArray();
             char[] seekArray = seek.ToCharArray().AsParallel().WithDegreeOfParallelism(4).OrderBy(c => c).ToArray();
@@ -40,8 +39,11 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.TrainingTwoTasks.StringManipulator
             return "TypowyAdam";
         }
 
-        public override StringManipulationsResults RunStringOperations(string subject, string seek) //method for running Run and so on
-        { 
+        public override StringManipulationsResults RunStringOperations(string subject, string seek)
+        {
+            subject.ToLower();
+            seek.ToLower();
+            
             return Run(subject, seek);
         }
 
@@ -55,23 +57,19 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.TrainingTwoTasks.StringManipulator
 
             result.Type = this.GetType();
 
-           /* WORK IN PROGRESS
-            result.IsStringInString = IsStringInString(subject, seek);
-            if (result.IsStringInString)
+
+            result.IsStringElementsInString = IsStringElementsInString(subject, seek);
+            if (!result.IsStringElementsInString)
             {
-                result.IsStringElementsInString = true;
-                result.IsAnagram = IsStringAnagramOfString(subject, seek);
+                result.IsStringInString = false;
+                result.IsAnagram = false;
                 return result;
             }
-            */
 
-            result.IsAnagram = IsStringAnagramOfString(subject, seek);
-            result.IsStringElementsInString = IsStringElementsInString(subject, seek);
             result.IsStringInString = IsStringInString(subject, seek);
+            result.IsAnagram = IsStringAnagramOfString(subject, seek);
 
             return result;
         }
-
-
     }
 }
