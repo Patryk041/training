@@ -27,7 +27,7 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntStringManipulations
 
         public override StringManipulationsResults RunStringOperations(string subject, string seek)
         {
-            throw new System.NotImplementedException();
+            return Run(subject, seek);
         }
         protected override StringManipulationsResults Run(string subject, string seek)
         {
