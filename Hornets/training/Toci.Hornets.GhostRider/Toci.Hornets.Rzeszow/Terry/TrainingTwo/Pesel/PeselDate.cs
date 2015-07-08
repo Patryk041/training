@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Toci.Hornets.Rzeszow.Terry.TrainingTwo.Pesel
+﻿namespace Toci.Hornets.Rzeszow.Terry.TrainingTwo.Pesel
 {
     public class PeselDate
     {
