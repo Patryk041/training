@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 using Toci.Hornets.Rzeszow.KSebal.traning2Homework;
+using Toci.Hornets.Rzeszow.KSebal.traning2Homework.Pesel;
 
 namespace Toci.Hornets.UnitTests.Rzeszow.Ksebal
 {
@@ -17,21 +18,22 @@ namespace Toci.Hornets.UnitTests.Rzeszow.Ksebal
 
            public void AnagramTest()
            {
-               KsebalStringManipulationClass Ksebal= new KsebalStringManipulationClass();
-              StringManipulationsResults results = Ksebal.RunStringOperations("EMIN", "mN");
-              //StringManipulationsResults result;
+              KsebalPeselValidator validator= new KsebalPeselValidator();
 
-             ///Assert.IsTrue(Ksebal.test("Karolina", "Karo"));
-             Assert.IsFalse(results.IsStringInString);
-             //Assert.IsTrue(Ksebal.test("Karolina", "Kla"));
-             Assert.IsFalse(results.IsAnagram);
-             Assert.IsTrue(results.IsStringElementsInString);
+              
+              Assert.IsTrue(validator.IsPeselValid("60813197717"));
+              Assert.IsTrue(validator.IsPeselValid("04222959506"));
+              Assert.IsTrue(validator.IsPeselValid("04222959506"));
+              Assert.IsTrue(validator.IsPeselValid("92822998212"));
+              Assert.IsFalse(validator.IsPeselValid("92822998211"));
 
-             results=Ksebal.RunStringOperations("ZaqWsx", "XsWaZq");
-             Assert.IsFalse(results.IsStringInString);
-             //Assert.IsTrue(Ksebal.test("Karolina", "Kla"));
-             Assert.IsTrue(results.IsAnagram);
-             Assert.IsTrue(results.IsStringElementsInString);
+
+
+
+
+
+
+
 
 
 

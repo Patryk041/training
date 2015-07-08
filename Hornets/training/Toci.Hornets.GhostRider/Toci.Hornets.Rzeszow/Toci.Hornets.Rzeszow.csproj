@@ -52,6 +52,9 @@
     <Compile Include="Class1.cs" />
     <Compile Include="KSebal\telephone\Telephone.cs" />
     <Compile Include="KSebal\traning2Homework\KsebalStringManipulationClass.cs" />
+    <Compile Include="KSebal\traning2Homework\Pesel\KsebalPeselValidator.cs" />
+    <Compile Include="KSebal\traning2Homework\Pesel\PeselDate.cs" />
+    <Compile Include="KSebal\traning2Homework\Pesel\PeselSumValidator.cs" />
     <Compile Include="KubaT\TelephoneTask\TelephonTaskHomework.cs" />
     <Compile Include="KubaT\TestClass.cs" />
     <Compile Include="KubaT\TrainingTwoStringOperation\KubaTStringOperations.cs" />
