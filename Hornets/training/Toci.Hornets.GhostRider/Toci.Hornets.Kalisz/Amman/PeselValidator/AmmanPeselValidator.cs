@@ -16,7 +16,7 @@ namespace Toci.Hornets.Kalisz.Amman.PeselValidator
 
         protected override bool ValidateDate(int year, int month, int day)
         {
-            throw new System.NotImplementedException();
+            return DateValidator.IsValid(day, month, year);
         }
 
         public override string GetNick()
