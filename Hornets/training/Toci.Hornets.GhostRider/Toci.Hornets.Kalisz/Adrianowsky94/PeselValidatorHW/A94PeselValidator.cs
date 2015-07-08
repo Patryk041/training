@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 using Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW.PeselManipulationMethods;
 
@@ -28,7 +29,14 @@ namespace Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW
 
         public override bool IsPeselValid(string pesel)
         {
-            CutOffDate(pesel);
+            try
+            {
+                CutOffDate(pesel);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
             Date.GetYear();
             Date.GetMonth();
             Date.GetDay();
