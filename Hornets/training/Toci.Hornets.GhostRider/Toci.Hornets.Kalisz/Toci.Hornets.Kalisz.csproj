@@ -39,6 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adrianowsky94\PeselValidatorHW\A94PeselValidator.cs" />
+    <Compile Include="Adrianowsky94\PeselValidatorHW\PeselManipulationMethods\Date.cs" />
+    <Compile Include="Adrianowsky94\PeselValidatorHW\PeselManipulationMethods\DateCutter.cs" />
+    <Compile Include="Adrianowsky94\PeselValidatorHW\PeselManipulationMethods\DateValidator.cs" />
+    <Compile Include="Adrianowsky94\PeselValidatorHW\PeselManipulationMethods\MonthsDict.cs" />
+    <Compile Include="Adrianowsky94\PeselValidatorHW\PeselManipulationMethods\SumChecker.cs" />
+    <Compile Include="Adrianowsky94\StringManipulator\Adrianowsky94StringCheck.cs" />
+    <Compile Include="Adrianowsky94\StringManipulator\CheckingMethods\IsAnagram.cs" />
+    <Compile Include="Adrianowsky94\StringManipulator\CheckingMethods\IsStringElementInString.cs" />
+    <Compile Include="Adrianowsky94\StringManipulator\CheckingMethods\IsStringInString.cs" />
     <Compile Include="Adrianowsky94\TheChosenOne.cs" />
     <Compile Include="Amman\PeselValidator\AmmanPeselValidator.cs" />
     <Compile Include="Amman\PeselValidator\Workers\ChksumValidator.cs" />

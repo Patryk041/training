@@ -6,8 +6,7 @@ namespace Toci.Hornets.Kalisz.Amman.PeselValidator.Workers
     {
         public static string Cut(string psl)
         {
-            if (psl.Length<6) throw new Exception("NOT ENOUGH CHARACTERS TO START CUTTING"); //TODO check if necessary
-            return psl.Substring(0, 6);
+            return psl.Length < 6 ? "ERROR - PESEL TOO SHORT FOR CUT" : psl.Substring(0, 6);
         }
     }
 }

@@ -64,6 +64,8 @@
     <Compile Include="Rzeszow\Ksebal\Testy.cs" />
     <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
     <Compile Include="Rzeszow\Terry\StringManipulatorTest\TerryStringManipulatorTest.cs" />
+    <Compile Include="Kalisz\Adrianowsky94\PeselTester.cs" />
+    <Compile Include="Kalisz\Amman\AmmanUnitTester.cs" />
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
     <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
