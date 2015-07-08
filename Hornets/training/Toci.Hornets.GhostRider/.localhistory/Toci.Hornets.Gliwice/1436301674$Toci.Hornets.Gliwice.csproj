@@ -40,7 +40,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Diana\exampleDiana.cs" />
-    <Compile Include="Didi\StringManiupulation\StringManipulationClass.cs" />
     <Compile Include="Didi\TelephoneTask\GetMessageClass.cs" />
     <Compile Include="Didi\WorkWithBranchClass.cs" />
     <Compile Include="Dziara\DziaraTelephoneInterpreter.cs" />

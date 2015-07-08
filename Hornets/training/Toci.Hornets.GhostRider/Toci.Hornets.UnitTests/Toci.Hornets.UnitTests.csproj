@@ -51,12 +51,10 @@
   </Choose>
   <ItemGroup>
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
-
+    <Compile Include="Gliwice\Didi\StringManipulation\StringManipulationTest.cs" />
     <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
-
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
     <Compile Include="Kalisz\Amman\UnitTester.cs" />
-
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
     <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,7 +84,6 @@
       <Project>{bfe04213-e553-481b-9b82-44312e146379}</Project>
       <Name>Toci.Hornets.Gliwice</Name>
     </ProjectReference>
-
     <ProjectReference Include="..\Toci.Hornets.Kalisz\Toci.Hornets.Kalisz.csproj">
       <Project>{52dced43-e95b-43ec-9c27-6191e06b8258}</Project>
       <Name>Toci.Hornets.Kalisz</Name>
@@ -99,7 +96,6 @@
       <Project>{76565c63-6dc2-47b8-98d0-e2c57e1dd6e7}</Project>
       <Name>Toci.Hornets.Opole</Name>
     </ProjectReference>
-
     <ProjectReference Include="..\Toci.Hornets.Rzeszow\Toci.Hornets.Rzeszow.csproj">
       <Project>{5d3ebbde-dc75-4be2-866c-0dbdd84a46a8}</Project>
       <Name>Toci.Hornets.Rzeszow</Name>
@@ -124,9 +120,7 @@
       <Name>Toci.Hornets.Opole</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Gliwice\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
