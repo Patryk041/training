@@ -56,7 +56,7 @@
     <Compile Include="Kalisz\Amman\UnitTester.cs" />
     <Compile Include="Legnica\Patryk\Mock\FakeChecksumValidator.cs" />
     <Compile Include="Legnica\Patryk\Mock\FakePeselDateValidator.cs" />
-    <Compile Include="Legnica\Patryk\PatrykPeselvalidatorTests.cs" />
+    <Compile Include="Legnica\Patryk\PatrykPeselValidatorTests.cs" />
     <Compile Include="Legnica\Patryk\PatrykStringManupulationsBaseTests.cs" />
     <Compile Include="Rzeszow\Chojnecki\PeselTest\PESELTest.cs" />
     <Compile Include="Rzeszow\Chojnecki\StringCheckTest\StringCheckTest.cs" />

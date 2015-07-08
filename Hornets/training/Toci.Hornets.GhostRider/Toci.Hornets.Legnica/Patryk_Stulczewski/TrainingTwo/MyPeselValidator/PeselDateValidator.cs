@@ -7,21 +7,26 @@ namespace Toci.Hornets.Legnica.Patryk_Stulczewski.TrainingTwo.MyPeselValidator
     {
         public bool ValidateDate(int year, int month, int day)
         {
-            if (IsCorrectDate(year, month, day))
-                return !IsDateInFuture(year, month, day);
+            try{
+                int preciseYear = GenerateYearByMonth(month) + year;
+                if (IsCorrectDate(preciseYear, month % 20, day))
+                    return !IsDateInFuture(preciseYear, month % 20, day);
+            }
+            catch (Exception ex)
+            {
+                // ignored
+            }
             return false;
         }
 
         private bool IsCorrectDate(int year, int month, int day)
         {
-            int yearByMonth = GenerateYearByMonth(month);
-            return DaysInMonthValidator.IsCorrectCountOfDays(year + yearByMonth, month % 20, day);
+            return DaysInMonthValidator.IsCorrectCountOfDays(year, month, day);
         }
 
         private bool IsDateInFuture(int year, int month, int day)
         {
-            int yearByMonth = GenerateYearByMonth(month);
-            DateTime dt = new DateTime(year + yearByMonth, month % 20, day);
+            DateTime dt = new DateTime(year, month, day);
             return dt > DateTime.Now;
         }
 

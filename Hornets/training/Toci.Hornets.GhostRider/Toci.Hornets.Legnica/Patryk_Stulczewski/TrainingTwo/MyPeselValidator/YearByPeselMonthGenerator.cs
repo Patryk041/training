@@ -20,7 +20,7 @@ namespace Toci.Hornets.Legnica.Patryk_Stulczewski.TrainingTwo.MyPeselValidator
             var century = _centuryByMonth.Keys.FirstOrDefault(x => x(month));
             if (century != null) 
                 return _centuryByMonth[century];
-            throw new InvalidOperationException();
+            throw new IndexOutOfRangeException();
         }
     }
 }

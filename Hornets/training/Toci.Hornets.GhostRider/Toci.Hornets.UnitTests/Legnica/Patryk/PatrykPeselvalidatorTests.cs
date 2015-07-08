@@ -8,7 +8,7 @@ using Toci.Hornets.UnitTests.Legnica.Patryk.Mock;
 namespace Toci.Hornets.UnitTests.Legnica.Patryk
 {
     [TestClass]
-    public class PatrykPeselvalidatorTests
+    public class PatrykPeselValidatorTests
     {
         private FakeChecksumValidator fakeChecksumValidator = new FakeChecksumValidator();
         private FakePeselDateValidator fakePeselDateValidator = new FakePeselDateValidator();
@@ -53,16 +53,6 @@ namespace Toci.Hornets.UnitTests.Legnica.Patryk
         }
 
         [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException))]
-        public void IsPeselValid_WhenBadFormat_ThrowException()
-        {
-            PeselValidator validator = new PatrykPeselValidator();
-            Assert.IsFalse(validator.IsPeselValid("93133200345"));
-            Assert.IsFalse(validator.IsPeselValid("93002003455"));
-            Assert.IsFalse(validator.IsPeselValid("93010003455"));
-        }
-
-        [TestMethod]
         public void IsPeselValid_WhenBadFormat()
         {
             PeselValidator validator = new PatrykPeselValidator();
@@ -71,6 +61,9 @@ namespace Toci.Hornets.UnitTests.Legnica.Patryk
             Assert.IsFalse(validator.IsPeselValid("123"));
             Assert.IsFalse(validator.IsPeselValid("121011%&7%6"));
             Assert.IsFalse(validator.IsPeselValid("12345678901234"));
+            Assert.IsFalse(validator.IsPeselValid("93133200345"));
+            Assert.IsFalse(validator.IsPeselValid("93002003455"));
+            Assert.IsFalse(validator.IsPeselValid("93010003455"));
         }
 
         [TestMethod]
