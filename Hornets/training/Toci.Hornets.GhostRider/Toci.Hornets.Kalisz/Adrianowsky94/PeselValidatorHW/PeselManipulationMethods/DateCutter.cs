@@ -8,8 +8,12 @@ namespace Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW.PeselManipulationMe
     {
         public static string Cut(string pesel)
         {
-            if (pesel.Length != 11 && !pesel.Contains("0123456789"))
-                throw new Exception("TYPED NUMBER IS NOT PESEL");
+            if (pesel.Length < 12 && !pesel.Contains("0123456789"))
+            {
+                throw new Exception("PESEL IS INVALID");
+
+                //return null;
+            }
             else
             {
                 Date.year = Int32.Parse(pesel.Substring(0,2));

@@ -37,7 +37,7 @@ namespace Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW.PeselManipulationMe
             else if (month > 40 && month < 53)
                 month -= 40;
             else if (month > 60 && month < 73) 
-                month -= 20;
+                month -= 60;
             return month;
         }
 
