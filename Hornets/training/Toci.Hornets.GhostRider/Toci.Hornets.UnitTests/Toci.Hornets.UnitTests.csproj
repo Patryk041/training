@@ -53,7 +53,7 @@
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
     <Compile Include="Kalisz\Adrianowsky94\PeselTester.cs" />
-    <Compile Include="Kalisz\Amman\UnitTester.cs" />
+    <Compile Include="Kalisz\Amman\AmmanUnitTester.cs" />
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
     <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
