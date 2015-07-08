@@ -55,6 +55,7 @@
     <Compile Include="Kalisz\Amman\UnitTester.cs" />
     <Compile Include="Lausion\PeselValidator.cs" />
     <Compile Include="Lausion\StringManipulation.cs" />
+    <Compile Include="S2yfr4nt\PeselVaidator\StringManipulations.cs" />
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
     <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

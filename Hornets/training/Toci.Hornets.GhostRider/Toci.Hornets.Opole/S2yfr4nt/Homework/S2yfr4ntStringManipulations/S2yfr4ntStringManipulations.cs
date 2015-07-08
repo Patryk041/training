@@ -7,7 +7,7 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntStringManipulations
     {
         protected override bool IsStringInString(string subject, string seek)
         {
-            return subject.Contains(seek);
+            return subject.Equals(seek) || subject.Contains(seek);
         }
 
         protected override bool IsStringElementsInString(string subject, string seek)
