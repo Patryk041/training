@@ -6,7 +6,7 @@ using Toci.Hornets.Kalisz.Amman.StringManipulator;
 namespace Toci.Hornets.UnitTests.Kalisz.Amman
 {
     [TestClass]
-    public class UnitTester
+    public class AmmanUnitTester
     {
         [TestMethod]
         public void StringceptionTest()
