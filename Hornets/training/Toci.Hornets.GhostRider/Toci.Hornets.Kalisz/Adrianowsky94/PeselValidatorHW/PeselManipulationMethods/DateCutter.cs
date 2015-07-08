@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
+using System.Text;
 
 namespace Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW.PeselManipulationMethods
 {
@@ -8,7 +9,8 @@ namespace Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW.PeselManipulationMe
     {
         public static string Cut(string pesel)
         {
-            if (pesel.Length != 11 && !pesel.Contains("0123456789"))
+            int peselParsedToNumber = 0;
+            if (pesel.Length != 11 && !int.TryParse(pesel, out peselParsedToNumber))
             {
                 throw new Exception("PESEL IS INVALID");
             }
