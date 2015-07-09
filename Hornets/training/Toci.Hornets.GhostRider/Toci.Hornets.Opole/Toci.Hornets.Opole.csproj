@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BartoszF\MojaKlasa.cs" />
+    <Compile Include="DawidoXx\Jazda.cs" />
     <Compile Include="Dziusio\Andrzej.cs" />
     <Compile Include="Dziusio\MyPhoneTask\HomeworkTenMinutes.cs" />
     <Compile Include="GhostRider\HowDoWeWorkOnBranches.cs" />
