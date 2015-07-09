@@ -19,7 +19,3 @@ class RudiStringOperability extends GhostRiderStringOperability
 	}
 	
 }
-
-$test=new RudiStringOperability();
-$test->CheckImplementation();
-
