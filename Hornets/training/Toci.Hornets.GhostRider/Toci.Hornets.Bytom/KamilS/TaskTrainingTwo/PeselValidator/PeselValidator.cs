@@ -4,7 +4,12 @@
     {
         protected override string CutOffDate(string pesel)
         {
-            throw new System.NotImplementedException();
+            string year = pesel.Substring(0, 2);
+            string month = pesel.Substring(2, 2);
+            string day = pesel.Substring(4, 2);
+            string DateOfBirth = year + "/" + month + "/" + day;
+
+            return DateOfBirth;
         }
 
         protected override bool Checksum(string pesel)

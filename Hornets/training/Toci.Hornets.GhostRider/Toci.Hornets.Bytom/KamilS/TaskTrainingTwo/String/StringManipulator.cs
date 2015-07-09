@@ -68,7 +68,7 @@ namespace Toci.Hornets.Bytom.KamilS.TaskTrainingtTwo
 
         public override StringManipulationsResults RunStringOperations(string subject, string seek)
         {
-            throw new System.NotImplementedException();
+            return Run(subject, seek);
         }
     }
 }
