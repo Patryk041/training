@@ -23,7 +23,7 @@ namespace Toci.Hornets.Wroclaw.Kollwing
                 return new VoiceCommunication();
             }
 
-           
+            return null;
         }
 
         protected override string MyNick()
