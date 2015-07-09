@@ -53,6 +53,7 @@
     <Compile Include="Chojnecki\TrainingTwoPESEL\MyPeselValidator.cs" />
     <Compile Include="Chojnecki\TrainingTwoString\StringCheck.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Foonesh\TrainingTwo\StringManipulations\StringManipulationsFoonesh.cs" />
     <Compile Include="KSebal\telephone\Telephone.cs" />
     <Compile Include="KSebal\traning2Homework\KsebalStringManipulationClass.cs" />
     <Compile Include="KSebal\traning2Homework\Pesel\KsebalPeselValidator.cs" />
