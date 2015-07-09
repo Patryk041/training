@@ -65,6 +65,7 @@
     <Compile Include="Sieradz\UCantTouchThis\StringComparatorsBenchmarks.cs" />
     <Compile Include="Sieradz\UCantTouchThis\Undergtound1Test.cs" />
     <Compile Include="Wrocław\gipson\PeselValidatorTest.cs" />
+    <Compile Include="Wrocław\gipson\StringManipulationsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
@@ -88,6 +89,7 @@
     <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
