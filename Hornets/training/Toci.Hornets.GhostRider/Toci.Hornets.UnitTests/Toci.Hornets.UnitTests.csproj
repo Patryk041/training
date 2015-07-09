@@ -51,10 +51,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
-    <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
     <Compile Include="Gliwice\Didi\StringManipulation\StringManipulationTest.cs" />
-    <Compile Include="Kalisz\Amman\UnitTester.cs" />
     <Compile Include="Legnica\Patryk\Mock\FakeChecksumValidator.cs" />
     <Compile Include="Legnica\Patryk\Mock\FakePeselDateValidator.cs" />
     <Compile Include="Legnica\Patryk\PatrykPeselValidatorTests.cs" />
@@ -66,6 +64,9 @@
     <Compile Include="Rzeszow\Terry\StringManipulatorTest\TerryStringManipulatorTest.cs" />
     <Compile Include="Kalisz\Adrianowsky94\PeselTester.cs" />
     <Compile Include="Kalisz\Amman\AmmanUnitTester.cs" />
+    <Compile Include="Lausion\PeselValidator.cs" />
+    <Compile Include="Lausion\StringManipulation.cs" />
+    <Compile Include="S2yfr4nt\StringManipulations\StringManipulations.cs" />
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
     <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

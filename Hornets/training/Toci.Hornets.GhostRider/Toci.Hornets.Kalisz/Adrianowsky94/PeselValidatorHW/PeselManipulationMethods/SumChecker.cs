@@ -10,7 +10,7 @@ namespace Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW.PeselManipulationMe
             List<int> peselNumber = new List<int>();
             List<string> peselNumberStringList = new List<string>();
 
-            foreach (Char number in pesel.ToCharArray())
+            foreach (var number in pesel)
             {
                 peselNumberStringList.Add(number.ToString());
             }
