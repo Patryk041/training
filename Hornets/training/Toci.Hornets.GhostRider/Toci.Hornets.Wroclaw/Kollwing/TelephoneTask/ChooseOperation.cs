@@ -13,6 +13,8 @@ namespace Toci.Hornets.Wroclaw.Kollwing
                 return new PhotoCommunication();
             }
 
+
+
             if (chosenOption == 2)
             {
                 return new SmsCommunication();
