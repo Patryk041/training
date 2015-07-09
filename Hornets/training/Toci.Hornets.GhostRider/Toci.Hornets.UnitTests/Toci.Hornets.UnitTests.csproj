@@ -66,6 +66,9 @@
     <Compile Include="Rzeszow\Terry\StringManipulatorTest\TerryStringManipulatorTest.cs" />
     <Compile Include="Kalisz\Adrianowsky94\PeselTester.cs" />
     <Compile Include="Kalisz\Amman\AmmanUnitTester.cs" />
+    <Compile Include="Lausion\PeselValidator.cs" />
+    <Compile Include="Lausion\StringManipulation.cs" />
+    <Compile Include="S2yfr4nt\StringManipulations\StringManipulations.cs" />
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
     <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
