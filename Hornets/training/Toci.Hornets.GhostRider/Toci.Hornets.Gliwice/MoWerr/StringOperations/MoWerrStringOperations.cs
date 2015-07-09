@@ -77,7 +77,7 @@ namespace Toci.Hornets.Gliwice.MoWerr.StringOperations
             else
             {
                 result.IsAnagram = false;
-                result.IsStringElementsInString = false;
+                result.IsStringInString = false;
                 result.IsStringElementsInString = IsStringElementsInString(subject, seek);
             }
 
