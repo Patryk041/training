@@ -58,5 +58,16 @@
             if (_day < 10) return "0" + _day;
             return _day.ToString();
         }
+
+        public static bool dayCheck(int year, int month, int day)
+        {
+            if (month > 12 || month == 0) return false;
+            int[] daysInMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+            {
+                daysInMonth[1] = 29;
+            }
+            return day <= daysInMonth[month - 1];
+        }
     }
 }
