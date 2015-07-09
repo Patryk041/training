@@ -5,7 +5,7 @@ using Toci.Hornets.Sieradz.Undergroun1Task.Interface;
 
 namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
 {
-    public class TypowyAdamPeselValidator : IPeselValidator
+    public class TypowyAdamPeselValidatorOld : IPeselValidator
     {
         public bool IsPeselValid(string pesel)
         {

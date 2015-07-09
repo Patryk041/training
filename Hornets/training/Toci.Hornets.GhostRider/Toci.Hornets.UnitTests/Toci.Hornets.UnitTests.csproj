@@ -52,10 +52,20 @@
   <ItemGroup>
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
+    <Compile Include="Gliwice\Didi\StringManipulation\StringManipulationTest.cs" />
+    <Compile Include="Kalisz\Amman\UnitTester.cs" />
+    <Compile Include="Legnica\Patryk\Mock\FakeChecksumValidator.cs" />
+    <Compile Include="Legnica\Patryk\Mock\FakePeselDateValidator.cs" />
+    <Compile Include="Legnica\Patryk\PatrykPeselValidatorTests.cs" />
+    <Compile Include="Legnica\Patryk\PatrykStringManupulationsBaseTests.cs" />
+    <Compile Include="Rzeszow\Chojnecki\PeselTest\PESELTest.cs" />
+    <Compile Include="Rzeszow\Chojnecki\StringCheckTest\StringCheckTest.cs" />
+    <Compile Include="Rzeszow\Ksebal\Testy.cs" />
+    <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
+    <Compile Include="Rzeszow\Terry\StringManipulatorTest\TerryStringManipulatorTest.cs" />
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
-    <Compile Include="Sieradz\Duch\Underground1Test.cs" />
+    <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-
     <Compile Include="Sieradz\Kamil\KamilTest1.cs" />
     <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
     <Compile Include="Sieradz\Quicksilver\LessCasualSC.cs" />
@@ -108,7 +118,6 @@
   <ItemGroup>
     <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
-
     <Compile Include="S2yfr4nt\PeselVaidator\PeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>

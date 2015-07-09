@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Hornets.Sieradz.Duch
+namespace Toci.Hornets.Gliwice.Didi.StringManiupulation
 {
-    class DuchClassLoL
+    class StringManipulationClass
     {
     }
 }

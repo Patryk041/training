@@ -33,9 +33,9 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
             };
 
             var time = Stopwatch.StartNew();
-            correctDatesList.ForEach(date => Assert.IsTrue(DateValidatorUtils.IsDateValidAndAutistic(date[0], date[1], date[2])));
-            
-            incorrectDatesList.ForEach(date => Assert.IsFalse(DateValidatorUtils.IsDateValidAndAutistic(date[0], date[1], date[2])));
+            correctDatesList.ForEach(date => Assert.IsTrue(UCTT_PeselValidatorUtils.IsDateValid(date[0], date[1], date[2])));
+
+            incorrectDatesList.ForEach(date => Assert.IsFalse(UCTT_PeselValidatorUtils.IsDateValid(date[0], date[1], date[2])));
             time.Stop();
             Debug.WriteLine("Time: " + time.ElapsedMilliseconds + " ms");
         }
