@@ -7,18 +7,26 @@ require_once "../../TrainingOne/Rudi/funkcje.php";
 class RudiComplexString {
 
 	function IsStringInString($subject, $seek){
+
+		//obliczamy dlugosc podanych argumentow
 		$subjLen=Rudi_strlen($subject);
 		$seekLen=Rudi_strlen($seek);
 
+		
 		for($i=0;$i<=($subjLen-$seekLen);$i++)
 		{
+			// CutOffString wycina kawalek tekstu z $subject
+			// o dlugosci $seek i porownuje go z nim  
 			$test=$this->CutOffString($subject,$i,$seekLen);
+			
+			//jesli wyciety kawalek zgadza sie z $seek = return true
 			if($seek==$test)
 			{
 				return true;
 			}
 		}
 
+		//jesli nie znalazl zgodnosci = return false
 		return false;
 
 	}
@@ -26,24 +34,25 @@ class RudiComplexString {
 
 	function IsStringLettersInString($subject,$seek){
 
+	//dla kazdej litery z $seek sprawdza czy istnieje taka w $subject 
 	for($i=0;$i<Rudi_strlen($seek);$i++)
 	{
 		for($j=0;$j<Rudi_strlen($subject);$j++)
 		{
-
+		//jesli litery sie zgadzaja, zamienia je na spacje, z jakiegos powodu null nie zdawal testu 
 		if($subject[$j]==$seek[$i]){	
 		$subject[$j]=' ';
 		$seek[$i]=' ';
-		
-		}//if
-	}
+		}
+		}
 	}
 
+	//sprawdz czy nie ma jkais pozostalych literek w $seek
+	//nie sprowadzalem stringa to arraya charow aby nie zuywac funkcji systemowej
 	for($i=0;$i<Rudi_strlen($seek);$i++)
 	{
 		if($seek[$i]!=' ')
 		{
-			echo "Nope: ".$seek;
 			return false;
 		}
 	}
@@ -51,7 +60,7 @@ class RudiComplexString {
 	return true;
 	}
 
-
+	//poprzednia funkcja spelnia wymogi, musimy tylko zalozyc ze strinki maja taka sama dlugosc
 	function IsAnagram($subject, $seek)
 	{
 		if(Rudi_strlen($subject)==Rudi_strlen($seek)){

@@ -6,8 +6,7 @@ class RudiPeselValidation  extends PeselValidation
 {
 	function DateValidation($year, $month, $day)
 	{
-	//zakladamy ze rok jest z zakresu ktory obejmuje pesel 1800-2299
-
+	//zakladamy ze rok jest z zakresu ktory obejmuje pesel 1800-2300
 		if($year<2300 && $year>1800)
 		{
 		
@@ -22,8 +21,7 @@ class RudiPeselValidation  extends PeselValidation
 			case 7:
 			case 8:
 			case 10:
-			case 12: 
-				return $day<=31?true:false; break;
+			case 12: return $day<=31?true:false; break;
 
 
 			case 4:
@@ -32,6 +30,7 @@ class RudiPeselValidation  extends PeselValidation
 			case 11: return $day<=30?true:false; break;
 
 			case 2:
+			// sprawdzenie dla roku przestepnego
 			if(($year%4==0)&&($year%100!=0)||$year % 400==0)
 			{
 				return $day<=29?true:false;
@@ -49,7 +48,6 @@ class RudiPeselValidation  extends PeselValidation
 		$peselArray=$this->intToArray($pesel);
 
 		//obliczamy rok
-		
 		$year=intval($pesel/1000000000);
 		switch($peselArray[2])
 		{
@@ -66,7 +64,6 @@ class RudiPeselValidation  extends PeselValidation
 		}
 
 		//obliczamy miesiac
-
 		$month=($peselArray[2]%2)*10+$peselArray[3];
 		$day=($peselArray[4]*10)+$peselArray[5];
 		
@@ -85,7 +82,8 @@ class RudiPeselValidation  extends PeselValidation
 		$suma+=$wagi[$i]*$peselArray[$i];	
 
 		}
-		//echo "Suma wynosi".$suma;
+
+		//sprawdzenie z cyfra kontrolna
 		if($suma %10 == (10 - $peselArray[10]))
 		{	
 			return true;
@@ -95,6 +93,7 @@ class RudiPeselValidation  extends PeselValidation
 
 	public function ValidatePesel($pesel)
 	{
+		//jesli data i suma kontrolna sa poprawne = return true
 		$date = $this->CutOffDate($pesel);
 		if($this->CheckSum($pesel)&& $this->DateValidation($date[0],$date[1],$date[2]))
 		{
@@ -107,15 +106,14 @@ class RudiPeselValidation  extends PeselValidation
 	private	function intToArray($number)
 	{
 		//mozna uzyc str_split zamiast tego kodu
-
+		//dodatkowo zakladamy ze pesel jest intem a nie stringiem
+		
 
 		$peselArray=array();
 		do{
 		array_push($peselArray,$number%10);
 		$number =intval($number/10);
 		}while($number!=0);
-		//print_r(array_reverse($peselArray));
-	 
 
 		return array_reverse($peselArray);
 	}
