@@ -56,6 +56,7 @@
     <Compile Include="Snajper\FirstClass.cs" />
     <Compile Include="Soltys\CustomTelephoneInterpreter.cs" />
     <Compile Include="Soltys\HelloWorld.cs" />
+    <Compile Include="Soltys\TasksTrainingTwo\StringManipulator.cs" />
     <Compile Include="usppat\classiscoming.cs" />
     <Compile Include="usppat\telephone\TelephoneHomework.cs" />
   </ItemGroup>
