@@ -120,8 +120,3 @@ class RudiPeselValidation  extends PeselValidation
 		return array_reverse($peselArray);
 	}
 }
-
-$validator = new RudiPeselValidation();
-
-echo $validator->ValidatePesel(94070707736);
-echo $validator->ValidatePesel(94070707736);
