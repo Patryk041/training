@@ -10,6 +10,8 @@ namespace Toci.Hornets.UnitTests.S2yfr4nt.PeselVaidator
         public void TestMethod()
         {
             S2yfr4ntStringManipulations stringManipulations = new S2yfr4ntStringManipulations();
+
+            //IsStringAnagramOfString
             Assert.IsTrue(stringManipulations.RunStringOperations("beata", "eaatb").IsAnagram);
             Assert.IsFalse(stringManipulations.RunStringOperations("beata", "bartek").IsAnagram);
 
@@ -18,6 +20,10 @@ namespace Toci.Hornets.UnitTests.S2yfr4nt.PeselVaidator
             Assert.IsTrue(stringManipulations.RunStringOperations("beata", "beata").IsStringInString);
             Assert.IsTrue(stringManipulations.RunStringOperations("beata", "eat").IsStringInString);
 
+            //IsStringElementsInString
+            Assert.IsTrue(stringManipulations.RunStringOperations("beata", "eaa").IsStringElementsInString);
+            Assert.IsTrue(stringManipulations.RunStringOperations("beata", "taae").IsStringElementsInString);
+            Assert.IsFalse(stringManipulations.RunStringOperations("beata", "taaa").IsStringElementsInString);
         }
     }
 }

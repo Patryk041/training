@@ -12,7 +12,17 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntStringManipulations
 
         protected override bool IsStringElementsInString(string subject, string seek)
         {
-            return subject.OrderBy(c => c).ToString().Contains(seek.OrderBy(c => c).ToString());
+            foreach (var character in seek)
+            {
+                if (subject.Contains(character))
+                {
+                    subject.Remove(character);
+                    
+                    continue;
+                }
+                return false;
+            }
+            return true;
         }
 
         protected override bool IsStringAnagramOfString(string subject, string seek)
