@@ -43,6 +43,9 @@
     <Compile Include="Mateusz Smigowski\NewClass.cs" />
     <Compile Include="Mateusz_Malolepszy\NewTestClass.cs" />
     <Compile Include="Michał Zembik\Arbak.cs" />
+    <Compile Include="Michał Zembik\Interface1.cs" />
+    <Compile Include="Michał Zembik\ZadaniePeselValidator.cs" />
+    <Compile Include="Michał Zembik\ZadanieStringManipulations.cs" />
     <Compile Include="Patryk_Stulczewski\Class1.cs" />
     <Compile Include="Patryk_Stulczewski\Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
