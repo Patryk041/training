@@ -21,7 +21,7 @@ namespace Toci.Hornets.Legnica.Michał_Zembik
 
         public override string GetNick()
         {
-            throw new System.NotImplementedException();
+            return "Michal Zembik";
         }
 
         public override bool IsPeselValid(string pesel)
