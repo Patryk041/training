@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -55,6 +56,10 @@
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
     <Compile Include="Kalisz\Amman\UnitTester.cs" />
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
+    <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjStringManipulationsTest.cs" />
+    <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjPeselValidatorTest.cs" />
+    <Compile Include="Sieradz\DeeJay\TelephoneTask\DjTraceListener.cs" />
+    <Compile Include="Sieradz\DeeJay\TelephoneTask\DjTelephoneTaskTest.cs" />
     <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sieradz\Kamil\KamilTest1.cs" />
