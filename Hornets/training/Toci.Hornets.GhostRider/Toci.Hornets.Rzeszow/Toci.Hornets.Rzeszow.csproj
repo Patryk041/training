@@ -63,6 +63,8 @@
     <Compile Include="KubaT\TrainingTwoStringOperation\KubaTStringOperations.cs" />
     <Compile Include="Malwina\ExtendingWarrior.cs" />
     <Compile Include="Malwina\IBaseForWyroznienie.cs" />
+    <Compile Include="Malwina\Pesell\DataCzyOk.cs" />
+    <Compile Include="Malwina\Pesell\MalwiPeselValidator.cs" />
     <Compile Include="Malwina\Telephone\ChooseRedOrBlue.cs" />
     <Compile Include="Malwina\WyrozniajacaSieKlasaMalwiny.cs" />
     <Compile Include="Malwina\WyrozniajacaSieKlasaMalwinyChild.cs" />
