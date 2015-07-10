@@ -63,6 +63,7 @@
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntYearValidation.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntPeselValidator\S2yfr4ntPeselFactory.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntPeselValidator\S2yfr4ntPeselValidator.cs" />
+    <Compile Include="S2yfr4nt\Homework\S2yfr4ntStringManipulations\S2yfr4ntFacade.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntStringManipulations\S2yfr4ntStringManipulations.cs" />
     <Compile Include="S2yfr4nt\S2yfr4ntGenericFactory.cs" />
     <Compile Include="S2yfr4nt\TelephoneHomework\S2yfr4ntTelephoneInterpreter.cs" />

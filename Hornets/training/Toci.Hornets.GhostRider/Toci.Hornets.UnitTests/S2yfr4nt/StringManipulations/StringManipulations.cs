@@ -12,13 +12,13 @@ namespace Toci.Hornets.UnitTests.S2yfr4nt.PeselVaidator
             S2yfr4ntStringManipulations stringManipulations = new S2yfr4ntStringManipulations();
 
             //IsStringAnagramOfString
-            //Assert.IsTrue(stringManipulations.RunStringOperations("beata", "eaatb").IsAnagram);
-            //Assert.IsFalse(stringManipulations.RunStringOperations("beata", "bartek").IsAnagram);
+            Assert.IsTrue(stringManipulations.RunStringOperations("beata", "eaatb").IsAnagram);
+            Assert.IsFalse(stringManipulations.RunStringOperations("beata", "bartek").IsAnagram);
 
-            ////IsStringInString
-            //Assert.IsFalse(stringManipulations.RunStringOperations("beata", "c").IsStringInString);
-            //Assert.IsTrue(stringManipulations.RunStringOperations("beata", "beata").IsStringInString);
-            //Assert.IsTrue(stringManipulations.RunStringOperations("beata", "eat").IsStringInString);
+            //IsStringInString
+            Assert.IsFalse(stringManipulations.RunStringOperations("beata", "c").IsStringInString);
+            Assert.IsTrue(stringManipulations.RunStringOperations("beata", "beata").IsStringInString);
+            Assert.IsTrue(stringManipulations.RunStringOperations("beata", "eat").IsStringInString);
 
             //IsStringElementsInString
             Assert.IsTrue(stringManipulations.RunStringOperations("beata", "eaa").IsStringElementsInString);

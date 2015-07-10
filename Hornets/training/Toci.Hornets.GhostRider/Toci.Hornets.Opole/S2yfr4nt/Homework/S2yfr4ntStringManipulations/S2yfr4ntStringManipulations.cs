@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
 namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntStringManipulations
@@ -14,21 +15,11 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntStringManipulations
 
         protected override bool IsStringElementsInString(string subject, string seek)
         {
-            //var _subject = subject.ToLower().ToArray();
-            //var _seek = seek.ToLower().ToArray();
-            //Array.Sort(_seek);
-            //Array.Sort(_subject);
-            //var a = _subject.Intersect(_seek, _subject).Any();
-            //return a;
-            List<char> _subject = subject.ToList();
+            var _subject = subject.ToList();
             foreach (var character in seek)
             {
-                if (_subject.Contains(character))
-                {
-                    _subject.Remove(character);
-                    continue;
-                }
-                return false;
+                if (!_subject.Contains(character)) return false;
+                _subject.Remove(character);
             }
             return true;
         }
@@ -54,13 +45,27 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntStringManipulations
             result.Nick = GetNick();
             result.Subject = subject;
             result.Seek = seek;
-
             result.Type = GetType();
 
-            result.IsAnagram = IsStringAnagramOfString(subject, seek);
-            result.IsStringElementsInString = IsStringElementsInString(subject, seek);
-            result.IsStringInString = IsStringInString(subject, seek);
+            S2yfr4ntFacade facade = new S2yfr4ntFacade(result);
 
+            if (!IsStringElementsInString(subject, seek))
+            { 
+                facade.AllFalse();
+            }
+            else if (!IsStringInString(subject, seek))
+            {
+                facade.OneTrue();
+            }
+            else if (!IsStringAnagramOfString(subject, seek))
+            {
+                facade.TwoTrue();
+            }
+            else
+            {
+                facade.AllTrue();
+            }
+            
             return result;
         }
     }
