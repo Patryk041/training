@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks;
 using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.StringComparator;
 
 namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis

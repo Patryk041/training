@@ -40,17 +40,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdamP\Class1.cs" />
-    <Compile Include="AdamP\TaskTrainingTwo\PeselValidator.cs" />
-    <Compile Include="AdamP\TaskTrainingTwo\StringManipulator.cs" />
     <Compile Include="AdamP\TelephoneTask\TelephoneTaskChooser.cs" />
     <Compile Include="Bossu\TelephoneTask\MyTelephoneInterpreter.cs" />
     <Compile Include="Coffee13\CoffeeTestClass.cs" />
     <Compile Include="Coffee13\TaskTrainingTwo\PeselValidator\CoffeePeselValidator.cs" />
-    <Compile Include="Coffee13\TaskTrainingTwo\StringManipulator\CoffeeStringManipulations.cs" />
     <Compile Include="Coffee13\TelephoneTask\TaskOneTelephone.cs" />
     <Compile Include="Common\Interfaces\IPeselValidator.cs" />
     <Compile Include="KamilS\KamilS.cs" />
-    <Compile Include="KamilS\TaskTrainingTwo\PeselValidator\PeselValidator.cs" />
+    <Compile Include="KamilS\TaskTrainingTwo\PeselValidator\KamilSPeselValidator.cs" />
     <Compile Include="KamilS\TaskTrainingTwo\String\StringManipulator.cs" />
     <Compile Include="KamilS\TelephoneTask\TelephoneTaskClass.cs" />
     <Compile Include="Pr0fes0r\TelephoneTask\Telefon.cs" />

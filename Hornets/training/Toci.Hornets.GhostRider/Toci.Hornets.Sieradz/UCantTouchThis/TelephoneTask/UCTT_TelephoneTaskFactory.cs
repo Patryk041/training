@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using Toci.Hornets.GhostRider.InterfacesExtending;
 using Toci.Hornets.GhostRider.TElephoneCommunication;
 
@@ -18,7 +17,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.TelephoneTask
 
         public static ITelephoneCommunication GetInstance(int chosenOption)
         {
-            return TelephoneFactory.ContainsKey(chosenOption) ? TelephoneFactory[chosenOption]() : null;
+            return TelephoneFactory[chosenOption]();
         }
     }
 }

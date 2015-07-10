@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.Sieradz.Duch.Homework_2.PeselValidator;
-using Toci.Hornets.Sieradz.Quicksilver.TasksTrainingTwoQs;
 using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
-using Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo;
 using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator;
 
 namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
@@ -51,7 +48,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
                 {
                     foreach (string testPesel in validPeselList)
                     {
-                          Assert.IsTrue(item.Value(testPesel));
+                        Assert.IsTrue(item.Value(testPesel));
                     }
                     foreach (string testPesel in invalidPeselLIst)
                     {
@@ -74,14 +71,10 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
 
 
              // "Nie bądź jak leń co śmierdzący jest!"
-             //                                 UCTT
+             //                                 UCCT
 
              { "TypowyAdam", new TypowyAdamPeselValidator().IsPeselValid },
-             { "TypowyAdam4GhostWarrior", new TypowyAdamPeselValidator().IsPeselValid },
-             { "UCantTouchThisAutism", new UCantTouchThisAutismPeselValisator().IsPeselValid },
-             { "UCantTouchThis", new UCantTouchThisPeselValidator().IsPeselValid },
-             { "Quicksilver", new QuicksilverPeselValidator().IsPeselValid },
-             { "DuchGottaGoFast", new DuchPeselValidator().IsPeselValid }
+             { "UCantTouchThisAutism", new UCantTouchThisAutismPeselValisator().IsPeselValid }
          };
     }
 
