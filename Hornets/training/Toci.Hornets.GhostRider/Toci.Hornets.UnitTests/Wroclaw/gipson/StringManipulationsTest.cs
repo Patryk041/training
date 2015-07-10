@@ -11,10 +11,10 @@ namespace Toci.Hornets.UnitTests.Wrocław.gipson
         public void StringManipulationsTestMethod()
         {
             GipsonStringManipulations gsm = new GipsonStringManipulations();
-            StringManipulationsResults stm = gsm.RunStringOperations("adam", "adm");
-            //Assert.IsTrue(stm.IsStringElementsInString);
-            Assert.IsTrue(stm.IsStringInString);
-            //Assert.IsTrue(stm.IsAnagram);
+            StringManipulationsResults stm = gsm.RunStringOperations("adam", "adma");
+            Assert.IsTrue(stm.IsStringElementsInString);
+            Assert.IsFalse(stm.IsStringInString);
+            Assert.IsTrue(stm.IsAnagram);
         }
     }
 }

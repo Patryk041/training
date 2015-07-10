@@ -86,6 +86,8 @@
     <Compile Include="Sieradz\UCantTouchThis\RandomStringGeneratorTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\StringComparatorsBenchmarks.cs" />
     <Compile Include="Sieradz\UCantTouchThis\Undergtound1Test.cs" />
+    <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />
+    <Compile Include="Wroclaw\gipson\StringManipulationsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.Bytom\Toci.Hornets.Bytom.csproj">
