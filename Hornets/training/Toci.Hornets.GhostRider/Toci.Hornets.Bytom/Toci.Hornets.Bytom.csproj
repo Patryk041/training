@@ -68,6 +68,7 @@
     <Compile Include="Szary\KlasaSzarego.cs" />
     <Compile Include="Szary\TelephoneTask\TelephoneGrayHomework.cs" />
     <Compile Include="Vernathic\TelephoneTask\VTelephoneTask.cs" />
+    <Compile Include="Vernathic\TrainingTwo\VnthPeselValidator.cs" />
     <Compile Include="Vernathic\VFirstClass.cs" />
   </ItemGroup>
   <ItemGroup>

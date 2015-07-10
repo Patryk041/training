@@ -53,7 +53,7 @@
   <ItemGroup>
     <Compile Include="Bytom\Coffee13\StringTest.cs" />
     <Compile Include="Bytom\Coffee13\UnitTest1.cs" />
-    <Compile Include="Bytom\Vnth\UnitTest1.cs" />
+    <Compile Include="Bytom\Vnth\VnthPeselValidatorTest.cs" />
     <Compile Include="Bytom\Vnth\VnthFirstUnitTest.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
