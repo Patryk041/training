@@ -71,8 +71,8 @@
     <Compile Include="Lausion\StringManipulation.cs" />
     <Compile Include="S2yfr4nt\StringManipulations\StringManipulations.cs" />
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
-    <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjStringManipulationsTest.cs" />
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjPeselValidatorTest.cs" />
+    <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjStringManipulationsTest.cs" />
     <Compile Include="Sieradz\DeeJay\TelephoneTask\DjTraceListener.cs" />
     <Compile Include="Sieradz\DeeJay\TelephoneTask\DjTelephoneTaskTest.cs" />
     <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
@@ -82,6 +82,7 @@
     <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
     <Compile Include="Sieradz\Quicksilver\LessCasualSC.cs" />
     <Compile Include="Sieradz\Quicksilver\TwoQs\QuicksilverStringManipulatorUnitTest.cs" />
+    <Compile Include="Sieradz\TypowyAdam\TypowyAdamStringManipulatorTest.cs" />
     <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
     <Compile Include="Sieradz\TypowyAdam\PentagramTest.cs" />
     <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest.cs" />
