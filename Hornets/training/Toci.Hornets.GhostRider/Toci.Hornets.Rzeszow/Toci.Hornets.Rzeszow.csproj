@@ -60,9 +60,9 @@
     <Compile Include="KSebal\traning2Homework\Pesel\KsebalPeselValidator.cs" />
     <Compile Include="KSebal\traning2Homework\Pesel\PeselDate.cs" />
     <Compile Include="KSebal\traning2Homework\Pesel\PeselSumValidator.cs" />
-    <Compile Include="KubaT\TelephoneTask\TelephonTaskHomework.cs" />
-    <Compile Include="KubaT\TestClass.cs" />
-    <Compile Include="KubaT\TrainingTwoStringOperation\KubaTStringOperations.cs" />
+    <Compile Include="KSebal\KubaT\TelephoneTask\TelephonTaskHomework.cs" />
+    <Compile Include="KSebal\KubaT\TestClass.cs" />
+    <Compile Include="KSebal\KubaT\TrainingTwoStringOperation\KubaTStringOperations.cs" />
     <Compile Include="Malwina\ExtendingWarrior.cs" />
     <Compile Include="Malwina\IBaseForWyroznienie.cs" />
     <Compile Include="Malwina\Pesell\DataCzyOk.cs" />
@@ -104,7 +104,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

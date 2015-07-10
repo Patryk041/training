@@ -20,30 +20,28 @@ namespace Toci.Hornets.Rzeszow.Polak.TrainingTwo
             {
                 PeselArray[i] = int.Parse(pesel.ElementAt(i).ToString());
             }
-            var sum = PeselArray[0] + 3 * PeselArray[1] + 7 * PeselArray[2] + 9 * PeselArray[3]
-                      + PeselArray[4] + 3 * PeselArray[5] + 7 * PeselArray[6] + 9 * PeselArray[7]
-                      + PeselArray[8] + 3 * PeselArray[9];
+            var suma = PeselArray[0] + 3 * PeselArray[1] + 7 * PeselArray[2] + 
+                       9 * PeselArray[3] + PeselArray[4] + 3 * PeselArray[5] + 
+                       7 * PeselArray[6] + 9 * PeselArray[7] + PeselArray[8] + 
+                       3 * PeselArray[9];
 
-            int IsPeselOk;
-            if (sum % 10 == 0) IsPeselOk = 0;
+            int isPeselOk;
+            if (suma % 10 == 0) isPeselOk = 0;
             else
             {
-                IsPeselOk = 10 - (sum % 10);
+                isPeselOk = 10 - (suma % 10);
             }
 
-            return (IsPeselOk == PeselArray[10]);
+            return (isPeselOk == PeselArray[10]);
         
 
         }
 
-        private void elseif(bool p)
-        {
-            throw new System.NotImplementedException();
-        }
+    
 
         protected override bool ValidateDate(int year, int month, int day)
         {
-            throw new System.NotImplementedException();
+            return true;
         }
 
         public override string GetNick()
@@ -53,7 +51,8 @@ namespace Toci.Hornets.Rzeszow.Polak.TrainingTwo
 
         public override bool IsPeselValid(string pesel)
         {
-            throw new System.NotImplementedException();
+            return true;
+            //nie zdazyłem więcej :(
         }
     }
 }

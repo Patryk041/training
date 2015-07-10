@@ -9,7 +9,7 @@ namespace Toci.Hornets.Rzeszow.Polak.TrainingTwo
         private int _year;
 
 
-        public void WhatIsWhat(string pesel)
+        public void Datecheck(string pesel)
         {
             _year = Convert.ToInt32(pesel.Substring(0, 2));
             _month = Convert.ToInt32(pesel.Substring(2, 2));
@@ -45,24 +45,6 @@ namespace Toci.Hornets.Rzeszow.Polak.TrainingTwo
                 _month -= 60;
             }  
         }
-
-
-
-         public string SetYear()
-         {
-             return _year.ToString();
-         }
-
-        public string SetMonth()
-        {
-            return _month.ToString();
-        }
-
-        public string SetDay()
-        {
-            return _day.ToString();
-        }
-
 
 
 
