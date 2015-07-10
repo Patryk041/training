@@ -18,7 +18,7 @@ namespace Toci.Hornets.Wroclaw.Tszulczewski.TelephoneTask
                 case 3:
                     return new VoiceCommunication();
                 default:
-                    return new SmsCommunication();
+                    return null;
             }
         }
 
