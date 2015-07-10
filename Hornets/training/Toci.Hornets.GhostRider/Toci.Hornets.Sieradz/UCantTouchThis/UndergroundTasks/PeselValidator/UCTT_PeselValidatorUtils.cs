@@ -68,6 +68,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
         public static bool ValidateDate(int year, int month, int day)
         {
             // TODO: Get rid of those ifs
+            // not with factory
 
             if (month > 80)
             {

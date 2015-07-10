@@ -7,22 +7,19 @@
 
         public static bool ValidateMonth(PeselDate date)
         {
-            bool condition = MinimumMonth <= date.Month && date.Month <= MaximumMonth;
+            date.Century = (MinimumMonth <= date.Month && date.Month <= MaximumMonth) ? 19 : CheckCentury(date);
 
-            date.Century = condition ? 19 : CheckCentury(date);
-          
-            return condition;
+            return MinimumMonth <= date.Month && date.Month <= MaximumMonth;
         }
 
         private static int CheckCentury(PeselDate date)
         {
-            bool condition = MinimumMonth <= date.Month && date.Month <= MaximumMonth;
             int iterationCount;
 
-            for (iterationCount = 0; iterationCount == 3; iterationCount++)
+            for (iterationCount = 0; iterationCount <= 4; iterationCount++)
             {
                 date.Month -= 20;
-                if (condition) break;
+                if (MinimumMonth <= date.Month && date.Month <= MaximumMonth) break;
             }
 
             switch (iterationCount)

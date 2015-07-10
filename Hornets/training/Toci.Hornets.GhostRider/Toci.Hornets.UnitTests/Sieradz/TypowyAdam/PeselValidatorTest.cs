@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.Sieradz.Duch.Homework_2.PeselValidator;
+using Toci.Hornets.Sieradz.Quicksilver.TasksTrainingTwoQs;
 using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
 using Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo;
 using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator;
@@ -13,10 +15,12 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
     [TestClass]
     public class PeselValidatorTest
     {
+        private static string testDirectory = @"..\..\Sieradz\TypowyAdam\";
+
         [TestMethod]
         public void TestMethod1()
         {
-            List<string> validPeselList = new List<string>();
+            /*List<string> validPeselList = new List<string>();
             List<string> invalidPeselLIst = new List<string>();
             List<string> uncommonCasesList = new List<string>
             {
@@ -50,7 +54,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
                 {
                     foreach (string testPesel in validPeselList)
                     {
-                        Assert.IsTrue(item.Value(testPesel));
+                          Assert.IsTrue(item.Value(testPesel));
                     }
                     foreach (string testPesel in invalidPeselLIst)
                     {
@@ -65,9 +69,36 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
                 benchmark.Stop();
                 Debug.Print("{0}: {1}ms", item.Key, Convert.ToString(benchmark.ElapsedMilliseconds));
             }
-
+            */
+            GenerateListOfPeselList(testDirectory);
         }
-        public static Dictionary<string, Func<string, bool>> ValidatorFactory = new Dictionary<string, Func<string, bool>>()
+
+
+        private static void GenerateListOfPeselList(string initialDirectory)
+        {
+            List<string> fileNames = new List<string>(Directory.GetFiles(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @initialDirectory)));
+            fileNames= fileNames.Where(s => s.Contains(".txt")).Where(s => s.Contains("Pesel")).ToList();
+            foreach (var fileName in fileNames)
+            {
+                peselListsList.Add(GeneratePeselList(fileName));
+            }
+        }
+        private static List<string> GeneratePeselList(string patch)
+        {
+            List<string> peselList = new List<string>();
+
+            using (StreamReader txtReader = new StreamReader(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @patch)))
+            {
+                while (txtReader.Peek() >= 0)
+                {
+                    peselList.Add(txtReader.ReadLine());
+                }
+            }
+            return peselList;
+        }
+
+        private static List<List<string>> peselListsList = new List<List<string>>();
+        private static Dictionary<string, Func<string, bool>> ValidatorFactory = new Dictionary<string, Func<string, bool>>()
          {
              //sorki Adam że zjechałem :P
 
@@ -79,6 +110,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
              { "TypowyAdam4GhostWarrior", new TypowyAdamPeselValidator().IsPeselValid },
              { "UCantTouchThisAutism", new UCantTouchThisAutismPeselValisator().IsPeselValid },
              { "UCantTouchThis", new UCantTouchThisPeselValidator().IsPeselValid },
+             { "Quicksilver", new QuicksilverPeselValidator().IsPeselValid },
              { "DuchGottaGoFast", new DuchPeselValidator().IsPeselValid }
          };
     }

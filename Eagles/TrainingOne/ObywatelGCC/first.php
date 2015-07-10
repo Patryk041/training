@@ -1,16 +1,6 @@
 <?php
-echo "\n\n";
+	echo "\n\n";
 	
-	
-	function ObywatelGCC_substr($text, $count)
-	{
-		$wynik = '';
-		for($i = 0; $i < $count; $i++)
-		{
-			$wynik .= $text[$i];
-		}
-		return $wynik;
-	}
 	function ObywatelGCC_strlen($text)
 	{
 		$len = 0;
@@ -21,8 +11,12 @@ echo "\n\n";
 		return $len;
 	}
 	
-	
-	// substr strlen
-	echo ObywatelGCC_substr("abcd", 2);
-	echo "\n";
-	echo ObywatelGCC_strlen("abcd");
+	function ObywatelGCC_substr($text, $count)
+	{
+		$wynik = '';
+		for($i = 0; $i < $count; $i++)
+		{
+			$wynik .= $text[$i];
+		}
+		return $wynik;
+	}

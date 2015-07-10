@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Toci.Hornets.Rzeszow.Terry.TrainingTwo.Pesel
+﻿namespace Toci.Hornets.Rzeszow.Terry.TrainingTwo.Pesel
 {
     public static class DayValidator
     {
@@ -10,7 +8,7 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingTwo.Pesel
         private const int FebruaryLeapYear = 29;
         private const int FebruaryNormalYear = 28;
 
-        private static Dictionary<int, int> _monthList = new Dictionary<int, int>()
+        private static int[,] _monthTable = new int[,]
         {
             {1,ThirtyOneDayMonths},
             {2, FebruaryNormalYear},
@@ -34,9 +32,9 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingTwo.Pesel
         {
             if (date.IsLeapYear)
             {
-                _monthList[2] = FebruaryLeapYear;
+                _monthTable[1,1] = FebruaryLeapYear;
             }
-            var numberOfDaysInMonth = _monthList[date.Month-1];
+            var numberOfDaysInMonth = _monthTable[date.Month-1,1];
 
             return IsNumberOfDaysValid(date) && (date.Day >= MinimumDays && date.Day <= numberOfDaysInMonth);
         }
