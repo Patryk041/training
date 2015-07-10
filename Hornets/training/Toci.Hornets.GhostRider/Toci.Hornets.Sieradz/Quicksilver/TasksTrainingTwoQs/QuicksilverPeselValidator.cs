@@ -10,10 +10,10 @@ namespace Toci.Hornets.Sieradz.Quicksilver.TasksTrainingTwoQs
         public int[] multiplyBy = {1, 3, 7, 9, 1, 3, 7, 9, 1, 3};
         public int[] daysOfMonthsShorter = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; //365
 
-       // public bool isYearLong(int year)
-       // {
-        //    return (year % 4 == 0 && (year % 100 != 0) || (year % 400 == 0));
-       // }
+        public bool isYearLong(int year)
+        {
+            return (year % 4 == 0 && (year % 100 != 0) || (year % 400 == 0));
+        }
 
         protected override string CutOffDate(string pesel)
         {
@@ -59,17 +59,16 @@ namespace Toci.Hornets.Sieradz.Quicksilver.TasksTrainingTwoQs
                 year += 2200;
                 month -= 60;
             }
+            else return false;
 
-            if (year < 1800 || year > 2299) return false;
-            if (month < 1 || month > 12) return false;
-            
-            for (int i =1; i < 13; i++)
-            {
-                if (month == i) return daysOfMonthsShorter[i] == day;
-                //if (month == 2 && isYearLong(year) && day == 29)
-                   // return true;
-            }
-            return true;
+            //if (year <= 1800 || year >= 2299) return false;
+           // if (month >= 1 || month <= 12) return false;
+            if (day <= 0) return false;
+            if (month == 2 && isYearLong(year) && day >= 29)
+               return true;
+
+            return daysOfMonthsShorter[month-1] >= day;
+
         }
 
         public override string GetNick()
@@ -80,12 +79,21 @@ namespace Toci.Hornets.Sieradz.Quicksilver.TasksTrainingTwoQs
         public override bool IsPeselValid(string pesel)
         {
             string dateSubstring = CutOffDate(pesel);
-            int year = Convert.ToInt32(dateSubstring.Substring(0, 2));
-            int month = Convert.ToInt32(dateSubstring.Substring(2, 2));
-            int day = Convert.ToInt32(dateSubstring.Substring(4, 2));
-            if (ValidateDate(year, month, day) && Checksum(pesel)) return true;
-            return false;
-
+            int year, month, day;
+            try
+            {
+                year = Convert.ToInt32(dateSubstring.Substring(0, 2));
+                month = Convert.ToInt32(dateSubstring.Substring(2, 2));
+                day = Convert.ToInt32(dateSubstring.Substring(4, 2));
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            if (ValidateDate(year, month, day))
+                if(Checksum(pesel)) return true;
+           return false;
+           // return Checksum(pesel) == 
         }
     }
 }
