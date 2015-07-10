@@ -83,6 +83,9 @@
     <Compile Include="SemiRafista\TrainingTwoStringManipulations\SeRaManipulatingStrings.cs" />
     <Compile Include="Sherpin\SherPhoneTask\SherPhoneChooseTypeOfMessage.cs" />
     <Compile Include="Sherpin\SherpinClass.cs" />
+    <Compile Include="Sherpin\TasksTrainingTwo\SherDateValidator.cs" />
+    <Compile Include="Sherpin\TasksTrainingTwo\SherPeselValidator.cs" />
+    <Compile Include="Sherpin\TasksTrainingTwo\SherStringManipulations.cs" />
     <Compile Include="Terry\TelephoneHomework\TerryTelephoneHomework.cs" />
     <Compile Include="Terry\TerryTest.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\DayValidator.cs" />
