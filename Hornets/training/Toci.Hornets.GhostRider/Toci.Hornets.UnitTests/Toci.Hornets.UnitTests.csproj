@@ -52,9 +52,22 @@
   </Choose>
   <ItemGroup>
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
-    <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
-    <Compile Include="Kalisz\Amman\UnitTester.cs" />
+    <Compile Include="Gliwice\Didi\StringManipulation\StringManipulationTest.cs" />
+    <Compile Include="Legnica\Patryk\Mock\FakeChecksumValidator.cs" />
+    <Compile Include="Legnica\Patryk\Mock\FakePeselDateValidator.cs" />
+    <Compile Include="Legnica\Patryk\PatrykPeselValidatorTests.cs" />
+    <Compile Include="Legnica\Patryk\PatrykStringManupulationsBaseTests.cs" />
+    <Compile Include="Rzeszow\Chojnecki\PeselTest\PESELTest.cs" />
+    <Compile Include="Rzeszow\Chojnecki\StringCheckTest\StringCheckTest.cs" />
+    <Compile Include="Rzeszow\Ksebal\Testy.cs" />
+    <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
+    <Compile Include="Rzeszow\Terry\StringManipulatorTest\TerryStringManipulatorTest.cs" />
+    <Compile Include="Kalisz\Adrianowsky94\PeselTester.cs" />
+    <Compile Include="Kalisz\Amman\AmmanUnitTester.cs" />
+    <Compile Include="Lausion\PeselValidator.cs" />
+    <Compile Include="Lausion\StringManipulation.cs" />
+    <Compile Include="S2yfr4nt\StringManipulations\StringManipulations.cs" />
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjStringManipulationsTest.cs" />
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjPeselValidatorTest.cs" />
@@ -70,11 +83,9 @@
     <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
     <Compile Include="Sieradz\TypowyAdam\PentagramTest.cs" />
     <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest.cs" />
-    <Compile Include="Sieradz\TypowyAdam\TypowyAdamStringManipulatorTest.cs" />
     <Compile Include="Sieradz\UCantTouchThis\DateValidatorTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\RandomStringGeneratorTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\StringComparatorsBenchmarks.cs" />
-    <Compile Include="Sieradz\UCantTouchThis\StringManipulationsTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\Undergtound1Test.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +136,11 @@
       <Project>{76565C63-6DC2-47B8-98D0-E2C57E1DD6E7}</Project>
       <Name>Toci.Hornets.Opole</Name>
     </ProjectReference>
+
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Wroclaw\Kollwing\" />
+
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

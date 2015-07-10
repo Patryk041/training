@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AFF2F49-28C1-4255-BE12-A9341E4E5045}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Toci.Hornets.GhostRider</RootNamespace>
+    <AssemblyName>Toci.Hornets.GhostRider</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrainingOne\AccessModifiers\AccessModifiersExamples.cs" />
+    <Compile Include="TrainingTwo\Delegates\SomeModel.cs" />
+    <Compile Include="TrainingTwo\Delegates\WarriorWhatever.cs" />
+    <Compile Include="TrainingTwo\DllShowdown\KlasaZBanki.cs" />
+    <Compile Include="TrainingTwo\ExtensionMethods\FrogieExtensions.cs" />
+    <Compile Include="TrainingTwo\ExtensionMethods\IFrogie.cs" />
+    <Compile Include="TrainingTwo\ExtensionMethods\NiceFrogie.cs" />
+    <Compile Include="TrainingTwo\ExtensionMethods\TestExtensionMethods.cs" />
+    <Compile Include="TrainingTwo\ExtensionMethods\VeryNiceFrogie.cs" />
+    <Compile Include="TrainingTwo\Generics\Collections\GenericCollection.cs" />
+    <Compile Include="TrainingTwo\Generics\Collections\IntCollection.cs" />
+    <Compile Include="TrainingTwo\Generics\Collections\StringCollection.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\Bishop.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\CarsFactory.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\ChessFactory.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\ChessFiguresGenericFactory.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\DictChessFactory.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\Figure.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\FigureType.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\GenericFactory.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\King.cs" />
+    <Compile Include="TrainingTwo\Generics\Factory\ChessFigures\Rook.cs" />
+    <Compile Include="TrainingTwo\Generics\TestGenerics.cs" />
+    <Compile Include="TrainingTwo\Homework\GhostRoderPeselValidator.cs" />
+    <Compile Include="TrainingTwo\Homework\PeselValidator.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Abstraction\DataTransmision.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Interfaces\ICommunicationMessage.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Messages\CommunicationMessage.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Messages\VoiceMessage.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Polymorphism.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\PolyShowdown.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Transmission\InternetTransmission.cs" />
+    <Compile Include="TrainingTwo\Omr\Communication\Transmission\PigeonTransmission.cs" />
+    <Compile Include="TrainingTwo\Omr\Fridge.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

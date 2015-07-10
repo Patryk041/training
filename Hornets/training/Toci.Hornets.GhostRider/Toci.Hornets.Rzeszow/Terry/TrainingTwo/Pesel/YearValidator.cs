@@ -8,7 +8,7 @@
 
         public static bool ValidateYear(PeselDate date)
         {
-            date.Year += 1000*date.Century;
+            date.Year += 100*date.Century;
             date.IsLeapYear = IsLeapYear(date);
             return (MinimumYear <= date.Year && date.Year <= MaximumYear);
         }
