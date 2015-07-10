@@ -51,6 +51,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Bytom\Vnth\UnitTest1.cs" />
     <Compile Include="Bytom\Vnth\VnthFirstUnitTest.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
@@ -137,11 +138,9 @@
       <Project>{76565C63-6DC2-47B8-98D0-E2C57E1DD6E7}</Project>
       <Name>Toci.Hornets.Opole</Name>
     </ProjectReference>
-
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Wroclaw\Kollwing\" />
-
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
