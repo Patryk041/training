@@ -70,6 +70,7 @@
     <Compile Include="Malwina\WyrozniajacaSieKlasaMalwinyChild.cs" />
     <Compile Include="Malwina\WyrozniajacaSieKlasaMalwinyYetOtherChild.cs" />
     <Compile Include="Polak\PolakStuff.cs" />
+    <Compile Include="Polak\Task2 - AnagramsByPolak\PolakAnagramsTask.cs" />
     <Compile Include="Polak\TelephoneTask1\TepelhoneTask1.cs" />
     <Compile Include="Polak\TrainingByPolak\TrainingClassPolakOne.cs" />
     <Compile Include="Polak\TrainingByPolak\TrainingClassPolakTwo.cs" />
