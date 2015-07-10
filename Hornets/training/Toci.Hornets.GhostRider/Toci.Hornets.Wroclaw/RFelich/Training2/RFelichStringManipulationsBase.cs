@@ -31,6 +31,12 @@ namespace Toci.Hornets.Wroclaw.RFelich.Training2
             int[] compareSubjectArray = new int[128];
             int[] compareSeekArray = new int[128];
 
+            for (int i = 0; i < 128; i++)
+            {
+                compareSeekArray[i] = 0;
+                compareSubjectArray[i] = 0;
+            }
+
             byte[] asciiSubject = Encoding.ASCII.GetBytes(subject);
             byte[] asciiSeek = Encoding.ASCII.GetBytes(seek);
 
