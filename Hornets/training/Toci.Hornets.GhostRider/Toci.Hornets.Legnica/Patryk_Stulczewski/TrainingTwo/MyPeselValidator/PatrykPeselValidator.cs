@@ -46,10 +46,11 @@ namespace Toci.Hornets.Legnica.Patryk_Stulczewski.TrainingTwo.MyPeselValidator
             if (pesel == null || !(Regex.IsMatch(pesel, "^[0-9]{11}$")))
                 return false;
 
-            return ValidateDate(pesel.SubstringToInt(0, 2),
-                                 pesel.SubstringToInt(2, 2),
-                                 pesel.SubstringToInt(4, 2))
-                    && Checksum(pesel);
+            int year = int.Parse(pesel.Substring(0, 2));
+            int month = int.Parse(pesel.Substring(2, 2));
+            int day = int.Parse(pesel.Substring(4, 2));
+
+            return Checksum(pesel) && ValidateDate(year,month,day);
         }
     }
 
