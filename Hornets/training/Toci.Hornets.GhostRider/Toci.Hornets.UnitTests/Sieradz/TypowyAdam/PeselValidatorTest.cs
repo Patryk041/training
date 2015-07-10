@@ -19,67 +19,57 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
     {
         private static string testDirectory = @"..\..\Sieradz\TypowyAdam\";
         private static string assemblyName = "Toci.Hornets.Sieradz";
-
-        private static List<object> PeselValidatorsList = new List<object>();
+        private static int iterationValue = 100;
+        private static List<object> peselValidatorsList = new List<object>();
         private static List<List<string>> peselListsList = new List<List<string>>();
-        private static Dictionary<string, Func<string, bool>> ValidatorFactory = new Dictionary<string, Func<string, bool>>();
-
+        private static Dictionary<string, Func<string, bool>> validatorFactory = new Dictionary<string, Func<string, bool>>();
+        private static Dictionary<string, long> benchmarkTimes = new Dictionary<string, long>();
+        
         [TestMethod]
         public void TestMethod1()
         {
-            /*
-            foreach (var item in ValidatorFactory)
-            {
-
-                for (int i = 0; i < 100; i++) //bez tego wykonuje się w 10ms co jest trochę za krótkie
-                {
-                    foreach (string testPesel in validPeselList)
-                    {
-                          Assert.IsTrue(item.Value(testPesel));
-                    }
-                    foreach (string testPesel in invalidPeselLIst)
-                    {
-                        Assert.IsFalse(item.Value(testPesel));
-                    }
-                    foreach (string testPesel in uncommonCasesList)
-                    {
-                        Assert.IsFalse(item.Value(testPesel));
-
-                    }
-                }
-
-            }
-            */
             Stopwatch benchmark = new Stopwatch();
             benchmark.Start();
             GenerateListOfPeselList(testDirectory);
             GenerateObjectList(assemblyName);
             GenerateMethodFactory();
             benchmark.Stop();
-            Debug.Print("Generating structures takes:{0}ms", benchmark.ElapsedMilliseconds);
-            foreach (var isPeselValid in ValidatorFactory)
+            benchmarkTimes.Add("Generating structures takes: ", benchmark.ElapsedMilliseconds);
+            foreach (var isPeselValid in validatorFactory)
             {
-                
+                benchmark.Reset();
                 benchmark.Start();
-                foreach (var peselLists in peselListsList)
+                for (int j = 0; j < iterationValue; j++)
                 {
-                    for(int i = 0; i<peselLists.Count-1;i++)//foreach (var pesel in peselLists)
+                    foreach (var peselLists in peselListsList)
                     {
-                        Assert.AreEqual(isPeselValid.Value(peselLists[i]), (peselLists.Last() == "true"));
+                        for (int i = 0; i < peselLists.Count - 1; i++) //foreach (var pesel in peselLists)
+                        {
+                            Assert.AreEqual(isPeselValid.Value(peselLists[i]), (peselLists.Last() == "true"));
+                        }
+
+
                     }
-
-
                 }
                 benchmark.Stop();
-                Debug.Print("{0}: {1}ms", isPeselValid.Key, Convert.ToString(benchmark.ElapsedMilliseconds));
+                benchmarkTimes.Add(isPeselValid.Key, benchmark.ElapsedMilliseconds);
+            }
+            PrintBenchmarkTimes();
+        }
+
+        private static void PrintBenchmarkTimes()
+        {
+            foreach (var benchmarkTime in benchmarkTimes)
+            {
+                Debug.Print("{0}: {1}ms", benchmarkTime.Key,benchmarkTime.Value);
             }
         }
 
         private static void GenerateMethodFactory()
         {
-            foreach (PeselValidator o in PeselValidatorsList)
+            foreach (PeselValidator o in peselValidatorsList)
             {
-                ValidatorFactory.Add(o.GetNick(), o.IsPeselValid);
+                validatorFactory.Add(o.GetNick(), o.IsPeselValid);
             }
         }
         private static void GenerateListOfPeselList(string initialDirectory)
@@ -111,7 +101,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
             Assembly myAssembly = AppDomain.CurrentDomain.Load(assemblyName);
             foreach (var type in myAssembly.GetTypes().Where(type => type.IsClass && type.IsSubclassOf(typeof(PeselValidator))))
             {
-                PeselValidatorsList.Add((PeselValidator) Activator.CreateInstance(type));
+                peselValidatorsList.Add((PeselValidator) Activator.CreateInstance(type));
             }   
         }
     }
