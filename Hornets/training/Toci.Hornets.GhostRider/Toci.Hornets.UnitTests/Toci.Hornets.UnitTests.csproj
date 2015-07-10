@@ -52,7 +52,6 @@
   <ItemGroup>
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
     <Compile Include="Gliwice\Didi\StringManipulation\StringManipulationTest.cs" />
-    <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
     <Compile Include="Gliwice\MoWerr\PeselValidator\MoWerrPeselValidatorTester.cs" />
     <Compile Include="Gliwice\Hipek\TaskTrainingTwoTest\HipekStringManipulationTest.cs" />
     <Compile Include="Gliwice\MoWerr\StringOperations\MoWerrStringOperationsTest.cs" />
