@@ -42,27 +42,21 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
             Tuple.Create(TrueForIsStringAnagramOfString, "IsAnagram", true),
             Tuple.Create(FalseForIsStringAnagramOfString, "IsAnagram", false)      
         };
-
-        
         
         
         [TestMethod]
         public void UCTT_StringManipulationsTest()
         {
             foreach (var testSequence in _testSequences)
-            {
                 TestElement(testSequence.Item1,testSequence.Item2,testSequence.Item3);
-            }
             
         }
 
         private void TestElement(List<string> seekList, string propertyName, bool condition)
         {
             foreach (var item in seekList)
-            {
                 Assert.AreEqual(condition, _manipulator.RunStringOperations(Subject,item)
                     .GetPropertyValue(propertyName));
-            }
         }
     }
 }

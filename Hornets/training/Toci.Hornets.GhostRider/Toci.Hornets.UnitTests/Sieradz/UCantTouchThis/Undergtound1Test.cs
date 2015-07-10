@@ -24,7 +24,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
         };
             
         [TestMethod]
-        public void UCantTouchThisStringsComparatorTest()
+        public void UCTTStringsComparatorTest()
         {
             foreach (var stringComparator in Comparators)
             {
