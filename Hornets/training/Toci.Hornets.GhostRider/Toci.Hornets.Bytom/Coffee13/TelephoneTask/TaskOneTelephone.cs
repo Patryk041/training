@@ -20,13 +20,13 @@ namespace Toci.Hornets.Bytom.Coffee13.TelephoneTask
             {
                 return new VoiceCommunication();
             }
-            throw new System.NotImplementedException();
+            return null;
         }
 
         protected override string MyNick()
         {
             return "Coffee13";
-            throw new System.NotImplementedException();
+            
         }
     }
 }
