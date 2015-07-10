@@ -54,6 +54,7 @@
     <Compile Include="Rzeszow\Chojnecki\PeselTest\PESELTest.cs" />
     <Compile Include="Rzeszow\Chojnecki\StringCheckTest\StringCheckTest.cs" />
     <Compile Include="Rzeszow\Ksebal\Testy.cs" />
+    <Compile Include="Rzeszow\SemiRafista\SeRaManipulatingStringsTest.cs" />
     <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
     <Compile Include="Kalisz\Amman\UnitTester.cs" />
