@@ -11,7 +11,10 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
         public void TestMethod1()
         {
             TypowyAdamStringManipulator StringManipulator = new TypowyAdamStringManipulator();
-            StringManipulator.RunStringOperations("abcd", "dccccba");
+            var result = StringManipulator.RunStringOperations("abcd", "dcba");
+            Assert.IsTrue(result.IsAnagram);
+            Assert.IsTrue(result.IsStringElementsInString);
+            Assert.IsFalse(result.IsStringInString);
         }
     }
 }
