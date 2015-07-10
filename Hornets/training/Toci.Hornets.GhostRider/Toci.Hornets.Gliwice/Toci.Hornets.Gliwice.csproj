@@ -46,6 +46,7 @@
     <Compile Include="Dziara\DziaraTelephoneInterpreter.cs" />
     <Compile Include="Dziara\TestClass.cs" />
     <Compile Include="Hipek\Example.cs" />
+    <Compile Include="Hipek\TaskTrainingTwo\StringManipulation\HipekStringManipulation.cs" />
     <Compile Include="Hipek\TelephoneTask\HipekTelephoneInterpreter.cs" />
     <Compile Include="MoWerr\MoWerrClass.cs" />
     <Compile Include="MoWerr\StringOperations\MoWerrStringOperations.cs" />
