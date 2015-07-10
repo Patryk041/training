@@ -16,7 +16,7 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntStringManipulations
             {
                 if (subject.Contains(character))
                 {
-                    subject.Remove(character);
+                    subject.Replace(character.ToString(), string.Empty);
                     
                     continue;
                 }
