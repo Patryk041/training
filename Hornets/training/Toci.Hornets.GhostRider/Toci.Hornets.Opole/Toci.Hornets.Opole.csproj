@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BartoszF\BF01TelephoneTask\BFTelephoneTask.cs" />
     <Compile Include="BartoszF\MojaKlasa.cs" />
     <Compile Include="DawidoXx\Jazda.cs" />
     <Compile Include="Dziusio\Andrzej.cs" />
