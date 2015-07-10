@@ -53,13 +53,20 @@
     <Compile Include="Chojnecki\TrainingTwoPESEL\MyPeselValidator.cs" />
     <Compile Include="Chojnecki\TrainingTwoString\StringCheck.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Foonesh\TrainingTwo\PeselValidator\PeselValidatorFoonesh.cs" />
+    <Compile Include="Foonesh\TrainingTwo\StringManipulations\StringManipulationsFoonesh.cs" />
     <Compile Include="KSebal\telephone\Telephone.cs" />
     <Compile Include="KSebal\traning2Homework\KsebalStringManipulationClass.cs" />
+    <Compile Include="KSebal\traning2Homework\Pesel\KsebalPeselValidator.cs" />
+    <Compile Include="KSebal\traning2Homework\Pesel\PeselDate.cs" />
+    <Compile Include="KSebal\traning2Homework\Pesel\PeselSumValidator.cs" />
     <Compile Include="KubaT\TelephoneTask\TelephonTaskHomework.cs" />
     <Compile Include="KubaT\TestClass.cs" />
     <Compile Include="KubaT\TrainingTwoStringOperation\KubaTStringOperations.cs" />
     <Compile Include="Malwina\ExtendingWarrior.cs" />
     <Compile Include="Malwina\IBaseForWyroznienie.cs" />
+    <Compile Include="Malwina\Pesell\DataCzyOk.cs" />
+    <Compile Include="Malwina\Pesell\MalwiPeselValidator.cs" />
     <Compile Include="Malwina\Telephone\ChooseRedOrBlue.cs" />
     <Compile Include="Malwina\WyrozniajacaSieKlasaMalwiny.cs" />
     <Compile Include="Malwina\WyrozniajacaSieKlasaMalwinyChild.cs" />
@@ -89,7 +96,9 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Polak\Task2- ValidatorsByPolak\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
