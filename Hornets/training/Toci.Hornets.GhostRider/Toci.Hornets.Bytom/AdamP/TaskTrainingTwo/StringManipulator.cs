@@ -21,7 +21,7 @@ namespace Toci.Hornets.Bytom.AdamP.TaskTrainingTwo
 
         protected override string GetNick()
         {
-            return "AdamP"
+            return "AdamP";
         }
 
         public override StringManipulationsResults RunStringOperations(string subject, string seek)
