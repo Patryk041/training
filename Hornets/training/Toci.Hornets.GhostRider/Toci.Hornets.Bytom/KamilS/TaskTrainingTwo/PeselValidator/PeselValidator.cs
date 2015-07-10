@@ -113,9 +113,9 @@ namespace Toci.Hornets.Bytom.KamilS.TaskTrainingTwo.PeselValidator
                         return true;
                     }
                 }
-            }
-            //else { return false; }      
+            }     
 	        return false;
+
         }
     }
 }

@@ -51,6 +51,7 @@
     <Compile Include="Duch\DuchGenFactory.cs" />
     <Compile Include="Duch\Homework 1\DuchTele.cs" />
     <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselFactory.cs" />
+    <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselUtils.cs" />
     <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselValidator.cs" />
     <Compile Include="Duch\Homework 2\StringManipulator\DuchStringManipulatro.cs" />
     <Compile Include="Duch\U1task\DuchStringComparator.cs" />
