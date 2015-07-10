@@ -55,7 +55,7 @@ namespace Toci.Hornets.Legnica.Michał_Zembik
                     }
                         
                 }
-
+            var v2 = seek.ToArray();
             var v1 = subject.ToArray();
             for (int i=0;i<d;i++)
             {
@@ -64,9 +64,10 @@ namespace Toci.Hornets.Legnica.Michał_Zembik
 
             }
             Array.Sort(v1);
-            
+            Array.Sort(v2);
+
             subject = new string(v1);
-            
+            seek = new string(v2);
     
             if (subject.Contains(seek))
 
@@ -80,11 +81,7 @@ namespace Toci.Hornets.Legnica.Michał_Zembik
             
         }
 
-        
-
-    
-        
-
+     
         // true: beata; ataeb, aateb, tbaea
         // false: beata; aaateb, fdwgdw
         protected override bool IsStringAnagramOfString(string subject, string seek)
