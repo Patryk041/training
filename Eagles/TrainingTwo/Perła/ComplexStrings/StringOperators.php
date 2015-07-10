@@ -8,7 +8,6 @@ class PerlaStringOperators {
         for ($i = 0; isset($string[$i]); $i++) {
             $num_of_chars++;
         }
-//var_dump($num_of_chars);
         return $num_of_chars;
     }
 
@@ -87,7 +86,4 @@ class PerlaStringOperators {
         }
         return FALSE;
     }
-    
 }
-$test = new PerlaStringOperators;
-var_dump($test->IsLetterInString('kosek', 'k'));

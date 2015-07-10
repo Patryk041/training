@@ -42,9 +42,9 @@ class PerlaPeselValidation extends PeselValidation {
 
 
         $checkSum = $peselCharsSumLastCharacter % 10;
-        if ($checkSum == $lastNumber AND $checkSum == 0) {
+        if ($checkSum === $lastNumber AND $checkSum === 0) {
             return TRUE;
-        } else if (10 - $checkSum == $lastNumber) {
+        } else if (10 - $checkSum === $lastNumber) {
             return TRUE;
         } else {
             return FALSE;
@@ -54,7 +54,7 @@ class PerlaPeselValidation extends PeselValidation {
     public function ValidatePesel($pesel) {
 
         $stringsHandler = new PerlaStringOperators;
-        if ($stringsHandler->PerlaStrLen($pesel) == 11) {
+        if ($stringsHandler->PerlaStrLen($pesel) === 11) {
             $lengthConfirmation = TRUE;
         } else {
             $lengthConfirmation = FALSE;
