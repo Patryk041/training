@@ -48,6 +48,8 @@
     <Compile Include="Hipek\Example.cs" />
     <Compile Include="Hipek\TelephoneTask\HipekTelephoneInterpreter.cs" />
     <Compile Include="MoWerr\MoWerrClass.cs" />
+    <Compile Include="MoWerr\PeselValidator\MoWerrDataValidator.cs" />
+    <Compile Include="MoWerr\PeselValidator\MoWerrPeselValidator.cs" />
     <Compile Include="MoWerr\StringOperations\MoWerrStringOperations.cs" />
     <Compile Include="PiotrekJ\Homework\TelephoneTask.cs" />
     <Compile Include="MoWerr\TelephoneTask\SendTypeImplementation.cs" />
