@@ -52,7 +52,7 @@ namespace Toci.Hornets.Gliwice.Soltys.TasksTrainingTwo
             var subjectCharArray = subject.ToArray();
             Array.Sort(subjectCharArray);
 
-            var seekCharArray = subject.ToArray();
+            var seekCharArray = seek.ToArray();
             Array.Sort(seekCharArray);
 
             if (subjectCharArray.Length != seekCharArray.Length)
@@ -75,6 +75,30 @@ namespace Toci.Hornets.Gliwice.Soltys.TasksTrainingTwo
         public override StringManipulationsResults RunStringOperations(string subject, string seek)
         {
             return Run(subject, seek);
+        }
+
+        protected override StringManipulationsResults Run(string subject, string seek)
+        {
+            var result = new StringManipulationsResults
+            {
+                Nick = GetNick(),
+                Subject = subject,
+                Seek = seek,
+                Type = GetType(),
+                IsStringElementsInString = IsStringElementsInString(subject, seek)
+            };
+
+            if (result.IsStringElementsInString == false)
+            {
+                result.IsStringInString = false;
+                result.IsAnagram = false;
+                return result;
+            }
+            
+            result.IsStringInString = IsStringInString(subject, seek);
+            result.IsAnagram = IsStringAnagramOfString(subject, seek);
+
+            return result;
         }
     }
 }
