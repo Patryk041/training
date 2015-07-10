@@ -55,6 +55,7 @@
     <Compile Include="RFelich\TestClass1.cs" />
     <Compile Include="Tszulczewski\ExampleClass.cs" />
     <Compile Include="Wyga\FirstTestClass.cs" />
+    <Compile Include="Wyga\Telephone Task\MyTelephoneTask.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
