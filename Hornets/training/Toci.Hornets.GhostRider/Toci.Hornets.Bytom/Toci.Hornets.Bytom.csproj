@@ -47,7 +47,7 @@
     <Compile Include="Coffee13\TelephoneTask\TaskOneTelephone.cs" />
     <Compile Include="Common\Interfaces\IPeselValidator.cs" />
     <Compile Include="KamilS\KamilS.cs" />
-    <Compile Include="KamilS\TaskTrainingTwo\PeselValidator\PeselValidator.cs" />
+    <Compile Include="KamilS\TaskTrainingTwo\PeselValidator\KamilSPeselValidator.cs" />
     <Compile Include="KamilS\TaskTrainingTwo\String\StringManipulator.cs" />
     <Compile Include="KamilS\TelephoneTask\TelephoneTaskClass.cs" />
     <Compile Include="Pr0fes0r\TelephoneTask\Telefon.cs" />

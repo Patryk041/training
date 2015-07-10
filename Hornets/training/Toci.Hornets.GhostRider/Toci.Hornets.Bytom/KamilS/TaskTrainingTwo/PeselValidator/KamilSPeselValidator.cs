@@ -2,7 +2,7 @@
 
 namespace Toci.Hornets.Bytom.KamilS.TaskTrainingTwo.PeselValidator
 {
-    public class PeselValidator : GhostRider.YourWork.TasksTrainingTwo.PeselValidator
+    public class KamilSPeselValidator : GhostRider.YourWork.TasksTrainingTwo.PeselValidator
     {
         protected override string CutOffDate(string pesel)
         {
@@ -114,7 +114,7 @@ namespace Toci.Hornets.Bytom.KamilS.TaskTrainingTwo.PeselValidator
                     }
                 }
             }
-            else { return false; }            
+            return false;
         }
     }
 }
