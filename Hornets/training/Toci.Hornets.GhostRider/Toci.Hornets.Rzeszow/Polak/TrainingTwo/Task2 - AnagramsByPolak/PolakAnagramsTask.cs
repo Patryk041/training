@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
-namespace Toci.Hornets.Rzeszow.Polak.Task2___AnagramsByPolak
+namespace Toci.Hornets.Rzeszow.Polak.TrainingTwo
 {
     public   class PolakAnagramsTask : GhostRider.YourWork.TasksTrainingTwo.GhostRiderStringManipulationsBase
     {
