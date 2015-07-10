@@ -25,6 +25,7 @@ namespace Toci.Hornets.Wroclaw.Kollwing
                 return new VoiceCommunication();
             }
 
+
             return null;
         }
 
