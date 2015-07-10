@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -53,13 +54,33 @@
     <Compile Include="Bytom\Vnth\VnthFirstUnitTest.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
-    <Compile Include="Kalisz\Amman\UnitTester.cs" />
+    <Compile Include="Gliwice\Didi\StringManipulation\StringManipulationTest.cs" />
+    <Compile Include="Legnica\Patryk\Mock\FakeChecksumValidator.cs" />
+    <Compile Include="Legnica\Patryk\Mock\FakePeselDateValidator.cs" />
+    <Compile Include="Legnica\Patryk\PatrykPeselValidatorTests.cs" />
+    <Compile Include="Legnica\Patryk\PatrykStringManupulationsBaseTests.cs" />
+    <Compile Include="Rzeszow\Chojnecki\PeselTest\PESELTest.cs" />
+    <Compile Include="Rzeszow\Chojnecki\StringCheckTest\StringCheckTest.cs" />
+    <Compile Include="Rzeszow\Ksebal\Testy.cs" />
+    <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
+    <Compile Include="Rzeszow\Terry\StringManipulatorTest\TerryStringManipulatorTest.cs" />
+    <Compile Include="Kalisz\Adrianowsky94\PeselTester.cs" />
+    <Compile Include="Kalisz\Amman\AmmanUnitTester.cs" />
+    <Compile Include="Lausion\PeselValidator.cs" />
+    <Compile Include="Lausion\StringManipulation.cs" />
+    <Compile Include="S2yfr4nt\StringManipulations\StringManipulations.cs" />
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
+    <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjStringManipulationsTest.cs" />
+    <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjPeselValidatorTest.cs" />
+    <Compile Include="Sieradz\DeeJay\TelephoneTask\DjTraceListener.cs" />
+    <Compile Include="Sieradz\DeeJay\TelephoneTask\DjTelephoneTaskTest.cs" />
     <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sieradz\Duch\HW2\DuchHW2Test.cs" />
     <Compile Include="Sieradz\Kamil\KamilTest1.cs" />
     <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
     <Compile Include="Sieradz\Quicksilver\LessCasualSC.cs" />
+    <Compile Include="Sieradz\Quicksilver\TwoQs\QuicksilverStringManipulatorUnitTest.cs" />
     <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
     <Compile Include="Sieradz\TypowyAdam\PentagramTest.cs" />
     <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest.cs" />
@@ -116,6 +137,11 @@
       <Project>{76565C63-6DC2-47B8-98D0-E2C57E1DD6E7}</Project>
       <Name>Toci.Hornets.Opole</Name>
     </ProjectReference>
+
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Wroclaw\Kollwing\" />
+
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
