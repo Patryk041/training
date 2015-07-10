@@ -2,7 +2,7 @@
 using Toci.Hornets.GhostRider.TElephoneCommunication;
 using Toci.Hornets.GhostRider.YourWork.TelephoneTask;
 
-namespace Toci.Hornets.Wroclaw.Perła.Homework_Telephone
+namespace Toci.Hornets.Wroclaw.Perła.TelephoneTask
 {
     class ChoseOperation : TelephoneInterpreter
     {
