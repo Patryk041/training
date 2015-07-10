@@ -4,13 +4,19 @@ using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
 
+
 namespace Toci.Hornets.Sieradz.Duch.Homework_2.PeselValidator
 {
     public class DuchPeselValidator : GhostRider.YourWork.TasksTrainingTwo.PeselValidator
     {
+        private const int   PeselDateStart = 0,
+                            PeselDateEnd = 6;
+
+        readonly DuchPeselFactory _peselDateFactory = new DuchPeselFactory();
+
         protected override string CutOffDate(string pesel)
         {
-            return pesel.Substring(0, 6);
+            return pesel.Substring(PeselDateStart, PeselDateEnd);
         }
 
         protected override bool Checksum(string pesel)
@@ -20,11 +26,10 @@ namespace Toci.Hornets.Sieradz.Duch.Homework_2.PeselValidator
 
         protected override bool ValidateDate(int year, int month, int day)
         {
-            if (day > 31) return false;
-            return
-                month < 13 &&
-                month > 0 &&
-                PeselValidatorUtils.IsDayValid(year, month, day);
+
+            return DuchPeselUtils.IsMonthLenghtValid(month) &&
+                    DuchPeselUtils.IsDayAmountValid(day) &&
+                    PeselValidatorUtils.IsDayValid(year, month, day);
         }
 
         public override string GetNick()
@@ -34,28 +39,18 @@ namespace Toci.Hornets.Sieradz.Duch.Homework_2.PeselValidator
 
         public override bool IsPeselValid(string pesel)
         {
-            if (pesel.Length != 11) return false;
-            if (!Checksum(pesel)) return false;
-
-            var date = CutOffDate(pesel);
-
-            int[] _pesel =
-                {
-                    Int32.Parse(date.Substring(0, 2)),
-                    Int32.Parse(date.Substring(2,2)),
-                    Int32.Parse(date.Substring(4,2))
-                };
-           
-
-            var peselFactory = new DuchPeselFactory();
-            var res = peselFactory.GetInstance(_pesel[1]);
-            if (res == null) return false;
+            var date = DuchPeselUtils.PeselDateMagic(CutOffDate(pesel));
             
-            _pesel[0] += res[0];
-            _pesel[1] += res[1];
+            var dateModificationValues = _peselDateFactory.GetInstance(date[1]);
+            if (dateModificationValues == null)                    return false;
+                    
+            date[0] += dateModificationValues[0];
+            date[1] -= dateModificationValues[1];
 
-            
-            return ValidateDate(_pesel[0], _pesel[1], _pesel[2]);
+
+            return DuchPeselUtils.IsPeselLenghtValid(pesel) &&
+                   Checksum(pesel)                          &&
+                   ValidateDate(date[0], date[1], date[2]);
         }
     }
 }
