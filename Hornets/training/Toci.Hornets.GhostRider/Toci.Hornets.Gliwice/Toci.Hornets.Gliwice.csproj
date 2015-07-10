@@ -62,6 +62,8 @@
     <Compile Include="Soltys\HelloWorld.cs" />
     <Compile Include="Soltys\TasksTrainingTwo\StringManipulator.cs" />
     <Compile Include="usppat\classiscoming.cs" />
+    <Compile Include="usppat\TasksTrainingTwo\PeselValidator\PeselValidatorVerUsppat.cs" />
+    <Compile Include="usppat\TasksTrainingTwo\StringManipulations\StringManipulatorVerUsppat.cs" />
     <Compile Include="usppat\telephone\TelephoneHomework.cs" />
   </ItemGroup>
   <ItemGroup>
