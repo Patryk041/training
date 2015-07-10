@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.Gliwice.MoWerr.StringOperations;
 
 namespace Toci.Hornets.UnitTests.Gliwice.MoWerr.StringOperations

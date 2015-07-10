@@ -58,27 +58,15 @@ namespace Toci.Hornets.Gliwice.MoWerr.StringOperations
                 Nick = GetNick(),
                 Subject = subject,
                 Seek = seek,
-                Type = GetType()
+                Type = GetType(),
+                IsAnagram = IsStringAnagramOfString(subject, seek),
+                IsStringInString = IsStringInString(subject, seek)
             };
 
-            if (IsStringAnagramOfString(subject, seek))
-            {
-                result.IsAnagram = true;
+            if (result.IsAnagram || result.IsStringInString)
                 result.IsStringElementsInString = true;
-                result.IsStringInString = IsStringInString(subject, seek);
-            }
-            else if (IsStringInString(subject, seek))
-            {
-                result.IsStringInString = true;
-                result.IsStringElementsInString = true;
-                result.IsAnagram = false;
-            }
             else
-            {
-                result.IsAnagram = false;
-                result.IsStringInString = false;
                 result.IsStringElementsInString = IsStringElementsInString(subject, seek);
-            }
 
             return result;
         }
