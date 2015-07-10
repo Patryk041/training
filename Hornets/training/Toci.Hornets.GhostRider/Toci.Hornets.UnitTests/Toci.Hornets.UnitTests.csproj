@@ -51,6 +51,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Bytom\Coffee13\StringTest.cs" />
+    <Compile Include="Bytom\Coffee13\UnitTest1.cs" />
     <Compile Include="Bytom\Vnth\UnitTest1.cs" />
     <Compile Include="Bytom\Vnth\VnthFirstUnitTest.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
