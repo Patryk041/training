@@ -45,16 +45,22 @@
     <Compile Include="GhostRider\HowDoWeWorkOnBranches.cs" />
     <Compile Include="Hoosarr\TestClass.cs" />
     <Compile Include="Lausion\ExampeClass.cs" />
+    <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Day.cs" />
+    <Compile Include="Lausion\TasksTraningTwo\PeselValidator\LausionPeselValidator.cs" />
+    <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Month.cs" />
+    <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Year.cs" />
+    <Compile Include="Lausion\TasksTraningTwo\StringManipulation\LausionStringManipulation.cs" />
     <Compile Include="Maly\TelephoneTask.cs" />
     <Compile Include="Lausion\TelephoneTask\SendMessage.cs" />
     <Compile Include="Maly\TestBranch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="S2yfr4nt\Branch.cs" />
-    <Compile Include="S2yfr4nt\Homework\PeselValidator.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntDayValidation.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntMonthValidation.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntYearValidation.cs" />
+    <Compile Include="S2yfr4nt\Homework\S2yfr4ntPeselValidator\S2yfr4ntPeselFactory.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntPeselValidator\S2yfr4ntPeselValidator.cs" />
+    <Compile Include="S2yfr4nt\Homework\S2yfr4ntStringManipulations\S2yfr4ntStringManipulations.cs" />
+    <Compile Include="S2yfr4nt\S2yfr4ntGenericFactory.cs" />
     <Compile Include="S2yfr4nt\TelephoneHomework\S2yfr4ntTelephoneInterpreter.cs" />
     <Compile Include="Szpula\HowTo.cs" />
   </ItemGroup>
