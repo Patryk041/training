@@ -57,6 +57,7 @@
     <Compile Include="Jake\JakeTest.cs" />
     <Compile Include="Kamil\ClassKamil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quicksilver\TasksTrainingTwoQs\QuicksilverPeselValidator.cs" />
     <Compile Include="Quicksilver\TasksTrainingTwoQs\QuicksilverStringManipulator.cs" />
     <Compile Include="Quicksilver\TelephoneTaskQs\WhoYouGonnaCall.cs" />
     <Compile Include="Quicksilver\testByQuicksilver.cs" />

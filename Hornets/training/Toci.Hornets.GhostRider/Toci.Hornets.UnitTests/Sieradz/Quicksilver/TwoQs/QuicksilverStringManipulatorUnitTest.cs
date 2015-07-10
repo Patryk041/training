@@ -11,7 +11,11 @@ namespace Toci.Hornets.UnitTests.Sieradz.Quicksilver.TwoQs
         public void TestMethod1()
         {
             QuicksilverStringManipulator comparator = new QuicksilverStringManipulator();
-            comparator.RunStringOperations("abcd", "dccccba");
+            var results = comparator.RunStringOperations("abcd", "dccccba");
+            Assert.IsTrue(results.IsStringElementsInString);
+            Assert.IsFalse(results.IsAnagram);
+            //Assert.AreEqual(results.IsAnagram && results.IsStringElementsInString, true);
+            results = comparator.RunStringOperations("alamakota", "kot");
         }
     }
 }
