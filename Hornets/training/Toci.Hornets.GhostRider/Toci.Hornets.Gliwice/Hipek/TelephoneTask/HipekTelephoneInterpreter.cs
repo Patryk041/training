@@ -16,7 +16,7 @@ namespace Toci.Hornets.Gliwice.Hipek.TelephoneTask
             {1, new PhotoCommunication()},
             {2, new SmsCommunication()},
             {3, new VoiceCommunication()}
-        }; 
+        };
 
         protected override ITelephoneCommunication ChooseMedium(int chosenOption)
         {
