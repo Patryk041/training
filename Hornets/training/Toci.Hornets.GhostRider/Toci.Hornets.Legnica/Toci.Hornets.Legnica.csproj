@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Filip Sokolowski\homeWork\peselValidator\getDate.cs" />
+    <Compile Include="Filip Sokolowski\homeWork\peselValidator\peselValidator.cs" />
+    <Compile Include="Filip Sokolowski\homeWork\stringManipulator\stringManipulator.cs" />
     <Compile Include="Filip Sokolowski\test.cs" />
     <Compile Include="Mateusz Smigowski\NewClass.cs" />
     <Compile Include="Mateusz_Malolepszy\NewTestClass.cs" />
