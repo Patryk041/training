@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Toci.Hornets.Sieradz.UCantTouchThis
+namespace Toci.Hornets.Sieradz.UCantTouchThis.ExtensionMethods
 {
     public static class UCTT_StringExtensions
     {
@@ -25,7 +25,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis
             return !(startIndex < 0 || startIndex > endIndex);
         }
 
-        private static int GetNumber(string stringWithNumber, int startIndex, int endIndex)
+        public static int GetNumber(string stringWithNumber, int startIndex, int endIndex)
         {
             int number = 0;
             for (int i = startIndex; i <= endIndex; i++)
