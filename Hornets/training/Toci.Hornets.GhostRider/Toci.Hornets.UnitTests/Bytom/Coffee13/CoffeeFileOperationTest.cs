@@ -13,10 +13,10 @@ namespace Toci.Hornets.UnitTests.Bytom.Coffee13
         {
 
             //path do refaktoryzacji 
-            var path = "~\\..\\Bytom\\Coffee13\\ContentFile.txt";
+            var path = @"..\..\Bytom\Coffee13\ContentFile.txt";
             
 
-            CoffeeFileOperation test = new CoffeeFileOperation();
+            var test = new CoffeeFileOperation();
 
             Assert.AreEqual(test.GetFileContent(path), "Dane testowe");
 
