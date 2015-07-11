@@ -40,23 +40,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Diana\exampleDiana.cs" />
-<<<<<<< HEAD
-=======
-
     <Compile Include="Didi\PeselTask\DataClass.cs" />
     <Compile Include="Didi\PeselTask\ValidationPeselClass.cs" />
-
     <Compile Include="Didi\StringManiupulation\StringManipulationClass.cs" />
-    <Compile Include="Didi\TelephoneTask\GetMessageClass.cs" />
->>>>>>> master
     <Compile Include="Didi\WorkWithBranchClass.cs" />
     <Compile Include="Dziara\TestClass.cs" />
     <Compile Include="Hipek\Example.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Hipek\TaskTrainingTwo\StringManipulation\HipekStringManipulation.cs" />
     <Compile Include="Hipek\TelephoneTask\HipekTelephoneInterpreter.cs" />
->>>>>>> master
     <Compile Include="MoWerr\MoWerrClass.cs" />
     <Compile Include="MoWerr\PeselValidator\MoWerrDataValidator.cs" />
     <Compile Include="MoWerr\PeselValidator\MoWerrPeselValidator.cs" />
@@ -84,6 +75,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Didi\TelephoneTask\" />
     <Folder Include="PiotrekJ\Homework\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -50,19 +50,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Bytom\Coffee13\StringTest.cs" />
     <Compile Include="Bytom\Coffee13\UnitTest1.cs" />
     <Compile Include="Bytom\Vnth\VnthPeselValidatorTest.cs" />
     <Compile Include="Bytom\Vnth\VnthFirstUnitTest.cs" />
-=======
->>>>>>> 6b2b8d1c20c534ffd45d9865d6303f5706a5ff2a
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
-<<<<<<< HEAD
-    <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
     <Compile Include="Kalisz\Amman\UnitTester.cs" />
-    <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
-=======
     <Compile Include="Gliwice\Didi\Pesel\PeselValidationTest.cs" />
     <Compile Include="Gliwice\Didi\StringManipulation\StringManipulationTest.cs" />
     <Compile Include="Gliwice\MoWerr\PeselValidator\MoWerrPeselValidatorTester.cs" />
@@ -91,17 +84,13 @@
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjStringManipulationsTest.cs" />
     <Compile Include="Sieradz\DeeJay\TelephoneTask\DjTraceListener.cs" />
     <Compile Include="Sieradz\DeeJay\TelephoneTask\DjTelephoneTaskTest.cs" />
->>>>>>> master
     <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sieradz\Kamil\KamilTest1.cs" />
     <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
     <Compile Include="Sieradz\Quicksilver\LessCasualSC.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Sieradz\Quicksilver\TwoQs\QuicksilverStringManipulatorUnitTest.cs" />
     <Compile Include="Sieradz\TypowyAdam\TypowyAdamStringManipulatorTest.cs" />
->>>>>>> master
     <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
     <Compile Include="Sieradz\TypowyAdam\PentagramTest.cs" />
     <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest.cs" />
