@@ -68,7 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Szary\KlasaSzarego.cs" />
     <Compile Include="Szary\TelephoneTask\TelephoneGrayHomework.cs" />
+    <Compile Include="Vernathic\Kir\VnthPerformTransfers.cs" />
     <Compile Include="Vernathic\Kir\VnthTransfer.cs" />
+    <Compile Include="Vernathic\Kir\VnthTransferHandle.cs" />
     <Compile Include="Vernathic\Kir\VnthTransferParser.cs" />
     <Compile Include="Vernathic\TelephoneTask\VTelephoneTask.cs" />
     <Compile Include="Vernathic\TrainingTwo\VnthPeselValidator.cs" />
@@ -85,6 +87,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Coffee13\TaskTrainingTree\ContentFile.txt" />
+    <Content Include="Vernathic\Kir\IBANs.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Vernathic\Kir\transfers.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
