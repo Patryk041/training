@@ -21,7 +21,6 @@
                 case 12:
                 {
                     return 31;
-                    break;
                 }
                 case 4:
                 case 6:

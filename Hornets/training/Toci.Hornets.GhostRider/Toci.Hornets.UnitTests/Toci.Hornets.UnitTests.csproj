@@ -53,7 +53,11 @@
   <ItemGroup>
     <Compile Include="Bytom\Vnth\UnitTest1.cs" />
     <Compile Include="Bytom\Vnth\VnthFirstUnitTest.cs" />
+    <Compile Include="GhostRider\Abstraction\TestBase.cs" />
+    <Compile Include="GhostRider\GeneralTests\DebugingTesting.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
+    <Compile Include="GhostRider\PeselTask\PeselTaskTest.cs" />
+    <Compile Include="GhostRider\TextstTask\TextstTaskTest.cs" />
     <Compile Include="Gliwice\Didi\Pesel\PeselValidationTest.cs" />
     <Compile Include="Gliwice\Didi\StringManipulation\StringManipulationTest.cs" />
     <Compile Include="Gliwice\MoWerr\PeselValidator\MoWerrPeselValidatorTester.cs" />
