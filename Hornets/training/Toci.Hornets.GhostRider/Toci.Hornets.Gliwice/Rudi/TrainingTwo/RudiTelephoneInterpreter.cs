@@ -11,7 +11,7 @@ namespace Toci.Hornets.Gliwice.Rudi
 {
     public class RudiTelephoneInterpreter : TelephoneInterpreter
     {
- 
+
         protected override ITelephoneCommunication ChooseMedium(int choosenOption)
         {
 

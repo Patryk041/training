@@ -40,11 +40,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Diana\exampleDiana.cs" />
-    <Compile Include="Didi\PeselTask\IData.cs" />
-    <Compile Include="Didi\PeselTask\DataClass.cs" />
-    <Compile Include="Didi\PeselTask\DataFactory.cs" />
-    <Compile Include="Didi\PeselTask\MonthClass.cs" />
-    <Compile Include="Didi\PeselTask\YearClass.cs" />
     <Compile Include="Didi\StringManiupulation\StringManipulationClass.cs" />
     <Compile Include="Didi\TelephoneTask\GetMessageClass.cs" />
     <Compile Include="Didi\WorkWithBranchClass.cs" />
