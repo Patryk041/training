@@ -126,10 +126,6 @@
       <Project>{bfe04213-e553-481b-9b82-44312e146379}</Project>
       <Name>Toci.Hornets.Gliwice</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Toci.Hornets.Kalisz\Toci.Hornets.Kalisz.csproj">
-      <Project>{52dced43-e95b-43ec-9c27-6191e06b8258}</Project>
-      <Name>Toci.Hornets.Kalisz</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Toci.Hornets.Legnica\Toci.Hornets.Legnica.csproj">
       <Project>{9e9ec7c9-b279-42a1-8be4-90f814c37fdb}</Project>
       <Name>Toci.Hornets.Legnica</Name>
