@@ -8,20 +8,15 @@ namespace Toci.Hornets.Legnica.Patryk_Stulczewski.TrainingTwo.MyPeselValidator
         public bool ValidateDate(int year, int month, int day)
         {
             try{
-                int preciseYear = GenerateYearByMonth(month) + year;
-                if (IsCorrectDate(preciseYear, month % 20, day))
+                int preciseYear = YearByPeselMonthGenerator.GetYear(month) + year;
+                if (DaysInMonthValidator.IsCorrectCountOfDays(year, month % 20, day))
                     return !IsDateInFuture(preciseYear, month % 20, day);
             }
-            catch (Exception ex)
+            catch
             {
                 // ignored
             }
             return false;
-        }
-
-        private bool IsCorrectDate(int year, int month, int day)
-        {
-            return DaysInMonthValidator.IsCorrectCountOfDays(year, month, day);
         }
 
         private bool IsDateInFuture(int year, int month, int day)
@@ -30,9 +25,5 @@ namespace Toci.Hornets.Legnica.Patryk_Stulczewski.TrainingTwo.MyPeselValidator
             return dt > DateTime.Now;
         }
 
-        private int GenerateYearByMonth(int month)
-        {
-            return YearByPeselMonthGenerator.GetYear(month);
-        }
     }
 }
