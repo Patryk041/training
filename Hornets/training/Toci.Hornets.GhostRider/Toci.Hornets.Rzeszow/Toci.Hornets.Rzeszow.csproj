@@ -44,7 +44,6 @@
     <Compile Include="Agata\YaghaTelephoneTask\YaghaCommunicationsMethods.cs" />
     <Compile Include="AndrzejD\Class1.cs" />
     <Compile Include="Chojnecki\AndrzejJestem.cs" />
-    <Compile Include="bin\TelePhone\MyPhone.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="KSebal\Class1.cs" />
     <Compile Include="KubaT\TestClass.cs" />
@@ -68,7 +67,6 @@
     <Compile Include="Polak\TelephoneTask1\TepelhoneTask1.cs" />
     <Compile Include="SemiRafista\SRTest.cs" />
     <Compile Include="Sherpin\SherPhoneTask1\SherPhoneChooseTypeOfMessage.cs" />
-    <Compile Include="Sherpin\SherPhoneTask\SherPhoneChooseTypeOfMessage.cs" />
     <Compile Include="Sherpin\SherPhoneTask\SherPhoneChooseTypeOfMessage.cs" />
     <Compile Include="Polak\TrainingByPolak\TrainingClassPolakOne.cs" />
     <Compile Include="Polak\TrainingByPolak\TrainingClassPolakTwo.cs" />
