@@ -1,15 +1,21 @@
 ﻿using Toci.Hornets.Sieradz.Undergroun1Task.Interface;
+using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
 {
-    public class UCantTouchThisAutismPeselValisator : IPeselValidator
+    public class UCantTouchThisAutismPeselValisator : GhostRider.YourWork.TasksTrainingTwo.PeselValidator
     {
         //normal version coming soon
         //autism not final
 
         private const int upperBoundary = '9' + 1;
 
-        public bool IsPeselValid(string pesel)
+        public override string GetNick()
+        {
+            return "UCantTouchThisAutism";
+        }
+
+        public override bool IsPeselValid(string pesel)
         {
             int day, month, year;
             char[] peselArray = pesel.ToCharArray();
@@ -23,7 +29,17 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
             return IsChecksumOk(peselArray);
         }
 
-        public bool ValidateDate(int year, int month, int day)
+        protected override string CutOffDate(string pesel)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        protected override bool Checksum(string pesel)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        protected override bool ValidateDate(int year, int month, int day)
         {
             if (month > 80)
             {

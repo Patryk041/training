@@ -11,12 +11,14 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
     public class StringComparatorsBenchmarks
     {
         private const string Pattern = "{0} time: {1} ms";
+        private const int NumberOfRandomStringPairs = 1000;
+        private const int LengthOfRandomString = 32;
 
 
         [TestMethod]
         public void UCTTStringComparatorsBenchmark()
         {
-            List<string[]> stringsToCompare = UCTT_RandomStingGenerator.GenerateRandomStringPaitList(1000000, 32);
+            List<string[]> stringsToCompare = UCTT_RandomStingGenerator.GenerateRandomStringPaitList(NumberOfRandomStringPairs, LengthOfRandomString);
 
             foreach (var item in StringComparatorsFactory.ComparatorsFactory)
             {
@@ -31,12 +33,9 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
             timer.Start();
 
             foreach (var item in testList)
-            {
                 comparatorFunc(item[0], item[1]);
-            }
 
             timer.Stop();
-
             return timer.ElapsedMilliseconds;
         }
          

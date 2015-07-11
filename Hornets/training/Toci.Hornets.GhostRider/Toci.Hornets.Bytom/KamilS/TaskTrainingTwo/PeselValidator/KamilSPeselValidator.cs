@@ -113,8 +113,14 @@ namespace Toci.Hornets.Bytom.KamilS.TaskTrainingTwo.PeselValidator
                         return true;
                     }
                 }
+<<<<<<< HEAD:Hornets/training/Toci.Hornets.GhostRider/Toci.Hornets.Bytom/KamilS/TaskTrainingTwo/PeselValidator/KamilSPeselValidator.cs
             }
             return false;
+=======
+            }     
+	        return false;
+
+>>>>>>> master:Hornets/training/Toci.Hornets.GhostRider/Toci.Hornets.Bytom/KamilS/TaskTrainingTwo/PeselValidator/PeselValidator.cs
         }
     }
 }
