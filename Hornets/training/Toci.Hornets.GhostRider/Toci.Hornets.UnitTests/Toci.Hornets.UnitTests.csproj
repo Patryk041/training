@@ -98,6 +98,8 @@
     <Compile Include="Sieradz\UCantTouchThis\StringComparatorsBenchmarks.cs" />
     <Compile Include="Sieradz\UCantTouchThis\StringManipulationsTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\Undergtound1Test.cs" />
+    <Compile Include="Wrocław\gipson\PeselValidatorTest.cs" />
+    <Compile Include="Wrocław\gipson\StringManipulationsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.Bytom\Toci.Hornets.Bytom.csproj">
