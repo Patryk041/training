@@ -60,9 +60,6 @@
     <Compile Include="KSebal\traning2Homework\Pesel\KsebalPeselValidator.cs" />
     <Compile Include="KSebal\traning2Homework\Pesel\PeselDate.cs" />
     <Compile Include="KSebal\traning2Homework\Pesel\PeselSumValidator.cs" />
-    <Compile Include="KSebal\KubaT\TelephoneTask\TelephonTaskHomework.cs" />
-    <Compile Include="KSebal\KubaT\TestClass.cs" />
-    <Compile Include="KSebal\KubaT\TrainingTwoStringOperation\KubaTStringOperations.cs" />
     <Compile Include="KubaT\TelephoneTask\TelephonTaskHomework.cs" />
     <Compile Include="KubaT\TestClass.cs" />
     <Compile Include="KubaT\TrainingTwoStringOperation\KubaTStringOperations.cs" />
@@ -86,7 +83,6 @@
     <Compile Include="SemiRafista\TrainingTwoPESEL\SeRaDataValidator.cs" />
     <Compile Include="SemiRafista\TrainingTwoPESEL\SeRaPeselValidator.cs" />
     <Compile Include="SemiRafista\TrainingTwoStringManipulations\SeRaManipulatingStrings.cs" />
-    <Compile Include="Sherpin\SherPhoneTask1\SherPhoneChooseTypeOfMessage.cs" />
     <Compile Include="Sherpin\SherPhoneTask\SherPhoneChooseTypeOfMessage.cs" />
     <Compile Include="Sherpin\SherpinClass.cs" />
     <Compile Include="Sherpin\TasksTrainingTwo\SherDateValidator.cs" />
