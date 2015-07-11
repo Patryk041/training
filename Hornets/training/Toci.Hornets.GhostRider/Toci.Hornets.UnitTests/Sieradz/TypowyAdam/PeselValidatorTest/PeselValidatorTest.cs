@@ -99,7 +99,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
         {
 
             Assembly myAssembly = AppDomain.CurrentDomain.Load(assemblyName);
-            foreach (var type in myAssembly.GetTypes().Where(type => type.IsClass && type.IsSubclassOf(typeof(PeselValidator))))
+            foreach (Type type in myAssembly.GetTypes().Where(type => type.IsClass && type.IsSubclassOf(typeof(PeselValidator))))
             {
                 peselValidatorsList.Add((PeselValidator) Activator.CreateInstance(type));
             }   
