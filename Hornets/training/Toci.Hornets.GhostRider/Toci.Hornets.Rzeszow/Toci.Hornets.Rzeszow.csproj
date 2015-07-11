@@ -46,7 +46,6 @@
     <Compile Include="Chojnecki\AndrzejJestem.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="KSebal\Class1.cs" />
-    <Compile Include="KubaT\TestClass.cs" />
     <Compile Include="Foonesh\TrainingTwo\PeselValidator\PeselValidatorFoonesh.cs" />
     <Compile Include="Foonesh\TrainingTwo\StringManipulations\StringManipulationsFoonesh.cs" />
     <Compile Include="KSebal\telephone\Telephone.cs" />
