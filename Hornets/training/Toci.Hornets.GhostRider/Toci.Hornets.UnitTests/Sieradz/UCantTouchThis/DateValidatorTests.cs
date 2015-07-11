@@ -33,14 +33,8 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
         public void UCTTDateValidatorTest()
         {
             var time = Stopwatch.StartNew();
-<<<<<<< HEAD
-            correctDatesList.ForEach(date => Assert.IsTrue(DateValidatorUtils.IsDateValidAndAutistic(date[0], date[1], date[2])));
-            
-            incorrectDatesList.ForEach(date => Assert.IsFalse(DateValidatorUtils.IsDateValidAndAutistic(date[0], date[1], date[2])));
-=======
             _correctDatesList.ForEach(date => Assert.IsTrue(UCTT_PeselValidatorUtils.IsDateValid(date[0], date[1], date[2])));
             _incorrectDatesList.ForEach(date => Assert.IsFalse(UCTT_PeselValidatorUtils.IsDateValid(date[0], date[1], date[2])));
->>>>>>> master
             time.Stop();
             Debug.WriteLine("Time: " + time.ElapsedMilliseconds + " ms");
         }

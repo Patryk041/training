@@ -5,13 +5,11 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-<<<<<<< HEAD
-=======
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 using Toci.Hornets.Sieradz.Duch.Homework_2.PeselValidator;
 using Toci.Hornets.Sieradz.Quicksilver.TasksTrainingTwoQs;
->>>>>>> master
 using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
+using Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo;
 using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator;
 
 namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
@@ -45,23 +43,11 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
                 {
                     foreach (var peselLists in peselListsList)
                     {
-<<<<<<< HEAD
-                        Assert.IsTrue(item.Value(testPesel));
-                    }
-                    foreach (string testPesel in invalidPeselLIst)
-                    {
-                        Assert.IsFalse(item.Value(testPesel));
-                    }
-                    foreach (string testPesel in uncommonCasesList)
-                    {
-                        Assert.IsFalse(item.Value(testPesel));
-=======
                         for (int i = 0; i < peselLists.Count - 1; i++) //foreach (var pesel in peselLists)
                         {
                             Assert.AreEqual(isPeselValid.Value(peselLists[i]), (peselLists.Last() == "true"));
                         }
 
->>>>>>> master
 
                     }
                 }
@@ -99,14 +85,6 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
         {
             List<string> peselList = new List<string>();
 
-<<<<<<< HEAD
-             // "Nie bądź jak leń co śmierdzący jest!"
-             //                                 UCCT
-
-             { "TypowyAdam", new TypowyAdamPeselValidator().IsPeselValid },
-             { "UCantTouchThisAutism", new UCantTouchThisAutismPeselValisator().IsPeselValid }
-         };
-=======
             using (StreamReader txtReader = new StreamReader(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @patch)))
             {
                 while (txtReader.Peek() >= 0)
@@ -126,7 +104,6 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
                 peselValidatorsList.Add((PeselValidator) Activator.CreateInstance(type));
             }   
         }
->>>>>>> master
     }
 
 

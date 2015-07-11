@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.Bytom.Coffee13.TaskTrainingTwo.StringManipulator;
 
@@ -20,4 +20,5 @@ namespace Toci.Hornets.UnitTests.Bytom.Coffee13
 
 		}
 	}
+
 }

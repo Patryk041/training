@@ -14,8 +14,6 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 	public class VnthPeselValidator : PeselValidator
 	{
 		private const int CorrectLenght = 11;
-		private readonly List<int> _weights = new List<int>()
-		{ 1, 3, 7, 9, 1, 3, 7, 9, 1, 3 };
 
 		private readonly List<int> _weights = new List<int>() { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3 };
 

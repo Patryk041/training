@@ -39,14 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adrianowsky94\TheChosenOne.cs" />
-    <Compile Include="Amman\StringManipulator\AmmanStringCheck.cs" />
-    <Compile Include="Amman\StringManipulator\Workers\Anagram.cs" />
-    <Compile Include="Amman\StringManipulator\Workers\Stringception.cs" />
-    <Compile Include="Amman\StringManipulator\Workers\StringElement.cs" />
-    <Compile Include="Amman\TelephoneExercise\APhone.cs" />
-    <Compile Include="Bombel\Example.cs" />
-    <Compile Include="LidiaM\mojaklasa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,9 +47,7 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Amman\PeselValidator\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
