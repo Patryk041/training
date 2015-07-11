@@ -13,20 +13,28 @@ namespace Toci.Hornets.Sieradz.Duch.Homework_2.StringManipulator
 
         protected override bool IsStringElementsInString(string subject, string seek)
         {
-            var _subject = subject.ToLower().ToArray();
-            var _seek = subject.ToLower().ToArray();
-            Array.Sort(_seek);
-            Array.Sort(_subject);
-            return _subject.Intersect(_seek).Any();
+          
+            for(var i = 0;i<seek.Length;i++)
+            {
+                for (var j = 0; j < subject.Length; j++)
+                {
+                    if (seek[i] != subject[j]) continue;
+                    subject = subject.Remove(j, 1);
+                    seek = seek.Remove(i, 1);
+                    i = -1;
+                    break;
+                }
+
+            }
+            return seek == "";
         }
 
         protected override bool IsStringAnagramOfString(string subject, string seek)
         {
-            var _subject = subject.ToLower().ToArray();
-            var _seek = subject.ToLower().ToArray();
-            Array.Sort(_seek);
-            Array.Sort(_subject);
-            return  _seek == _subject;
+            var _subject    = DuchStringUtills.OrderString(subject);
+            var _seek       = DuchStringUtills.OrderString(seek);
+
+            return _seek.SequenceEqual(_subject);
         }
 
         protected override string GetNick()

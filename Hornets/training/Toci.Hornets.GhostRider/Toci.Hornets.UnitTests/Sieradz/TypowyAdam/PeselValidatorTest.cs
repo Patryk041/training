@@ -30,7 +30,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
         {
             Stopwatch benchmark = new Stopwatch();
             benchmark.Start();
-            GenerateListOfPeselList(testDirectory);
+            GenerateListOfPeselLists(testDirectory);
             GenerateObjectList(assemblyName);
             GenerateMethodFactory();
             benchmark.Stop();
@@ -72,7 +72,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
                 validatorFactory.Add(o.GetNick(), o.IsPeselValid);
             }
         }
-        private static void GenerateListOfPeselList(string initialDirectory)
+        private static void GenerateListOfPeselLists(string initialDirectory)
         {
             List<string> fileNames = new List<string>(Directory.GetFiles(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @initialDirectory)));
             fileNames= fileNames.Where(s => s.Contains(".txt")).Where(s => s.Contains("Pesel")).ToList();
