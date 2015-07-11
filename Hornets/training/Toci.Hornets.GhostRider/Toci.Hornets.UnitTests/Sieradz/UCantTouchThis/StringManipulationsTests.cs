@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.Sieradz.Duch.Homework_2.StringManipulator;
-using Toci.Hornets.Sieradz.UCantTouchThis;
+using Toci.Hornets.Sieradz.UCantTouchThis.ExtensionMethods;
 using Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo;
 
 namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
@@ -31,11 +30,8 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
         { "aaateb", "fdwgdw" };
 
         private readonly UCantTouchThisStringManipulations _manipulator = new UCantTouchThisStringManipulations();
-        //private readonly DuchStringManipulatro _manipulator = new DuchStringManipulatro();
-
 
         // first time with Tuples, testing them
-
         private readonly List<Tuple<List<string>, string, bool>> _testSequences = new List<Tuple<List<string>, string, bool>>
         {
             Tuple.Create(TrueForIsStringInString, "IsStringInString", true),

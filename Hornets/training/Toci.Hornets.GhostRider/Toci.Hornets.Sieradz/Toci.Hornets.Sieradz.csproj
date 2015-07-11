@@ -75,14 +75,14 @@
     <Compile Include="TypowyAdam\UndergroundTasks\SimpleTypicalStringComparator.cs" />
     <Compile Include="TypowyAdam\TrainingTwoTasks\PeselValidator\TypowyAdamPeselValidator.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\TypowyAdamPeselValidatorOld.cs" />
-    <Compile Include="UCantTouchThis\GetProperyValueFromName.cs" />
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_GetProperyValueFromName.cs" />
     <Compile Include="UCantTouchThis\ImSoBadAss.cs" />
     <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisPeselValidator.cs" />
     <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisStringManipulations.cs" />
     <Compile Include="UCantTouchThis\TelephoneTask\UCantTouchThisTelephoneTask.cs" />
     <Compile Include="UCantTouchThis\TelephoneTask\UCTT_TelephoneTaskFactory.cs" />
     <Compile Include="UCantTouchThis\UCTTGenericFactory.cs" />
-    <Compile Include="UCantTouchThis\UCTT_StringExtensions.cs" />
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_StringExtensions.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCTT_PeselValidatorUtils.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCantTouchThisAutismPeselValisator.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\DummyStringComparator.cs" />
