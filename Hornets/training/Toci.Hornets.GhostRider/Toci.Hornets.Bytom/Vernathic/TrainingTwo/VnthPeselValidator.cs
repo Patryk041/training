@@ -1,10 +1,12 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
 namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
@@ -12,9 +14,10 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 	public class VnthPeselValidator : PeselValidator
 	{
 		private const int CorrectLenght = 11;
-
 		private readonly List<int> _weights = new List<int>()
 		{ 1, 3, 7, 9, 1, 3, 7, 9, 1, 3 };
+
+		private readonly List<int> _weights = new List<int>() { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3 };
 
 		protected override string CutOffDate(string pesel)
 		{
@@ -78,7 +81,7 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 		private List<int> SplitToList(string pesel)
 		{
 			return pesel.Select(ch => int.Parse(ch.ToString())).ToList();
-			
+
 			//var result = new List<int>();
 
 			//foreach (var ch in pesel)
@@ -92,7 +95,7 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 
 		protected override bool ValidateDate(int year, int month, int day)
 		{
-			throw new NotImplementedException();
+			return false;
 		}
 
 		private bool HasCorrectLength(string pesel)
@@ -107,7 +110,7 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 
 		public override bool IsPeselValid(string pesel)
 		{
-			throw new NotImplementedException();
+			return false;
 		}
 	}
 

@@ -1,0 +1,61 @@
+﻿{
+  "Transfers": [
+    {
+      "Source" : {
+        "Acount number" : " ",
+        "Name": " ",
+        "Address":" ",
+        "Bank": " "
+      },
+      "Destination" : {
+        "Acount number" : " ",
+        "Name": " ",
+        "Address":" ",
+        "Bank": " "
+      },
+      "Transfer Type" : "",
+      "Amount" : "",
+      "Title of Transfer" : "",
+      "Date of transfer" : "",
+      "Date of record" : ""
+    },
+    {
+      "Source" : {
+        "Acount number" : " ",
+        "Name": " ",
+        "Address":" ",
+        "Bank": " "
+      },
+      "Destination" : {
+        "Acount number" : " ",
+        "Name": " ",
+        "Address":" ",
+        "Bank": " "
+      },
+      "Transfer Type" : "",
+      "Amount" : "",
+      "Title of Transfer" : "",
+      "Date of transfer" : "",
+      "Date of record" : ""
+    },
+    {
+      "Source" : {
+        "Acount number" : " ",
+        "Name": " ",
+        "Address":" ",
+        "Bank": " "
+      },
+      "Destination" : {
+        "Acount number" : " ",
+        "Name": " ",
+        "Address":" ",
+        "Bank": " "
+      },
+      "Transfer Type" : "",
+      "Amount" : "",
+      "Title of Transfer" : "",
+      "Date of transfer" : "",
+      "Date of record" : ""
+    }
+  ]
+}
