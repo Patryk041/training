@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 
-namespace Toci.Hornets.Sieradz.UCantTouchThis
+namespace Toci.Hornets.Sieradz.UCantTouchThis.ExtensionMethods
 {
-    public static class GetProperyValueFromName
+    public static class UCTT_GetProperyValueFromName
     {
         public static object GetPropertyValue(this object obj, string propertyName)
         {

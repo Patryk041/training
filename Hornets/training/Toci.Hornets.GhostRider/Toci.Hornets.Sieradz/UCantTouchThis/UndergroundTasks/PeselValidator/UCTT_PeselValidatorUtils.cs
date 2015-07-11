@@ -9,6 +9,8 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
     {
         private const int MonthLowerBoundary = 0;
         private const int MonthUpperBoundary = 13;
+        private const int MonthIndex = 0;
+        private const int YearIndex = 0;
         private static readonly int[] Wages = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 1 };
 
 
@@ -17,6 +19,15 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
             {new []{1,3,5,7,8,10,12}, x => 31},
             {new []{4,6,9,11}, x => 30},
             {new []{2}, year => (IsYearLeap(year) ? 29 : 28)}
+        };
+
+        private static readonly Dictionary<Func<int, bool>, int[]> PeselDateModificatorsMap = new Dictionary<Func<int, bool>, int[]>
+        {
+            {month => month > 80, new[] {80, 1800}},
+            {month => month > 60, new[] {60, 2200}},
+            {month => month > 40, new[] {40, 2100}},
+            {month => month > 20, new[] {20, 2000}},
+            {month => month < 21, new[] {00, 1900}}
         };
 
         static bool IsYearLeap(int year)
@@ -52,9 +63,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
         {
             int checksum = 0;
             for (int i = 0; i < peselArray.Length; i++)
-            {
                 checksum += (peselArray[i] - 48) * Wages[i];
-            }
             return (checksum % 10) == 0;
         }
 
@@ -67,35 +76,15 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
 
         public static bool ValidateDate(int year, int month, int day)
         {
-            // TODO: Get rid of those ifs
-            // not with factory
+            var normalizedPeselDate = NormalizePeselDate(month, year);
+            return IsDateValid(day, normalizedPeselDate[MonthIndex], normalizedPeselDate[YearIndex]);
+        }
 
-            if (month > 80)
-            {
-                month -= 80;
-                year += 1800;
-            }
-            else if (month > 60)
-            {
-                month -= 60;
-                year += 2200;
-            }
-            else if (month > 40)
-            {
-                month -= 40;
-                year += 2100;
-            }
-            else if (month > 20)
-            {
-                month -= 20;
-                year += 2000;
-            }
-            else
-            {
-                year += 1900;
-            }
-
-            return IsDateValid(day, month, year);
+        private static int[] NormalizePeselDate(int month, int year)
+        {
+            var peselDateModificators =
+                PeselDateModificatorsMap.FirstOrDefault(item => item.Key(month)).Value;
+            return new [] {month - peselDateModificators[MonthIndex], year + peselDateModificators[YearIndex]};
         }
     }
 }

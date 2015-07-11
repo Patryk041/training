@@ -97,10 +97,16 @@
     <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
     <Compile Include="Sieradz\Quicksilver\LessCasualSC.cs" />
     <Compile Include="Sieradz\Quicksilver\TwoQs\QuicksilverStringManipulatorUnitTest.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\Interfaces\ITypowyAdamBenchmark.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\Interfaces\ITypowyAdamMethodFactoryGenerator.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\Interfaces\ITypowyAdamTestListGenerator.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamBenchmark.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamMethodFactoryGenerator.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamTestListGenerator.cs" />
     <Compile Include="Sieradz\TypowyAdam\TypowyAdamStringManipulatorTest.cs" />
     <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
     <Compile Include="Sieradz\TypowyAdam\PentagramTest.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\PeselValidatorTest.cs" />
     <Compile Include="Sieradz\UCantTouchThis\DateValidatorTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\RandomStringGeneratorTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\StringComparatorsBenchmarks.cs" />
@@ -121,10 +127,6 @@
     <ProjectReference Include="..\Toci.Hornets.Gliwice\Toci.Hornets.Gliwice.csproj">
       <Project>{bfe04213-e553-481b-9b82-44312e146379}</Project>
       <Name>Toci.Hornets.Gliwice</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Toci.Hornets.Kalisz\Toci.Hornets.Kalisz.csproj">
-      <Project>{52dced43-e95b-43ec-9c27-6191e06b8258}</Project>
-      <Name>Toci.Hornets.Kalisz</Name>
     </ProjectReference>
     <ProjectReference Include="..\Toci.Hornets.Legnica\Toci.Hornets.Legnica.csproj">
       <Project>{9e9ec7c9-b279-42a1-8be4-90f814c37fdb}</Project>
@@ -153,6 +155,9 @@
     <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\otherInvalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
+    <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\invalidPeselList.txt" />
+    <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\otherInvalidPeselList.txt" />
+    <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\validPeselList.txt" />
     <Compile Include="S2yfr4nt\PeselVaidator\PeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>
