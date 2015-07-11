@@ -51,6 +51,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Bytom\Coffee13\StringTest.cs" />
+    <Compile Include="Bytom\Coffee13\UnitTest1.cs" />
     <Compile Include="Bytom\Vnth\UnitTest1.cs" />
     <Compile Include="Bytom\Vnth\VnthFirstUnitTest.cs" />
     <Compile Include="GhostRider\Abstraction\TestBase.cs" />
@@ -102,6 +104,8 @@
     <Compile Include="Sieradz\UCantTouchThis\StringComparatorsBenchmarks.cs" />
     <Compile Include="Sieradz\UCantTouchThis\StringManipulationsTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\Undergtound1Test.cs" />
+    <Compile Include="Wrocław\gipson\PeselValidatorTest.cs" />
+    <Compile Include="Wrocław\gipson\StringManipulationsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.Bytom\Toci.Hornets.Bytom.csproj">

@@ -65,6 +65,7 @@
     <Compile Include="Amman\StringManipulator\Workers\Stringception.cs" />
     <Compile Include="Amman\StringManipulator\Workers\StringElement.cs" />
     <Compile Include="Amman\TelephoneExercise\APhone.cs" />
+    <Compile Include="Bombel\Example.cs" />
     <Compile Include="LidiaM\mojaklasa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
