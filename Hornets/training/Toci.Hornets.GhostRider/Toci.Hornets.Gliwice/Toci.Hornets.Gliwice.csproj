@@ -40,8 +40,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Diana\exampleDiana.cs" />
+<<<<<<< HEAD
     <Compile Include="Didi\PeselTask\DataClass.cs" />
     <Compile Include="Didi\PeselTask\ValidationPeselClass.cs" />
+=======
+>>>>>>> e14cd03ae10153f0f2186cf8fcf5648caae2ddd5
     <Compile Include="Didi\StringManiupulation\StringManipulationClass.cs" />
     <Compile Include="Didi\TelephoneTask\GetMessageClass.cs" />
     <Compile Include="Didi\WorkWithBranchClass.cs" />
@@ -54,11 +57,13 @@
     <Compile Include="MoWerr\PeselValidator\MoWerrDataValidator.cs" />
     <Compile Include="MoWerr\PeselValidator\MoWerrPeselValidator.cs" />
     <Compile Include="MoWerr\StringOperations\MoWerrStringOperations.cs" />
-    <Compile Include="PiotrekJ\Homework\TelephoneTask.cs" />
     <Compile Include="MoWerr\TelephoneTask\SendTypeImplementation.cs" />
     <Compile Include="PiotrekJ\szkolenie1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rudi\Rudis.cs" />
+    <Compile Include="Rudi\TrainingTwo\RudiPeselValidator.cs" />
+    <Compile Include="Rudi\TrainingTwo\RudiStringManipulations.cs" />
+    <Compile Include="Rudi\TrainingTwo\RudiTelephoneInterpreter.cs" />
     <Compile Include="Snajper\FirstClass.cs" />
     <Compile Include="Soltys\CustomTelephoneInterpreter.cs" />
     <Compile Include="Soltys\HelloWorld.cs" />
@@ -74,7 +79,9 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="PiotrekJ\Homework\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
