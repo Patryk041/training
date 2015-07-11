@@ -40,14 +40,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdamP\Class1.cs" />
-<<<<<<< HEAD
     <Compile Include="AdamP\TaskTrainingTwo\PeselValidator.cs" />
     <Compile Include="AdamP\TaskTrainingTwo\SimpleDate.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AdamP\TaskTrainingTwo\StringManipulator.cs" />
-=======
->>>>>>> d3afa6c7556328f819908d1b8f918f695e7e6ea3
     <Compile Include="AdamP\TelephoneTask\TelephoneTaskChooser.cs" />
     <Compile Include="Bossu\TelephoneTask\MyTelephoneInterpreter.cs" />
     <Compile Include="Coffee13\CoffeeTestClass.cs" />
