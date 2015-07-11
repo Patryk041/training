@@ -32,5 +32,4 @@ namespace Toci.Hornets.Opole.Hoosarr.TelephoneTask
             return "Hoosarr";
         }
     }
-    }
 }
