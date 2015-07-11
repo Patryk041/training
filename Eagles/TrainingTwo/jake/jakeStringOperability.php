@@ -1,6 +1,6 @@
 <?php
 
-abstract class jakeStringOperability extends GhostRiderStringOperability
+class jakeStringOperability extends GhostRiderStringOperability
 {
 	public function SubString($string, $length)
 	{
