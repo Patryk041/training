@@ -1,6 +1,6 @@
 <?php
 
-require_once 'GhostRider/Homework/StringOperationsObj.php';
+//require_once 'GhostRider/Homework/StringOperationsObj.php';
 
 class PerlaStringOperability extends GhostRiderStringOperability {
 
@@ -15,19 +15,17 @@ class PerlaStringOperability extends GhostRiderStringOperability {
     public function SubString($string, $length) {
         $output_string = '';
 
-        if($length < isset($string)) {
-            	for($i = 0; $i < $length; $i++)
-		{
-			$output_string .= $string[$i];
-		}
-        }
-        else
-        {
+        if ($length < isset($string)) {
+            for ($i = 0; $i < $length; $i++) {
+                $output_string .= $string[$i];
+            }
+        } else {
             return FALSE;
         }
+        return $output_string;
     }
-    public function GetNick()
-    {
+
+    public function GetNick() {
         return 'Perla';
     }
 
