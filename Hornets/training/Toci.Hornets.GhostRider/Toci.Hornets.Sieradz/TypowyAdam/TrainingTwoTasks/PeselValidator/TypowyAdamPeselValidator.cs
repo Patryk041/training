@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Linq.Expressions;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
 namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
@@ -18,38 +19,9 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
 
         protected override bool ValidateDate(int year, int month, int day)
         {
-            //TODO Reduce it to array of lambdas
-            //(month%10)%2 ? month%10/2 : (month%10 - 1)/2; <= index in array
-            if (month > 80) 
-            {
-                year += 1800;
-                month -= 80;
-            }
-            else if (month > 60)
-            {
-                year += 2200;
-                month -= 60;
-            }
-            else if (month > 40)
-            {
-                year += 2100;
-                month -= 40;
-            }
-            else if (month > 20)
-            {
-                year += 2000;
-                month -= 20;
-            }
-            else if (month <= 12)
-            {
-                year += 1900;
-            }
-            else return false;
-     
+            if (!PeselValidatorUtils.monthYearValid(ref year, ref month)) return false;
 
-            if (month > 12 || month <= 0) return false;
             return PeselValidatorUtils.IsDayValid(year, month, day);
-
         }
 
         public override string GetNick()
