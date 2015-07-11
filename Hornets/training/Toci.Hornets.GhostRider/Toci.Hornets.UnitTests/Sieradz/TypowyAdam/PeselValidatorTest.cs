@@ -18,7 +18,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
     public class PeselValidatorTest
     {
         private static string testDirectory = @"..\..\Sieradz\TypowyAdam\";
-        private static string assemblyName = "Toci.Hornets.Sieradz";
+        private static string assemblyName = "Toci.Hornets.Sieradz"; //TODO make it able to load more assemblies
         private static int iterationValue = 100;
         private static List<object> peselValidatorsList = new List<object>();
         private static List<List<string>> peselListsList = new List<List<string>>();
@@ -28,7 +28,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
         [TestMethod]
         public void TestMethod1()
         {
-            Stopwatch benchmark = new Stopwatch();
+            Stopwatch benchmark = new Stopwatch(); //TODO benchmark to separate method taking delegate
             benchmark.Start();
             GenerateListOfPeselLists(testDirectory);
             GenerateObjectList(assemblyName);
@@ -39,7 +39,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
             {
                 benchmark.Reset();
                 benchmark.Start();
-                for (int j = 0; j < iterationValue; j++)
+                for (int j = 0; j < iterationValue; j++) //TODO get rid of those loops
                 {
                     foreach (var peselLists in peselListsList)
                     {
@@ -56,7 +56,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
             }
             PrintBenchmarkTimes();
         }
-
+        //TODO repair those static shit, make it more abstract
         private static void PrintBenchmarkTimes()
         {
             foreach (var benchmarkTime in benchmarkTimes)

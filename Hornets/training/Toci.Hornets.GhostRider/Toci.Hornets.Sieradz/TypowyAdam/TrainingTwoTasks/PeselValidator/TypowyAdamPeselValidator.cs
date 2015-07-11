@@ -18,6 +18,8 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
 
         protected override bool ValidateDate(int year, int month, int day)
         {
+            //TODO Reduce it to array of lambdas
+            //(month%10)%2 ? month%10/2 : (month%10 - 1)/2; <= index in array
             if (month > 80) 
             {
                 year += 1800;
@@ -43,6 +45,7 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
                 year += 1900;
             }
             else return false;
+     
 
             if (month > 12 || month <= 0) return false;
             return PeselValidatorUtils.IsDayValid(year, month, day);
