@@ -1,0 +1,1 @@
+﻿numer konta startowy	numer konta docelowy	kwota	nazwisko wys	nazwisko odb	data	tytul	
