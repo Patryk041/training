@@ -10,22 +10,19 @@ namespace Toci.Hornets.Gliwice.usppat.telephone
         {
             if (chosenOption == 1)
             {
-                PhotoCommunication photo = new PhotoCommunication();
-                return photo;
+                return new PhotoCommunication();
             }
             else
             {
                 if (chosenOption == 2)
                 {
-                    SmsCommunication sms = new SmsCommunication();
-                    return sms;
+                    return new SmsCommunication();
                 }
                 else
                 {
                     if (chosenOption == 3)
                     {
-                        VoiceCommunication voice = new VoiceCommunication();
-                        return voice;
+                        return new VoiceCommunication();;
                     }
                     else
                     {

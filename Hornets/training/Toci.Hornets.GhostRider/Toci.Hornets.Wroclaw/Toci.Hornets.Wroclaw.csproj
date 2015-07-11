@@ -40,12 +40,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdamPast\CommunicationTypeChose.cs" />
+    <Compile Include="AdamPast\Homework0407\GipsonPeselValidator.cs" />
+    <Compile Include="AdamPast\Homework0407\GipsonStringManipulations.cs" />
     <Compile Include="AdamPast\MergeTestAP.cs" />
     <Compile Include="Ayuu\NewTestClass.cs" />
     <Compile Include="Dagmara1\DMClass1.cs" />
     <Compile Include="Dagmara1\TelephoneTask\DgM_TelephoneTask.cs" />
+    <Compile Include="Kollwing\TelephoneTask\ChooseOperation.cs" />
+    <Compile Include="egg7\NormalClass.cs" />
     <Compile Include="Kollwing\test.cs" />
-    <Compile Include="LidiaM\myclass.cs" />
     <Compile Include="Perła\test.cs" />
     <Compile Include="Pilot\Classme.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +62,8 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

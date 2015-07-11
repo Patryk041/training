@@ -13,24 +13,15 @@ namespace Toci.Hornets.Bytom.Pr0fes0r.TelephoneTask
             {
                 return new PhotoCommunication();
             }
-            else
+            if (chosenOption == 2)
             {
-                if (chosenOption == 2)
-                {
-                    return new SmsCommunication();
-                }
-                else
-                {
-                    if (chosenOption == 3)
-                    {
-                        return new VoiceCommunication();
-                    }
-                    else
-                    {
-                        throw new NotImplementedException();
-                    }
-                }
+                return new SmsCommunication();
             }
+            if (chosenOption == 3)
+            {
+                return new VoiceCommunication();
+            }
+            throw new NotImplementedException();
         }
 
         protected override string MyNick()
