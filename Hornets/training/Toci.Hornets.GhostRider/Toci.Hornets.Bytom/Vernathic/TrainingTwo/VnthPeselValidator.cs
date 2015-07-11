@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
 namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
@@ -91,7 +86,7 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 
 		protected override bool ValidateDate(int year, int month, int day)
 		{
-			throw new NotImplementedException();
+			return false;
 		}
 
 		private bool HasCorrectLength(string pesel)
@@ -106,7 +101,7 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 
 		public override bool IsPeselValid(string pesel)
 		{
-			throw new NotImplementedException();
+			return false;
 		}
 	}
 
