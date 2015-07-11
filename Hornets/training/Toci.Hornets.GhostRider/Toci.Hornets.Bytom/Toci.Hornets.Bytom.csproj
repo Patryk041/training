@@ -45,6 +45,7 @@
     <Compile Include="AdamP\TelephoneTask\TelephoneTaskChooser.cs" />
     <Compile Include="Bossu\TelephoneTask\MyTelephoneInterpreter.cs" />
     <Compile Include="Coffee13\CoffeeTestClass.cs" />
+    <Compile Include="Coffee13\TaskTrainingTree\CoffeeFileOperation.cs" />
     <Compile Include="Coffee13\TaskTrainingTwo\PeselValidator\CoffeePeselValidator.cs" />
     <Compile Include="Coffee13\TaskTrainingTwo\StringManipulator\CoffeeStringManipulations.cs" />
     <Compile Include="Coffee13\TelephoneTask\TaskOneTelephone.cs" />
@@ -78,6 +79,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Mes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Coffee13\TaskTrainingTree\ContentFile.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Bytom\Coffee13\StringTest.cs" />
     <Compile Include="Bytom\Coffee13\UnitTest1.cs" />
+    <Compile Include="Bytom\Coffee13\CoffeeFileOperationTest.cs" />
     <Compile Include="Bytom\Vnth\UnitTest1.cs" />
     <Compile Include="Bytom\Vnth\VnthFirstUnitTest.cs" />
     <Compile Include="GhostRider\Abstraction\TestBase.cs" />
@@ -146,6 +147,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bytom\Coffee13\ContentFile.txt" />
     <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\otherInvalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
@@ -158,6 +160,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Debug\" />
     <Folder Include="Wroclaw\Kollwing\" />
   </ItemGroup>
   <Choose>
