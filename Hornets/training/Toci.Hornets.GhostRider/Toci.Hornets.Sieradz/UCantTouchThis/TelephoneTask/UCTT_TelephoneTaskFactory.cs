@@ -18,7 +18,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.TelephoneTask
 
         public static ITelephoneCommunication GetInstance(int chosenOption)
         {
-            return TelephoneFactory.Keys.Contains(chosenOption) ? TelephoneFactory[chosenOption]() : null;
+            return TelephoneFactory.ContainsKey(chosenOption) ? TelephoneFactory[chosenOption]() : null;
         }
     }
 }

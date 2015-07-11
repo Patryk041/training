@@ -40,14 +40,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DeeJay\ExampleDeeJayClass.cs" />
+    <Compile Include="DeeJay\DjExampleAbstract.cs" />
+    <Compile Include="DeeJay\DjExampleClass.cs" />
+    <Compile Include="DeeJay\IDJExample.cs" />
+    <Compile Include="DeeJay\TasksTrainingTwo\DjPeselValidator.cs" />
+    <Compile Include="DeeJay\TasksTrainingTwo\DjStringManipulations.cs" />
+    <Compile Include="DeeJay\TelephoneTask\DjTelephoneCommunication.cs" />
+    <Compile Include="DeeJay\TelephoneTask\DjTelephoneFactory.cs" />
     <Compile Include="Duch\DuchTelephoneFactory.cs" />
     <Compile Include="Duch\DuchGenFactory.cs" />
     <Compile Include="Duch\Homework 1\DuchTele.cs" />
+    <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselFactory.cs" />
+    <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselUtils.cs" />
+    <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselValidator.cs" />
+    <Compile Include="Duch\Homework 2\StringManipulator\DuchStringManipulatro.cs" />
     <Compile Include="Duch\U1task\DuchStringComparator.cs" />
     <Compile Include="Jake\JakeTest.cs" />
     <Compile Include="Kamil\ClassKamil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quicksilver\TasksTrainingTwoQs\QuicksilverPeselValidator.cs" />
+    <Compile Include="Quicksilver\TasksTrainingTwoQs\QuicksilverStringManipulator.cs" />
     <Compile Include="Quicksilver\TelephoneTaskQs\WhoYouGonnaCall.cs" />
     <Compile Include="Quicksilver\testByQuicksilver.cs" />
     <Compile Include="Quicksilver\UndergroundTasks\CasualStringComparator.cs" />
