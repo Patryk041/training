@@ -47,7 +47,8 @@
     <Compile Include="Dziusio\PeselValidator\DziusioDateValidator.cs" />
     <Compile Include="Dziusio\PeselValidator\DziusioPeselValidator.cs" />
     <Compile Include="GhostRider\HowDoWeWorkOnBranches.cs" />
-    <Compile Include="Hoosarr\TestClass.cs" />
+    <Compile Include="Hoosarr\FirstTask\TestClass.cs" />
+    <Compile Include="Hoosarr\TelephoneTask\Telephone Task.cs" />
     <Compile Include="Lausion\ExampeClass.cs" />
     <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Day.cs" />
     <Compile Include="Lausion\TasksTraningTwo\PeselValidator\LausionPeselValidator.cs" />
