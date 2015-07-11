@@ -8,7 +8,7 @@ namespace Toci.Hornets.Kalisz.Amman.StringManipulator.Workers
     {
         static public bool IsElement(string big, string small)
         {
-            
+            if (small == "") return false;
             /*
              * THIS IS MY CODE
              * if (Stringception.IsStringcepted(big, small)) return true;
@@ -16,6 +16,7 @@ namespace Toci.Hornets.Kalisz.Amman.StringManipulator.Workers
             foreach (var letter in small)
             {
                 if (!big.Contains(letter.ToString())) return false;
+
             }
             return true;
              * */

@@ -14,14 +14,64 @@ namespace Toci.Hornets.UnitTests.Gliwice.Didi.StringManipulation
        [TestMethod]
         public void TestString()
         {
-          StringManipulationClass manipulation = new StringManipulationClass();
+          string subject = "beata";
+          string seek = "ata";
+          StringManipulationClass stringManipulation = new StringManipulationClass();
 
-           manipulation.RunStringOperations("domi", "do");
-           manipulation.RunStringOperations("domi", "imdo");
-           manipulation.RunStringOperations("domi", "ido");
-           manipulation.RunStringOperations("domi", "omoi");
-           manipulation.RunStringOperations("domi", "odmi");
-           manipulation.RunStringOperations("domi", "mi");
+          var result = stringManipulation.RunStringOperations(subject, seek);
+
+          Assert.IsTrue(result.IsStringInString);
+          Assert.IsTrue(result.IsStringElementsInString);
+          Assert.IsFalse(result.IsAnagram);
+
+          subject = "beata";
+          seek = "aat";
+          result = stringManipulation.RunStringOperations(subject, seek);
+
+          Assert.IsFalse(result.IsStringInString);
+          Assert.IsTrue(result.IsStringElementsInString);
+          Assert.IsFalse(result.IsAnagram);
+
+          subject = "beata";
+          seek = "tbaea";
+          result = stringManipulation.RunStringOperations(subject, seek);
+
+          Assert.IsFalse(result.IsStringInString);
+          Assert.IsTrue(result.IsStringElementsInString);
+          Assert.IsTrue(result.IsAnagram);
+
+          subject = "beata";
+          seek = "beata";
+          result = stringManipulation.RunStringOperations(subject, seek);
+
+          Assert.IsTrue(result.IsStringInString);
+          Assert.IsTrue(result.IsStringElementsInString);
+          Assert.IsTrue(result.IsAnagram);
+
+          subject = null;
+          seek = null;
+          result = stringManipulation.RunStringOperations(subject, seek);
+
+          Assert.IsFalse(result.IsStringInString);
+          Assert.IsFalse(result.IsStringElementsInString);
+          Assert.IsFalse(result.IsAnagram);
+
+          subject = "domi";
+          seek = "odi";
+          result = stringManipulation.RunStringOperations(subject, seek);
+
+          Assert.IsFalse(result.IsStringInString);
+          Assert.IsTrue(result.IsStringElementsInString);
+          Assert.IsFalse(result.IsAnagram);
+
+          subject = "didi";
+          seek = "didi";
+          result = stringManipulation.RunStringOperations(subject, seek);
+
+          Assert.IsTrue(result.IsStringInString);
+          Assert.IsTrue(result.IsStringElementsInString);
+          Assert.IsTrue(result.IsAnagram);
+         
         }
     }
 }

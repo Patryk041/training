@@ -15,7 +15,7 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TelePhone
         }
         protected override string MyNick()
         {
-            return "Andrzej";
+            return "Król Albani";
         }
     }
 }

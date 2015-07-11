@@ -1,5 +1,4 @@
-﻿using System;
-using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
+﻿using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 using Toci.Hornets.Kalisz.Amman.StringManipulator.Workers;
 
 namespace Toci.Hornets.Kalisz.Amman.StringManipulator
@@ -18,7 +17,6 @@ namespace Toci.Hornets.Kalisz.Amman.StringManipulator
 
         protected override bool IsStringAnagramOfString(string subject, string seek)
         {
-           // var lolz = new Anagram();
             return Anagram.IsAnagram(subject, seek);
         }
 
@@ -29,8 +27,6 @@ namespace Toci.Hornets.Kalisz.Amman.StringManipulator
 
         public override StringManipulationsResults RunStringOperations(string subject, string seek)
         {
-            if (seek == "") throw new Exception("EMPTY SEEK STRING");
-            if (subject == "") throw new Exception("EMPTY SUBJECT STRING");
             var result = new StringManipulationsResults
             {
                 Nick = GetNick(),
@@ -44,7 +40,6 @@ namespace Toci.Hornets.Kalisz.Amman.StringManipulator
 
             return result;
         }
-
         
         }
     }
