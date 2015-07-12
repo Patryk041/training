@@ -1,0 +1,32 @@
+<?php
+
+	class Overloading // przeciazenie
+	{
+		private $mapa = array(
+			0 => 'NazwaMetody',
+		);
+		
+		public function Operacja($cokolwiek = null, $nastepne = null)
+		{
+			$args = func_get_args();
+			
+			var_dump($args);
+			
+			$nazwaM = $this->mapa[sizeof($args)];
+			//echo $nazwaM;
+			$this->$nazwaM();
+		}
+		
+		private function NazwaMetody()
+		{
+			echo 'akuku';
+		}
+	}
+	
+	$overl = new Overloading();
+	
+	$overl->Operacja();
+	
+	//$overl->Operacja("dfsa");
+	
+	//$overl->Operacja("dsaffdas", "fdsas");

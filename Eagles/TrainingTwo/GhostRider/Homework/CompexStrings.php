@@ -14,6 +14,6 @@
         // false: beata ataeba, aatebb, aaet
         protected abstract function IsAnagram($subject, $seek);
         
-        // return array(true, true, true)
+        // return array('testforanagram' => true, true, true)
         public abstract function CheckStrings($subject, $seek);
     }

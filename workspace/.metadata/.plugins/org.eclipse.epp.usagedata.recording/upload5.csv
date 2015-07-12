@@ -1,0 +1,276 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693613925
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693614080
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693627711
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693633195
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693703779
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693707399
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1436693712059
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1436693714036
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1436693714788
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693715054
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693716003
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436693716018
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693716041
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693716230
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693717890
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693722102
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693741492
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693794394
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1436693805963
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693808675
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693810271
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436693810277
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436693810281
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693810285
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693810494
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693813073
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693814319
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436693814330
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693814357
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693814820
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693818568
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693818846
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436693818851
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693819022
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693820205
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1436693823997
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693824127
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693825291
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436693825303
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693825331
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693825439
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1436693834326
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693834581
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693835069
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436693835080
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693835097
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693835492
+activated,view,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.ui.explorer",1436693889123
+opened,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1436693904169
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1436693904212
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693904353
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693905783
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436693905792
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693905808
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693906091
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693937399
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693949337
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1436693956228
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1436693961391
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.wordPrevious",1436693963088
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.wordPrevious",1436693963277
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.select.wordPrevious",1436693964159
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1436693968647
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1436693973182
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1436693974824
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693977553
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693979182
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436693979193
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693979206
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693979350
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693990135
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693991378
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436693991383
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693991392
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693991526
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693994440
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693995823
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436693995835
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693995850
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436693996025
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1436693996697
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694255888
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694257274
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436694257285
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694257303
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694257423
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694261413
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694262729
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436694262741
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436694262748
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694262761
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694262858
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694271315
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694272403
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436694272415
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694272421
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694272550
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694275488
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694276301
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436694276312
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694276327
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694276784
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1436694290424
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1436694292114
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1436694294565
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694294718
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694295740
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436694295745
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694295754
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694295916
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694300710
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694301734
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436694301749
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694301766
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436694302178
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694302536
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1436694303948
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.select.wordNext",1436694305951
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.select.wordNext",1436694306141
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694306219
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694307294
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436694307307
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694307319
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694307405
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.select.wordNext",1436694308558
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.select.wordNext",1436694308715
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.select.wordNext",1436694308852
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.select.wordNext",1436694309008
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.select.wordNext",1436694309170
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694311661
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694312976
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436694312981
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694312996
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694313257
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1436694314604
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694315639
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694316793
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436694316805
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694316820
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694316968
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1436694368570
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1436694378258
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694382610
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694383936
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1436694383947
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694383965
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1436694384099
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1436694386716
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1436694388438
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1436694390357
+activated,perspective,org.eclipse.php.ui,,"org.eclipse.php.perspective",1436694777180
+started,bundle,org.eclipse.osgi,3.6.0.v20100517,"org.eclipse.osgi",1436694777181
+started,bundle,org.eclipse.equinox.simpleconfigurator,1.0.200.v20100503,"org.eclipse.equinox.simpleconfigurator",1436694777182
+started,bundle,com.ibm.icu,4.2.1.v20100412,"com.ibm.icu",1436694777183
+started,bundle,org.eclipse.compare.core,3.5.100.I20100526-0800,"org.eclipse.compare.core",1436694777184
+started,bundle,org.eclipse.core.contenttype,3.4.100.v20100505-1235,"org.eclipse.core.contenttype",1436694777186
+started,bundle,org.eclipse.core.databinding.observable,1.3.0.I20100601-0800,"org.eclipse.core.databinding.observable",1436694777187
+started,bundle,org.eclipse.core.expressions,3.4.200.v20100505,"org.eclipse.core.expressions",1436694777188
+started,bundle,org.eclipse.core.filebuffers,3.5.100.v20100520-0800,"org.eclipse.core.filebuffers",1436694777189
+started,bundle,org.eclipse.core.filesystem,1.3.0.v20100526-0737,"org.eclipse.core.filesystem",1436694777190
+started,bundle,org.eclipse.core.jobs,3.5.0.v20100515,"org.eclipse.core.jobs",1436694777191
+started,bundle,org.eclipse.core.net,1.2.100.I20100511-0800,"org.eclipse.core.net",1436694777192
+started,bundle,org.eclipse.core.resources,3.6.0.v20100526-0737,"org.eclipse.core.resources",1436694777193
+started,bundle,org.eclipse.core.runtime,3.6.0.v20100505,"org.eclipse.core.runtime",1436694777194
+started,bundle,org.eclipse.core.runtime.compatibility,3.2.100.v20100505,"org.eclipse.core.runtime.compatibility",1436694777195
+started,bundle,org.eclipse.core.runtime.compatibility.auth,3.2.200.v20100517,"org.eclipse.core.runtime.compatibility.auth",1436694777196
+started,bundle,org.eclipse.debug.core,3.6.0.v20100519,"org.eclipse.debug.core",1436694777198
+started,bundle,org.eclipse.debug.ui,3.6.0.v20100601-1530,"org.eclipse.debug.ui",1436694777408
+started,bundle,org.eclipse.dltk.core,2.0.0.v20100603-0936,"org.eclipse.dltk.core",1436694777983
+started,bundle,org.eclipse.dltk.core.index.sql,2.0.0.v20100616-2015,"org.eclipse.dltk.core.index.sql",1436694777984
+started,bundle,org.eclipse.dltk.core.index.sql.h2,2.0.0.v20100616-2015,"org.eclipse.dltk.core.index.sql.h2",1436694777984
+started,bundle,org.eclipse.dltk.launching,2.0.0.v20100524-0038,"org.eclipse.dltk.launching",1436694778092
+started,bundle,org.eclipse.dltk.ui,2.0.0.v20100603-0936,"org.eclipse.dltk.ui",1436694778275
+started,bundle,org.eclipse.emf.common,2.6.0.v20100614-1136,"org.eclipse.emf.common",1436694778276
+started,bundle,org.eclipse.emf.ecore,2.6.0.v20100614-1136,"org.eclipse.emf.ecore",1436694778536
+started,bundle,org.eclipse.emf.ecore.xmi,2.5.0.v20100521-1846,"org.eclipse.emf.ecore.xmi",1436694778536
+started,bundle,org.eclipse.epp.usagedata.gathering,1.3.0.R201005261100,"org.eclipse.epp.usagedata.gathering",1436694778537
+started,bundle,org.eclipse.epp.usagedata.recording,1.3.0.R201005261100,"org.eclipse.epp.usagedata.recording",1436694778539
+started,bundle,org.eclipse.equinox.app,1.3.0.v20100512,"org.eclipse.equinox.app",1436694778539
+started,bundle,org.eclipse.equinox.common,3.6.0.v20100503,"org.eclipse.equinox.common",1436694778540
+started,bundle,org.eclipse.equinox.ds,1.2.0.v20100507,"org.eclipse.equinox.ds",1436694778541
+started,bundle,org.eclipse.equinox.event,1.2.0.v20100503,"org.eclipse.equinox.event",1436694778542
+started,bundle,org.eclipse.equinox.p2.core,2.0.0.v20100510,"org.eclipse.equinox.p2.core",1436694778544
+started,bundle,org.eclipse.equinox.p2.directorywatcher,1.0.200.v20100601,"org.eclipse.equinox.p2.directorywatcher",1436694778545
+started,bundle,org.eclipse.equinox.p2.engine,2.0.0.v20100606,"org.eclipse.equinox.p2.engine",1436694778547
+started,bundle,org.eclipse.equinox.p2.metadata,2.0.0.v20100601,"org.eclipse.equinox.p2.metadata",1436694778549
+started,bundle,org.eclipse.equinox.p2.metadata.repository,1.1.0.v20100513,"org.eclipse.equinox.p2.metadata.repository",1436694778551
+started,bundle,org.eclipse.equinox.p2.operations,2.0.0.v20100510,"org.eclipse.equinox.p2.operations",1436694778552
+started,bundle,org.eclipse.equinox.p2.reconciler.dropins,1.1.0.v20100525,"org.eclipse.equinox.p2.reconciler.dropins",1436694778553
+started,bundle,org.eclipse.equinox.p2.repository,2.0.0.v20100519,"org.eclipse.equinox.p2.repository",1436694778556
+started,bundle,org.eclipse.equinox.preferences,3.3.0.v20100503,"org.eclipse.equinox.preferences",1436694778557
+started,bundle,org.eclipse.equinox.registry,3.5.0.v20100503,"org.eclipse.equinox.registry",1436694778558
+started,bundle,org.eclipse.equinox.security,1.0.200.v20100503,"org.eclipse.equinox.security",1436694778560
+started,bundle,org.eclipse.equinox.util,1.0.200.v20100503,"org.eclipse.equinox.util",1436694778560
+started,bundle,org.eclipse.help,3.5.0.v20100524,"org.eclipse.help",1436694778561
+started,bundle,org.eclipse.jface,3.6.0.I20100601-0800,"org.eclipse.jface",1436694778562
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.100.v20100526-0800,"org.eclipse.ltk.core.refactoring",1436694778563
+started,bundle,org.eclipse.php.core,2.2.0.v20100616-1900,"org.eclipse.php.core",1436694778564
+started,bundle,org.eclipse.php.debug.ui,2.2.0.v20100616-1900,"org.eclipse.php.debug.ui",1436694778564
+started,bundle,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.ui",1436694778564
+started,bundle,org.eclipse.rse.services,3.2.0.v201006041352,"org.eclipse.rse.services",1436694778566
+started,bundle,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search",1436694778567
+started,bundle,org.eclipse.team.core,3.5.100.I20100527-0800,"org.eclipse.team.core",1436694778568
+started,bundle,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui",1436694778570
+started,bundle,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.editors",1436694778570
+started,bundle,org.eclipse.ui.forms,3.5.0.v20100427,"org.eclipse.ui.forms",1436694778571
+started,bundle,org.eclipse.ui.ide,3.6.0.I20100601-0800,"org.eclipse.ui.ide",1436694778624
+started,bundle,org.eclipse.ui.net,1.2.100.I20100505-1245,"org.eclipse.ui.net",1436694778624
+started,bundle,org.eclipse.ui.views,3.5.0.I20100527-0800,"org.eclipse.ui.views",1436694778625
+started,bundle,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"org.eclipse.ui.workbench",1436694778626
+started,bundle,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.workbench.texteditor",1436694778627
+started,bundle,org.eclipse.wst.common.frameworks,1.2.0.v201003040800,"org.eclipse.wst.common.frameworks",1436694778630
+started,bundle,org.eclipse.wst.common.project.facet.core,1.4.100.v201005190114,"org.eclipse.wst.common.project.facet.core",1436694778631
+started,bundle,org.eclipse.wst.common.uriresolver,1.1.401.v201004280700,"org.eclipse.wst.common.uriresolver",1436694778631
+started,bundle,org.eclipse.wst.css.core,1.1.400.v201005261534,"org.eclipse.wst.css.core",1436694778633
+started,bundle,org.eclipse.wst.css.ui,1.0.500.v201004290328,"org.eclipse.wst.css.ui",1436694778634
+started,bundle,org.eclipse.wst.dtd.core,1.1.400.v201004290328,"org.eclipse.wst.dtd.core",1436694778637
+started,bundle,org.eclipse.wst.dtd.ui,1.0.500.v201004290328,"org.eclipse.wst.dtd.ui",1436694778638
+started,bundle,org.eclipse.wst.html.core,1.1.400.v201005261534,"org.eclipse.wst.html.core",1436694778640
+started,bundle,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.ui",1436694778642
+started,bundle,org.eclipse.wst.internet.cache,1.0.400.v201004280700,"org.eclipse.wst.internet.cache",1436694778642
+started,bundle,org.eclipse.wst.jsdt.core,1.1.0.v201006030738,"org.eclipse.wst.jsdt.core",1436694778726
+started,bundle,org.eclipse.wst.jsdt.manipulation,1.0.200.v201004150600,"org.eclipse.wst.jsdt.manipulation",1436694778727
+started,bundle,org.eclipse.wst.jsdt.ui,1.1.0.v201005200157,"org.eclipse.wst.jsdt.ui",1436694778911
+started,bundle,org.eclipse.wst.jsdt.web.core,1.0.300.v201004150625,"org.eclipse.wst.jsdt.web.core",1436694778912
+started,bundle,org.eclipse.wst.jsdt.web.ui,1.0.300.v201006030742,"org.eclipse.wst.jsdt.web.ui",1436694778912
+started,bundle,org.eclipse.wst.sse.core,1.1.500.v201006020308,"org.eclipse.wst.sse.core",1436694778912
+started,bundle,org.eclipse.wst.sse.ui,1.2.0.v201006030742,"org.eclipse.wst.sse.ui",1436694778913
+started,bundle,org.eclipse.wst.validation,1.2.200.v201005271900,"org.eclipse.wst.validation",1436694778913
+started,bundle,org.eclipse.wst.xml.core,1.1.500.v201005271618,"org.eclipse.wst.xml.core",1436694778915
+started,bundle,org.eclipse.wst.xml.ui,1.1.100.v201006030742,"org.eclipse.wst.xml.ui",1436694778916
+started,bundle,org.eclipse.wst.xsd.core,1.1.501.v201004110600,"org.eclipse.wst.xsd.core",1436694778917
+started,bundle,org.eclipse.wst.xsl.core,1.1.0.v201004290328,"org.eclipse.wst.xsl.core",1436694778919
+started,bundle,org.eclipse.wst.xsl.exslt.core,1.0.0.v201005240426,"org.eclipse.wst.xsl.exslt.core",1436694778919
+os,sysinfo,,,"win32",1436694778924
+arch,sysinfo,,,"x86_64",1436694778924
+ws,sysinfo,,,"win32",1436694778924
+locale,sysinfo,,,"en_US",1436694778924
+processors,sysinfo,,,"4",1436694778924
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1436694778924
+java.runtime.version,sysinfo,,,"1.8.0_45-b15",1436694778924
+java.specification.name,sysinfo,,,"Java Platform API Specification",1436694778924
+java.specification.vendor,sysinfo,,,"Oracle Corporation",1436694778924
+java.specification.version,sysinfo,,,"1.8",1436694778924
+java.vendor,sysinfo,,,"Oracle Corporation",1436694778924
+java.version,sysinfo,,,"1.8.0_45",1436694778924
+java.vm.info,sysinfo,,,"mixed mode",1436694778924
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1436694778924
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1436694778924
+java.vm.specification.vendor,sysinfo,,,"Oracle Corporation",1436694778924
+java.vm.specification.version,sysinfo,,,"1.8",1436694778924
+java.vm.vendor,sysinfo,,,"Oracle Corporation",1436694778924
+java.vm.version,sysinfo,,,"25.45-b02",1436694778924
+started,bundle,org.eclipse.dltk.validators.core,1.0.0.v20100524-0038,"org.eclipse.dltk.validators.core",1436694779428
+started,bundle,org.eclipse.rse.core,3.1.100.v201003151933,"org.eclipse.rse.core",1436694780082
+started,bundle,org.eclipse.mylyn.monitor.ui,3.4.0.v20100608-0100-e3x,"org.eclipse.mylyn.monitor.ui",1436694780183
+started,bundle,org.eclipse.dltk.validators.externalchecker,1.0.0.v20090803-1754,"org.eclipse.dltk.validators.externalchecker",1436694780589
+started,bundle,org.eclipse.mylyn.commons.net,3.4.0.v20100608-0100-e3x,"org.eclipse.mylyn.commons.net",1436694782054
+started,bundle,org.eclipse.rse.ui,3.1.100.v201005282245,"org.eclipse.rse.ui",1436694783307
+started,bundle,org.eclipse.dltk.rse.ui,2.0.0.v20100115-2213,"org.eclipse.dltk.rse.ui",1436694783309
+started,bundle,org.eclipse.dltk.rse.core,2.0.0.v20100115-2213,"org.eclipse.dltk.rse.core",1436694783428
+started,bundle,org.eclipse.mylyn.commons.ui,3.4.0.v20100608-0100-e3x,"org.eclipse.mylyn.commons.ui",1436694785061
+started,bundle,org.eclipse.mylyn.bugzilla.core,3.4.0.v20100608-0100-e3x,"org.eclipse.mylyn.bugzilla.core",1436694785825
+started,bundle,org.eclipse.mylyn.bugzilla.ui,3.4.0.v20100608-0100-e3x,"org.eclipse.mylyn.bugzilla.ui",1436694786630
+started,bundle,org.eclipse.jsch.core,1.1.200.I20100505-1245,"org.eclipse.jsch.core",1436694787564
+started,bundle,org.eclipse.team.cvs.core,3.3.300.I20100526-0800,"org.eclipse.team.cvs.core",1436694787565
+started,bundle,org.eclipse.mylyn.context.core,3.4.0.v20100608-0100-e3x,"org.eclipse.mylyn.context.core",1436694787971
+started,bundle,org.eclipse.mylyn.context.ui,3.4.0.v20100608-0100-e3x,"org.eclipse.mylyn.context.ui",1436694788054
+started,bundle,org.eclipse.team.ui,3.5.100.I20100527-0800,"org.eclipse.team.ui",1436694788591
+started,bundle,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console",1436694789213
+started,bundle,org.eclipse.team.cvs.ui,3.3.300.I20100526-0800,"org.eclipse.team.cvs.ui",1436694790012
+started,bundle,org.eclipse.mylyn.tasks.ui,3.4.0.v20100608-0100-e3x,"org.eclipse.mylyn.tasks.ui",1436694790288
+started,bundle,org.eclipse.mylyn.team.ui,3.4.0.v20100608-0100-e3x,"org.eclipse.mylyn.team.ui",1436694790325
+started,bundle,org.eclipse.php.debug.daemon,2.2.0.v20100616-1900,"org.eclipse.php.debug.daemon",1436694790395
+started,bundle,org.eclipse.update.scheduler,3.2.300.v20100512,"org.eclipse.update.scheduler",1436694790502

@@ -1,0 +1,14 @@
+<?php
+
+	class Przyklad
+	{
+		public function ZrobCos(IInteligentBuildingManagement $management, $wszystkieDane)
+		{
+			//$management->
+		}
+	}
+	
+	
+	$obj = new Przyklad();
+	
+	$obj->ZrobCos(new PrzykladWieleInterfejsow(), "fdasf");

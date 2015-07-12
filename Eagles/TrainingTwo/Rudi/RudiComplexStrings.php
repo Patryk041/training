@@ -40,10 +40,10 @@ class RudiComplexString {
 		for($j=0;$j<Rudi_strlen($subject);$j++)
 		{
 		//jesli litery sie zgadzaja, zamienia je na spacje, z jakiegos powodu null nie zdawal testu 
-		if($subject[$j]==$seek[$i]){	
-		$subject[$j]=' ';
-		$seek[$i]=' ';
-		}
+			if($subject[$j]==$seek[$i]){	// abcca aabbc
+				$subject[$j]=' ';
+				$seek[$i]=' ';
+			}
 		}
 	}
 

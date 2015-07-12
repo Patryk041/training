@@ -43,13 +43,13 @@ return $year;
 private function IsLeapYear($year) {
 
 // jezeli rok niepodzielny przez 100 ale podzielny przez 4 lub podzielny przez 100 i 400 to jest przestepny
-if ( ( $year % 100 != 0 && $year % 4 == 0 )  OR ( $year % 100 == 0 && $year % 400 == 0 ) ) {
-	return TRUE;
-}
-
-else {
-	return FALSE;
-}
+	if ( ( $year % 100 != 0 && $year % 4 == 0 )  OR ( $year % 100 == 0 && $year % 400 == 0 ) ) {
+		return TRUE;
+	}
+	
+	else {
+		return FALSE;
+	}
 
 }
 

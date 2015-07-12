@@ -1,0 +1,7 @@
+<?php
+
+
+	abstract class BuildingsCommunicationAggregator
+	{
+		public abstract function AggregateInfo();
+	}

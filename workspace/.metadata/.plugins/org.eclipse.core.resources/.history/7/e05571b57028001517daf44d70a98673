@@ -1,0 +1,9 @@
+<?php
+
+	class Przyklad
+	{
+		public function ZrobCos(IInteligentBuildingManagement $management)
+		{
+			//$management->
+		}
+	}

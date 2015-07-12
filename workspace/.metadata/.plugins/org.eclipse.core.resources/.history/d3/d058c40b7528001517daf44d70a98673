@@ -1,0 +1,14 @@
+<?php
+
+	class Overloading // przeciazenie
+	{
+		public function Operacja()
+		{
+			
+		}
+		
+	public function Operacja()
+		{
+			
+		}
+	}

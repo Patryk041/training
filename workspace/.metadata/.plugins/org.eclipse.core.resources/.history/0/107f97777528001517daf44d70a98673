@@ -1,0 +1,11 @@
+<?php
+
+	class Overloading // przeciazenie
+	{
+		public function Operacja($cokolwiek = null, $nastepne = null)
+		{
+			$args = func_get_args();
+		}
+		
+		
+	}
