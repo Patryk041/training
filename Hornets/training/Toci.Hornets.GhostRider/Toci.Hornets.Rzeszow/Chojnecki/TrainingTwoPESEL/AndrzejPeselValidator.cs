@@ -2,12 +2,11 @@
 
 namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoPESEL
 {
-    public class MyPeselValidator : PeselValidator
+    public class AndrzejPeselValidator : PeselValidator
     {
         protected override string CutOffDate(string pesel)
         {
-            var myCalendar = new Calendar(pesel);
-            return myCalendar.GetDay() + "." + myCalendar.GetMonth() + "." + myCalendar.GetYear();
+            return DateMenger.GetDate(pesel);
         }
 
         protected override bool Checksum(string pesel)
@@ -17,7 +16,7 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoPESEL
 
         protected override bool ValidateDate(int year, int month, int day)
         {
-            return Calendar.dayCheck(year, month, day);
+            return DateMenger.DayCheck(year, month, day);
         }
 
         public override string GetNick()
@@ -29,9 +28,9 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoPESEL
         {
             if (pesel.Length != 11) return false;
             if (Checksum(pesel) == false) return false;
-            return ValidateDate(int.Parse(CutOffDate(pesel).Substring(0, 2)),
-                int.Parse(CutOffDate(pesel).Substring(3, 2)),
-                int.Parse(CutOffDate(pesel).Substring(6, 2)));
+            return ValidateDate(int.Parse(CutOffDate(pesel).Substring(4, 4)),
+                int.Parse(CutOffDate(pesel).Substring(2, 2)),
+                int.Parse(CutOffDate(pesel).Substring(0, 2)));
         }
     }
 }

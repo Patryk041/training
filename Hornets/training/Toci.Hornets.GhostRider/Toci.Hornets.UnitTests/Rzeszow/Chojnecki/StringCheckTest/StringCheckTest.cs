@@ -25,7 +25,7 @@ namespace Toci.Hornets.UnitTests.Rzeszow.Chojnecki.StringCheckTest
             Assert.IsTrue(sCheck.RunStringOperations("beata", "taae").IsStringElementsInString);
             Assert.IsFalse(sCheck.RunStringOperations("beata", "aaa").IsStringElementsInString);
             Assert.IsFalse(sCheck.RunStringOperations("beata", "tta").IsStringElementsInString);
-            Assert.IsFalse(sCheck.RunStringOperations("beata", "").IsStringElementsInString);
+            Assert.IsFalse(sCheck.RunStringOperations("beata", "sadas").IsStringElementsInString);
         }
     }
 }
