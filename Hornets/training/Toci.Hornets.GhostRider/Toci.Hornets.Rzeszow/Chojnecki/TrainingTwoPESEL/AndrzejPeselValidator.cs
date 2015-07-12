@@ -11,7 +11,7 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoPESEL
 
         protected override bool Checksum(string pesel)
         {
-            return PeselControler.PeselContor(pesel);
+            return PeselNumbersControler.PeselContor(pesel);
         }
 
         protected override bool ValidateDate(int year, int month, int day)

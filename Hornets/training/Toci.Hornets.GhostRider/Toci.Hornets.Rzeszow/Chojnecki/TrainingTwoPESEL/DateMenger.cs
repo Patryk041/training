@@ -12,8 +12,8 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoPESEL
 
         private static int Date(int month)
         {
-            var slownik = new Dictionary<int, int> {{80, 1900}, {60, 2220}, {40, 2100}, {20, 2000}, {0, 1900}};
-            return (from key in slownik.Keys where key > month select slownik[key]).FirstOrDefault();
+            var yearGenerator = new Dictionary<int, int> {{80, 1900}, {60, 2220}, {40, 2100}, {20, 2000}, {0, 1900}};
+            return (from key in yearGenerator.Keys where key > month select yearGenerator[key]).FirstOrDefault();
         }
 
         public static string GetYear(string pesel)

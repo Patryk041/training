@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoPESEL
 {
-    internal class PeselControler
+    internal class PeselNumbersControler
     {
         //Cyfra kontrolna i sprawdzanie poprawności numeru
         public static bool PeselContor(string pesel)
