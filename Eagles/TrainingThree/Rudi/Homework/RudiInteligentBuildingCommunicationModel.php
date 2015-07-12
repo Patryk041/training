@@ -8,7 +8,7 @@ class RudiInteligentBuildingCommunicationModel implements IInteligentBuildingCom
 {	
 	public function GetOperations(){
 	
-		
+
 	}	
 	
 }
