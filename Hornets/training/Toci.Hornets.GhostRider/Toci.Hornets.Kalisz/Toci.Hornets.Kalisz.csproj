@@ -39,12 +39,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adrianowsky94\PeselValidatorHW\A94PeselValidator.cs" />
+    <Compile Include="Adrianowsky94\PeselValidatorHW\PeselManipulationMethods\Date.cs" />
+    <Compile Include="Adrianowsky94\PeselValidatorHW\PeselManipulationMethods\DateCutter.cs" />
+    <Compile Include="Adrianowsky94\PeselValidatorHW\PeselManipulationMethods\DateValidator.cs" />
+    <Compile Include="Adrianowsky94\PeselValidatorHW\PeselManipulationMethods\MonthsDict.cs" />
+    <Compile Include="Adrianowsky94\PeselValidatorHW\PeselManipulationMethods\SumChecker.cs" />
+    <Compile Include="Adrianowsky94\StringManipulator\Adrianowsky94StringCheck.cs" />
+    <Compile Include="Adrianowsky94\StringManipulator\CheckingMethods\IsAnagram.cs" />
+    <Compile Include="Adrianowsky94\StringManipulator\CheckingMethods\ElementInString.cs" />
+    <Compile Include="Adrianowsky94\StringManipulator\CheckingMethods\StringContainString.cs" />
+    <Compile Include="Adrianowsky94\StringManipulator\CheckingMethods\ListOfStringManipulation.cs" />
     <Compile Include="Adrianowsky94\TheChosenOne.cs" />
+    <Compile Include="Amman\PeselValidator\AmmanPeselValidator.cs" />
+    <Compile Include="Amman\PeselValidator\Workers\ChksumValidator.cs" />
+    <Compile Include="Amman\PeselValidator\Workers\DateValidation\DayValidator.cs" />
+    <Compile Include="Amman\PeselValidator\Workers\DateValidation\MonthValidator.cs" />
+    <Compile Include="Amman\PeselValidator\Workers\DateValidation\YearValidator.cs" />
+    <Compile Include="Amman\PeselValidator\Workers\DateValidator.cs" />
+    <Compile Include="Amman\PeselValidator\Workers\PeselCutter.cs" />
+    <Compile Include="Amman\PeselValidator\Workers\PeselValidatorWorker.cs" />
     <Compile Include="Amman\StringManipulator\AmmanStringCheck.cs" />
+    <Compile Include="Amman\StringManipulator\BatchAnagram.cs" />
     <Compile Include="Amman\StringManipulator\Workers\Anagram.cs" />
     <Compile Include="Amman\StringManipulator\Workers\Stringception.cs" />
     <Compile Include="Amman\StringManipulator\Workers\StringElement.cs" />
     <Compile Include="Amman\TelephoneExercise\APhone.cs" />
+    <Compile Include="Bombel\Example.cs" />
     <Compile Include="LidiaM\mojaklasa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,9 +75,7 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Amman\PeselValidator\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

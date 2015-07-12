@@ -40,14 +40,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdamP\Class1.cs" />
+    <Compile Include="AdamP\TaskTrainingTwo\PeselValidator.cs" />
+    <Compile Include="AdamP\TaskTrainingTwo\StringManipulator.cs" />
     <Compile Include="AdamP\TelephoneTask\TelephoneTaskChooser.cs" />
+    <Compile Include="Bossu\TelephoneTask\MyTelephoneInterpreter.cs" />
     <Compile Include="Coffee13\CoffeeTestClass.cs" />
+    <Compile Include="Coffee13\TaskTrainingTwo\PeselValidator\CoffeePeselValidator.cs" />
+    <Compile Include="Coffee13\TaskTrainingTwo\StringManipulator\CoffeeStringManipulations.cs" />
     <Compile Include="Coffee13\TelephoneTask\TaskOneTelephone.cs" />
     <Compile Include="Common\Interfaces\IPeselValidator.cs" />
     <Compile Include="KamilS\KamilS.cs" />
+    <Compile Include="KamilS\TaskTrainingTwo\PeselValidator\PeselValidator.cs" />
+    <Compile Include="KamilS\TaskTrainingTwo\String\StringManipulator.cs" />
     <Compile Include="KamilS\TelephoneTask\TelephoneTaskClass.cs" />
     <Compile Include="Pr0fes0r\TelephoneTask\Telefon.cs" />
     <Compile Include="Pr0fes0r\Test.cs" />
+    <Compile Include="Pr0fes0r\TrainingTwo\PeselValidator\Checsum\Sum.cs" />
+    <Compile Include="Pr0fes0r\TrainingTwo\PeselValidator\Date\DataExtractor.cs" />
+    <Compile Include="Pr0fes0r\TrainingTwo\PeselValidator\Date\Days.cs" />
+    <Compile Include="Pr0fes0r\TrainingTwo\PeselValidator\Date\Months.cs" />
+    <Compile Include="Pr0fes0r\TrainingTwo\PeselValidator\Date\Years.cs" />
+    <Compile Include="Pr0fes0r\TrainingTwo\PeselValidator\Pesel.cs" />
+    <Compile Include="Pr0fes0r\TrainingTwo\String\SortrString.cs" />
+    <Compile Include="Pr0fes0r\TrainingTwo\String\Stringi.cs" />
+    <Compile Include="Pr0fes0r\TrainingTwo\String\StringManipulator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Szary\KlasaSzarego.cs" />
     <Compile Include="Szary\TelephoneTask\TelephoneGrayHomework.cs" />

@@ -1,85 +1,41 @@
 ﻿using Toci.Hornets.Sieradz.Undergroun1Task.Interface;
+using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
 {
-    public class UCantTouchThisAutismPeselValisator : IPeselValidator
+    public class UCantTouchThisAutismPeselValisator : GhostRider.YourWork.TasksTrainingTwo.PeselValidator
     {
         //normal version coming soon
         //autism not final
 
-        private const int UpperBoundary = '9' + 1;
+        private int[] dateArray = new int[3];
 
-        public bool IsPeselValid(string pesel)
+        public override string GetNick()
         {
-            int day, month, year;
+            return "UCantTouchThisAutism";
+        }
+
+        public override bool IsPeselValid(string pesel)
+        {
             char[] peselArray = pesel.ToCharArray();
-
-            if (!ArePeselDigitsOk(peselArray)) return false;
-
-            GetDateFromPesel(peselArray, out day, out month, out year);
-
-            if (!ValidateDate(year, month, day)) return false;
-
-            return IsChecksumOk(peselArray);
+            if (pesel.Length != 11 || ! UCTT_PeselValidatorUtils.IsChecksumOk(peselArray)) return false;
+            UCTT_PeselValidatorUtils.GetDateFromPesel(peselArray, dateArray);
+            return UCTT_PeselValidatorUtils.ValidateDate(dateArray[0], dateArray[1], dateArray[2]);
         }
 
-        public bool ValidateDate(int year, int month, int day)
+        protected override string CutOffDate(string pesel)
         {
-            if (month > 80)
-            {
-                month -= 80;
-                year += 1800;
-            }
-            else if (month > 60)
-            {
-                month -= 60;
-                year += 2200;
-            }
-            else if (month > 40)
-            {
-                month -= 40;
-                year += 2100;
-            }
-            else if (month > 20)
-            {
-                month -= 20;
-                year += 2000;
-            }
-            else
-            {
-                year += 1900;
-            }
-
-            return UCTT_DateValidatorUtils.IsDateValid(day, month, year);
+            throw new System.NotImplementedException();
         }
 
-        private void GetDateFromPesel(char[] peselArray, out int day, out int month, out int year)
+        protected override bool Checksum(string pesel)
         {
-            year = (peselArray[0] - '0') * 10 + (peselArray[1] - '0');
-            month = (peselArray[2] - '0') * 10 + (peselArray[3] - '0');
-            day = (peselArray[4] - '0') * 10 + (peselArray[5] - '0');
+            throw new System.NotImplementedException();
         }
 
-        private bool ArePeselDigitsOk(char[] peselArray)
+        protected override bool ValidateDate(int year, int month, int day)
         {
-            int numberOfDigits = 0;
-
-            for (int i = 0; i < peselArray.Length; i++)
-            {
-                numberOfDigits += ((~((peselArray[i] - '0') >> 31) & ((peselArray[i] - UpperBoundary) >> 31))) & 1;
-            }
-            return numberOfDigits == 11 || peselArray.Length != 11;
-        }
-
-        private bool IsChecksumOk(char[] peselArray)
-        {
-            int[] wages = {1,3,7,9,1,3,7,9,1,3,1};
-            int checksum = 0;
-            for (int i = 0; i < peselArray.Length; i++)
-            {
-                checksum += peselArray[i] * wages[i];
-            }
-            return (checksum % 10) == 0;
+            throw new System.NotImplementedException();
         }
     }
 }
