@@ -18,6 +18,7 @@ namespace Toci.Hornets.UnitTests.Rzeszow.Chojnecki.PeselTest
             Assert.AreEqual("08", DateMenger.GetDay("94120807274"));
             Assert.AreEqual("1994", DateMenger.GetYear("94120807274"));
             Assert.AreEqual("12", DateMenger.GetMonth("94120807274"));
+            Assert.AreEqual("08121994", DateMenger.GetDate("94120807274"));
 
             Assert.AreEqual("23", DateMenger.GetDay("93122305155"));
             Assert.AreEqual("1993", DateMenger.GetYear("93122305155"));
