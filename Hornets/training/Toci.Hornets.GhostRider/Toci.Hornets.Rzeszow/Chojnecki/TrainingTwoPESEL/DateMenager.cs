@@ -3,14 +3,14 @@ using System.Linq;
 
 namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoPESEL
 {
-    public static class DateMenger
+    public static class DateMenager
     {
         public static int CutMonth(int month)
         {
             return month%20;
         }
 
-        private static int Date(int month)
+        private static int CutYear(int month)
         {
             var yearGenerator = new Dictionary<int, int> {{80, 1900}, {60, 2220}, {40, 2100}, {20, 2000}, {0, 1900}};
             return (from key in yearGenerator.Keys where key > month select yearGenerator[key]).FirstOrDefault();
@@ -18,7 +18,7 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoPESEL
 
         public static string GetYear(string pesel)
         {
-            return (int.Parse(pesel.Substring(0, 2)) + Date(int.Parse(pesel.Substring(2, 2)))).ToString();
+            return (int.Parse(pesel.Substring(0, 2)) + CutYear(int.Parse(pesel.Substring(2, 2)))).ToString();
         }
 
         public static string GetMonth(string pesel)
@@ -30,9 +30,7 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoPESEL
 
         public static string GetDay(string pesel)
         {
-            var day = int.Parse(pesel.Substring(4, 2));
-            if (day < 10) return "0" + day;
-            return day.ToString();
+            return pesel.Substring(4, 2);
         }
 
         public static string GetDate(string pesel)

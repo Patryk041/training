@@ -6,17 +6,17 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoPESEL
     {
         protected override string CutOffDate(string pesel)
         {
-            return DateMenger.GetDate(pesel);
+            return DateMenager.GetDate(pesel);
         }
 
         protected override bool Checksum(string pesel)
         {
-            return PeselNumbersControler.PeselContor(pesel);
+            return PeselNumbersControler.PeselControl(pesel);
         }
 
         protected override bool ValidateDate(int year, int month, int day)
         {
-            return DateMenger.DayCheck(year, month, day);
+            return DateMenager.DayCheck(year, month, day);
         }
 
         public override string GetNick()

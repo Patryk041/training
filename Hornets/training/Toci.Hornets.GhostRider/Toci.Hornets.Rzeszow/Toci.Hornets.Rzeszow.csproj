@@ -48,7 +48,7 @@
     <Compile Include="AndrzejD\Class1.cs" />
     <Compile Include="Chojnecki\AndrzejJestem.cs" />
     <Compile Include="Chojnecki\TelePhone\MyPhone.cs" />
-    <Compile Include="Chojnecki\TrainingTwoPESEL\DateMenger.cs" />
+    <Compile Include="Chojnecki\TrainingTwoPESEL\DateMenager.cs" />
     <Compile Include="Chojnecki\TrainingTwoPESEL\PeselNumbersControler.cs" />
     <Compile Include="Chojnecki\TrainingTwoPESEL\AndrzejPeselValidator.cs" />
     <Compile Include="Chojnecki\TrainingTwoString\StringCheck.cs" />
