@@ -14,6 +14,7 @@ class MalyPeselValidation extends  PeselValidation {
         if($this->IsLeapYear()) $NOD[1]=29;
 
         if($NOD[(int)$this->month]-1 < $day) return false;
+        
              echo "----------------";
               echo  var_dump($this->month) ."<br>";
               echo   var_dump($this->day) ."<br>";

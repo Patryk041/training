@@ -5,14 +5,21 @@ require_once('DateOperators.php');
 require_once'../../GhostRider/Homework/PeselValidation.php';
 
 class PerlaPeselValidation extends PeselValidation {
+	
+	protected $stringsHandler;// = new PerlaStringOperators();
+	
+	public function __construct()
+	{
+		$this->stringsHandler = new PerlaStringOperators();
+	}
 
     public function CutOffDate($pesel) {
 
-        $stringsHandler = new PerlaStringOperators;
+        //$this->stringsHandler->
 
-        $year = $stringsHandler->PerlaSubStr($pesel, 0, 2);
-        $month = $stringsHandler->PerlaSubStr($pesel, 2, 2);
-        $day = $stringsHandler->PerlaSubStr($pesel, 4, 2);
+        $year = $this->stringsHandler->PerlaSubStr($pesel, 0, 2);
+        $month = $this->stringsHandler->PerlaSubStr($pesel, 2, 2);
+        $day = $this->stringsHandler->PerlaSubStr($pesel, 4, 2);
 
         return $result = array('year' => $year, 'month' => $month, 'day' => $day);
     }
@@ -72,7 +79,7 @@ class PerlaPeselValidation extends PeselValidation {
             $dateConfirmation = FALSE;
         }
 
-        if ($lengthConfirmation AND $dateConfirmation AND $checkSumConfirmation) {
+        if ($lengthConfirmation && $dateConfirmation AND $checkSumConfirmation) {
             return TRUE;
         } else {
             return FALSE;

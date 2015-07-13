@@ -7,7 +7,7 @@ class DateValidation
 	
 	private $MonthDay = array(
 			1 => 31,
-			2 => array(28,29),
+			2 => array(28, 29),
 			3 => 31,
 			4 => 30,
 			5 => 31,
