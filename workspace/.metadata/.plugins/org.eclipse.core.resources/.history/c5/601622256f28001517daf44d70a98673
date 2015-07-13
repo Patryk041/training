@@ -1,6 +1,0 @@
-<?php
-
-	interface IInteligentBuildingManagement
-	{
-		public function Manage();
-	}

@@ -1,6 +1,0 @@
-<?php
-
-	class PrzykladWieleInterfejsow implements IInteligentBuildingCommunication, IInteligentBuildingManagement, IInteligentBuildingDevice
-	{
-		
-	}
