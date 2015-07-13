@@ -40,10 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Diana\exampleDiana.cs" />
-
     <Compile Include="Didi\PeselTask\DataClass.cs" />
     <Compile Include="Didi\PeselTask\ValidationPeselClass.cs" />
-
     <Compile Include="Didi\StringManiupulation\StringManipulationClass.cs" />
     <Compile Include="Didi\TelephoneTask\GetMessageClass.cs" />
     <Compile Include="Didi\WorkWithBranchClass.cs" />
@@ -58,6 +56,9 @@
     <Compile Include="MoWerr\StringOperations\MoWerrStringOperations.cs" />
     <Compile Include="MoWerr\TelephoneTask\SendTypeImplementation.cs" />
     <Compile Include="PiotrekJ\szkolenie1.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwiceBankParserTransfer.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwiceFileOperation.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwicePerformTransfer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rudi\Rudis.cs" />
     <Compile Include="Rudi\TrainingTwo\RudiPeselValidator.cs" />
