@@ -1,0 +1,10 @@
+Plac Wolnosci; 4 ; Opole ; Window ; Open ; 2015-07-13 13:32 ; 2s ; 0.002 kWh ; null ; null ;
+Plac Wolnosci; 4 ; Opole ; Window; Close; 2015-07-13 14:52 ; 3s ; 0.001 kWh ; null ; Raining outside;
+Plac Wolnosci; 4 ; Opole ; Fridge; Call ; 2015-07-13 16:21 ; 14s ; 0.005 kWh ; null ; Egs out of date;
+Plac Wolnosci; 4 ; Opole ; Thermometer; Measure; 2015-07-13 17:00 ; 0.5 secounds ; 0.00001 kWh ; null ; Temprature inside: 21;
+Plac Wolnosci; 4 ; Opole ; Doorbell; Press; 2015-07-13 18:42 ; 0.7s ; 0.002 kWh ; null ; Nobody opened. [JPG];
+Plac Wolnosci; 4 ; Opole ; Washing machine ; start-up ; 2015-07-13 19:00 ; 60m ; 0.3 kWh ; No water. Stoped at 19:28; null;
+Plac Wolnosci; 4 ; Opole ; Washing machine ; start-up ; 2015-07-13 19:44 ; 60m ; 0.9 kWh ; Completed afret reboot without errors; Detergent's going empty ;
+
+
+
