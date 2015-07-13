@@ -95,9 +95,6 @@
     <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
     <Compile Include="Sieradz\Quicksilver\LessCasualSC.cs" />
     <Compile Include="Sieradz\Quicksilver\TwoQs\QuicksilverStringManipulatorUnitTest.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\Interfaces\ITypowyAdamBenchmark.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\Interfaces\ITypowyAdamMethodFactoryGenerator.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\Interfaces\ITypowyAdamTestListGenerator.cs" />
     <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamBenchmark.cs" />
     <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamMethodFactoryGenerator.cs" />
     <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamTestListGenerator.cs" />
