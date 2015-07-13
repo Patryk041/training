@@ -46,6 +46,7 @@
     <Compile Include="Dziusio\MyPhoneTask\HomeworkTenMinutes.cs" />
     <Compile Include="Dziusio\PeselValidator\DziusioDateValidator.cs" />
     <Compile Include="Dziusio\PeselValidator\DziusioPeselValidator.cs" />
+    <Compile Include="Dziusio\StringCompare\DziusioStringManipulationsResults.cs" />
     <Compile Include="GhostRider\HowDoWeWorkOnBranches.cs" />
     <Compile Include="Hoosarr\TestClass.cs" />
     <Compile Include="Lausion\ExampeClass.cs" />
@@ -74,9 +75,7 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dziusio\StringCompare\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
