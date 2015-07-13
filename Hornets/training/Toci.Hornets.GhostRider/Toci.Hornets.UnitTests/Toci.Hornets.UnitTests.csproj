@@ -71,6 +71,7 @@
     <Compile Include="Legnica\Patryk\Mock\FakePeselDateValidator.cs" />
     <Compile Include="Legnica\Patryk\PatrykPeselValidatorTests.cs" />
     <Compile Include="Legnica\Patryk\PatrykStringManupulationsBaseTests.cs" />
+    <Compile Include="Rzeszow\Chojnecki\Bank\BankTest.cs" />
     <Compile Include="Rzeszow\Chojnecki\PeselTest\PESELTest.cs" />
     <Compile Include="Rzeszow\Chojnecki\StringCheckTest\StringCheckTest.cs" />
     <Compile Include="Rzeszow\Ksebal\Testy.cs" />

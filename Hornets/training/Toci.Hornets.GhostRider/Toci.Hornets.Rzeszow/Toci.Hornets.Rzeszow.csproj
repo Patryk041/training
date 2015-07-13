@@ -47,6 +47,11 @@
     <Compile Include="Agata\YaghaTelephoneTask\YaghaCommunicationsMethods.cs" />
     <Compile Include="AndrzejD\Class1.cs" />
     <Compile Include="Chojnecki\AndrzejJestem.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejBankTransfer.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejBankTransfersParser.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejFileOperation.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejPerformTransfers.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejTransferHandle.cs" />
     <Compile Include="Chojnecki\TelePhone\MyPhone.cs" />
     <Compile Include="Chojnecki\TrainingTwoPESEL\DateMenager.cs" />
     <Compile Include="Chojnecki\TrainingTwoPESEL\PeselNumbersControler.cs" />
@@ -105,6 +110,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Chojnecki\Kir\Przelewy.txt" />
+    <Content Include="Chojnecki\Kir\x.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
