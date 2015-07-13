@@ -7,9 +7,10 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
     {
         public override string GetFileContent(string path)
         {
-            FileStream loadedFile = new FileStream(path, FileMode.Open);
-            return loadedFile.ToString();
-
+//            FileStream loadedFile = new FileStream(path, FileMode.Open);
+//            return loadedFile.Read(new byte[loadedFile.Length], 0, int.MaxValue).ToString();
+//            return loadedFile.ToString();
+            return File.ReadAllText(path);  //tmp fix by UCTT
         }
     }
 }
