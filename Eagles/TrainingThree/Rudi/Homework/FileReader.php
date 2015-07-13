@@ -6,10 +6,13 @@ class FileReader{
 
 	function __construct($pathToFile)
 	{
-		$this->plik=fopen($pathToFile,"r") or die("Nie mozna otworzyc pliku: ".$pathToFile);
+		if(is_readable($pathToFile))
+			$this->plik=fopen($pathToFile,"r");
+		else
+			echo "Nie mozna otworzyc pliku: ".$pathToFile;
 	}
 
-	public function nextLine()
+	public function getNextLine()
 	{
 		if($this->isNext($this->plik))
 		{
@@ -19,15 +22,17 @@ class FileReader{
 
 	public function isNext()
 	{
-		return !feof($this->plik);
+		//dodanie zamkniecia klpiku
+		if(!feof($this->plik))
+		{
+			return true;
+		} else{
+			echo "\nzamykam plik";
+			fclose($this->plik);
+			return false;
+		}
 	}
 }
 
-$reader=new FileReader("operacje.txt");
-
-while($reader->isNext())
-{
-	echo $reader->nextLine();
-}
 
 
