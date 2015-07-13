@@ -57,6 +57,7 @@
     <Compile Include="Tszulczewski\Example.cs" />
     <Compile Include="Tszulczewski\ExampleClass.cs" />
     <Compile Include="Tszulczewski\TelephoneTask\HomeWorkClass.cs" />
+    <Compile Include="Tszulczewski\Training2HomeWork\TszulczewskiStringManipulations.cs" />
     <Compile Include="Wyga\FirstTestClass.cs" />
     <Compile Include="Wyga\Telephone Task\MyTelephoneTask.cs" />
   </ItemGroup>

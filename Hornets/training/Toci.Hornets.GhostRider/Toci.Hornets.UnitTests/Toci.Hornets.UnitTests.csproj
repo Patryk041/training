@@ -53,6 +53,7 @@
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
     <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />
     <Compile Include="Wroclaw\gipson\StringManipulationsTest.cs" />
+    <Compile Include="Wroclaw\Tszulczewski\StringManipulationsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
