@@ -2,8 +2,14 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
+using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
+using Toci.Hornets.Sieradz.Duch.Homework_2.PeselValidator;
+using Toci.Hornets.Sieradz.Quicksilver.TasksTrainingTwoQs;
 using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
+using Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo;
 using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator;
 
 namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
@@ -11,71 +17,93 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
     [TestClass]
     public class PeselValidatorTest
     {
+        private static string testDirectory = @"..\..\Sieradz\TypowyAdam\";
+        private static string assemblyName = "Toci.Hornets.Sieradz";
+        private static int iterationValue = 100;
+        private static List<object> peselValidatorsList = new List<object>();
+        private static List<List<string>> peselListsList = new List<List<string>>();
+        private static Dictionary<string, Func<string, bool>> validatorFactory = new Dictionary<string, Func<string, bool>>();
+        private static Dictionary<string, long> benchmarkTimes = new Dictionary<string, long>();
+        
         [TestMethod]
         public void TestMethod1()
         {
-            List<string> validPeselList = new List<string>();
-            List<string> invalidPeselLIst = new List<string>();
-            List<string> uncommonCasesList = new List<string>
+            Stopwatch benchmark = new Stopwatch();
+            benchmark.Start();
+            GenerateListOfPeselLists(testDirectory);
+            GenerateObjectList(assemblyName);
+            GenerateMethodFactory();
+            benchmark.Stop();
+            benchmarkTimes.Add("Generating structures takes: ", benchmark.ElapsedMilliseconds);
+            foreach (var isPeselValid in validatorFactory)
             {
-                "93022912345",
-                "asdasdasdasd",
-                "asdgnbbn3434123",
-                "12345678901A"
-                //dodawajcie coś bo mi się nie chce 
-            };
-
-            using (StreamReader sr = new StreamReader(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\Sieradz\TypowyAdam\validPeselList.txt")))
-            {
-                while (sr.Peek() >= 0)
-                {
-                    validPeselList.Add(sr.ReadLine());
-                }
-            }
-            using (StreamReader sr = new StreamReader(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\Sieradz\TypowyAdam\invalidPeselList.txt")))
-            {
-                while (sr.Peek() >= 0)
-                {
-                    invalidPeselLIst.Add(sr.ReadLine());
-                }
-            }
-         
-            foreach (var item in ValidatorFactory)
-            {
-                Stopwatch benchmark = new Stopwatch();
+                benchmark.Reset();
                 benchmark.Start();
-                for (int i = 0; i < 100; i++) //bez tego wykonuje się w 10ms co jest trochę za krótkie
+                for (int j = 0; j < iterationValue; j++)
                 {
-                    foreach (string testPesel in validPeselList)
+                    foreach (var peselLists in peselListsList)
                     {
-                        Assert.IsTrue(item.Value(testPesel));
-                    }
-                    foreach (string testPesel in invalidPeselLIst)
-                    {
-                        Assert.IsFalse(item.Value(testPesel));
-                    }
-                    foreach (string testPesel in uncommonCasesList)
-                    {
-                        Assert.IsFalse(item.Value(testPesel));
+                        for (int i = 0; i < peselLists.Count - 1; i++) //foreach (var pesel in peselLists)
+                        {
+                            Assert.AreEqual(isPeselValid.Value(peselLists[i]), (peselLists.Last() == "true"));
+                        }
+
 
                     }
                 }
                 benchmark.Stop();
-                Debug.Print("{0}: {1}ms", item.Key, Convert.ToString(benchmark.ElapsedMilliseconds));
+                benchmarkTimes.Add(isPeselValid.Key, benchmark.ElapsedMilliseconds);
             }
-
+            PrintBenchmarkTimes();
         }
-        public static Dictionary<string, Func<string, bool>> ValidatorFactory = new Dictionary<string, Func<string, bool>>()
-         {
-             //sorki Adam że zjechałem :P
 
+        private static void PrintBenchmarkTimes()
+        {
+            foreach (var benchmarkTime in benchmarkTimes)
+            {
+                Debug.Print("{0}: {1}ms", benchmarkTime.Key,benchmarkTime.Value);
+            }
+        }
 
-             // "Nie bądź jak leń co śmierdzący jest!"
-             //                                 UCCT
+        private static void GenerateMethodFactory()
+        {
+            foreach (PeselValidator o in peselValidatorsList)
+            {
+                validatorFactory.Add(o.GetNick(), o.IsPeselValid);
+            }
+        }
+        private static void GenerateListOfPeselLists(string initialDirectory)
+        {
+            List<string> fileNames = new List<string>(Directory.GetFiles(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @initialDirectory)));
+            fileNames= fileNames.Where(s => s.Contains(".txt")).Where(s => s.Contains("Pesel")).ToList();
+            foreach (var fileName in fileNames)
+            {
+                peselListsList.Add(GeneratePeselList(fileName));
+            }
+        }
+        private static List<string> GeneratePeselList(string patch)
+        {
+            List<string> peselList = new List<string>();
 
-             { "TypowyAdam", new TypowyAdamPeselValidator().IsPeselValid },
-             { "UCantTouchThisAutism", new UCantTouchThisAutismPeselValisator().IsPeselValid }
-         };
+            using (StreamReader txtReader = new StreamReader(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @patch)))
+            {
+                while (txtReader.Peek() >= 0)
+                {
+                    peselList.Add(txtReader.ReadLine());
+                }
+            }
+            return peselList;
+        }
+
+        private static void GenerateObjectList(string assemblyName)
+        {
+
+            Assembly myAssembly = AppDomain.CurrentDomain.Load(assemblyName);
+            foreach (var type in myAssembly.GetTypes().Where(type => type.IsClass && type.IsSubclassOf(typeof(PeselValidator))))
+            {
+                peselValidatorsList.Add((PeselValidator) Activator.CreateInstance(type));
+            }   
+        }
     }
 
 

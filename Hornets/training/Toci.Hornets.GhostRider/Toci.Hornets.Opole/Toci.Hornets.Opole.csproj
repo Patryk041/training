@@ -48,7 +48,8 @@
     <Compile Include="Dziusio\PeselValidator\DziusioPeselValidator.cs" />
     <Compile Include="Dziusio\StringCompare\DziusioStringManipulationsResults.cs" />
     <Compile Include="GhostRider\HowDoWeWorkOnBranches.cs" />
-    <Compile Include="Hoosarr\TestClass.cs" />
+    <Compile Include="Hoosarr\FirstTask\TestClass.cs" />
+    <Compile Include="Hoosarr\TelephoneTask\Telephone Task.cs" />
     <Compile Include="Lausion\ExampeClass.cs" />
     <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Day.cs" />
     <Compile Include="Lausion\TasksTraningTwo\PeselValidator\LausionPeselValidator.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntYearValidation.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntPeselValidator\S2yfr4ntPeselFactory.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntPeselValidator\S2yfr4ntPeselValidator.cs" />
+    <Compile Include="S2yfr4nt\Homework\S2yfr4ntStringManipulations\S2yfr4ntFacade.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntStringManipulations\S2yfr4ntStringManipulations.cs" />
     <Compile Include="S2yfr4nt\S2yfr4ntGenericFactory.cs" />
     <Compile Include="S2yfr4nt\TelephoneHomework\S2yfr4ntTelephoneInterpreter.cs" />
@@ -75,7 +77,14 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
+
   <ItemGroup />
+
+  <ItemGroup>
+    <Folder Include="Dziusio\StringCompare\" />
+    <Folder Include="S2yfr4nt\Homework\S2yfr4ntBank\" />
+  </ItemGroup>
+
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
