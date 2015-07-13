@@ -6,20 +6,22 @@ namespace Toci.Hornets.Wroclaw.egg7.TelephoneTask
 {
     class Egg7_TelephoneTask : TelephoneInterpreter
     {
-        protected override ITelephoneCommunication ChoseMedium(int chosenOption)
+   
+        protected override ITelephoneCommunication ChooseMedium(int chosenOption)
         {
             switch (chosenOption)
             {
-                case 1 : 
+                case 1:
                     return new PhotoCommunication();
-                case 2 :
+                case 2:
                     return new SmsCommunication();
-                case 3 :
+                case 3:
                     return new VoiceCommunication();
-                default :
+                default:
                     return null;
             }
         }
+
         protected override string MyNick()
         {
             return "kollwing";
