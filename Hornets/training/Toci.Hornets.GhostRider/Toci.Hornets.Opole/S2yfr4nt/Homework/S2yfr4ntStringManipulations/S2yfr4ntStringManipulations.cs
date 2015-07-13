@@ -47,7 +47,22 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntStringManipulations
             result.Seek = seek;
             result.Type = GetType();
 
+            Dictionary<Func<string, string, bool>, Func<S2yfr4ntFacade, bool>> test = new Dictionary<Func<string, string, bool>, Func<S2yfr4ntFacade, bool>>
+            {
+                { IsStringElementsInString, ntFacade => { ntFacade.AllFalse(); return true; } },  //S2yfr4ntStringManipulations
+                { IsStringInString, ntFacade => { ntFacade.OneTrue(); return true; } },  //S2yfr4ntStringManipulations
+                { IsStringAnagramOfString, ntFacade => { ntFacade.TwoTrue(); return true; } }  //S2yfr4ntStringManipulations
+            };
+
             S2yfr4ntFacade facade = new S2yfr4ntFacade(result);
+
+            foreach (var item in test)
+            {
+                if (!item.Key(subject, seek))
+                {
+                    item.Value(facade);
+                }
+            }
 
             if (!IsStringElementsInString(subject, seek))
             { 
