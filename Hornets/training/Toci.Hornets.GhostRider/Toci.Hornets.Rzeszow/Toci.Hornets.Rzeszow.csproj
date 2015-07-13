@@ -67,6 +67,9 @@
     <Compile Include="KSebal\traning2Homework\Pesel\PeselSumValidator.cs" />
     <Compile Include="KubaT\TelephoneTask\TelephonTaskHomework.cs" />
     <Compile Include="KubaT\TestClass.cs" />
+    <Compile Include="KubaT\TrainingTwo\PeselValidator\DateAdministrator.cs" />
+    <Compile Include="KubaT\TrainingTwo\PeselValidator\KubaTPeselValidator.cs" />
+    <Compile Include="KubaT\TrainingTwo\PeselValidator\SumValidation.cs" />
     <Compile Include="KubaT\TrainingTwo\StringOperations\KubaTStringOperations.cs" />
     <Compile Include="Malwina\ExtendingWarrior.cs" />
     <Compile Include="Malwina\IBaseForWyroznienie.cs" />
@@ -110,7 +113,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
-    <Folder Include="KubaT\TrainingTwo\PeselValidator\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Chojnecki\Kir\Przelewy.txt" />
