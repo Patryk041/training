@@ -58,6 +58,8 @@
     <Compile Include="Chojnecki\TrainingTwoPESEL\AndrzejPeselValidator.cs" />
     <Compile Include="Chojnecki\TrainingTwoString\StringCheck.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Foonesh\TrainingThree\BankTransfersParserFoonesh.cs" />
+    <Compile Include="Foonesh\TrainingThree\FileOperationFoonesh.cs" />
     <Compile Include="Foonesh\TrainingTwo\PeselValidator\PeselValidatorFoonesh.cs" />
     <Compile Include="Foonesh\TrainingTwo\StringManipulations\StringManipulationsFoonesh.cs" />
     <Compile Include="KSebal\telephone\Telephone.cs" />
@@ -110,7 +112,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
-    <Folder Include="Foonesh\TrainingThree\" />
     <Folder Include="KubaT\TrainingTwo\PeselValidator\" />
   </ItemGroup>
   <ItemGroup>
