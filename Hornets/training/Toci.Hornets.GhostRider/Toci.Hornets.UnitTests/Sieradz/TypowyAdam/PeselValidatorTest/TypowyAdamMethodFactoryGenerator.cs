@@ -4,20 +4,24 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.UnitTests.Sieradz.TypowyAdam.Interfaces;
+using Toci.Hornets.UnitTests.Sieradz.TypowyAdam;
 
 namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
 {   
-    //Pracuję nad tym żeby ta klasa mi zwróciła słownik dowolnych publicznych metod znajdujących się
-    //w wybranym przez nas assembly, które później będzie można wywołać
-
-    public class TypowyAdamMethodFactoryGenerator : ITypowyAdamMethodFactoryGenerator
+    public class TypowyAdamMethodFactoryGenerator 
     {
         protected List<Assembly> AssembliesList = new List<Assembly>();
         protected Dictionary<string, List<object>> ObjectDictionary = new Dictionary<string, List<object>>(); 
-        protected Dictionary<string, MethodInfo> MethodFactory = new Dictionary<string, MethodInfo>();
+        //protected Dictionary<string, MethodInfo> MethodFactory = new Dictionary<string, MethodInfo>();
+        protected Dictionary<string, MethodInfo> MethodDictionary = new Dictionary<string, MethodInfo>();
+        protected Type targetType;
 
-        //assembliesCommonString służyć będzie do filtrowania co za assembly załadować - Hornets dla wszystkich, Sieradz dla sieradza etc.
+        TypowyAdamMethodFactoryGenerator()
+        {
+            
+        }
+
+        
         public void GetAssemblies(string assembliesPath, string assembliesCommonString) 
         {
 
@@ -29,29 +33,48 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
             }
         }
 
-        public void LoadObjects(Type targetType)//czy wystarczy targetType żeby wyciągnąć wszystkie obiekty?
+        public void LoadObjects(Type targetType)
         {
-            
+            this.targetType = targetType;
             foreach (Assembly assembly in AssembliesList)
             {
                 List<object> objectList = new List<object>();
                 foreach (Type assemblyObject in assembly.GetTypes().Where(type => type.IsClass && type.IsSubclassOf(targetType)))
                 {
-                    objectList.Add(Activator.CreateInstance(assemblyObject));//Czy jest szansa że obędzie się tu bez rzutowania?
+                    objectList.Add(Activator.CreateInstance(assemblyObject));
                 }
                 ObjectDictionary.Add(assembly.FullName, objectList);
             }
         }
-
+        /*Left this for a while
+        public Dictionary<string, MethodInfo> GatherMethodInfo(string[] methodNames)
+        {
+            foreach (var methodName in methodNames)
+            {
+                MethodDictionary.Add(methodName, targetType.GetMethod(methodName));
+            }
+            return MethodDictionary;
+        }
+        
         public void GenerateMethodFactory(string methodName)
         {
             foreach (var objectList in ObjectDictionary.Values)
             {
                 foreach (var assemblyObject in objectList)
                 {
-                    MethodFactory.Add(assemblyObject.GetType().FullName, assemblyObject.GetType().GetMethod(methodName));//czy MethodInfo wystarczy do wywołania metody?
+                    MethodFactory.Add(assemblyObject.GetType().FullName, assemblyObject.GetType().GetMethod(methodName));
                 }
             }
         }
+
+        public void TestStuff(string methodName)
+        {
+            var test =  ObjectDictionary["a"].GetType().GetMethod(methodName);
+            var test2 = test.GetParameters();
+            var test3 = test.ReturnParameter;
+
+            var type = Type.GetType(test2[0].ParameterType.FullName);
+
+        }*/
     }
 }

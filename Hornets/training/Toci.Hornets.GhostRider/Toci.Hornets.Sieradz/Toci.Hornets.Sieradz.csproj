@@ -65,6 +65,10 @@
     <Compile Include="Quicksilver\testByQuicksilver.cs" />
     <Compile Include="Quicksilver\UndergroundTasks\CasualStringComparator.cs" />
     <Compile Include="Quicksilver\UndergroundTasks\LessCasualStringComparator.cs" />
+    <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzPerformTransfers.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzTransferHandle.cs" />
     <Compile Include="TypowyAdam\ExampleClass.cs" />
     <Compile Include="Duch\U1task\U1Utils.cs" />
     <Compile Include="TypowyAdam\TelephoneTask\TypowyAdamTelephoneTask.cs" />
