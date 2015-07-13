@@ -110,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="Foonesh\TrainingThree\" />
     <Folder Include="KubaT\TrainingTwo\PeselValidator\" />
   </ItemGroup>
   <ItemGroup>
