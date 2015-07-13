@@ -65,6 +65,8 @@
     <Compile Include="Quicksilver\testByQuicksilver.cs" />
     <Compile Include="Quicksilver\UndergroundTasks\CasualStringComparator.cs" />
     <Compile Include="Quicksilver\UndergroundTasks\LessCasualStringComparator.cs" />
+    <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankFilesPathHolder.cs" />
     <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzPerformTransfers.cs" />
@@ -105,6 +107,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Duch\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SieradzBankTransferTask\BankTransfersFiles\testFile.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

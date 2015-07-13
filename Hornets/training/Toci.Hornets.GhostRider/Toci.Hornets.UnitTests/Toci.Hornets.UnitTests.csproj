@@ -83,6 +83,7 @@
     <Compile Include="Lausion\PeselValidator.cs" />
     <Compile Include="Lausion\StringManipulation.cs" />
     <Compile Include="S2yfr4nt\StringManipulations\StringManipulations.cs" />
+    <Compile Include="Sieradz\BankTransferTests\FileOperationsTest.cs" />
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjPeselValidatorTest.cs" />
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjStringManipulationsTest.cs" />
