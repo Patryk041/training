@@ -12,5 +12,5 @@ class DziaraBuildingsCommunicationAggregator extends  BuildingsCommunicationAggr
     }
 }
 
-$te = new DziaraBuildingsCommunicationAggregator();
-var_dump($te->AggregateInfo());
+//$te = new DziaraBuildingsCommunicationAggregator();
+//var_dump($te->AggregateInfo());
