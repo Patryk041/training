@@ -3,7 +3,7 @@ using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
 {
-    public class TypowyAdamBankTransfersParser : BankTransfersParser
+    public class TypowyAdamBankTransfersParser : SieradzBankTransfersParser
     {
         public override List<BankTransfer> GetBankTransfers()
         {
@@ -13,6 +13,11 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
         protected override BankTransfer GetTransferEntry(string entry)
         {
             throw new System.NotImplementedException();
+        }
+
+        public void test()
+        {
+            var test = GetBankNamesDictionary();
         }
     }
 }

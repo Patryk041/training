@@ -68,9 +68,9 @@
     <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankFilesPathHolder.cs" />
     <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzPerformTransfers.cs" />
-    <Compile Include="SieradzBankTransferTask\SieradzTransferHandle.cs" />
     <Compile Include="TypowyAdam\ExampleClass.cs" />
     <Compile Include="Duch\U1task\U1Utils.cs" />
     <Compile Include="TypowyAdam\TelephoneTask\TypowyAdamTelephoneTask.cs" />
@@ -110,6 +110,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\testFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SieradzBankTransferTask\SieradzBankNamesDictionary.cfg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
