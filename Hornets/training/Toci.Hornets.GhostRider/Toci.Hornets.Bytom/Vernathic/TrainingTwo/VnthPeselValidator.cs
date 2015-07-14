@@ -108,28 +108,5 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 		}
 	}
 
-	class MyDate
-	{
-
-		public int Day;
-		public int Month;
-		public int Year;
-
-		private static MyDate _date;
-
-		private MyDate() {}
-
-		public static MyDate Date
-		{
-			get
-			{
-				return _date ?? (_date = new MyDate());
-				//if (date == null)
-				//{
-				//	date = new MyDate();
-				//}
-				//return date;
-			}
-		}
-	}
+	
 }
