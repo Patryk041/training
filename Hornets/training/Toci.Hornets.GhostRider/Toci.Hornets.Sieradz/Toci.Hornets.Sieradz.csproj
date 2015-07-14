@@ -72,6 +72,7 @@
     <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankUtils\DuchStringUtils.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankTransfersUtils.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzPerformTransfers.cs" />
     <Compile Include="TypowyAdam\ExampleClass.cs" />

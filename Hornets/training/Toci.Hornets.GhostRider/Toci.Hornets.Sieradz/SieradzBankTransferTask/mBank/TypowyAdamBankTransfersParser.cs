@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using Toci.Hornets.GhostRider.Kir;
+using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
 namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
 {
-    public class TypowyAdamBankTransfersParser : SieradzBankTransfersParser
+    public class TypowyAdamBankTransfersParser : BankTransfersParser
     {
         public override List<BankTransfer> GetBankTransfers()
         {
@@ -13,11 +14,6 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
         protected override BankTransfer GetTransferEntry(string entry)
         {
             throw new System.NotImplementedException();
-        }
-
-        public void test()
-        {
-            var test = GetBankNamesDictionary();
         }
     }
 }
