@@ -78,7 +78,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="OpoleKir\" />
+    <Folder Include="OpoleKir\Banks\" />
     <Folder Include="S2yfr4nt\Homework\S2yfr4ntBank\" />
   </ItemGroup>
   <ItemGroup />
