@@ -30,6 +30,7 @@ namespace Toci.Hornets.Opole.Dziusio.StringCompare
             {
                 return true;
             }
+            return false;
         }
 
         protected override string GetNick()

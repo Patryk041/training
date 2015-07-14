@@ -8,6 +8,8 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntStringManipulations
 {
     public class S2yfr4ntStringManipulations: GhostRiderStringManipulationsBase
     {
+        private const bool methodResult = true;
+
         protected override bool IsStringInString(string subject, string seek)
         {
             return subject.Equals(seek) || subject.Contains(seek);
@@ -29,6 +31,11 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntStringManipulations
             return subject.OrderBy(c => c).SequenceEqual(seek.OrderBy(c => c));
         }
 
+        protected bool AllTrue(string subject, string seek)
+        {
+            return methodResult;
+        }
+
         protected override string GetNick()
         {
             return "S2yfr4nt";
@@ -38,6 +45,7 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntStringManipulations
         {
             return Run(subject, seek);
         }
+
         protected override StringManipulationsResults Run(string subject, string seek)
         {
             var result = new StringManipulationsResults();
@@ -47,26 +55,49 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntStringManipulations
             result.Seek = seek;
             result.Type = GetType();
 
-            S2yfr4ntFacade facade = new S2yfr4ntFacade(result);
+            return MethodResultSupplement(subject, seek, result); ;
+        }
 
-            if (!IsStringElementsInString(subject, seek))
-            { 
-                facade.AllFalse();
-            }
-            else if (!IsStringInString(subject, seek))
+        protected StringManipulationsResults MethodResultSupplement(string subject, string seek, StringManipulationsResults result)
+        {
+            S2yfr4ntFacade facade = new S2yfr4ntFacade(result);
+            bool foreachExit = true;
+
+            Dictionary<Func<string, string, bool>, Action<S2yfr4ntFacade>> methodsDictionary = new Dictionary
+            <Func<string, string, bool>, Action<S2yfr4ntFacade>>
             {
-                facade.OneTrue();
-            }
-            else if (!IsStringAnagramOfString(subject, seek))
+                {IsStringAnagramOfString, ntFacade => { ntFacade.AllTrue(); }},
+                {IsStringInString, ntFacade => { ntFacade.TwoTrue(); }},
+                {IsStringElementsInString, ntFacade => { ntFacade.OneTrue(); }},
+                {AllTrue, ntFacade => { ntFacade.AllFalse(); }}
+            };
+
+
+            foreach (var item in methodsDictionary.Where(item => item.Key(subject, seek) && foreachExit))
             {
-                facade.TwoTrue();
+                item.Value(facade);
+                foreachExit = false;
             }
-            else
-            {
-                facade.AllTrue();
-            }
-            
+
             return result;
         }
+        
+
+        //if (!IsStringElementsInString(subject, seek))
+        //{ 
+        //    facade.AllFalse();
+        //}
+        //else if (!IsStringInString(subject, seek))
+        //{
+        //    facade.OneTrue();
+        //}
+        //else if (!IsStringAnagramOfString(subject, seek))
+        //{
+        //    facade.TwoTrue();
+        //}
+        //else
+        //{
+        //    facade.AllTrue();
+        //}
     }
 }
