@@ -59,6 +59,7 @@
     <Compile Include="Maly\TelephoneTask.cs" />
     <Compile Include="Lausion\TelephoneTask\SendMessage.cs" />
     <Compile Include="Maly\TestBranch.cs" />
+    <Compile Include="OpoleKir\OpoleFileOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntDayValidation.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntMonthValidation.cs" />
@@ -81,7 +82,6 @@
     <Folder Include="OpoleKir\Banks\" />
     <Folder Include="S2yfr4nt\Homework\S2yfr4ntBank\" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
