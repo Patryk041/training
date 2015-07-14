@@ -38,7 +38,7 @@ namespace Toci.Hornets.Wroclaw.Tszulczewski.Training2HomeWork
                         subjectChar[i] = ' ';
                         sublength--;
                     }
-                    else if (sublength == 0)
+                    if (sublength == 0)
                         return true;
                 }
             }
@@ -50,6 +50,8 @@ namespace Toci.Hornets.Wroclaw.Tszulczewski.Training2HomeWork
         {
             if (seek.Length != subject.Length)
                 return false;
+            if (seek == subject)
+                return true;
             return IsStringElementsInString(subject, seek);
         }
 

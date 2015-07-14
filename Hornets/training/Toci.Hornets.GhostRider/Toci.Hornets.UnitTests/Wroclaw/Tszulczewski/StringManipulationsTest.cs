@@ -12,10 +12,10 @@ namespace Toci.Hornets.UnitTests.Wroclaw.Tszulczewski
         public void StringManipulationsTestMethod()
         {
             TszulczewskiStringManipulations obj1 = new TszulczewskiStringManipulations();
-            StringManipulationsResults stringmresults = obj1.RunStringOperations("Alunia", "Alunia");
+            StringManipulationsResults stringmresults = obj1.RunStringOperations("tomek", "tomek");
             Assert.IsFalse(stringmresults.IsStringInString);
             Assert.IsFalse(stringmresults.IsStringElementsInString);
-            Assert.IsTrue(stringmresults.IsAnagram);
+            Assert.IsFalse(stringmresults.IsAnagram);
         }
          
     }
