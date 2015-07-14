@@ -7,6 +7,8 @@ namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
 {
     public class CoffeeFileOperation : FileOperation
     {
+        protected string PathToLog = "..//..//Bytom//Coffee13//Log//FileLog.txt";
+
         public override string GetFileContent(string path)
         {
             var content = "";
@@ -19,18 +21,19 @@ namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
                 }
 
             }
-            SaveToLog(path);
+            SaveToLog(path,PathToLog);
             return content;
 
         }
 
 
-        //dodanie zapisu do logu ze pobrano plik ...
-        private  void SaveToLog(string pathToProcessedFile)
+        
+        private  void SaveToLog(string pathToProcessedFile, string selectLogPath)
         {
-            using (var file = new StreamWriter(@"..\..\Bytom\Coffee13\Log\FileLog.txt", true))
+            DateTime thisDate = DateTime.Now;
+            using (var file = new StreamWriter(selectLogPath, true))
             {
-                file.WriteLine("file loaded: "+ pathToProcessedFile);
+                file.WriteLine("Date: "+ thisDate +" file loaded: "+ pathToProcessedFile);
             }
         }
     }

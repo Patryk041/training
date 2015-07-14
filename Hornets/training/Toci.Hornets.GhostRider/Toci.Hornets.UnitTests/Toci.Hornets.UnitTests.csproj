@@ -154,6 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bytom\Coffee13\ContentFile.txt" />
+    <Content Include="Bytom\Coffee13\Log\FileLog.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\otherInvalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\validPeselList.txt" />
