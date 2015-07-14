@@ -1,6 +1,6 @@
-﻿using Toci.Hornets.Kalisz.Amman.PeselValidator.Workers;
+﻿using Toci.Hornets.Legnica.Amman.PeselValidator.Workers;
 
-namespace Toci.Hornets.Kalisz.Amman.PeselValidator
+namespace Toci.Hornets.Legnica.Amman.PeselValidator
 {
     public class AmmanPeselValidator : GhostRider.YourWork.TasksTrainingTwo.PeselValidator
     {

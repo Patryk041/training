@@ -1,6 +1,6 @@
-﻿using Toci.Hornets.Kalisz.Amman.PeselValidator.Workers.DateValidation;
+﻿using Toci.Hornets.Legnica.Amman.PeselValidator.Workers.DateValidation;
 
-namespace Toci.Hornets.Kalisz.Amman.PeselValidator.Workers
+namespace Toci.Hornets.Legnica.Amman.PeselValidator.Workers
 {
     public class DateValidator
     {

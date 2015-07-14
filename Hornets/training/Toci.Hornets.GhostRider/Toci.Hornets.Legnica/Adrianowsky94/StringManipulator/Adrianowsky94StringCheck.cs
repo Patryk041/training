@@ -1,6 +1,6 @@
 ﻿using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
-namespace Toci.Hornets.Kalisz.Adrianowsky94.StringManipulator
+namespace Toci.Hornets.Legnica.Adrianowsky94.StringManipulator
 {
     public class Adrianowsky94StringCheck : GhostRiderStringManipulationsBase
     {

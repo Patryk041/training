@@ -1,10 +1,6 @@
 ﻿using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
-using System.Text;
 
-namespace Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW.PeselManipulationMethods
+namespace Toci.Hornets.Legnica.Adrianowsky94.PeselValidatorHW.PeselManipulationMethods
 {
     public class DateCutter
     {

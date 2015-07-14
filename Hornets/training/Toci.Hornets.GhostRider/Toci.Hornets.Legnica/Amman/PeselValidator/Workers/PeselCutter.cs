@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Toci.Hornets.Kalisz.Amman.PeselValidator.Workers
+﻿namespace Toci.Hornets.Legnica.Amman.PeselValidator.Workers
 {
     public class PeselCutter
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW;
-using Toci.Hornets.Kalisz.Amman.StringManipulator;
+using Toci.Hornets.Legnica.Adrianowsky94.PeselValidatorHW;
+using Toci.Hornets.Legnica.Amman.StringManipulator;
 
 namespace Toci.Hornets.UnitTests.Kalisz.Amman
 {

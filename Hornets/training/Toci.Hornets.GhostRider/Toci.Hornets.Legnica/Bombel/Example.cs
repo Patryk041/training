@@ -1,4 +1,4 @@
-﻿namespace Toci.Hornets.Kalisz.Bombel
+﻿namespace Toci.Hornets.Legnica.Bombel
 {
     public class Example
     {

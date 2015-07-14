@@ -2,7 +2,7 @@
 using Toci.Hornets.GhostRider.TElephoneCommunication;
 using Toci.Hornets.GhostRider.YourWork.TelephoneTask;
 
-namespace Toci.Hornets.Kalisz.Adrianowsky94
+namespace Toci.Hornets.Legnica.Adrianowsky94
 {
     public class TheChosenOne : TelephoneInterpreter
     {

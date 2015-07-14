@@ -2,7 +2,7 @@
 using Toci.Hornets.GhostRider.TElephoneCommunication;
 using Toci.Hornets.GhostRider.YourWork.TelephoneTask;
 
-namespace Toci.Hornets.Kalisz.Amman
+namespace Toci.Hornets.Legnica.Amman.TelephoneExercise
 {
     public class APhone : TelephoneInterpreter
     {

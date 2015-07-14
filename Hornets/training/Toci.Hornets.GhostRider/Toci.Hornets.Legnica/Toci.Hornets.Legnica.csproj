@@ -93,6 +93,16 @@
     <Compile Include="TelefonTask\FilipPhoneExercise.cs" />
     <Compile Include="TelefonTask\KobraPhoneTask.cs" />
     <Compile Include="TelefonTask\PatrykTelephoneInterpreter.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\Factories\BankTransfersParserFactory.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\Factories\BankName.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\Factories\ParserType.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\Factories\TransferHandleFactory.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\LegnicaPerformTransfers.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\LegnicaTransferHandle.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\TransferHandles\BzwbkTransferHandle.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\TransferHandles\IngTransferHandle.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\TransferHandles\NordeaTransferHandle.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\TransferHandles\PekaoTransferHandle.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
