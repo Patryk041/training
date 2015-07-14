@@ -12,13 +12,13 @@ namespace Toci.Hornets.Legnica.Michał_Zembik.FTPcs
         public bool Send(string sourcefilepath, string desinationfilepath, string login, string pass)
         {
             var sender = new SendFile();
-            return sender.Send(sourcefilepath, desinationfilepath, login, pass); ;
+            return sender.Send(sourcefilepath, desinationfilepath, login, pass); 
         }
 
-        public string Get(string filepath)
+        public string Get(string sourcefilepath, string desinationfilepath, string login, string pass)
         {
             var geter = new GetFile();
-            return geter.Get(filepath);
+            return geter.Get(sourcefilepath,desinationfilepath,login,pass);
         }
 
     }
