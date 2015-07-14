@@ -40,8 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdamP\Class1.cs" />
-    <Compile Include="AdamP\TaskTrainingTwo\PeselValidator.cs" />
-    <Compile Include="AdamP\TaskTrainingTwo\StringManipulator.cs" />
+    <Compile Include="AdamP\TaskTrainingTwo\AdamPPeselValidator.cs" />
+    <Compile Include="AdamP\TaskTrainingTwo\AdamPStringManipulator.cs" />
+    <Compile Include="AdamP\TaskTrainingTwo\SimpleDate.cs" />
     <Compile Include="AdamP\TelephoneTask\TelephoneTaskChooser.cs" />
     <Compile Include="Bossu\TelephoneTask\MyTelephoneInterpreter.cs" />
     <Compile Include="Coffee13\CoffeeTestClass.cs" />
