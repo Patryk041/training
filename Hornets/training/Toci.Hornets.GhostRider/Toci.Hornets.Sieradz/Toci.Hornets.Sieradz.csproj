@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -39,18 +40,81 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Duch\DuchClassLoL.cs" />
+    <Compile Include="DeeJay\DjExampleAbstract.cs" />
+    <Compile Include="DeeJay\DjExampleClass.cs" />
+    <Compile Include="DeeJay\ExampleDeeJayClass.cs" />
+    <Compile Include="DeeJay\IDJExample.cs" />
+    <Compile Include="DeeJay\TasksTrainingTwo\DjPeselValidator.cs" />
+    <Compile Include="DeeJay\TasksTrainingTwo\DjStringManipulations.cs" />
+    <Compile Include="DeeJay\TelephoneTask\DjTelephoneCommunication.cs" />
+    <Compile Include="DeeJay\TelephoneTask\DjTelephoneFactory.cs" />
+    <Compile Include="Duch\DuchTelephoneFactory.cs" />
+    <Compile Include="Duch\DuchGenFactory.cs" />
+    <Compile Include="Duch\Homework 1\DuchTele.cs" />
+    <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselFactory.cs" />
+    <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselUtils.cs" />
+    <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselValidator.cs" />
+    <Compile Include="Duch\Homework 2\StringManipulator\DuchStringManipulatro.cs" />
+    <Compile Include="Duch\Homework 2\StringManipulator\DuchStringUtills.cs" />
+    <Compile Include="Duch\U1task\DuchStringComparator.cs" />
+    <Compile Include="Jake\JakeTest.cs" />
+    <Compile Include="Kamil\ClassKamil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quicksilver\TasksTrainingTwoQs\QuicksilverPeselValidator.cs" />
+    <Compile Include="Quicksilver\TasksTrainingTwoQs\QuicksilverStringManipulator.cs" />
+    <Compile Include="Quicksilver\TelephoneTaskQs\WhoYouGonnaCall.cs" />
     <Compile Include="Quicksilver\testByQuicksilver.cs" />
+    <Compile Include="Quicksilver\UndergroundTasks\CasualStringComparator.cs" />
+    <Compile Include="Quicksilver\UndergroundTasks\LessCasualStringComparator.cs" />
+    <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankFilesPathHolder.cs" />
+    <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzPerformTransfers.cs" />
     <Compile Include="TypowyAdam\ExampleClass.cs" />
+    <Compile Include="Duch\U1task\U1Utils.cs" />
+    <Compile Include="TypowyAdam\TelephoneTask\TypowyAdamTelephoneTask.cs" />
+    <Compile Include="TypowyAdam\TrainingTwoTasks\StringManipulator\TypowyAdamStringManipulator.cs" />
+    <Compile Include="TypowyAdam\UndergroundTasks\MultiTypicalStringComparator.cs" />
+    <Compile Include="TypowyAdam\UndergroundTasks\Pentagram.cs" />
+    <Compile Include="TypowyAdam\TrainingTwoTasks\PeselValidator\PeselValidatorUtils.cs" />
+    <Compile Include="TypowyAdam\UndergroundTasks\SimpleTypicalStringComparator.cs" />
+    <Compile Include="TypowyAdam\TrainingTwoTasks\PeselValidator\TypowyAdamPeselValidator.cs" />
+    <Compile Include="TypowyAdam\UndergroundTasks\TypowyAdamPeselValidatorOld.cs" />
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_GetProperyValueFromName.cs" />
     <Compile Include="UCantTouchThis\ImSoBadAss.cs" />
+    <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisPeselValidator.cs" />
+    <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisStringManipulations.cs" />
+    <Compile Include="UCantTouchThis\TelephoneTask\UCantTouchThisTelephoneTask.cs" />
+    <Compile Include="UCantTouchThis\TelephoneTask\UCTT_TelephoneTaskFactory.cs" />
+    <Compile Include="UCantTouchThis\UCTTGenericFactory.cs" />
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_StringExtensions.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\DateValidatorUtils.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCTT_PeselValidatorUtils.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCantTouchThisAutismPeselValisator.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\DummyStringComparator.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\StringComparatorsFactory.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\RandomStringGenerator\UCTT_RandomStingGenerator.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\UCantTouchThisStringComparator.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\UCTT_AutismStringComparator.cs" />
+    <Compile Include="UndergroundTasks\Interface\IStringComparator.cs" />
+    <Compile Include="UndergroundTasks\Interface\IPeselValidator.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
       <Project>{878b2eca-9cc0-42cf-aca6-cd6e44c47451}</Project>
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Duch\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SieradzBankTransferTask\BankTransfersFiles\testFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SieradzBankTransferTask\SieradzBankNamesDictionary.cfg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
