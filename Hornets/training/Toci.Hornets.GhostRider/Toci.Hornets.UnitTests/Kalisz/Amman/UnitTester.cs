@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
-using Toci.Hornets.Kalisz.Amman.StringManipulator;
-using Toci.Hornets.Kalisz.Amman.StringManipulator.Workers;
+using Toci.Hornets.Legnica.Amman.StringManipulator;
+using Toci.Hornets.Legnica.Amman.StringManipulator.Workers;
 
 namespace Toci.Hornets.UnitTests.Kalisz.Amman
 {
