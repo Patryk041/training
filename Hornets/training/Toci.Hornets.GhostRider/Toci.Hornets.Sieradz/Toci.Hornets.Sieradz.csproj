@@ -67,9 +67,11 @@
     <Compile Include="Quicksilver\UndergroundTasks\CasualStringComparator.cs" />
     <Compile Include="Quicksilver\UndergroundTasks\LessCasualStringComparator.cs" />
     <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\Hellada\DuchBankTransferParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankFilesPathHolder.cs" />
     <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankUtils\DuchStringUtils.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzPerformTransfers.cs" />
     <Compile Include="TypowyAdam\ExampleClass.cs" />
@@ -111,6 +113,7 @@
     <Folder Include="Duch\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SieradzBankTransferTask\BankTransfersFiles\0000Hellada.txt" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\testFile.txt" />
   </ItemGroup>
   <ItemGroup>
