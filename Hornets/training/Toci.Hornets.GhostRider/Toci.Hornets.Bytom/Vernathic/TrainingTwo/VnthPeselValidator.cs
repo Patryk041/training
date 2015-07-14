@@ -16,25 +16,6 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 			return pesel.Substring(0, 6);
 		}
 
-		private MyDate GetDateObject(string date)
-		{
-			var dateObj = MyDate.Date;
-
-			dateObj.Year = int.Parse(date.Substring(0, 2));		// todo: validate year
-			dateObj.Month = int.Parse(date.Substring(2, 2));	// todo: validate month
-			dateObj.Day = int.Parse(date.Substring(4, 2));		// todo: validate day
-
-			return dateObj;
-		}
-
-		private bool IsDateValid(string date)
-		{
-			// todo: fix this
-			var dateObj = GetDateObject(date);
-
-			return false;
-		}
-
 		protected override bool Checksum(string pesel)
 		{
 			if (HasCorrectLength(pesel))
@@ -89,7 +70,8 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 
 		protected override bool ValidateDate(int year, int month, int day)
 		{
-			return false;
+			var dateObj = new MyDate(year, month, day);
+			return dateObj.IsDateValid();
 		}
 
 		private bool HasCorrectLength(string pesel)
