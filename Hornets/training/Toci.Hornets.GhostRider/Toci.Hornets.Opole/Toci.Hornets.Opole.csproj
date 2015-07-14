@@ -77,14 +77,11 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
-
-  <ItemGroup />
-
   <ItemGroup>
-    <Folder Include="Dziusio\StringCompare\" />
+    <Folder Include="OpoleKir\" />
     <Folder Include="S2yfr4nt\Homework\S2yfr4ntBank\" />
   </ItemGroup>
-
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
