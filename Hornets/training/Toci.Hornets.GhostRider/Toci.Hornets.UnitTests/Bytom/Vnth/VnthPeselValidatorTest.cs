@@ -12,7 +12,7 @@ namespace Toci.Hornets.UnitTests.Bytom.Vnth
 		{
 			var validator = new VnthPeselValidator();
 
-			Assert.IsTrue(validator.IsPeselValid("92051414608"));
+			Assert.IsTrue(validator.IsPeselValid("93031509503"));
 			Assert.IsTrue(validator.IsPeselValid("92090607249"));
 			Assert.IsTrue(validator.IsPeselValid("39030719172"));
 			Assert.IsTrue(validator.IsPeselValid("75110913971"));
