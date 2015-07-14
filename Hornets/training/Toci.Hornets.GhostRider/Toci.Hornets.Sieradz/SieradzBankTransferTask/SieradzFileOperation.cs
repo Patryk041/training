@@ -9,14 +9,9 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
         public override string GetFileContent(string path)
         {
             if (!File.Exists(path)) return null; 
-            try
-            {
-                return File.ReadAllText(path);
-            }
-            catch(Exception)
-            {
-                return null;
-            }
+          
+            return File.ReadAllText(path);
+
         }
     }
 }

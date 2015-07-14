@@ -73,6 +73,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
              * tylko na Parallel.ForEach(parsers, parser => ... ); bo to największy kawał, będzie tyklko tyle tasków utworzonych ile mamy parserów czyli ze 5-6. Tak czy siak zapisałem
              * na razie wszystkie, jak będziemy mieli wszyscy parsery gotowe to będzie można robić testy i mierzyć czasy
              */
+            //Można Przygotować wersję używającą ParalellProcessing i ProcessInParallel
             //foreach (var parser in parsers)
             Parallel.ForEach(parsers, parser =>
             {
