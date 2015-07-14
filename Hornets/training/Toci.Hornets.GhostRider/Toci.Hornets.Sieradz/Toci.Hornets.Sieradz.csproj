@@ -69,7 +69,7 @@
     <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankFilesPathHolder.cs" />
     <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamBankTransfersParser.cs" />
-    <Compile Include="SieradzBankTransferTask\SieradzBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankTransfersUtils.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzPerformTransfers.cs" />
     <Compile Include="TypowyAdam\ExampleClass.cs" />

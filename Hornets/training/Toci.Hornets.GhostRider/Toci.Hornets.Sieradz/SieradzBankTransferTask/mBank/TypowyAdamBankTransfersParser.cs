@@ -4,7 +4,7 @@ using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
 namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
 {
-    public class TypowyAdamBankTransfersParser : SieradzBankTransfersParser
+    public class TypowyAdamBankTransfersParser : BankTransfersParser
     {
         public override List<BankTransfer> GetBankTransfers()
         {
