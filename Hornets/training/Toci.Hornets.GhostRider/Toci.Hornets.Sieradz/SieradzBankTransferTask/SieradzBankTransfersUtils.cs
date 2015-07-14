@@ -1,28 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
 {
-    public static class SieradzBankTransfersUtils
+    public class SieradzBankTransfersUtils
     {
-        internal static bool isDictionaryGenerated;
-        internal static Dictionary<string, string> bankNamesDictionary = new Dictionary<string, string>();
+        private static readonly SieradzBankTransfersUtils instance = new SieradzBankTransfersUtils();
 
-        public static string getBankName(string bankCode)
+        static SieradzBankTransfersUtils(){}
+
+        private SieradzBankTransfersUtils()
         {
-            if (isDictionaryGenerated)
-                return bankNamesDictionary[bankCode];
             GetBankNamesDictionary();
-            return bankNamesDictionary[bankCode];
         }
 
-        internal static void GetBankNamesDictionary()
+        public static SieradzBankTransfersUtils Instance
         {
-            bankNamesDictionary = File.ReadAllLines(SieradzBankFilesPathHolder.configPath).Select(line => line.Split(' ')).Where(splitedLine => splitedLine[0].Length == 4).ToDictionary(splitedLine => splitedLine.First(), splitedLine => splitedLine.Last());
-            isDictionaryGenerated = true;
+            get { return instance; }
+        }
+
+        private Dictionary<string, string> _bankNamesDictionary = new Dictionary<string, string>();
+
+        public string GetBankName(string bankCode)
+        {
+            return _bankNamesDictionary[bankCode];
+        }
+
+        private void GetBankNamesDictionary()
+        {
+            _bankNamesDictionary = File.ReadAllLines(SieradzBankFilesPathHolder.ConfigPath).Select(line => line.Split(' ')).Where(splitedLine => splitedLine[0].Length == 4).ToDictionary(splitedLine => splitedLine.First(), splitedLine => splitedLine.Last());
         }
     }
 }
