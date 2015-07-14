@@ -22,8 +22,8 @@ namespace Toci.Hornets.UnitTests.Sieradz.BankTransferTests
 //                Debug.WriteLine(fileOperation.GetFileContent(file));
             }
 
-            var test = new TypowyAdamBankTransfersParser();
-            test.test();
+            var test = new SieradzPerformTransfers();
+            test.TransferAll();
         }
     }
 }
