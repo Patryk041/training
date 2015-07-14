@@ -63,6 +63,7 @@
     <Compile Include="GhostRider\GeneralTests\DebugingTesting.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
     <Compile Include="Sieradz\BankTransferTests\BankTransfersUtilsTest.cs" />
+    <Compile Include="Sieradz\UCantTouchThis\BankTransfers\UCantTouchThisBankTransfersParserTests.cs" />
     <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />
     <Compile Include="Wroclaw\gipson\StringManipulationsTest.cs" />
     <Compile Include="Wroclaw\Tszulczewski\StringManipulationsTest.cs" />

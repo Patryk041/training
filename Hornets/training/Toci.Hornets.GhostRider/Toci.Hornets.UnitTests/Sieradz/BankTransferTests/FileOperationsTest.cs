@@ -10,13 +10,14 @@ namespace Toci.Hornets.UnitTests.Sieradz.BankTransferTests
         [TestMethod]
         public void SieradzFileOperationsTest() // UCTT
         {
-            var fileList = Directory.GetFiles(SieradzBankFilesPathHolder.Path);
+            var fileList = Directory.GetFiles(SieradzBankFilesPathHolder.TransferFilesPath);
 
             var fileOperation = new SieradzFileOperation();
 
             foreach (var file in fileList)
             {
-                Assert.IsNotNull(fileOperation.GetFileContent(file));
+                var tmp = fileOperation.GetFileContent(file);
+                Assert.IsNotNull(tmp);
 //                Debug.WriteLine(fileOperation.GetFileContent(file));
             }
         }

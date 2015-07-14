@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
