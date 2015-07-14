@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
@@ -8,10 +7,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
     {
         public override string GetFileContent(string path)
         {
-            if (!File.Exists(path)) return null; 
-          
-            return File.ReadAllText(path);
-
+            return File.Exists(path) ? File.ReadAllText(path) : null;
         }
     }
 }

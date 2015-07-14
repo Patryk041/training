@@ -68,6 +68,7 @@
     <Compile Include="Quicksilver\UndergroundTasks\LessCasualStringComparator.cs" />
     <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\Hellada\DuchBankTransferParser.cs" />
+    <Compile Include="SieradzBankTransferTask\Pekao\DjBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankFilesPathHolder.cs" />
     <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankUtils\DuchStringUtils.cs" />

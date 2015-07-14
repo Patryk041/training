@@ -40,26 +40,26 @@ namespace Toci.Hornets.Sieradz.DeeJay.TasksTrainingTwo
 
         public override StringManipulationsResults RunStringOperations(string subject, string seek)
         {
-            var result = new StringManipulationsResults();
+            var result = new StringManipulationsResults
+            {
+                Nick = GetNick(),
+                Subject = subject,
+                Seek = seek,
+                Type = GetType()
+            };
 
-            result.Nick = GetNick();
-            result.Subject = subject;
-            result.Seek = seek;
-
-            result.Type = this.GetType();
-
-            CheckStrings(ref result);
+            CheckStrings(result);
 
             return result;
         }
 
-        private void CheckStrings(ref StringManipulationsResults result)
+        private void CheckStrings(StringManipulationsResults result)
         {
             var subject = result.Subject;
             var seek = result.Seek;
 
-            if (String.IsNullOrEmpty(subject)
-                || String.IsNullOrEmpty(seek)
+            if (string.IsNullOrEmpty(subject)
+                || string.IsNullOrEmpty(seek)
                 || seek.Length > subject.Length)
             {
                 result.IsAnagram = false;

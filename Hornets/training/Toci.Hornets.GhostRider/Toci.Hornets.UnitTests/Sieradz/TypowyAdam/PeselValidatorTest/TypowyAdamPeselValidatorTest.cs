@@ -34,20 +34,28 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam.PeselValidatorTest
             {
                 benchmark.Reset();
                 benchmark.Start();
-                for (int j = 0; j < iterationValue; j++) //TODO get rid of those loops
+                try
                 {
-                    foreach (var peselLists in peselListsList)
+                    for (var j = 0; j < iterationValue; j++) //TODO get rid of those loops
                     {
-                        for (int i = 0; i < peselLists.Count - 1; i++) //foreach (var pesel in peselLists)
+                        foreach (var peselLists in peselListsList)
                         {
-                            Assert.AreEqual(isPeselValid.Value(peselLists[i]), (peselLists.Last() == "true"));
+                            for (var i = 0; i < peselLists.Count - 1; i++) //foreach (var pesel in peselLists)
+                            {
+                                Assert.AreEqual(isPeselValid.Value(peselLists[i]), (peselLists.Last() == "true"));
+                            }
                         }
-
-
                     }
                 }
-                benchmark.Stop();
-                benchmarkTimes.Add(isPeselValid.Key, benchmark.ElapsedMilliseconds);
+                catch
+                {
+                    benchmark.Reset();
+                }
+                finally
+                {
+                    benchmark.Stop();
+                    benchmarkTimes.Add(isPeselValid.Key, benchmark.ElapsedMilliseconds);
+                }               
             }
             PrintBenchmarkTimes();
         }
