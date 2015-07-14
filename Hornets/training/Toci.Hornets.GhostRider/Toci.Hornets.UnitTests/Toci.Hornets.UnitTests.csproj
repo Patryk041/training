@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -118,11 +119,12 @@
     <Compile Include="Sieradz\UCantTouchThis\StringComparatorsBenchmarks.cs" />
     <Compile Include="Sieradz\UCantTouchThis\StringManipulationsTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\Undergtound1Test.cs" />
-    <Compile Include="Wrocław\gipson\PeselValidatorTest.cs" />
-    <Compile Include="Wrocław\gipson\StringManipulationsTest.cs" />
-
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Toci.Hornets.Bytom\Toci.Hornets.Bytom.csproj">
+      <Project>{b7f17d8a-c620-4239-a086-79dbef372755}</Project>
+      <Name>Toci.Hornets.Bytom</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
       <Project>{878B2ECA-9CC0-42CF-ACA6-CD6E44C47451}</Project>
       <Name>Toci.Hornets.GhostRider</Name>
