@@ -2,6 +2,7 @@
 {
     public abstract class FileOperation
     {
+
         public abstract string GetFileContent(string path);
     }
 }

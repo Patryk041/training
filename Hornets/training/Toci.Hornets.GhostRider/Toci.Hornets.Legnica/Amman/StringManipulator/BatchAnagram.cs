@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Toci.Hornets.Kalisz.Amman.StringManipulator.Workers;
+﻿using System.Collections.Generic;
+using Toci.Hornets.Legnica.Amman.StringManipulator.Workers;
 
-namespace Toci.Hornets.Kalisz.Amman.StringManipulator
+namespace Toci.Hornets.Legnica.Amman.StringManipulator
 {
     public class BatchAnagram
     {

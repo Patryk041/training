@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Toci.Hornets.Kalisz.Amman.StringManipulator.Workers
+﻿namespace Toci.Hornets.Legnica.Amman.StringManipulator.Workers
 {
     public class Stringception
     {

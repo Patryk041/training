@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW;
+using Toci.Hornets.Legnica.Adrianowsky94.PeselValidatorHW;
 
 namespace Toci.Hornets.UnitTests.Kalisz.Adrianowsky94
 {
