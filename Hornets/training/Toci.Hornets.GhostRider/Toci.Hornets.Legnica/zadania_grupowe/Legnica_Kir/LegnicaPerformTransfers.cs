@@ -2,18 +2,17 @@
 using System.Linq;
 using Toci.Hornets.GhostRider.Kir;
 using Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.Factories;
-using Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.interfaces;
 
 namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir
 {
     class LegnicaPerformTransfers : PerformTransfers
     {
-        private IBankTransferParserGenerator _parserFactory;
+        private BankTransfersParserFactory _parserFactory;
         private TransferHandleFactory _handleFactory;
 
         public LegnicaPerformTransfers()
         {
-            _parserFactory = new BankTransfersParserGenerator();
+            _parserFactory = new BankTransfersParserFactory();
             _handleFactory = new TransferHandleFactory();
         }
 
