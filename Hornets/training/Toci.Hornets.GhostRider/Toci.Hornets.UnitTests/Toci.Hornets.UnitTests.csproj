@@ -154,8 +154,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
-    <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
     <Content Include="Bytom\Coffee13\ContentFile.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\otherInvalidPeselList.txt" />
