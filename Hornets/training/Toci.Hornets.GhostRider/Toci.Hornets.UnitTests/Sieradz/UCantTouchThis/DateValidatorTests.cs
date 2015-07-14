@@ -8,10 +8,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
     [TestClass]
     public class DateValidatorTests
     {
-        [TestMethod]
-        public void UCTTDateValidatorTest()
-        {
-            List<int[]> correctDatesList = new List<int[]>
+        private  readonly List<int[]> _correctDatesList = new List<int[]>
             {
                 new []{29, 2, 1816},
                 new []{28, 2, 1815},
@@ -23,7 +20,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
                 new []{5, 5, 1855}
             };
 
-            List<int[]> incorrectDatesList = new List<int[]>
+        private readonly List<int[]> _incorrectDatesList = new List<int[]>
             {
                 new []{29, 2, 2223},
                 new []{0, 4, 123},
@@ -32,10 +29,12 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
                 new []{-1, -1, -1},
             };
 
+        [TestMethod]
+        public void UCTTDateValidatorTest()
+        {
             var time = Stopwatch.StartNew();
-            correctDatesList.ForEach(date => Assert.IsTrue(DateValidatorUtils.IsDateValidAndAutistic(date[0], date[1], date[2])));
-            
-            incorrectDatesList.ForEach(date => Assert.IsFalse(DateValidatorUtils.IsDateValidAndAutistic(date[0], date[1], date[2])));
+            _correctDatesList.ForEach(date => Assert.IsTrue(UCTT_PeselValidatorUtils.IsDateValid(date[0], date[1], date[2])));
+            _incorrectDatesList.ForEach(date => Assert.IsFalse(UCTT_PeselValidatorUtils.IsDateValid(date[0], date[1], date[2])));
             time.Stop();
             Debug.WriteLine("Time: " + time.ElapsedMilliseconds + " ms");
         }
