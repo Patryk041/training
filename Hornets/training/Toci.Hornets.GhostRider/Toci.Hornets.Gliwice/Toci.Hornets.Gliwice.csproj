@@ -56,7 +56,8 @@
     <Compile Include="MoWerr\StringOperations\MoWerrStringOperations.cs" />
     <Compile Include="MoWerr\TelephoneTask\SendTypeImplementation.cs" />
     <Compile Include="PiotrekJ\szkolenie1.cs" />
-    <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwiceBankParserTransfer.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiBankTransferParser.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiTransferHandle.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwiceFileOperation.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwicePerformTransfer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,6 +82,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PiotrekJ\Homework\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiPrzelewy.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

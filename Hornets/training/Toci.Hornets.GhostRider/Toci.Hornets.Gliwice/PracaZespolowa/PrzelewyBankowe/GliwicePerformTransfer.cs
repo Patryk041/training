@@ -7,7 +7,7 @@ using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
 {
-    class GliwicePerformTransfer : PerformTransfers
+   public class GliwicePerformTransfer : PerformTransfers
     {
         protected override List<BankTransfersParser> GetAllParsers()
         {

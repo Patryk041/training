@@ -7,9 +7,14 @@ using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
 {
-   public  class GliwiceFileOperation : FileOperation
+   public class DidiBankTransferParser : BankTransfersParser 
     {
-        public override string GetFileContent(string path)
+        public override List<BankTransfer> GetBankTransfers()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override BankTransfer GetTransferEntry(string entry)
         {
             throw new NotImplementedException();
         }
