@@ -16,6 +16,11 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.Factories
 
         public IEnumerable<BankTransfersParser> GetAllParsers()
         {
+            /*tutaJ pobieramy nowe pliki, wsadzamy do fileOperation
+            *i z tego robimy nowy obiekt BankTransferParser
+             * przekazujac mu przez konstruktor fileOperation
+             * nastepnie zwracamy liste parserow
+             */
             return GenericDictionary.Values;
         } 
 
