@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="DeeJay\DjExampleAbstract.cs" />
     <Compile Include="DeeJay\DjExampleClass.cs" />
+    <Compile Include="DeeJay\ExampleDeeJayClass.cs" />
     <Compile Include="DeeJay\IDJExample.cs" />
     <Compile Include="DeeJay\TasksTrainingTwo\DjPeselValidator.cs" />
     <Compile Include="DeeJay\TasksTrainingTwo\DjStringManipulations.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="UCantTouchThis\TelephoneTask\UCTT_TelephoneTaskFactory.cs" />
     <Compile Include="UCantTouchThis\UCTTGenericFactory.cs" />
     <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_StringExtensions.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\DateValidatorUtils.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCTT_PeselValidatorUtils.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCantTouchThisAutismPeselValisator.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\DummyStringComparator.cs" />
