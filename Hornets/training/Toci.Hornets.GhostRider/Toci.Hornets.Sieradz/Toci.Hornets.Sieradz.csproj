@@ -70,7 +70,6 @@
     <Compile Include="SieradzBankTransferTask\Hellada\DuchBankTransferParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankFilesPathHolder.cs" />
     <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamBankTransfersParser.cs" />
-    <Compile Include="SieradzBankTransferTask\SieradzBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankUtils\DuchStringUtils.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankTransfersUtils.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />
