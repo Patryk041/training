@@ -10,13 +10,24 @@ namespace Toci.Hornets.UnitTests.Bytom.AdamP
     public class AdamPPeselValidatorTest
     {
         [TestMethod]
-        public void TestPeselValidator()
+        public void APTestPeselValidatorWithProperLength()
         {
             var checkPeselValidator = new AdamPPeselValidator();
-            Assert.IsTrue(checkPeselValidator.IsPeselValid("86012900792"));
             Assert.IsTrue(checkPeselValidator.IsPeselValid("92041514956"));
             Assert.IsTrue(checkPeselValidator.IsPeselValid("66012900794"));
             Assert.IsFalse(checkPeselValidator.IsPeselValid("99999999999"));
+            Assert.IsFalse(checkPeselValidator.IsPeselValid("66012900795"));
+        }
+
+        [TestMethod]
+        public void APTestPeselValidatorWithWeirdString()
+        {
+            var checkPeselValidator = new AdamPPeselValidator();
+            Assert.IsFalse(checkPeselValidator.IsPeselValid("abc"));
+            Assert.IsFalse(checkPeselValidator.IsPeselValid("47"));
+            Assert.IsFalse(checkPeselValidator.IsPeselValid("qwerty"));
+            Assert.IsFalse(checkPeselValidator.IsPeselValid(""));
+            Assert.IsFalse(checkPeselValidator.IsPeselValid(" "));
         }
     }
 
