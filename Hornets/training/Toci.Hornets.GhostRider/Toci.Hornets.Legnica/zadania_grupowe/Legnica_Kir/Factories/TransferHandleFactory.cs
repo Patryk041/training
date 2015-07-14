@@ -27,7 +27,7 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.Factories
 
         public IEnumerable<TransferHandle> GetTransfersByPredicate(Func<string,bool> predicate)
         {
-            return (from key in GenericDictionary.Keys where condition(key) select GenericDictionary[key]()).ToList();
+            return (from key in GenericDictionary.Keys where predicate(key) select GenericDictionary[key]()).ToList();
         }
     }
 }
