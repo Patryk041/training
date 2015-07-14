@@ -6,19 +6,14 @@ using System.Linq;
 using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
-using Toci.Hornets.Sieradz.Duch.Homework_2.PeselValidator;
-using Toci.Hornets.Sieradz.Quicksilver.TasksTrainingTwoQs;
-using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
-using Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo;
-using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator;
 
-namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
+namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam.PeselValidatorTest
 {
     [TestClass]
-    public class PeselValidatorTest
+    public class TypowyAdamPeselValidatorTest
     {
         private const string testDirectory = @"..\..\Sieradz\TypowyAdam\PeselValidatorTest\";
-        private static string assemblyName = "Toci.Hornets.Sieradz"; //TODO make it able to load more assemblies
+        private static string assemblyName = "Toci.Hornets.Sieradz"; //TODO make it able to load more assemblies done
         private static int iterationValue = 100;
         private static List<object> peselValidatorsList = new List<object>();
         private static List<List<string>> peselListsList = new List<List<string>>();
@@ -99,12 +94,10 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
         {
 
             Assembly myAssembly = AppDomain.CurrentDomain.Load(assemblyName);
-            foreach (var type in myAssembly.GetTypes().Where(type => type.IsClass && type.IsSubclassOf(typeof(PeselValidator))))
+            foreach (Type type in myAssembly.GetTypes().Where(type => type.IsClass && type.IsSubclassOf(typeof(PeselValidator))))
             {
                 peselValidatorsList.Add((PeselValidator) Activator.CreateInstance(type));
             }   
         }
     }
-
-
 }

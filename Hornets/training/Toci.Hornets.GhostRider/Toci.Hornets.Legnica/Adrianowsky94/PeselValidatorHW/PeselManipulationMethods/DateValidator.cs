@@ -1,6 +1,4 @@
-﻿using Toci.Hornets.GhostRider.ClassObjectStatic;
-
-namespace Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW.PeselManipulationMethods
+﻿namespace Toci.Hornets.Legnica.Adrianowsky94.PeselValidatorHW.PeselManipulationMethods
 {
     public class DateValidator
     {

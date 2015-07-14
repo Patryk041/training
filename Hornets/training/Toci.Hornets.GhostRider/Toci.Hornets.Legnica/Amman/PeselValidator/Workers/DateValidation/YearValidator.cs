@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Toci.Hornets.Kalisz.Amman.PeselValidator.Workers.DateValidation
+﻿namespace Toci.Hornets.Legnica.Amman.PeselValidator.Workers.DateValidation
 {
     public class YearValidator
     {

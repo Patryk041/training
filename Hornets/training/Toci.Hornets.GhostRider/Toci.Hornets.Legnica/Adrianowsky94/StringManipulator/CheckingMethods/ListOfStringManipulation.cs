@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Toci.Hornets.Kalisz.Adrianowsky94.StringManipulator.CheckingMethods
+namespace Toci.Hornets.Legnica.Adrianowsky94.StringManipulator.CheckingMethods
 {
     public class ListOfStringManipulation
     {

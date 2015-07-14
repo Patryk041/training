@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Toci.Hornets.Kalisz.Amman.PeselValidator.Workers
+namespace Toci.Hornets.Legnica.Amman.PeselValidator.Workers
 {
     public class ChksumValidator
     {

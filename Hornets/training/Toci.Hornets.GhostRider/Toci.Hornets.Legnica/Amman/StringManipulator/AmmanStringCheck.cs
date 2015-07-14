@@ -1,8 +1,8 @@
 ﻿using System;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
-using Toci.Hornets.Kalisz.Amman.StringManipulator.Workers;
+using Toci.Hornets.Legnica.Amman.StringManipulator.Workers;
 
-namespace Toci.Hornets.Kalisz.Amman.StringManipulator
+namespace Toci.Hornets.Legnica.Amman.StringManipulator
 {
     public class AmmanStringCheck : GhostRiderStringManipulationsBase
     {
