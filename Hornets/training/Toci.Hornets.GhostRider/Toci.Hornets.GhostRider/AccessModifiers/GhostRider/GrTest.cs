@@ -1,7 +1,8 @@
 ﻿namespace Toci.Hornets.GhostRider.AccessModifiers.GhostRider
 {
-    public class GrTest
+    public abstract class GrTest
     {
-         
+        protected abstract void test();
     }
+
 }
