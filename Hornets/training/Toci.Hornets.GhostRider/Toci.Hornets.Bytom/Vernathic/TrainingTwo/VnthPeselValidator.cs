@@ -29,7 +29,7 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 
 		private bool IsDateValid(string date)
 		{
-			//fix this
+			// todo: fix this
 			var dateObj = GetDateObject(date);
 
 			return false;
@@ -39,19 +39,22 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 		{
 			if (HasCorrectLength(pesel))
 			{
-				List<int> peselNumbers = SplitToList(pesel);
-				if (ChecksumAreEqual(CalculateChecksum(peselNumbers), GetChecksum(peselNumbers)))
-				{
-					return true;
-				}
-				//compare with last number
+				return CurrentChecksumEqualsCalculatedChecksum(pesel);
 			}
 			return false;
 		}
 
-		private bool ChecksumAreEqual(int calculatedChecksum, int checksumCandidate)
+		private bool CurrentChecksumEqualsCalculatedChecksum(string pesel)
 		{
-			return calculatedChecksum == checksumCandidate;
+			List<int> peselNumbers = SplitToList(pesel);
+			int currentChecksum = GetChecksum(peselNumbers);
+			int calculatedChecksum = CalculateChecksum(peselNumbers);
+
+			if (currentChecksum == calculatedChecksum)
+			{
+				return true;
+			}
+			return false;
 		}
 
 		private int GetChecksum(List<int> peselNumbers)
@@ -61,7 +64,7 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 
 		private int CalculateChecksum(List<int> peselNumbers)
 		{
-			return _weights.Select((t, i) => peselNumbers[i] * t).Sum();
+			return (10 - ((_weights.Select((t, i) => peselNumbers[i] * t).Sum()) % 10)) % 10;
 
 			//for (int i = 0; i < weights.Count; i++)
 			//{
@@ -101,7 +104,7 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 
 		public override bool IsPeselValid(string pesel)
 		{
-			return false;
+			return Checksum(pesel);
 		}
 	}
 
