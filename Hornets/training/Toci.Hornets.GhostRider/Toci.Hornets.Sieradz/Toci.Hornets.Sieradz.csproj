@@ -69,6 +69,8 @@
     <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\Hellada\DuchBankTransferParser.cs" />
     <Compile Include="SieradzBankTransferTask\Pekao\DjBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\Pekao\DjEmailSender.cs" />
+    <Compile Include="SieradzBankTransferTask\Pekao\DjTransferHandle.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankFilesPathHolder.cs" />
     <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankTransfer.cs" />
@@ -121,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\0000Hellada.txt" />
+    <Content Include="SieradzBankTransferTask\BankTransfersFiles\Pekao.xml" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\testFile.txt" />
   </ItemGroup>
   <ItemGroup>
