@@ -16,7 +16,7 @@ namespace Toci.Hornets.Opole.Lausion.LausionKIR
         {
             string content =
                 BankFileOperation.GetFileContent(
-                    @"D:\Szkolenie C#\SoutceTree\Hornets\training\Toci.Hornets.GhostRider\Toci.Hornets.Opole\Lausion\LausionKIR\Content.txt");
+                    @"D:\Szkolenie C#\SoutceTree\Hornets\training\Toci.Hornets.GhostRider\Toci.Hornets.Opole\Lausion\LausionKIR\TextFile1.txt");
             
             string[] AllLines = content.Split('\n');
             
@@ -33,8 +33,33 @@ namespace Toci.Hornets.Opole.Lausion.LausionKIR
         protected override BankTransfer GetTransferEntry(string entry)
         {
             string[] contentInLine = entry.Split(';');
-            return null;
 
+            return new LausionBankTransfer()
+            {
+                SourceBank = GetBankName(contentInLine[0]),
+                DestinationBank = contentInLine[1],
+                Amount = Double.Parse(contentInLine[2]),
+                Date = contentInLine[5],
+                Recipent = contentInLine[4],
+                Sender = contentInLine[3],
+                Title = contentInLine[6]
+            };
+
+        }
+
+        private string GetBankName(string account)
+        {
+            int accNumber = Int32.Parse(account);
+            if (accNumber == 1050)
+                return "ING";
+            else if (accNumber == 1060)
+                return "BPH";
+            else if (accNumber == 1280)
+                return "HSBC";
+            else
+            {
+                return null;
+            }
         }
     }
 }
