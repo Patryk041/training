@@ -1,0 +1,18 @@
+﻿//1. numer konta z ktorego wychodzi przelew
+//2. numer konta na ktre przychodzi przelew
+//3. wartosc przelewu
+//4. nazwisko przelewajacego
+//5. nazwisko otrzymujacego
+//6. data
+//7. tytul przelewu
+//8. bank wychodzacego
+//9. bank przychodzacego
+
+531531351;351351351531;132;Baran;Smieszek;01-02-03;za koks;ING;mBank
+531531351;351351351531;132;Baran;Smieszek;01-02-03;za koks;multibank;mBank
+531531351;351351351531;132;Baran;Smieszek;01-02-03;za koks;Alior;mBank
+531531351;351351351531;132;Baran;Smieszek;01-02-03;za koks;ING;Alior
+531531351;351351351531;132;Baran;Smieszek;01-02-03;za koks;ING;multibank
+531531351;351351351531;132;Baran;Smieszek;01-02-03;za koks;multibank;mBank
+531531351;351351351531;132;Baran;Smieszek;01-02-03;za koks;ING;Alior
+531531351;351351351531;132;Baran;Smieszek;01-02-03;za koks;Alior;mBank
