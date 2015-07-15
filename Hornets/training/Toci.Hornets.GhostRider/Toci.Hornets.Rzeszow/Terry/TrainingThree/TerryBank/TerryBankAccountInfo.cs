@@ -1,4 +1,4 @@
-﻿namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.Bank
+﻿namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.TerryBank
 {
     public class TerryBankAccountInfo
     {

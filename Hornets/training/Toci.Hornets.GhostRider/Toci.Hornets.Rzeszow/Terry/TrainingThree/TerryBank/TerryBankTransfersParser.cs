@@ -1,13 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Toci.Hornets.GhostRider.Kir;
-using Toci.Hornets.Rzeszow.Terry.TrainingThree.TerryBank;
 
-namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.Bank
+namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.TerryBank
 {
     public class TerryBankTransfersParser : BankTransfersParser
     {
 
-        /* Format zapisu transferów Terry Banku:
+        /* Format zapisu transferów Terry Banku (docelowo, jeszcze to do końca tak nie wygląda):
          * 
          * .../amount.destNr.destName.srcNr.srcName.destination.source.title.isTransSuccessful(y/n)/...
          * 
@@ -15,13 +15,15 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.Bank
 
         public override List<BankTransfer> GetBankTransfers()
         {
-            var fileContent = BankFileOperation.GetFileContent("123");
+            var fileOp = new TerryFileOperation();
+            var fileContent = fileOp.GetFileContent("TerryBankTransfersAll.txt");
             var allTransArr = fileContent.Split('/');
             var bankTransList = new List<BankTransfer>();
 
             foreach (var entry in allTransArr)
             {
-                bankTransList.Add(GetTransferEntry(entry));
+                if (GetTransferEntry(entry).SourceBank != null)
+                  bankTransList.Add(GetTransferEntry(entry.Replace("\r\n", String.Empty)));
             }
 
             return bankTransList;
@@ -31,10 +33,13 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.Bank
         {
             var transArr = entry.Split('.');
 
-            var transfer = new TerryBankTransfer(transArr[0], transArr[1], transArr[2], transArr[3],
-                transArr[4], transArr[5], transArr[6], transArr[7], transArr[8]);
+            if (transArr.Length == 9)
+            {
+                return new TerryBankTransfer(transArr[0], transArr[1], transArr[2], transArr[3],
+                    transArr[4], transArr[5], transArr[6], transArr[7], transArr[8]);
+            }
             
-            return transfer;
+            return new TerryBankTransfer();
         }
     }
 }

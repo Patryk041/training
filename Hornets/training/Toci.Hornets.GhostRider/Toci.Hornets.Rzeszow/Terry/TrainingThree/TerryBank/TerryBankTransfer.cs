@@ -1,18 +1,17 @@
 ﻿using Toci.Hornets.GhostRider.Kir;
-using Toci.Hornets.Rzeszow.Terry.TrainingThree.Bank;
 
 namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.TerryBank
 {
     public class TerryBankTransfer : BankTransfer
     {
-        public int Amount { get; set; }
+        public string Amount { get; set; }
         public string Title { get; set; }
         public TerryBankAccountInfo DestinationAccountInfo;
         public TerryBankAccountInfo SourceAccountInfo;
 
         //konstruktor
-        public TerryBankTransfer(string amount, string destNr, string destName, string srcNr, 
-            string srcName, string destBank, string srcBank, string title, string isSuccessful)
+        public TerryBankTransfer(string amount = null, string destNr = null, string destName = null, string srcNr = null,
+            string srcName = null, string destBank = null, string srcBank = null, string title = null, string isSuccessful = null)
         {
             DestinationAccountInfo = new TerryBankAccountInfo()
             {
@@ -26,7 +25,7 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.TerryBank
                 OwnersName = srcName
             };
 
-            Amount = int.Parse(amount);
+            Amount = amount;
             DestinationBank = destBank;
             SourceBank = srcBank;
             Title = title;

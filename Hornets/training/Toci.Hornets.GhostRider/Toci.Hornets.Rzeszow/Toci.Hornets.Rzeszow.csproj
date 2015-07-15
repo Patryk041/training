@@ -101,6 +101,7 @@
     <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransfer.cs" />
     <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransferHandle.cs" />
     <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransfersParser.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryFileOperation.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\DayValidator.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\MonthValidator.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\PeselDate.cs" />

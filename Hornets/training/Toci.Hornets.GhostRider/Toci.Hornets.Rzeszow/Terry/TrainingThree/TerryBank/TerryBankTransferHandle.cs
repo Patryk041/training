@@ -10,19 +10,23 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.TerryBank
             BankName = "TerryBank";
         }
 
+        public bool TerrySendTransfers(BankTransfer transfer)
+        {
+            return Send(transfer);
+        }
+
         protected override bool Send(BankTransfer transfer)
         {
+            //zapisuje w UnitTestach bin\Debug przy testowaniu
 
-            //nie działa...
+            if (!transfer.IsTransferSuccessful) return false;
 
-
-            using ( StreamWriter writer = new StreamWriter("c:/TOCI/test.txt", true))
+            using (var writer = new StreamWriter("TerryBankTransfersAll.txt", true))
             {
-               writer.Write("{0}.{1}.destNr.destName.srcNr.srcName.amount.title.{2}/", transfer.DestinationBank,
-            transfer.SourceBank, transfer.IsTransferSuccessful);
-                
+                writer.WriteLine("{0}.{1}.destNr.destName.srcNr.srcName.amount.title.{2}/", transfer.DestinationBank,
+                    transfer.SourceBank, transfer.IsTransferSuccessful);
+
             }
-          
             return true;
         }
     }
