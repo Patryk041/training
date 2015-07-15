@@ -2,8 +2,8 @@
 {
     public class SieradzTransferInfo
     {
-        public string SourceAccountName { get; set; }
-        public string DestinationAccountName { get; set; }
+        public string SourceAccountNumber { get; set; }
+        public string DestinationAccountNumber { get; set; }
         public string Amount { get; set; }
         public string SourcePersonName { get; set; }
         public string DestinationPersonName { get; set; }
