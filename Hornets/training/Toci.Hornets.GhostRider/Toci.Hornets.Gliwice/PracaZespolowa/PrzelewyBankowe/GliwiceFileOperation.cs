@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,8 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
     {
         public override string GetFileContent(string path)
         {
-            throw new NotImplementedException();
+            StreamReader sr = new StreamReader(path);
+            return sr.ReadToEnd();
         }
     }
 }
