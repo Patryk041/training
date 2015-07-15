@@ -86,7 +86,7 @@
     <Folder Include="S2yfr4nt\Homework\S2yfr4ntBank\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Lausion\LausionKIR\Content.txt" />
+    <Content Include="Lausion\LausionKIR\TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

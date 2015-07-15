@@ -7,11 +7,13 @@ namespace Toci.Hornets.Opole.Lausion.LausionKIR
 {
     public class LausionBankTransfersParser:BankTransfersParser
     {
+        public LausionBankTransfersParser()
+        {
+            BankFileOperation=new OpoleFileOperation();
+        }
 
         public override List<BankTransfer> GetBankTransfers()
         {
-            BankFileOperation=new OpoleFileOperation();
-
             string content =
                 BankFileOperation.GetFileContent(
                     @"D:\Szkolenie C#\SoutceTree\Hornets\training\Toci.Hornets.GhostRider\Toci.Hornets.Opole\Lausion\LausionKIR\Content.txt");
