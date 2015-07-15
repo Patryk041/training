@@ -77,6 +77,7 @@
     <Compile Include="Rzeszow\Ksebal\Testy.cs" />
     <Compile Include="Rzeszow\SemiRafista\SeRaManipulatingStringsTest.cs" />
     <Compile Include="Rzeszow\SemiRafista\SeRaPeselTest.cs" />
+    <Compile Include="Rzeszow\Terry\TerryBankTest\TerryBankTest.cs" />
     <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
     <Compile Include="Rzeszow\Terry\StringManipulatorTest\TerryStringManipulatorTest.cs" />
     <Compile Include="Kalisz\Adrianowsky94\PeselTester.cs" />

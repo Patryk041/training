@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Toci.Hornets.GhostRider.Kir;
+using Toci.Hornets.Rzeszow.Terry.TrainingThree.TerryBank;
 
 namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.Bank
 {
@@ -8,7 +9,7 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.Bank
 
         /* Format zapisu transferów Terry Banku:
          * 
-         * .../destination.source.destNr.destName.srcNr.srcName.title.isTransSuccessful(y/n)/...
+         * .../amount.destNr.destName.srcNr.srcName.destination.source.title.isTransSuccessful(y/n)/...
          * 
          */
 
@@ -30,12 +31,8 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.Bank
         {
             var transArr = entry.Split('.');
 
-            var transfer = new BankTransfer
-            {
-                DestinationBank = transArr[0],
-                SourceBank = transArr[1],
-                IsTransferSuccessful = transArr[6] == "y"
-            };
+            var transfer = new TerryBankTransfer(transArr[0], transArr[1], transArr[2], transArr[3],
+                transArr[4], transArr[5], transArr[6], transArr[7], transArr[8]);
             
             return transfer;
         }
