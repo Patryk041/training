@@ -60,15 +60,14 @@
     <Compile Include="MoWerr\StringOperations\MoWerrStringOperations.cs" />
     <Compile Include="MoWerr\TelephoneTask\SendTypeImplementation.cs" />
     <Compile Include="PiotrekJ\szkolenie1.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiBankTransfer.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiBankTransferParser.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiInformationTransfer.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiTransferHandle.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwiceFileOperation.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwicePerformTransfer.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Rudi\RudiBankTransferParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rudi\Rudis.cs" />
-    <Compile Include="Rudi\TrainingTwo\RudiPeselValidator.cs" />
-    <Compile Include="Rudi\TrainingTwo\RudiStringManipulations.cs" />
-    <Compile Include="Rudi\TrainingTwo\RudiTelephoneInterpreter.cs" />
     <Compile Include="Snajper\FirstClass.cs" />
     <Compile Include="Soltys\CustomTelephoneInterpreter.cs" />
     <Compile Include="Soltys\HelloWorld.cs" />
@@ -86,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PiotrekJ\Homework\" />
+    <Folder Include="Rudi\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiPrzelewy.txt" />
