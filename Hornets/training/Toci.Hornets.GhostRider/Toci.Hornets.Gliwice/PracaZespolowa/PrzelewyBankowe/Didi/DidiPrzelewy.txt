@@ -1,12 +1,9 @@
-﻿ING;Jan Kowalski;Rata za samochód;1000,00,12345;2015/01/01;Karol Nowak;67890;ALIOR
-ING;Anna Len;Spłata długu;500,00,12345;2015/03/13;Katarzyna Kwiatkowska;67890;ALIOR
-ING;Anna Lewandowska;Pożyczka;230,00,12345;2015/05/10;Katarzyna Klopsik;67890;ALIOR
-ING;Jan Kowalski;Rata za samochód;1000,00,12345;2015/01/01;Karol Nowak;67890;ALIOR
-ING;Anna Len;Spłata długu;500,00,12345;2015/03/13;Katarzyna Kwiatkowska;67890;WBK
-ING;Anna Lewandowska;Pożyczka;230,00,12345;2015/05/10;Katarzyna Klopsik;67890;WBK
-MULTIBANK;Jan Kowalski;Rata za samochód;1000,00,12345;2015/01/01;Karol Nowak;67890;PGŻ
-MULTIBANK;Anna Len;Spłata długu;500,00,12345;2015/03/13;Katarzyna Kwiatkowska;67890;PKO
-MULTIBANK;Anna Lewandowska;Pożyczka;230,00,12345;2015/05/10;Katarzyna Klopsik;67890;MBANK
-
-
-
+﻿ING;Jan Kowalski;Rata za samochód;1000,00;12345;2015/01/01;Karol Nowak;67890;ALIOR
+ING;Anna Len;Spłata długu;500,00;12345;2015/03/13;Katarzyna Kwiatkowska;67890;ALIOR
+ING;Anna Lewandowska;Pożyczka;230,00;12345;2015/05/10;Katarzyna Klopsik;67890;ALIOR
+ING;Jan Kowalski;Rata za samochód;1000,00;12345;2015/01/01;Karol Nowak;67890;ALIOR
+ING;Anna Len;Spłata długu;500,00;12345;2015/03/13;Katarzyna Kwiatkowska;67890;WBK
+ING;Anna Lewandowska;Pożyczka;230,00;12345;2015/05/10;Katarzyna Klopsik;67890;WBK
+MULTIBANK;Jan Kowalski;Rata za samochód;1000,00;12345;2015/01/01;Karol Nowak;67890;PGŻ
+MULTIBANK;Anna Len;Spłata długu;500,00;12345;2015/03/13;Katarzyna Kwiatkowska;67890;PKO
+MULTIBANK;Anna Lewandowska;Pożyczka;230,00;12345;2015/05/10;Katarzyna Klopsik;67890;MBANK
