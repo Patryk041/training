@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using Toci.Hornets.GhostRider.Kir;
-using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
-namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
+namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Pekao
 {
-    public class TypowyAdamBankTransfersParser : BankTransfersParser
+    public class DjBankTransfersParser : BankTransfersParser
     {
         public override List<BankTransfer> GetBankTransfers()
         {

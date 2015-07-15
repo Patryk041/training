@@ -67,11 +67,16 @@
     <Compile Include="Quicksilver\UndergroundTasks\CasualStringComparator.cs" />
     <Compile Include="Quicksilver\UndergroundTasks\LessCasualStringComparator.cs" />
     <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\Hellada\DuchBankTransferParser.cs" />
+    <Compile Include="SieradzBankTransferTask\Pekao\DjBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankFilesPathHolder.cs" />
     <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamBankTransfersParser.cs" />
-    <Compile Include="SieradzBankTransferTask\SieradzBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankTransfer.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankUtils\DuchStringUtils.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankTransfersUtils.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzPerformTransfers.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzTransferInfo.cs" />
     <Compile Include="TypowyAdam\ExampleClass.cs" />
     <Compile Include="Duch\U1task\U1Utils.cs" />
     <Compile Include="TypowyAdam\TelephoneTask\TypowyAdamTelephoneTask.cs" />
@@ -82,8 +87,12 @@
     <Compile Include="TypowyAdam\UndergroundTasks\SimpleTypicalStringComparator.cs" />
     <Compile Include="TypowyAdam\TrainingTwoTasks\PeselValidator\TypowyAdamPeselValidator.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\TypowyAdamPeselValidatorOld.cs" />
+    <Compile Include="UCantTouchThis\CastingExamples\CastingExampleOne.cs" />
+    <Compile Include="UCantTouchThis\CastingExamples\One.cs" />
+    <Compile Include="UCantTouchThis\CastingExamples\Two.cs" />
     <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_GetProperyValueFromName.cs" />
     <Compile Include="UCantTouchThis\ImSoBadAss.cs" />
+    <Compile Include="UCantTouchThis\JsonParser\SimpleJsonParser.cs" />
     <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisPeselValidator.cs" />
     <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisStringManipulations.cs" />
     <Compile Include="UCantTouchThis\TelephoneTask\UCantTouchThisTelephoneTask.cs" />
@@ -111,9 +120,11 @@
     <Folder Include="Duch\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SieradzBankTransferTask\BankTransfersFiles\0000Hellada.txt" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\testFile.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="SieradzBankTransferTask\BankTransfersFiles\Alior.json" />
     <None Include="SieradzBankTransferTask\SieradzBankNamesDictionary.cfg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

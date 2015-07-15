@@ -7,23 +7,23 @@ using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
-namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam.PeselValidatorTest
+namespace Toci.Hornets.UnitTests.Sieradz.DeeJay.TasksTrainingTwo
 {
     [TestClass]
     public class TypowyAdamPeselValidatorTest
     {
-        private static string testDirectory = @"..\..\Sieradz\TypowyAdam\";
-        private static string assemblyName = "Toci.Hornets.Sieradz"; //TODO make it able to load more assemblies
+        private const string testDirectory = @"..\..\Sieradz\TypowyAdam\PeselValidatorTest\";
+        private static string assemblyName = "Toci.Hornets.Sieradz"; //TODO make it able to load more assemblies done
         private static int iterationValue = 100;
         private static List<object> peselValidatorsList = new List<object>();
         private static List<List<string>> peselListsList = new List<List<string>>();
         private static Dictionary<string, Func<string, bool>> validatorFactory = new Dictionary<string, Func<string, bool>>();
         private static Dictionary<string, long> benchmarkTimes = new Dictionary<string, long>();
-
+        
         [TestMethod]
         public void TestMethod1()
         {
-            Stopwatch benchmark = new Stopwatch(); //TODO benchmark to separate method taking delegate
+            var benchmark = new Stopwatch(); //TODO benchmark to separate method taking delegate
             benchmark.Start();
             GenerateListOfPeselLists(testDirectory);
             GenerateObjectList(assemblyName);
@@ -34,20 +34,28 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam.PeselValidatorTest
             {
                 benchmark.Reset();
                 benchmark.Start();
-                for (int j = 0; j < iterationValue; j++) //TODO get rid of those loops
+                try
                 {
-                    foreach (var peselLists in peselListsList)
+                    for (var j = 0; j < iterationValue; j++) //TODO get rid of those loops
                     {
-                        for (int i = 0; i < peselLists.Count - 1; i++) //foreach (var pesel in peselLists)
+                        foreach (var peselLists in peselListsList)
                         {
-                            Assert.AreEqual(isPeselValid.Value(peselLists[i]), (peselLists.Last() == "true"));
+                            for (var i = 0; i < peselLists.Count - 1; i++) //foreach (var pesel in peselLists)
+                            {
+                                Assert.AreEqual(isPeselValid.Value(peselLists[i]), (peselLists.Last() == "true"));
+                            }
                         }
-
-
                     }
                 }
-                benchmark.Stop();
-                benchmarkTimes.Add(isPeselValid.Key, benchmark.ElapsedMilliseconds);
+                catch
+                {
+                    benchmark.Reset();
+                }
+                finally
+                {
+                    benchmark.Stop();
+                    benchmarkTimes.Add(isPeselValid.Key, benchmark.ElapsedMilliseconds);
+                }               
             }
             PrintBenchmarkTimes();
         }
@@ -56,7 +64,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam.PeselValidatorTest
         {
             foreach (var benchmarkTime in benchmarkTimes)
             {
-                Debug.Print("{0}: {1}ms", benchmarkTime.Key, benchmarkTime.Value);
+                Debug.Print("{0}: {1}ms", benchmarkTime.Key,benchmarkTime.Value);
             }
         }
 
@@ -70,7 +78,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam.PeselValidatorTest
         private static void GenerateListOfPeselLists(string initialDirectory)
         {
             List<string> fileNames = new List<string>(Directory.GetFiles(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @initialDirectory)));
-            fileNames = fileNames.Where(s => s.Contains(".txt")).Where(s => s.Contains("Pesel")).ToList();
+            fileNames= fileNames.Where(s => s.Contains(".txt")).Where(s => s.Contains("Pesel")).ToList();
             foreach (var fileName in fileNames)
             {
                 peselListsList.Add(GeneratePeselList(fileName));
@@ -94,12 +102,10 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam.PeselValidatorTest
         {
 
             Assembly myAssembly = AppDomain.CurrentDomain.Load(assemblyName);
-            foreach (var type in myAssembly.GetTypes().Where(type => type.IsClass && type.IsSubclassOf(typeof(PeselValidator))))
+            foreach (Type type in myAssembly.GetTypes().Where(type => type.IsClass && type.IsSubclassOf(typeof(PeselValidator))))
             {
-                peselValidatorsList.Add((PeselValidator)Activator.CreateInstance(type));
-            }
+                peselValidatorsList.Add((PeselValidator) Activator.CreateInstance(type));
+            }   
         }
     }
-
-
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.Sieradz.DeeJay.TasksTrainingTwo;
+using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
 
 namespace Toci.Hornets.UnitTests.Sieradz.DeeJay.TasksTrainingTwo
 {
@@ -79,18 +80,5 @@ namespace Toci.Hornets.UnitTests.Sieradz.DeeJay.TasksTrainingTwo
             isValid = _djPeselValidator.IsPeselValid(null);
             Assert.IsFalse(isValid);
         }
-
-        /*
-vpesel("74021834012")=FALSE - nie sprawdzamy płci 
-vpesel("74021834012","M")=FALSE - sprawdzamy czy to Mężczyzna 
-vpesel("74021834012","K")=FALSE - sprawdzamy czy to Kobieta 
-vpesel("74021834018")=TRUE - nie sprawdzamy płci 
-vpesel("74021834018","M")=TRUE - sprawdzamy czy to Mężczyzna 
-vpesel("74021834025","K")=TRUE - sprawdzamy czy to Kobieta 
-vpesel("74021834018","K")=FALSE - sprawdzamy czy to Kobieta 
-vpesel("74021834025","M")=FALSE - sprawdzamy czy to Mężczyzna 
-vpesel("74021834001","K")=TRUE - sprawdzamy czy to Kobieta 
-vpesel("74021834001","M")=FALSE - sprawdzamy czy to Mężczyzna 
-         */
     }
 }
