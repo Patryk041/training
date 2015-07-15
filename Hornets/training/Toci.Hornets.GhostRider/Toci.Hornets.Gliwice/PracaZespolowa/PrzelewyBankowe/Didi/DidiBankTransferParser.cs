@@ -11,13 +11,13 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
     public class DidiBankTransferParser : BankTransfersParser
     {
         private List<BankTransfer> _BankTransfersList;
-        private readonly char[] _delimiter;
+        private readonly string[] _delimiter;
         private string _file; 
 
         public DidiBankTransferParser()
         {
             _BankTransfersList = new List<BankTransfer>();
-            _delimiter = new char[] {'\n', ';'};
+            _delimiter = new string[] { "\n", ";" };
         }
 
         public override List<BankTransfer> GetBankTransfers()
@@ -36,7 +36,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
         protected override BankTransfer GetTransferEntry(string entry)
         {
             //metoda dla jednego przelwu 
-            string[] transfer = entry.Split(_delimiter[1]);
+            string[] transfer = entry.Split(_delimiter[1].ToCharArray());
 
             var bankTransfer = new DidiBankTransfer();
             bankTransfer.SourceBank = transfer[0];
@@ -55,7 +55,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
         private List<string> CutBankTransfers(string file)
         {
             //wszystkie przelewy
-            List<string> transfers = file.Split(_delimiter[0]).ToList();
+            List<string> transfers = file.Split(_delimiter[0].ToCharArray()).ToList();
             return transfers; 
         }
         
