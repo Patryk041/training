@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="DeeJay\DjExampleAbstract.cs" />
     <Compile Include="DeeJay\DjExampleClass.cs" />
+    <Compile Include="DeeJay\ExampleDeeJayClass.cs" />
     <Compile Include="DeeJay\IDJExample.cs" />
     <Compile Include="DeeJay\TasksTrainingTwo\DjPeselValidator.cs" />
     <Compile Include="DeeJay\TasksTrainingTwo\DjStringManipulations.cs" />
@@ -51,8 +52,10 @@
     <Compile Include="Duch\DuchGenFactory.cs" />
     <Compile Include="Duch\Homework 1\DuchTele.cs" />
     <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselFactory.cs" />
+    <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselUtils.cs" />
     <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselValidator.cs" />
     <Compile Include="Duch\Homework 2\StringManipulator\DuchStringManipulatro.cs" />
+    <Compile Include="Duch\Homework 2\StringManipulator\DuchStringUtills.cs" />
     <Compile Include="Duch\U1task\DuchStringComparator.cs" />
     <Compile Include="Jake\JakeTest.cs" />
     <Compile Include="Kamil\ClassKamil.cs" />
@@ -73,14 +76,15 @@
     <Compile Include="TypowyAdam\UndergroundTasks\SimpleTypicalStringComparator.cs" />
     <Compile Include="TypowyAdam\TrainingTwoTasks\PeselValidator\TypowyAdamPeselValidator.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\TypowyAdamPeselValidatorOld.cs" />
-    <Compile Include="UCantTouchThis\GetProperyValueFromName.cs" />
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_GetProperyValueFromName.cs" />
     <Compile Include="UCantTouchThis\ImSoBadAss.cs" />
     <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisPeselValidator.cs" />
     <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisStringManipulations.cs" />
     <Compile Include="UCantTouchThis\TelephoneTask\UCantTouchThisTelephoneTask.cs" />
     <Compile Include="UCantTouchThis\TelephoneTask\UCTT_TelephoneTaskFactory.cs" />
     <Compile Include="UCantTouchThis\UCTTGenericFactory.cs" />
-    <Compile Include="UCantTouchThis\UCTT_StringExtensions.cs" />
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_StringExtensions.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\DateValidatorUtils.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCTT_PeselValidatorUtils.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCantTouchThisAutismPeselValisator.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\DummyStringComparator.cs" />

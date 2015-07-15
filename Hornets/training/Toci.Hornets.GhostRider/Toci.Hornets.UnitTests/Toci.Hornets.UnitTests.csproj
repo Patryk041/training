@@ -51,9 +51,33 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Bytom\AdamP\AdamPFirstUnitTest.cs" />
+    <Compile Include="Bytom\Coffee13\CoffeeFileOperationTest.cs" />
+    <Compile Include="Bytom\Coffee13\StringTest.cs" />
+    <Compile Include="Bytom\Coffee13\UnitTest1.cs" />
+    <Compile Include="Bytom\Pr0fes0r\TrainingTwo\PeselValidatorPr0fes0r.cs" />
+    <Compile Include="Bytom\Vnth\FileOperationTest.cs" />
+    <Compile Include="Bytom\Vnth\VnthFirstUnitTest.cs" />
+    <Compile Include="Bytom\Vnth\VnthPeselValidatorTest.cs" />
+    <Compile Include="GhostRider\Abstraction\TestBase.cs" />
+    <Compile Include="GhostRider\GeneralTests\DebugingTesting.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
-    <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
+    <Compile Include="Wroclaw\Ayuu\AyuuPeselValidatorTest.cs" />
+    <Compile Include="Wroclaw\Ayuu\AyuuStringManipulationsTest.cs" />
+    <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />
+    <Compile Include="Wroclaw\gipson\StringManipulationsTest.cs" />
+    <Compile Include="Wroclaw\Tszulczewski\StringManipulationsTest.cs" />
+    <Compile Include="Wroclaw\Wyga\MyFirstUnitTest.cs" />
+    <Compile Include="GhostRider\PeselTask\PeselTaskTest.cs" />
+    <Compile Include="GhostRider\TextstTask\TextstTaskTest.cs" />
+    <Compile Include="Gliwice\Didi\Pesel\PeselValidationTest.cs" />
     <Compile Include="Gliwice\Didi\StringManipulation\StringManipulationTest.cs" />
+    <Compile Include="Gliwice\MoWerr\PeselValidator\MoWerrPeselValidatorTester.cs" />
+    <Compile Include="Gliwice\Hipek\TaskTrainingTwoTest\HipekStringManipulationTest.cs" />
+    <Compile Include="Gliwice\MoWerr\StringOperations\MoWerrStringOperationsTest.cs" />
+    <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
+    <Compile Include="Gliwice\Soltys\TaskTwoUnitTests.cs" />
+    <Compile Include="Kalisz\Amman\UnitTester.cs" />
     <Compile Include="Legnica\Patryk\Mock\FakeChecksumValidator.cs" />
     <Compile Include="Legnica\Patryk\Mock\FakePeselDateValidator.cs" />
     <Compile Include="Legnica\Patryk\PatrykPeselValidatorTests.cs" />
@@ -61,6 +85,8 @@
     <Compile Include="Rzeszow\Chojnecki\PeselTest\PESELTest.cs" />
     <Compile Include="Rzeszow\Chojnecki\StringCheckTest\StringCheckTest.cs" />
     <Compile Include="Rzeszow\Ksebal\Testy.cs" />
+    <Compile Include="Rzeszow\SemiRafista\SeRaManipulatingStringsTest.cs" />
+    <Compile Include="Rzeszow\SemiRafista\SeRaPeselTest.cs" />
     <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
     <Compile Include="Rzeszow\Terry\StringManipulatorTest\TerryStringManipulatorTest.cs" />
     <Compile Include="Kalisz\Adrianowsky94\PeselTester.cs" />
@@ -69,8 +95,8 @@
     <Compile Include="Lausion\StringManipulation.cs" />
     <Compile Include="S2yfr4nt\StringManipulations\StringManipulations.cs" />
     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
-    <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjStringManipulationsTest.cs" />
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjPeselValidatorTest.cs" />
+    <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjStringManipulationsTest.cs" />
     <Compile Include="Sieradz\DeeJay\TelephoneTask\DjTraceListener.cs" />
     <Compile Include="Sieradz\DeeJay\TelephoneTask\DjTelephoneTaskTest.cs" />
     <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
@@ -80,12 +106,20 @@
     <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
     <Compile Include="Sieradz\Quicksilver\LessCasualSC.cs" />
     <Compile Include="Sieradz\Quicksilver\TwoQs\QuicksilverStringManipulatorUnitTest.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\Interfaces\ITypowyAdamBenchmark.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\Interfaces\ITypowyAdamMethodFactoryGenerator.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\Interfaces\ITypowyAdamTestListGenerator.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamBenchmark.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamMethodFactoryGenerator.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamTestListGenerator.cs" />
+    <Compile Include="Sieradz\TypowyAdam\TypowyAdamStringManipulatorTest.cs" />
     <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
     <Compile Include="Sieradz\TypowyAdam\PentagramTest.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest.cs" />
+    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\PeselValidatorTest.cs" />
     <Compile Include="Sieradz\UCantTouchThis\DateValidatorTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\RandomStringGeneratorTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\StringComparatorsBenchmarks.cs" />
+    <Compile Include="Sieradz\UCantTouchThis\StringManipulationsTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\Undergtound1Test.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -100,10 +134,6 @@
     <ProjectReference Include="..\Toci.Hornets.Gliwice\Toci.Hornets.Gliwice.csproj">
       <Project>{bfe04213-e553-481b-9b82-44312e146379}</Project>
       <Name>Toci.Hornets.Gliwice</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Toci.Hornets.Kalisz\Toci.Hornets.Kalisz.csproj">
-      <Project>{52dced43-e95b-43ec-9c27-6191e06b8258}</Project>
-      <Name>Toci.Hornets.Kalisz</Name>
     </ProjectReference>
     <ProjectReference Include="..\Toci.Hornets.Legnica\Toci.Hornets.Legnica.csproj">
       <Project>{9e9ec7c9-b279-42a1-8be4-90f814c37fdb}</Project>
@@ -122,13 +152,17 @@
       <Name>Toci.Hornets.Sieradz</Name>
     </ProjectReference>
     <ProjectReference Include="..\Toci.Hornets.Wroclaw\Toci.Hornets.Wroclaw.csproj">
-      <Project>{5b12a0e8-9563-4d82-93a7-db9013c945f0}</Project>
+      <Project>{5B12A0E8-9563-4D82-93A7-DB9013C945F0}</Project>
       <Name>Toci.Hornets.Wroclaw</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
+    <Content Include="Bytom\Coffee13\ContentFile.txt" />
+    <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\invalidPeselList.txt" />
+    <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\otherInvalidPeselList.txt" />
+    <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\validPeselList.txt" />
     <Compile Include="S2yfr4nt\PeselVaidator\PeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -136,12 +170,11 @@
       <Project>{76565C63-6DC2-47B8-98D0-E2C57E1DD6E7}</Project>
       <Name>Toci.Hornets.Opole</Name>
     </ProjectReference>
-
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Wroclaw\Kollwing\" />
-
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

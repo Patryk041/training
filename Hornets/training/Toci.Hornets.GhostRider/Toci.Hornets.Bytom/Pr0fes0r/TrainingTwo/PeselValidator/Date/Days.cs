@@ -14,13 +14,14 @@
                 case 8:
                 case 10:
                 case 12:
-                    { return Thirtyone(days); break; }
+                    { return Thirtyone(days); }
                 case 4:
                 case 6:
                 case 9:
-                case 11: { return Thirty(days); break; }
+                case 11: { return Thirty(days);  }
                 case 2:
-                    { return February(year, days); break; }
+                    { return February(year, days);
+                    }
 
                   
                 default:{return false;}
