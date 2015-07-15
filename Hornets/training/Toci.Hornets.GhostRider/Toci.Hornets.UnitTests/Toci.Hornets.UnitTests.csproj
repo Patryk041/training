@@ -62,6 +62,12 @@
     <Compile Include="GhostRider\Abstraction\TestBase.cs" />
     <Compile Include="GhostRider\GeneralTests\DebugingTesting.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
+    <Compile Include="Sieradz\DeeJay\BankTransfers\DjBankTransfersTest.cs" />
+    <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjTypowyAdamPeselValidatorTestRefactored.cs" />
+    <Compile Include="Sieradz\Duch\HW3\DuchBankTests.cs" />
+    <Compile Include="Sieradz\BankTransferTests\BankTransfersUtilsTest.cs" />
+    <Compile Include="Sieradz\UCantTouchThis\BankTransfers\UCantTouchThisBankTransfersParserTests.cs" />
+    <Compile Include="Sieradz\UCantTouchThis\CastingTests.cs" />
     <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />
     <Compile Include="Wroclaw\gipson\StringManipulationsTest.cs" />
     <Compile Include="Wroclaw\Tszulczewski\StringManipulationsTest.cs" />
@@ -69,11 +75,14 @@
     <Compile Include="GhostRider\PeselTask\PeselTaskTest.cs" />
     <Compile Include="GhostRider\TextstTask\TextstTaskTest.cs" />
     <Compile Include="Gliwice\Didi\Pesel\PeselValidationTest.cs" />
+    <Compile Include="Gliwice\Didi\PrzelwyBankowe\DidiTransfer.cs" />
     <Compile Include="Gliwice\Didi\StringManipulation\StringManipulationTest.cs" />
     <Compile Include="Gliwice\MoWerr\PeselValidator\MoWerrPeselValidatorTester.cs" />
     <Compile Include="Gliwice\Hipek\TaskTrainingTwoTest\HipekStringManipulationTest.cs" />
     <Compile Include="Gliwice\MoWerr\StringOperations\MoWerrStringOperationsTest.cs" />
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
+    <Compile Include="Gliwice\Rudi\GliwiceFileOperationTest.cs" />
+    <Compile Include="Gliwice\Rudi\RudiBankTransferParser.cs" />
     <Compile Include="Gliwice\Soltys\TaskTwoUnitTests.cs" />
     <Compile Include="Kalisz\Amman\UnitTester.cs" />
     <Compile Include="Legnica\Patryk\Mock\FakeChecksumValidator.cs" />
@@ -154,11 +163,18 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Content Include="Bytom\Coffee13\ContentFile.txt" />
     <Content Include="Bytom\Coffee13\Log\FileLog.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\otherInvalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\validPeselList.txt" />
+=======
+    <Content Include="Gliwice\Rudi\testFileToRead.txt" />
+    <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
+    <Content Include="Sieradz\TypowyAdam\otherInvalidPeselList.txt" />
+    <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
+>>>>>>> Gliwice
     <Compile Include="S2yfr4nt\PeselVaidator\PeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>
