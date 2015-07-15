@@ -6,13 +6,8 @@ using System.Linq;
 using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
-using Toci.Hornets.Sieradz.Duch.Homework_2.PeselValidator;
-using Toci.Hornets.Sieradz.Quicksilver.TasksTrainingTwoQs;
-using Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks;
-using Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo;
-using Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator;
 
-namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
+namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam.PeselValidatorTest
 {
     [TestClass]
     public class PeselValidatorTest
