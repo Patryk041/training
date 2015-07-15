@@ -1,5 +1,10 @@
-﻿namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
+﻿using System;
+using System.Xml.Serialization;
+
+namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
 {
+    [Serializable]
+    [XmlRoot("Transfer")]
     public class SieradzTransferInfo
     {
         public string SourceAccountNumber { get; set; }
