@@ -163,18 +163,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Content Include="Bytom\Coffee13\ContentFile.txt" />
     <Content Include="Bytom\Coffee13\Log\FileLog.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\otherInvalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\validPeselList.txt" />
-=======
     <Content Include="Gliwice\Rudi\testFileToRead.txt" />
     <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\otherInvalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
->>>>>>> Gliwice
     <Compile Include="S2yfr4nt\PeselVaidator\PeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>
