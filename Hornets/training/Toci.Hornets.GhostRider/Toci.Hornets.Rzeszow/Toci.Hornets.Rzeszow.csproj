@@ -97,6 +97,8 @@
     <Compile Include="Sherpin\TasksTrainingTwo\SherStringManipulations.cs" />
     <Compile Include="Terry\TelephoneHomework\TerryTelephoneHomework.cs" />
     <Compile Include="Terry\TerryTest.cs" />
+    <Compile Include="Terry\TrainingThree\Bank\TerryBankTransferHandle.cs" />
+    <Compile Include="Terry\TrainingThree\Bank\TerryBankTransfersParser.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\DayValidator.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\MonthValidator.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\PeselDate.cs" />
