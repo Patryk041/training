@@ -62,6 +62,7 @@
     <Compile Include="GhostRider\TextstTask\TextstTaskTest.cs" />
     <Compile Include="Gliwice\Didi\Pesel\PeselValidationTest.cs" />
     <Compile Include="Gliwice\Didi\StringManipulation\StringManipulationTest.cs" />
+    <Compile Include="Gliwice\Hipek\TaskTrainingTwoTest\HipekPeselValidatorTest.cs" />
     <Compile Include="Gliwice\MoWerr\PeselValidator\MoWerrPeselValidatorTester.cs" />
     <Compile Include="Gliwice\Hipek\TaskTrainingTwoTest\HipekStringManipulationTest.cs" />
     <Compile Include="Gliwice\MoWerr\StringOperations\MoWerrStringOperationsTest.cs" />

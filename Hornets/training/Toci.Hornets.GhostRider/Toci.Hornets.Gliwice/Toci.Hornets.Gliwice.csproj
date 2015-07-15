@@ -48,6 +48,10 @@
     <Compile Include="Dziara\DziaraTelephoneInterpreter.cs" />
     <Compile Include="Dziara\TestClass.cs" />
     <Compile Include="Hipek\Example.cs" />
+    <Compile Include="Hipek\TaskTrainingTwo\PeselValidator\HipekPeselValidator.cs" />
+    <Compile Include="Hipek\TaskTrainingTwo\PeselValidator\Validates\DayValidator.cs" />
+    <Compile Include="Hipek\TaskTrainingTwo\PeselValidator\Validates\MonthValidator.cs" />
+    <Compile Include="Hipek\TaskTrainingTwo\PeselValidator\Validates\YearValidator.cs" />
     <Compile Include="Hipek\TaskTrainingTwo\StringManipulation\HipekStringManipulation.cs" />
     <Compile Include="Hipek\TelephoneTask\HipekTelephoneInterpreter.cs" />
     <Compile Include="MoWerr\MoWerrClass.cs" />
