@@ -5,12 +5,13 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Legnica.Michał_Zembik.FTPcs
 {
-    internal class GetFile
+    internal class GetFile : FileOperation
     {
-        public string Get(string sourcefilepath, string desinationfilepath, string login, string pass)
+        public string Get(string sourcefilepath, string login, string pass)
         {
             // Get the object used to communicate with the server.
             FtpWebRequest request = (FtpWebRequest)WebRequest.Create(sourcefilepath);
@@ -29,18 +30,23 @@ namespace Toci.Hornets.Legnica.Michał_Zembik.FTPcs
                 string wiad = Encoding.Default.GetString(info);
                 reader.Close();
                 response.Close();
-                Console.Read();
+            
                 return wiad;
             }
             else
             {
                 response.Close();
-                Console.Read();
+               
                 return "chuja xD";
             }
 
 
 
+        }
+
+        public override string GetFileContent(string path)
+        {
+            return path;
         }
     }
 }

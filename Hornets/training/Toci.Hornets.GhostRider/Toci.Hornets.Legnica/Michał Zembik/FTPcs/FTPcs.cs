@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace Toci.Hornets.Legnica.Michał_Zembik.FTPcs
 {
-    class FTPcs
+    public class FTPcs
     {
+        private string _login, _pass;
+        public FTPcs(string login, string pass)
+        {
+            _login = login;
+            _pass = pass;
+        }
 
         public bool Send(string sourcefilepath, string desinationfilepath, string login, string pass)
         {
@@ -15,10 +21,10 @@ namespace Toci.Hornets.Legnica.Michał_Zembik.FTPcs
             return sender.Send(sourcefilepath, desinationfilepath, login, pass); 
         }
 
-        public string Get(string sourcefilepath, string desinationfilepath, string login, string pass)
+        public string Get(string sourcefilepath)
         {
             var geter = new GetFile();
-            return geter.Get(sourcefilepath,desinationfilepath,login,pass);
+            return geter.Get(sourcefilepath,_login,_pass);
         }
 
     }
