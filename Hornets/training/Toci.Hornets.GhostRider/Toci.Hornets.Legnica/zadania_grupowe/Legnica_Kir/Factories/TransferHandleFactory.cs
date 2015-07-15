@@ -22,6 +22,7 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.Factories
 
         public IEnumerable<TransferHandle> GetAllHandles()
         {
+
             return GenericDictionary.Keys.Select(key => GenericDictionary[key]()).ToList();
         }
 
