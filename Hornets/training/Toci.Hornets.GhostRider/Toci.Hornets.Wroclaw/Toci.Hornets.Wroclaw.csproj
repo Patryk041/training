@@ -52,7 +52,11 @@
     <Compile Include="Perła\TelephoneTask\ChoseOperation.cs" />
     <Compile Include="Perła\test.cs" />
     <Compile Include="Pilot\Classme.cs" />
+    <Compile Include="ProjectElixir\BankTransferWroclaw.cs" />
+    <Compile Include="ProjectElixir\BankTrasfersParsersWroclaw.cs" />
     <Compile Include="ProjectElixir\FileOperationsWroclaw.cs" />
+    <Compile Include="ProjectElixir\PerfomTransfersWroclaw.cs" />
+    <Compile Include="ProjectElixir\TransferHandleWroclaw.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RFelich\TestClass1.cs" />
     <Compile Include="Tszulczewski\Example.cs" />
@@ -70,7 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="egg7\TelephoneTask\" />
-    <Folder Include="Kollwing\TelephoneTask\" />
     <Folder Include="Perła\Homework Telephone\" />
     <Folder Include="RFelich\Training2\" />
   </ItemGroup>
