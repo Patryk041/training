@@ -11,6 +11,7 @@
     <AssemblyName>Toci.Hornets.Sieradz</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>bd3a03f7</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,8 +32,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Spire.License">
+      <HintPath>..\packages\Spire.PDF.3.4.27\lib\net40\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf">
+      <HintPath>..\packages\Spire.PDF.3.4.27\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,6 +76,7 @@
     <Compile Include="Quicksilver\UndergroundTasks\LessCasualStringComparator.cs" />
     <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\Hellada\DuchBankTransferParser.cs" />
+    <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamTransferHandle.cs" />
     <Compile Include="SieradzBankTransferTask\Pekao\DjBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\Pekao\DjEmailSender.cs" />
     <Compile Include="SieradzBankTransferTask\Pekao\DjTransferHandle.cs" />
@@ -124,14 +133,16 @@
   <ItemGroup>
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\0000Hellada.txt" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\Pekao.xml" />
+    <Content Include="SieradzBankTransferTask\BankTransfersFiles\mBankTransfers.xml" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\testFile.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="SieradzBankTransferTask\BankTransfersFiles\Alior.json" />
     <None Include="SieradzBankTransferTask\SieradzBankNamesDictionary.cfg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!--To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
