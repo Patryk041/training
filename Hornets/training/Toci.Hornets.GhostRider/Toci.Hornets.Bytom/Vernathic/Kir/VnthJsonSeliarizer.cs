@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,10 +12,25 @@ namespace Toci.Hornets.Bytom.Vernathic.Kir
 {
 	public class VnthJsonSeliarizer
 	{
-		public DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(VnthTransfer));
+		public void SerializeJson()
+		{
+			VnthTransfer transfer = new VnthTransfer()
+			{
+				SourceInfo = new VnthAccountInfo(),
+				DestinationInfo = new VnthAccountInfo(),
+				TransferType = TransferType.Obciazenie,
+				Amount  = 12,
+				TitleOfTransfer = "",
+				DateOfTransfer = new DateTime(),
+				DateOfRecord = new DateTime()
+			};
 
-		//string jsonStream 
-		//serializer.
+			DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(VnthTransfer));
+
+			MemoryStream stream = new MemoryStream();
+
+			serializer.WriteObject(stream, transfer);
+		}
 
 	}
 }
