@@ -71,6 +71,7 @@
     <Compile Include="SieradzBankTransferTask\Pekao\DjBankTransfersParser.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankFilesPathHolder.cs" />
     <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankTransfer.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankUtils\DuchStringUtils.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankTransfersUtils.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />

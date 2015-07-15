@@ -10,7 +10,7 @@ using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam.PeselValidatorTest
 {
     [TestClass]
-    public class PeselValidatorTest
+    public class TypowyAdamPeselValidatorTest
     {
         private static string testDirectory = @"..\..\Sieradz\TypowyAdam\";
         private static string assemblyName = "Toci.Hornets.Sieradz"; //TODO make it able to load more assemblies
