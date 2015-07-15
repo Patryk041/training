@@ -17,9 +17,15 @@
 		}
 		return $wynik;
 	}
-	
-	
-	echo pwltt_str('programowanie')."\n";
-	echo pwltt_substr('programowanie',5);
+
+	function pwltt_substr2($text,$od,$do)
+	{
+		$wynik = '';
+		for( $od; $od <=$do; $od++)
+		{
+			$wynik .= $text[$od];
+		}
+		return $wynik;
+	}
 	
 	?>
