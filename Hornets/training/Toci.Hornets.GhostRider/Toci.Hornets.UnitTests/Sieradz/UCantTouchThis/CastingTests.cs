@@ -6,11 +6,19 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
     [TestClass]
     public class CastingTests
     {
+        readonly CastingExampleOne _castingExample = new CastingExampleOne();
+
         [TestMethod]
         public void UCTT_CastingTestOne()
         {
-            var castingExample = new CastingExampleOne();
-            Assert.AreEqual(castingExample.ExampleOne(), 12.12);
+            Assert.AreEqual(_castingExample.ExampleOne(), 12.12);
+        }
+
+        [TestMethod]
+        public void UCTT_CastingTestTwo()
+        {
+            var tmp = _castingExample.ExampleTwo();
+            Assert.AreEqual(tmp.TransferInfo.Amount, "mnóstwo");
         }
     }
 }

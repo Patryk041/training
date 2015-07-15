@@ -4,6 +4,6 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
 {
     public class SieradzBankTransfer : BankTransfer
     {
-        public SieradzTransferInfo TransferInfo;
+        public SieradzTransferInfo TransferInfo = new SieradzTransferInfo();
     }
 }
