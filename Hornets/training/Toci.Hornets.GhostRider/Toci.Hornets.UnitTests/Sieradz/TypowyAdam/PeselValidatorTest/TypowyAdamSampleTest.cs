@@ -17,7 +17,8 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam.PeselValidatorTest
         [TestMethod]
         public void TestMethod1()
         {
-
+            var test2 = new TypowyAdamBankTransfersParser();
+            test2.GetBankTransfers();
             var test = new TypowyAdamTransferHandle();
             test.SendTransfer(new BankTransfer());
         }

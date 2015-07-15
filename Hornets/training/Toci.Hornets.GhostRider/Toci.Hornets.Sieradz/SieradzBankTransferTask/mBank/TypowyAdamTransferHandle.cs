@@ -26,7 +26,9 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
             return true;
         }
 
+#pragma warning disable 108,114
         public bool SendTransfer(BankTransfer transfer)
+#pragma warning restore 108,114
         {
             Send(transfer);
             return true;
