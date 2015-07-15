@@ -24,7 +24,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Alior
 
         protected override BankTransfer GetTransferEntry(string entry)
         {
-            var bankTransfer = new BankTransfer();
+            BankTransfer bankTransfer = new SieradzBankTransfer();
 
             return bankTransfer;
         }
