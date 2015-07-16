@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Toci.Hornets.Sieradz.UCantTouchThis.ExtensionMethods;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.JsonParser
 {
@@ -11,24 +12,25 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.JsonParser
 
         public virtual TargetType Parse(TargetType target, string jsonStringLine)
         {
-            InitialiseParser(target);
-            foreach (var propertyName in PublicPropertiesNamesList)
-            {   //todo: check if success
-                var tmp = Regex.Match(jsonStringLine, string.Format(@"{0}""\s*:\s*""(.*?)(?=\"")", "TransferTitle")).Groups[1];
-                
-            }
-            return default(TargetType);
+            FillPublicPropertiesNamesList(target);
+            PublicPropertiesNamesList.ForEach(propertyName => SetPropertyValue(jsonStringLine, propertyName, target));
+            return target;
         }
 
-        protected virtual void InitialiseParser(TargetType target)
+        protected virtual void FillPublicPropertiesNamesList(TargetType target)
         {
-            PublicPropertiesNamesList = GetPublicPropertiesNamesList(target);
-            //more to come
+            PublicPropertiesNamesList = target.GetType().GetProperties().Select(property => property.Name).ToList();
         }
 
-        protected virtual List<string> GetPublicPropertiesNamesList(TargetType target)
+        protected virtual void SetPropertyValue(string jsonStringLine, string propertyName, TargetType target)
         {
-            return target.GetType().GetProperties().Select(property => property.Name).ToList();
+            target.SetPropertyValue(propertyName, FindValue(jsonStringLine, propertyName));
+        }
+
+        protected virtual string FindValue(string jsonStringLine, string propertyName)
+        {
+            var match = Regex.Match(jsonStringLine, string.Format(@"{0}""\s*:\s*""(.*?)(?=\"")", propertyName));
+            return (match.Success) ? match.Groups[1].ToString() : null;
         }
     }
 }

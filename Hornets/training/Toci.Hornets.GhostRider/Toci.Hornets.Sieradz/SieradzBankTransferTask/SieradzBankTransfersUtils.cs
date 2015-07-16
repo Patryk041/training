@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -25,7 +24,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
 
         public string GetBankName(string bankCode)
         {
-            return (_bankNamesDictionary.ContainsKey(bankCode)) ? _bankNamesDictionary[bankCode] : String.Empty;
+            return (_bankNamesDictionary.ContainsKey(bankCode)) ? _bankNamesDictionary[bankCode] : string.Empty;
         }
 
         private void GetBankNamesDictionary()

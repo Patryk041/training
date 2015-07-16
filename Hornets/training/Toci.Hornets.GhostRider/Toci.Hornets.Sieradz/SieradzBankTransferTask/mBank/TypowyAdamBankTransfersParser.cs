@@ -38,6 +38,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
 
             xmlNode.LoadXml(entry);
             //TODO it's possible to reduce that sphagetti?
+            // IT FCKIN IS!         @UCTT
             mBankTransfer.TransferInfo.Amount = xmlNode.GetElementsByTagName("Amount").Item(0).InnerText;
             mBankTransfer.TransferInfo.DestinationAccountNumber = xmlNode.GetElementsByTagName("DestinationAccountNumber").Item(0).InnerText;
             mBankTransfer.TransferInfo.DestinationPersonName = xmlNode.GetElementsByTagName("DestinationPersonName").Item(0).InnerText;
