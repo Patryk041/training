@@ -3,29 +3,47 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Net;
+using Toci.Hornets.GhostRider.Kir;
 
-namespace Toci.Hornets.Legnica.Michał_Zembik.FTPcs
+namespace FTPClient
 {
-    public class FTPcs
+    public static class FTPcs
     {
-        private string _login, _pass;
-        public FTPcs(string login, string pass)
-        {
-            _login = login;
-            _pass = pass;
-        }
+        private static string _login = "srv29007", _pass = "l2aBP8vT", _server = "ftp://p.1shot1kill.pl/banki/";
 
-        public bool Send(string sourcefilepath, string desinationfilepath, string login, string pass)
+        /* public FTPcs(string serverpath, string login, string pass)
+         {
+             _login = login;
+             _pass = pass;
+             _server = serverpath; //ftp::jakisserwer.pl/folder/
+         }*/
+
+        public static bool Send(BankTransfer transfer)
         {
+            string bankname = transfer.DestinationBank;
             var sender = new SendFile();
-            return sender.Send(sourcefilepath, desinationfilepath, login, pass); 
+            var desinationfilepath = _server + bankname + ".txt"; //ftp::jakisserwer.pl/folder/plik.txt
+            var file = bankname + ".txt";
+            return sender.Send(file, desinationfilepath, _login, _pass);
         }
 
-        public string Get(string sourcefilepath)
+        public static string Get(BankTransfer transfer)
         {
+            string bankname = transfer.DestinationBank;
             var geter = new GetFile();
-            return geter.Get(sourcefilepath,_login,_pass);
+            var sourcefilepath = _server + bankname + ".txt";
+            return geter.Get(sourcefilepath, _login, _pass);
         }
+
+        public static void OverWriteFile(BankTransfer transfer, string newline)
+        {
+            Get(transfer);
+
+            Send(transfer);
+        }
+
 
     }
 }
