@@ -10,9 +10,10 @@ namespace Toci.Hornets.UnitTests.Gliwice.Rudi
         [TestMethod]
         public void FileReadTest()
         {
-            RudiBankTransferParser tak = new RudiBankTransferParser();
-            Console.Write(tak.listaPrzelewow.ToString());
+            RudiBankTransferParser tak = new RudiBankTransferParser("..\\..\\..\\Toci.Hornets.Gliwice\\PracaZespolowa\\PrzelewyBankowe\\Didi\\DidiPrzelewy.txt");
 
+            foreach(String str in tak.listaPrzelewow)
+            Console.Write(str);
         }
     }
 }

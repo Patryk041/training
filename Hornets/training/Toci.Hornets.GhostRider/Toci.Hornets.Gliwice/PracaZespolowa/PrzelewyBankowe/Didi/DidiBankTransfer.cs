@@ -7,14 +7,13 @@ using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Didi
 {
-    internal class DidiBankTransfer : BankTransfer
+    public class DidiBankTransfer : BankTransfer, IBank
     {
-        public string AccountClient { get; set; }
-        public string NameClient { get; set; }
-        public string Title { get; set; }
-        public string Amount { get; set; }
-        public string DateTransfer { get; set; }
-        public string NameRecipe { get; set; }
-        public string AccountRecipe { get; set; }
+        private DidiInformationTransfer m_Information; 
+        public DidiInformationTransfer Information
+        { 
+            get { return m_Information; }
+            set { m_Information = value;} 
+        }
     }
 }
