@@ -39,8 +39,8 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Hellada
 
             return new BankTransfer()
             {
-                DestinationBank = transferInfoArray[2],
-                SourceBank = transferInfoArray[1],
+                DestinationBank = transferInfoArray[2].Substring(2, 4),
+                SourceBank = transferInfoArray[1].Substring(2, 4),
                 IsTransferSuccessful = transferInfoArray[1].Substring(2, 4) == transferInfoArray[2].Substring(2, 4)
             };
 
