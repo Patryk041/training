@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
@@ -12,11 +13,9 @@ namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
         public override List<BankTransfer> GetBankTransfers()
         {
             List<BankTransfer> listOfTransfers = new List<BankTransfer>();
-
             List<string> separatedFromMainString = new List<string>();
 
             var file = new CoffeeFileOperation();
-
             string transfers = file.GetFileContent(@"..\..\Coffee13\TaskTrainingTree\Transfers.xml");   //path?\
 
             separatedFromMainString = SeparateTransfers(transfers);
@@ -37,7 +36,20 @@ namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
         {
             List<string> sepTrans = new List<string>();
 
+            string[] transfersDelimiters = { "<transfer>", "</transfer>" };
+            string[] separatedStrings = transfers.Split(transfersDelimiters, StringSplitOptions.RemoveEmptyEntries);
 
+            foreach (var element in separatedStrings)
+            {
+                if (String.IsNullOrWhiteSpace(element))  //białe znaki pomiedzy transferami
+                {
+                    continue;
+                }
+                sepTrans.Add(element);
+            }
+
+            sepTrans.RemoveAt(0);                              //nagłówek
+            sepTrans.RemoveAt(sepTrans.Count - 1);            //koncowy node
 
             return sepTrans;
         }
