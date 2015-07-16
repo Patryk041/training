@@ -1,16 +1,19 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Toci.Hornets.GhostRider.Kir;
+using Toci.Hornets.Legnica.Michał_Zembik.FTPcs;
 using Toci.Hornets.Legnica.Patryk_Stulczewski.Utils;
+using Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.BankTransfersParsers;
 
 namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.Factories
 {
-    public class BankTransfersParserFactory : GenericFactory<ParserType,BankTransfersParser>
+    public class BankTransfersParserFactory : GenericFactory<ParserType,Func<FileOperation,BankTransfersParser>>
     {
         public BankTransfersParserFactory()
         {
-            GenericDictionary = new Dictionary<ParserType, BankTransfersParser>()
+            GenericDictionary = new Dictionary<ParserType, Func<FileOperation, BankTransfersParser>>()
             {
-               //tutaj parsery np xmla, txt 
+               {ParserType.Txt, (fileOperation) => new TxtBankTransfrsParser(fileOperation)}
             };
         }
 
@@ -21,6 +24,7 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.Factories
              * przekazujac mu przez konstruktor fileOperation
              * nastepnie zwracamy liste parserow
              */
+
             return GenericDictionary.Values;
         } 
 

@@ -39,18 +39,18 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir
             var handles = GetAllHandles();
             foreach (var transfer in transfers)
             {
-                SendTransfer(handles,transfer);
-                /*handles.Select(x => x.BankName != transfer.DestinationBank);
+                SendTransfer(handles[0],transfer);
+                _handleFactory.GetTransfersByPredicate(x => x == transfer.DestinationBank);
+                /*handles.Select(x => x.BankName == transfer.DestinationBank);
                  *jezeli da sie zmienic bank Name na wlasciwosc
                  *jezeli nie to poberamy delegatem z fabryki, ale to duzo wiecej czasu zajmie
-                 */ 
+                 */
             }
         }
 
-        private void SendTransfer(IEnumerable<TransferHandle> handles, BankTransfer transfer)
+        private void SendTransfer(TransferHandle handle, BankTransfer transfer)
         {
-            foreach (var handle in handles)
-                handle.SendTransfer(transfer);
+            handle.SendTransfer(transfer);
         }
     }
 }
