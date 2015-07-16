@@ -18,6 +18,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
 
        public GliwicePerformTransfer()
        {
+           _bankTransfersList = new List<BankTransfersParser>();
            _DidTransfers = new DidiBankTransferParser();
            _RudiTransfers = new RudiBankTransferParser();
        }

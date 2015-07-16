@@ -1,31 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 using System.Xml.Serialization;
 
-namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
+namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree.VnthPlay
 {
-	static class CoffeeXmlSerialization
+	static class Coffee2XmlSerialization
 	{
-		public static CoffeeBankTransfer[] GetAllTransfersFromFileContent(string fileContent)
+		public static Coffee2BankTransfer[] GetAllTransfersFromFileContent(string fileContent)
 		{
-			CoffeeBankTransfer[] transfers;
+			Coffee2BankTransfer[] transfers;
 
-			XmlSerializer serializer = new XmlSerializer(typeof(CoffeeBankTransfer[]));
+			XmlSerializer serializer = new XmlSerializer(typeof(Coffee2BankTransfer[]));
 
 			using (TextReader reader = new StringReader(fileContent))
 			{
-				transfers = (CoffeeBankTransfer[])serializer.Deserialize(reader);
+				transfers = (Coffee2BankTransfer[])serializer.Deserialize(reader);
 			}
 			return transfers;
 		}
 
-		public static string SerializeObjectToStringEntry(CoffeeBankTransfer transfer)
+		public static string SerializeObjectToStringEntry(Coffee2BankTransfer transfer)
 		{
-			XmlSerializer xmlSerializer = new XmlSerializer(typeof(CoffeeBankTransfer));
+			XmlSerializer xmlSerializer = new XmlSerializer(typeof(Coffee2BankTransfer));
 
 			using (StringWriter entry = new StringWriter())
 			{
@@ -34,12 +29,12 @@ namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
 			}
 		}
 
-		private static string SerializeOneEntry(CoffeeBankTransfer transfer)
+		private static string SerializeOneEntry(Coffee2BankTransfer transfer)
 		{
 
-			XmlSerializer serializer = new XmlSerializer(typeof(CoffeeBankTransfer));
+			XmlSerializer serializer = new XmlSerializer(typeof(Coffee2BankTransfer));
 
-			string entry;
+			string entry = "";
 			
 			 
 				// xmlWriter = new XmlSerializationWriter();
@@ -49,18 +44,16 @@ namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
 
 		}
 
-		public static string GetStringEntryFromTransfer(CoffeeBankTransfer transfer)
+		public static string GetStringEntryFromTransfer(Coffee2BankTransfer transfer)
 		{
 			string entry = "";
-
-			Serialize(transfer);
 
 			return entry;
 		}
 
-		public static CoffeeBankTransfer GetTransferFromArrayItem()
+		public static Coffee2BankTransfer GetTransferFromArrayItem()
 		{
-			
+			return new Coffee2BankTransfer();
 		}
 	}
 }
