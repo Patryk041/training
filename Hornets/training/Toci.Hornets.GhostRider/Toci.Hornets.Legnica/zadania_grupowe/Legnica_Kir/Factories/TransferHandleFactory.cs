@@ -26,6 +26,11 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.Factories
             return GenericDictionary.Keys.Select(key => GenericDictionary[key]()).ToList();
         }
 
+        public TransferHandle GetTransferHandleByBankName(string bankName)
+        {
+            return GenericDictionary[bankName]();
+        }
+
         public IEnumerable<TransferHandle> GetTransfersByPredicate(Func<string,bool> predicate)
         {
             return (from key in GenericDictionary.Keys where predicate(key) select GenericDictionary[key]()).ToList();

@@ -5,7 +5,7 @@ using Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.Factories;
 
 namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir
 {
-    class LegnicaPerformTransfers : PerformTransfers
+    public class LegnicaPerformTransfers : PerformTransfers
     {
         private BankTransfersParserFactory _parserFactory;
         private TransferHandleFactory _handleFactory;
@@ -26,7 +26,6 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir
             return (List<TransferHandle>) _handleFactory.GetAllHandles();
         }
 
-
         public override void TransferAll()
         {
             foreach (var parser in GetAllParsers())
@@ -36,21 +35,11 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir
 
         private void SendTransfers(IEnumerable<BankTransfer> transfers)
         {
-            var handles = GetAllHandles();
             foreach (var transfer in transfers)
             {
-                SendTransfer(handles[0],transfer);
-                _handleFactory.GetTransfersByPredicate(x => x == transfer.DestinationBank);
-                /*handles.Select(x => x.BankName == transfer.DestinationBank);
-                 *jezeli da sie zmienic bank Name na wlasciwosc
-                 *jezeli nie to poberamy delegatem z fabryki, ale to duzo wiecej czasu zajmie
-                 */
+                var handle = _handleFactory.GetTransferHandleByBankName(transfer.DestinationBank);
+                handle.SendTransfer(transfer);
             }
-        }
-
-        private void SendTransfer(TransferHandle handle, BankTransfer transfer)
-        {
-            handle.SendTransfer(transfer);
         }
     }
 }

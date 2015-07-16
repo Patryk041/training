@@ -3,13 +3,8 @@ using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.BankTransfersParsers
 {
-    public class TxtBankTransfrsParser : BankTransfersParser
+    public class BzwbkBankTransfrsParser : BankTransfersParser
     {
-        public TxtBankTransfrsParser(FileOperation bankFileOperation)
-        {
-            this.BankFileOperation = bankFileOperation;
-        }
-
         public override List<BankTransfer> GetBankTransfers()
         {
             throw new System.NotImplementedException();
