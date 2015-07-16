@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="Coffee13\TaskTrainingTree\ContentFile.txt" />
     <Content Include="Coffee13\TaskTrainingTree\Log\FileLog.txt" />
+    <Content Include="Coffee13\TaskTrainingTree\NewTransfers.xml" />
     <Content Include="Coffee13\TaskTrainingTree\Transfers.xml" />
     <Content Include="Vernathic\Kir\IBANs.txt" />
   </ItemGroup>
