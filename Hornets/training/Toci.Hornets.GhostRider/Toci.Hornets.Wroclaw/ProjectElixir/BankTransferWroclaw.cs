@@ -9,8 +9,6 @@ namespace Toci.Hornets.Wroclaw.ProjectElixir
 {
     public class BankTransferWroclaw : BankTransfer
     {
-       
-  
             public string SourceBank { get; set; }
 
             public string DestinyBank { get; set; }

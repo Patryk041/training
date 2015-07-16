@@ -11,7 +11,14 @@ namespace Toci.Hornets.Wroclaw.ProjectElixir
     {
         protected override bool Send(BankTransfer transfer)
         {
-            throw new NotImplementedException();
+
+            if (SendTransfer(transfer))
+            {
+                
+               //logic.. zapisać do pliku przelew w jakiejść postaci
+                return true;
+            }
+            return false;
         }
     }
 }

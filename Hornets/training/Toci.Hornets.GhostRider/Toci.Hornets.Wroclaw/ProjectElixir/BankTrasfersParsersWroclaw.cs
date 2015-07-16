@@ -7,10 +7,24 @@ namespace Toci.Hornets.Wroclaw.ProjectElixir
     public class BankTrasfersParsersWroclaw : BankTransfersParser
     {
         private FileOperationsWroclaw myFileOperation;
+        private static  char _separator;
+    
+
+
+        private BankTrasfersParsersWroclaw()
+        {
+        }
+
+        static BankTrasfersParsersWroclaw getInstance(char Separator)
+        {
+            _separator = Separator;
+            return new BankTrasfersParsersWroclaw();
+        }
+
 
         public override List<BankTransfer> GetBankTransfers()
         {
-            var fileContent = myFileOperation.GetFileContent("c:/myTxt.txt");
+            var fileContent = myFileOperation.GetFileContent(@"c:/1.txt");
             var fileLinesList = SeparateLines(fileContent);
             var myBankTransferList = new List<BankTransfer>();
 
@@ -37,14 +51,25 @@ namespace Toci.Hornets.Wroclaw.ProjectElixir
 
         protected override BankTransfer GetTransferEntry(string entry)
         {
-            BankTransfer newBankTrasfer = new BankTransferWroclaw();
+            var newBankTrasfer = FillWroclawBankEntity(entry);
 
+            return newBankTrasfer;
+        }
 
-            // logic..
+        private BankTransferWroclaw FillWroclawBankEntity(string entry)
+        {
+            BankTransferWroclaw newBankTrasfer = new BankTransferWroclaw();
+            if (_separator == null)
+                throw new Exception("There is no set separator!");
+            var myEntries = entry.Split(_separator);
 
-
-            
-
+            newBankTrasfer.AccountNumber = Convert.ToInt32(myEntries[0]);
+            newBankTrasfer.DestinationAddress = myEntries[1];
+            newBankTrasfer.DestinationName = myEntries[2];
+            newBankTrasfer.DestinyBank = myEntries[3];
+            newBankTrasfer.IsTransferSuccessful = Convert.ToBoolean(myEntries[4]);
+            newBankTrasfer.SourceBank = myEntries[5];
+            newBankTrasfer.TransactionTime = Convert.ToDateTime(myEntries[6]);
             return newBankTrasfer;
         }
     }
