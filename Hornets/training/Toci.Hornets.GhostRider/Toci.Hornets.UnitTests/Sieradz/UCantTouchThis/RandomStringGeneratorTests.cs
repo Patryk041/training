@@ -7,25 +7,24 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
     [TestClass]
     public class RandomStringGeneratorTests
     {
-        [TestMethod]
-        public void RSGTestMethod()
-        {
-            for (int i = 0; i < 1000; i++)
-            {
-                Assert.IsNotNull(UCTT_RandomStingGenerator.GenerateRandomString(i));
-            }
+        private const int NumberOfRandomStringPairs = 10000;
+        private const int LengthOfRandomString = 32;
+        private const int MaxRandomStringLength = 1000;
 
+        private readonly List<string[]> _testList = UCTT_RandomStingGenerator.GenerateRandomStringPaitList(NumberOfRandomStringPairs, LengthOfRandomString);
+
+        [TestMethod]
+        public void UCTT_RandomStringGeneratorTest()
+        {
+            for (int i = 0; i < MaxRandomStringLength; i++)
+                Assert.AreEqual(UCTT_RandomStingGenerator.GenerateRandomString(i).Length, i);
         }
 
         [TestMethod]
-        public void RandomStringPairListTest()
+        public void UCTT_RandomStringPairListTest()
         {
-            List<string[]> testList = UCTT_RandomStingGenerator.GenerateRandomStringPaitList(100000, 20);
-
-            Assert.IsNotNull(testList);
-
-            testList.ForEach(Assert.IsNotNull);
-
+            Assert.IsNotNull(_testList);
+            _testList.ForEach(Assert.IsNotNull);
         }
 
 

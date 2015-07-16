@@ -1,0 +1,36 @@
+diff a/Hornets/training/Toci.Hornets.GhostRider/Toci.Hornets.UnitTests/Toci.Hornets.UnitTests.csproj b/Hornets/training/Toci.Hornets.GhostRider/Toci.Hornets.UnitTests/Toci.Hornets.UnitTests.csproj	(rejected hunks)
+@@ -52,12 +52,33 @@
+   </Choose>
+   <ItemGroup>
+     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
++    <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
++    <Compile Include="Gliwice\Didi\StringManipulation\StringManipulationTest.cs" />
++    <Compile Include="Legnica\Patryk\Mock\FakeChecksumValidator.cs" />
++    <Compile Include="Legnica\Patryk\Mock\FakePeselDateValidator.cs" />
++    <Compile Include="Legnica\Patryk\PatrykPeselValidatorTests.cs" />
++    <Compile Include="Legnica\Patryk\PatrykStringManupulationsBaseTests.cs" />
++    <Compile Include="Rzeszow\Chojnecki\PeselTest\PESELTest.cs" />
++    <Compile Include="Rzeszow\Chojnecki\StringCheckTest\StringCheckTest.cs" />
++    <Compile Include="Rzeszow\Ksebal\Testy.cs" />
++    <Compile Include="Rzeszow\Terry\PeselValidatorTest\TerryPeselValidatorTest.cs" />
++    <Compile Include="Rzeszow\Terry\StringManipulatorTest\TerryStringManipulatorTest.cs" />
++    <Compile Include="Kalisz\Adrianowsky94\PeselTester.cs" />
++    <Compile Include="Kalisz\Amman\AmmanUnitTester.cs" />
++    <Compile Include="Lausion\PeselValidator.cs" />
++    <Compile Include="Lausion\StringManipulation.cs" />
++    <Compile Include="S2yfr4nt\StringManipulations\StringManipulations.cs" />
+     <Compile Include="Sieradz\DeeJay\ExampleDeeJayTest.cs" />
+-    <Compile Include="Sieradz\Duch\Underground1Test.cs" />
++    <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjStringManipulationsTest.cs" />
++    <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjPeselValidatorTest.cs" />
++    <Compile Include="Sieradz\DeeJay\TelephoneTask\DjTraceListener.cs" />
++    <Compile Include="Sieradz\DeeJay\TelephoneTask\DjTelephoneTaskTest.cs" />
++    <Compile Include="Sieradz\Duch\DuchU1Test.cs" />
+     <Compile Include="Properties\AssemblyInfo.cs" />
+     <Compile Include="Sieradz\Kamil\KamilTest1.cs" />
+     <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
+     <Compile Include="Sieradz\Quicksilver\LessCasualSC.cs" />
++    <Compile Include="Sieradz\Quicksilver\TwoQs\QuicksilverStringManipulatorUnitTest.cs" />
+     <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
+     <Compile Include="Sieradz\TypowyAdam\PentagramTest.cs" />
+     <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest.cs" />

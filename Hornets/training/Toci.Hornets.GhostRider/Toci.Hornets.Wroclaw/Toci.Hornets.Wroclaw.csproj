@@ -40,18 +40,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdamPast\CommunicationTypeChose.cs" />
+    <Compile Include="AdamPast\Homework0407\GipsonPeselValidator.cs" />
+    <Compile Include="AdamPast\Homework0407\GipsonStringManipulations.cs" />
     <Compile Include="AdamPast\MergeTestAP.cs" />
     <Compile Include="Ayuu\NewTestClass.cs" />
     <Compile Include="Dagmara1\DMClass1.cs" />
     <Compile Include="Dagmara1\TelephoneTask\DgM_TelephoneTask.cs" />
+    <Compile Include="Kollwing\TelephoneTask\ChooseOperation.cs" />
+    <Compile Include="egg7\NormalClass.cs" />
     <Compile Include="Kollwing\test.cs" />
-    <Compile Include="LidiaM\myclass.cs" />
+    <Compile Include="Perła\TelephoneTask\ChoseOperation.cs" />
     <Compile Include="Perła\test.cs" />
     <Compile Include="Pilot\Classme.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RFelich\TestClass1.cs" />
+    <Compile Include="Tszulczewski\Example.cs" />
     <Compile Include="Tszulczewski\ExampleClass.cs" />
-    <Compile Include="Wyga\FirstTestClass.cs" />
+    <Compile Include="Tszulczewski\TelephoneTask\HomeWorkClass.cs" />
+    <Compile Include="Tszulczewski\Training2HomeWork\TszulczewskiStringManipulations.cs" />
+    <Compile Include="Wyga\StringTask.cs" />
+    <Compile Include="Wyga\Telephone Task\MyTelephoneTask.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
@@ -59,6 +67,14 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="egg7\TelephoneTask\" />
+    <Folder Include="Kollwing\TelephoneTask\" />
+    <Folder Include="Perła\Homework Telephone\" />
+    <Folder Include="RFelich\Training2\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
