@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
 using Toci.Hornets.GhostRider.Kir;
 using Toci.Hornets.Sieradz.SieradzBankTransferTask.SieradzBankUtils;
 
@@ -16,16 +18,31 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Hellada
 
         public override List<BankTransfer> GetBankTransfers()
         {
-            var test = _fileLoader.GetFileContent(path).DuBetterReplace();
-            test.ToString();
-            return default(List<BankTransfer>);
+            var fileContent = _fileLoader.GetFileContent(path).DuBetterReplace();
+            var transfersArray = Regex.Split(fileContent, "€€€€");
+            var transfersList = new List<BankTransfer>();
+
+            foreach (var transfer in transfersArray)
+            {
+                if (transfer.Any())
+                {
+                    transfersList.Add(GetTransferEntry(transfer));
+                }
+            }
+            return transfersList;
 
         }
 
         protected override BankTransfer GetTransferEntry(string entry)
         {
-            entry.DuBetterReplace();
-            return default(BankTransfer);
+            var transferInfoArray = entry.Split('€');
+
+            return new BankTransfer()
+            {
+                DestinationBank = transferInfoArray[2],
+                SourceBank = transferInfoArray[1],
+                IsTransferSuccessful = transferInfoArray[1].Substring(2, 4) == transferInfoArray[2].Substring(2, 4)
+            };
 
         }
     }
