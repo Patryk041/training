@@ -24,7 +24,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
 
         public string GetBankName(string bankCode)
         {
-            return _bankNamesDictionary[bankCode];
+            return (_bankNamesDictionary.ContainsKey(bankCode)) ? _bankNamesDictionary[bankCode] : null;
         }
 
         private void GetBankNamesDictionary()

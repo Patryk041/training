@@ -1,34 +1,34 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.JsonParser
 {
-    public class SimpleJsonParser<Type>
+    public class SimpleJsonParser<TargetType>
     {
-        protected Type TargetType;
         protected List<string> PublicPropertiesNamesList;
-        protected string Pattern = "";
+        protected string Pattern = @"{0}""\s*:\s*"".*?(?=\"")";
 
-        public SimpleJsonParser(Type type, string jsonString)
+        public virtual TargetType Parse(TargetType target, string jsonStringLine)
         {
-            TargetType = type;
+            InitialiseParser(target);
+            foreach (var propertyName in PublicPropertiesNamesList)
+            {   //todo: check if success
+                var tmp = Regex.Match(jsonStringLine, string.Format(@"{0}""\s*:\s*""(.*?)(?=\"")", "TransferTitle")).Groups[1];
+                
+            }
+            return default(TargetType);
         }
 
-        public virtual Type Parse()
+        protected virtual void InitialiseParser(TargetType target)
         {
-            InitialiseParser();
-            return default(Type);
-        }
-
-        protected virtual void InitialiseParser()
-        {
-            PublicPropertiesNamesList = GetPublicPropertiesNamesList();
+            PublicPropertiesNamesList = GetPublicPropertiesNamesList(target);
             //more to come
         }
 
-        protected virtual List<string> GetPublicPropertiesNamesList()
+        protected virtual List<string> GetPublicPropertiesNamesList(TargetType target)
         {
-                return TargetType.GetType().GetProperties().Select(x => x.Name).ToList();
+            return target.GetType().GetProperties().Select(property => property.Name).ToList();
         }
     }
 }
