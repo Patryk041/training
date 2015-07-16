@@ -25,6 +25,7 @@ namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
 
         protected override BankTransfer GetTransferEntry(string entry)
         {
+
             CoffeeBankTransfer transfers = null;
 
             XmlSerializer serializer = new XmlSerializer(typeof (CoffeeBankTransfer));
@@ -33,6 +34,9 @@ namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
             {
                 transfers = (CoffeeBankTransfer) serializer.Deserialize(reader);
             }
+
+            
+            
 
             return null;
         }
