@@ -17,7 +17,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
         public DidiBankTransferParser()
         {
             _BankTransfersList = new List<BankTransfer>();
-            _delimiter = new string[] { "\n", ";" };
+            _delimiter = new string[] { "\r\n", ";" };
         }
 
         public override List<BankTransfer> GetBankTransfers()
@@ -37,18 +37,20 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
         {
             //metoda dla jednego przelwu 
             string[] transfer = entry.Split(_delimiter[1].ToCharArray());
-
+           
             var bankTransfer = new DidiBankTransfer();
+            bankTransfer.Information = new DidiInformationTransfer();
             bankTransfer.SourceBank = transfer[0];
-            bankTransfer.NameClient = transfer[1];
-            bankTransfer.Title = transfer[2];
-            bankTransfer.Amount = transfer[3];
-            bankTransfer.AccountClient = transfer[4];
-            bankTransfer.DateTransfer = transfer[5];
-            bankTransfer.NameRecipe = transfer[6];
-            bankTransfer.AccountRecipe = transfer[7];
-            bankTransfer.SourceBank = transfer[8];
+            bankTransfer.Information.NameClient = transfer[1];
+            bankTransfer.Information.Title = transfer[2];
+            bankTransfer.Information.Amount = transfer[3];
+            bankTransfer.Information.AccountClient = transfer[4];
+            bankTransfer.Information.DateTransfer = transfer[5];
+            bankTransfer.Information.NameRecipe = transfer[6];
+            bankTransfer.Information.AccountRecipe = transfer[7];
+            bankTransfer.DestinationBank = transfer[8];
 
+            DidiFactoryTransfer.SendBank(bankTransfer, bankTransfer.DestinationBank); 
             return bankTransfer;
         }
 
@@ -56,7 +58,15 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
         {
             //wszystkie przelewy
             List<string> transfers = file.Split(_delimiter[0].ToCharArray()).ToList();
-            return transfers; 
+            List<string> newTransfers = new List<string>();
+            foreach (var item in transfers)
+            {
+                if (item != String.Empty)
+                {
+                 newTransfers.Add(item);  
+                }
+            }
+            return newTransfers; 
         }
         
     }

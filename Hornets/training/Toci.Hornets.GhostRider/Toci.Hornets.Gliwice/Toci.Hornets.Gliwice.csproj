@@ -60,10 +60,14 @@
     <Compile Include="MoWerr\StringOperations\MoWerrStringOperations.cs" />
     <Compile Include="MoWerr\TelephoneTask\SendTypeImplementation.cs" />
     <Compile Include="PiotrekJ\szkolenie1.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\Banki\DidiInnyBank.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\Banki\DidiPKOBank.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiBankTransfer.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiBankTransferParser.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiInformationTransfer.cs" />
-    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiTransferHandle.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\Banki\DidiINGBank.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiFactoryTransfer.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\IBank.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwiceFileOperation.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwicePerformTransfer.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Rudi\RudiBankTransfer.cs" />
