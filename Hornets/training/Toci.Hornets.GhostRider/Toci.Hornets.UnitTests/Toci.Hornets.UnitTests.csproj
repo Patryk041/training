@@ -55,6 +55,7 @@
     <Compile Include="Bytom\Coffee13\CoffeeFileOperationTest.cs" />
     <Compile Include="Bytom\Coffee13\StringTest.cs" />
     <Compile Include="Bytom\Coffee13\UnitTest1.cs" />
+    <Compile Include="Bytom\Coffee13\TransferParserTest.cs" />
     <Compile Include="Bytom\Pr0fes0r\TrainingTwo\PeselValidatorPr0fes0r.cs" />
     <Compile Include="Bytom\Vnth\FileOperationTest.cs" />
     <Compile Include="Bytom\Vnth\VnthFirstUnitTest.cs" />
@@ -166,6 +167,7 @@
   <ItemGroup>
     <Content Include="Bytom\Coffee13\ContentFile.txt" />
     <Content Include="Bytom\Coffee13\Log\FileLog.txt" />
+    <Content Include="Bytom\Coffee13\Transfers.xml" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\otherInvalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\validPeselList.txt" />

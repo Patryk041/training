@@ -1,45 +1,41 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Xml.Serialization;
 using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
 {
     public class CoffeeBankTransferParser : BankTransfersParser
     {
-        
+
         // wczytac plik do stringu
         // rozbic string na linie
         // linie przetworzyc GetTransferEntry na typ BankTransfer
         public override List<BankTransfer> GetBankTransfers()
         {
-            List<BankTransfer> listOfTransfers = new List<BankTransfer>();
-
-            List<string> separatedFromMainString = new List<string>();
 
             var file = new CoffeeFileOperation();
+            string transfers = file.GetFileContent(@"..\..\Coffee13\TaskTrainingTree\newTransfers.xml"); //path?\
 
-            string transfers = file.GetFileContent(@"..\..\Coffee13\TaskTrainingTree\Transfers.xml");   //path?\
+            return null;
 
-            separatedFromMainString = SeparateTransfers(transfers);
 
-            foreach (var entry in separatedFromMainString)
+        }
+
+        protected override BankTransfer GetTransferEntry(string entry)
+        {
+            CoffeeBankTransfer transfers = null;
+
+            XmlSerializer serializer = new XmlSerializer(typeof (CoffeeBankTransfer));
+
+            using (TextReader reader = new StringReader(entry))
             {
-                 listOfTransfers.Add(GetTransferEntry(entry));
+                transfers = (CoffeeBankTransfer) serializer.Deserialize(reader);
             }
-            return listOfTransfers; 
+
+            return null;
         }
 
-        protected override BankTransfer GetTransferEntry(string entry)  //tworzy ze stringa zawierającego pojedynczy transfer obiekt typu BankTransfer
-        {
-            return null; //tymczasowo
-        }
-
-        protected List<string> SeparateTransfers(string transfers)    //dzieli string zawierajacy caly plik na transfery
-        {
-            List<string> sepTrans = new List<string>();
-
-
-
-            return sepTrans;
-        }
     }
 }
