@@ -75,6 +75,8 @@
     <Compile Include="Quicksilver\UndergroundTasks\CasualStringComparator.cs" />
     <Compile Include="Quicksilver\UndergroundTasks\LessCasualStringComparator.cs" />
     <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\BPH\QuicksilverBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\BPH\QuicksilverTransferHandle.cs" />
     <Compile Include="SieradzBankTransferTask\Hellada\DuchBankTransferParser.cs" />
     <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamTransferHandle.cs" />
     <Compile Include="SieradzBankTransferTask\Pekao\DjBankTransfersParser.cs" />
@@ -139,6 +141,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="SieradzBankTransferTask\BankTransfersFiles\Alior.json" />
+    <None Include="SieradzBankTransferTask\BankTransfersFiles\BphBankTransfers.bph" />
     <None Include="SieradzBankTransferTask\SieradzBankNamesDictionary.cfg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

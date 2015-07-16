@@ -66,6 +66,7 @@
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjTypowyAdamPeselValidatorTestRefactored.cs" />
     <Compile Include="Sieradz\Duch\HW3\DuchBankTests.cs" />
     <Compile Include="Sieradz\BankTransferTests\BankTransfersUtilsTest.cs" />
+    <Compile Include="Sieradz\Quicksilver\BankQs\UnitTest1.cs" />
     <Compile Include="Sieradz\UCantTouchThis\BankTransfers\UCantTouchThisBankTransfersParserTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\CastingTests.cs" />
     <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />
