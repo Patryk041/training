@@ -1,10 +1,16 @@
 ﻿using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using Toci.Hornets.GhostRider.Kir;
+using Toci.Hornets.Sieradz.UCantTouchThis.JsonParser;
 
 namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Alior
 {
     public class UCantTouchThisBankTransfersParser : BankTransfersParser
     {
+        protected SimpleJsonParser<BankTransfer> JsonParser = new SimpleJsonParser<BankTransfer>();
+
+        protected const string SingleLineJsonPattern = @"\{.*}";
+
         public UCantTouchThisBankTransfersParser()
         {
             BankFileOperation = new SieradzFileOperation();
@@ -14,10 +20,10 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Alior
         {
             var bankTransferList = new List<BankTransfer>();
             var file = BankFileOperation.GetFileContent(SieradzBankFilesPathHolder.TransferFilesPath + "Alior.json");
-            var lines = file.Split('\n');
-            foreach (var line in lines)
+            foreach (Match match in Regex.Matches(file, SingleLineJsonPattern))
             {
-                bankTransferList.Add(GetTransferEntry(line));
+                if (match.Success)
+                    bankTransferList.Add(GetTransferEntry(match.Value));
             }
             return bankTransferList;
         }
@@ -25,8 +31,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Alior
         protected override BankTransfer GetTransferEntry(string entry)
         {
             BankTransfer bankTransfer = new SieradzBankTransfer();
-
-            return bankTransfer;
+            return JsonParser.Parse(bankTransfer, entry);
         }
     }
 }
