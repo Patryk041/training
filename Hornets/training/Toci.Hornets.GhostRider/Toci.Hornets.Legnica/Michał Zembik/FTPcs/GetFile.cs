@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using Toci.Hornets.GhostRider.Kir;
+using System.IO;
+using System.Net;
 
-namespace Toci.Hornets.Legnica.Michał_Zembik.FTPcs
+namespace FTPClient
 {
-    internal class GetFile : FileOperation
+    internal class GetFile //: FileOperation
     {
         public string Get(string sourcefilepath, string login, string pass)
         {
@@ -30,13 +29,13 @@ namespace Toci.Hornets.Legnica.Michał_Zembik.FTPcs
                 string wiad = Encoding.Default.GetString(info);
                 reader.Close();
                 response.Close();
-            
+                System.IO.File.WriteAllText(@"Bufor.txt", wiad);
                 return wiad;
             }
             else
             {
                 response.Close();
-               
+
                 return "chuja xD";
             }
 
@@ -44,9 +43,9 @@ namespace Toci.Hornets.Legnica.Michał_Zembik.FTPcs
 
         }
 
-        public override string GetFileContent(string path)
-        {
-            return path;
-        }
+        /* public override string GetFileContent(string path)
+         {
+             return path;
+         }*/
     }
 }

@@ -6,16 +6,12 @@ namespace Toci.Hornets.Legnica.Michał_Zembik.FTPcs
 {
     public class filemikzeoperation : FileOperation
     {
-        private FTPcs geter;
-        
-        public filemikzeoperation(FTPcs d)
-        {
-            geter = d;
-        }
+   
 
-        public override string GetFileContent(string serverpath)
+        public override string GetFileContent(string serverfile)
         {
-            return geter.Get(serverpath);
+
+            return serverfile;
 
         }
     }

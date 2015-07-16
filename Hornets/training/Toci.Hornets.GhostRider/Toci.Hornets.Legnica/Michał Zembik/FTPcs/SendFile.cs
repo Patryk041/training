@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Net;
 
-namespace Toci.Hornets.Legnica.Michał_Zembik.FTPcs
+namespace FTPClient
 {
-    class SendFile
+    public class SendFile
     {
         public bool Send(string sourcefilepath, string desinationfilepath, string login, string pass)
         {

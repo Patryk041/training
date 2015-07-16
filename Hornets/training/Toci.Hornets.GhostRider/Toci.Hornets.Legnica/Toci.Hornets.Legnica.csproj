@@ -74,6 +74,7 @@
     <Compile Include="Mateusz Smigowski\NewClass.cs" />
     <Compile Include="Mateusz_Malolepszy\NewTestClass.cs" />
     <Compile Include="Michał Zembik\Arbak.cs" />
+    <Compile Include="Michał Zembik\FTPcs\BankTransfer.cs" />
     <Compile Include="Michał Zembik\FTPcs\filemikzeoperation.cs" />
     <Compile Include="Michał Zembik\FTPcs\FTPcs.cs" />
     <Compile Include="Michał Zembik\FTPcs\GetFile.cs" />
