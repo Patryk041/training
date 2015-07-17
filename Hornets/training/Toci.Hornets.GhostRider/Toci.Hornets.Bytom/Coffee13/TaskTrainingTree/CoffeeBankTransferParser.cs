@@ -14,31 +14,26 @@ namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
         // linie przetworzyc GetTransferEntry na typ BankTransfer
         public override List<BankTransfer> GetBankTransfers()
         {
+            List<string> stringsSerparatedFromMainContent = new List<string>();
+            List<BankTransfer> listOfBankTransfers = new List<BankTransfer>();
 
             var file = new CoffeeFileOperation();
-            string transfers = file.GetFileContent(@"..\..\Coffee13\TaskTrainingTree\newTransfers.xml"); //path?\
+            string mainContent = file.GetFileContent(@"..\..\Coffee13\TaskTrainingTree\newTransfers.xml"); //path?\
 
-            return null;
+            stringsSerparatedFromMainContent = CoffeeDeserialization.SplitMainStringtoTransferStrings(mainContent);
+
+            foreach (var entry in stringsSerparatedFromMainContent)
+            {
+                listOfBankTransfers.Add(GetTransferEntry(entry));
+            }
 
 
+            return listOfBankTransfers;
         }
 
         protected override BankTransfer GetTransferEntry(string entry)
         {
-
-            CoffeeBankTransfer transfers = null;
-
-            XmlSerializer serializer = new XmlSerializer(typeof (CoffeeBankTransfer));
-
-            using (TextReader reader = new StringReader(entry))
-            {
-                transfers = (CoffeeBankTransfer) serializer.Deserialize(reader);
-            }
-
-            
-            
-
-            return null;
+            return CoffeeDeserialization.DeserializeString(entry);
         }
 
     }

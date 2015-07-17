@@ -50,6 +50,7 @@
     <Compile Include="Coffee13\TaskTrainingTree\CoffeeBankTransfer.cs" />
     <Compile Include="Coffee13\TaskTrainingTree\CoffeeBankTransferParser.cs" />
     <Compile Include="Coffee13\TaskTrainingTree\CoffeeFileOperation.cs" />
+    <Compile Include="Coffee13\TaskTrainingTree\CoffeeDeserialization.cs" />
     <Compile Include="Coffee13\TaskTrainingTree\VnthPlay\CoffeeBankTransfer.cs" />
     <Compile Include="Coffee13\TaskTrainingTree\VnthPlay\CoffeeBankTransferParser.cs" />
     <Compile Include="Coffee13\TaskTrainingTree\VnthPlay\CoffeeFileOperation.cs" />
