@@ -68,6 +68,7 @@
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
     <Compile Include="Gliwice\Soltys\TaskTwoUnitTests.cs" />
     <Compile Include="Legnica\Kir\LegnicaFileOperationTests.cs" />
+    <Compile Include="Legnica\Kir\MikzeTestClass.cs" />
     <Compile Include="Legnica\Patryk\Mock\FakeChecksumValidator.cs" />
     <Compile Include="Legnica\Patryk\Mock\FakePeselDateValidator.cs" />
     <Compile Include="Legnica\Patryk\PatrykPeselValidatorTests.cs" />
