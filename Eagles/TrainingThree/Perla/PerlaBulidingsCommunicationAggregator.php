@@ -2,29 +2,27 @@
 
 require_once('BuildingsCommunicationAggregator.php');
 require_once('InteligentBuildingCommunication.php');
+require_once('Database.php');
 
-class PerlaBulidingsCommunicationAggregator extends BuildingsCommunicationAggregator 
-{
+require_once('ParseFileContent.php');
+
+
+class PerlaBulidingsCommunicationAggregator extends BuildingsCommunicationAggregator {
+
     public $fileName = 'Biestrzynska.34.Dylaki';
     public $separator = ';';
-    
-    public function AggregateInfo()
-    {
+
+    public function AggregateInfo() {
         $aggregator = new InteligentBuildingCommunication($this->fileName, $this->separator);
         return $aggregator->GetOperations();
     }
+
+    public function DatabaseInsert() {
+        var_dump($this->AggregateInfo());
+    }
+
 }
 $test = new PerlaBulidingsCommunicationAggregator();
-var_dump($test->AggregateInfo());
-
-
-
-
-
-
-
-
-
-
-
+$file = new ParseFileContent;
+var_dump($file->GetIndexNames($test->AggregateInfo()));
 
