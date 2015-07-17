@@ -11,9 +11,6 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.BankTransfersParsers
     {
         public override List<BankTransfer> GetBankTransfers()
         {
-<<<<<<< HEAD
-            return new List<BankTransfer>();
-=======
             List<BankTransfer> ListOfTransfers = new List<BankTransfer>();
             string FileFromServer = FTPcs.Get("bzwbk");
             var tab = FileFromServer.Split('\n');
@@ -21,21 +18,17 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.BankTransfersParsers
             foreach (var line in tab)
             {
                 ListOfTransfers.Add(GetTransferEntry(line));
-            }   
+            }
             /*wczytaj caly plik do stringa
              * GetTransferEntry()
              * 
-             */        
-           return ListOfTransfers;
-            
->>>>>>> 513dfd8b98a68935c5222bbd8ba74acccd7f90b8
+             */
+            return ListOfTransfers;
+
         }
 
         protected override BankTransfer GetTransferEntry(string entry)
         {
-<<<<<<< HEAD
-            return new BankTransfer();
-=======
             //stringa na bank transfer  
             //parser '\t' adfds dsa dsa /jakassciezka/asdsad/
             BankTransfer transfer = new BankTransfer();
@@ -45,7 +38,6 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.BankTransfersParsers
             transfer.IsTransferSuccessful = true;
             return transfer;
 
->>>>>>> 513dfd8b98a68935c5222bbd8ba74acccd7f90b8
         }
     }
 }
