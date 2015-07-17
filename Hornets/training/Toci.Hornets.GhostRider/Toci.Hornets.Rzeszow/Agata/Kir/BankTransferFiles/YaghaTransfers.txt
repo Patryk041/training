@@ -1,0 +1,1 @@
+TransferNumber;SourceAccountNumber;DestinationAccountNumber;DestinationAccountOwner;Amount;TransferTitle 1;26105014451000002276470461;18106000181069048226432465;AgataYagha;1500,00;na wrotki

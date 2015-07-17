@@ -39,6 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agata\Kir\YaghaBankTransfer.cs" />
+    <Compile Include="Agata\Kir\YaghaBankTransferParser.cs" />
+    <Compile Include="Agata\Kir\YaghaFileOperationsTxt.cs" />
+    <Compile Include="Agata\Kir\YaghaPerformTransfers.cs" />
+    <Compile Include="Agata\Kir\YaghaTransferHandle.cs" />
     <Compile Include="Agata\TasksTrainingTwo\Date.cs" />
     <Compile Include="Agata\TasksTrainingTwo\YaghaPeselValidator.cs" />
     <Compile Include="Agata\TasksTrainingTwo\YaghaStringManipulations.cs" />
@@ -118,6 +123,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Agata\Kir\BankTransferFiles\" />
     <Folder Include="bin\" />
     <Folder Include="KubaT\TrainingTwo\PeselValidator\" />
     <Folder Include="Terry\TrainingThree\TerryBank\transfers\" />
