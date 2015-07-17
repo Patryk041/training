@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 using Toci.Hornets.GhostRider.Kir;
 using Toci.Hornets.Sieradz.SieradzBankTransferTask.SieradzBankUtils;
@@ -28,6 +29,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
 
             var parsers = GetAllParsers();
             var handles = GetAllHandles();
+            StreamWriter LogFile = new StreamWriter(SieradzBankFilesPathHolder.TransferFilesPath+"OperationLog.txt");
             if (parsers.Count == 0 || handles.Count == 0) return;
             /*
              * Mamy tutaj trzy pętle i każdą można wywołać jako parallel - w testach musimy sprawdzić które najbardziej opłaca się parallelizować, bo wątpię że wszystkie. Stawiam
@@ -35,7 +37,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
              * na razie wszystkie, jak będziemy mieli wszyscy parsery gotowe to będzie można robić testy i mierzyć czasy
              */
             //Można Przygotować wersję używającą ParalellProcessing i ProcessInParallel jak tu http://puu.sh/iYUDK/f1d6f76442.png
-            //foreach (var parser in parsers)
+            //foreach (var parser in parsers) 
             Parallel.ForEach(parsers, parser =>
             {
                 var transfers = parser.GetBankTransfers();
@@ -51,10 +53,12 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
                     {
                         handle.SendTransfer(transfer);
                     });
+                    LogFile.WriteLine("{0} => {1} : {2} ", transfer.SourceBank, transfer.DestinationBank, transfer.IsTransferSuccessful ? "Powodzenie" : "Błąd" );    
                 });
+                
 
-                //odp ktore sie powiodly
             });
+            LogFile.Close();
         }
     }
 }

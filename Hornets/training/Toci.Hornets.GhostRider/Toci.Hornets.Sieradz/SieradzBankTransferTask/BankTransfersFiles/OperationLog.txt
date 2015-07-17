@@ -1,0 +1,15 @@
+1337 => 1337 : Powodzenie 
+1338 => 1337 : Błąd 
+1337 => 1337 : Powodzenie 
+Alior => mBank : Błąd 
+Alior => ING : Błąd 
+Alior => Hellada : Błąd 
+Alior => Alior : Błąd 
+mBank => mBank : Błąd 
+BPH => BPH : Powodzenie 
+Pekao => mBank : Błąd 
+Pekao => Alior : Błąd 
+Pekao => Hellada : Błąd 
+Pekao => ING : Błąd 
+Pekao => Pekao : Powodzenie 
+Alior => Pekao : Powodzenie 
