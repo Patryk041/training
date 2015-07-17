@@ -74,6 +74,11 @@
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Hipek\HipekBankTransfer.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Hipek\HipekBankTransferParser.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Hipek\HipekTransferHandle.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\MoWerr\Banks\MoWerrMBankTransferHandle.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\MoWerr\Banks\MoWerrPKOBankTransferHandle.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\MoWerr\MoWerrBankTransfer.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\MoWerr\MoWerrBankTransferParser.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\MoWerr\MoWerrTransferHandlerFactory.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\ParsersGenerator.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Rudi\RudiBankTransfer.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Rudi\RudiBankTransferParser.cs" />
@@ -107,6 +112,7 @@
   <ItemGroup>
     <Content Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiPrzelewy.txt" />
     <Content Include="PracaZespolowa\PrzelewyBankowe\Hipek\HipekTransfers.txt" />
+    <Content Include="PracaZespolowa\PrzelewyBankowe\MoWerr\BankTransfers.txt" />
     <Content Include="PracaZespolowa\PrzelewyBankowe\Soltys\SoltysBankTransferData.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
