@@ -50,7 +50,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
             bankTransfer.Information.AccountRecipe = transfer[7];
             bankTransfer.DestinationBank = transfer[8];
 
-            DidiFactoryTransfer.SendBank(bankTransfer, bankTransfer.DestinationBank); 
+            //DidiFactoryTransfer.SendBank(bankTransfer.DestinationBank); 
             return bankTransfer;
         }
 
