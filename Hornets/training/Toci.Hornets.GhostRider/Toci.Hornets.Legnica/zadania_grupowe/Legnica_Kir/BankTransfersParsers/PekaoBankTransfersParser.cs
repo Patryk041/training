@@ -7,12 +7,12 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.BankTransfersParsers
     {
         public override List<BankTransfer> GetBankTransfers()
         {
-            throw new System.NotImplementedException();
+            return new List<BankTransfer>();
         }
 
         protected override BankTransfer GetTransferEntry(string entry)
         {
-            throw new System.NotImplementedException();
+            return new BankTransfer();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.Factories
             GenericDictionary = new Dictionary<string, Func<BankTransfersParser>>()
             {
                {"Pekao", () => new PekaoBankTransfersParser() },
-               //{"Nordea",() => new NordeaBankTransfersParser(new LegnicaFileOperation())},
+               {"Nordea",() => new NordeaBankTransfersParser(new LegnicaFileOperation())},
                {"Bzwbk", () => new BzwbkBankTransfrsParser()},
                {"Ing", () => new IngBankTransfersParser()}
             };
