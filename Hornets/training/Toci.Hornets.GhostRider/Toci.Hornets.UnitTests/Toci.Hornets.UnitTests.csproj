@@ -64,6 +64,7 @@
     <Compile Include="GhostRider\Abstraction\TestBase.cs" />
     <Compile Include="GhostRider\GeneralTests\DebugingTesting.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
+    <Compile Include="Gliwice\Hipek\BankTransferTest\HipekBankTransferTest.cs" />
     <Compile Include="Gliwice\Soltys\BankTransferParserTests.cs" />
     <Compile Include="GhostRider\Kir\KirHomeworkRunner.cs" />
     <Compile Include="Legnica\Kir\Files\PrepareBankTransfer.cs" />
@@ -77,6 +78,8 @@
     <Compile Include="Sieradz\Quicksilver\BankQs\UnitTest1.cs" />
     <Compile Include="Sieradz\UCantTouchThis\BankTransfers\UCantTouchThisBankTransfersParserTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\CastingTests.cs" />
+    <Compile Include="Wroclaw\gipson\BankTransfer\GatAllTest.cs" />
+    <Compile Include="Wroclaw\gipson\BankTransfer\TransferCreationTest.cs" />
     <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />
     <Compile Include="Wroclaw\gipson\StringManipulationsTest.cs" />
     <Compile Include="Wroclaw\Tszulczewski\StringManipulationsTest.cs" />
