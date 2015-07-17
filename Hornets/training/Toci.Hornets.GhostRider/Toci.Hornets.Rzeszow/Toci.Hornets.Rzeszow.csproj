@@ -47,13 +47,22 @@
     <Compile Include="Agata\YaghaTelephoneTask\YaghaCommunicationsMethods.cs" />
     <Compile Include="AndrzejD\Class1.cs" />
     <Compile Include="Chojnecki\AndrzejJestem.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejBankTransfer.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejBankTransfersParser.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejFileOperation.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejPerformTransfers.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejTransferHandle.cs" />
     <Compile Include="Chojnecki\TelePhone\MyPhone.cs" />
-    <Compile Include="Chojnecki\TrainingTwoPESEL\Calendar.cs" />
-    <Compile Include="Chojnecki\TrainingTwoPESEL\PeselControler.cs" />
-    <Compile Include="Chojnecki\TrainingTwoPESEL\MyPeselValidator.cs" />
+    <Compile Include="Chojnecki\TrainingTwoPESEL\DateMenager.cs" />
+    <Compile Include="Chojnecki\TrainingTwoPESEL\PeselNumbersControler.cs" />
+    <Compile Include="Chojnecki\TrainingTwoPESEL\AndrzejPeselValidator.cs" />
     <Compile Include="Chojnecki\TrainingTwoString\StringCheck.cs" />
     <Compile Include="Chojnecki\TrainingTwo\StringCheck.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Foonesh\TrainingThree\BankTransfersParserFoonesh.cs" />
+    <Compile Include="Foonesh\TrainingThree\FileOperationFoonesh.cs" />
+    <Compile Include="Foonesh\TrainingThree\PerformTransfersFoonesh.cs" />
+    <Compile Include="Foonesh\TrainingThree\TransferHandleFoonesh.cs" />
     <Compile Include="Foonesh\TrainingTwo\PeselValidator\PeselValidatorFoonesh.cs" />
     <Compile Include="Foonesh\TrainingTwo\StringManipulations\StringManipulationsFoonesh.cs" />
     <Compile Include="KSebal\Class1.cs" />
@@ -64,7 +73,7 @@
     <Compile Include="KSebal\traning2Homework\Pesel\PeselSumValidator.cs" />
     <Compile Include="KubaT\TelephoneTask\TelephonTaskHomework.cs" />
     <Compile Include="KubaT\TestClass.cs" />
-    <Compile Include="KubaT\TrainingTwoStringOperation\KubaTStringOperations.cs" />
+    <Compile Include="KubaT\TrainingTwo\StringOperations\KubaTStringOperations.cs" />
     <Compile Include="Malwina\ExtendingWarrior.cs" />
     <Compile Include="Malwina\IBaseForWyroznienie.cs" />
     <Compile Include="Malwina\Pesell\DataCzyOk.cs" />
@@ -94,6 +103,14 @@
     <Compile Include="Sherpin\TasksTrainingTwo\SherStringManipulations.cs" />
     <Compile Include="Terry\TelephoneHomework\TerryTelephoneHomework.cs" />
     <Compile Include="Terry\TerryTest.cs" />
+    <Compile Include="Terry\TrainingThree\Common\RzeszowHandlersFactory.cs" />
+    <Compile Include="Terry\TrainingThree\Common\RzeszowPerformTransfers.cs" />
+    <Compile Include="Terry\TrainingThree\Common\RzeszowParsersFactory.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryBankAccountInfo.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransfer.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransferHandle.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransfersParser.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryFileOperation.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\DayValidator.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\MonthValidator.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\PeselDate.cs" />
@@ -107,7 +124,20 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
+
   <ItemGroup />
+
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="KubaT\TrainingTwo\PeselValidator\" />
+    <Folder Include="Terry\TrainingThree\TerryBank\transfers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Chojnecki\Kir\Przelewy.txt" />
+    <Content Include="Chojnecki\Kir\x.xml" />
+    <Content Include="Foonesh\TrainingThree\TransferData\TransferOne.txt" />
+  </ItemGroup>
+
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

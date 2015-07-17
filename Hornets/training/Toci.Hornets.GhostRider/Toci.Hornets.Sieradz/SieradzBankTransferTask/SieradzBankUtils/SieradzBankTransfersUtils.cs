@@ -2,7 +2,7 @@
 using System.IO;
 using System.Linq;
 
-namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
+namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.SieradzBankUtils
 {
     public class SieradzBankTransfersUtils
     {

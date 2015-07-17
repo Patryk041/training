@@ -17,6 +17,10 @@ namespace Toci.Hornets.UnitTests.Lausion
             //IsStringInString
             Assert.IsFalse(ss.RunStringOperations("beata", "c").IsStringInString);
             Assert.IsTrue(ss.RunStringOperations("beata", "eat").IsStringInString);
+
+            //IsStringElementsInString
+            Assert.IsTrue(ss.RunStringOperations("beata","aat").IsStringElementsInString);
+            Assert.IsFalse(ss.RunStringOperations("beata", "aaa").IsStringElementsInString);
             
         }
     }

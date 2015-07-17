@@ -2,15 +2,15 @@
 {
     public class Month
     {
-        private int month;
+        private int _month;
         public Month(int m)
         {
-            month = m;
+            _month = m;
         }
 
         public int GetMaxDay(Year y)
         {
-            switch (month)
+            switch (_month)
             {
                 case 1:
                 case 3:
@@ -28,7 +28,6 @@
                 case 11:
                 {
                     return 30;
-                    break;
                 }
                 case 2:
                 {

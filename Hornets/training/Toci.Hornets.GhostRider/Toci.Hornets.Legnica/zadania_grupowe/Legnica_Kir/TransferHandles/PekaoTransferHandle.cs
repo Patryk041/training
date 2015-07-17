@@ -1,4 +1,5 @@
 ﻿using Toci.Hornets.GhostRider.Kir;
+using Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.Files;
 
 namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.TransferHandles
 {
@@ -11,7 +12,8 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.TransferHandles
 
         protected override bool Send(BankTransfer transfer)
         {
-            throw new System.NotImplementedException();
+            AlmostLikeADatebase.SaveBankTransfer((LegnicaBankTransfer)transfer);
+            return true;
         }
     }
 }

@@ -13,16 +13,14 @@ namespace Toci.Hornets.Rzeszow.KubaT.TrainingTwoStringOperation
 
         protected override bool IsStringElementsInString(string subject, string seek)
         {
-            char[] SubjectArray;
-            char[] SeekArray;
-            SubjectArray = subject.ToCharArray();
-            SeekArray = seek.ToCharArray();
-            int seekCharQuantity = SeekArray.Length;
-            for (int i = 0; i < SeekArray.Length; i += 1)
+            var subjectArray = subject.ToCharArray();
+            var seekArray = seek.ToCharArray();
+            int seekCharQuantity = seekArray.Length;
+            for (int i = 0; i < seekArray.Length; i += 1)
             {
-                for (int j = 0; j < SubjectArray.Length; j += 1)
+                for (int j = 0; j < subjectArray.Length; j += 1)
                 {
-                    if (SeekArray[i] == SubjectArray[j])
+                    if (seekArray[i] == subjectArray[j])
                     {
                         seekCharQuantity -= 1;
                         break;
@@ -40,13 +38,11 @@ namespace Toci.Hornets.Rzeszow.KubaT.TrainingTwoStringOperation
 
         protected override bool IsStringAnagramOfString(string subject, string seek)
         {
-            char[] SubjectArray;
-            char[] SeekArray;
-            SubjectArray = subject.ToCharArray();
-            SeekArray = seek.ToCharArray();
-            Array.Sort(SubjectArray);
-            Array.Sort(SeekArray);
-            return SubjectArray.SequenceEqual(SeekArray);
+            var subjectArray = subject.ToCharArray();
+            var seekArray = seek.ToCharArray();
+            Array.Sort(subjectArray);
+            Array.Sort(seekArray);
+            return subjectArray.SequenceEqual(seekArray);
         }
 
         protected override string GetNick()
