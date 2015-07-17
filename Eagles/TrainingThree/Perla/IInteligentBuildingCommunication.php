@@ -5,5 +5,6 @@
 	{
 		// array of InteligentBuildingCommunicationModel
 		public function GetOperations();
+                 
 	}
 	
