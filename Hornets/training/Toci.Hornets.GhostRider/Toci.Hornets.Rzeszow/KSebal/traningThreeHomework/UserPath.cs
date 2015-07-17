@@ -18,7 +18,7 @@ namespace Toci.Hornets.Rzeszow.KSebal.traningThreeHomework
 
            path = path.Remove(nowy + "Toci.Hornets.GhostRider".Length);
 
-           Debug.WriteLine(nowy);
+          
 
            return path;
 

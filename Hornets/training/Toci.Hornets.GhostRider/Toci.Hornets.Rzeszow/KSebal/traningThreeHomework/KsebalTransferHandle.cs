@@ -22,7 +22,7 @@ namespace Toci.Hornets.Rzeszow.KSebal.traningThreeHomework
             KsebalBankTransfer tr =(KsebalBankTransfer) transfer;
             
                 
-            if (File.Exists(UserPath.find()+"raport.txt"))
+            if (File.Exists(UserPath.find()+"\\raport.txt"))
                 using ( sw = File.AppendText(UserPath.find()))
                 {
                     sw.WriteLine(tr.ConsumerTransferName + " to " + transfer.SourceBank);
