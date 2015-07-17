@@ -40,6 +40,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdamPast\CommunicationTypeChose.cs" />
+    <Compile Include="AdamPast\GipsonKIR\GipsonBankAccount.cs" />
+    <Compile Include="AdamPast\GipsonKIR\GipsonBankTransfer.cs" />
+    <Compile Include="AdamPast\GipsonKIR\GipsonBankTransferParser.cs" />
+    <Compile Include="AdamPast\GipsonKIR\GipsonFileOperation.cs" />
+    <Compile Include="AdamPast\GipsonKIR\GipsonKirUtils.cs" />
+    <Compile Include="AdamPast\GipsonKIR\GipsonPerformTransfers.cs" />
+    <Compile Include="AdamPast\GipsonKIR\GipsonTransferHandle.cs" />
     <Compile Include="AdamPast\Homework0407\GipsonPeselValidator.cs" />
     <Compile Include="AdamPast\Homework0407\GipsonStringManipulations.cs" />
     <Compile Include="AdamPast\MergeTestAP.cs" />
@@ -68,12 +75,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AdamPast\GipsonKIR\CompletedTransfers\" />
     <Folder Include="egg7\TelephoneTask\" />
-    <Folder Include="Kollwing\TelephoneTask\" />
     <Folder Include="Perła\Homework Telephone\" />
     <Folder Include="RFelich\Training2\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="AdamPast\GipsonKIR\Transactions\Transactions1.txt" />
+    <Content Include="AdamPast\GipsonKIR\Transactions\TransactionsDemo.txt" />
+  </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
