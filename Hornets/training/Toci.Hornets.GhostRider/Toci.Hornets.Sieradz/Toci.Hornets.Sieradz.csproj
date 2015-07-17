@@ -140,7 +140,6 @@
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\Pekao.xml" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\mBankTransfers.xml" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\testFile.txt" />
-    <Content Include="SieradzBankTransferTask\BPH\QuicksilverPerformed.txt" />
     <Content Include="SieradzBankTransferTask\mBank\logo.jpg" />
   </ItemGroup>
   <ItemGroup>
