@@ -99,6 +99,11 @@
     <Compile Include="Sherpin\TasksTrainingTwo\SherStringManipulations.cs" />
     <Compile Include="Terry\TelephoneHomework\TerryTelephoneHomework.cs" />
     <Compile Include="Terry\TerryTest.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryBankAccountInfo.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransfer.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransferHandle.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransfersParser.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryFileOperation.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\DayValidator.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\MonthValidator.cs" />
     <Compile Include="Terry\TrainingTwo\Pesel\PeselDate.cs" />
@@ -115,6 +120,7 @@
   <ItemGroup>
     <Folder Include="bin\" />
     <Folder Include="KubaT\TrainingTwo\PeselValidator\" />
+    <Folder Include="Terry\TrainingThree\TerryBank\transfers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Chojnecki\Kir\Przelewy.txt" />
