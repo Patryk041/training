@@ -2,6 +2,7 @@
 using Toci.Hornets.GhostRider.Kir;
 using Toci.Hornets.GhostRider.Kir.GhostRiderSolution;
 using Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Hipek;
+using Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.PiotrekJ;
 using Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Rudi;
 
 namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
@@ -16,7 +17,8 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
                     {
                         new DidiBankTransferParser(),
                         new RudiBankTransferParser(),
-                        new HipekBankTransferParser()
+                        new HipekBankTransferParser(),
+                        new PiotrekJBankTransferParser()
                     }
                 }
             };
