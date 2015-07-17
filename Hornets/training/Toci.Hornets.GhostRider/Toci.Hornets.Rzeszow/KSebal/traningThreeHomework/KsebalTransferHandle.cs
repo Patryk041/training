@@ -23,17 +23,17 @@ namespace Toci.Hornets.Rzeszow.KSebal.traningThreeHomework
             
                 
             if (File.Exists(UserPath.find()+"\\raport.txt"))
-                using ( sw = File.AppendText(UserPath.find()))
+                using ( sw = File.AppendText(UserPath.find()+"\\raport.txt"))
                 {
-                    sw.WriteLine(tr.ConsumerTransferName + " to " + transfer.SourceBank);
+                    sw.WriteLine(tr.SenderTransferSurname + " to " + tr.ConsumerTransferSurname);
                     sw.Close();
                     tr.IsTransferSuccessful = true;
 
                 }
 
             else
-            {   sw = new StreamWriter(UserPath.find()+"raport.txt");
-                sw.WriteLine(tr.SenderTransferSurname+ " to " + tr.ConsumerTransferSurname);
+            {   sw = new StreamWriter(UserPath.find()+"\\raport.txt");
+            sw.WriteLine(tr.SenderTransferSurname + " to " + tr.ConsumerTransferSurname);
                 sw.Close();
                 tr.IsTransferSuccessful = true;
             }

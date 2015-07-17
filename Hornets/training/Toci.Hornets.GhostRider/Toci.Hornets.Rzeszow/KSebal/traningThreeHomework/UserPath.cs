@@ -16,7 +16,7 @@ namespace Toci.Hornets.Rzeszow.KSebal.traningThreeHomework
 
            int nowy = path.IndexOf("Toci.Hornets.GhostRider");
 
-           path = path.Remove(nowy + "Toci.Hornets.GhostRider".Length);
+           path = path.Remove(nowy + "Toci.Hornets.GhostRider".Length) + "\\Toci.Hornets.Rzeszow\\KSebal\\BankTransfers";
 
           
 

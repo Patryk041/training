@@ -21,7 +21,7 @@ namespace Toci.Hornets.UnitTests.Rzeszow.Ksebal
 
            public void AnagramTest()
            {
-               /*KsebalTransferHandle ksebal = new KsebalTransferHandle();
+               KsebalTransferHandle ksebal = new KsebalTransferHandle();
               KsebalBankTransferParser parser = new KsebalBankTransferParser();
              var list= parser.GetBankTransfers();
               //foreach
@@ -29,7 +29,7 @@ namespace Toci.Hornets.UnitTests.Rzeszow.Ksebal
               {
                 
                   ksebal.SendTransfer(item);
-              }*/
+              }
 
              // Assert.Equals(new KsebalBankTransfer("a"),  )
             
