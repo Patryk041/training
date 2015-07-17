@@ -18,7 +18,7 @@ namespace Toci.Hornets.Bytom.Vernathic.Kir
 			{
 				SourceInfo = new VnthAccountInfo(),
 				DestinationInfo = new VnthAccountInfo(),
-				TransferType = TransferType.Obciazenie,
+				TransferType = TransferType.Outcome,
 				Amount  = 12,
 				TitleOfTransfer = "",
 				DateOfTransfer = new DateTime(),
@@ -31,6 +31,17 @@ namespace Toci.Hornets.Bytom.Vernathic.Kir
 
 			serializer.WriteObject(stream, transfer);
 		}
+
+	    public VnthTransfer DeserializeJson(string json)
+	    {
+            var transfer = new VnthTransfer();
+
+            //stream to object
+
+
+
+	        return transfer;
+	    }
 
 	}
 }

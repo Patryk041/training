@@ -47,8 +47,14 @@
     <Compile Include="AdamP\TelephoneTask\TelephoneTaskChooser.cs" />
     <Compile Include="Bossu\TelephoneTask\MyTelephoneInterpreter.cs" />
     <Compile Include="Coffee13\CoffeeTestClass.cs" />
+    <Compile Include="Coffee13\TaskTrainingTree\CoffeeBankTransfer.cs" />
     <Compile Include="Coffee13\TaskTrainingTree\CoffeeBankTransferParser.cs" />
     <Compile Include="Coffee13\TaskTrainingTree\CoffeeFileOperation.cs" />
+    <Compile Include="Coffee13\TaskTrainingTree\CoffeeDeserialization.cs" />
+    <Compile Include="Coffee13\TaskTrainingTree\VnthPlay\CoffeeBankTransfer.cs" />
+    <Compile Include="Coffee13\TaskTrainingTree\VnthPlay\CoffeeBankTransferParser.cs" />
+    <Compile Include="Coffee13\TaskTrainingTree\VnthPlay\CoffeeFileOperation.cs" />
+    <Compile Include="Coffee13\TaskTrainingTree\VnthPlay\CoffeeXmlSerialization.cs" />
     <Compile Include="Coffee13\TaskTrainingTwo\PeselValidator\CoffeePeselValidator.cs" />
     <Compile Include="Coffee13\TaskTrainingTwo\StringManipulator\CoffeeStringManipulations.cs" />
     <Compile Include="Coffee13\TelephoneTask\TaskOneTelephone.cs" />
@@ -92,9 +98,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Coffee13\TaskTrainingTree\ContentFile.txt" />
     <Content Include="Coffee13\TaskTrainingTree\Log\FileLog.txt" />
-    <Content Include="Coffee13\TaskTrainingTree\Transfers.xml" />
+    <Content Include="Coffee13\TaskTrainingTree\NewTransfers.xml" />
+    <Content Include="Coffee13\TaskTrainingTree\VnthPlay\Log\FileLog.txt" />
+    <Content Include="Coffee13\TaskTrainingTree\VnthPlay\NewTransfers.xml" />
     <Content Include="Vernathic\Kir\IBANs.txt" />
   </ItemGroup>
   <ItemGroup>

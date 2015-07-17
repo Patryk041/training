@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices.ComTypes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -15,12 +16,12 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam.PeselValidatorTest
                   
 
         [TestMethod]
-        public void TestMethod1()
+        public void GeneratePDFTest()
         {
             var test2 = new TypowyAdamBankTransfersParser();
-            test2.GetBankTransfers();
+            var input = test2.GetBankTransfers();
             var test = new TypowyAdamTransferHandle();
-            test.SendTransfer(new BankTransfer());
+            test.SendTransfer(input.First());
         }
 
     }

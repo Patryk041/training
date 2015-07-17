@@ -70,6 +70,8 @@
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\IBank.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwiceFileOperation.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwicePerformTransfer.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\HandlersGenerator.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\ParsersGenerator.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Rudi\RudiBankTransfer.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Rudi\RudiBankTransferParser.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Soltys\Banks\SoltysIngBankTransferHandle.cs" />

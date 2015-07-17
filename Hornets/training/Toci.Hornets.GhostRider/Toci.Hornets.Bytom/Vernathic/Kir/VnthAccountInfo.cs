@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Toci.Hornets.Bytom.Vernathic.Kir
 {
-	class VnthAccountInfo
+    public class VnthAccountInfo
 	{
 		public string AccountNumber { get; set; }
 		public string Name { get; set; }

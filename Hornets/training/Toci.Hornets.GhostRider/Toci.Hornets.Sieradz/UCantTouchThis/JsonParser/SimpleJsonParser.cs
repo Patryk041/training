@@ -1,34 +1,36 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
+using Toci.Hornets.Sieradz.UCantTouchThis.ExtensionMethods;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.JsonParser
 {
-    public class SimpleJsonParser<Type>
+    public class SimpleJsonParser<TargetType>
     {
-        protected Type TargetType;
         protected List<string> PublicPropertiesNamesList;
-        protected string Pattern = "";
+        protected string Pattern = @"{0}""\s*:\s*"".*?(?=\"")";
 
-        public SimpleJsonParser(Type type, string jsonString)
+        public virtual TargetType Parse(TargetType target, string jsonStringLine)
         {
-            TargetType = type;
+            FillPublicPropertiesNamesList(target);
+            PublicPropertiesNamesList.ForEach(propertyName => SetPropertyValue(jsonStringLine, propertyName, target));
+            return target;
         }
 
-        public virtual Type Parse()
+        protected virtual void FillPublicPropertiesNamesList(TargetType target)
         {
-            InitialiseParser();
-            return default(Type);
+            PublicPropertiesNamesList = target.GetType().GetProperties().Select(property => property.Name).ToList();
         }
 
-        protected virtual void InitialiseParser()
+        protected virtual void SetPropertyValue(string jsonStringLine, string propertyName, TargetType target)
         {
-            PublicPropertiesNamesList = GetPublicPropertiesNamesList();
-            //more to come
+            target.SetPropertyValue(propertyName, FindValue(jsonStringLine, propertyName));
         }
 
-        protected virtual List<string> GetPublicPropertiesNamesList()
+        protected virtual string FindValue(string jsonStringLine, string propertyName)
         {
-                return TargetType.GetType().GetProperties().Select(x => x.Name).ToList();
+            var match = Regex.Match(jsonStringLine, string.Format(@"{0}""\s*:\s*""(.*?)(?=\"")", propertyName));
+            return (match.Success) ? match.Groups[1].ToString() : null;
         }
     }
 }
