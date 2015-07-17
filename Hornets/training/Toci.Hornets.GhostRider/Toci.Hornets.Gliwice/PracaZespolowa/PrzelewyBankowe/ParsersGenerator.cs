@@ -17,11 +17,8 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
                     {
                         new DidiBankTransferParser(),
                         new RudiBankTransferParser(),
-<<<<<<< HEAD
-                        new SoltysBankTransferParser()
-=======
+                        new SoltysBankTransferParser(),
                         new HipekBankTransferParser()
->>>>>>> 100d4d577907e841176f3447782a15bf86e96357
                     }
                 }
             };

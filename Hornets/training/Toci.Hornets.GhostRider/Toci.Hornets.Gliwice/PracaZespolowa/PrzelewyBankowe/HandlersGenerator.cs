@@ -17,7 +17,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
                     {
                         new DidiInnyBank(),
                         new DidiINGBank(),
-                        new DidiPKOBank()
+                        new DidiPKOBank(),
                         new HipekTransferHandle()
                     }
                 }
