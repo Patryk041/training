@@ -8,7 +8,7 @@ namespace Toci.Hornets.Rzeszow.Agata.Kir
     {
         protected override bool Send(BankTransfer transfer)
         {
-            string path = @"C:\aga\03_TOCI\01_TOCI_HORNETS\Repo\training\Hornets\training\Toci.Hornets.GhostRider\Toci.Hornets.Rzeszow\Agata\Kir\BankTransferFiles\YaghaTransfersResult.txt";
+            string path = @"..\..\..\Toci.Hornets.Rzeszow\Agata\Kir\BankTransferFiles\YaghaTransfersResult.txt";
             if (!File.Exists(path))
             {
                 File.Create(path);

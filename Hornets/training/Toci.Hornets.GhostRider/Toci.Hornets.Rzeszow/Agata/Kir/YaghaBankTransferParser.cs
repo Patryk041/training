@@ -12,7 +12,7 @@ namespace Toci.Hornets.Rzeszow.Agata.Kir
             BankFileOperation = new YaghaFileOperationsTxt();
             var fileContent =
                 BankFileOperation.GetFileContent(
-                    @"C:\aga\03_TOCI\01_TOCI_HORNETS\Repo\training\Hornets\training\Toci.Hornets.GhostRider\Toci.Hornets.Rzeszow\Agata\Kir\BankTransferFiles\YaghaTransfers.txt");
+                    @"..\..\..\Toci.Hornets.Rzeszow\Agata\Kir\BankTransferFiles\YaghaTransfers.txt");
             var fileContentArray = fileContent.Split(' ');
             var transferList = new List<BankTransfer>();
             foreach (var transfer in fileContentArray)
