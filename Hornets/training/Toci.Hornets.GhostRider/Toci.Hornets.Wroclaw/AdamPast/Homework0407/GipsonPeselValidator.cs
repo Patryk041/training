@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.ComponentModel;
+using System.Collections.Generic;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
 namespace Toci.Hornets.Wroclaw.AdamPast.Homework0407
@@ -20,39 +20,45 @@ namespace Toci.Hornets.Wroclaw.AdamPast.Homework0407
             //variable for cut date
             string dateFromPesel = pesel.Substring(0, 6);
 
-            //"ifology"
-            if (dateFromPesel.Substring(2, 1).Equals("8") || dateFromPesel.Substring(2, 1).Equals("9"))
+            Dictionary<string, string> dictionary = new Dictionary<string, string>()
             {
-                dateFromPesel = "18"+dateFromPesel.Substring(0,2) +
-                    (Int32.Parse(dateFromPesel.Substring(2, 1)) - 8).ToString() +
-                    dateFromPesel.Substring(3,dateFromPesel.Length-1);
-            }
-            else if (dateFromPesel.Substring(2, 1).Equals("0") || dateFromPesel.Substring(2, 1).Equals("1"))
+                {"0", "19"},
+                {"1", "19"},
+                {"2", "20"},
+                {"3", "20"},
+                {"4", "21"},
+                {"5", "21"},
+                {"6", "22"},
+                {"7", "22"},
+                {"8", "18"},
+                {"9", "18"},
+            };
+            string miesiac = dateFromPesel.Substring(2, 1);
+            if (dictionary.ContainsKey(miesiac))
             {
-                dateFromPesel = "19" + dateFromPesel;
-            }
-            else if (dateFromPesel.Substring(2, 1).Equals("2") || dateFromPesel.Substring(2, 1).Equals("3"))
-            {
-                dateFromPesel = "20" + dateFromPesel.Substring(0, 2) +
-                    (Int32.Parse(dateFromPesel.Substring(2, 1)) - 2).ToString() +
-                    dateFromPesel.Substring(3, dateFromPesel.Length - 1);
-            }
-            else if (dateFromPesel.Substring(2, 1).Equals("4") || dateFromPesel.Substring(2, 1).Equals("5"))
-            {
-                dateFromPesel = "21" + dateFromPesel.Substring(0, 2) +
-                    (Int32.Parse(dateFromPesel.Substring(2, 1)) - 4).ToString() +
-                    dateFromPesel.Substring(3, dateFromPesel.Length - 1);
-            }
-            else if (dateFromPesel.Substring(2, 1).Equals("6") || dateFromPesel.Substring(2, 1).Equals("7"))
-            {
-                dateFromPesel = "22" + dateFromPesel.Substring(0, 2) +
-                    (Int32.Parse(dateFromPesel.Substring(2, 1)) - 6).ToString() +
-                    dateFromPesel.Substring(3, dateFromPesel.Length - 1);
+                dateFromPesel = dictionary[miesiac] +
+                    dateFromPesel.Substring(0, 2) +
+                    (0 + (int.Parse(miesiac) % 2)).ToString() +
+                    dateFromPesel.Substring(3, 3);
             }
             return dateFromPesel;
+        }
 
+        protected int EvalChecksum(string pesel)
+        {
+            var checksum = Int32.Parse(pesel[0].ToString());
+            checksum += Int32.Parse(pesel[1].ToString()) * 3;
+            checksum += Int32.Parse(pesel[2].ToString()) * 7;
+            checksum += Int32.Parse(pesel[3].ToString()) * 9;
+            checksum += Int32.Parse(pesel[4].ToString());
+            checksum += Int32.Parse(pesel[5].ToString()) * 3;
+            checksum += Int32.Parse(pesel[6].ToString()) * 7;
+            checksum += Int32.Parse(pesel[7].ToString()) * 9;
+            checksum += Int32.Parse(pesel[8].ToString());
+            checksum += Int32.Parse(pesel[9].ToString()) * 3;
 
-            //throw new NotImplementedException();
+            string checksumString = checksum.ToString();
+            return (10 - Int32.Parse(checksumString[checksumString.Length - 1].ToString())) % 10;
         }
 
         protected override bool Checksum(string pesel)
@@ -70,25 +76,9 @@ namespace Toci.Hornets.Wroclaw.AdamPast.Homework0407
             }
             else
             {
-                checksum = Int32.Parse(pesel[0].ToString());
-                checksum += Int32.Parse(pesel[1].ToString())*3;
-                checksum += Int32.Parse(pesel[2].ToString())*7;
-                checksum += Int32.Parse(pesel[3].ToString())*9;
-                checksum += Int32.Parse(pesel[4].ToString());
-                checksum += Int32.Parse(pesel[5].ToString()) * 3;
-                checksum += Int32.Parse(pesel[6].ToString()) * 7;
-                checksum += Int32.Parse(pesel[7].ToString()) * 9;
-                checksum += Int32.Parse(pesel[8].ToString());
-                checksum += Int32.Parse(pesel[9].ToString()) * 3;
-
-                string checksumString = checksum.ToString();
-                checksum = (10 - Int32.Parse(checksumString[checksumString.Length - 1].ToString()))%10;
-
+                checksum = EvalChecksum(pesel);
             }
             return checksum == Int32.Parse(pesel[pesel.Length - 1].ToString());
-
-
-            //throw new NotImplementedException();
         }
 
         //returns true if year is leap, else returns false
@@ -118,10 +108,6 @@ namespace Toci.Hornets.Wroclaw.AdamPast.Homework0407
                 return false;
 
             return true;
-
-
-
-            //throw new NotImplementedException();
         }
 
         // return : my nick
@@ -139,7 +125,6 @@ namespace Toci.Hornets.Wroclaw.AdamPast.Homework0407
             return Checksum(pesel) && ValidateDate(Int32.Parse(pesel.Substring(0, 4)),
                 Int32.Parse(pesel.Substring(4, 2)), Int32.Parse(pesel.Substring(6, 2)));
 
-            //throw new NotImplementedException();
         }
     }
 }
