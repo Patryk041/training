@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Net;
 using Toci.Hornets.GhostRider.Kir;
+using Toci.Hornets.Legnica.Michał_Zembik.FTPcs;
 
-namespace FTPClient
+
+namespace Toci.Hornets.Legnica.Michał_Zembik.FTPcs
 {
     public static class FTPcs
     {
@@ -29,9 +31,9 @@ namespace FTPClient
             return sender.Send(file, desinationfilepath, _login, _pass);
         }
 
-        public static string Get(BankTransfer transfer)
+        public static string Get(string file)
         {
-            string bankname = transfer.DestinationBank;
+            string bankname = file;
             var geter = new GetFile();
             var sourcefilepath = _server + bankname + ".txt";
             return geter.Get(sourcefilepath, _login, _pass);
@@ -39,7 +41,7 @@ namespace FTPClient
 
         public static void OverWriteFile(BankTransfer transfer, string newline)
         {
-            Get(transfer);
+            Get("asd");
 
             Send(transfer);
         }
