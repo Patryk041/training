@@ -1,6 +1,6 @@
-﻿€	StartNr	€	TargetNr	€	kwota	€	nazWys	€	nazOdb	€	tytul	€€€€	
-
-€86 1337 2498 1111222233334444 € 86 1337 2498 1111222233334444 € 20.0 € Baliwabambam € Baliwaramram € nimompiniendzy €€€€
+﻿€86 1337 2498 1111222233332222 € 86 1337 2498 1111222233334444 € 20.0 € Baliwabambam € Baliwaramram € nimompiniendzy €€€€
+€86 1337 2498 1111222233333333 € 86 1337 2498 1111222233333333 € 40.0 € Baliwabambam € Baliwaramram € nimompiniendzy €€€€
+€86 1338 2498 1111222233334444 € 86 1337 2498 1111222233332222 € 60.0 € Baliwabambam € Baliwaramram € nimompiniendzy €€€€
 
 
 

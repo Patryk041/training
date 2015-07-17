@@ -16,7 +16,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
 
 
         [TestMethod]
-        public void UCTTStringComparatorsBenchmark()
+        public void UCTT_StringComparatorsBenchmark()
         {
             List<string[]> stringsToCompare = UCTT_RandomStingGenerator.GenerateRandomStringPaitList(NumberOfRandomStringPairs, LengthOfRandomString);
 

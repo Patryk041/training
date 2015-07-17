@@ -10,7 +10,7 @@ using Toci.Hornets.GhostRider.Kir;
 namespace Toci.Hornets.Bytom.Vernathic.Kir
 {
 	[DataContract]
-	internal class VnthTransfer : BankTransfer
+	public class VnthTransfer : BankTransfer
 	{
 		[DataMember]
 		public VnthAccountInfo SourceInfo { get; set; }
@@ -34,9 +34,9 @@ namespace Toci.Hornets.Bytom.Vernathic.Kir
 		public DateTime DateOfRecord { get; set; }
 	}
 
-	internal enum TransferType
+    public enum TransferType
 	{
 		//todo: fix transfer types (uznanie, obciążenie)
-		Uznanie, Obciazenie
+		Income, Outcome
 	}
 }

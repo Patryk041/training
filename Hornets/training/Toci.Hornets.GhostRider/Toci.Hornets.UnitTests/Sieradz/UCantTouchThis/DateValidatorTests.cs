@@ -30,7 +30,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
             };
 
         [TestMethod]
-        public void UCTTDateValidatorTest()
+        public void UCTT_DateValidatorTest()
         {
             var time = Stopwatch.StartNew();
             _correctDatesList.ForEach(date => Assert.IsTrue(UCTT_PeselValidatorUtils.IsDateValid(date[0], date[1], date[2])));
