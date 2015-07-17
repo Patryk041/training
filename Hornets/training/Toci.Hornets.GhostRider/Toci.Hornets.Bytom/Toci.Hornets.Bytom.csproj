@@ -60,6 +60,7 @@
     <Compile Include="Coffee13\TelephoneTask\TaskOneTelephone.cs" />
     <Compile Include="Common\Interfaces\IPeselValidator.cs" />
     <Compile Include="InkNinja\TrainingTwo\CommunicationTask\InkInterpreter.cs" />
+    <Compile Include="InkNinja\TrainingTwo\PeselValidation\PeselValidation.cs" />
     <Compile Include="InkNinja\TrainingTwo\StringTask\InkString.cs" />
     <Compile Include="KamilS\KamilS.cs" />
     <Compile Include="KamilS\TaskTrainingTwo\PeselValidator\PeselValidator.cs" />
