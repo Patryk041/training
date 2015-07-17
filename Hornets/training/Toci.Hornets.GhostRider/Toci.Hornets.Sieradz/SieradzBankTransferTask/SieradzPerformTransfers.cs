@@ -12,6 +12,19 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
         protected SieradzGenericInstanceCreator<BankTransfersParser> SGIC_BTP;
         protected SieradzGenericInstanceCreator<TransferHandle> SGIC_TH;
 
+        protected List<BankTransfersParser> SieradzParsersList;
+        protected List<TransferHandle> SieradzHandlesList;
+        protected List<string> ResultList = new List<string>(); 
+
+        protected const string LogFileName = "OperationLog.txt";
+
+        public SieradzPerformTransfers()
+        {
+            SieradzParsersList = GetAllParsers();
+            SieradzHandlesList = GetAllHandles();
+            SieradzTransferHandlesDictionary.InitialiseTransferHandleDictionaty(SieradzHandlesList);
+        }
+
         protected override List<BankTransfersParser> GetAllParsers()
         {
             SGIC_BTP = new SieradzGenericInstanceCreator<BankTransfersParser>();
@@ -24,40 +37,31 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
             return SGIC_TH.CreateObjectList();
         }
 
+        //Można Przygotować wersję używającą ParalellProcessing i ProcessInParallel jak tu http://puu.sh/iYUDK/f1d6f76442.png
         public override void TransferAll()
+        {  
+            Parallel.ForEach(SieradzParsersList, NuklearesWaffenArsenal);
+            WriteResultsToLogFile();
+        }
+
+        protected virtual void NuklearesWaffenArsenal(BankTransfersParser parser)
         {
+            var transfers = parser.GetBankTransfers();
+            Parallel.ForEach(transfers, TryToSendTransfer);
+        }
 
-            var parsers = GetAllParsers();
-            var handles = GetAllHandles();
-            StreamWriter LogFile = new StreamWriter(SieradzBankFilesPathHolder.TransferFilesPath+"OperationLog.txt");
-            if (parsers.Count == 0 || handles.Count == 0) return;
-            /*
-             * Mamy tutaj trzy pętle i każdą można wywołać jako parallel - w testach musimy sprawdzić które najbardziej opłaca się parallelizować, bo wątpię że wszystkie. Stawiam
-             * tylko na Parallel.ForEach(parsers, parser => ... ); bo to największy kawał, będzie tyklko tyle tasków utworzonych ile mamy parserów czyli ze 5-6. Tak czy siak zapisałem
-             * na razie wszystkie, jak będziemy mieli wszyscy parsery gotowe to będzie można robić testy i mierzyć czasy
-             */
-            //Można Przygotować wersję używającą ParalellProcessing i ProcessInParallel jak tu http://puu.sh/iYUDK/f1d6f76442.png
-            //foreach (var parser in parsers) 
-            Parallel.ForEach(parsers, parser =>
-            {
-                var transfers = parser.GetBankTransfers();
+        protected virtual void TryToSendTransfer(BankTransfer transfer)
+        {
+            var handler = SieradzTransferHandlesDictionary.GetTransferHandleByBankName(transfer.DestinationBank);
+            if (handler != null) handler.SendTransfer(transfer);
+            ResultList.Add(string.Format("{0} => {1} : {2} ", transfer.SourceBank, transfer.DestinationBank,
+                transfer.IsTransferSuccessful ? "Powodzenie" : "Błąd"));
+        }
 
-                //foreach (var transfer in transfers)
-                Parallel.ForEach(transfers, transfer =>
-                {
-                    // foreach (var handle in handles)
-                    // {
-                    //     handle.SendTransfer(transfer);
-                    // }
-                    Parallel.ForEach(handles, handle =>
-                    {
-                        handle.SendTransfer(transfer);
-                    });
-                    LogFile.WriteLine("{0} => {1} : {2} ", transfer.SourceBank, transfer.DestinationBank, transfer.IsTransferSuccessful ? "Powodzenie" : "Błąd" );    
-                });
-                
-
-            });
+        protected virtual void WriteResultsToLogFile()
+        {
+            StreamWriter LogFile = new StreamWriter(SieradzBankFilesPathHolder.TransferFilesPath + LogFileName);
+            ResultList.ForEach(result => LogFile.WriteLine(result));
             LogFile.Close();
         }
     }
