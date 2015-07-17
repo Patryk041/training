@@ -46,10 +46,13 @@
     <Compile Include="Dziusio\MyPhoneTask\HomeworkTenMinutes.cs" />
     <Compile Include="Dziusio\PeselValidator\DziusioDateValidator.cs" />
     <Compile Include="Dziusio\PeselValidator\DziusioPeselValidator.cs" />
+    <Compile Include="Dziusio\StringCompare\DziusioStringManipulationsResults.cs" />
     <Compile Include="GhostRider\HowDoWeWorkOnBranches.cs" />
     <Compile Include="Hoosarr\FirstTask\TestClass.cs" />
     <Compile Include="Hoosarr\TelephoneTask\Telephone Task.cs" />
     <Compile Include="Lausion\ExampeClass.cs" />
+    <Compile Include="Lausion\LausionKIR\LausionBankTransfer.cs" />
+    <Compile Include="Lausion\LausionKIR\LausionBankTransfersParser.cs" />
     <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Day.cs" />
     <Compile Include="Lausion\TasksTraningTwo\PeselValidator\LausionPeselValidator.cs" />
     <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Month.cs" />
@@ -58,6 +61,10 @@
     <Compile Include="Maly\TelephoneTask.cs" />
     <Compile Include="Lausion\TelephoneTask\SendMessage.cs" />
     <Compile Include="Maly\TestBranch.cs" />
+    <Compile Include="OpoleKir\Banks\BPHTransferHandle.cs" />
+    <Compile Include="OpoleKir\Banks\HSBCTransferHandle.cs" />
+    <Compile Include="OpoleKir\Banks\INGTransferHandle.cs" />
+    <Compile Include="OpoleKir\OpoleFileOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntDayValidation.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntMonthValidation.cs" />
@@ -77,8 +84,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Dziusio\StringCompare\" />
     <Folder Include="S2yfr4nt\Homework\S2yfr4ntBank\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lausion\LausionKIR\TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

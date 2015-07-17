@@ -1,0 +1,6 @@
+﻿1050;1060;7500;Kowalski;Babacki;11.11.2011;Wyplata
+1050;1280;550;Abacki;Cadacki;12.12.2012;Zielone
+1280;1060;1523;Dadacki;Kabacki;10.10.2010;Kapusta
+1280;1050;55;Sabacki;Fabacki;09.09.2009;Forsa
+1280;1060;1;Ubacki;Obacki;08.08.2008;Kaska
+1060;1280;78965;Xadacki;Zadacki;08.08.2008;Wplata

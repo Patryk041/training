@@ -109,7 +109,6 @@ namespace Toci.Hornets.Opole.Dziusio.PeselValidator
                     return false;
                 }
 
-
             }
 
             else
