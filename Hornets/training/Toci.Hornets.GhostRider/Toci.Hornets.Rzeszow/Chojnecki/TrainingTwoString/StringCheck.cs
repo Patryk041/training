@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
 namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoString
@@ -21,17 +22,9 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoString
             var seeklist = seek.ToCharArray();
             for (var x = 0; x < seeklist.Length; x++)
             {
-                var subjectCount = 0;
-                var seekCount = 0;
-                for (var i = 0; i < subjectlist.Length; i++)
-                {
-                    if (subjectlist[i] == seeklist[x]) subjectCount++;
-                }
-                for (var i = 0; i < seeklist.Length; i++)
-                {
-                    if (seeklist[i] == seeklist[x]) seekCount++;
-                }
-                if (subjectCount < seekCount) return false;
+                var subjectCount = subjectlist.Count(t => t == seeklist[x]);
+                var seekCount = seeklist.Count(t => t == seeklist[x]);
+                if (subjectCount < seekCount || seekCount==0) return false;
             }
             return true;
         }
@@ -57,30 +50,14 @@ namespace Toci.Hornets.Rzeszow.Chojnecki.TrainingTwoString
         {
             var result = new StringManipulationsResults();
 
-            result.Nick = GetNick();
-            result.Subject = subject;
-            result.Seek = seek;
 
-            result.Type = GetType();
             result.IsAnagram = IsStringAnagramOfString(subject, seek);
 
-            if (result.IsAnagram)
-            {
-                result.IsStringElementsInString = true;
-            }
-            else
-            {
-                result.IsStringElementsInString = IsStringElementsInString(subject, seek);
-            }
-            if (result.IsStringElementsInString == false)
-            {
-                result.IsStringInString = false;
-            }
-            else
-            {
-                result.IsStringInString = IsStringInString(subject, seek);
-            }
-
+            if (result.IsAnagram) result.IsStringElementsInString = true;
+            else result.IsStringElementsInString = IsStringElementsInString(subject, seek);
+           
+            if (result.IsStringElementsInString == false) result.IsStringInString = false;
+            else result.IsStringInString = IsStringInString(subject, seek);         
 
             return result;
         }
