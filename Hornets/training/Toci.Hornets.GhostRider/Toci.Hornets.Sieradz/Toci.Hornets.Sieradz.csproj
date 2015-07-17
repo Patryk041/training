@@ -75,6 +75,10 @@
     <Compile Include="Quicksilver\UndergroundTasks\CasualStringComparator.cs" />
     <Compile Include="Quicksilver\UndergroundTasks\LessCasualStringComparator.cs" />
     <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisTransferHandle.cs" />
+    <Compile Include="SieradzBankTransferTask\BPH\QuicksilverBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\BPH\QuicksilverTransferHandle.cs" />
+    <Compile Include="SieradzBankTransferTask\Hellada\DuchBankTransferHandler.cs" />
     <Compile Include="SieradzBankTransferTask\Hellada\DuchBankTransferParser.cs" />
     <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamTransferHandle.cs" />
     <Compile Include="SieradzBankTransferTask\Pekao\DjBankTransfersParser.cs" />
@@ -101,7 +105,7 @@
     <Compile Include="UCantTouchThis\CastingExamples\CastingExampleOne.cs" />
     <Compile Include="UCantTouchThis\CastingExamples\One.cs" />
     <Compile Include="UCantTouchThis\CastingExamples\Two.cs" />
-    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_GetProperyValueFromName.cs" />
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_PropertiesUtils.cs" />
     <Compile Include="UCantTouchThis\ImSoBadAss.cs" />
     <Compile Include="UCantTouchThis\JsonParser\SimpleJsonParser.cs" />
     <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisPeselValidator.cs" />
@@ -135,10 +139,12 @@
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\Pekao.xml" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\mBankTransfers.xml" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\testFile.txt" />
+    <Content Include="SieradzBankTransferTask\mBank\logo.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="SieradzBankTransferTask\BankTransfersFiles\Alior.json" />
+    <None Include="SieradzBankTransferTask\BankTransfersFiles\BphBankTransfers.bph" />
     <None Include="SieradzBankTransferTask\SieradzBankNamesDictionary.cfg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

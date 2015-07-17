@@ -11,7 +11,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.Duch.HW3
         public void DuchFileLoadTest()
         {
             var palsel = new DuchBankTransferParser();
-            palsel.GetBankTransfers();
+            var result = palsel.GetBankTransfers();
         }
     }
 }
