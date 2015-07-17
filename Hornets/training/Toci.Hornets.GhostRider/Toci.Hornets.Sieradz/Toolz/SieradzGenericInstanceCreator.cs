@@ -7,9 +7,11 @@ namespace Toci.Hornets.Sieradz.Toolz
 {
     public class SieradzGenericInstanceCreator<T>
     {
+        protected const string AssemblyName = "Toci.Hornets.Sieradz";
+
         public virtual List<T> CreateObjectList()
         {
-            return CreateInstances(GetClassesList(Assembly.Load("Toci.Hornets.Sieradz")));
+            return CreateInstances(GetClassesList(Assembly.Load(AssemblyName)));
         }
 
         protected virtual List<Type> GetClassesList(Assembly assembly)

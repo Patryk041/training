@@ -13,7 +13,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Pekao
         {
             var subject = "Transfer to " + BankName;
             var body = CreateMessageForTransfer(transfer);
-            transfer.IsTransferSuccessful = DjEmailSender.SendEmail(subject, body);
+            transfer.IsTransferSuccessful = true; //DjEmailSender.SendEmail(subject, body);
             return transfer.IsTransferSuccessful;
         }
 
