@@ -19,7 +19,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.BPH
             var fileLines = fileContainer.Split('\n');
             foreach (var x in fileLines)
             {
-                if (x.Contains("Klucz:")) continue;
+                if (x.Contains("Klucz:") || x.Contains(String.Empty)) continue;
                
                 BankTransferItems.Add(GetTransferEntry(x));
             }
