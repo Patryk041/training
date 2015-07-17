@@ -11,7 +11,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
         private const int MonthUpperBoundary = 13;
         private const int MonthIndex = 0;
         private const int YearIndex = 0;
-        private static readonly int[] Wages = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 1 };
+        private static readonly int[] PeselWages = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 1 };
 
 
         private static readonly Dictionary<int[], Func<int,int>> DayMap = new Dictionary<int[], Func<int, int>>()
@@ -63,7 +63,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.UndergroundTasks.PeselValidator
         {
             int checksum = 0;
             for (int i = 0; i < peselArray.Length; i++)
-                checksum += (peselArray[i] - 48) * Wages[i];
+                checksum += (peselArray[i] - 48) * PeselWages[i];
             return (checksum % 10) == 0;
         }
 
