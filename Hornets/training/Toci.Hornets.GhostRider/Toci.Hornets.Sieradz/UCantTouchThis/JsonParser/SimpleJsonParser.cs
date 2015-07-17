@@ -24,7 +24,7 @@ namespace Toci.Hornets.Sieradz.UCantTouchThis.JsonParser
 
         protected virtual void SetPropertyValue(string jsonStringLine, string propertyName, TargetType target)
         {
-            target.SetPropertyValue(propertyName, FindValue(jsonStringLine, propertyName));
+            target.SetPublicPropertyValue(propertyName, FindValue(jsonStringLine, propertyName));
         }
 
         protected virtual string FindValue(string jsonStringLine, string propertyName)

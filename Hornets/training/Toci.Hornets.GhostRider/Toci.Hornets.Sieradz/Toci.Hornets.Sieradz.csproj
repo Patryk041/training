@@ -95,6 +95,7 @@
     <Compile Include="SieradzBankTransferTask\SieradzBankTransfer.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankUtils\DuchStringUtils.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankUtils\SieradzBankTransfersUtils.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankUtils\SieradzTransferHandlesDictionary.cs" />
     <Compile Include="Toolz\SieradzGenericInstanceCreator.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzPerformTransfers.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="UCantTouchThis\CastingExamples\CastingExampleOne.cs" />
     <Compile Include="UCantTouchThis\CastingExamples\One.cs" />
     <Compile Include="UCantTouchThis\CastingExamples\Two.cs" />
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_FieldsUtils.cs" />
     <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_PropertiesUtils.cs" />
     <Compile Include="UCantTouchThis\ImSoBadAss.cs" />
     <Compile Include="UCantTouchThis\JsonParser\SimpleJsonParser.cs" />
