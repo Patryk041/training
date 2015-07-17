@@ -55,14 +55,20 @@
     <Compile Include="Bytom\Coffee13\CoffeeFileOperationTest.cs" />
     <Compile Include="Bytom\Coffee13\StringTest.cs" />
     <Compile Include="Bytom\Coffee13\UnitTest1.cs" />
+    <Compile Include="Bytom\Coffee13\TransferParserTest.cs" />
     <Compile Include="Bytom\Pr0fes0r\TrainingTwo\PeselValidatorPr0fes0r.cs" />
     <Compile Include="Bytom\Vnth\FileOperationTest.cs" />
+    <Compile Include="Bytom\Vnth\JsonSerializerTest.cs" />
     <Compile Include="Bytom\Vnth\VnthFirstUnitTest.cs" />
     <Compile Include="Bytom\Vnth\VnthPeselValidatorTest.cs" />
     <Compile Include="GhostRider\Abstraction\TestBase.cs" />
     <Compile Include="GhostRider\GeneralTests\DebugingTesting.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
-    <Compile Include="Sieradz\BankTransferTests\PerformTransfersTest.cs" />
+
+    <Compile Include="Gliwice\Soltys\BankTransferParserTests.cs" />
+
+    <Compile Include="GhostRider\Kir\KirHomeworkRunner.cs" />
+
     <Compile Include="Sieradz\DeeJay\BankTransfers\DjBankTransfersTest.cs" />
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjTypowyAdamPeselValidatorTestRefactored.cs" />
     <Compile Include="Sieradz\Duch\HW3\DuchBankTests.cs" />
@@ -77,13 +83,18 @@
     <Compile Include="GhostRider\PeselTask\PeselTaskTest.cs" />
     <Compile Include="GhostRider\TextstTask\TextstTaskTest.cs" />
     <Compile Include="Gliwice\Didi\Pesel\PeselValidationTest.cs" />
+    <Compile Include="Gliwice\Didi\PrzelwyBankowe\DidiTransfer.cs" />
     <Compile Include="Gliwice\Didi\StringManipulation\StringManipulationTest.cs" />
+    <Compile Include="Gliwice\Hipek\TaskTrainingTwoTest\HipekPeselValidatorTest.cs" />
     <Compile Include="Gliwice\MoWerr\PeselValidator\MoWerrPeselValidatorTester.cs" />
     <Compile Include="Gliwice\Hipek\TaskTrainingTwoTest\HipekStringManipulationTest.cs" />
     <Compile Include="Gliwice\MoWerr\StringOperations\MoWerrStringOperationsTest.cs" />
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
+    <Compile Include="Gliwice\Rudi\GliwiceFileOperationTest.cs" />
+    <Compile Include="Gliwice\Rudi\RudiBankTransferParser.cs" />
     <Compile Include="Gliwice\Soltys\TaskTwoUnitTests.cs" />
     <Compile Include="Kalisz\Amman\UnitTester.cs" />
+    <Compile Include="Lausion\LausionTestFileIO.cs" />
     <Compile Include="Legnica\Patryk\Mock\FakeChecksumValidator.cs" />
     <Compile Include="Legnica\Patryk\Mock\FakePeselDateValidator.cs" />
     <Compile Include="Legnica\Patryk\PatrykPeselValidatorTests.cs" />
@@ -164,9 +175,15 @@
   <ItemGroup>
     <Content Include="Bytom\Coffee13\ContentFile.txt" />
     <Content Include="Bytom\Coffee13\Log\FileLog.txt" />
+    <Content Include="Bytom\Coffee13\Transfers.xml" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\otherInvalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\validPeselList.txt" />
+    <Content Include="Gliwice\Rudi\testFileToRead.txt" />
+    <Content Include="Lausion\Check.txt" />
+    <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
+    <Content Include="Sieradz\TypowyAdam\otherInvalidPeselList.txt" />
+    <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
     <Compile Include="S2yfr4nt\PeselVaidator\PeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>

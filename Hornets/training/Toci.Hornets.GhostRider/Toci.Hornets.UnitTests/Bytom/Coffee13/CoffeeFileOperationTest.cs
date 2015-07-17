@@ -13,7 +13,7 @@ namespace Toci.Hornets.UnitTests.Bytom.Coffee13
         {
 
             //path do refaktoryzacji 
-            var path = @"..\..\Bytom\Coffee13\ContentFile.txt";
+            var path = @"..\..\Bytom\Coffee13\Transfers.xml";
             
 
             var test = new CoffeeFileOperation();

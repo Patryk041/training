@@ -40,16 +40,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Diana\exampleDiana.cs" />
-
     <Compile Include="Didi\PeselTask\DataClass.cs" />
     <Compile Include="Didi\PeselTask\ValidationPeselClass.cs" />
-
     <Compile Include="Didi\StringManiupulation\StringManipulationClass.cs" />
     <Compile Include="Didi\TelephoneTask\GetMessageClass.cs" />
     <Compile Include="Didi\WorkWithBranchClass.cs" />
     <Compile Include="Dziara\DziaraTelephoneInterpreter.cs" />
     <Compile Include="Dziara\TestClass.cs" />
     <Compile Include="Hipek\Example.cs" />
+    <Compile Include="Hipek\TaskTrainingTwo\PeselValidator\HipekPeselValidator.cs" />
+    <Compile Include="Hipek\TaskTrainingTwo\PeselValidator\Validates\DayValidator.cs" />
+    <Compile Include="Hipek\TaskTrainingTwo\PeselValidator\Validates\MonthValidator.cs" />
+    <Compile Include="Hipek\TaskTrainingTwo\PeselValidator\Validates\YearValidator.cs" />
     <Compile Include="Hipek\TaskTrainingTwo\StringManipulation\HipekStringManipulation.cs" />
     <Compile Include="Hipek\TelephoneTask\HipekTelephoneInterpreter.cs" />
     <Compile Include="MoWerr\MoWerrClass.cs" />
@@ -58,8 +60,26 @@
     <Compile Include="MoWerr\StringOperations\MoWerrStringOperations.cs" />
     <Compile Include="MoWerr\TelephoneTask\SendTypeImplementation.cs" />
     <Compile Include="PiotrekJ\szkolenie1.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\Banki\DidiInnyBank.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\Banki\DidiPKOBank.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiBankTransfer.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiBankTransferParser.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiInformationTransfer.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\Banki\DidiINGBank.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiFactoryTransfer.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\IBank.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwiceFileOperation.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\GliwicePerformTransfer.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\HandlersGenerator.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\ParsersGenerator.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Rudi\RudiBankTransfer.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Rudi\RudiBankTransferParser.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Soltys\Banks\SoltysIngBankTransferHandle.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Soltys\Banks\SoltysPkoBankTransferHandle.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Soltys\SoltysBankTransfer.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Soltys\SoltysBankTransferParser.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\Soltys\SoltysTransferHandlerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rudi\Rudis.cs" />
     <Compile Include="Rudi\TrainingTwo\RudiPeselValidator.cs" />
     <Compile Include="Rudi\TrainingTwo\RudiStringManipulations.cs" />
     <Compile Include="Rudi\TrainingTwo\RudiTelephoneInterpreter.cs" />
@@ -80,6 +100,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PiotrekJ\Homework\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiPrzelewy.txt" />
+    <Content Include="PracaZespolowa\PrzelewyBankowe\Soltys\SoltysBankTransferData.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

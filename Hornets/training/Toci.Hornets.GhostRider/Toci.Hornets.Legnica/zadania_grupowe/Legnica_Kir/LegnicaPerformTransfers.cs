@@ -18,12 +18,12 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir
 
         protected override List<BankTransfersParser> GetAllParsers()
         {
-            return (List<BankTransfersParser>) _parserFactory.GetAllParsers();
+            return _parserFactory.GetAllParsers().ToList();
         }
 
         protected override List<TransferHandle> GetAllHandles()
         {
-            return (List<TransferHandle>) _handleFactory.GetAllHandles();
+            return _handleFactory.GetAllHandles().ToList();
         }
 
         public override void TransferAll()

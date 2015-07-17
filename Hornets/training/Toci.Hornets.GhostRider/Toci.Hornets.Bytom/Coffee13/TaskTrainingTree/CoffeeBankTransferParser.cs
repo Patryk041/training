@@ -1,45 +1,40 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Xml.Serialization;
 using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
 {
     public class CoffeeBankTransferParser : BankTransfersParser
     {
-        
+
         // wczytac plik do stringu
         // rozbic string na linie
         // linie przetworzyc GetTransferEntry na typ BankTransfer
         public override List<BankTransfer> GetBankTransfers()
         {
-            List<BankTransfer> listOfTransfers = new List<BankTransfer>();
-
-            List<string> separatedFromMainString = new List<string>();
+            List<string> stringsSerparatedFromMainContent = new List<string>();
+            List<BankTransfer> listOfBankTransfers = new List<BankTransfer>();
 
             var file = new CoffeeFileOperation();
+            string mainContent = file.GetFileContent(@"..\..\Coffee13\TaskTrainingTree\newTransfers.xml"); //path?\
 
-            string transfers = file.GetFileContent(@"..\..\Coffee13\TaskTrainingTree\Transfers.xml");   //path?\
+            stringsSerparatedFromMainContent = CoffeeDeserialization.SplitMainStringtoTransferStrings(mainContent);
 
-            separatedFromMainString = SeparateTransfers(transfers);
-
-            foreach (var entry in separatedFromMainString)
+            foreach (var entry in stringsSerparatedFromMainContent)
             {
-                 listOfTransfers.Add(GetTransferEntry(entry));
+                listOfBankTransfers.Add(GetTransferEntry(entry));
             }
-            return listOfTransfers; 
+
+
+            return listOfBankTransfers;
         }
 
-        protected override BankTransfer GetTransferEntry(string entry)  //tworzy ze stringa zawierającego pojedynczy transfer obiekt typu BankTransfer
+        protected override BankTransfer GetTransferEntry(string entry)
         {
-            return null; //tymczasowo
+            return CoffeeDeserialization.DeserializeString(entry);
         }
 
-        protected List<string> SeparateTransfers(string transfers)    //dzieli string zawierajacy caly plik na transfery
-        {
-            List<string> sepTrans = new List<string>();
-
-
-
-            return sepTrans;
-        }
     }
 }
