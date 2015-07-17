@@ -118,6 +118,7 @@
   <ItemGroup>
     <Folder Include="bin\" />
     <Folder Include="KubaT\TrainingTwo\PeselValidator\" />
+    <Folder Include="Terry\TrainingThree\TerryBank\transfers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Chojnecki\Kir\Przelewy.txt" />

@@ -9,14 +9,15 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.TerryBank
 
         /* Format zapisu transferów Terry Banku (docelowo, jeszcze to do końca tak nie wygląda):
          * 
-         * .../amount.destNr.destName.srcNr.srcName.destination.source.title.isTransSuccessful(y/n)/...
+         * .../amount.destination.destNr.destName.source.srcNr.srcName.title.isTransSuccessful(y/n)/...
          * 
          */
 
         public override List<BankTransfer> GetBankTransfers()
         {
+            const string path = "..\\..\\..\\Toci.Hornets.Rzeszow\\Terry\\TrainingThree\\TerryBank\\transfers\\TerryBankAllTransfers.txt";
             var fileOp = new TerryFileOperation();
-            var fileContent = fileOp.GetFileContent("TerryBankTransfersAll.txt");
+            var fileContent = fileOp.GetFileContent(@path);
             var allTransArr = fileContent.Split('/');
             var bankTransList = new List<BankTransfer>();
 
