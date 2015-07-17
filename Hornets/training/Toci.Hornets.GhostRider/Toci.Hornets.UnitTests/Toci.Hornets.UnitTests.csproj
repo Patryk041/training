@@ -62,6 +62,7 @@
     <Compile Include="GhostRider\Abstraction\TestBase.cs" />
     <Compile Include="GhostRider\GeneralTests\DebugingTesting.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
+    <Compile Include="Sieradz\BankTransferTests\PerformTransfersTest.cs" />
     <Compile Include="Sieradz\DeeJay\BankTransfers\DjBankTransfersTest.cs" />
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjTypowyAdamPeselValidatorTestRefactored.cs" />
     <Compile Include="Sieradz\Duch\HW3\DuchBankTests.cs" />

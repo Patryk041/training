@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using Toci.Hornets.GhostRider.Kir;
+using Toci.Hornets.Sieradz.SieradzBankTransferTask.SieradzBankUtils;
 
 namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.BPH
 {
