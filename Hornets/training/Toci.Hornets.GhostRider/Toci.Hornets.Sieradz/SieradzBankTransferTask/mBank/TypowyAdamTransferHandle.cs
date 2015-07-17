@@ -11,26 +11,35 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
     public class TypowyAdamTransferHandle :TransferHandle
     {
 
+        public TypowyAdamTransferHandle()
+        {
+            BankName = "mBank";
+        }
         protected override bool Send(BankTransfer transfer)
         {
-            GenerateTransferPDF(transfer);
+            //GenerateTransferPDF(transfer); //suck too much to put it there
             return true;
         }
 
         protected bool GenerateTransferPDF(BankTransfer transfer)
         {
-            PdfDocument transferDetails = new PdfDocument();
-            //transferDetails.
-            System.Drawing.Font pdfFont = new Font("Arial", 18f);
-            PdfTrueTypeFont trueTypeFont = new PdfTrueTypeFont(pdfFont,true);
+            lock (this)
+            {
+                PdfDocument transferDetails = new PdfDocument();
+                //transferDetails.
+                System.Drawing.Font pdfFont = new Font("Arial", 18f);
+                PdfTrueTypeFont trueTypeFont = new PdfTrueTypeFont(pdfFont, true);
 
-            PdfPageBase TransferPage = transferDetails.Pages.Add();
-            PdfBitmap logo = new PdfBitmap(SieradzBankFilesPathHolder.TransferFilesPath + @"..\mBank\logo.jpg");
-            TransferPage.Canvas.DrawImage(logo, new RectangleF(new PointF(25.0f, 25.0f), new SizeF(140f, 85f)));
-            TransferPage.Canvas.DrawString("\tPotwierdzenie przelewu:", new PdfFont(PdfFontFamily.Helvetica, 20f), new PdfSolidBrush(new PdfRGBColor(0, 0, 0)), 10, 150f);
-            TransferPage.Canvas.DrawString(TransferDetailsString(transfer), trueTypeFont, new PdfSolidBrush(new PdfRGBColor(0, 0, 0)), 50, 180f);
+                PdfPageBase TransferPage = transferDetails.Pages.Add();
+                PdfBitmap logo = new PdfBitmap(SieradzBankFilesPathHolder.TransferFilesPath + @"..\mBank\logo.jpg");
+                TransferPage.Canvas.DrawImage(logo, new RectangleF(new PointF(25.0f, 25.0f), new SizeF(140f, 85f)));
+                TransferPage.Canvas.DrawString("\tPotwierdzenie przelewu:", new PdfFont(PdfFontFamily.Helvetica, 20f), new PdfSolidBrush(new PdfRGBColor(0, 0, 0)), 10, 150f);
+                TransferPage.Canvas.DrawString(TransferDetailsString(transfer), trueTypeFont, new PdfSolidBrush(new PdfRGBColor(0, 0, 0)), 50, 180f);
+                SavePDF(transferDetails);
+            }
 
-            return SavePDF(transferDetails);
+
+            return true;
         }
 
         protected string TransferDetailsString(BankTransfer transfer)
@@ -66,12 +75,6 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
 
             return File.Exists(SieradzBankFilesPathHolder.TransferFilesPath + @"..\mBank\Transfers1.pdf");
         }
-#pragma warning disable 108,114
-        public bool SendTransfer(BankTransfer transfer)
-#pragma warning restore 108,114
-        {
-            Send(transfer);
-            return true;
-        }
+
     }
 }
