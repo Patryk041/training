@@ -37,9 +37,13 @@ namespace Toci.Hornets.Wroclaw.ProjectElixir
 
         protected override BankTransfer GetTransferEntry(string entry)
         {
-            BankTransfer newBankTrasfer = new BankTransfer();
+            BankTransfer newBankTrasfer = new BankTransferWroclaw();
+
 
             // logic..
+
+
+            
 
             return newBankTrasfer;
         }
