@@ -32,7 +32,7 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.BankTransfersParsers
             //stringa na bank transfer  
             //parser '\t' adfds dsa dsa /jakassciezka/asdsad/
             BankTransfer transfer = new BankTransfer();
-            var tab = entry.Split(' ');
+            var tab = entry.Split('\t');
             transfer.SourceBank = tab[0];
             transfer.DestinationBank = tab[1];
             transfer.IsTransferSuccessful = true;
