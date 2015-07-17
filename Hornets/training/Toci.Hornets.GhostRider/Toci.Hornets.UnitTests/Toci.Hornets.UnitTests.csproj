@@ -94,6 +94,7 @@
     <Compile Include="Gliwice\Rudi\RudiBankTransferParser.cs" />
     <Compile Include="Gliwice\Soltys\TaskTwoUnitTests.cs" />
     <Compile Include="Kalisz\Amman\UnitTester.cs" />
+    <Compile Include="Lausion\LausionTestFileIO.cs" />
     <Compile Include="Legnica\Patryk\Mock\FakeChecksumValidator.cs" />
     <Compile Include="Legnica\Patryk\Mock\FakePeselDateValidator.cs" />
     <Compile Include="Legnica\Patryk\PatrykPeselValidatorTests.cs" />
@@ -179,6 +180,7 @@
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\otherInvalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\validPeselList.txt" />
     <Content Include="Gliwice\Rudi\testFileToRead.txt" />
+    <Content Include="Lausion\Check.txt" />
     <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\otherInvalidPeselList.txt" />
     <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
