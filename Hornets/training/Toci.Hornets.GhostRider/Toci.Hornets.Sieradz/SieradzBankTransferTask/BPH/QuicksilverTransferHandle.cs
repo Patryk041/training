@@ -1,4 +1,5 @@
-﻿using Toci.Hornets.GhostRider.Kir;
+﻿using System.IO;
+using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.BPH
 {
@@ -8,6 +9,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.BPH
         public QuicksilverTransferHandle()
         {
             BankName = "BPH";
+            if (File.Exists(SieradzBankFilesPathHolder.TransferFilesPath + @"..\BPH\QuicksilverPerformed.txt")) File.Delete(SieradzBankFilesPathHolder.TransferFilesPath + @"..\BPH\QuicksilverPerformed.txt");
         }
 
         protected override bool Send(BankTransfer transfer)
