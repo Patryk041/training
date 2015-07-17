@@ -35,8 +35,9 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
 
         protected override List<TransferHandle> GetAllHandles()
         {
-            //nie wiem nie umiem, zaimplementować tego! 
-            return  new List<TransferHandle>();
+            var generator = new HandlersGenerator();
+            
+            return generator.GetList("Gliwice");
         }
     }
 }
