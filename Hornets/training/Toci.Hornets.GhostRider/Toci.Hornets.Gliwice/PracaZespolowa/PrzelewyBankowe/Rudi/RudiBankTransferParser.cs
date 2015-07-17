@@ -11,7 +11,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Rudi
     {
         public List<String> listaPrzelewow{get;set;}
 #warning RUDI Poprawa funkcji 
-        public RudiBankTransferParser(string path = @"..\\Didi\\DidiPrzelewy.txt") //co to ma być?! :P czemu mój plik jest jako parametr domyślny? 
+        public RudiBankTransferParser(string path = @"..\\..\\..\\Toci.Hornets.Gliwice\\PracaZespolowa\\PrzelewyBankowe\\Didi\\DidiPrzelewy.txt") //co to ma być?! :P czemu mój plik jest jako parametr domyślny? 
         {
             BankFileOperation = new GliwiceFileOperation();
             string input = BankFileOperation.GetFileContent(path);
@@ -23,14 +23,14 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Rudi
         {
             // To jest funkcja napisana przez Bartka, Bartek dostraczył architekturę, którą my dziedziczym NIE MOŻEMY jej zmieniać 
             //bo nam typ nie odpowiada, która ona zwraca. 
-            List<RudiBankTransfer> bankTransfers = new List<RudiBankTransfer>();
+            List<BankTransfer> bankTransfers = new List<BankTransfer>();
 
             foreach(String przelew in listaPrzelewow)
             {
                 bankTransfers.Add(new RudiBankTransfer(przelew.Split(';')));
             }
             // tutaj należy robić cast na Bartka typ. 
-            return null;
+            return bankTransfers;
         }
 
         protected override BankTransfer GetTransferEntry(string entry)

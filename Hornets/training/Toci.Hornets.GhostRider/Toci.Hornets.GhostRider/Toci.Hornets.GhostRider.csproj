@@ -61,6 +61,7 @@
     <Compile Include="Kir\BankTransfer.cs" />
     <Compile Include="Kir\BankTransfersParser.cs" />
     <Compile Include="Kir\FileOperation.cs" />
+    <Compile Include="Kir\GhostRiderSolution\GenericGenerator.cs" />
     <Compile Include="Kir\PerformTransfers.cs" />
     <Compile Include="Kir\TransferHandle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

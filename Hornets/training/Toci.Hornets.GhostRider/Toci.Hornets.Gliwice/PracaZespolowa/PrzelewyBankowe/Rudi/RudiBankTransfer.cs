@@ -7,7 +7,7 @@ using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Rudi
 {
-    class RudiBankTransfer : BankTransfer
+     class RudiBankTransfer : BankTransfer
     {
         // From - dane naku/klienta przelewajacego
         // To - dane banku/klienta docelowego
