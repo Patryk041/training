@@ -64,11 +64,11 @@
     <Compile Include="GhostRider\Abstraction\TestBase.cs" />
     <Compile Include="GhostRider\GeneralTests\DebugingTesting.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
-<<<<<<< HEAD
+
     <Compile Include="Gliwice\Soltys\BankTransferParserTests.cs" />
-=======
+
     <Compile Include="GhostRider\Kir\KirHomeworkRunner.cs" />
->>>>>>> master
+
     <Compile Include="Sieradz\DeeJay\BankTransfers\DjBankTransfersTest.cs" />
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjTypowyAdamPeselValidatorTestRefactored.cs" />
     <Compile Include="Sieradz\Duch\HW3\DuchBankTests.cs" />
