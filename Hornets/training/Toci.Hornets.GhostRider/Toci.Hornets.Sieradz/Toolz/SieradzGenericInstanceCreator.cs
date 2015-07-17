@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.SieradzBankUtils
+namespace Toci.Hornets.Sieradz.Toolz
 {
     public class SieradzGenericInstanceCreator<T>
     {

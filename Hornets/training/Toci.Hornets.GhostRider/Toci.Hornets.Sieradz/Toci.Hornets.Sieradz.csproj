@@ -89,7 +89,7 @@
     <Compile Include="SieradzBankTransferTask\SieradzBankTransfer.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankUtils\DuchStringUtils.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzBankUtils\SieradzBankTransfersUtils.cs" />
-    <Compile Include="SieradzBankTransferTask\SieradzBankUtils\SieradzGenericInstanceCreator.cs" />
+    <Compile Include="Toolz\SieradzGenericInstanceCreator.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzPerformTransfers.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzTransferInfo.cs" />
