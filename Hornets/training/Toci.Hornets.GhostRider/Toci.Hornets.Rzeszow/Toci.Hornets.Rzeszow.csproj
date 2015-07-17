@@ -60,7 +60,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Foonesh\TrainingThree\BankTransfersParserFoonesh.cs" />
     <Compile Include="Foonesh\TrainingThree\FileOperationFoonesh.cs" />
-    <Compile Include="Foonesh\TrainingThree\TransferData\PerformTransfersFoonesh.cs" />
+    <Compile Include="Foonesh\TrainingThree\PerformTransfersFoonesh.cs" />
     <Compile Include="Foonesh\TrainingThree\TransferHandleFoonesh.cs" />
     <Compile Include="Foonesh\TrainingTwo\PeselValidator\PeselValidatorFoonesh.cs" />
     <Compile Include="Foonesh\TrainingTwo\StringManipulations\StringManipulationsFoonesh.cs" />
@@ -99,6 +99,9 @@
     <Compile Include="Sherpin\TasksTrainingTwo\SherStringManipulations.cs" />
     <Compile Include="Terry\TelephoneHomework\TerryTelephoneHomework.cs" />
     <Compile Include="Terry\TerryTest.cs" />
+    <Compile Include="Terry\TrainingThree\Common\RzeszowHandlersFactory.cs" />
+    <Compile Include="Terry\TrainingThree\Common\RzeszowPerformTransfers.cs" />
+    <Compile Include="Terry\TrainingThree\Common\RzeszowParsersFactory.cs" />
     <Compile Include="Terry\TrainingThree\TerryBank\TerryBankAccountInfo.cs" />
     <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransfer.cs" />
     <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransferHandle.cs" />

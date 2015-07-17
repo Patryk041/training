@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Toci.Hornets.Rzeszow.Terry.TrainingThree.Common;
 using Toci.Hornets.Rzeszow.Terry.TrainingThree.TerryBank;
 
 namespace Toci.Hornets.UnitTests.Rzeszow.Terry.TerryBankTest
@@ -18,7 +19,9 @@ namespace Toci.Hornets.UnitTests.Rzeszow.Terry.TerryBankTest
 
             var lista =  test.GetBankTransfers();
 
-           
+            var performTest = new RzeszowPerformTransfers();
+
+            performTest.TransferAll();
         }
     }
 }
