@@ -80,7 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="OpoleKir\Banks\" />
-    <Folder Include="S2yfr4nt\Homework\S2yfr4ntBank\" />
+    <Folder Include="S2yfr4nt\Homework\S2yfr4ntKir\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
