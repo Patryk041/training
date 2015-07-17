@@ -55,7 +55,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.UCantTouchThis
         {
             foreach (var item in seekList)
                 Assert.AreEqual(condition, _manipulator.RunStringOperations(Subject,item)
-                    .GetPropertyValue(propertyName));
+                    .GetPublicPropertyValue(propertyName));
         }
     }
 }

@@ -17,8 +17,9 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
         }
         protected override bool Send(BankTransfer transfer)
         {
-            //GenerateTransferPDF(transfer); //suck too much to put it there
-            return true;
+            GenerateTransferPDF(transfer); //suck too much to put it there
+            transfer.IsTransferSuccessful = true;
+            return transfer.IsTransferSuccessful;
         }
 
         protected bool GenerateTransferPDF(BankTransfer transfer)
@@ -27,7 +28,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
             {
                 PdfDocument transferDetails = new PdfDocument();
                 //transferDetails.
-                System.Drawing.Font pdfFont = new Font("Arial", 18f);
+                Font pdfFont = new Font("Arial", 18f);
                 PdfTrueTypeFont trueTypeFont = new PdfTrueTypeFont(pdfFont, true);
 
                 PdfPageBase TransferPage = transferDetails.Pages.Add();

@@ -1,19 +1,23 @@
 ﻿using System.Linq;
+using System.Reflection;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.ExtensionMethods
 {
     public static class UCTT_PropertiesUtils
     {
-        public static object GetPropertyValue(this object obj, string propertyName)
+        public static object GetPublicPropertyValue(this object obj, string propertyName)
         {
-            return obj.GetType().GetProperties().Single(propertyInfo => propertyInfo.Name == propertyName)
-                    .GetValue(obj, null);
+            return GetPropertyByName(obj, propertyName).GetValue(obj, null);
         }
 
-        public static void SetPropertyValue(this object obj, string propertyName, object value)
+        public static void SetPublicPropertyValue(this object obj, string propertyName, object value)
         {
-            obj.GetType().GetProperties().Single(propertyInfo => propertyInfo.Name == propertyName)
-                .SetValue(obj, value);
+            GetPropertyByName(obj, propertyName).SetValue(obj, value);
+        }
+
+        private static PropertyInfo GetPropertyByName(object obj, string propertyName)
+        {
+            return obj.GetType().GetProperties().Single(propertyInfo => propertyInfo.Name == propertyName);
         }
     }
 }
