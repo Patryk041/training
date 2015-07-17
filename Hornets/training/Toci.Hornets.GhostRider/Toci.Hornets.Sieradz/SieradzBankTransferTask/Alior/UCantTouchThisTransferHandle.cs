@@ -12,6 +12,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Alior
 
         protected override bool Send(BankTransfer transfer)
         {
+            transfer.IsTransferSuccessful = true;
             return true;
         }
     }

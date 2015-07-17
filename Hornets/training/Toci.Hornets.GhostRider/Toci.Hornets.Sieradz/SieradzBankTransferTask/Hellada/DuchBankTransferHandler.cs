@@ -7,7 +7,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Hellada
     {
         public DuchBankTransferHandler()
         {
-            BankName = "1337";
+            BankName = "Hellada";
         }
 
         protected override bool Send(BankTransfer transfer)

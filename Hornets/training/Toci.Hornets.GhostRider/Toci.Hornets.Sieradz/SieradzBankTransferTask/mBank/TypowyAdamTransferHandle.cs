@@ -17,7 +17,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
         }
         protected override bool Send(BankTransfer transfer)
         {
-            GenerateTransferPDF(transfer);
+            //GenerateTransferPDF(transfer); //suck too much to put it there
             return true;
         }
 

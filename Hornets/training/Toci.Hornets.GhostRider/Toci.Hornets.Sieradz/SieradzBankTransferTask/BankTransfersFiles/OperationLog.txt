@@ -1,0 +1,15 @@
+mBank => mBank : Błąd 
+Alior => Alior : Powodzenie 
+Alior => mBank : Błąd 
+Hellada => Hellada : Powodzenie 
+Alior => Hellada : Błąd 
+Alior => ING : Błąd 
+mBank => Hellada : Błąd 
+Pekao => Hellada : Błąd 
+BPH => BPH : Powodzenie 
+Pekao => Alior : Powodzenie 
+Pekao => ING : Błąd 
+Pekao => mBank : Błąd 
+Pekao => Hellada : Błąd 
+Alior => Pekao : Powodzenie 
+Pekao => Pekao : Powodzenie 
