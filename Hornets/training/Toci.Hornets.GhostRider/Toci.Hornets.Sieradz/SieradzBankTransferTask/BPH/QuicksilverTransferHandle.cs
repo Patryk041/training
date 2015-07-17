@@ -17,8 +17,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.BPH
             var outTransfer = (SieradzBankTransfer) transfer;
             string performedTransfers =
 
-                "Historia wykonanych przelewów: \n Numer konta nadawcy przelewu: " +
-                outTransfer.TransferInfo.SourceAccountNumber +
+                "Numer konta nadawcy przelewu: " +outTransfer.TransferInfo.SourceAccountNumber +
                 " \n Nazwisko nadawcy: " + outTransfer.TransferInfo.SourcePersonName +
                 " \n Numer konta odbiorcy przelewu: " + outTransfer.TransferInfo.DestinationAccountNumber +
                 " \n Nazwisko odbiorcy: " + outTransfer.TransferInfo.DestinationPersonName +
