@@ -12,36 +12,36 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
 {
    public class GliwicePerformTransfer : PerformTransfers
    {
-       private List<BankTransfersParser> _bankTransfersList;
-       private DidiBankTransferParser _DidTransfers;
-       private RudiBankTransferParser _RudiTransfers;
-       private SoltysBankTransferParser _SoltysTransfers;
+       //private List<BankTransfersParser> _bankTransfersList;
+       //private DidiBankTransferParser _DidTransfers;
+       //private RudiBankTransferParser _RudiTransfers;
+       //private SoltysBankTransferParser _SoltysTransfers;
 
        //private DidiBankTransferParser _DidTransfers;
        //private RudiBankTransferParser _RudiTransfers;
 
 
-       public GliwicePerformTransfer()
-       {
-           _bankTransfersList = new List<BankTransfersParser>();
+       //public GliwicePerformTransfer()
+       //{
+       //    _bankTransfersList = new List<BankTransfersParser>();
 
-           _DidTransfers = new DidiBankTransferParser();
-           _RudiTransfers = new RudiBankTransferParser();
-           _SoltysTransfers = new SoltysBankTransferParser();
-       }
+       //    //_DidTransfers = new DidiBankTransferParser();
+       //    //_RudiTransfers = new RudiBankTransferParser();
+       //    //_SoltysTransfers = new SoltysBankTransferParser();
+       //}
 
 
         protected override List<BankTransfersParser> GetAllParsers()
         {
-            ParsersGenerator generator = new ParsersGenerator();
+            var generator = new ParsersGenerator();
 
-            _bankTransfersList = generator.GetList("Gliwice");
+            //_bankTransfersList = generator.GetList("Gliwice");
 
-           _bankTransfersList.Add(_DidTransfers);
-           _bankTransfersList.Add(_RudiTransfers);
-           _bankTransfersList.Add(_SoltysTransfers);
+           //_bankTransfersList.Add(_DidTransfers);
+           //_bankTransfersList.Add(_RudiTransfers);
+           //_bankTransfersList.Add(_SoltysTransfers);
 
-           return _bankTransfersList;
+           return generator.GetList("Gliwice");
        }
 
        protected override List<TransferHandle> GetAllHandles()
