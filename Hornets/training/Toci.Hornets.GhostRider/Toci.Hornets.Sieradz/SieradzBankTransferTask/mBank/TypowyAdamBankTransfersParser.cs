@@ -29,7 +29,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
 
         protected override BankTransfer GetTransferEntry(string entry)
         {
-            var mBankTransfer = new SieradzBankTransfer();
+            SieradzBankTransfer mBankTransfer = new SieradzBankTransfer();
 #pragma warning disable 618
             XmlDocument xmlNode = new XmlDataDocument();
 #pragma warning restore 618
