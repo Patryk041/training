@@ -58,6 +58,7 @@
     <Compile Include="Bytom\Coffee13\TransferParserTest.cs" />
     <Compile Include="Bytom\Pr0fes0r\TrainingTwo\PeselValidatorPr0fes0r.cs" />
     <Compile Include="Bytom\Vnth\FileOperationTest.cs" />
+    <Compile Include="Bytom\Vnth\JsonSerializerTest.cs" />
     <Compile Include="Bytom\Vnth\VnthFirstUnitTest.cs" />
     <Compile Include="Bytom\Vnth\VnthPeselValidatorTest.cs" />
     <Compile Include="GhostRider\Abstraction\TestBase.cs" />
