@@ -64,6 +64,7 @@
     <Compile Include="GhostRider\Abstraction\TestBase.cs" />
     <Compile Include="GhostRider\GeneralTests\DebugingTesting.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
+    <Compile Include="Gliwice\Hipek\BankTransferTest\HipekBankTransferTest.cs" />
     <Compile Include="Gliwice\Soltys\BankTransferParserTests.cs" />
     <Compile Include="GhostRider\Kir\KirHomeworkRunner.cs" />
     <Compile Include="Legnica\Kir\Files\PrepareBankTransfer.cs" />
