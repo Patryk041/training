@@ -15,7 +15,14 @@ namespace Toci.Hornets.UnitTests.Lausion
                 op.GetFileContent(
                     @"D:\Szkolenie C#\SoutceTree\Hornets\training\Toci.Hornets.GhostRider\Toci.Hornets.UnitTests\Lausion\Check.txt");
             Debug.Write(s);
-            
+
+            string[] strings = s.Split('\n');
+
+            foreach (var s1 in strings)
+            {
+                Debug.WriteLine(s1);
+                Debug.WriteLine("\n\n");
+            }
         }
     }
 }
