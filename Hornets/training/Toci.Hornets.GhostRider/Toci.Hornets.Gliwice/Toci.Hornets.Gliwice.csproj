@@ -75,6 +75,9 @@
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Hipek\HipekBankTransferParser.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Hipek\HipekTransferHandle.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\ParsersGenerator.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\PiotrekJ\PiorekJTransferHandler.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\PiotrekJ\PiotrekJBankTransfer.cs" />
+    <Compile Include="PracaZespolowa\PrzelewyBankowe\PiotrekJ\PiotrekJBankTransferParser.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Rudi\RudiBankTransfer.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Rudi\RudiBankTransferParser.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Soltys\Banks\SoltysIngBankTransferHandle.cs" />
@@ -107,6 +110,7 @@
   <ItemGroup>
     <Content Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiPrzelewy.txt" />
     <Content Include="PracaZespolowa\PrzelewyBankowe\Hipek\HipekTransfers.txt" />
+    <Content Include="PracaZespolowa\PrzelewyBankowe\PiotrekJ\PiotrekJBankTransfersList.txt" />
     <Content Include="PracaZespolowa\PrzelewyBankowe\Soltys\SoltysBankTransferData.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
