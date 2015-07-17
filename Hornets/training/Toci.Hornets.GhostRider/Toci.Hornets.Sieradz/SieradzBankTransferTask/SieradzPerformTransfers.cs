@@ -9,9 +9,6 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
 {
     public class SieradzPerformTransfers : PerformTransfers
     {
-        protected SieradzGenericInstanceCreator<BankTransfersParser> SGIC_BTP;
-        protected SieradzGenericInstanceCreator<TransferHandle> SGIC_TH;
-
         protected List<BankTransfersParser> SieradzParsersList;
         protected List<TransferHandle> SieradzHandlesList;
         protected List<string> ResultList = new List<string>(); 
@@ -27,13 +24,13 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
 
         protected override List<BankTransfersParser> GetAllParsers()
         {
-            SGIC_BTP = new SieradzGenericInstanceCreator<BankTransfersParser>();
+            var SGIC_BTP = new SieradzGenericInstanceCreator<BankTransfersParser>();
             return SGIC_BTP.CreateObjectList();
         }
 
         protected override List<TransferHandle> GetAllHandles()
         {
-            SGIC_TH = new SieradzGenericInstanceCreator<TransferHandle>();
+            var SGIC_TH = new SieradzGenericInstanceCreator<TransferHandle>();
             return SGIC_TH.CreateObjectList();
         }
 
@@ -54,8 +51,13 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
         {
             var handler = SieradzTransferHandlesDictionary.GetTransferHandleByBankName(transfer.DestinationBank);
             if (handler != null) handler.SendTransfer(transfer);
-            ResultList.Add(string.Format("{0} => {1} : {2} ", transfer.SourceBank, transfer.DestinationBank,
-                transfer.IsTransferSuccessful ? "Powodzenie" : "Błąd"));
+            ResultList.Add(GetFormattedResult(transfer));
+        }
+
+        protected virtual string GetFormattedResult(BankTransfer transfer)
+        {
+            return string.Format("{0} => {1} : {2} ", transfer.SourceBank, transfer.DestinationBank,
+                transfer.IsTransferSuccessful ? "Powodzenie" : "Błąd");
         }
 
         protected virtual void WriteResultsToLogFile()
