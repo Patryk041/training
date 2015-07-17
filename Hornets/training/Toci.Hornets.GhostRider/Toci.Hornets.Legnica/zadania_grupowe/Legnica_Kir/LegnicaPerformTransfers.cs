@@ -38,7 +38,8 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir
             foreach (var transfer in transfers)
             {
                 var handle = _handleFactory.GetTransferHandleByBankName(transfer.DestinationBank);
-                handle.SendTransfer(transfer);
+                if(handle != null)
+                    handle.SendTransfer(transfer);
             }
         }
     }

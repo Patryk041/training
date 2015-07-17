@@ -19,12 +19,23 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.Files
         {
             var bankName = bankTransfer.DestinationBank;
             var path = StartupPath + "TransfersReceived\\" + bankName + "\\" + bankName + ".txt";
-            FileStream fs = new FileStream(path,FileMode.Append);
-            StreamWriter sw = new StreamWriter(fs);
-            sw.WriteLine(bankTransfer);
-            sw.Close();
-            fs.Close();
+            Save(bankTransfer,path);
         }
 
+        private static void Save(LegnicaBankTransfer bankTransfer,string path)
+        {
+            try
+            {
+                FileStream fs = new FileStream(path, FileMode.Append);
+                StreamWriter sw = new StreamWriter(fs);
+                sw.WriteLine(bankTransfer);
+                sw.Close();
+                fs.Close();
+            }
+            catch
+            {
+                // ignored
+            }         
+        }
     }
 }
