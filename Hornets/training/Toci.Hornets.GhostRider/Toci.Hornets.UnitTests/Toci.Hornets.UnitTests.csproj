@@ -74,6 +74,7 @@
     <Compile Include="Rzeszow\Chojnecki\Bank\BankTest.cs" />
     <Compile Include="Rzeszow\Chojnecki\PeselTest\PESELTest.cs" />
     <Compile Include="Rzeszow\Chojnecki\StringCheckTest\StringCheckTest.cs" />
+    <Compile Include="Rzeszow\Foonesh\TrainingThree\BankTransferTest.cs" />
     <Compile Include="Rzeszow\Ksebal\Testy.cs" />
     <Compile Include="Rzeszow\SemiRafista\SeRaManipulatingStringsTest.cs" />
     <Compile Include="Rzeszow\SemiRafista\SeRaPeselTest.cs" />

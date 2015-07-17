@@ -60,6 +60,8 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Foonesh\TrainingThree\BankTransfersParserFoonesh.cs" />
     <Compile Include="Foonesh\TrainingThree\FileOperationFoonesh.cs" />
+    <Compile Include="Foonesh\TrainingThree\TransferData\PerformTransfersFoonesh.cs" />
+    <Compile Include="Foonesh\TrainingThree\TransferHandleFoonesh.cs" />
     <Compile Include="Foonesh\TrainingTwo\PeselValidator\PeselValidatorFoonesh.cs" />
     <Compile Include="Foonesh\TrainingTwo\StringManipulations\StringManipulationsFoonesh.cs" />
     <Compile Include="KSebal\telephone\Telephone.cs" />
@@ -117,6 +119,7 @@
   <ItemGroup>
     <Content Include="Chojnecki\Kir\Przelewy.txt" />
     <Content Include="Chojnecki\Kir\x.xml" />
+    <Content Include="Foonesh\TrainingThree\TransferData\TransferOne.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
