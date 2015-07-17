@@ -14,8 +14,12 @@ class ParseFileContent {
     public function ShapeIntoReadableArray($fileName, $separator) {
         $fullData = $this->ParseFileContentToArray($fileName, $separator);
         $numberOfElementsInRecord = $this->CountElementsInRecord($fileName, $separator) - 1;
-        $result = array_chunk($fullData, $numberOfElementsInRecord);
+        $content = array_chunk($fullData, $numberOfElementsInRecord);
+        $result = array();
 
+        foreach ($content as $row) {
+            $result[] = $this->CreateIndexNames($row);
+        }
         return $result;
     }
 
@@ -32,4 +36,25 @@ class ParseFileContent {
         return count($elements);
     }
 
+    protected function CreateIndexNames($cell) {
+
+        $result = array();
+
+        $result['Street'] = $cell[0];
+        $result['Number'] = $cell[1];
+        $result['Place'] = $cell[2];
+        $result['Device'] = $cell[3];
+        $result['Action'] = $cell[4];
+        $result['Date'] = $cell[5];
+        $result['Time'] = $cell[6];
+        $result['EnergyUsage'] = $cell[7];
+        $result['Errors'] = $cell[8];
+        $result['Messages'] = $cell[9];
+
+        return $result;
+    }
+
 }
+
+//$test = new ParseFileContent();
+//var_dump($test->ShapeIntoReadableArray('Biestrzynska.34.Dylaki', ';'));
