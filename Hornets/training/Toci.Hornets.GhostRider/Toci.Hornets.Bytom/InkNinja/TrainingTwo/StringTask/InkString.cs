@@ -10,6 +10,7 @@ namespace Toci.Hornets.Bytom.InkNinja.TrainingTwo.StringTask
 {
     class InkString : GhostRiderStringManipulationsBase
     {
+        //powinno banglać
         protected override bool IsStringInString(string subject, string seek)
         {
             bool value = false;
