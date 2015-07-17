@@ -16,42 +16,26 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 			return pesel.Substring(0, 6);
 		}
 
-		private MyDate GetDateObject(string date)
-		{
-			var dateObj = MyDate.Date;
-
-			dateObj.Year = int.Parse(date.Substring(0, 2));		// todo: validate year
-			dateObj.Month = int.Parse(date.Substring(2, 2));	// todo: validate month
-			dateObj.Day = int.Parse(date.Substring(4, 2));		// todo: validate day
-
-			return dateObj;
-		}
-
-		private bool IsDateValid(string date)
-		{
-			//fix this
-			var dateObj = GetDateObject(date);
-
-			return false;
-		}
-
 		protected override bool Checksum(string pesel)
 		{
 			if (HasCorrectLength(pesel))
 			{
-				List<int> peselNumbers = SplitToList(pesel);
-				if (ChecksumAreEqual(CalculateChecksum(peselNumbers), GetChecksum(peselNumbers)))
-				{
-					return true;
-				}
-				//compare with last number
+				return CurrentChecksumEqualsCalculatedChecksum(pesel);
 			}
 			return false;
 		}
 
-		private bool ChecksumAreEqual(int calculatedChecksum, int checksumCandidate)
+		private bool CurrentChecksumEqualsCalculatedChecksum(string pesel)
 		{
-			return calculatedChecksum == checksumCandidate;
+			List<int> peselNumbers = SplitToList(pesel);
+			int currentChecksum = GetChecksum(peselNumbers);
+			int calculatedChecksum = CalculateChecksum(peselNumbers);
+
+			if (currentChecksum == calculatedChecksum)
+			{
+				return true;
+			}
+			return false;
 		}
 
 		private int GetChecksum(List<int> peselNumbers)
@@ -61,7 +45,7 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 
 		private int CalculateChecksum(List<int> peselNumbers)
 		{
-			return _weights.Select((t, i) => peselNumbers[i] * t).Sum();
+			return (10 - ((_weights.Select((t, i) => peselNumbers[i] * t).Sum()) % 10)) % 10;
 
 			//for (int i = 0; i < weights.Count; i++)
 			//{
@@ -86,7 +70,8 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 
 		protected override bool ValidateDate(int year, int month, int day)
 		{
-			return false;
+			var dateObj = new MyDate(year, month, day);
+			return dateObj.IsDateValid();
 		}
 
 		private bool HasCorrectLength(string pesel)
@@ -101,32 +86,9 @@ namespace Toci.Hornets.Bytom.Vernathic.TrainingTwo
 
 		public override bool IsPeselValid(string pesel)
 		{
-			return false;
+			return Checksum(pesel);
 		}
 	}
 
-	class MyDate
-	{
-
-		public int Day;
-		public int Month;
-		public int Year;
-
-		private static MyDate _date;
-
-		private MyDate() {}
-
-		public static MyDate Date
-		{
-			get
-			{
-				return _date ?? (_date = new MyDate());
-				//if (date == null)
-				//{
-				//	date = new MyDate();
-				//}
-				//return date;
-			}
-		}
-	}
+	
 }

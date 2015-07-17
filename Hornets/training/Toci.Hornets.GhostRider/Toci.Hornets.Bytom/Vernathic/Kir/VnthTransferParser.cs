@@ -11,7 +11,9 @@ namespace Toci.Hornets.Bytom.Vernathic.Kir
 	{
 		public override List<BankTransfer> GetBankTransfers()
 		{
-			return new List<BankTransfer>();
+			var transfers = new List<VnthTransfer>();
+
+			return transfers.Cast<BankTransfer>().ToList();
 		}
 
 		protected override BankTransfer GetTransferEntry(string entry)

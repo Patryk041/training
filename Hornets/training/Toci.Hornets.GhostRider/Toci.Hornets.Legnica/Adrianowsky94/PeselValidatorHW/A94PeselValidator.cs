@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Security.Cryptography.X509Certificates;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
-using Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW.PeselManipulationMethods;
+using Toci.Hornets.Legnica.Adrianowsky94.PeselValidatorHW.PeselManipulationMethods;
 
-namespace Toci.Hornets.Kalisz.Adrianowsky94.PeselValidatorHW
+namespace Toci.Hornets.Legnica.Adrianowsky94.PeselValidatorHW
 {
     public class A94PeselValidator : PeselValidator
     {
