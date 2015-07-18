@@ -40,7 +40,6 @@ class FileReader{
 		{
 			return true;
 		} else{
-			echo "\nzamykam plik";
 			fclose($this->plik);
 			return false;
 		}
