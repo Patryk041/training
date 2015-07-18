@@ -10,9 +10,12 @@ namespace Toci.Hornets.Rzeszow.KSebal.zadanko
    public class KsebalItemGenericsOperation<TItem>:GhostRiderGenericList<TItem> where TItem:IEnumerable<TItem>,ICollection<TItem>
    {
        public override bool Add(TItem item)
-       {
-           items=new TItem[items.Length+1];
-           items.SetValue(item,items.Length);
+       {    
+           var cos= new TItem[items.Length+1];
+           
+           //cos.SetValue(item,items.Length);
+           items.CopyTo(cos,0);
+           cos.SetValue(item, items.Length);
            return true;
        }
 
