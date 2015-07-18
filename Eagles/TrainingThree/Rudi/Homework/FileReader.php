@@ -12,6 +12,19 @@ class FileReader{
 			echo "Nie mozna otworzyc pliku: ".$pathToFile;
 	}
 
+	public function getAll()
+	{
+		$tablicaLinii=array();
+		
+		while($this->isNext())
+		{
+			$tablicaLinii[]=$this->getNextLine();
+		}
+		
+		return $tablicaLinii;
+		
+	}
+	
 	public function getNextLine()
 	{
 		if($this->isNext($this->plik))

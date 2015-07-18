@@ -1,7 +1,4 @@
-ha ha ha ha
-fdsf
-sdfdsfdsf
-sdfdsfdsf
-dsfdsf;k
-;
-k
+willa1;okno;Open;14:00;5;20;null;null;
+willa3;okno;Close;16:15;5;30;null;null
+willa2;przedpokoj;Przewietrz;12:00;5;40;null;null
+willa1;plazma;Uruchom;4:40;5;50;null;null
