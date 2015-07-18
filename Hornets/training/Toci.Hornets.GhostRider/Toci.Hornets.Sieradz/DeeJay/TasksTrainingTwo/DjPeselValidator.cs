@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Text.RegularExpressions;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
@@ -7,7 +10,16 @@ namespace Toci.Hornets.Sieradz.DeeJay.TasksTrainingTwo
 {
     public class DjPeselValidator : PeselValidator
     {
-        private readonly int[] vages = {1, 3, 7, 9, 1, 3, 7, 9, 1, 3};
+        private static readonly int[] Vages = {1, 3, 7, 9, 1, 3, 7, 9, 1, 3};
+
+        private static readonly SortedList<int, int> Stulecia = new SortedList<int, int>
+            {
+                { 20, 1900 },
+                { 40, 2000 },
+                { 60, 2100 },
+                { 80, 2200 },
+                { 100, 1800 }
+            };
 
         protected override string CutOffDate(string pesel)
         {
@@ -16,22 +28,12 @@ namespace Toci.Hornets.Sieradz.DeeJay.TasksTrainingTwo
 
         protected override bool Checksum(string pesel)
         {
-            var controlNo = 0;
             var sum = 0;
+            var controlNo = int.Parse(pesel.Substring(10, 1));
 
-            if (!int.TryParse(pesel.Substring(10, 1), out controlNo))
+            for(var i=0; i<pesel.Length-1; i++)
             {
-                return false;
-            }
-
-            for(int i=0; i<pesel.Length-1; i++)
-            {
-                var digit = 0;
-                if (!int.TryParse(pesel.Substring(i, 1), out digit))
-                {
-                    return false;
-                }
-                sum += digit*vages[i];
+                sum += int.Parse(pesel.Substring(i, 1)) * Vages[i];
             }
 
             var checkSum = (10 - sum%10) %10;
@@ -41,39 +43,13 @@ namespace Toci.Hornets.Sieradz.DeeJay.TasksTrainingTwo
 
         protected override bool ValidateDate(int year, int month, int day)
         {
-            if (month < 20)
-            {
-                year += 1900;
-            }
-            else if (month < 40)
-            {
-                year += 2000;
-                month -= 20;
-            }
-            else if (month < 60)
-            {
-                year += 2100;
-                month -= 40;
-            }
-            else if (month < 80)
-            {
-                year += 2200;
-                month -= 60;
-            }
-            else
-            {
-                year += 1800;
-                month -= 80;
-            }
+            year += Stulecia.First(x => x.Key > month).Value;
+            month -= (Stulecia.First(x => x.Key > month).Key - 20);
 
-            var dateString = year.ToString() + "-" + month.ToString() + "-" + day.ToString();
+            var dateString = year + "-" + month + "-" + day;
             DateTime dateOfBirth;
-            if(!DateTime.TryParse(dateString, out dateOfBirth))
-            {
-                return false;
-            }
 
-            return dateOfBirth <= DateTime.Today;
+            return DateTime.TryParse(dateString, out dateOfBirth) && dateOfBirth <= DateTime.Today;
         }
 
         public override string GetNick()
@@ -83,7 +59,7 @@ namespace Toci.Hornets.Sieradz.DeeJay.TasksTrainingTwo
 
         public override bool IsPeselValid(string pesel)
         {
-            if (String.IsNullOrEmpty(pesel) || !IsExactlyElevenDigitsInPesel(pesel))
+            if (string.IsNullOrEmpty(pesel) || !IsExactlyElevenDigitsInPesel(pesel))
             {
                 return false;
             }
@@ -96,9 +72,9 @@ namespace Toci.Hornets.Sieradz.DeeJay.TasksTrainingTwo
             return Checksum(pesel) && ValidateDate(year, month, day);
         }
 
-        private bool IsExactlyElevenDigitsInPesel(string pesel)
+        private static bool IsExactlyElevenDigitsInPesel(string pesel)
         {
-            Regex elevenDigitsRegex = new Regex(@"^\d{11}$");
+            var elevenDigitsRegex = new Regex(@"^\d{11}$");
             return elevenDigitsRegex.IsMatch(pesel);
         }
     }

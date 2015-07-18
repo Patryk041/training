@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
+using Toci.Hornets.Sieradz.UCantTouchThis.ExtensionMethods;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.TasksTrainingTwo
 {

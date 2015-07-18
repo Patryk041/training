@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.IO;
+
 
 namespace Toci.Hornets.GhostRider.Kir
 {
@@ -10,7 +12,6 @@ namespace Toci.Hornets.GhostRider.Kir
         // rozbic string na linie
         // linie przetworzyc GetTransferEntry na typ BankTransfer
         public abstract List<BankTransfer> GetBankTransfers();
-
 
         protected abstract BankTransfer GetTransferEntry(string entry);
     }

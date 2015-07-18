@@ -21,7 +21,7 @@
                 if (sumcontrol == 0)
                 {
                     return true;
-                    break;
+                    
                 }
             }
             return false;
