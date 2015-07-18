@@ -10,7 +10,7 @@ using Toci.Hornets.GhostRider.TrainingFour.Generics;
 
 namespace Toci.Hornets.Gliwice.Didi.Genercis
 {
-    public class DidiGenercis<T> : GhostRiderGenericList<T>
+    public class DidiGenercis<Titem> : GhostRiderGenericList<Titem>
     {
         private int _top;
         private const int Capacity = 20;
@@ -18,10 +18,10 @@ namespace Toci.Hornets.Gliwice.Didi.Genercis
         public DidiGenercis()
         {
             _top = 0;
-            items = new T[Capacity];
+            items = new Titem[Capacity];
         }
 
-        public override bool Add(T item)
+        public override bool Add(Titem item)
         {
             if (_top == Capacity)
                 return false;
@@ -29,13 +29,13 @@ namespace Toci.Hornets.Gliwice.Didi.Genercis
            return true;
         }
 
-        public override bool Remove(T item)
+        public override bool Remove(Titem item)
         {
-            var tab = items.Where(val => !val.Equals(item)).ToArray();            
-            if (tab.Length != items.Length)
+            var itemTab = items.Where(x => !x.Equals(item)).ToArray();            
+            if (itemTab.Length != items.Length)
             {
-                _top -= items.Length - tab.Length;
-                items = tab;
+                _top -= items.Length - itemTab.Length;
+                items = itemTab;
                 return true;
             }
             return false;
