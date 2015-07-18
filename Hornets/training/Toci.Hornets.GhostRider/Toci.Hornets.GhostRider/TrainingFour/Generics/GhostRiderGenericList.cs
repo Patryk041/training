@@ -5,7 +5,7 @@
         protected TItems[] items;
 
         public abstract bool Add(TItems item);
-
+    
         public abstract bool Remove(TItems item);
 
         public virtual TItems[] GetAllItems()
