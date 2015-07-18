@@ -19,14 +19,14 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
                     {
                         new DidiBankTransferParser(),
                         new RudiBankTransferParser(),
-<<<<<<< HEAD
+
                         new HipekBankTransferParser(),
                         new PiotrekJBankTransferParser(),
-                        new MoWerrBankTransferParser()
-=======
+                        new MoWerrBankTransferParser(),
+
                         new SoltysBankTransferParser(),
                         new HipekBankTransferParser()
->>>>>>> master
+
                     }
                 }
             };

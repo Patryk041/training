@@ -16,19 +16,18 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
             {
                 {  "Gliwice", new List<TransferHandle>()
                     {
-<<<<<<< HEAD
-                        new DidiInnyBank(new DidiBankTransfer()),
-                        new DidiINGBank(new DidiBankTransfer()),
-                        new DidiPKOBank(new DidiBankTransfer()),
+
+                        new DidiInnyBank(),
+                        new DidiINGBank(),
+                        new DidiPKOBank(),
                         new HipekTransferHandle(),
                         new MoWerrMBankTransferHandle(),
-                        new MoWerrPKOBankTransferHandle()
-=======
+                        new MoWerrPKOBankTransferHandle(),
                         new DidiInnyBank(),
                         new DidiINGBank(),
                         new DidiPKOBank(),
                         new HipekTransferHandle()
->>>>>>> master
+
                     }
                 }
             };
