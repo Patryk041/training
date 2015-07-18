@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Toci.Hornets.GhostRider.TrainingFour.Generics;
 
@@ -25,15 +26,27 @@ namespace Toci.Hornets.Legnica.Patryk_Stulczewski.TrainingFour
 
         public override bool Remove(T item)
         {
-            var tab = items.Where(val => !val.Equals(item)).ToArray();            
-            if (tab.Length != items.Length)
+            int index = Array.IndexOf(items, item);
+            if (index >= 0)
             {
-                _top -= items.Length - tab.Length;
-                items = tab;
+                removeItem(item);
                 return true;
             }
             return false;
+        }
 
+        private void removeItem(T item)
+        {
+            int index = Array.IndexOf(items, item);
+            T[] tab = new T[items.Length-1];
+            int count = 0;
+            for (int i = 0; i < items.Length; i++)
+            {
+                if(i != index)
+                    tab[count++] = items[i];
+            }
+            items = tab;
+            _top--;
         }
     }
 }
