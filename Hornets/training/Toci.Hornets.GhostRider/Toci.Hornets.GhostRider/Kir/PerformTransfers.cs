@@ -4,6 +4,8 @@ namespace Toci.Hornets.GhostRider.Kir
 {
     public abstract class PerformTransfers
     {
+        public int Test = 0;
+
         protected abstract List<BankTransfersParser> GetAllParsers();
 
         protected abstract List<TransferHandle> GetAllHandles();

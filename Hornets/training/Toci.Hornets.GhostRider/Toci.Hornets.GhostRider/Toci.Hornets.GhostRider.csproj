@@ -69,7 +69,13 @@
     <Compile Include="TElephoneCommunication\SmsCommunication.cs" />
     <Compile Include="TElephoneCommunication\Telephone.cs" />
     <Compile Include="TElephoneCommunication\VoiceCommunication.cs" />
+    <Compile Include="TrainingFour\Delegates\DelegateClient.cs" />
+    <Compile Include="TrainingFour\Delegates\DelegateExamples.cs" />
+    <Compile Include="TrainingFour\ExtensionMethods\ExtMethodShowdown.cs" />
+    <Compile Include="TrainingFour\ExtensionMethods\PerformTransfersExtensions.cs" />
+    <Compile Include="TrainingFour\Generics\GenEx.cs" />
     <Compile Include="TrainingFour\Generics\GhostRiderGenericList.cs" />
+    <Compile Include="TrainingFour\Linq\LinqShowdown.cs" />
     <Compile Include="TrainingThree\BenchingOverriding.cs" />
     <Compile Include="TrainingThree\Chor\Kontrahenci.cs" />
     <Compile Include="TrainingThree\Chor\MniejszyWorekNaDane.cs" />
