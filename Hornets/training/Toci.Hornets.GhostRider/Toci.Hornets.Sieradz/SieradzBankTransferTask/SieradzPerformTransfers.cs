@@ -22,13 +22,13 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
             SieradzTransferHandlesDictionary.InitialiseTransferHandleDictionaty(SieradzHandlesList);
         }
 
-        protected override List<BankTransfersParser> GetAllParsers()
+        protected sealed override List<BankTransfersParser> GetAllParsers()
         {
             var SGIC_BTP = new SieradzGenericInstanceCreator<BankTransfersParser>();
             return SGIC_BTP.CreateObjectList();
         }
 
-        protected override List<TransferHandle> GetAllHandles()
+        protected sealed override List<TransferHandle> GetAllHandles()
         {
             var SGIC_TH = new SieradzGenericInstanceCreator<TransferHandle>();
             return SGIC_TH.CreateObjectList();
@@ -62,9 +62,9 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
 
         protected virtual void WriteResultsToLogFile()
         {
-            StreamWriter LogFile = new StreamWriter(SieradzBankFilesPathHolder.TransferFilesPath + LogFileName);
-            ResultList.ForEach(result => LogFile.WriteLine(result));
-            LogFile.Close();
+            StreamWriter logFile = new StreamWriter(SieradzBankFilesPathHolder.TransferFilesPath + LogFileName);
+            ResultList.ForEach(result => logFile.WriteLine(result));
+            logFile.Close();
         }
     }
 }
