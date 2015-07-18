@@ -123,6 +123,7 @@
     <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisStringManipulations.cs" />
     <Compile Include="UCantTouchThis\TelephoneTask\UCantTouchThisTelephoneTask.cs" />
     <Compile Include="UCantTouchThis\TelephoneTask\UCTT_TelephoneTaskFactory.cs" />
+    <Compile Include="UCantTouchThis\TrainingFour\TraingFour.cs" />
     <Compile Include="UCantTouchThis\UCTTGenericFactory.cs" />
     <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_StringExtensions.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\DateValidatorUtils.cs" />
