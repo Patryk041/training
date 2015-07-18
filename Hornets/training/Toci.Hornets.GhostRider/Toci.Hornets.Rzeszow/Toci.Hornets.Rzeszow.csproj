@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agata\Generics\YaghaGenericList.cs" />
     <Compile Include="Agata\Kir\YaghaBankTransfer.cs" />
     <Compile Include="Agata\Kir\YaghaBankTransferParser.cs" />
     <Compile Include="Agata\Kir\YaghaFileOperationsTxt.cs" />
