@@ -53,6 +53,7 @@
     <Compile Include="Lausion\ExampeClass.cs" />
     <Compile Include="Lausion\LausionKIR\LausionBankTransfer.cs" />
     <Compile Include="Lausion\LausionKIR\LausionBankTransfersParser.cs" />
+    <Compile Include="Lausion\TaskFour\LausionGenericList.cs" />
     <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Day.cs" />
     <Compile Include="Lausion\TasksTraningTwo\PeselValidator\LausionPeselValidator.cs" />
     <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Month.cs" />
@@ -66,7 +67,6 @@
     <Compile Include="OpoleKir\Banks\INGTransferHandle.cs" />
     <Compile Include="OpoleKir\OpoleFileOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="S2yfr4nt\Homework\S2yfr4ntBank\S2yfr4ntGenericList.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntDayValidation.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntMonthValidation.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntYearValidation.cs" />
@@ -85,7 +85,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="S2yfr4nt\Homework\S2yfr4ntGenericList\" />
+    <Folder Include="S2yfr4nt\Homework\S2yfr4ntBank\" />
     <Folder Include="S2yfr4nt\Homework\S2yfr4ntKir\" />
   </ItemGroup>
   <ItemGroup>
