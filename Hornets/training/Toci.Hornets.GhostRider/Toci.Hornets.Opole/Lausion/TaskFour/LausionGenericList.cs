@@ -47,7 +47,7 @@ namespace Toci.Hornets.Opole.Lausion.TaskFour
                         removeItem(items, i);
                         size--;
                         if (size < 0.3*maxSize)
-                            resize(items);
+                            resize();
                         return true;
                     }
                 }
@@ -66,14 +66,14 @@ namespace Toci.Hornets.Opole.Lausion.TaskFour
             }
         }
 
-        private void resize(TItems[] items)
+        private void resize()
         {
             var pom = items;
             maxSize = (int)(maxSize*0.7);
-            this.items=new TItems[maxSize];
+            items=new TItems[maxSize];
             for (int i = 0; i < size; i++)
             {
-                this.items[i] = pom[i];
+                items[i] = pom[i];
             }
         }
     }
