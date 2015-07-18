@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.Sieradz.SieradzBankTransferTask.BPH;
 
@@ -11,7 +12,11 @@ namespace Toci.Hornets.UnitTests.Sieradz.Quicksilver.BankQs
         public void TestMethod1()
         {
             var test2 = new QuicksilverBankTransfersParser();
-            test2.GetBankTransfers();
+            var cos = test2.GetBankTransfers();
+
+            var test3 = new QuicksilverTransferHandle();
+            test3.SendTransfer(cos.First());
+
         }
     }
 }

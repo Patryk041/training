@@ -1,0 +1,4 @@
+﻿txt
+123456 Andrzej witaj 1500 zl;
+123456 Endrju witaj 2500 zl;
+123456 Andżej witaj 33500 zl;

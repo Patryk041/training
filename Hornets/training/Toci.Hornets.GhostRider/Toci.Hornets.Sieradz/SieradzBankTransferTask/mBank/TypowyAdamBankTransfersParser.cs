@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Xml;
 using Toci.Hornets.GhostRider.Kir;
+using Toci.Hornets.Sieradz.SieradzBankTransferTask.SieradzBankUtils;
 
 
 namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
@@ -28,7 +29,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
 
         protected override BankTransfer GetTransferEntry(string entry)
         {
-            var mBankTransfer = new SieradzBankTransfer();
+            SieradzBankTransfer mBankTransfer = new SieradzBankTransfer();
 #pragma warning disable 618
             XmlDocument xmlNode = new XmlDataDocument();
 #pragma warning restore 618

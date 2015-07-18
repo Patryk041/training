@@ -20,16 +20,8 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Hellada
         {
             var fileContent = _fileLoader.GetFileContent(path).DuBetterReplace();
             var transfersArray = Regex.Split(fileContent, "€€€€");
-            var transfersList = new List<BankTransfer>();
 
-            foreach (var transfer in transfersArray)
-            {
-                if (transfer.Any())
-                {
-                    transfersList.Add(GetTransferEntry(transfer));
-                }
-            }
-            return transfersList;
+            return (from transfer in transfersArray where transfer.Any() select GetTransferEntry(transfer)).ToList();
 
         }
 
@@ -39,8 +31,8 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Hellada
 
             return new BankTransfer()
             {
-                DestinationBank = transferInfoArray[2].Substring(2, 4),
-                SourceBank = transferInfoArray[1].Substring(2, 4),
+                DestinationBank = SieradzBankTransfersUtils.Instance.GetBankName(transferInfoArray[2].Substring(2, 4)),
+                SourceBank = SieradzBankTransfersUtils.Instance.GetBankName(transferInfoArray[1].Substring(2, 4)),
                 IsTransferSuccessful = transferInfoArray[1].Substring(2, 4) == transferInfoArray[2].Substring(2, 4)
             };
 

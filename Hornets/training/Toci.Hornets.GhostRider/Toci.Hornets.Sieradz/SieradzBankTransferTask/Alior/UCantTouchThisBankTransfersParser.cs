@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 using Toci.Hornets.GhostRider.Kir;
+using Toci.Hornets.Sieradz.SieradzBankTransferTask.SieradzBankUtils;
 using Toci.Hornets.Sieradz.UCantTouchThis.JsonParser;
 
 namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Alior

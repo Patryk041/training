@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.Sieradz.SieradzBankTransferTask;
+using Toci.Hornets.Sieradz.SieradzBankTransferTask.SieradzBankUtils;
 
 namespace Toci.Hornets.UnitTests.Sieradz.BankTransferTests
 {
