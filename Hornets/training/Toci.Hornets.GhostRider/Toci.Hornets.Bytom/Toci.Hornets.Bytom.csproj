@@ -69,6 +69,7 @@
     <Compile Include="Mes\TestClass.cs" />
     <Compile Include="Pr0fes0r\TelephoneTask\Telefon.cs" />
     <Compile Include="Pr0fes0r\Test.cs" />
+    <Compile Include="Pr0fes0r\TrainingFour\GenericListPr0fes0r.cs" />
     <Compile Include="Pr0fes0r\TrainingTwo\PeselValidator\Checsum\Sum.cs" />
     <Compile Include="Pr0fes0r\TrainingTwo\PeselValidator\Date\DataExtractor.cs" />
     <Compile Include="Pr0fes0r\TrainingTwo\PeselValidator\Date\Days.cs" />
@@ -98,7 +99,9 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Pr0fes0r\TrainingTree\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Coffee13\TaskTrainingTree\Log\FileLog.txt" />
     <Content Include="Coffee13\TaskTrainingTree\NewTransfers.xml" />
