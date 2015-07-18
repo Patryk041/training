@@ -28,8 +28,9 @@ namespace Toci.Hornets.Bytom.Vernathic.Generics
 			//sprawdź w liście
 			if (index > 0)
 			{
-				return false;
+				return true;
 			}
+			return false;
 		}
 	}
 }
