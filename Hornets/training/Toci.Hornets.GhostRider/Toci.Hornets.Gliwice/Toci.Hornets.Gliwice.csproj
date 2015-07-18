@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Diana\exampleDiana.cs" />
+    <Compile Include="Didi\Genercis\DidiGenercis.cs" />
     <Compile Include="Didi\PeselTask\DataClass.cs" />
     <Compile Include="Didi\PeselTask\ValidationPeselClass.cs" />
     <Compile Include="Didi\StringManiupulation\StringManipulationClass.cs" />

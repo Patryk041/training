@@ -67,6 +67,7 @@
     <Compile Include="GhostRider\TrainingFour\DelegatesRunner.cs" />
     <Compile Include="GhostRider\TrainingFour\ExtMethodShowdown.cs" />
     <Compile Include="GhostRider\TrainingFour\LinqTestRunner.cs" />
+    <Compile Include="Gliwice\Didi\Genercis\DidiGenerics.cs" />
     <Compile Include="Gliwice\Hipek\BankTransferTest\HipekBankTransferTest.cs" />
     <Compile Include="Gliwice\MoWerr\BankTransfers\MoWerrBankTransferTest.cs" />
     <Compile Include="Gliwice\PiotrekJ\BankTransfers.cs" />
