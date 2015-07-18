@@ -66,6 +66,7 @@
     <Compile Include="OpoleKir\Banks\INGTransferHandle.cs" />
     <Compile Include="OpoleKir\OpoleFileOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="S2yfr4nt\Homework\S2yfr4ntBank\S2yfr4ntGenericList.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntDayValidation.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntMonthValidation.cs" />
     <Compile Include="S2yfr4nt\Homework\S2yfr4ntDateValidator\S2yfr4ntYearValidation.cs" />
@@ -84,9 +85,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="OpoleKir\Banks\" />
+    <Folder Include="S2yfr4nt\Homework\S2yfr4ntGenericList\" />
     <Folder Include="S2yfr4nt\Homework\S2yfr4ntKir\" />
-    <Folder Include="S2yfr4nt\Homework\S2yfr4ntBank\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Lausion\LausionKIR\TextFile1.txt" />
