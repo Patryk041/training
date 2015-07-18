@@ -23,34 +23,29 @@ class Database {
         if ($this->CheckConnection()) {
             $columns = array_keys($content);
             $this->CreateTable($this->tableName, $columns);
+            $this->InsertContent($this->tableName, $content);
         }
         return 'Uwierzytelnianie do systemu bazy danych nie powiodło się.';
     }
 
     public function CreateTable($name, $columns) {
-        $query = " CREATE TABLE IF NOT EXIST $name ( "
+        $query = " CREATE TABLE $name ( "
                 . $this->SplitHeaders($columns)
-                . " )ENGINE = InnoDB DEFAULT CHARACTER SET = utf8 ; ";
+                . "  ) ENGINE = InnoDB; ";
         echo $query;
     }
 
     public function SplitHeaders($columns) {
         $query = '';
         foreach ($columns as $column) {
-            $query = $query." '$column'" . ' VARCHAR (128) ,';
+            $query = $query . " $column" . ' VARCHAR(45) NOT NULL,';
         }
-    
         $result = substr($query, 0, -1);
         return $result;
     }
 
 }
 
-//CREATE TABLE `test`.`test` (
-//  `raz` VARCHAR(128) NOT NULL,
-//  `dwa` VARCHAR(45) NULL,
-//  PRIMARY KEY (`raz`))
-//ENGINE = InnoDB
-//DEFAULT CHARACTER SET = utf8;
+
 $test = new Database('test');
 $test->ParseArrayToDatabase(array('raz' => 1, 'dwa' => 2));

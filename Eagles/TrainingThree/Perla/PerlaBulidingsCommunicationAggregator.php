@@ -24,5 +24,4 @@ class PerlaBulidingsCommunicationAggregator extends BuildingsCommunicationAggreg
 }
 $test = new PerlaBulidingsCommunicationAggregator();
 $file = new ParseFileContent;
-var_dump($file->GetIndexNames($test->AggregateInfo()));
 
