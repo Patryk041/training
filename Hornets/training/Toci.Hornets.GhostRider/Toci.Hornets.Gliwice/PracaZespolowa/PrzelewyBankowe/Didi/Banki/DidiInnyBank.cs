@@ -10,9 +10,9 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Didi.Banki
     class DidiInnyBank : TransferHandle, IBank
     {
         // ZLE !!! ;(
-        public DidiInnyBank(BankTransfer bankTransfer)
+        public DidiInnyBank()
         {
-            BankName = bankTransfer.DestinationBank;
+            BankName = "inny";
         }
         protected override bool Send(BankTransfer transfer)
         {

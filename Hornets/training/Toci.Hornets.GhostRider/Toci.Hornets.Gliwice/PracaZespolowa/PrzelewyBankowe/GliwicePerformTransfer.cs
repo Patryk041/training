@@ -12,10 +12,17 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
 {
    public class GliwicePerformTransfer : PerformTransfers
    {
+<<<<<<< HEAD
        //private List<BankTransfersParser> _bankTransfersList;
        //private DidiBankTransferParser _DidTransfers;
        //private RudiBankTransferParser _RudiTransfers;
        //private SoltysBankTransferParser _SoltysTransfers;
+=======
+       private List<BankTransfersParser> _bankTransfersList;
+       private DidiBankTransferParser _DidTransfers; // ing
+       private RudiBankTransferParser _RudiTransfers; // hsbc
+       private SoltysBankTransferParser _SoltysTransfers; //sant
+>>>>>>> master
 
        //private DidiBankTransferParser _DidTransfers;
        //private RudiBankTransferParser _RudiTransfers;
@@ -25,10 +32,14 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
        //{
        //    _bankTransfersList = new List<BankTransfersParser>();
 
+<<<<<<< HEAD
        //    //_DidTransfers = new DidiBankTransferParser();
        //    //_RudiTransfers = new RudiBankTransferParser();
        //    //_SoltysTransfers = new SoltysBankTransferParser();
        //}
+=======
+       }
+>>>>>>> master
 
 
         protected override List<BankTransfersParser> GetAllParsers()
@@ -37,11 +48,15 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
 
             //_bankTransfersList = generator.GetList("Gliwice");
 
+<<<<<<< HEAD
            //_bankTransfersList.Add(_DidTransfers);
            //_bankTransfersList.Add(_RudiTransfers);
            //_bankTransfersList.Add(_SoltysTransfers);
 
            return generator.GetList("Gliwice");
+=======
+           return _bankTransfersList;
+>>>>>>> master
        }
 
        protected override List<TransferHandle> GetAllHandles()

@@ -9,9 +9,9 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Didi.Banki
 {
     class DidiPKOBank : TransferHandle ,IBank
     {
-        public DidiPKOBank(BankTransfer transferBank)
+        public DidiPKOBank()
         {
-            BankName = transferBank.DestinationBank; 
+            BankName = "PKOP"; 
         }
         protected override bool Send(BankTransfer transfer)
         {
