@@ -69,6 +69,7 @@
     <Compile Include="TElephoneCommunication\SmsCommunication.cs" />
     <Compile Include="TElephoneCommunication\Telephone.cs" />
     <Compile Include="TElephoneCommunication\VoiceCommunication.cs" />
+    <Compile Include="TrainingFour\Generics\GhostRiderGenericList.cs" />
     <Compile Include="TrainingThree\BenchingOverriding.cs" />
     <Compile Include="TrainingThree\Chor\Kontrahenci.cs" />
     <Compile Include="TrainingThree\Chor\MniejszyWorekNaDane.cs" />
