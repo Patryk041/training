@@ -86,6 +86,7 @@
     <Compile Include="Michał Zembik\ZadaniePeselValidator.cs" />
     <Compile Include="Michał Zembik\ZadanieStringManipulations.cs" />
     <Compile Include="Patryk_Stulczewski\Class1.cs" />
+    <Compile Include="Patryk_Stulczewski\TrainingFour\PatrykGenericList.cs" />
     <Compile Include="Patryk_Stulczewski\TrainingTwo\Interfaces\IChecksumValidator.cs" />
     <Compile Include="Patryk_Stulczewski\TrainingTwo\Interfaces\IDateValidator.cs" />
     <Compile Include="Patryk_Stulczewski\TrainingTwo\MyPeselValidator\YearByPeselMonthGenerator.cs" />
