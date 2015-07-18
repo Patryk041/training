@@ -82,6 +82,7 @@
     <Compile Include="Sieradz\Quicksilver\BankQs\UnitTest1.cs" />
     <Compile Include="Sieradz\UCantTouchThis\BankTransfers\UCantTouchThisBankTransfersParserTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\CastingTests.cs" />
+    <Compile Include="Sieradz\UCantTouchThis\TrainingFour\UCantTouchThisGenericListTest.cs" />
     <Compile Include="Wroclaw\gipson\BankTransfer\GatAllTest.cs" />
     <Compile Include="Wroclaw\gipson\BankTransfer\TransferCreationTest.cs" />
     <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />
