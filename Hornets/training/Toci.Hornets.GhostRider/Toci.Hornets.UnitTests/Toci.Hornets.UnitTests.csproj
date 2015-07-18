@@ -70,6 +70,7 @@
     <Compile Include="Gliwice\Hipek\BankTransferTest\HipekBankTransferTest.cs" />
     <Compile Include="Gliwice\Soltys\BankTransferParserTests.cs" />
     <Compile Include="GhostRider\Kir\KirHomeworkRunner.cs" />
+    <Compile Include="Lausion\LausionGenericListTest.cs" />
     <Compile Include="Legnica\Kir\Files\PrepareBankTransfer.cs" />
     <Compile Include="Legnica\Kir\LegnicaFileOperationTests.cs" />
     <Compile Include="Legnica\Kir\LegnicaPerformTransfersTest.cs" />

@@ -4,30 +4,32 @@ namespace Toci.Hornets.Opole.Lausion.TaskFour
 {
     public class LausionGenericList<TItems> : GhostRiderGenericList<TItems>
     {
-        private int cap;
-        private int maxCap;
+        private int size;
+        private int maxSize;
         public LausionGenericList()
         {
-            cap=0;
-            maxCap = 50;
-            items=new TItems[50];
+            size=0;
+            maxSize = 15;
+            items=new TItems[maxSize];
         }
         public override bool Add(TItems item)
         {
-            if (cap <maxCap)
+            if (size <maxSize)//Jezeli nie jest pelna
             {
-                items[cap] = item;
-                cap++;
+                items[size] = item;
+                size++;
             }
-            else
+            else//Jezeli pełna
             {
-                maxCap = maxCap*5;
+                maxSize = maxSize*2;
                 var pom= items;
-                items=new TItems[maxCap];
-                for (int i = 0; i < cap; i++)
+                items=new TItems[maxSize];
+                for (int i = 0; i <pom.Length; i++)
                 {
-                    
+                    items[i] = pom[i];
                 }
+
+                Add(item);
             }
             return true;
         }
@@ -38,13 +40,14 @@ namespace Toci.Hornets.Opole.Lausion.TaskFour
                 return false;
             else
             {
-                for (int i = 0; i < cap; i++)
+                for (int i = 0; i <size; i++)
                 {
                     if (items[i].Equals(item))
                     {
                         removeItem(items, i);
-                        items[cap] = default(TItems);
-                        cap--;
+                        size--;
+                        if (size < 0.3*maxSize)
+                            resize(items);
                         return true;
                     }
                 }
@@ -54,11 +57,23 @@ namespace Toci.Hornets.Opole.Lausion.TaskFour
 
         private void removeItem(TItems[] items, int i)
         {
-            for (int j = 0,x=0; j <cap; j++)
+            int length = size;
+            size = 0;
+            for (int j = 0; j <length+1; j++)
             {
                 if (i == j) continue;
-                items[x] = items[j];
-                x++;
+                items[size++] = items[j];
+            }
+        }
+
+        private void resize(TItems[] items)
+        {
+            var pom = items;
+            maxSize = (int)(maxSize*0.7);
+            this.items=new TItems[maxSize];
+            for (int i = 0; i < size; i++)
+            {
+                this.items[i] = pom[i];
             }
         }
     }
