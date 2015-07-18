@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agata\Generics\YaghaGenericList.cs" />
     <Compile Include="Agata\Kir\YaghaBankTransfer.cs" />
     <Compile Include="Agata\Kir\YaghaBankTransferParser.cs" />
     <Compile Include="Agata\Kir\YaghaFileOperationsTxt.cs" />
@@ -133,21 +134,18 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
-
-  <ItemGroup />
-
   <ItemGroup>
     <Folder Include="Agata\Kir\BankTransferFiles\" />
     <Folder Include="bin\" />
     <Folder Include="KubaT\TrainingTwo\PeselValidator\" />
     <Folder Include="Terry\TrainingThree\TerryBank\transfers\" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Chojnecki\Kir\Przelewy.txt" />
     <Content Include="Chojnecki\Kir\x.xml" />
     <Content Include="Foonesh\TrainingThree\TransferData\TransferOne.txt" />
   </ItemGroup>
-
   <ItemGroup>
     <Content Include="KSebal\BankTransfers\SuperBank.txt" />
   </ItemGroup>
