@@ -3,7 +3,7 @@ using Toci.Hornets.GhostRider.TrainingFour.Generics;
 
 namespace Toci.Hornets.Sieradz.TypowyAdam.GenericListTaskTrainingFour
 {
-        public class TypowyAdamGenericList : GhostRiderGenericList<TItems>
+    public class TypowyAdamGenericList<TItems> : GhostRiderGenericList<TItems>
         {
 
             public override bool Add(TItems item)

@@ -64,8 +64,6 @@
     <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselValidator.cs" />
     <Compile Include="Duch\Homework 2\StringManipulator\DuchStringManipulatro.cs" />
     <Compile Include="Duch\Homework 2\StringManipulator\DuchStringUtills.cs" />
-    <Compile Include="Duch\Traning 4\DuchGenListUtil.cs" />
-    <Compile Include="Duch\Traning 4\ListEnum.cs" />
     <Compile Include="Duch\U1task\DuchStringComparator.cs" />
     <Compile Include="Jake\JakeTest.cs" />
     <Compile Include="Jake\TrainingTwo\jakePeselValidator\jakePeselValidator.cs" />
@@ -104,6 +102,7 @@
     <Compile Include="SieradzBankTransferTask\SieradzTransferInfo.cs" />
     <Compile Include="TypowyAdam\ExampleClass.cs" />
     <Compile Include="Duch\U1task\U1Utils.cs" />
+    <Compile Include="TypowyAdam\GenericListTaskTrainingFour\TypowyAdamGenericList.cs" />
     <Compile Include="TypowyAdam\TelephoneTask\TypowyAdamTelephoneTask.cs" />
     <Compile Include="TypowyAdam\TrainingTwoTasks\StringManipulator\TypowyAdamStringManipulator.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\MultiTypicalStringComparator.cs" />
