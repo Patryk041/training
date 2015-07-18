@@ -47,6 +47,7 @@
     <Compile Include="Didi\WorkWithBranchClass.cs" />
     <Compile Include="Dziara\DziaraTelephoneInterpreter.cs" />
     <Compile Include="Dziara\TestClass.cs" />
+    <Compile Include="Dziara\TrainingFour\DziaraGenericList.cs" />
     <Compile Include="Hipek\Example.cs" />
     <Compile Include="Hipek\TaskTrainingTwo\PeselValidator\HipekPeselValidator.cs" />
     <Compile Include="Hipek\TaskTrainingTwo\PeselValidator\Validates\DayValidator.cs" />
