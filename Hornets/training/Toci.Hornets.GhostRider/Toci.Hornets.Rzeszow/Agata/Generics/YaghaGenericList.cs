@@ -4,20 +4,18 @@ namespace Toci.Hornets.Rzeszow.Agata.Generics
 {
     public class YaghaGenericList<T> : Toci.Hornets.GhostRider.TrainingFour.Generics.GhostRiderGenericList<T>
     {
-        private int currentSize, size = 10;
+        private int _currentSize;
+        private const int Size = 10;
 
         public override bool Add(T item)
         {
             if (items == null)
             {
-                currentSize = size; 
-                items = new T[size];
+                _currentSize = Size; 
+                items = new T[Size];
             }
-            if (items.Length == currentSize)
-            {
-                currentSize += 10;
-                items = resizeTable(items);
-            }
+
+            items = resizeTable(items);
 
             items[items.Length] = item;
             return true;
@@ -25,19 +23,58 @@ namespace Toci.Hornets.Rzeszow.Agata.Generics
 
         public override bool Remove(T item)
         {
-            int counter = items.TakeWhile(arrayItem => !Equals(arrayItem, item)).Count();
+            if (items == null)  return false;
 
-            items[counter] = default(T);
+            int i = 0;
+            foreach (var element in items)
+            {
+                if (element.Equals(item))
+                {
+                    for (var j = i; j < items.Length; j++)
+                    {
+                        items[j] = items[j + 1];
+                    }
+                    items[items.Length] = default(T);
+                    break;
+                }
+                i++;
+            }
 
-            items = (T[]) items.Where(x => !x.Equals(null));
+            items = resizeTable(items);
             return true;
         }
 
+
         private T[] resizeTable(T[] items)
         {
-            T[] itemsTemp = new T[currentSize];
-            itemsTemp = items;
-            return itemsTemp;
+            if (items.Length >= 0.75 * (_currentSize))
+            {
+                _currentSize *= 2;
+                var itemsTemp = new T[_currentSize];
+                return rewriteTable(items, itemsTemp);
+            }
+
+            if (items.Length <= 0.33 * (_currentSize))
+            {
+                _currentSize = (int)(0.5*_currentSize);
+                var itemsTemp = new T[_currentSize];
+                return rewriteTable(items, itemsTemp);
+            }
+            return items;
         }
+
+
+        private T[] rewriteTable(T[] items, T[] itemsNew)
+        {
+            int i = 0;
+            foreach (var element in items)
+            {
+                itemsNew[i] = element;
+                i++;
+            }
+            return itemsNew;
+        }
+
+
     }
 }
