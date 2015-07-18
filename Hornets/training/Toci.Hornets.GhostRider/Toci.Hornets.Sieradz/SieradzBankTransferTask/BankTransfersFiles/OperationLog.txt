@@ -1,8 +1,8 @@
 Alior => Alior : Powodzenie 
-Alior => Pekao : Powodzenie 
 Hellada => Hellada : Powodzenie 
 Pekao => Hellada : Błąd 
 mBank => Hellada : Błąd 
+Alior => Pekao : Powodzenie 
 Alior => Hellada : Błąd 
 Alior => ING : Błąd 
 BPH => Alior : Powodzenie 
@@ -14,6 +14,6 @@ Pekao => Alior : Powodzenie
 Pekao => Hellada : Błąd 
 Pekao => ING : Błąd 
 Pekao => Pekao : Powodzenie 
-Alior => mBank : Powodzenie 
 mBank => mBank : Powodzenie 
+Alior => mBank : Powodzenie 
 Pekao => mBank : Powodzenie 

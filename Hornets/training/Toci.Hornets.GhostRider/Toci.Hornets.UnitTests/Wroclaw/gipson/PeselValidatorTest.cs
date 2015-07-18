@@ -11,7 +11,7 @@ namespace Toci.Hornets.UnitTests.Wrocław.gipson
         public void PeselValidatorTestMethod()
         {
             GipsonPeselValidator vd = new GipsonPeselValidator();
-            Assert.IsTrue(vd.IsPeselValid("91130110450"));
+            Assert.IsTrue(vd.IsPeselValid("91930110450"));
         }
     }
 }

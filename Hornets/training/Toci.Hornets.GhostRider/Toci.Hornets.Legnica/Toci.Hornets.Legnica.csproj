@@ -74,6 +74,10 @@
     <Compile Include="Mateusz Smigowski\NewClass.cs" />
     <Compile Include="Mateusz_Malolepszy\NewTestClass.cs" />
     <Compile Include="Michał Zembik\Arbak.cs" />
+    <Compile Include="Michał Zembik\FTPcs\filemikzeoperation.cs" />
+    <Compile Include="Michał Zembik\FTPcs\FTPcs.cs" />
+    <Compile Include="Michał Zembik\FTPcs\GetFile.cs" />
+    <Compile Include="Michał Zembik\FTPcs\SendFile.cs" />
     <Compile Include="Michał Zembik\Interface1.cs" />
     <Compile Include="Michał Zembik\ZadaniePeselValidator.cs" />
     <Compile Include="Michał Zembik\ZadanieStringManipulations.cs" />
@@ -90,14 +94,25 @@
     <Compile Include="Patryk_Stulczewski\Utils\StringExtension.cs" />
     <Compile Include="Patryk_Stulczewski\Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Qubaa159\Klasa1.cs" />
     <Compile Include="TelefonTask\FilipPhoneExercise.cs" />
     <Compile Include="TelefonTask\KobraPhoneTask.cs" />
     <Compile Include="TelefonTask\PatrykTelephoneInterpreter.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\BankTransfersParsers\BzwbkBankTransfrsParser.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\BankTransfersParsers\IngBankTransfersParser.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\BankTransfersParsers\NordeaBankTransfersParser.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\BankTransfersParsers\PekaoBankTransfersParser.cs" />
     <Compile Include="zadania_grupowe\Legnica_Kir\Factories\BankTransfersParserFactory.cs" />
     <Compile Include="zadania_grupowe\Legnica_Kir\Factories\BankName.cs" />
-    <Compile Include="zadania_grupowe\Legnica_Kir\Factories\ParserType.cs" />
     <Compile Include="zadania_grupowe\Legnica_Kir\Factories\TransferHandleFactory.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\Files\AlmostLikeADatebase.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\LegnicaBankTransfer.cs" />
+    <Compile Include="zadania_grupowe\Legnica_Kir\LegnicaFileOperation.cs" />
     <Compile Include="zadania_grupowe\Legnica_Kir\LegnicaPerformTransfers.cs" />
     <Compile Include="zadania_grupowe\Legnica_Kir\LegnicaTransferHandle.cs" />
     <Compile Include="zadania_grupowe\Legnica_Kir\TransferHandles\BzwbkTransferHandle.cs" />
@@ -111,7 +126,26 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="zadania_grupowe\Legnica_Kir\Files\BankTransfersToDo\Bzwbk\" />
+    <Folder Include="zadania_grupowe\Legnica_Kir\Files\BankTransfersToDo\Ing\" />
+    <Folder Include="zadania_grupowe\Legnica_Kir\Files\BankTransfersToDo\Pekao\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="zadania_grupowe\Legnica_Kir\Files\BankTransfersToDo\Nordea\Nordea.Txt" />
+    <Content Include="zadania_grupowe\Legnica_Kir\Files\BankTransfersToDo\Nordea\t1.txt" />
+    <Content Include="zadania_grupowe\Legnica_Kir\Files\TransfersReceived\Bzwbk\Bzwbk.txt" />
+    <Content Include="zadania_grupowe\Legnica_Kir\Files\TransfersReceived\Ing\Ing.txt" />
+    <Content Include="zadania_grupowe\Legnica_Kir\Files\TransfersReceived\Nordea\Nordea.txt" />
+    <Content Include="zadania_grupowe\Legnica_Kir\Files\TransfersReceived\Pekao\Pekao.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

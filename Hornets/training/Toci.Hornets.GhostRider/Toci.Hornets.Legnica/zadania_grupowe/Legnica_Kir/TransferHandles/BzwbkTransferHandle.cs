@@ -11,7 +11,7 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.TransferHandles
 
         protected override bool Send(BankTransfer transfer)
         {
-            throw new System.NotImplementedException();
+            return true;
         }
     }
 }

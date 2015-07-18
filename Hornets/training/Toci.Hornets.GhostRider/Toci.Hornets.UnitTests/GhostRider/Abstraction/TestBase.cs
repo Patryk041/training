@@ -12,7 +12,7 @@ namespace Toci.Hornets.UnitTests.GhostRider.Abstraction
         {
             "Toci.Hornets.Bytom",
             "Toci.Hornets.Gliwice",
-            "Toci.Hornets.Kalisz",
+           // "Toci.Hornets.Kalisz",
             "Toci.Hornets.Legnica",
             "Toci.Hornets.Opole",
             "Toci.Hornets.Rzeszow",
