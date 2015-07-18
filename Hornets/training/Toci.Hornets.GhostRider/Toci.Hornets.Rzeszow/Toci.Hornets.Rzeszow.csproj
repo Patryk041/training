@@ -39,6 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agata\Kir\YaghaBankTransfer.cs" />
+    <Compile Include="Agata\Kir\YaghaBankTransferParser.cs" />
+    <Compile Include="Agata\Kir\YaghaFileOperationsTxt.cs" />
+    <Compile Include="Agata\Kir\YaghaPerformTransfers.cs" />
+    <Compile Include="Agata\Kir\YaghaTransferHandle.cs" />
     <Compile Include="Agata\TasksTrainingTwo\Date.cs" />
     <Compile Include="Agata\TasksTrainingTwo\YaghaPeselValidator.cs" />
     <Compile Include="Agata\TasksTrainingTwo\YaghaStringManipulations.cs" />
@@ -71,6 +76,10 @@
     <Compile Include="KSebal\traning2Homework\Pesel\KsebalPeselValidator.cs" />
     <Compile Include="KSebal\traning2Homework\Pesel\PeselDate.cs" />
     <Compile Include="KSebal\traning2Homework\Pesel\PeselSumValidator.cs" />
+    <Compile Include="KSebal\traningThreeHomework\KsebalBankTransfer.cs" />
+    <Compile Include="KSebal\traningThreeHomework\KsebalBankTransferParser.cs" />
+    <Compile Include="KSebal\traningThreeHomework\KsebalTransferHandle.cs" />
+    <Compile Include="KSebal\traningThreeHomework\UserPath.cs" />
     <Compile Include="KubaT\TelephoneTask\TelephonTaskHomework.cs" />
     <Compile Include="KubaT\TestClass.cs" />
     <Compile Include="KubaT\TrainingTwo\StringOperations\KubaTStringOperations.cs" />
@@ -128,6 +137,7 @@
   <ItemGroup />
 
   <ItemGroup>
+    <Folder Include="Agata\Kir\BankTransferFiles\" />
     <Folder Include="bin\" />
     <Folder Include="KubaT\TrainingTwo\PeselValidator\" />
     <Folder Include="Terry\TrainingThree\TerryBank\transfers\" />
@@ -138,6 +148,9 @@
     <Content Include="Foonesh\TrainingThree\TransferData\TransferOne.txt" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="KSebal\BankTransfers\SuperBank.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
