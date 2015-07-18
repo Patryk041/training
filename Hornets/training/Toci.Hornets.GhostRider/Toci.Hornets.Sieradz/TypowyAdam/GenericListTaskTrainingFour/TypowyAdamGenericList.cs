@@ -1,5 +1,6 @@
 ﻿using System.Drawing.Design;
 using Toci.Hornets.GhostRider.TrainingFour.Generics;
+using Toci.Hornets.Sieradz.Duch.Traning;
 
 namespace Toci.Hornets.Sieradz.TypowyAdam.GenericListTaskTrainingFour
 {
@@ -7,13 +8,15 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.GenericListTaskTrainingFour
         {
 
             public override bool Add(TItems item)
-        {
- 	    throw new System.NotImplementedException();
-        }
+            {
+                DuchGenListUtil<TItems>.ListMagic(items, ListEnum.Add, item);
+                return true;
+            }
 
             public override bool Remove(TItems item)
-        {
- 	    throw new System.NotImplementedException();
-        }
+            {
+                DuchGenListUtil<TItems>.ListMagic(items, ListEnum.Remove, item);
+                return true;
+            }
     }
 }
