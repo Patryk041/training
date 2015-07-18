@@ -81,6 +81,7 @@
     <Compile Include="KSebal\traningThreeHomework\KsebalBankTransferParser.cs" />
     <Compile Include="KSebal\traningThreeHomework\KsebalTransferHandle.cs" />
     <Compile Include="KSebal\traningThreeHomework\UserPath.cs" />
+    <Compile Include="KSebal\zadanko\KsebalItemGenericsOperation.cs" />
     <Compile Include="KubaT\TelephoneTask\TelephonTaskHomework.cs" />
     <Compile Include="KubaT\TestClass.cs" />
     <Compile Include="KubaT\TrainingTwo\StringOperations\KubaTStringOperations.cs" />
