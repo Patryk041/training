@@ -10,14 +10,25 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.GenericListTaskTrainingFour
 
             public override bool Add(TItems item)
             {
-                DuchGenListUtil<TItems>.ListMagic(items, ListEnum.Add, item);
+                TItems[] newItems = new TItems[items.Length + 1];
+                for(int i = 0; i<items.Length-1;i++)
+                {
+                    newItems[i] = items[i];
+                }
+                newItems[newItems.Length - 1] = item;
                 return items.Count() == 0 ? false : true;
             }
 
             public override bool Remove(TItems item)
             {
-                if (items.Count() == 0) return false;
-                DuchGenListUtil<TItems>.ListMagic(items, ListEnum.Remove, item);
+               /* TItems[] newItems = new TItems[items.Length-1];
+                for (int i = 0; i < newItems.Length - 1; i++)
+                {
+                    if (items[i] == item)
+                    {
+                        
+                    }
+                }*/
                 return true;
             }
     }
