@@ -53,6 +53,7 @@
     <Compile Include="Lausion\ExampeClass.cs" />
     <Compile Include="Lausion\LausionKIR\LausionBankTransfer.cs" />
     <Compile Include="Lausion\LausionKIR\LausionBankTransfersParser.cs" />
+    <Compile Include="Lausion\TaskFour\LausionGenericList.cs" />
     <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Day.cs" />
     <Compile Include="Lausion\TasksTraningTwo\PeselValidator\LausionPeselValidator.cs" />
     <Compile Include="Lausion\TasksTraningTwo\PeselValidator\Month.cs" />
