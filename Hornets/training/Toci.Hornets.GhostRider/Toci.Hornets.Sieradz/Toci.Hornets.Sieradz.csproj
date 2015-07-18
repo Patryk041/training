@@ -104,6 +104,7 @@
     <Compile Include="SieradzBankTransferTask\SieradzTransferInfo.cs" />
     <Compile Include="TypowyAdam\ExampleClass.cs" />
     <Compile Include="Duch\U1task\U1Utils.cs" />
+    <Compile Include="TypowyAdam\GenericListTaskTrainingFour\TypowyAdamGenericList.cs" />
     <Compile Include="TypowyAdam\TelephoneTask\TypowyAdamTelephoneTask.cs" />
     <Compile Include="TypowyAdam\TrainingTwoTasks\StringManipulator\TypowyAdamStringManipulator.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\MultiTypicalStringComparator.cs" />

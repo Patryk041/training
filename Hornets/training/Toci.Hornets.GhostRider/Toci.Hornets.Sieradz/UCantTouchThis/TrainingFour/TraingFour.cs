@@ -3,7 +3,7 @@ using Toci.Hornets.Sieradz.Duch.Traning;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.TrainingFour
 {
-    public class TraingFour<TItems> : GhostRiderGenericList<TItems>
+    public class UCantTouchThisTraingFour<TItems> : GhostRiderGenericList<TItems>
     {
         public override bool Add(TItems item)
         {
