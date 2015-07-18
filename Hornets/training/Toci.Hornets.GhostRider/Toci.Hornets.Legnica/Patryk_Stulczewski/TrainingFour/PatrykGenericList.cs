@@ -25,11 +25,11 @@ namespace Toci.Hornets.Legnica.Patryk_Stulczewski.TrainingFour
 
         public override bool Remove(T item)
         {
-            var numbers = items.Where(val => !val.Equals(item)).ToArray();            
-            if (numbers.Length != items.Length)
+            var tab = items.Where(val => !val.Equals(item)).ToArray();            
+            if (tab.Length != items.Length)
             {
-                _top -= items.Length - numbers.Length;
-                items = numbers;
+                _top -= items.Length - tab.Length;
+                items = tab;
                 return true;
             }
             return false;
