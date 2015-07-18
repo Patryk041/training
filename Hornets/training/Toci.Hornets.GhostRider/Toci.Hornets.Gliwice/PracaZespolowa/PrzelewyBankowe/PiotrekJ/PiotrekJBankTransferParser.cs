@@ -7,7 +7,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.PiotrekJ
 {
     public class PiotrekJBankTransferParser : BankTransfersParser
     {
-        static FileOperation fileOperation = new GliwiceFileOperation();
+        private static FileOperation fileOperation = new GliwiceFileOperation();
         private List<BankTransfer> _bankTransfersList;
         private string _filePath = fileOperation.GetFileContent(@"..\\..\\..\\Toci.Hornets.Gliwice\\PracaZespolowa\\PrzelewyBankowe\\PiotrekJ\\PiotrekJBankTransfersList.txt");
         private string[] _entriesSeparator = { "\r\n", ";" };
