@@ -80,6 +80,7 @@
     <Compile Include="KSebal\traningThreeHomework\KsebalBankTransferParser.cs" />
     <Compile Include="KSebal\traningThreeHomework\KsebalTransferHandle.cs" />
     <Compile Include="KSebal\traningThreeHomework\UserPath.cs" />
+    <Compile Include="KSebal\zadanko\KsebalItemGenericsOperation.cs" />
     <Compile Include="KubaT\TelephoneTask\TelephonTaskHomework.cs" />
     <Compile Include="KubaT\TestClass.cs" />
     <Compile Include="KubaT\TrainingTwo\StringOperations\KubaTStringOperations.cs" />
@@ -133,21 +134,18 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
-
-  <ItemGroup />
-
   <ItemGroup>
     <Folder Include="Agata\Kir\BankTransferFiles\" />
     <Folder Include="bin\" />
     <Folder Include="KubaT\TrainingTwo\PeselValidator\" />
     <Folder Include="Terry\TrainingThree\TerryBank\transfers\" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Chojnecki\Kir\Przelewy.txt" />
     <Content Include="Chojnecki\Kir\x.xml" />
     <Content Include="Foonesh\TrainingThree\TransferData\TransferOne.txt" />
   </ItemGroup>
-
   <ItemGroup>
     <Content Include="KSebal\BankTransfers\SuperBank.txt" />
   </ItemGroup>
