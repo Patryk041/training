@@ -13,9 +13,9 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
    public class GliwicePerformTransfer : PerformTransfers
    {
        private List<BankTransfersParser> _bankTransfersList;
-       private DidiBankTransferParser _DidTransfers;
-       private RudiBankTransferParser _RudiTransfers;
-       private SoltysBankTransferParser _SoltysTransfers;
+       private DidiBankTransferParser _DidTransfers; // ing
+       private RudiBankTransferParser _RudiTransfers; // hsbc
+       private SoltysBankTransferParser _SoltysTransfers; //sant
 
        //private DidiBankTransferParser _DidTransfers;
        //private RudiBankTransferParser _RudiTransfers;
@@ -25,9 +25,6 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
        {
            _bankTransfersList = new List<BankTransfersParser>();
 
-           _DidTransfers = new DidiBankTransferParser();
-           _RudiTransfers = new RudiBankTransferParser();
-           _SoltysTransfers = new SoltysBankTransferParser();
        }
 
 
@@ -36,10 +33,6 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
             ParsersGenerator generator = new ParsersGenerator();
 
             _bankTransfersList = generator.GetList("Gliwice");
-
-           _bankTransfersList.Add(_DidTransfers);
-           _bankTransfersList.Add(_RudiTransfers);
-           _bankTransfersList.Add(_SoltysTransfers);
 
            return _bankTransfersList;
        }

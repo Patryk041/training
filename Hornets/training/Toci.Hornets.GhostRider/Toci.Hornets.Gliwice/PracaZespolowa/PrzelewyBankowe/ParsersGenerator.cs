@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using Toci.Hornets.GhostRider.Kir;
 using Toci.Hornets.GhostRider.Kir.GhostRiderSolution;
+using Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Hipek;
 using Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Rudi;
+using Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Soltys;
 
 namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
 {
@@ -14,7 +16,9 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
                 { "Gliwice", new List<BankTransfersParser>
                     {
                         new DidiBankTransferParser(),
-                        new RudiBankTransferParser()
+                        new RudiBankTransferParser(),
+                        new SoltysBankTransferParser(),
+                        new HipekBankTransferParser()
                     }
                 }
             };
