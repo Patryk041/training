@@ -59,6 +59,7 @@
     <Compile Include="Coffee13\TaskTrainingTwo\StringManipulator\CoffeeStringManipulations.cs" />
     <Compile Include="Coffee13\TelephoneTask\TaskOneTelephone.cs" />
     <Compile Include="Common\Interfaces\IPeselValidator.cs" />
+    <Compile Include="InkNinja\TrainingFour\InkGenericTask.cs" />
     <Compile Include="InkNinja\TrainingTwo\CommunicationTask\InkInterpreter.cs" />
     <Compile Include="InkNinja\TrainingTwo\PeselValidation\PeselValidation.cs" />
     <Compile Include="InkNinja\TrainingTwo\StringTask\InkString.cs" />
