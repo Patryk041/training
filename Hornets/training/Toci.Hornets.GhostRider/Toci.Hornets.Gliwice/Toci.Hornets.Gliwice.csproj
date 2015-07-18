@@ -92,6 +92,7 @@
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Soltys\SoltysBankTransferParser.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Soltys\SoltysTransferHandlerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rudi\RudiGenericList.cs" />
     <Compile Include="Rudi\TrainingTwo\RudiPeselValidator.cs" />
     <Compile Include="Rudi\TrainingTwo\RudiStringManipulations.cs" />
     <Compile Include="Rudi\TrainingTwo\RudiTelephoneInterpreter.cs" />

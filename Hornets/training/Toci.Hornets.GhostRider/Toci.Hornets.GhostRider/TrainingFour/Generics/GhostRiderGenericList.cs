@@ -1,4 +1,4 @@
-﻿namespace Toci.Hornets.GhostRider.TrainingFour.Generics
+﻿`namespace Toci.Hornets.GhostRider.TrainingFour.Generics
 {
     public abstract class GhostRiderGenericList<TItems>
     {
