@@ -11,24 +11,24 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.GenericListTaskTrainingFour
             public override bool Add(TItems item)
             {
                 TItems[] newItems = new TItems[items.Length + 1];
-                for(int i = 0; i<items.Length-1;i++)
+                for(int i = 0; i<items.Length;i++)
                 {
                     newItems[i] = items[i];
                 }
                 newItems[newItems.Length - 1] = item;
+                items = newItems;
                 return items.Count() == 0 ? false : true;
             }
 
             public override bool Remove(TItems item)
             {
-               /* TItems[] newItems = new TItems[items.Length-1];
-                for (int i = 0; i < newItems.Length - 1; i++)
+                TItems[] newItems = new TItems[items.Length-1];
+                for (int i = 0; i < newItems.Length; i++)
                 {
-                    if (items[i] == item)
-                    {
-                        
-                    }
-                }*/
+                    if (items[i].Equals(item))
+                        continue;
+                    newItems[i] = items[i];
+                }
                 return true;
             }
     }
