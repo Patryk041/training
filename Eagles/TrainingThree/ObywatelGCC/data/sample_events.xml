@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<DevicesEvents>
+<Event>
+		<HomeAddress>1</HomeAddress>
+		<DeviceName>2</DeviceName>
+		<Operation>
+			<OperationType>3</OperationType>
+			<OperationHour>4</OperationHour>
+			<OperationTime>5</OperationTime>
+			<OperatorionEnergyUsage>6</OperatorionEnergyUsage>
+			<OperationErrors>7</OperationErrors>
+			<OperationExtraInfo>8</OperationExtraInfo>
+		</Operation>
+</Event>
+<Event>
+		<HomeAddress></HomeAddress>
+		<DeviceName></DeviceName>
+		<Operation>
+			<OperationType></OperationType>
+			<OperationHour></OperationHour>
+			<OperationTime></OperationTime>
+			<OperatorionEnergyUsage></OperatorionEnergyUsage>
+			<OperationErrors></OperationErrors>
+			<OperationExtraInfo></OperationExtraInfo>
+		</Operation>
+</Event>
+	<Event>
+		<HomeAddress></HomeAddress>
+		<DeviceName></DeviceName>
+		<Operation>
+			<OperationType></OperationType>
+			<OperationHour></OperationHour>
+			<OperationTime></OperationTime>
+			<OperatorionEnergyUsage></OperatorionEnergyUsage>
+			<OperationErrors></OperationErrors>
+			<OperationExtraInfo></OperationExtraInfo>
+		</Operation>
+	</Event>
+	<Event>
+		<HomeAddress></HomeAddress>
+		<DeviceName></DeviceName>
+		<Operation>
+			<OperationType></OperationType>
+			<OperationHour></OperationHour>
+			<OperationTime></OperationTime>
+			<OperatorionEnergyUsage></OperatorionEnergyUsage>
+			<OperationErrors></OperationErrors>
+			<OperationExtraInfo></OperationExtraInfo>
+		</Operation>
+	</Event>
+</DevicesEvents>
