@@ -11,6 +11,10 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.GenericListTaskTrainingFour
             {
                 items = new TItems[0];
             }
+            public TypowyAdamGenericList(int size)
+            {
+                items = new TItems[size];
+            }
 
         public override bool Add(TItems item)
             {

@@ -22,7 +22,19 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam
             testGenericList.Remove(1);
             Assert.AreEqual(testGenericList.GetArrayLenght(), 4);
             Assert.AreEqual(testGenericList.GetAllItems().ToList().Sum(), 14);
-            
+            int initialsize = 5;
+            testGenericList = new TypowyAdamGenericList<int>(initialsize);
+            testGenericList.Add(5);
+            testGenericList.Add(4);
+            testGenericList.Add(3);
+            testGenericList.Add(2);
+            testGenericList.Add(1);
+            Assert.AreEqual(testGenericList.GetArrayLenght(), 5 + initialsize);
+            Assert.AreEqual(testGenericList.GetAllItems().ToList().Sum(), 15);
+            testGenericList.Remove(1);
+            Assert.AreEqual(testGenericList.GetArrayLenght(), 4 + initialsize);
+            Assert.AreEqual(testGenericList.GetAllItems().ToList().Sum(), 14);
+
         }
 
         
