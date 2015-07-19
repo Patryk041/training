@@ -5,21 +5,32 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntGenericList
 {
     public class S2yfr4ntGenericList<TItems>: GhostRiderGenericList<TItems>
     {
+        private bool IsArrayEmpty = true;
+
         public override bool Add(TItems item)
         {
-            if(items.Length == 0)
-                items = new[]{item};
+            if (IsArrayEmpty)
+            {
+                items = new[] {item};
+                IsArrayEmpty = false;
+            }
             else
             {
-                TItems[] array = new TItems[items.Length];
-                for (int i = 0; i < items.Length-1; i++)
+                TItems[] array = new TItems[items.Length + 1];
+                for (int i = 0; i < items.Length; i++)
                 {
                     array[i] = items[i];
                 }
-                array[array.Length] = item;
-                items = array;
+
+                array[array.Length - 1] = item;
+                items = new TItems[array.Length];
+
+                for (int i = 0; i < array.Length; i++)
+                {
+                    items[i] = array[i];
+                }
             }
-            
+
             return true;
         }
 
@@ -30,7 +41,7 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntGenericList
            // TItems[] array = new TItems[items.Length-1];
             for (int i = 0; i < items.Length; i++)
             {
-                if (!items[i].Equals(item))
+                if (items[i].Equals(item))
                 {
                     RemoveItem(i);
                     return true;
@@ -38,7 +49,7 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntGenericList
             }
             return false;
         }
-        public void RemoveItem(int indexOfItem)
+        private void RemoveItem(int indexOfItem)
         {
             TItems[] array = new TItems[items.Length - 1];
             for (int i = 0, j=0; i < items.Length; i++, j++)
@@ -49,7 +60,11 @@ namespace Toci.Hornets.Opole.S2yfr4nt.Homework.S2yfr4ntGenericList
                 }
                 else j--;
             }
-            items = array;
+            items = new TItems[array.Length];
+            for (int i = 0; i < array.Length; i++)
+            {
+                items[i] = array[i];
+            }
 
         }
     }
