@@ -103,6 +103,10 @@
     <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzPerformTransfers.cs" />
     <Compile Include="SieradzBankTransferTask\SieradzTransferInfo.cs" />
+    <Compile Include="TypowyAdam\ArchitectureOrigin\Disease.cs" />
+    <Compile Include="TypowyAdam\ArchitectureOrigin\PatientData.cs" />
+    <Compile Include="TypowyAdam\ArchitectureOrigin\Symptom.cs" />
+    <Compile Include="TypowyAdam\ArchitectureOrigin\TryToFoundDiseaseHandler.cs" />
     <Compile Include="TypowyAdam\ExampleClass.cs" />
     <Compile Include="Duch\U1task\U1Utils.cs" />
     <Compile Include="TypowyAdam\GenericListTaskTrainingFour\TypowyAdamGenericList.cs" />
