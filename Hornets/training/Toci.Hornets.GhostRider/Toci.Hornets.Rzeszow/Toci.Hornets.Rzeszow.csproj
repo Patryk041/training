@@ -59,6 +59,7 @@
     <Compile Include="Chojnecki\Kir\AndrzejPerformTransfers.cs" />
     <Compile Include="Chojnecki\Kir\AndrzejTransferHandle.cs" />
     <Compile Include="Chojnecki\TelePhone\MyPhone.cs" />
+    <Compile Include="Chojnecki\trainingFour\AndrzejGen.cs" />
     <Compile Include="Chojnecki\TrainingTwoPESEL\DateMenager.cs" />
     <Compile Include="Chojnecki\TrainingTwoPESEL\PeselNumbersControler.cs" />
     <Compile Include="Chojnecki\TrainingTwoPESEL\AndrzejPeselValidator.cs" />
