@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices.ComTypes;
-using Toci.Hornets.GhostRider.Kir;
+﻿using Toci.Hornets.GhostRider.Kir;
 using Toci.Hornets.Sieradz.SieradzBankTransferTask;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.CastingExamples
