@@ -7,8 +7,12 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.GenericListTaskTrainingFour
 {
     public class TypowyAdamGenericList<TItems> : GhostRiderGenericList<TItems>
         {
+            public TypowyAdamGenericList()
+            {
+                items = new TItems[0];
+            }
 
-            public override bool Add(TItems item)
+        public override bool Add(TItems item)
             {
                 TItems[] newItems = new TItems[items.Length + 1];
                 for(int i = 0; i<items.Length;i++)
@@ -29,7 +33,13 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.GenericListTaskTrainingFour
                         continue;
                     newItems[i] = items[i];
                 }
+                items = newItems;
                 return true;
             }
-    }
+
+            public int GetArrayLenght()
+            {
+                return items.Length;
+            }
+        }
 }
