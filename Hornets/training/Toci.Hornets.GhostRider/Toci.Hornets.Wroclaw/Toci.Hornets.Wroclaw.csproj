@@ -59,6 +59,10 @@
     <Compile Include="Kollwing\TelephoneTask\ChooseOperation.cs" />
     <Compile Include="egg7\NormalClass.cs" />
     <Compile Include="Kollwing\test.cs" />
+    <Compile Include="LidiaM\myclass.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Perła\TelephoneTask\ChoseOperation.cs" />
     <Compile Include="Perła\test.cs" />
     <Compile Include="Pilot\Classme.cs" />
@@ -75,6 +79,7 @@
     <Compile Include="Tszulczewski\TelephoneTask\HomeWorkClass.cs" />
     <Compile Include="Tszulczewski\Training2HomeWork\TszulczewskiStringManipulations.cs" />
     <Compile Include="Wudzinski\Example.cs" />
+    <Compile Include="Wudzinski\TelephoneTask\WudzinskiTelephoneInterpreter.cs" />
     <Compile Include="Wyga\StringTask.cs" />
     <Compile Include="Wyga\Telephone Task\MyTelephoneTask.cs" />
   </ItemGroup>
@@ -88,12 +93,18 @@
     <Folder Include="AdamPast\GipsonKIR\CompletedTransfers\" />
     <Folder Include="bin\" />
     <Folder Include="egg7\TelephoneTask\" />
+    <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Perła\Homework Telephone\" />
     <Folder Include="RFelich\Training2\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdamPast\GipsonKIR\Transactions\Transactions1.txt" />
     <Content Include="AdamPast\GipsonKIR\Transactions\TransactionsDemo.txt" />
+    <Content Include="obj\Debug\Toci.Hornets.Wroclaw.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Toci.Hornets.Wroclaw.dll" />
+    <Content Include="obj\Debug\Toci.Hornets.Wroclaw.pdb" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Toci.Hornets.Wroclaw.csprojResolveAssemblyReference.cache" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
