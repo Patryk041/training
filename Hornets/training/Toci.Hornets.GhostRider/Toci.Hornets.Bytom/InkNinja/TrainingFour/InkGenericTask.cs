@@ -12,12 +12,19 @@ namespace Toci.Hornets.Bytom.InkNinja.TrainingFour
 
         public override bool Add(TItems item)
         {
-            TItems[] temp = new TItems[items.Length + 1];
+            TItems [] temp;
+            if (items == null)
+            {
+                temp = new TItems[1];
+                items = new TItems[0];
+            }
+            else
+                temp = new TItems[items.Length + 1];
             for (int i = 0; i < items.Length; i++)
             {
                 temp[i] = items[i];
             }
-            temp[items.Length] = item;
+            temp[temp.Length-1] = item;
             items = temp;
             return true;
         }
@@ -25,7 +32,9 @@ namespace Toci.Hornets.Bytom.InkNinja.TrainingFour
         public override bool Remove(TItems item)
         {
             bool f = false;
-            TItems[] temp = new TItems[items.Length-1];
+            if (items == null)
+                return false;
+            TItems[] temp = new TItems[items.Length];
             for (int i = 0; i < items.Length; i++)
             {
                 if (items[i].Equals(item) && !f)
@@ -42,7 +51,11 @@ namespace Toci.Hornets.Bytom.InkNinja.TrainingFour
 
             }
             if (f)
-                items = temp;
+            {
+                items= new TItems[items.Length-1];
+                for (int i = 0; i < temp.Length - 1; i++)
+                    items[i] = temp[i];
+            }
             return f;
 
         }
