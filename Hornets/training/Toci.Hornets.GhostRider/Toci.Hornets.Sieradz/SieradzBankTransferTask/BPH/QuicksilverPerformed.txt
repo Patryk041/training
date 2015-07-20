@@ -4,4 +4,4 @@ Numer konta nadawcy przelewu: 86106024981234567890123456
  Nazwisko odbiorcy: Skrzyniarz 
  Tytułem: Naprawa 
  Kwota: 50 
- Data wykonania: 07/19/2015 2:51 
+ Data wykonania: 07/20/2015 2:17 

@@ -1,4 +1,5 @@
 ﻿using System.Drawing.Design;
+using System.Linq;
 using Toci.Hornets.GhostRider.TrainingFour.Generics;
 using Toci.Hornets.Sieradz.Duch.Traning;
 
@@ -6,17 +7,43 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.GenericListTaskTrainingFour
 {
     public class TypowyAdamGenericList<TItems> : GhostRiderGenericList<TItems>
         {
-
-            public override bool Add(TItems item)
+            public TypowyAdamGenericList()
             {
-                DuchGenListUtil<TItems>.ListMagic(items, ListEnum.Add, item);
-                return true;
+                items = new TItems[0];
+            }
+            public TypowyAdamGenericList(int size)
+            {
+                items = new TItems[size];
+            }
+
+        public override bool Add(TItems item)
+            {
+                TItems[] newItems = new TItems[items.Length + 1];
+                for(int i = 0; i<items.Length;i++)
+                {
+                    newItems[i] = items[i];
+                }
+                newItems[newItems.Length - 1] = item;
+                items = newItems;
+                return items.Count() == 0 ? false : true;
             }
 
             public override bool Remove(TItems item)
             {
-                DuchGenListUtil<TItems>.ListMagic(items, ListEnum.Remove, item);
+                TItems[] newItems = new TItems[items.Length-1];
+                for (int i = 0; i < newItems.Length; i++)
+                {
+                    if (items[i].Equals(item))
+                        continue;
+                    newItems[i] = items[i];
+                }
+                items = newItems;
                 return true;
             }
-    }
+
+            public int GetArrayLenght()
+            {
+                return items.Length;
+            }
+        }
 }
