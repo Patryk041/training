@@ -12,11 +12,11 @@ namespace Toci.Hornets.Wroclaw.Wudzinski.TelephoneTask
             {
                 return new PhotoCommunication();
             }
-            else if (chosenOption == 1)
+            else if (chosenOption == 2)
             {
                 return new SmsCommunication();
             }
-            else if (chosenOption == 1)
+            else if (chosenOption == 3)
             {
                 return new VoiceCommunication();
             }
