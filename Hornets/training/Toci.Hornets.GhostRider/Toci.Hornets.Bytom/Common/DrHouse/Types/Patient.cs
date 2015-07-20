@@ -1,4 +1,4 @@
-﻿namespace Toci.Hornets.Bytom.Common.DrHouse
+﻿namespace Toci.Hornets.Bytom.Common.DrHouse.Types
 {
 	public abstract class Patient
 	{
