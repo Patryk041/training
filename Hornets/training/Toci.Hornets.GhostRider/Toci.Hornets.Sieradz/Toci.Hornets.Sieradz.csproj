@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Architektura\Abstract\BodyPart.cs" />
+    <Compile Include="Architektura\Abstract\PatientData.cs" />
+    <Compile Include="Architektura\Abstract\TryToFindDiseaseHandler.cs" />
+    <Compile Include="Architektura\Enums\GenderEnum.cs" />
+    <Compile Include="Architektura\Abstract\Disease.cs" />
+    <Compile Include="Architektura\Interfaces\ISymptom.cs" />
     <Compile Include="DeeJay\DjExampleAbstract.cs" />
     <Compile Include="DeeJay\DjExampleClass.cs" />
     <Compile Include="DeeJay\ExampleDeeJayClass.cs" />
@@ -129,9 +135,9 @@
     <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisStringManipulations.cs" />
     <Compile Include="UCantTouchThis\TelephoneTask\UCantTouchThisTelephoneTask.cs" />
     <Compile Include="UCantTouchThis\TelephoneTask\UCTT_TelephoneTaskFactory.cs" />
-    <Compile Include="UCantTouchThis\TrainingFour\UCantTouchThisTraingFour.cs" />
     <Compile Include="UCantTouchThis\UCTTGenericFactory.cs" />
     <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_StringExtensions.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\DateValidatorUtils.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCTT_PeselValidatorUtils.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCantTouchThisAutismPeselValisator.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\DummyStringComparator.cs" />
