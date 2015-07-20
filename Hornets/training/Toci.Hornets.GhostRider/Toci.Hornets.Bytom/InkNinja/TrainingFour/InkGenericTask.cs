@@ -7,7 +7,7 @@ using Toci.Hornets.GhostRider.TrainingFour.Generics;
 
 namespace Toci.Hornets.Bytom.InkNinja.TrainingFour
 {
-    class InkGenericTask <TItems>: GhostRiderGenericList<TItems>
+    public class InkGenericTask <TItems>: GhostRiderGenericList<TItems>
     {
 
         public override bool Add(TItems item)

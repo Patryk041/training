@@ -58,7 +58,13 @@
     <Compile Include="Coffee13\TaskTrainingTwo\PeselValidator\CoffeePeselValidator.cs" />
     <Compile Include="Coffee13\TaskTrainingTwo\StringManipulator\CoffeeStringManipulations.cs" />
     <Compile Include="Coffee13\TelephoneTask\TaskOneTelephone.cs" />
+    <Compile Include="Common\DrHouse\ExaminationParameter.cs" />
+    <Compile Include="Common\DrHouse\Examinations.cs" />
+    <Compile Include="Common\DrHouse\Unit.cs" />
     <Compile Include="Common\Interfaces\IPeselValidator.cs" />
+    <Compile Include="Common\DrHouse\Illness.cs" />
+    <Compile Include="Common\DrHouse\Patient.cs" />
+    <Compile Include="Common\DrHouse\Symptom.cs" />
     <Compile Include="InkNinja\TrainingFour\InkGenericTask.cs" />
     <Compile Include="InkNinja\TrainingTwo\CommunicationTask\InkInterpreter.cs" />
     <Compile Include="InkNinja\TrainingTwo\PeselValidation\PeselValidation.cs" />
