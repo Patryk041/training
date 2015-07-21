@@ -120,31 +120,71 @@
     <Compile Include="TypowyAdam\TrainingTwoTasks\StringManipulator\TypowyAdamStringManipulator.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\MultiTypicalStringComparator.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\Pentagram.cs" />
-    <Compile Include="TypowyAdam\TrainingTwoTasks\PeselValidator\PeselValidatorUtils.cs" />
+    <Compile Include="TypowyAdam\TrainingTwoTasks\PeselValidator\TypowyAdamPeselValidatorUtils.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\SimpleTypicalStringComparator.cs" />
     <Compile Include="TypowyAdam\TrainingTwoTasks\PeselValidator\TypowyAdamPeselValidator.cs" />
     <Compile Include="TypowyAdam\UndergroundTasks\TypowyAdamPeselValidatorOld.cs" />
-    <Compile Include="UCantTouchThis\CastingExamples\CastingExampleOne.cs" />
-    <Compile Include="UCantTouchThis\CastingExamples\One.cs" />
-    <Compile Include="UCantTouchThis\CastingExamples\Two.cs" />
-    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_FieldsUtils.cs" />
-    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_PropertiesUtils.cs" />
-    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_StringExtensions.cs" />
-    <Compile Include="UCantTouchThis\ImSoBadAss.cs" />
-    <Compile Include="UCantTouchThis\JsonParser\SimpleJsonParser.cs" />
-    <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisPeselValidator.cs" />
-    <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisStringManipulations.cs" />
-    <Compile Include="UCantTouchThis\TelephoneTask\UCantTouchThisTelephoneTask.cs" />
-    <Compile Include="UCantTouchThis\TelephoneTask\UCTT_TelephoneTaskFactory.cs" />
-    <Compile Include="UCantTouchThis\TrainingFour\UCantTouchThisTraingFour.cs" />
-    <Compile Include="UCantTouchThis\UCTTGenericFactory.cs" />
-    <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCantTouchThisAutismPeselValisator.cs" />
+    <Compile Include="UCantTouchThis\CastingExamples\CastingExampleOne.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\CastingExamples\One.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\CastingExamples\Two.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_FieldsUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_PropertiesUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_StringExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\ImSoBadAss.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\JsonParser\SimpleJsonParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisPeselValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisStringManipulations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\TelephoneTask\UCantTouchThisTelephoneTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\TelephoneTask\UCTT_TelephoneTaskFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\TrainingFour\UCantTouchThisTraingFour.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\UCTTGenericFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCantTouchThisAutismPeselValisator.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCTT_PeselValidatorUtils.cs" />
-    <Compile Include="UCantTouchThis\UndergroundTasks\RandomStringGenerator\UCTT_RandomStingGenerator.cs" />
-    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\DummyStringComparator.cs" />
-    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\StringComparatorsFactory.cs" />
-    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\UCantTouchThisStringComparator.cs" />
-    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\UCTT_AutismStringComparator.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\RandomStringGenerator\UCTT_RandomStingGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\DummyStringComparator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\StringComparatorsFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\UCantTouchThisStringComparator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\UCTT_AutismStringComparator.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="UndergroundTasks\Interface\IStringComparator.cs" />
     <Compile Include="UndergroundTasks\Interface\IPeselValidator.cs" />
   </ItemGroup>
