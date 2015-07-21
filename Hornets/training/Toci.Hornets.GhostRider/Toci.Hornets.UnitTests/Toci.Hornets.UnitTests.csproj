@@ -65,6 +65,7 @@
     <Compile Include="GhostRider\Abstraction\TestBase.cs" />
     <Compile Include="GhostRider\GeneralTests\DebugingTesting.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
+    <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
     <Compile Include="GhostRider\TrainingFour\DelegatesRunner.cs" />
     <Compile Include="GhostRider\TrainingFour\ExtMethodShowdown.cs" />
     <Compile Include="GhostRider\TrainingFour\LinqTestRunner.cs" />
@@ -81,13 +82,17 @@
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjTypowyAdamPeselValidatorTestRefactored.cs" />
     <Compile Include="Sieradz\Duch\HW3\DuchBankTests.cs" />
     <Compile Include="Sieradz\BankTransferTests\BankTransfersUtilsTest.cs" />
+    <Compile Include="Sieradz\Duch\Task\UnitTest1.cs" />
     <Compile Include="Sieradz\Quicksilver\BankQs\UnitTest1.cs" />
+    <Compile Include="Sieradz\TypowyAdam\TypowyAdamGenericListTest.cs" />
     <Compile Include="Sieradz\UCantTouchThis\BankTransfers\UCantTouchThisBankTransfersParserTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\CastingTests.cs" />
     <Compile Include="Bytom\gipson\BankTransfer\GatAllTest.cs" />
     <Compile Include="Bytom\gipson\BankTransfer\TransferCreationTest.cs" />
     <Compile Include="Bytom\gipson\PeselValidatorTest.cs" />
     <Compile Include="Bytom\gipson\StringManipulationsTest.cs" />
+    <Compile Include="Sieradz\UCantTouchThis\ExtensionMethodsTests\UCantTouchThisStringExtensionsTests.cs" />
+    <Compile Include="Sieradz\UCantTouchThis\TrainingFour\UCantTouchThisGenericListTest.cs" />
     <Compile Include="Wroclaw\Tszulczewski\StringManipulationsTest.cs" />
     <Compile Include="Wroclaw\Wyga\MyFirstUnitTest.cs" />
     <Compile Include="GhostRider\PeselTask\PeselTaskTest.cs" />
@@ -99,7 +104,6 @@
     <Compile Include="Gliwice\MoWerr\PeselValidator\MoWerrPeselValidatorTester.cs" />
     <Compile Include="Gliwice\Hipek\TaskTrainingTwoTest\HipekStringManipulationTest.cs" />
     <Compile Include="Gliwice\MoWerr\StringOperations\MoWerrStringOperationsTest.cs" />
-    <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
     <Compile Include="Gliwice\Rudi\GliwiceFileOperationTest.cs" />
     <Compile Include="Gliwice\Rudi\RudiBankTransferParser.cs" />
     <Compile Include="Gliwice\Soltys\TaskTwoUnitTests.cs" />
@@ -137,13 +141,13 @@
     <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
     <Compile Include="Sieradz\Quicksilver\LessCasualSC.cs" />
     <Compile Include="Sieradz\Quicksilver\TwoQs\QuicksilverStringManipulatorUnitTest.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamBenchmark.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamMethodFactoryGenerator.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamTestListGenerator.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamSampleTest.cs" />
-    <Compile Include="Sieradz\TypowyAdam\TypowyAdamStringManipulatorTest.cs" />
-    <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PentagramTest.cs" />
+    <Compile Include="Sieradz\TypowyAdam\OtherExperiments\TypowyAdamBenchmark.cs" />
+    <Compile Include="Sieradz\TypowyAdam\OtherExperiments\TypowyAdamMethodFactoryGenerator.cs" />
+    <Compile Include="Sieradz\TypowyAdam\OtherExperiments\TypowyAdamTestListGenerator.cs" />
+    <Compile Include="Sieradz\TypowyAdam\TypowyAdamSampleTest.cs" />
+    <Compile Include="Sieradz\TypowyAdam\OldTests\TypowyAdamStringManipulatorTest.cs" />
+    <Compile Include="Sieradz\TypowyAdam\OldTests\Undeground1Test.cs" />
+    <Compile Include="Sieradz\TypowyAdam\OldTests\PentagramTest.cs" />
     <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamPeselValidatorTest.cs" />
     <Compile Include="Sieradz\UCantTouchThis\DateValidatorTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\RandomStringGeneratorTests.cs" />
@@ -204,6 +208,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Wroclaw\gipson\BankTransfer\" />
     <Folder Include="Wroclaw\Kollwing\" />
   </ItemGroup>
   <ItemGroup />
