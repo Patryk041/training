@@ -2,7 +2,7 @@
 
 namespace Toci.Hornets.Bytom.Common.DrHouse.Types
 {
-    public abstract class Examinations
+    public abstract class MedicalTest
     {
         public string Name { get; set; }
         public List<ExaminationParameter> Parameters { get; set; }

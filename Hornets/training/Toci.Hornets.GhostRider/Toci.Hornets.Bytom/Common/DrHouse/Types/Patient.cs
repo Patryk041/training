@@ -7,8 +7,8 @@ namespace Toci.Hornets.Bytom.Common.DrHouse.Types
 		public int Age { get; set; }
 		public string Name { get; set; }
 		public Gender Gender { get; set; }
-	    public string PartOfBody { get; set; }
         public List<Symptom> Symptoms { get; set; }
+	    public List<MedicalTest> Tests { get; set; }
 	}
 
 	public enum Gender
