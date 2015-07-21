@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AccessModifiers\Kollwing\" />
+    <Folder Include="TrainingFourHomework\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Kir\demo\demo.txt" />
