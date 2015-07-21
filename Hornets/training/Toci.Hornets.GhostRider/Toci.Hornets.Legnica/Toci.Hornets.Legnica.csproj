@@ -124,6 +124,14 @@
     <Compile Include="zadania_grupowe\Legnica_Kir\TransferHandles\IngTransferHandle.cs" />
     <Compile Include="zadania_grupowe\Legnica_Kir\TransferHandles\NordeaTransferHandle.cs" />
     <Compile Include="zadania_grupowe\Legnica_Kir\TransferHandles\PekaoTransferHandle.cs" />
+    <Compile Include="zadania_grupowe\WebMD\Data\BodyPart.cs" />
+    <Compile Include="zadania_grupowe\WebMD\enum\BodyPartName.cs" />
+    <Compile Include="zadania_grupowe\WebMD\enum\Gender.cs" />
+    <Compile Include="zadania_grupowe\WebMD\interfaces\IDieseaseRecognizer.cs" />
+    <Compile Include="zadania_grupowe\WebMD\interfaces\IPatientsInformationsGenerator.cs" />
+    <Compile Include="zadania_grupowe\WebMD\Data\PatientInforamtion.cs" />
+    <Compile Include="zadania_grupowe\WebMD\RecognizeDisease.cs" />
+    <Compile Include="zadania_grupowe\WebMD\Data\Symptom.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
