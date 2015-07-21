@@ -135,9 +135,9 @@
     <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisStringManipulations.cs" />
     <Compile Include="UCantTouchThis\TelephoneTask\UCantTouchThisTelephoneTask.cs" />
     <Compile Include="UCantTouchThis\TelephoneTask\UCTT_TelephoneTaskFactory.cs" />
+    <Compile Include="UCantTouchThis\TrainingFour\UCantTouchThisTraingFour.cs" />
     <Compile Include="UCantTouchThis\UCTTGenericFactory.cs" />
     <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_StringExtensions.cs" />
-    <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\DateValidatorUtils.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCTT_PeselValidatorUtils.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCantTouchThisAutismPeselValisator.cs" />
     <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\DummyStringComparator.cs" />
