@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Toci.Hornets.Wroclaw.AdamPast.GipsonKIR;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Toci.Hornets.Bytom.gipson.GipsonKIR;
 
-namespace Toci.Hornets.UnitTests.Wrocław.gipson.BankTransfer
+namespace Toci.Hornets.UnitTests.Bytom.gipson.BankTransfer
 {
     [TestClass]
     public class TransferCreationTest

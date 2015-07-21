@@ -84,10 +84,10 @@
     <Compile Include="Sieradz\Quicksilver\BankQs\UnitTest1.cs" />
     <Compile Include="Sieradz\UCantTouchThis\BankTransfers\UCantTouchThisBankTransfersParserTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\CastingTests.cs" />
-    <Compile Include="Wroclaw\gipson\BankTransfer\GatAllTest.cs" />
-    <Compile Include="Wroclaw\gipson\BankTransfer\TransferCreationTest.cs" />
-    <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />
-    <Compile Include="Wroclaw\gipson\StringManipulationsTest.cs" />
+    <Compile Include="Bytom\gipson\BankTransfer\GatAllTest.cs" />
+    <Compile Include="Bytom\gipson\BankTransfer\TransferCreationTest.cs" />
+    <Compile Include="Bytom\gipson\PeselValidatorTest.cs" />
+    <Compile Include="Bytom\gipson\StringManipulationsTest.cs" />
     <Compile Include="Wroclaw\Tszulczewski\StringManipulationsTest.cs" />
     <Compile Include="Wroclaw\Wyga\MyFirstUnitTest.cs" />
     <Compile Include="GhostRider\PeselTask\PeselTaskTest.cs" />

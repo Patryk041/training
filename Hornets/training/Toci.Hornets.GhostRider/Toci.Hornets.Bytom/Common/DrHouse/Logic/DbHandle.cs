@@ -1,18 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
+using System.Net.NetworkInformation;
+using Toci.Hornets.Bytom.Common.DrHouse.Types;
 
 namespace Toci.Hornets.Bytom.Common.DrHouse.Logic
 {
-	public abstract class DbHandle
-	{
-		// todo: work on it
-		public abstract bool Insert();
-		public abstract bool Delete();
-		public abstract bool Fetch();
+    public abstract class DbHandle
+    {
+        public abstract SqlConnection ConnectToDb(ConnectionInfo dbInfo);
 
+        public abstract void OpenConnection(SqlConnection connection);
+
+        public abstract void CloseConnection(SqlConnection connnection);
+
+        public abstract bool DbOperation(string command, SqlConnection connection);
+    }
+	
 		//http://www.codeproject.com/Articles/4416/Beginners-guide-to-accessing-SQL-Server-through-C
-	}
 }
