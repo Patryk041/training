@@ -47,6 +47,7 @@
     <Compile Include="AdamP\TelephoneTask\TelephoneTaskChooser.cs" />
     <Compile Include="Bossu\TelephoneTask\MyTelephoneInterpreter.cs" />
     <Compile Include="Coffee13\CoffeeTestClass.cs" />
+    <Compile Include="Coffee13\TaskTrainingFour\CoffeeGenericList.cs" />
     <Compile Include="Coffee13\TaskTrainingTree\CoffeeBankTransfer.cs" />
     <Compile Include="Coffee13\TaskTrainingTree\CoffeeBankTransferParser.cs" />
     <Compile Include="Coffee13\TaskTrainingTree\CoffeeFileOperation.cs" />
