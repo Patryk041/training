@@ -59,6 +59,7 @@
     <Compile Include="Coffee13\TaskTrainingTwo\PeselValidator\CoffeePeselValidator.cs" />
     <Compile Include="Coffee13\TaskTrainingTwo\StringManipulator\CoffeeStringManipulations.cs" />
     <Compile Include="Coffee13\TelephoneTask\TaskOneTelephone.cs" />
+    <Compile Include="Common\DrHouse\Types\ConnectionInfo.cs" />
     <Compile Include="Common\DrHouse\Logic\DbHandle.cs" />
     <Compile Include="Common\DrHouse\Logic\IllnessComparizon.cs" />
     <Compile Include="Common\DrHouse\Types\ExaminationParameter.cs" />
