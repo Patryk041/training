@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
-using Toci.Hornets.Wroclaw.AdamPast.Homework0407;
+using Toci.Hornets.Bytom.gipson.Homework0407;
 
-namespace Toci.Hornets.UnitTests.Wrocław.gipson
+namespace Toci.Hornets.UnitTests.Bytom.gipson
 {
     [TestClass]
     public class StringManipulationsTest

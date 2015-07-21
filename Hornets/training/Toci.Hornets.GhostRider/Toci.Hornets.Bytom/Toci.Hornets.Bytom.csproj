@@ -69,6 +69,15 @@
     <Compile Include="Common\DrHouse\Types\Illness.cs" />
     <Compile Include="Common\DrHouse\Types\Patient.cs" />
     <Compile Include="Common\DrHouse\Types\Symptom.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonBankAccount.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonBankTransfer.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonBankTransferParser.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonFileOperation.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonKirUtils.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonPerformTransfers.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonTransferHandle.cs" />
+    <Compile Include="gipson\Homework0407\GipsonPeselValidator.cs" />
+    <Compile Include="gipson\Homework0407\GipsonStringManipulations.cs" />
     <Compile Include="InkNinja\TrainingFour\InkGenericTask.cs" />
     <Compile Include="InkNinja\TrainingTwo\CommunicationTask\InkInterpreter.cs" />
     <Compile Include="InkNinja\TrainingTwo\PeselValidation\PeselValidation.cs" />
@@ -112,6 +121,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="gipson\GipsonKIR\CompletedTransfers\" />
     <Folder Include="Pr0fes0r\TrainingTree\" />
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +129,8 @@
     <Content Include="Coffee13\TaskTrainingTree\NewTransfers.xml" />
     <Content Include="Coffee13\TaskTrainingTree\VnthPlay\Log\FileLog.txt" />
     <Content Include="Coffee13\TaskTrainingTree\VnthPlay\NewTransfers.xml" />
+    <Content Include="gipson\GipsonKIR\Transactions\Transactions1.txt" />
+    <Content Include="gipson\GipsonKIR\Transactions\TransactionsDemo.txt" />
     <Content Include="Vernathic\Kir\IBANs.txt" />
   </ItemGroup>
   <ItemGroup>
