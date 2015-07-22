@@ -209,6 +209,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Wroclaw\gipson\BankTransfer\" />
+    <Folder Include="Sieradz\HealthCenterTest\" />
     <Folder Include="Wroclaw\Kollwing\" />
   </ItemGroup>
   <ItemGroup />
