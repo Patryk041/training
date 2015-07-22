@@ -13,10 +13,11 @@ namespace Toci.Hornets.Legnica.Bombel.StringManipulator
 
         protected override bool IsStringElementsInString(string subject, string seek)
         {
+            var subjectList = subject.ToList();
             foreach (var element in seek)
             {
-                if (!subject.Contains(element)) return false;
-                subject.Remove(element);
+                if (!subjectList.Contains(element)) return false;
+                subjectList.Remove(element);
             }
             return true;
         }
