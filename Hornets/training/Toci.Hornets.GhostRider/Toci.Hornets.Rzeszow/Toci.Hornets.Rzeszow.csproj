@@ -115,6 +115,7 @@
     <Compile Include="Sherpin\TasksTrainingTwo\SherStringManipulations.cs" />
     <Compile Include="Terry\TelephoneHomework\TerryTelephoneHomework.cs" />
     <Compile Include="Terry\TerryTest.cs" />
+    <Compile Include="Terry\TrainingFour\GenericList\TerryGenericList.cs" />
     <Compile Include="Terry\TrainingThree\Common\RzeszowHandlersFactory.cs" />
     <Compile Include="Terry\TrainingThree\Common\RzeszowPerformTransfers.cs" />
     <Compile Include="Terry\TrainingThree\Common\RzeszowParsersFactory.cs" />
@@ -140,6 +141,7 @@
     <Folder Include="Agata\Kir\BankTransferFiles\" />
     <Folder Include="bin\" />
     <Folder Include="KubaT\TrainingTwo\PeselValidator\" />
+    <Folder Include="Terry\Training Four\" />
     <Folder Include="Terry\TrainingThree\TerryBank\transfers\" />
   </ItemGroup>
   <ItemGroup />
