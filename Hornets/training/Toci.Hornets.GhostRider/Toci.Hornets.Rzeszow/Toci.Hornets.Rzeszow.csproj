@@ -74,6 +74,14 @@
     <Compile Include="Foonesh\TrainingTwo\StringManipulations\StringManipulationsFoonesh.cs" />
     <Compile Include="KSebal\Class1.cs" />
     <Compile Include="KSebal\telephone\Telephone.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\CorrectResults.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\Disease.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\DownloadData.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\DownloadDataTxt.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\Morfology.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\Patient.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\research.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\Sympthom.cs" />
     <Compile Include="KSebal\traning2Homework\KsebalStringManipulationClass.cs" />
     <Compile Include="KSebal\traning2Homework\Pesel\KsebalPeselValidator.cs" />
     <Compile Include="KSebal\traning2Homework\Pesel\PeselDate.cs" />
