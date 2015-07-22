@@ -82,6 +82,15 @@
     <Compile Include="Jake\TrainingTwo\TelephoneTask\TelephoneTask.cs" />
     <Compile Include="Kamil\ClassKamil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HealthCenter\Abstracts\Doctor.cs" />
+    <Compile Include="HealthCenter\Abstracts\Patient.cs" />
+    <Compile Include="HealthCenter\Interfaces\IHuman.cs" />
+    <Compile Include="HealthCenter\Interfaces\IDoctor.cs" />
+    <Compile Include="HealthCenter\Interfaces\IPatient.cs" />
+    <Compile Include="HealthCenter\Types\Calendar.cs" />
+    <Compile Include="HealthCenter\Types\ExaminationResults.cs" />
+    <Compile Include="HealthCenter\Types\PatientHistory.cs" />
+    <Compile Include="HealthCenter\Types\PersonalData.cs" />
     <Compile Include="Quicksilver\TasksTrainingTwoQs\QuicksilverPeselValidator.cs" />
     <Compile Include="Quicksilver\TasksTrainingTwoQs\QuicksilverStringManipulator.cs" />
     <Compile Include="Quicksilver\TelephoneTaskQs\WhoYouGonnaCall.cs" />
@@ -180,8 +189,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Duch\Interfaces\" />
+    <Folder Include="HealthCenter\Enums\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HealthCenter\ReadMe.txt" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\0000Hellada.txt" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\Pekao.xml" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\mBankTransfers.xml" />

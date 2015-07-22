@@ -207,6 +207,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Sieradz\HealthCenterTest\" />
     <Folder Include="Wroclaw\Kollwing\" />
   </ItemGroup>
   <ItemGroup />
