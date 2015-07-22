@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="S2yfr4nt\Homework\S2yfr4ntKir\" />
+    <Folder Include="S2yfr4nt\MedicalArchitecture\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Lausion\LausionKIR\TextFile1.txt" />
