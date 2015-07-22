@@ -70,6 +70,7 @@
     <Compile Include="Bombel\PeselValidator\DataValidator\DayValidator.cs" />
     <Compile Include="Bombel\PeselValidator\DataValidator\MonthValidator.cs" />
     <Compile Include="Bombel\PeselValidator\DataValidator\YearValidator.cs" />
+    <Compile Include="Bombel\StringManipulator\BombelStringManipulator.cs" />
     <Compile Include="Filip Sokolowski\homeWork\peselValidator\getDate.cs" />
     <Compile Include="Filip Sokolowski\homeWork\peselValidator\peselValidator.cs" />
     <Compile Include="Filip Sokolowski\homeWork\stringManipulator\stringManipulator.cs" />
