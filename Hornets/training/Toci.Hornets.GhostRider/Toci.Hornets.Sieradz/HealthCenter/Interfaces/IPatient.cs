@@ -1,10 +1,9 @@
-﻿using Toci.Hornets.Sieradz.Przychodnia.Types;
+﻿using Toci.Hornets.Sieradz.HealthCenter.Types;
 
-namespace Toci.Hornets.Sieradz.Przychodnia.Interfaces
+namespace Toci.Hornets.Sieradz.HealthCenter.Interfaces
 {
-    public interface IPatient
+    public interface IPatient : IHuman
     {
-        //czy pacjent powinien mieć kalendarz?
-        PatientHistory patientHistory { set; get; } 
+        PatientHistory PatientHistory { set; get; } 
     }
 }
