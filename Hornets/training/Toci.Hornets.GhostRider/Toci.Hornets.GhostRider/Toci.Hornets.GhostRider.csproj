@@ -97,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Kir\demo\demo.txt" />
+    <Content Include="NFZ\Magic.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
