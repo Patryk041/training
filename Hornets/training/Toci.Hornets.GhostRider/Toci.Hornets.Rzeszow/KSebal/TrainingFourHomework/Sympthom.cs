@@ -4,8 +4,9 @@ namespace Toci.Hornets.Rzeszow.KSebal.TrainingFourHomework
 {
     public class Sympthom
     {
-        private Dictionary<string, double> PainfulScale;
-        private string other;
+        private BodyPart bodypart;
+        private List<string> other;
+
 
     }
 }

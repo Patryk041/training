@@ -13,7 +13,17 @@ namespace Toci.Hornets.Rzeszow.KSebal.TrainingFourHomework
        private string surname;
       // private string gender;
        private List<Research> researches;
-       public List<Disease> diseasesinBAse;
+       public List<Disease> medicalDiseasesHistory;
+       private int age;
+
+
+
+         
+
+
+    
+
+
 
 
 
