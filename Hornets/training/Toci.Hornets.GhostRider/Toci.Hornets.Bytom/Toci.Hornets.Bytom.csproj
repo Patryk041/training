@@ -60,21 +60,16 @@
     <Compile Include="Coffee13\TaskTrainingTwo\StringManipulator\CoffeeStringManipulations.cs" />
     <Compile Include="Coffee13\TelephoneTask\TaskOneTelephone.cs" />
     <Compile Include="Common\DrHouse\Logic\FileHandler.cs" />
-    <Compile Include="Common\DrHouse\Logic\ISerialization.cs" />
-    <Compile Include="Common\DrHouse\Models\PatientType.cs" />
-    <Compile Include="Common\DrHouse\Models\Gender.cs" />
-    <Compile Include="Common\DrHouse\Models\ISicknessIndicator.cs" />
-    <Compile Include="Common\DrHouse\Models\ReferenceRange.cs" />
-    <Compile Include="Common\DrHouse\Models\ConnectionInfo.cs" />
+    <Compile Include="Common\DrHouse\Types\ConnectionInfo.cs" />
     <Compile Include="Common\DrHouse\Logic\DbHandle.cs" />
     <Compile Include="Common\DrHouse\Logic\SicknessComparizon.cs" />
-    <Compile Include="Common\DrHouse\Models\ExaminationParameter.cs" />
-    <Compile Include="Common\DrHouse\Models\MedicalExamination.cs" />
-    <Compile Include="Common\DrHouse\Models\Unit.cs" />
+    <Compile Include="Common\DrHouse\Types\ExaminationParameter.cs" />
+    <Compile Include="Common\DrHouse\Types\MedicalTest.cs" />
+    <Compile Include="Common\DrHouse\Types\Unit.cs" />
     <Compile Include="Common\Interfaces\IPeselValidator.cs" />
-    <Compile Include="Common\DrHouse\Models\Sickness.cs" />
-    <Compile Include="Common\DrHouse\Models\Patient.cs" />
-    <Compile Include="Common\DrHouse\Models\Symptom.cs" />
+    <Compile Include="Common\DrHouse\Types\Sickness.cs" />
+    <Compile Include="Common\DrHouse\Types\Patient.cs" />
+    <Compile Include="Common\DrHouse\Types\Symptom.cs" />
     <Compile Include="gipson\GipsonKIR\GipsonBankAccount.cs" />
     <Compile Include="gipson\GipsonKIR\GipsonBankTransfer.cs" />
     <Compile Include="gipson\GipsonKIR\GipsonBankTransferParser.cs" />
@@ -89,6 +84,9 @@
     <Compile Include="InkNinja\TrainingTwo\PeselValidation\PeselValidation.cs" />
     <Compile Include="InkNinja\TrainingTwo\StringTask\InkString.cs" />
     <Compile Include="KamilS\KamilS.cs" />
+    <Compile Include="KamilS\TaskTrainingThree\KamilSBankTransfer.cs" />
+    <Compile Include="KamilS\TaskTrainingThree\KamilSBankTransferParser.cs" />
+    <Compile Include="KamilS\TaskTrainingThree\KamilSFileOperation.cs" />
     <Compile Include="KamilS\TaskTrainingTwo\PeselValidator\PeselValidator.cs" />
     <Compile Include="KamilS\TaskTrainingTwo\String\StringManipulator.cs" />
     <Compile Include="KamilS\TelephoneTask\TelephoneTaskClass.cs" />
@@ -137,6 +135,7 @@
     <Content Include="Coffee13\TaskTrainingTree\VnthPlay\NewTransfers.xml" />
     <Content Include="gipson\GipsonKIR\Transactions\Transactions1.txt" />
     <Content Include="gipson\GipsonKIR\Transactions\TransactionsDemo.txt" />
+    <Content Include="KamilS\TaskTrainingThree\TaskThree.txt" />
     <Content Include="Vernathic\Kir\IBANs.txt" />
   </ItemGroup>
   <ItemGroup>
