@@ -113,6 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PiotrekJ\Homework\" />
+    <Folder Include="PracaZespolowa\Medycyna\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="PracaZespolowa\PrzelewyBankowe\Didi\DidiPrzelewy.txt" />
