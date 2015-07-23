@@ -83,6 +83,7 @@
     <Compile Include="HealthCenter\Loaders\DefaultPatientsLoader.cs" />
     <Compile Include="HealthCenter\Loaders\XmlPatientsLoader.cs" />
     <Compile Include="HealthCenter\PathHolders\SieradzPatientsDataPathHolder.cs" />
+    <Compile Include="HealthCenter\Types\TestExaminationResults.cs" />
     <Compile Include="Jake\JakeTest.cs" />
     <Compile Include="Jake\TrainingTwo\jakePeselValidator\jakePeselValidator.cs" />
     <Compile Include="Jake\TrainingTwo\jakePeselValidator\tools\IsCorrectDate.cs" />
