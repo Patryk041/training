@@ -1,5 +1,5 @@
 ﻿using System;
-using Toci.Hornets.Bytom.Common.DrHouse.Types;
+using Toci.Hornets.Bytom.Common.DrHouse.Models;
 
 namespace Toci.Hornets.Bytom.Common.DrHouse.Logic
 {

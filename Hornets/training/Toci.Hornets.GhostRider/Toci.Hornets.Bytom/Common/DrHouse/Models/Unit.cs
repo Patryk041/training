@@ -1,4 +1,4 @@
-﻿namespace Toci.Hornets.Bytom.Common.DrHouse.Types
+﻿namespace Toci.Hornets.Bytom.Common.DrHouse.Models
 {
 	public class Unit
 	{

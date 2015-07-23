@@ -1,6 +1,5 @@
 ﻿using System.Data.SqlClient;
-using System.Net.NetworkInformation;
-using Toci.Hornets.Bytom.Common.DrHouse.Types;
+using Toci.Hornets.Bytom.Common.DrHouse.Models;
 
 namespace Toci.Hornets.Bytom.Common.DrHouse.Logic
 {
