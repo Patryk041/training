@@ -4,5 +4,6 @@
 	{
 		string Name { get; set; }
 		string Description { get; set; }
+		int Id { get; set; }
 	}
 }

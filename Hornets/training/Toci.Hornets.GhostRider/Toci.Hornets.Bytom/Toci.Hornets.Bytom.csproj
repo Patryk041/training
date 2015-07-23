@@ -60,6 +60,8 @@
     <Compile Include="Coffee13\TaskTrainingTwo\StringManipulator\CoffeeStringManipulations.cs" />
     <Compile Include="Coffee13\TelephoneTask\TaskOneTelephone.cs" />
     <Compile Include="Common\DrHouse\Logic\FileHandler.cs" />
+    <Compile Include="Common\DrHouse\Logic\ISerialization.cs" />
+    <Compile Include="Common\DrHouse\Models\PatientType.cs" />
     <Compile Include="Common\DrHouse\Models\Gender.cs" />
     <Compile Include="Common\DrHouse\Models\ISicknessIndicator.cs" />
     <Compile Include="Common\DrHouse\Models\ReferenceRange.cs" />
