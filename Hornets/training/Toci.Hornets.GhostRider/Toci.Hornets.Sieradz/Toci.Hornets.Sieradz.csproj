@@ -77,6 +77,7 @@
     <Compile Include="HealthCenter\Abstracts\PatientService.cs" />
     <Compile Include="HealthCenter\Abstracts\PatientsLoader.cs" />
     <Compile Include="HealthCenter\ExtensionMethods\LoaderDelegateExtensions.cs" />
+    <Compile Include="HealthCenter\Interfaces\ICalendar.cs" />
     <Compile Include="HealthCenter\Interfaces\IPatientService.cs" />
     <Compile Include="HealthCenter\Loaders\DefaultPatientsLoader.cs" />
     <Compile Include="HealthCenter\Loaders\XmlPatientsLoader.cs" />
