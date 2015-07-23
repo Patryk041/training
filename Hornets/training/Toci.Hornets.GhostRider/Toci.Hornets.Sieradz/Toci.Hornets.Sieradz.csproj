@@ -74,6 +74,17 @@
     <Compile Include="Duch\Traning 4\DuchGenListUtil.cs" />
     <Compile Include="Duch\Traning 4\ListEnum.cs" />
     <Compile Include="Duch\U1task\DuchStringComparator.cs" />
+    <Compile Include="HealthCenter\Abstracts\PatientService.cs" />
+    <Compile Include="HealthCenter\Abstracts\PatientsLoader.cs" />
+    <Compile Include="HealthCenter\Enums\gender.cs" />
+    <Compile Include="HealthCenter\ExtensionMethods\LoaderDelegateExtensions.cs" />
+    <Compile Include="HealthCenter\Interfaces\ICalendar.cs" />
+    <Compile Include="HealthCenter\Interfaces\IPatientService.cs" />
+    <Compile Include="HealthCenter\Loaders\DefaultPatientsLoader.cs" />
+    <Compile Include="HealthCenter\Loaders\XmlPatientsLoader.cs" />
+    <Compile Include="HealthCenter\PathHolders\SieradzPatientsDataPathHolder.cs" />
+    <Compile Include="HealthCenter\Types\PatientVisit.cs" />
+    <Compile Include="HealthCenter\Types\TestExaminationResults.cs" />
     <Compile Include="Jake\JakeTest.cs" />
     <Compile Include="Jake\TrainingTwo\jakePeselValidator\jakePeselValidator.cs" />
     <Compile Include="Jake\TrainingTwo\jakePeselValidator\tools\IsCorrectDate.cs" />
@@ -229,9 +240,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Duch\Interfaces\" />
-    <Folder Include="HealthCenter\Enums\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HealthCenter\DataFiles\PatientsData\Patients.xml" />
     <Content Include="HealthCenter\ReadMe.txt" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\0000Hellada.txt" />
     <Content Include="SieradzBankTransferTask\BankTransfersFiles\Pekao.xml" />
