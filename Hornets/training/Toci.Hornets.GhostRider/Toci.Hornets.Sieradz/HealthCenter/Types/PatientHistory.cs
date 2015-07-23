@@ -1,11 +1,11 @@
-﻿using System.Xml.Serialization;
+﻿using System;
+using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace Toci.Hornets.Sieradz.HealthCenter.Types
 {
-    [XmlRoot("PatientHistory")]
     public class PatientHistory
     {
-        [XmlElement("Historia")]
-        public string Historia { get; set; }
+        public Dictionary<DateTime, PatientVisit> patientHistory;
     }
 }
