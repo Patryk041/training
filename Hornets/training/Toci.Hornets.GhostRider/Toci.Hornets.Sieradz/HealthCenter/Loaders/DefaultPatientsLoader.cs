@@ -10,7 +10,7 @@ namespace Toci.Hornets.Sieradz.HealthCenter.Loaders
         {
             var personalData = new PersonalData()
             {
-                Wiek = 42
+                //Wiek = 42
             };
 
             var patientHistory = new PatientHistory()
