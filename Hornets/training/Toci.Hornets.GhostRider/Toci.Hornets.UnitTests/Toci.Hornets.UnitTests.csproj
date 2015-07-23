@@ -88,6 +88,7 @@
     <Compile Include="Sieradz\Duch\HW3\DuchBankTests.cs" />
     <Compile Include="Sieradz\BankTransferTests\BankTransfersUtilsTest.cs" />
     <Compile Include="Sieradz\Duch\Task\UnitTest1.cs" />
+    <Compile Include="Sieradz\HealthCenterTest\PatientServiceTest.cs" />
     <Compile Include="Sieradz\Quicksilver\BankQs\UnitTest1.cs" />
     <Compile Include="Sieradz\TypowyAdam\TypowyAdamGenericListTest.cs" />
     <Compile Include="Sieradz\UCantTouchThis\BankTransfers\UCantTouchThisBankTransfersParserTests.cs" />
@@ -213,6 +214,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+
     <Folder Include="Wroclaw\gipson\BankTransfer\" />
     <Folder Include="Sieradz\HealthCenterTest\" />
     <Folder Include="Wroclaw\Kollwing\" />
