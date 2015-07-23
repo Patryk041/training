@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Toci.Hornets.Bytom.Common.DrHouse.Types
+namespace Toci.Hornets.Bytom.Common.DrHouse.Models
 {
 	public abstract class Patient                        // przechowuje dane o pacjenie oraz to na co sie skarży
 	{
@@ -8,11 +8,6 @@ namespace Toci.Hornets.Bytom.Common.DrHouse.Types
 		public string Name { get; set; }
 		public Gender Gender { get; set; }
         public List<Symptom> Symptoms { get; set; }
-	    public List<MedicalTest> Tests { get; set; }
-	}
-
-	public enum Gender
-	{
-		Male, Female, Other
+	    public List<MedicalExamination> Tests { get; set; }
 	}
 }
