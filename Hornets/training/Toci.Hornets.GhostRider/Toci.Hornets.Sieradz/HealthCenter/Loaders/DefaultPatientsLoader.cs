@@ -15,7 +15,7 @@ namespace Toci.Hornets.Sieradz.HealthCenter.Loaders
 
             var patientHistory = new PatientHistory()
             {
-                Historia = "Niewiarygodna historia"
+               // Historia = "Niewiarygodna historia"
             };
 
             var patient = new Patient()
