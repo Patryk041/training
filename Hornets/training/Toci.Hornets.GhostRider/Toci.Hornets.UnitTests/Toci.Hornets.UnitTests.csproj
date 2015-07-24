@@ -77,12 +77,10 @@
     <Compile Include="Legnica\Kir\LegnicaFileOperationTests.cs" />
     <Compile Include="Legnica\Kir\LegnicaPerformTransfersTest.cs" />
     <Compile Include="Legnica\Kir\MikzeTestClass.cs" />
-
+    <Compile Include="Rzeszow\SemiRafista\SeRaGenericsTest.cs" />
     <Compile Include="Sieradz\BankTransferTests\PerformTransfersTest.cs" />
-
     <Compile Include="Rzeszow\Chojnecki\tFour\UnitTest1.cs" />
     <Compile Include="Rzeszow\Terry\GenericList\TerryGenericsTest.cs" />
-
     <Compile Include="Sieradz\DeeJay\BankTransfers\DjBankTransfersTest.cs" />
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjTypowyAdamPeselValidatorTestRefactored.cs" />
     <Compile Include="Sieradz\Duch\HW3\DuchBankTests.cs" />
@@ -214,9 +212,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-
     <Folder Include="Wroclaw\gipson\BankTransfer\" />
-    <Folder Include="Sieradz\HealthCenterTest\" />
     <Folder Include="Wroclaw\Kollwing\" />
   </ItemGroup>
   <ItemGroup />
