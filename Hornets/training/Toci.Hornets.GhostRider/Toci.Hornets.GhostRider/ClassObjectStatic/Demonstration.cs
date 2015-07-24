@@ -4,7 +4,7 @@ namespace Toci.Hornets.GhostRider.ClassObjectStatic
 {
     public class Demonstration
     {
-        private int zmienna;
+        private int _zmienna;
 
         public void ShowMeHowTo(
             string pathToFile, 
@@ -21,8 +21,8 @@ namespace Toci.Hornets.GhostRider.ClassObjectStatic
         public void ShowMeHowTo(FbChatMessageContainer messageContainer, Demonstration innyobiekt)
         {
             //this.zmienna = "dfsa";
-            innyobiekt.zmienna = 5;
-            this.zmienna = 6;
+            innyobiekt._zmienna = 5;
+            this._zmienna = 6;
 
             //innyobiekt.ShowMeHowTo(messageContainer, innyobiekt);
 

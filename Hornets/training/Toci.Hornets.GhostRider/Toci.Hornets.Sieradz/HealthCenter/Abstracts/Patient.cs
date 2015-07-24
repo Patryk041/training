@@ -6,7 +6,7 @@ using Toci.Hornets.Sieradz.HealthCenter.Types;
 namespace Toci.Hornets.Sieradz.HealthCenter.Abstracts
 {
     [Serializable]
-    [XmlRoot("Patient")]
+    [XmlRoot("Human")]
     public class Patient : IPatient
     {
         private PatientHistory _patientHistory;

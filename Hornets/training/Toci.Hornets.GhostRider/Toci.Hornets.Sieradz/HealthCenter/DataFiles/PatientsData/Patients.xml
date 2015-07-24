@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Patients>
-  <Patient>
-    <PatientHistory>
+<Humans>
+  <Human>
+    <HumanHistory>
       <Historia>Trolololo</Historia>
-    </PatientHistory>
+    </HumanHistory>
     <PersonalData>
       <Wiek>666</Wiek>
     </PersonalData>
-  </Patient>
-</Patients>
+  </Human>
+</Humans>

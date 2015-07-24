@@ -64,6 +64,25 @@
     <Compile Include="Kir\GhostRiderSolution\GenericGenerator.cs" />
     <Compile Include="Kir\PerformTransfers.cs" />
     <Compile Include="Kir\TransferHandle.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Abstract\Symptom.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Abstract\Human.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Enum\AppointmentType.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Enum\Gender.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IAdditionalFeature.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IAddress.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IAppointment.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IBodyPart.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\ICalendar.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IContactPossibility.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IExamination.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IHuman.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\ISymptom.cs" />
+    <Compile Include="NFZ\Przychodnia\ExaminationManagement\Interfaces\IExamination.cs" />
+    <Compile Include="NFZ\Przychodnia\Pacjenct\Patient.cs" />
+    <Compile Include="NFZ\Przychodnia\Pacjenct\TelephoneContact.cs" />
+    <Compile Include="NFZ\Przychodnia\Requestors\INFZPatientIdentification.cs" />
+    <Compile Include="NFZ\Przychodnia\Requestors\NFZRequestor.cs" />
+    <Compile Include="NFZ\Przychodnia\ResourcesRequest\Requestor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TElephoneCommunication\PhotoCommunication.cs" />
     <Compile Include="TElephoneCommunication\SmsCommunication.cs" />
@@ -93,6 +112,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AccessModifiers\Kollwing\" />
+    <Folder Include="NFZ\Przychodnia\Base\Types\" />
+    <Folder Include="NFZ\Przychodnia\Choroba\" />
+    <Folder Include="NFZ\Przychodnia\Lekarz\" />
+    <Folder Include="NFZ\Przychodnia\Recepta\" />
     <Folder Include="TrainingFourHomework\" />
   </ItemGroup>
   <ItemGroup>
