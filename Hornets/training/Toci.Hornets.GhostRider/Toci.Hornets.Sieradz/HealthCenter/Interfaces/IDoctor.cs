@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Toci.Hornets.Sieradz.Przychodnia.Interfaces
+namespace Toci.Hornets.Sieradz.HealthCenter.Interfaces
 {
     public interface IDoctor : IHuman
     {

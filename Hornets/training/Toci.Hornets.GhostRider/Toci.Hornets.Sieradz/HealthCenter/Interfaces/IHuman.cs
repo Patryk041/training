@@ -1,9 +1,9 @@
-﻿using Toci.Hornets.Sieradz.Przychodnia.Types;
+﻿using Toci.Hornets.Sieradz.HealthCenter.Types;
 
-namespace Toci.Hornets.Sieradz.Przychodnia.Interfaces
+namespace Toci.Hornets.Sieradz.HealthCenter.Interfaces
 {
     public interface IHuman
     {
-        PersonalData personalData { set; get; } 
+        PersonalData PersonalData { set; get; } 
     }
 }

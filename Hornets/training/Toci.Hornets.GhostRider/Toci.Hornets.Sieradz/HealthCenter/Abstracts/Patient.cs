@@ -1,10 +1,43 @@
-﻿using Toci.Hornets.Sieradz.Przychodnia.Interfaces;
-using Toci.Hornets.Sieradz.Przychodnia.Types;
+﻿using System;
+using System.Xml.Serialization;
+using Toci.Hornets.Sieradz.HealthCenter.Interfaces;
+using Toci.Hornets.Sieradz.HealthCenter.Types;
 
-namespace Toci.Hornets.Sieradz.Przychodnia.Abstracts
+namespace Toci.Hornets.Sieradz.HealthCenter.Abstracts
 {
+    [Serializable]
+    [XmlRoot("Patient")]
     public class Patient : IPatient
     {
-        public PatientHistory patientHistory { get; set; }
+        private PatientHistory _patientHistory;
+        private PersonalData _personalData;
+
+        [XmlElement("PatientHistory")]
+        public PatientHistory PatientHistory 
+        {
+            get
+            {
+                return _patientHistory;
+            }
+            set
+            {
+                if (_patientHistory != value)
+                    _patientHistory = value;
+            }
+        }
+
+        [XmlElement("PersonalData")]
+        public PersonalData PersonalData
+        {
+            get
+            {
+                return _personalData;
+            }
+            set
+            {
+                if (_personalData != value)
+                    _personalData = value;
+            }
+        }
     }
 }
