@@ -145,7 +145,6 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Chojnecki\Kir\Przelewy.txt" />
-    <Content Include="Chojnecki\Kir\x.xml" />
     <Content Include="Foonesh\TrainingThree\TransferData\TransferOne.txt" />
   </ItemGroup>
   <ItemGroup>
