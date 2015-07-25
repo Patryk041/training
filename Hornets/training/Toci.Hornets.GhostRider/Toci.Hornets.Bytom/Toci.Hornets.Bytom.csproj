@@ -47,6 +47,7 @@
     <Compile Include="AdamP\TelephoneTask\TelephoneTaskChooser.cs" />
     <Compile Include="Bossu\TelephoneTask\MyTelephoneInterpreter.cs" />
     <Compile Include="Coffee13\CoffeeTestClass.cs" />
+    <Compile Include="Coffee13\TaskTrainingFour\CoffeeGenericList.cs" />
     <Compile Include="Coffee13\TaskTrainingTree\CoffeeBankTransfer.cs" />
     <Compile Include="Coffee13\TaskTrainingTree\CoffeeBankTransferParser.cs" />
     <Compile Include="Coffee13\TaskTrainingTree\CoffeeFileOperation.cs" />
@@ -58,7 +59,32 @@
     <Compile Include="Coffee13\TaskTrainingTwo\PeselValidator\CoffeePeselValidator.cs" />
     <Compile Include="Coffee13\TaskTrainingTwo\StringManipulator\CoffeeStringManipulations.cs" />
     <Compile Include="Coffee13\TelephoneTask\TaskOneTelephone.cs" />
+    <Compile Include="Common\DrHouse\Logic\FileHandler.cs" />
+    <Compile Include="Common\DrHouse\Logic\ISerialization.cs" />
+    <Compile Include="Common\DrHouse\Models\PatientType.cs" />
+    <Compile Include="Common\DrHouse\Models\Gender.cs" />
+    <Compile Include="Common\DrHouse\Models\ISicknessIndicator.cs" />
+    <Compile Include="Common\DrHouse\Models\ReferenceRange.cs" />
+    <Compile Include="Common\DrHouse\Models\ConnectionInfo.cs" />
+    <Compile Include="Common\DrHouse\Logic\DbHandle.cs" />
+    <Compile Include="Common\DrHouse\Logic\SicknessComparizon.cs" />
+    <Compile Include="Common\DrHouse\Models\ExaminationParameter.cs" />
+    <Compile Include="Common\DrHouse\Models\MedicalExamination.cs" />
+    <Compile Include="Common\DrHouse\Models\Unit.cs" />
     <Compile Include="Common\Interfaces\IPeselValidator.cs" />
+    <Compile Include="Common\DrHouse\Models\Sickness.cs" />
+    <Compile Include="Common\DrHouse\Models\Patient.cs" />
+    <Compile Include="Common\DrHouse\Models\Symptom.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonBankAccount.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonBankTransfer.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonBankTransferParser.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonFileOperation.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonKirUtils.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonPerformTransfers.cs" />
+    <Compile Include="gipson\GipsonKIR\GipsonTransferHandle.cs" />
+    <Compile Include="gipson\Homework0407\GipsonPeselValidator.cs" />
+    <Compile Include="gipson\Homework0407\GipsonStringManipulations.cs" />
+    <Compile Include="InkNinja\TrainingFour\InkGenericTask.cs" />
     <Compile Include="InkNinja\TrainingTwo\CommunicationTask\InkInterpreter.cs" />
     <Compile Include="InkNinja\TrainingTwo\PeselValidation\PeselValidation.cs" />
     <Compile Include="InkNinja\TrainingTwo\StringTask\InkString.cs" />
@@ -69,6 +95,7 @@
     <Compile Include="Mes\TestClass.cs" />
     <Compile Include="Pr0fes0r\TelephoneTask\Telefon.cs" />
     <Compile Include="Pr0fes0r\Test.cs" />
+    <Compile Include="Pr0fes0r\TrainingFour\GenericListPr0fes0r.cs" />
     <Compile Include="Pr0fes0r\TrainingTwo\PeselValidator\Checsum\Sum.cs" />
     <Compile Include="Pr0fes0r\TrainingTwo\PeselValidator\Date\DataExtractor.cs" />
     <Compile Include="Pr0fes0r\TrainingTwo\PeselValidator\Date\Days.cs" />
@@ -81,6 +108,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Szary\KlasaSzarego.cs" />
     <Compile Include="Szary\TelephoneTask\TelephoneGrayHomework.cs" />
+    <Compile Include="Vernathic\Generics\VnthGenericList.cs" />
     <Compile Include="Vernathic\Kir\VnthAccountInfo.cs" />
     <Compile Include="Vernathic\Kir\VnthJsonSeliarizer.cs" />
     <Compile Include="Vernathic\Kir\VnthPerformTransfers.cs" />
@@ -98,12 +126,17 @@
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="gipson\GipsonKIR\CompletedTransfers\" />
+    <Folder Include="Pr0fes0r\TrainingTree\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Coffee13\TaskTrainingTree\Log\FileLog.txt" />
     <Content Include="Coffee13\TaskTrainingTree\NewTransfers.xml" />
     <Content Include="Coffee13\TaskTrainingTree\VnthPlay\Log\FileLog.txt" />
     <Content Include="Coffee13\TaskTrainingTree\VnthPlay\NewTransfers.xml" />
+    <Content Include="gipson\GipsonKIR\Transactions\Transactions1.txt" />
+    <Content Include="gipson\GipsonKIR\Transactions\TransactionsDemo.txt" />
     <Content Include="Vernathic\Kir\IBANs.txt" />
   </ItemGroup>
   <ItemGroup>

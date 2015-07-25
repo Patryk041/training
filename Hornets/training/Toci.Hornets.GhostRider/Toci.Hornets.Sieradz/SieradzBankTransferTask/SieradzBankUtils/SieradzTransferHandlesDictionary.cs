@@ -14,7 +14,9 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.SieradzBankUtils
         {
             foreach (var transferHandle in transferHandlesList)
             {
-                _transferHandlesDictionary.Add((string) transferHandle.GetProtectedFieldValue(fieldName), transferHandle);
+                var key = (string) transferHandle.GetProtectedFieldValue(fieldName);
+                if (!_transferHandlesDictionary.ContainsKey(key))
+                    _transferHandlesDictionary.Add(key, transferHandle);
             }
         }
 
