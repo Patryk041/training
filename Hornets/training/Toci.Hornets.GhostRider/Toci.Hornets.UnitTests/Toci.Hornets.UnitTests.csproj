@@ -65,6 +65,7 @@
     <Compile Include="GhostRider\Abstraction\TestBase.cs" />
     <Compile Include="GhostRider\GeneralTests\DebugingTesting.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
+    <Compile Include="GhostRider\Reflection\ReflectorTesting.cs" />
     <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
     <Compile Include="GhostRider\TrainingFour\DelegatesRunner.cs" />
     <Compile Include="GhostRider\TrainingFour\ExtMethodShowdown.cs" />
@@ -211,9 +212,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-
     <Folder Include="Wroclaw\gipson\BankTransfer\" />
-    <Folder Include="Sieradz\HealthCenterTest\" />
     <Folder Include="Wroclaw\Kollwing\" />
   </ItemGroup>
   <ItemGroup />

@@ -88,6 +88,15 @@
     <Compile Include="TElephoneCommunication\SmsCommunication.cs" />
     <Compile Include="TElephoneCommunication\Telephone.cs" />
     <Compile Include="TElephoneCommunication\VoiceCommunication.cs" />
+    <Compile Include="TrainingFive\Generics\ChessFactory.cs" />
+    <Compile Include="TrainingFive\Generics\GenericDesignPatternWrapper.cs" />
+    <Compile Include="TrainingFive\Generics\HandlersExample\ChorHandlerStack.cs" />
+    <Compile Include="TrainingFive\Generics\HandlersExample\Handler.cs" />
+    <Compile Include="TrainingFive\Generics\IChessFigure.cs" />
+    <Compile Include="TrainingFive\Generics\RegularFactory.cs" />
+    <Compile Include="TrainingFive\Reflection\CustomReflector.cs" />
+    <Compile Include="TrainingFive\Reflection\ReflectionExample.cs" />
+    <Compile Include="TrainingFive\Tpl\ParallelFileParserManager.cs" />
     <Compile Include="TrainingFour\Delegates\DelegateClient.cs" />
     <Compile Include="TrainingFour\Delegates\DelegateExamples.cs" />
     <Compile Include="TrainingFour\ExtensionMethods\ExtMethodShowdown.cs" />
@@ -116,6 +125,8 @@
     <Folder Include="NFZ\Przychodnia\Choroba\" />
     <Folder Include="NFZ\Przychodnia\Lekarz\" />
     <Folder Include="NFZ\Przychodnia\Recepta\" />
+    <Folder Include="TrainingFive\Attributes\" />
+    <Folder Include="TrainingFive\DependencyInjection\" />
     <Folder Include="TrainingFourHomework\" />
   </ItemGroup>
   <ItemGroup>
