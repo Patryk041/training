@@ -9,7 +9,7 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
     {
         public bool IsPeselValid(string pesel)
         {
-            if (!PeselValidatorUtils.CheckCheckSum(pesel))
+            if (!TypowyAdamPeselValidatorUtils.CheckCheckSum(pesel))
                 return false;
             if (pesel.Where(char.IsDigit).Count() != 11 && pesel.Length != 11)
                 return false;
@@ -53,7 +53,7 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
             }
             month = (month / 10) % 2 == 0 ? month - (month / 10 * 10) : month - (month / 10 * 10) + 10; //normalizacja miesiąca
             if (month <= 12 && month > 0)
-                return PeselValidatorUtils.IsDayValid(year, month, day);
+                return TypowyAdamPeselValidatorUtils.IsDayValid(year, month, day);
             return false;
         }
     }

@@ -1,0 +1,1 @@
+﻿NazwaBankuWysylajacego;SendingAccountName;SendingAccountNumber;DestinationBankName;DestinationAccountName;DestinationAccountNumber;Currency;TransferValue;TransferDate;TransferTitle;

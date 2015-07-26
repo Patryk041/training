@@ -12,7 +12,7 @@ namespace Toci.Hornets.UnitTests.Sieradz.TypowyAdam.PeselValidatorTest
     [TestClass]
     public class TypowyAdamPeselValidatorTest
     {
-        private static string testDirectory = @"..\..\Sieradz\TypowyAdam\";
+        private static string testDirectory = @"..\..\Sieradz\TypowyAdam\PeselValidatorTest\";
         private static string assemblyName = "Toci.Hornets.Sieradz"; //TODO make it able to load more assemblies
         private static int iterationValue = 100;
         private static List<object> peselValidatorsList = new List<object>();
