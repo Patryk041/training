@@ -13,7 +13,7 @@ namespace Toci.Hornets.GhostRider.TrainingFour.Delegates
 
             DelegateExamples ex  = new DelegateExamples();
 
-            MyExampleOfHomework transfers = new MyExampleOfHomework();
+            //MyExampleOfHomework transfers = new MyExampleOfHomework();
 
             //ex.Delegowanie("fdsafda");
 
@@ -22,7 +22,7 @@ namespace Toci.Hornets.GhostRider.TrainingFour.Delegates
 
             //transfers.RunMeAsDelegate("fdsg");
 
-            del += transfers.RunMeAsDelegate;
+            //del += transfers.RunMeAsDelegate;
 
             return del; // 0
         }

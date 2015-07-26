@@ -14,14 +14,14 @@ namespace Toci.Hornets.Sieradz.TypowyAdam.UndergroundTasks
 
         protected override bool Checksum(string pesel)
         {
-            return PeselValidatorUtils.CheckCheckSum(pesel);
+            return TypowyAdamPeselValidatorUtils.CheckCheckSum(pesel);
         }
 
         protected override bool ValidateDate(int year, int month, int day)
         {
-            if (!PeselValidatorUtils.monthYearValid(ref year, ref month)) return false;
+            if (!TypowyAdamPeselValidatorUtils.monthYearValid(ref year, ref month)) return false;
 
-            return PeselValidatorUtils.IsDayValid(year, month, day);
+            return TypowyAdamPeselValidatorUtils.IsDayValid(year, month, day);
         }
 
         public override string GetNick()

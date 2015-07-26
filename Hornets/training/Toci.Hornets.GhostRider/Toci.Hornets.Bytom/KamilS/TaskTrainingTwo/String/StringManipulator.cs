@@ -1,8 +1,7 @@
 ﻿using System;
-using System.IO;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
-namespace Toci.Hornets.Bytom.KamilS.TaskTrainingtTwo
+namespace Toci.Hornets.Bytom.KamilS.TaskTrainingTwo.String
 {
     public class StringManipulator : GhostRiderStringManipulationsBase
     {
@@ -50,8 +49,8 @@ namespace Toci.Hornets.Bytom.KamilS.TaskTrainingtTwo
                 Array.Sort(seekChar);
                 Array.Sort(subjectChar);
 
-                String newSubject = new String(subjectChar);
-                String newSeek = new String(seekChar);
+                System.String newSubject = new System.String(subjectChar);
+                System.String newSeek = new System.String(seekChar);
 
                 if (newSeek == newSubject)
                 {

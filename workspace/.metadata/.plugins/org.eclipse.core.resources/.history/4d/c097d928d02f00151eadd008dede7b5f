@@ -1,0 +1,7 @@
+<?php
+
+    define('DATABASE_CONNECTION_STRING', 'host=127.0.0.1 user=postgres dbname=eena password=beatka');
+    define('STARTPRACA_REQUEST_URL', 'http://startpraca.pl/~import/');
+    define('VACATS_REQUEST_URL', 'http://localhost/api/vacats.php?');
+    
+    define('ROOT_INSTALL_PATH', 'D:\self\projects\eena\'); ///var/www/html/eena/

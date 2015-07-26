@@ -1,0 +1,32 @@
+﻿Przychodnia:
+- Pacjenci:
+	- możliwość samodzielnego określenia narzekań na stan zdrowia:
+		- API
+		- różne platformy docelowe (Android, Web, Desktop...)
+		- pobranie dotychczasowych wyników badań:
+			- odpytywanie o wyniki badań:
+				- 
+		- wpływ poprzednich wyników badań na bieżącą diagnostykę:
+			- funkcjonalność określania czy potrzebujemy wcześniejszych wyników badań
+	- umawianie na kolejne badanie
+- Recepta:
+	- odnowienie recepty:
+		- jeżeli nie może być odnowiona (np. brak badania) -> skierować na badanie
+		- powiadomienia do lekarza, apteki itp.
+	- czy refundowana?
+		- pobranie listy leków refundowanych
+		- typ choroby
+- Lekarz:
+	- Kalendarz godzin pracy z możliwością ustalenia wizyty:
+		- API google'a? czy autorskie rozwiązanie?
+	- Lista Specjalizacji (rodzinny, onkolog itp)
+	- Informacje kontaktowe
+	- postawienie diagnozy:
+		- wystawienie recepty
+- Choroby:
+	- symptomy:
+		- czy listę symptomów pobieramy z centralnego źródła? czy przetrzymujemy swoją?
+			(przy nowej chorobie możemy zaciągnąć to wszystkie informacje źródła)
+	- wyniki badań
+	- specjalista - kto może leczyć?
+	- wskazania do leczenia

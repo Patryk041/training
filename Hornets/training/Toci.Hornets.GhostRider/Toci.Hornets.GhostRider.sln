@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.GhostRider", "Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj", "{878B2ECA-9CC0-42CF-ACA6-CD6E44C47451}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Sieradz", "Toci.Hornets.Sieradz\Toci.Hornets.Sieradz.csproj", "{1109FD72-7199-4D6F-B150-918976558E66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Wroclaw", "Toci.Hornets.Wroclaw\Toci.Hornets.Wroclaw.csproj", "{5B12A0E8-9563-4D82-93A7-DB9013C945F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.GhostRider.Base", "Toci.Hornets.GhostRider.Base\Toci.Hornets.GhostRider.Base.csproj", "{C2DBA4F2-AA52-4ED3-8355-4241D6D07949}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{5B12A0E8-9563-4D82-93A7-DB9013C945F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B12A0E8-9563-4D82-93A7-DB9013C945F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B12A0E8-9563-4D82-93A7-DB9013C945F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2DBA4F2-AA52-4ED3-8355-4241D6D07949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DBA4F2-AA52-4ED3-8355-4241D6D07949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DBA4F2-AA52-4ED3-8355-4241D6D07949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DBA4F2-AA52-4ED3-8355-4241D6D07949}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

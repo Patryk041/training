@@ -56,6 +56,7 @@
     <Compile Include="Bytom\Coffee13\StringTest.cs" />
     <Compile Include="Bytom\Coffee13\UnitTest1.cs" />
     <Compile Include="Bytom\Coffee13\TransferParserTest.cs" />
+    <Compile Include="Bytom\InkNinja\GenericTest.cs" />
     <Compile Include="Bytom\Pr0fes0r\TrainingTwo\PeselValidatorPr0fes0r.cs" />
     <Compile Include="Bytom\Vnth\FileOperationTest.cs" />
     <Compile Include="Bytom\Vnth\JsonSerializerTest.cs" />
@@ -64,6 +65,8 @@
     <Compile Include="GhostRider\Abstraction\TestBase.cs" />
     <Compile Include="GhostRider\GeneralTests\DebugingTesting.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
+    <Compile Include="GhostRider\Reflection\ReflectorTesting.cs" />
+    <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
     <Compile Include="GhostRider\TrainingFour\DelegatesRunner.cs" />
     <Compile Include="GhostRider\TrainingFour\ExtMethodShowdown.cs" />
     <Compile Include="GhostRider\TrainingFour\LinqTestRunner.cs" />
@@ -71,21 +74,29 @@
     <Compile Include="Gliwice\Soltys\BankTransferParserTests.cs" />
     <Compile Include="GhostRider\Kir\KirHomeworkRunner.cs" />
     <Compile Include="Legnica\Bombel\BombelUnitTest.cs" />
+    <Compile Include="Lausion\LausionGenericListTest.cs" />
     <Compile Include="Legnica\Kir\Files\PrepareBankTransfer.cs" />
     <Compile Include="Legnica\Kir\LegnicaFileOperationTests.cs" />
     <Compile Include="Legnica\Kir\LegnicaPerformTransfersTest.cs" />
     <Compile Include="Legnica\Kir\MikzeTestClass.cs" />
+    <Compile Include="Sieradz\BankTransferTests\PerformTransfersTest.cs" />
+    <Compile Include="S2yfr4nt\GenericList\GenericList.cs" />
     <Compile Include="Sieradz\DeeJay\BankTransfers\DjBankTransfersTest.cs" />
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjTypowyAdamPeselValidatorTestRefactored.cs" />
     <Compile Include="Sieradz\Duch\HW3\DuchBankTests.cs" />
     <Compile Include="Sieradz\BankTransferTests\BankTransfersUtilsTest.cs" />
+    <Compile Include="Sieradz\Duch\Task\UnitTest1.cs" />
+    <Compile Include="Sieradz\HealthCenterTest\PatientServiceTest.cs" />
     <Compile Include="Sieradz\Quicksilver\BankQs\UnitTest1.cs" />
+    <Compile Include="Sieradz\TypowyAdam\TypowyAdamGenericListTest.cs" />
     <Compile Include="Sieradz\UCantTouchThis\BankTransfers\UCantTouchThisBankTransfersParserTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\CastingTests.cs" />
-    <Compile Include="Wroclaw\gipson\BankTransfer\GatAllTest.cs" />
-    <Compile Include="Wroclaw\gipson\BankTransfer\TransferCreationTest.cs" />
-    <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />
-    <Compile Include="Wroclaw\gipson\StringManipulationsTest.cs" />
+    <Compile Include="Bytom\gipson\BankTransfer\GatAllTest.cs" />
+    <Compile Include="Bytom\gipson\BankTransfer\TransferCreationTest.cs" />
+    <Compile Include="Bytom\gipson\PeselValidatorTest.cs" />
+    <Compile Include="Bytom\gipson\StringManipulationsTest.cs" />
+    <Compile Include="Sieradz\UCantTouchThis\ExtensionMethodsTests\UCantTouchThisStringExtensionsTests.cs" />
+    <Compile Include="Sieradz\UCantTouchThis\TrainingFour\UCantTouchThisGenericListTest.cs" />
     <Compile Include="Wroclaw\Tszulczewski\StringManipulationsTest.cs" />
     <Compile Include="Wroclaw\Wyga\MyFirstUnitTest.cs" />
     <Compile Include="GhostRider\PeselTask\PeselTaskTest.cs" />
@@ -97,7 +108,6 @@
     <Compile Include="Gliwice\MoWerr\PeselValidator\MoWerrPeselValidatorTester.cs" />
     <Compile Include="Gliwice\Hipek\TaskTrainingTwoTest\HipekStringManipulationTest.cs" />
     <Compile Include="Gliwice\MoWerr\StringOperations\MoWerrStringOperationsTest.cs" />
-    <Compile Include="GhostRider\TelephoneTask\TelephoneTaskTest.cs" />
     <Compile Include="Gliwice\Rudi\GliwiceFileOperationTest.cs" />
     <Compile Include="Gliwice\Rudi\RudiBankTransferParser.cs" />
     <Compile Include="Gliwice\Soltys\TaskTwoUnitTests.cs" />
@@ -135,13 +145,13 @@
     <Compile Include="Sieradz\Quicksilver\MyFirstUnitTest.cs" />
     <Compile Include="Sieradz\Quicksilver\LessCasualSC.cs" />
     <Compile Include="Sieradz\Quicksilver\TwoQs\QuicksilverStringManipulatorUnitTest.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamBenchmark.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamMethodFactoryGenerator.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamTestListGenerator.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamSampleTest.cs" />
-    <Compile Include="Sieradz\TypowyAdam\TypowyAdamStringManipulatorTest.cs" />
-    <Compile Include="Sieradz\TypowyAdam\Undeground1Test.cs" />
-    <Compile Include="Sieradz\TypowyAdam\PentagramTest.cs" />
+    <Compile Include="Sieradz\TypowyAdam\OtherExperiments\TypowyAdamBenchmark.cs" />
+    <Compile Include="Sieradz\TypowyAdam\OtherExperiments\TypowyAdamMethodFactoryGenerator.cs" />
+    <Compile Include="Sieradz\TypowyAdam\OtherExperiments\TypowyAdamTestListGenerator.cs" />
+    <Compile Include="Sieradz\TypowyAdam\TypowyAdamSampleTest.cs" />
+    <Compile Include="Sieradz\TypowyAdam\OldTests\TypowyAdamStringManipulatorTest.cs" />
+    <Compile Include="Sieradz\TypowyAdam\OldTests\Undeground1Test.cs" />
+    <Compile Include="Sieradz\TypowyAdam\OldTests\PentagramTest.cs" />
     <Compile Include="Sieradz\TypowyAdam\PeselValidatorTest\TypowyAdamPeselValidatorTest.cs" />
     <Compile Include="Sieradz\UCantTouchThis\DateValidatorTests.cs" />
     <Compile Include="Sieradz\UCantTouchThis\RandomStringGeneratorTests.cs" />
@@ -193,9 +203,6 @@
     <Content Include="Sieradz\TypowyAdam\PeselValidatorTest\validPeselList.txt" />
     <Content Include="Gliwice\Rudi\testFileToRead.txt" />
     <Content Include="Lausion\Check.txt" />
-    <Content Include="Sieradz\TypowyAdam\invalidPeselList.txt" />
-    <Content Include="Sieradz\TypowyAdam\otherInvalidPeselList.txt" />
-    <Content Include="Sieradz\TypowyAdam\validPeselList.txt" />
     <Compile Include="S2yfr4nt\PeselVaidator\PeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -205,6 +212,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Wroclaw\gipson\BankTransfer\" />
     <Folder Include="Wroclaw\Kollwing\" />
   </ItemGroup>
   <ItemGroup />
