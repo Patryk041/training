@@ -5,7 +5,7 @@ using Toci.Hornets.GhostRider.NFZ.Przychodnia.ResourcesRequest;
 
 namespace Toci.Hornets.GhostRider.NFZ.Przychodnia.Pacjenct
 {
-    public abstract class Patient : Human<string,string>
+    public abstract class Patient : Human<string,string,string>
     {
         public List<Symptom> Symptoms;
         public List<IAppointment> Appointments;

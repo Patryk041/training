@@ -16,7 +16,7 @@ namespace Toci.Hornets.Sieradz.Duch.Traning
         {
             items[position] = item;
             position++;
-            return warunek == warunek;
+            return true;
 
         }
 
@@ -26,7 +26,7 @@ namespace Toci.Hornets.Sieradz.Duch.Traning
             {
                 
             }
-            return warunek == warunek;
+            return true;
 
         }
     }
