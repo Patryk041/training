@@ -103,7 +103,7 @@ class Database {
      * @param bool-false/string $where optional WHERE part
      * @return Postgres
      */
-    public function select($table, $columns = '*', $where = false) {
+    public function select($table, $columns = '*',$asArray=false, $where = false) {
 
         if (is_array($columns)) {
             $field = implode(',',$columns);
@@ -115,7 +115,10 @@ class Database {
 
         $query.=';';
 
-        return $this->query($query);
+
+        $result = $this->query($query);
+
+        return $asArray?pg_fetch_all($result):$result;
 
     }
 
@@ -190,7 +193,10 @@ class Database {
     }
 }
 //mysql
-$db=new Database($config);
-$db2=new Database($config2);
-$db->PgInsert("eagles",array("name"=>"tak"));
-$db2->PgInsert("eagles",array("name"=>"tak"));
+//$db=new Database($config);
+//$db2=new Database($config2);
+//$db->insert("eagles",array("name"=>"tak"));
+//$db2->insert("eagles",array("name"=>"tak"));
+//
+//$db->delete("eagles",array("name"=>"tak"));
+//$db2->delete("eagles",array("name"=>"tak"));
