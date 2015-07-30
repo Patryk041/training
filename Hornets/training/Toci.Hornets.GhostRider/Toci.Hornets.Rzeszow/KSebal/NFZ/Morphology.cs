@@ -14,15 +14,8 @@ namespace Toci.Hornets.Rzeszow.KSebal.NFZ
         private Examination _data;
         private Dictionary<string, double> _resultDictionary;
 
-
-        public Morphology()
-        {
-            _data = new Examination();
-            _resultDictionary=new Dictionary<string, double>();   
-        }
-
         public Morphology(Examination data)
-        {   
+        {    
             _resultDictionary=new Dictionary<string, double>();
             _data = data;
         }
@@ -53,6 +46,11 @@ namespace Toci.Hornets.Rzeszow.KSebal.NFZ
             if (!_resultDictionary.ContainsKey(name)) return false;
             _resultDictionary[name] = value;
             return true;
+        }
+
+        public void changeExaminationData(Examination newData)
+        {
+            _data = newData;
         }
 
     }
