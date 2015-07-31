@@ -10,7 +10,7 @@ namespace Toci.Hornets.Rzeszow.Terry.NFZ
         protected Dictionary<DateTime, IAppointment> AppointmentsDictionary = new Dictionary<DateTime, IAppointment>();  
         public bool AddAppointment(IAppointment appointment)
         {
-            if (AppointmentsDictionary.ContainsKey(appointment.AppointmaDate)) return false;
+            if (AppointmentsDictionary.ContainsValue(appointment)) return false;
          
             AppointmentsDictionary.Add(appointment.AppointmaDate, appointment);
             return true;
