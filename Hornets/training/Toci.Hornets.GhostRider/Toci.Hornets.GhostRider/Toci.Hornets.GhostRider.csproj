@@ -67,6 +67,7 @@
     <Compile Include="NFZ\Przychodnia\Base\Abstract\Symptom.cs" />
     <Compile Include="NFZ\Przychodnia\Base\Abstract\Human.cs" />
     <Compile Include="NFZ\Przychodnia\Base\Enum\AppointmentType.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Enum\ExaminationTypeEnum.cs" />
     <Compile Include="NFZ\Przychodnia\Base\Enum\Gender.cs" />
     <Compile Include="NFZ\Przychodnia\Base\Interface\IAdditionalFeature.cs" />
     <Compile Include="NFZ\Przychodnia\Base\Interface\IAddress.cs" />
@@ -77,9 +78,9 @@
     <Compile Include="NFZ\Przychodnia\Base\Interface\IExamination.cs" />
     <Compile Include="NFZ\Przychodnia\Base\Interface\IHuman.cs" />
     <Compile Include="NFZ\Przychodnia\Base\Interface\ISymptom.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Types\Examination.cs" />
     <Compile Include="NFZ\Przychodnia\ExaminationManagement\Interfaces\IExamination.cs" />
     <Compile Include="NFZ\Przychodnia\Pacjenct\Patient.cs" />
-    <Compile Include="NFZ\Przychodnia\Pacjenct\TelephoneContact.cs" />
     <Compile Include="NFZ\Przychodnia\Requestors\INFZPatientIdentification.cs" />
     <Compile Include="NFZ\Przychodnia\Requestors\NFZRequestor.cs" />
     <Compile Include="NFZ\Przychodnia\ResourcesRequest\Requestor.cs" />
@@ -121,7 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AccessModifiers\Kollwing\" />
-    <Folder Include="NFZ\Przychodnia\Base\Types\" />
     <Folder Include="NFZ\Przychodnia\Choroba\" />
     <Folder Include="NFZ\Przychodnia\Lekarz\" />
     <Folder Include="NFZ\Przychodnia\Recepta\" />
@@ -132,6 +132,7 @@
   <ItemGroup>
     <Content Include="Kir\demo\demo.txt" />
     <Content Include="NFZ\Magic.txt" />
+    <Content Include="NFZ\TasksTODO.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
