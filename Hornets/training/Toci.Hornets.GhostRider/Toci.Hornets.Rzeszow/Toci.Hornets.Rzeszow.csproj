@@ -125,6 +125,7 @@
     <Compile Include="Sherpin\TasksTrainingTwo\SherDateValidator.cs" />
     <Compile Include="Sherpin\TasksTrainingTwo\SherPeselValidator.cs" />
     <Compile Include="Sherpin\TasksTrainingTwo\SherStringManipulations.cs" />
+    <Compile Include="Terry\NFZ\LocalCalendar.cs" />
     <Compile Include="Terry\TelephoneHomework\TerryTelephoneHomework.cs" />
     <Compile Include="Terry\TerryTest.cs" />
     <Compile Include="Terry\TrainingFour\GenericList\TerryGenericList.cs" />
