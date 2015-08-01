@@ -36,7 +36,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -81,12 +83,9 @@
     <Compile Include="Legnica\Kir\MikzeTestClass.cs" />
     <Compile Include="Rzeszow\SemiRafista\SeRaGenericsTest.cs" />
     <Compile Include="Sieradz\BankTransferTests\PerformTransfersTest.cs" />
-
     <Compile Include="S2yfr4nt\GenericList\GenericList.cs" />
-
     <Compile Include="Rzeszow\Chojnecki\tFour\UnitTest1.cs" />
     <Compile Include="Rzeszow\Terry\GenericList\TerryGenericsTest.cs" />
-
     <Compile Include="Sieradz\DeeJay\BankTransfers\DjBankTransfersTest.cs" />
     <Compile Include="Sieradz\DeeJay\TasksTrainingTwo\DjTypowyAdamPeselValidatorTestRefactored.cs" />
     <Compile Include="Sieradz\Duch\HW3\DuchBankTests.cs" />
