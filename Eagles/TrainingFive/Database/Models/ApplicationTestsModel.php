@@ -3,7 +3,7 @@
 	class ApplicationTestsModel extends Model
 	{
 		// zm
-		public __construct()
+		public function __construct()
 		{
 			$this->tableName = 'applicationtests';
 		}

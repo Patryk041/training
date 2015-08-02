@@ -9,6 +9,8 @@
 		protected $dbHandle;
 
 		protected $dbInsert;
+                
+                protected $dbUpdate;
 		
 		//protected map
 	}
