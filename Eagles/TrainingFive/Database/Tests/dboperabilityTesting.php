@@ -18,11 +18,17 @@
 	
 	var_dump($result);*/
 	
-	$dbInsert = new DbInsert();
+	//$dbInsert = new DbInsert();
 	
-	$inseert = $dbInsert->RenderQuery('applicationtests', array('codesnipet' => 'robimy inserty z php a', 'rightanswers' => 'to jest fantastyczna odpowiedz'));
+//	$inseert = $dbInsert->RenderQuery('applicationtests', array('codesnipet' => 'robimy inserty z php a', 'rightanswers' => 'to jest fantastyczna odpowiedz'));
 	
 	//var_dump('etylieta: '.$inseert);
 	
-	$dbHandle->SetData($inseert);
+	//$dbHandle->SetData($inseert);
 	
+	$handle = fopen($filename, $mode);
+	$s .= fread($handle, $length);
+	
+	echo base64_encode("ala ma kota"); // png -> base64
+	
+	//echo base64_decode($data)
