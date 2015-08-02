@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="17" version="2.0">
+<workbenchAdvisor/>
+<window height="768" maximized="true" minimized="true" width="1024" x="75" y="75">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.php.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1437288762099" focus="true" label="Workspace - PHP">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.php.editor" name="semantyka.php" partName="semantyka.php" path="D:/self/projects/eena/prawa_strona/semantyka.php" title="semantyka.php" tooltip="eena/prawa_strona/semantyka.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/prawa_strona/semantyka.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="612" selectionTopPixel="289"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="dodatkowe_osoby.php" partName="dodatkowe_osoby.php" path="D:/self/projects/eena/prawa_strona/dodatkowe_osoby.php" title="dodatkowe_osoby.php" tooltip="eena/prawa_strona/dodatkowe_osoby.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/prawa_strona/dodatkowe_osoby.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5257" selectionTopPixel="1462"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="Person.php" partName="Person.php" path="D:/self/projects/eena/adl/Person.php" title="Person.php" tooltip="eena/adl/Person.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/adl/Person.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="3" selectionOffset="2629" selectionTopPixel="986"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="HelpersUI.php" partName="HelpersUI.php" path="D:/self/projects/eena/ui/HelpersUI.php" title="HelpersUI.php" tooltip="eena/ui/HelpersUI.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/ui/HelpersUI.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1255" selectionTopPixel="612"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="kontakt.php" partName="kontakt.php" path="D:/self/projects/eena/prawa_strona/kontakt.php" title="kontakt.php" tooltip="eena/prawa_strona/kontakt.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/prawa_strona/kontakt.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10656" selectionTopPixel="4817"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="BLLDodatkoweOsoby.php" partName="BLLDodatkoweOsoby.php" path="D:/self/projects/eena/bll/BLLDodatkoweOsoby.php" title="BLLDodatkoweOsoby.php" tooltip="eena/bll/BLLDodatkoweOsoby.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/bll/BLLDodatkoweOsoby.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2188" selectionTopPixel="403"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="DALDaneOsobowe.php" partName="DALDaneOsobowe.php" path="D:/self/projects/eena/dal/DALDaneOsobowe.php" title="DALDaneOsobowe.php" tooltip="eena/dal/DALDaneOsobowe.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/dal/DALDaneOsobowe.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8034" selectionTopPixel="2442"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="Model.php" partName="Model.php" path="D:/self/projects/eena/dal/Model.php" title="Model.php" tooltip="eena/dal/Model.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/dal/Model.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="32379" selectionTopPixel="10404"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="Logic.php" partName="Logic.php" path="D:/self/projects/eena/bll/Logic.php" title="Logic.php" tooltip="eena/bll/Logic.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/bll/Logic.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="21" selectionOffset="2763" selectionTopPixel="1037"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="zadania_dnia.php" partName="zadania_dnia.php" path="D:/self/projects/eena/prawa_strona/zadania_dnia.php" title="zadania_dnia.php" tooltip="eena/prawa_strona/zadania_dnia.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/prawa_strona/zadania_dnia.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="103" selectionTopPixel="2329"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="reklamacje.php" partName="reklamacje.php" path="D:/self/projects/eena/prawa_strona/reklamacje.php" title="reklamacje.php" tooltip="eena/prawa_strona/reklamacje.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/prawa_strona/reklamacje.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3253" selectionTopPixel="1141"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="DALDodatkoweOsoby.php" partName="DALDodatkoweOsoby.php" path="D:/self/projects/eena/dal/DALDodatkoweOsoby.php" title="DALDodatkoweOsoby.php" tooltip="eena/dal/DALDodatkoweOsoby.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/dal/DALDodatkoweOsoby.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="1276" selectionTopPixel="159"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="PartialsUI.php" partName="PartialsUI.php" path="D:/self/projects/eena/ui/PartialsUI.php" title="PartialsUI.php" tooltip="eena/ui/PartialsUI.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/ui/PartialsUI.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3860" selectionTopPixel="844"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="User.php" partName="User.php" path="D:/self/projects/eena/adl/User.php" title="User.php" tooltip="eena/adl/User.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/adl/User.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="362" selectionTopPixel="4496"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="zapytania.php" partName="zapytania.php" path="D:/self/projects/eena/zapytania/zapytania.php" title="zapytania.php" tooltip="eena/zapytania/zapytania.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/zapytania/zapytania.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.php.editor" name="queries.php" partName="queries.php" path="D:/self/projects/eena/bll/queries.php" title="queries.php" tooltip="eena/bll/queries.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/bll/queries.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="143979" selectionTopPixel="51578"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.php.editor" name="common-config.php" partName="common-config.php" path="D:/self/projects/eena/common-config.php" title="common-config.php" tooltip="eena/common-config.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/eena/common-config.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="17" selectionOffset="273" selectionTopPixel="0"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.php.ui.explorer" partName="PHP Explorer">
+<viewState group_libraries="1" isWindowWorkingSet="false" layout="1" linkWithEditor="0" rootMode="1" workingSetName="">
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.php.ui.explorer.NonScriptProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.php.ui.explorer.SMFileFilter" isEnabled="false"/>
+<child filterId="org.eclipse.php.ui.explorer.LibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.php.ui.explorer.NonPublicFilter" isEnabled="false"/>
+<child filterId="org.eclipse.php.ui.explorer.PHPHTMLFilter" isEnabled="false"/>
+<child filterId="org.eclipse.php.ui.explorer.ClosedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.php.ui.explorer.FieldsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.php.ui.explorer.NonScriptElementFilter" isEnabled="false"/>
+<child filterId="org.eclipse.php.ui.explorer.RSEProjectFilter" isEnabled="true"/>
+<child filterId="org.eclipse.php.ui.explorer.EmptyPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.php.ui.explorer.EmptyInnerPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.php.ui.explorer.DotFilesFilter" isEnabled="true"/>
+<child filterId="org.eclipse.php.ui.explorer.ContainMembersFilter" isEnabled="false"/>
+<child filterId="org.eclipse.php.ui.explorer.NonSharedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.php.ui.explorer.ContainedLibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.php.ui.explorer.UseStatementFilter" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List"/>
+<view id="org.eclipse.dltk.ui.TypeHierarchy" partName="Type Hierarchy"/>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+</views>
+<perspectives activePart="org.eclipse.php.editor" activePerspective="org.eclipse.php.perspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.php.internal.ui.PHPPerspectiveFactory" id="org.eclipse.php.perspective" label="PHP"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.php.ui.PHPActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.php.ui.text.php.actionSet.presentation"/>
+<show_view_action id="org.eclipse.php.ui.explorer"/>
+<show_view_action id="org.eclipse.dltk.ui.TypeHierarchy"/>
+<show_view_action id="org.eclipse.php.ui.functions"/>
+<show_view_action id="org.eclipse.php.ui.projectOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<new_wizard_action id="org.eclipse.mylyn.tasks.ui.wizards.new.repository.task"/>
+<new_wizard_action id="org.eclipse.php.ui.wizards.PHPProjectCreationWizard"/>
+<new_wizard_action id="org.eclipse.php.ui.wizards.PHPFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.php.ui.wizards.UntitledPHPDocumentWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.wst.css.ui.internal.wizard.NewCSSWizard"/>
+<new_wizard_action id="org.eclipse.wst.html.ui.internal.wizard.NewHTMLWizard"/>
+<new_wizard_action id="org.eclipse.wst.xml.ui.internal.wizards.NewXMLWizard"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<perspective_action id="org.eclipse.php.perspective"/>
+<perspective_action id="org.eclipse.php.debug.ui.PHPDebugPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<view id="org.eclipse.php.ui.explorer"/>
+<view id="org.eclipse.dltk.ui.TypeHierarchy"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.php.ui.explorer" appearance="2" expanded="2">
+<page content="org.eclipse.php.ui.explorer" label="PHP Explorer"/>
+<page content="org.eclipse.dltk.ui.TypeHierarchy" label="Type Hierarchy"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.22" ratioLeft="220" ratioRight="780" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="right" ratio="0.75" ratioLeft="585" ratioRight="195" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
+<page content="org.eclipse.php.ui.projectOutline" label="LabelNotFound"/>
+<page content="org.eclipse.php.ui.functions" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/prawa_strona/semantyka.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/prawa_strona/dodatkowe_osoby.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/ui/HelpersUI.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/prawa_strona/kontakt.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/bll/BLLDodatkoweOsoby.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/dal/DALDaneOsobowe.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/dal/Model.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/bll/Logic.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/prawa_strona/zadania_dnia.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/prawa_strona/reklamacje.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/dal/DALDodatkoweOsoby.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/ui/PartialsUI.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/adl/User.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/zapytania/zapytania.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/bll/queries.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" path="/eena/common-config.php"/>
+</editors>
+<item historyLabel="dodatkowe_osoby.php" index="1">
+<position info="not_deleted" x="2391" y="0"/>
+</item>
+<item historyLabel="dodatkowe_osoby.php" index="1">
+<position info="not_deleted" x="131" y="0"/>
+</item>
+<item historyLabel="HelpersUI.php" index="2">
+<position info="not_deleted" x="736" y="4"/>
+</item>
+<item historyLabel="dodatkowe_osoby.php" index="1">
+<position info="not_deleted" x="131" y="0"/>
+</item>
+<item historyLabel="kontakt.php" index="3">
+<position info="not_deleted" x="10656" y="0"/>
+</item>
+<item historyLabel="dodatkowe_osoby.php" index="1">
+<position info="not_deleted" x="131" y="0"/>
+</item>
+<item historyLabel="semantyka.php" index="0">
+<position info="not_deleted" x="2048" y="5"/>
+</item>
+<item historyLabel="dodatkowe_osoby.php" index="1">
+<position info="not_deleted" x="1593" y="0"/>
+</item>
+<item historyLabel="BLLDodatkoweOsoby.php" index="4">
+<position info="not_deleted" x="1251" y="0"/>
+</item>
+<item historyLabel="DALDaneOsobowe.php" index="5">
+<position info="not_deleted" x="8034" y="0"/>
+</item>
+<item historyLabel="BLLDodatkoweOsoby.php" index="4">
+<position info="not_deleted" x="2074" y="0"/>
+</item>
+<item historyLabel="dodatkowe_osoby.php" index="1">
+<position info="not_deleted" x="5257" y="0"/>
+</item>
+<item historyLabel="HelpersUI.php" index="2">
+<position info="not_deleted" x="4936" y="7"/>
+</item>
+<item historyLabel="HelpersUI.php" index="2">
+<position info="not_deleted" x="5305" y="0"/>
+</item>
+<item historyLabel="HelpersUI.php" index="2">
+<position info="not_deleted" x="12560" y="0"/>
+</item>
+<item historyLabel="Model.php" index="6">
+<position info="not_deleted" x="32379" y="0"/>
+</item>
+<item historyLabel="BLLDodatkoweOsoby.php" index="4">
+<position info="not_deleted" x="2123" y="0"/>
+</item>
+<item historyLabel="Logic.php" index="7">
+<position info="not_deleted" x="4616" y="11"/>
+</item>
+<item historyLabel="Logic.php" index="7">
+<position info="not_deleted" x="4570" y="0"/>
+</item>
+<item historyLabel="Logic.php" index="7">
+<position info="not_deleted" x="2763" y="21"/>
+</item>
+<item historyLabel="HelpersUI.php" index="2">
+<position info="not_deleted" x="12560" y="0"/>
+</item>
+<item historyLabel="HelpersUI.php" index="2">
+<position info="not_deleted" x="5477" y="0"/>
+</item>
+<item historyLabel="HelpersUI.php" index="2">
+<position info="not_deleted" x="11251" y="23"/>
+</item>
+<item historyLabel="BLLDodatkoweOsoby.php" index="4">
+<position info="not_deleted" x="2188" y="0"/>
+</item>
+<item historyLabel="dodatkowe_osoby.php" index="1">
+<position info="not_deleted" x="5257" y="0"/>
+</item>
+<item historyLabel="kontakt.php" index="3">
+<position info="not_deleted" x="10656" y="0"/>
+</item>
+<item historyLabel="semantyka.php" index="0">
+<position info="not_deleted" x="2092" y="0"/>
+</item>
+<item historyLabel="dodatkowe_osoby.php" index="1">
+<position info="not_deleted" x="5257" y="0"/>
+</item>
+<item historyLabel="zadania_dnia.php" index="8">
+<position info="not_deleted" x="103" y="0"/>
+</item>
+<item historyLabel="reklamacje.php" index="9">
+<position info="not_deleted" x="115" y="14"/>
+</item>
+<item historyLabel="semantyka.php" index="0">
+<position info="not_deleted" x="2024" y="11"/>
+</item>
+<item historyLabel="DALDodatkoweOsoby.php" index="10">
+<position info="not_deleted" x="1276" y="6"/>
+</item>
+<item historyLabel="semantyka.php" index="0">
+<position info="not_deleted" x="1953" y="23"/>
+</item>
+<item historyLabel="HelpersUI.php" index="2">
+<position info="not_deleted" x="357" y="4"/>
+</item>
+<item historyLabel="PartialsUI.php" index="11">
+<position info="not_deleted" x="3860" y="0"/>
+</item>
+<item historyLabel="dodatkowe_osoby.php" index="1">
+<position info="not_deleted" x="5257" y="0"/>
+</item>
+<item historyLabel="reklamacje.php" index="9">
+<position info="not_deleted" x="3256" y="0"/>
+</item>
+<item historyLabel="User.php" index="12">
+<position info="not_deleted" x="8251" y="15"/>
+</item>
+<item historyLabel="reklamacje.php" index="9">
+<position info="not_deleted" x="3245" y="0"/>
+</item>
+<item historyLabel="HelpersUI.php" index="2">
+<position info="not_deleted" x="1255" y="0"/>
+</item>
+<item historyLabel="reklamacje.php" index="9">
+<position info="not_deleted" x="3253" y="0"/>
+</item>
+<item historyLabel="User.php" index="12">
+<position info="not_deleted" x="362" y="4"/>
+</item>
+<item historyLabel="semantyka.php" index="0">
+<position info="not_deleted" x="612" y="10"/>
+</item>
+<item historyLabel="dodatkowe_osoby.php" index="1">
+<position info="not_deleted" x="5257" y="0"/>
+</item>
+<item historyLabel="reklamacje.php" index="9">
+<position info="not_deleted" x="3253" y="0"/>
+</item>
+<item historyLabel="zapytania.php" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="queries.php" index="14">
+<position info="not_deleted" x="143979" y="0"/>
+</item>
+<item historyLabel="common-config.php" index="15">
+<position info="not_deleted" x="273" y="17"/>
+</item>
+<item historyLabel="queries.php" index="14">
+<position info="not_deleted" x="143979" y="0"/>
+</item>
+<item active="true" historyLabel="common-config.php" index="15">
+<position info="not_deleted" x="273" y="17"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="common-config.php" tooltip="eena/common-config.php">
+<persistable path="/eena/common-config.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="queries.php" tooltip="eena/bll/queries.php">
+<persistable path="/eena/bll/queries.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="zapytania.php" tooltip="eena/zapytania/zapytania.php">
+<persistable path="/eena/zapytania/zapytania.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="User.php" tooltip="eena/adl/User.php">
+<persistable path="/eena/adl/User.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="PartialsUI.php" tooltip="eena/ui/PartialsUI.php">
+<persistable path="/eena/ui/PartialsUI.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="DALDodatkoweOsoby.php" tooltip="eena/dal/DALDodatkoweOsoby.php">
+<persistable path="/eena/dal/DALDodatkoweOsoby.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="reklamacje.php" tooltip="eena/prawa_strona/reklamacje.php">
+<persistable path="/eena/prawa_strona/reklamacje.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="zadania_dnia.php" tooltip="eena/prawa_strona/zadania_dnia.php">
+<persistable path="/eena/prawa_strona/zadania_dnia.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="Logic.php" tooltip="eena/bll/Logic.php">
+<persistable path="/eena/bll/Logic.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="Model.php" tooltip="eena/dal/Model.php">
+<persistable path="/eena/dal/Model.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="DALDaneOsobowe.php" tooltip="eena/dal/DALDaneOsobowe.php">
+<persistable path="/eena/dal/DALDaneOsobowe.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="BLLDodatkoweOsoby.php" tooltip="eena/bll/BLLDodatkoweOsoby.php">
+<persistable path="/eena/bll/BLLDodatkoweOsoby.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="kontakt.php" tooltip="eena/prawa_strona/kontakt.php">
+<persistable path="/eena/prawa_strona/kontakt.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="HelpersUI.php" tooltip="eena/ui/HelpersUI.php">
+<persistable path="/eena/ui/HelpersUI.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.php.editor" name="Person.php" tooltip="eena/adl/Person.php">
+<persistable path="/eena/adl/Person.php"/>
+</file>
+</mruList>
+</workbench>

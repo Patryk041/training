@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TransfersList>
+  <T0>
+    <SourceAccountNumber>121140</SourceAccountNumber>
+    <SourcePersonName>Zdzisław Zdzisławski Zdzisławowice</SourcePersonName>
+    <DestinationAccountNumber>121140</DestinationAccountNumber>
+    <DestinationPersonName>Zdzisław Zdzisławski Zdzisławowice</DestinationPersonName>
+    <Amount>666</Amount>
+    <TransferTitle>TransferTitle</TransferTitle>
+  </T0>
+</TransfersList>
