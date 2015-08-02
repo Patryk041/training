@@ -1,36 +1,34 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
-using Toci.Hornets.Sieradz.UCantTouchThis.ExtensionMethods;
 
 namespace Toci.Hornets.Sieradz.UCantTouchThis.JsonParser
 {
-    public class SimpleJsonParser<TargetType>
+    public class SimpleJsonParser<Type>
     {
+        protected Type TargetType;
         protected List<string> PublicPropertiesNamesList;
-        protected string Pattern = @"{0}""\s*:\s*"".*?(?=\"")";
+        protected string Pattern = "";
 
-        public virtual TargetType Parse(TargetType target, string jsonStringLine)
+        public SimpleJsonParser(Type type, string jsonString)
         {
-            FillPublicPropertiesNamesList(target);
-            PublicPropertiesNamesList.ForEach(propertyName => SetPropertyValue(jsonStringLine, propertyName, target));
-            return target;
+            TargetType = type;
         }
 
-        protected virtual void FillPublicPropertiesNamesList(TargetType target)
+        public virtual Type Parse()
         {
-            PublicPropertiesNamesList = target.GetType().GetProperties().Select(property => property.Name).ToList();
+            InitialiseParser();
+            return default(Type);
         }
 
-        protected virtual void SetPropertyValue(string jsonStringLine, string propertyName, TargetType target)
+        protected virtual void InitialiseParser()
         {
-            target.SetPublicPropertyValue(propertyName, FindValue(jsonStringLine, propertyName));
+            PublicPropertiesNamesList = GetPublicPropertiesNamesList();
+            //more to come
         }
 
-        protected virtual string FindValue(string jsonStringLine, string propertyName)
+        protected virtual List<string> GetPublicPropertiesNamesList()
         {
-            var match = Regex.Match(jsonStringLine, string.Format(@"{0}""\s*:\s*""(.*?)(?=\"")", propertyName));
-            return (match.Success) ? match.Groups[1].ToString() : null;
+                return TargetType.GetType().GetProperties().Select(x => x.Name).ToList();
         }
     }
 }

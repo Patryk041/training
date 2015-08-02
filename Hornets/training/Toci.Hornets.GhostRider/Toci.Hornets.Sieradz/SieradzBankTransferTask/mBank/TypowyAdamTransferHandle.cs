@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 using System.IO;
 using Spire.Pdf;
 using Spire;
@@ -10,72 +9,29 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
 {
     public class TypowyAdamTransferHandle :TransferHandle
     {
-
-        public TypowyAdamTransferHandle()
-        {
-            BankName = "mBank";
-        }
+        
         protected override bool Send(BankTransfer transfer)
         {
-            GenerateTransferPDF(transfer); //suck too much to put it there
-            transfer.IsTransferSuccessful = true;
-            return transfer.IsTransferSuccessful;
-        }
-
-        protected bool GenerateTransferPDF(BankTransfer transfer)
-        {
-            lock (this)
+            PdfDocument transferDetails = new PdfDocument();
+            PdfPageBase TransferPage = transferDetails.Pages.Add();
+            TransferPage.Canvas.DrawString("mBank\n\t\tPotwierdzenie przelewu:", new PdfFont(PdfFontFamily.Helvetica, 30f),new PdfSolidBrush(new PdfRGBColor(0,0,0)), 10,10  );
+            if (File.Exists(Path.Combine(SieradzBankFilesPathHolder.TransferFilesPath, @"..\mBank\Transfers1.pdf")))
             {
-                PdfDocument transferDetails = new PdfDocument();
-                //transferDetails.
-                Font pdfFont = new Font("Arial", 18f);
-                PdfTrueTypeFont trueTypeFont = new PdfTrueTypeFont(pdfFont, true);
-
-                PdfPageBase TransferPage = transferDetails.Pages.Add();
-                PdfBitmap logo = new PdfBitmap(SieradzBankFilesPathHolder.TransferFilesPath + @"..\mBank\logo.jpg");
-                TransferPage.Canvas.DrawImage(logo, new RectangleF(new PointF(25.0f, 25.0f), new SizeF(140f, 85f)));
-                TransferPage.Canvas.DrawString("\tPotwierdzenie przelewu:", new PdfFont(PdfFontFamily.Helvetica, 20f), new PdfSolidBrush(new PdfRGBColor(0, 0, 0)), 10, 150f);
-                TransferPage.Canvas.DrawString(TransferDetailsString(transfer), trueTypeFont, new PdfSolidBrush(new PdfRGBColor(0, 0, 0)), 50, 180f);
-                SavePDF(transferDetails);
+              //  File.Open(Path.Combine(SieradzBankFilesPathHolder.TransferFilesPath, @"..\mBank\Transfers1.pdf"),FileMode.Open).Close();
+                File.Delete(Path.Combine(SieradzBankFilesPathHolder.TransferFilesPath, @"..\mBank\Transfers1.pdf"));
             }
-
-
+            transferDetails.SaveToFile(SieradzBankFilesPathHolder.TransferFilesPath+@"..\mBank\Transfers1.pdf");
+            transferDetails.Close();
+            //throw new System.NotImplementedException();
             return true;
         }
 
-        protected string TransferDetailsString(BankTransfer transfer)
+#pragma warning disable 108,114
+        public bool SendTransfer(BankTransfer transfer)
+#pragma warning restore 108,114
         {
-            SieradzBankTransfer extendedTransfer = (SieradzBankTransfer)transfer;
-            string[] transferArray = {   "Nr konta nadawcy: "+extendedTransfer.TransferInfo.SourceAccountNumber+"\n", 
-                                             "Bank nadawcy: "+extendedTransfer.SourceBank+"\n",
-                                             "Adres nadawcy: "+extendedTransfer.TransferInfo.SourcePersonName+"\n",
-                                             "Nr konta odbiorcy: "+extendedTransfer.TransferInfo.DestinationAccountNumber+"\n",
-                                             "Bank odbiorcy: " + extendedTransfer.DestinationBank+"\n",
-                                             "Adres odbiorcy: "+ extendedTransfer.TransferInfo.DestinationPersonName+"\n",
-                                             "Kwota przelewu: "+extendedTransfer.TransferInfo.Amount+"zł\n",
-                                             "Tytuł przelewu: "+extendedTransfer.TransferInfo.TransferTitle+"\n",
-                                             "Data przyjęcia: "+extendedTransfer.TransferInfo.TransferDate+"\n"
-                                         };
-            string transferDetail = null;
-            foreach (var label in transferArray)
-            {
-                transferDetail += label;
-            }
-            return transferDetail;
+            Send(transfer);
+            return true;
         }
-
-        protected bool SavePDF(PdfDocument transferDetails)
-        {
-            if (File.Exists(Path.Combine(SieradzBankFilesPathHolder.TransferFilesPath, @"..\mBank\Transfers1.pdf")))
-            {
-                File.Open(Path.Combine(SieradzBankFilesPathHolder.TransferFilesPath, @"..\mBank\Transfers1.pdf"), FileMode.Open).Close();
-                File.Delete(Path.Combine(SieradzBankFilesPathHolder.TransferFilesPath, @"..\mBank\Transfers1.pdf"));
-            }
-            transferDetails.SaveToFile(SieradzBankFilesPathHolder.TransferFilesPath + @"..\mBank\Transfers1.pdf",FileFormat.PDF);
-            transferDetails.Close();
-
-            return File.Exists(SieradzBankFilesPathHolder.TransferFilesPath + @"..\mBank\Transfers1.pdf");
-        }
-
     }
 }

@@ -11,11 +11,11 @@ namespace Toci.Hornets.Wroclaw.ProjectElixir
     
 
 
-        private BankTrasfersParsersWroclaw() // prywatny konstruktor aby nie mozna bylo otrzymac instancji bez ustawienia separatora
+        private BankTrasfersParsersWroclaw()
         {
         }
 
-       public static BankTrasfersParsersWroclaw getInstance(char Separator)
+        static BankTrasfersParsersWroclaw getInstance(char Separator)
         {
             _separator = Separator;
             return new BankTrasfersParsersWroclaw();
@@ -43,14 +43,8 @@ namespace Toci.Hornets.Wroclaw.ProjectElixir
         private List<string> SeparateLines(string fileContent)
         {
             var fileLinesList = new List<string>();
-            string[] stringSeparators = new string[] { "\r\n" };
-            var lineList = fileContent.Split(stringSeparators,StringSplitOptions.None);
 
-            foreach (var line in lineList)
-            {
-               fileLinesList.Add(line);
-                
-            }
+            // logic
 
             return fileLinesList;
         }

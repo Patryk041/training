@@ -16,7 +16,6 @@ namespace Toci.Hornets.UnitTests.Sieradz.Quicksilver.TwoQs
             Assert.IsFalse(results.IsAnagram);
             //Assert.AreEqual(results.IsAnagram && results.IsStringElementsInString, true);
             results = comparator.RunStringOperations("alamakota", "kot");
-            
         }
     }
 }

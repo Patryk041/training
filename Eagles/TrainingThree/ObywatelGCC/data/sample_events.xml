@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DevicesEvents>
+	<Event>
+		<HomeAddress>Woloska 16</HomeAddress>
+		<DeviceName>Okno</DeviceName>
+		<Operation>
+			<OperationType>Zamkniecie</OperationType>
+			<OperationHour>17:45:30</OperationHour>
+			<OperationTime>30</OperationTime>
+			<OperatorionEnergyUsage>0.1W</OperatorionEnergyUsage>
+			<OperationErrors>null</OperationErrors>
+			<OperationExtraInfo>null</OperationExtraInfo>
+		</Operation>
+	</Event>
+	<Event>
+		<HomeAddress>Modlinska 24</HomeAddress>
+		<DeviceName>Pralka</DeviceName>
+		<Operation>
+			<OperationType>Wlaczenie</OperationType>
+			<OperationHour>10:11:13</OperationHour>
+			<OperationTime>85</OperationTime>
+			<OperatorionEnergyUsage>100W</OperatorionEnergyUsage>
+			<OperationErrors>Wyciek wody</OperationErrors>
+			<OperationExtraInfo>null</OperationExtraInfo>
+		</Operation>
+	</Event>
+	<Event>
+		<HomeAddress>Potocka 11</HomeAddress>
+		<DeviceName>Piekarnik</DeviceName>
+		<Operation>
+			<OperationType>Wlaczenie</OperationType>
+			<OperationHour>12:30:23</OperationHour>
+			<OperationTime>45</OperationTime>
+			<OperatorionEnergyUsage>120W</OperatorionEnergyUsage>
+			<OperationErrors>null</OperationErrors>
+			<OperationExtraInfo>180C</OperationExtraInfo>
+		</Operation>
+	</Event>
+	<Event>
+		<HomeAddress>Chelmska 30</HomeAddress>
+		<DeviceName>Okno 1</DeviceName>
+		<Operation>
+			<OperationType>Otwarcie</OperationType>
+			<OperationHour>14:45:20</OperationHour>
+			<OperationTime>134</OperationTime>
+			<OperatorionEnergyUsage>0.1W</OperatorionEnergyUsage>
+			<OperationErrors>null</OperationErrors>
+			<OperationExtraInfo>null</OperationExtraInfo>
+		</Operation>
+	</Event>
+</DevicesEvents>

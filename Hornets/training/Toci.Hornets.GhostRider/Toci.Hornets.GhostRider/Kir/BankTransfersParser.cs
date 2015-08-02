@@ -13,6 +13,7 @@ namespace Toci.Hornets.GhostRider.Kir
         // linie przetworzyc GetTransferEntry na typ BankTransfer
         public abstract List<BankTransfer> GetBankTransfers();
 
+
         protected abstract BankTransfer GetTransferEntry(string entry);
     }
 }

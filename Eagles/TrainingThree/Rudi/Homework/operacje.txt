@@ -1,0 +1,4 @@
+willa1;okno;Open;14:00;5;20;null;null;
+willa3;okno;Close;16:15;5;30;okradli cię;null
+willa przy mokotowskiej;przedpokoj;Przewietrz;12:00;5;40;null;pożar
+apartament na hawajach;plazma;Uruchom;4:40;5;50;null;null

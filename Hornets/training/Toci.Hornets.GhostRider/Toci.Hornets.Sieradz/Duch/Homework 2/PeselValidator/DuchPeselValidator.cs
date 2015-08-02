@@ -21,7 +21,7 @@ namespace Toci.Hornets.Sieradz.Duch.Homework_2.PeselValidator
 
         protected override bool Checksum(string pesel)
         {
-           return TypowyAdamPeselValidatorUtils.CheckCheckSum(pesel);
+           return PeselValidatorUtils.CheckCheckSum(pesel);
         }
 
         protected override bool ValidateDate(int year, int month, int day)
@@ -29,7 +29,7 @@ namespace Toci.Hornets.Sieradz.Duch.Homework_2.PeselValidator
 
             return DuchPeselUtils.IsMonthLenghtValid(month) &&
                     DuchPeselUtils.IsDayAmountValid(day) &&
-                    TypowyAdamPeselValidatorUtils.IsDayValid(year, month, day);
+                    PeselValidatorUtils.IsDayValid(year, month, day);
         }
 
         public override string GetNick()

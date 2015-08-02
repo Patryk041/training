@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
 namespace Toci.Hornets.Opole.Lausion.TasksTraningTwo.StringManipulation
@@ -21,24 +20,8 @@ namespace Toci.Hornets.Opole.Lausion.TasksTraningTwo.StringManipulation
         // false: beata; aaa, taaa, tta, aee
         protected override bool IsStringElementsInString(string subject, string seek)
         {
-            if (subject.Length <= seek.Length)
-                return false;
-            else
-            {
-                var subjectChars = subject.ToList();
-                var seekChars = seek.ToList();
-                foreach (var seekChar in seekChars)
-                {
-                    if (subjectChars.Contains(seekChar))
-                        subjectChars.Remove(seekChar);
-                    else
-                    {
-                        return false;
-                    }
-                }
-            }
-
-            return true;
+           //????????????????????
+            return false;
         }
         // true: beata; ataeb, aateb, tbaea
         // false: beata; aaateb, fdwgdw
@@ -48,8 +31,8 @@ namespace Toci.Hornets.Opole.Lausion.TasksTraningTwo.StringManipulation
                 return false;
             else
             {
-                var subjectChars = subject.ToCharArray();
-                var seekChars = seek.ToCharArray();
+                char[] subjectChars = subject.ToCharArray();
+                char[] seekChars = seek.ToCharArray();
                 Array.Sort(subjectChars);
                 Array.Sort(seekChars);
                 subject = subjectChars.ToString();

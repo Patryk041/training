@@ -2,25 +2,6 @@
   "Transfers": [
     {
       "Source" : {
-        "Acount number" : "zdsfhgsfdhg",
-        "Name": "sfdhgdfhg",
-        "Address":"dhg",
-        "Bank": "dfhgdfhgdfg"
-      },
-      "Destination" : {
-        "Acount number" : "dfhgdfhg",
-        "Name": "dfhgdfhg",
-        "Address":"dsfgjfgjhk",
-        "Bank": "jhkl;kj"
-      },
-      "Transfer Type" : "Income",
-      "Amount" : "123",
-      "Title of Transfer" : "sdf",
-      "Date of transfer" : "",
-      "Date of record" : ""
-    },
-    {
-      "Source" : {
         "Acount number" : " ",
         "Name": " ",
         "Address":" ",
@@ -32,7 +13,7 @@
         "Address":" ",
         "Bank": " "
       },
-      "Transfer Type" : "Income",
+      "Transfer Type" : "",
       "Amount" : "",
       "Title of Transfer" : "",
       "Date of transfer" : "",
@@ -51,7 +32,26 @@
         "Address":" ",
         "Bank": " "
       },
-      "Transfer Type" : "Outcome",
+      "Transfer Type" : "",
+      "Amount" : "",
+      "Title of Transfer" : "",
+      "Date of transfer" : "",
+      "Date of record" : ""
+    },
+    {
+      "Source" : {
+        "Acount number" : " ",
+        "Name": " ",
+        "Address":" ",
+        "Bank": " "
+      },
+      "Destination" : {
+        "Acount number" : " ",
+        "Name": " ",
+        "Address":" ",
+        "Bank": " "
+      },
+      "Transfer Type" : "",
       "Amount" : "",
       "Title of Transfer" : "",
       "Date of transfer" : "",

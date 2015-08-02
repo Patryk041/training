@@ -112,7 +112,7 @@
 			
 			$date = $this->CutOffDate($pesel);
 			$result = $result | !$this->DateValidationFromOCCDate($date);
-			//$result = $result | !$this->DateValidation($date->GetYear(), $date->GetMonth(), $date->GetDay()) //dla 
+			//$result = $result | !$this->DateValidation($date->GetYear(), $date->GetMonth(), $date->GetDay())
 			$result = $result | !$this->CheckSum($pesel);
 			return !$result;
 		}

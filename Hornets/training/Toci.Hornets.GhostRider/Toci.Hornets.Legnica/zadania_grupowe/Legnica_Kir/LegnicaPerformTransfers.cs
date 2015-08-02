@@ -5,7 +5,7 @@ using Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir.Factories;
 
 namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir
 {
-    public class LegnicaPerformTransfers : PerformTransfers
+    class LegnicaPerformTransfers : PerformTransfers
     {
         private BankTransfersParserFactory _parserFactory;
         private TransferHandleFactory _handleFactory;
@@ -18,13 +18,14 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir
 
         protected override List<BankTransfersParser> GetAllParsers()
         {
-            return _parserFactory.GetAllParsers().ToList();
+            return (List<BankTransfersParser>) _parserFactory.GetAllParsers();
         }
 
         protected override List<TransferHandle> GetAllHandles()
         {
-            return _handleFactory.GetAllHandles().ToList();
+            return (List<TransferHandle>) _handleFactory.GetAllHandles();
         }
+
 
         public override void TransferAll()
         {
@@ -35,12 +36,21 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir
 
         private void SendTransfers(IEnumerable<BankTransfer> transfers)
         {
+            var handles = GetAllHandles();
             foreach (var transfer in transfers)
             {
-                var handle = _handleFactory.GetTransferHandleByBankName(transfer.DestinationBank);
-                if(handle != null)
-                    handle.SendTransfer(transfer);
+                SendTransfer(handles,transfer);
+                /*handles.Select(x => x.BankName != transfer.DestinationBank);
+                 *jezeli da sie zmienic bank Name na wlasciwosc
+                 *jezeli nie to poberamy delegatem z fabryki, ale to duzo wiecej czasu zajmie
+                 */ 
             }
+        }
+
+        private void SendTransfer(IEnumerable<TransferHandle> handles, BankTransfer transfer)
+        {
+            foreach (var handle in handles)
+                handle.SendTransfer(transfer);
         }
     }
 }

@@ -17,7 +17,6 @@ namespace Toci.Hornets.UnitTests.Lausion
             Assert.IsFalse(test.IsPeselValid("44051401358"));
             //dobre wszystko
             Assert.IsTrue(test.IsPeselValid("44051401359"));
-            Assert.IsFalse(test.IsPeselValid("asas58d4d48"));
 
         }
     }

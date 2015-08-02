@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Toci.Hornets.GhostRider.InterfacesExtending;
 using Toci.Hornets.GhostRider.TElephoneCommunication;
 

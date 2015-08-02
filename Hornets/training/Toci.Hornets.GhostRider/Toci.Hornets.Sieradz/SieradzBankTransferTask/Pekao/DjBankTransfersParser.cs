@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
 using Toci.Hornets.GhostRider.Kir;
-using Toci.Hornets.Sieradz.SieradzBankTransferTask.SieradzBankUtils;
 
 namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.Pekao
 {

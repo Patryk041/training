@@ -1,70 +1,99 @@
-﻿using System.Collections.Generic;
-using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Toci.Hornets.GhostRider.Kir;
-using Toci.Hornets.Sieradz.SieradzBankTransferTask.SieradzBankUtils;
-using Toci.Hornets.Sieradz.Toolz;
+using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
 
 namespace Toci.Hornets.Sieradz.SieradzBankTransferTask
 {
     public class SieradzPerformTransfers : PerformTransfers
     {
-        protected List<BankTransfersParser> SieradzParsersList;
-        protected List<TransferHandle> SieradzHandlesList;
-        protected List<string> ResultList = new List<string>(); 
 
-        protected const string LogFileName = "OperationLog.txt";
-
-        public SieradzPerformTransfers()
+        protected List<object> CreateObjectList(Type targetType)
         {
-            SieradzParsersList = GetAllParsers();
-            SieradzHandlesList = GetAllHandles();
-            SieradzTransferHandlesDictionary.InitialiseTransferHandleDictionaty(SieradzHandlesList);
+            //Chciałem jakoś wydzielić powtarzanie tej samej operacji do innej metody, z testów wynika, że mi się udało.  
+            Assembly myAssembly = Assembly.Load("Toci.Hornets.Sieradz");
+            List<object> objectList = new List<object>();
+            foreach (Type assemblyObject in myAssembly.GetTypes().Where(type => type.IsClass && !type.IsAbstract && type.IsSubclassOf(targetType)))
+            {
+                objectList.Add(Activator.CreateInstance(assemblyObject));
+            }
+            return objectList;
         }
 
-        protected sealed override List<BankTransfersParser> GetAllParsers()
+        //jeśli można jakoś pozbyć się używania tych Converterów to proponujcie :) .
+        protected BankTransfersParser ParserConverter(object convertObject)
         {
-            var SGIC_BTP = new SieradzGenericInstanceCreator<BankTransfersParser>();
-            return SGIC_BTP.CreateObjectList();
+            return (BankTransfersParser) convertObject;
         }
 
-        protected sealed override List<TransferHandle> GetAllHandles()
+        protected TransferHandle HandlesConverter(object convertObject)
         {
-            var SGIC_TH = new SieradzGenericInstanceCreator<TransferHandle>();
-            return SGIC_TH.CreateObjectList();
+            return (TransferHandle)convertObject;
         }
 
-        //Można Przygotować wersję używającą ParalellProcessing i ProcessInParallel jak tu http://puu.sh/iYUDK/f1d6f76442.png
-        public override void TransferAll()
-        {  
-            Parallel.ForEach(SieradzParsersList, NuklearesWaffenArsenal);
-            WriteResultsToLogFile();
+        protected override List<BankTransfersParser> GetAllParsers()
+        {
+
+            return CreateObjectList(typeof(BankTransfersParser)).ConvertAll(ParserConverter);
+            /*
+            List<BankTransfersParser> parsersList = new List<BankTransfersParser>();
+            Assembly myAssembly = Assembly.Load("Toci.Hornets.Sieradz");
+            foreach (Type type in myAssembly.GetTypes().Where(type => type.IsClass && type.IsSubclassOf(typeof(BankTransfersParser))))
+            {
+                parsersList.Add((BankTransfersParser)Activator.CreateInstance(type));
+            }
+            return parsersList;
+             */
         }
 
-        protected virtual void NuklearesWaffenArsenal(BankTransfersParser parser)
+        protected override List<TransferHandle> GetAllHandles()
         {
-            var transfers = parser.GetBankTransfers();
-            Parallel.ForEach(transfers, TryToSendTransfer);
+            return CreateObjectList(typeof(TransferHandle)).ConvertAll(HandlesConverter); ;
+            /* 
+            List<BankTransfersParser> handlersList = new List<TransferHandle>();
+            Assembly myAssembly = Assembly.Load("Toci.Hornets.Sieradz");
+            foreach (Type type in myAssembly.GetTypes().Where(type => type.IsClass && type.IsSubclassOf(typeof(TransferHandle))))
+            {
+                handlersList.Add((TransferHandle)Activator.CreateInstance(type));
+            }
+            return handlersList;
+             */
         }
 
-        protected virtual void TryToSendTransfer(BankTransfer transfer)
+        public override void TransferAll() 
         {
-            var handler = SieradzTransferHandlesDictionary.GetTransferHandleByBankName(transfer.DestinationBank);
-            if (handler != null) handler.SendTransfer(transfer);
-            ResultList.Add(GetFormattedResult(transfer));
-        }
+            var parsers = GetAllParsers();
+            var handles = GetAllHandles();
+            if (parsers.Count == 0 || handles.Count == 0) return;
+            /*
+             * Mamy tutaj trzy pętle i każdą można wywołać jako parallel - w testach musimy sprawdzić które najbardziej opłaca się parallelizować, bo wątpię że wszystkie. Stawiam
+             * tylko na Parallel.ForEach(parsers, parser => ... ); bo to największy kawał, będzie tyklko tyle tasków utworzonych ile mamy parserów czyli ze 5-6. Tak czy siak zapisałem
+             * na razie wszystkie, jak będziemy mieli wszyscy parsery gotowe to będzie można robić testy i mierzyć czasy
+             */
+            //Można Przygotować wersję używającą ParalellProcessing i ProcessInParallel jak tu http://puu.sh/iYUDK/f1d6f76442.png
+            //foreach (var parser in parsers)
+            Parallel.ForEach(parsers, parser =>
+            {
+                var transfers = parser.GetBankTransfers();
 
-        protected virtual string GetFormattedResult(BankTransfer transfer)
-        {
-            return string.Format("{0} => {1} : {2} ", transfer.SourceBank, transfer.DestinationBank,
-                transfer.IsTransferSuccessful ? "Powodzenie" : "Błąd");
-        }
+                //foreach (var transfer in transfers)
+                Parallel.ForEach(transfers, transfer =>
+                {
+                    // foreach (var handle in handles)
+                    // {
+                    //     handle.SendTransfer(transfer);
+                    // }
+                    Parallel.ForEach(handles, handle =>
+                    {
+                        handle.SendTransfer(transfer);
+                    });
+                });
 
-        protected virtual void WriteResultsToLogFile()
-        {
-            StreamWriter logFile = new StreamWriter(SieradzBankFilesPathHolder.TransferFilesPath + LogFileName);
-            ResultList.ForEach(result => logFile.WriteLine(result));
-            logFile.Close();
+                //odp ktore sie powiodly
+            });
         }
     }
 }

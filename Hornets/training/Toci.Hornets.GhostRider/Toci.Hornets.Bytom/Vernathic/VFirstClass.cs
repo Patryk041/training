@@ -2,6 +2,11 @@
 {
 	class VFirstClass
 	{
-		public string MojaPropercja { get; set; }
+		public string MyProperty { get; set; }
+
+		public int Smile(int smile)
+		{
+			return Smile(smile + 1);
+		}
 	}
 }

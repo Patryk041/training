@@ -23,7 +23,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
         public override List<BankTransfer> GetBankTransfers()
         {
             GliwiceFileOperation fileOperation = new GliwiceFileOperation();
-           _file = fileOperation.GetFileContent(@"..\\..\\..\\Toci.Hornets.Gliwice\\PracaZespolowa\\PrzelewyBankowe\\Didi\\DidiPrzelewy.txt");
+           _file = fileOperation.GetFileContent(@"C:\\Users\\Dominika\\Documents\\SourceTree\\TOCI\\Szkolenie\\Hornets\\training\\Toci.Hornets.GhostRider\\Toci.Hornets.Gliwice\\PracaZespolowa\\PrzelewyBankowe\\Didi\\DidiPrzelewy.txt");
            
             List<string> transfersList = CutBankTransfers(_file);
             foreach (var transfer in transfersList)
@@ -50,7 +50,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe
             bankTransfer.Information.AccountRecipe = transfer[7];
             bankTransfer.DestinationBank = transfer[8];
 
-            //DidiFactoryTransfer.SendBank(bankTransfer.DestinationBank); 
+            DidiFactoryTransfer.SendBank(bankTransfer, bankTransfer.DestinationBank); 
             return bankTransfer;
         }
 

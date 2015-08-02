@@ -1,40 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Xml.Serialization;
+﻿using System.Collections.Generic;
 using Toci.Hornets.GhostRider.Kir;
 
 namespace Toci.Hornets.Bytom.Coffee13.TaskTrainingTree
 {
     public class CoffeeBankTransferParser : BankTransfersParser
     {
-
+        
         // wczytac plik do stringu
         // rozbic string na linie
         // linie przetworzyc GetTransferEntry na typ BankTransfer
         public override List<BankTransfer> GetBankTransfers()
         {
-            List<string> stringsSerparatedFromMainContent = new List<string>();
-            List<BankTransfer> listOfBankTransfers = new List<BankTransfer>();
+            List<BankTransfer> listOfTransfers = new List<BankTransfer>();
+
+            List<string> separatedFromMainString = new List<string>();
 
             var file = new CoffeeFileOperation();
-            string mainContent = file.GetFileContent(@"..\..\Coffee13\TaskTrainingTree\newTransfers.xml"); //path?\
 
-            stringsSerparatedFromMainContent = CoffeeDeserialization.SplitMainStringtoTransferStrings(mainContent);
+            string transfers = file.GetFileContent(@"..\..\Coffee13\TaskTrainingTree\Transfers.xml");   //path?\
 
-            foreach (var entry in stringsSerparatedFromMainContent)
+            separatedFromMainString = SeparateTransfers(transfers);
+
+            foreach (var entry in separatedFromMainString)
             {
-                listOfBankTransfers.Add(GetTransferEntry(entry));
+                 listOfTransfers.Add(GetTransferEntry(entry));
             }
-
-
-            return listOfBankTransfers;
+            return listOfTransfers; 
         }
 
-        protected override BankTransfer GetTransferEntry(string entry)
+        protected override BankTransfer GetTransferEntry(string entry)  //tworzy ze stringa zawierającego pojedynczy transfer obiekt typu BankTransfer
         {
-            return CoffeeDeserialization.DeserializeString(entry);
+            return null; //tymczasowo
         }
 
+        protected List<string> SeparateTransfers(string transfers)    //dzieli string zawierajacy caly plik na transfery
+        {
+            List<string> sepTrans = new List<string>();
+
+
+
+            return sepTrans;
+        }
     }
 }

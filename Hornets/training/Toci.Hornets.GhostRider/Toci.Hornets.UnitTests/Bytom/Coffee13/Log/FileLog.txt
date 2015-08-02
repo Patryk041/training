@@ -1,27 +1,2 @@
 ﻿file loaded: ..\..\Bytom\Coffee13\ContentFile.txt
 Date: 2015-07-14 12:09:19file loaded: ..\..\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-16 12:13:12 file loaded: ..\..\Bytom\Coffee13\Transfers.xml
-Date: 2015-07-19 14:19:49 file loaded: ..\..\Bytom\Coffee13\Transfers.xml
-Date: 2015-07-19 14:19:50 file loaded: ..\..\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:19:50 file loaded: ~\..\..\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:19:50 file loaded: ~\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:48:45 file loaded: ..\..\Bytom\Coffee13\Transfers.xml
-Date: 2015-07-19 14:48:45 file loaded: ..\..\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:48:45 file loaded: ~\..\..\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:48:45 file loaded: ~\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:51:04 file loaded: ..\..\Bytom\Coffee13\Transfers.xml
-Date: 2015-07-19 14:51:04 file loaded: ..\..\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:51:04 file loaded: ~\..\..\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:51:04 file loaded: ~\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:52:19 file loaded: ..\..\Bytom\Coffee13\Transfers.xml
-Date: 2015-07-19 14:52:19 file loaded: ..\..\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:52:19 file loaded: ~\..\..\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:52:19 file loaded: ~\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:54:56 file loaded: ..\..\Bytom\Coffee13\Transfers.xml
-Date: 2015-07-19 14:54:56 file loaded: ..\..\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:54:56 file loaded: ~\..\..\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:54:56 file loaded: ~\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:58:50 file loaded: ..\..\Bytom\Coffee13\Transfers.xml
-Date: 2015-07-19 14:58:50 file loaded: ..\..\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:58:50 file loaded: ~\..\..\Bytom\Coffee13\ContentFile.txt
-Date: 2015-07-19 14:58:50 file loaded: ~\Bytom\Coffee13\ContentFile.txt

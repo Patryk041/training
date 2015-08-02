@@ -10,20 +10,20 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Didi
 
      static class DidiFactoryTransfer
      {
-         private static Dictionary<string, Func<IBank>> _dictionaryBank = new Dictionary<string, Func<IBank>>()
+         private static Dictionary<string, Func<DidiBankTransfer, IBank>> _dictionaryBank = new Dictionary<string, Func<DidiBankTransfer, IBank>>()
          {
-             {"ING", () => new DidiINGBank()}
-             ,{"PKO", ()=> new DidiPKOBank()}
+             {"ING", (x) => new DidiINGBank(x)}
+             ,{"PKO", (x)=> new DidiPKOBank(x)}
 
          };
 
-         public static IBank SendBank( string bank) // GenerateTransferHandle
+         public static IBank SendBank(DidiBankTransfer bankTransfer, string bank)
          {
              if (_dictionaryBank.ContainsKey(bank))
              {
-                 return _dictionaryBank[bank]();
+                 return _dictionaryBank[bank](bankTransfer);
              }
-             return new DidiInnyBank(); 
+             return new DidiInnyBank(bankTransfer); 
          }
      }
 }
