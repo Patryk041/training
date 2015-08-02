@@ -1,9 +1,0 @@
-diff a/InitialTrainingLibrary/Toci.TraininigLibrary/Toci.TraininigLibrary.csproj b/InitialTrainingLibrary/Toci.TraininigLibrary/Toci.TraininigLibrary.csproj	(rejected hunks)
-@@ -123,6 +123,7 @@
-      <Folder Include="Core\" />
- +<<<<<<< HEAD
- +    <Folder Include="Developers\Sito\FileParser\" />
-++=======
-      <Folder Include="Developers\Warrior\FileParser\" />
- +>>>>>>> File parser
-    </ItemGroup>

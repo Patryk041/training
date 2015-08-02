@@ -1,6 +1,0 @@
-﻿to
-jest
-testowy
-plik
-to
-odczytu

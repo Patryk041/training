@@ -1,6 +1,0 @@
-﻿BZWBK;0000123000;Jan Kowalski;BZWBK;1111111;Katarzyna Kwiatkowska;500,00;Mieszkanie;2015/03/13;
-BZWBK;0123124234;Michał Nowak;MBank;22222222;Katarzyna Klopsik;230,00;Rata samochodu;2015/05/10;
-MBank;2453453453;Anna Mucha;MBank;33333333;Karol Nowak;1000,00;Rower;2015/01/01;
-MBank;3212312283;Duzy John;BZWBK;44444444;Katarzyna Kwiatkowska;500,00;Komputer;2015/03/13;
-MBank;7897897899;All Bandy;BZWBK;5555555;Katarzyna Klopsik;230,00;Łyżwy;2015/05/10;
-BZWBK;9788978978;Jakas Laska;ING;66666666;Karol Nowak;1000,00; drop table users;2015/01/01;

@@ -1,2 +1,0 @@
-﻿{"SourceBank": "ING";"DestinationBank": "WBK";"Amount": "2000,00";"SenderName": "Jan Kowalski";"ReceiverName": "Piotr Nowak";"TransferDate": "2015-05-12";"Title": "Test 1"}
-{"SourceBank": "PKO";"DestinationBank": "ING";"Amount": "1500,50";"SenderName": "Piotr Nowak";"ReceiverName": "Jan Kowalski";"TransferDate": "2015-12-13";"Title": "Test 2"}

@@ -1,7 +1,0 @@
-Numer konta nadawcy przelewu: 86106024981234567890123456 
- Nazwisko nadawcy: Zepsuj 
- Numer konta odbiorcy przelewu: 86106024980987654321098765 
- Nazwisko odbiorcy: Skrzyniarz 
- Tytułem: Naprawa 
- Kwota: 50 
- Data wykonania: 07/20/2015 2:17 

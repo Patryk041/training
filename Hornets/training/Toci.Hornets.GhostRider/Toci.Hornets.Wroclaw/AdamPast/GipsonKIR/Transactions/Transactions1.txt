@@ -1,2 +1,0 @@
-﻿ING Bank;Adam Pasternak;91110110453;Multibank;Konto Docelowe;1111111111;Euro;111,05;2015-03-11;Tytul przelewu;
-ING Bank;Adam Pasternak;91110110453;BankGipsona;Konto Docelowe2;222222222;Euro;150,05;2015-01-21;Tytul przelewu2;

@@ -1,3 +1,0 @@
-﻿Jan	Kowalski	2015-03-20	12345678909	Twarzowe	9999999
-Stanisław	Nowakowski	2015-03-20	12345678909	Na dziwki	69
-Imie	Nazwisko	2015-03-25	12345678909	Tytuł	1111111
