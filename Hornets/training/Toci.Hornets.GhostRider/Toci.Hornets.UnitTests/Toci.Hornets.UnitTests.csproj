@@ -217,6 +217,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Bytom\Szary\" />
     <Folder Include="Wroclaw\gipson\BankTransfer\" />
     <Folder Include="Wroclaw\Kollwing\" />
   </ItemGroup>
