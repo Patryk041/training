@@ -78,6 +78,7 @@
     <Compile Include="ProjectElixir\TransferHandleWroclaw.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RFelich\TestClass1.cs" />
+    <Compile Include="Rubi\RubiTest.cs" />
     <Compile Include="Tszulczewski\Example.cs" />
     <Compile Include="Tszulczewski\ExampleClass.cs" />
     <Compile Include="Tszulczewski\TelephoneTask\HomeWorkClass.cs" />
