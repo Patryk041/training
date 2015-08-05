@@ -8,6 +8,7 @@
     
     
     $testElemets = array(
+    	array('dir' => 'PieknyT', 'file' => 'test.php', 'strlen' => 'PieknyT_strlen', 'substr' => 'PieknyT_substr'),
         array('dir' => 'Dziara', 'file' => 'function.php', 'strlen' => 'Dziara_strlen', 'substr' => 'Dziara_substr'),
     	array('dir' => 'pwltt' , 'file' => 'test1.php', 'strlen' => 'pwltt_str', 'substr' => 'pwltt_substr'),
 		array('dir' => 'ObywatelGCC', 'file' => 'first.php', 'strlen' => 'ObywatelGCC_strlen', 'substr' => 'ObywatelGCC_substr'),
