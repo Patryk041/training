@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.GhostRider.YourWork.TasksTrainingTwo;
+using Toci.Hornets.Rzeszow.KSebal.Db;
 using Toci.Hornets.Rzeszow.KSebal.NFZ.EmailContact;
 using Toci.Hornets.Rzeszow.KSebal.traning2Homework;
 using Toci.Hornets.Rzeszow.KSebal.traning2Homework.Pesel;
@@ -24,6 +25,8 @@ namespace Toci.Hornets.UnitTests.Rzeszow.Ksebal
 
            public void AnagramTest()
            {
+                  KsebalUpdateDb a = new KsebalUpdateDb();
+
                   
 
            }

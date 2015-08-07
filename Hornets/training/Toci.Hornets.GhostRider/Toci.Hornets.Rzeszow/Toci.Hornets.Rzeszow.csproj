@@ -73,6 +73,7 @@
     <Compile Include="Foonesh\TrainingTwo\PeselValidator\PeselValidatorFoonesh.cs" />
     <Compile Include="Foonesh\TrainingTwo\StringManipulations\StringManipulationsFoonesh.cs" />
     <Compile Include="KSebal\Class1.cs" />
+    <Compile Include="KSebal\Db\KsebalUpdateDb.cs" />
     <Compile Include="KSebal\NFZ\EmailContact\EmailSender.cs" />
     <Compile Include="KSebal\NFZ\EmailContact\LoginData.cs" />
     <Compile Include="KSebal\NFZ\Morphology.cs" />
