@@ -36,6 +36,12 @@
     <Reference Include="AutoMapper.Net4">
       <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Npgsql.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -105,6 +111,14 @@
     <Compile Include="TrainingFour\Generics\GenEx.cs" />
     <Compile Include="TrainingFour\Generics\GhostRiderGenericList.cs" />
     <Compile Include="TrainingFour\Linq\LinqShowdown.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Client\DataStorageClient.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Client\PostgreSqlClient.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Model\ApplicationTestsModel.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Model\DataStorageInsert.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Model\DataStorageQuery.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Model\DataStorageUpdate.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Model\StorageDataModel.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Model\zle\TestsRssultsModel.cs" />
     <Compile Include="TrainingThree\BenchingOverriding.cs" />
     <Compile Include="TrainingThree\Chor\Kontrahenci.cs" />
     <Compile Include="TrainingThree\Chor\MniejszyWorekNaDane.cs" />
