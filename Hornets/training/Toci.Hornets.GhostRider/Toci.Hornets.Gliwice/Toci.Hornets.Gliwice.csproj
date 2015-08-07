@@ -61,6 +61,7 @@
     <Compile Include="MoWerr\PeselValidator\MoWerrPeselValidator.cs" />
     <Compile Include="MoWerr\StringOperations\MoWerrStringOperations.cs" />
     <Compile Include="MoWerr\TelephoneTask\SendTypeImplementation.cs" />
+    <Compile Include="PiotrekJ\Homework\Generics\PiotrekJGenerics.cs" />
     <Compile Include="PiotrekJ\szkolenie1.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\Banki\DidiInnyBank.cs" />
     <Compile Include="PracaZespolowa\PrzelewyBankowe\Didi\Banki\DidiPKOBank.cs" />
@@ -112,7 +113,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="PiotrekJ\Homework\" />
     <Folder Include="PracaZespolowa\Medycyna\" />
   </ItemGroup>
   <ItemGroup>
