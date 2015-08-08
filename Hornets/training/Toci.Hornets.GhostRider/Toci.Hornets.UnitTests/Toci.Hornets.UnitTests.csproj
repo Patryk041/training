@@ -77,7 +77,11 @@
     <Compile Include="GhostRider\TrainingFour\LinqTestRunner.cs" />
     <Compile Include="GhostRider\TrainingSeven\DiTester.cs" />
     <Compile Include="GhostRider\TrainingSeven\Di\DependencyResolver.cs" />
+    <Compile Include="Gliwice\Didi\Genercis\DidiGenerics.cs" />
     <Compile Include="Gliwice\Hipek\BankTransferTest\HipekBankTransferTest.cs" />
+    <Compile Include="Gliwice\MoWerr\BankTransfers\MoWerrBankTransferTest.cs" />
+    <Compile Include="Gliwice\PiotrekJ\BankTransfers.cs" />
+    <Compile Include="Gliwice\PiotrekJ\Generics\PiotrekJGenericsTest.cs" />
     <Compile Include="Gliwice\Soltys\BankTransferParserTests.cs" />
     <Compile Include="GhostRider\Kir\KirHomeworkRunner.cs" />
     <Compile Include="Legnica\Amman\AmmanUnitTests.cs" />
