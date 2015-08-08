@@ -2,13 +2,19 @@
 
 require_once 'TrainingFive/Database/DbQuery.php';
 
-class DbUpdate {
+class DbUpdate extends DbQuery {
 
-    protected $format = 'UPDATE %s (%s) SET (\'%s\');';
+    protected $format = 'UPDATE %s SET %s  ;'; // klucz = 'wartosc' WHERE
 
     public function RenderQuery($table, $elements) {
 // TODO tabela
-        $query = sprintf($this->format, $table, implode(', ', array_keys($elements)), implode('\', \'', array_values($elements)));
+		$items = array();
+		foreach ($elements as $key => $value)
+		{
+			$items[] = $key . ' = ' . '\''.$value.'\'';
+		}
+		
+        $query = sprintf($this->format, $table, implode(', ', $items)); //, implode('\', \'', array_values($elements)));
         return $query;
     }
 

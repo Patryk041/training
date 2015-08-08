@@ -3,9 +3,9 @@
 	class DbHandle 
 	{
 		protected $connectionString = 'host=127.0.0.1 user=postgres dbname=filadelfia password=beatka';
-		private $connectionHandle;
+		public $connectionHandle;
 		
-		protected function Connect()
+		public function Connect()
 		{
 			$this->connectionHandle = pg_connect($this->connectionString);
 		}	
