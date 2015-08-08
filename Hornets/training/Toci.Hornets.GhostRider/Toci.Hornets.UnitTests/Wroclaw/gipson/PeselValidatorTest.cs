@@ -1,8 +1,7 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.Hornets.Wroclaw.AdamPast.Homework0407;
 
-namespace Toci.Hornets.UnitTests.Wrocław.gipson
+namespace Toci.Hornets.UnitTests.Wroclaw.gipson
 {
     [TestClass]
     public class PeselValidatorTest
