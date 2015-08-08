@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Toci.Hornets.Bytom.Szary.TrainingThree
 {
-    public class UserPath
+    public class UserrPath
     {
         public static string Find()
         {

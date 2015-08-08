@@ -11,7 +11,7 @@ namespace Toci.Hornets.Bytom.Szary.TrainingThree
         public override List<BankTransfer> GetBankTransfers()
         {
             BankFileOperation = new SzaryFileOperation();
-            var lines = BankFileOperation.GetFileContent(UserPath.Find() + "\\SuperBank.txt").Split(new[] { "\n" }, StringSplitOptions.None);
+            var lines = BankFileOperation.GetFileContent(UserrPath.Find() + "\\SuperBank.txt").Split(new[] { "\n" }, StringSplitOptions.None);
             return lines.Select(GetTransferEntry).ToList();
         }
 
