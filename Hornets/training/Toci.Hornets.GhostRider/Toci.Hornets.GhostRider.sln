@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Wroclaw", "Toc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.GhostRider.Base", "Toci.Hornets.GhostRider.Base\Toci.Hornets.GhostRider.Base.csproj", "{C2DBA4F2-AA52-4ED3-8355-4241D6D07949}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Front.Samples", "Toci.Front\Toci.Front.Samples\Toci.Front.Samples.csproj", "{FBF68FCF-42A5-4EA9-9631-099FD8000CEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{C2DBA4F2-AA52-4ED3-8355-4241D6D07949}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2DBA4F2-AA52-4ED3-8355-4241D6D07949}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2DBA4F2-AA52-4ED3-8355-4241D6D07949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBF68FCF-42A5-4EA9-9631-099FD8000CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBF68FCF-42A5-4EA9-9631-099FD8000CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBF68FCF-42A5-4EA9-9631-099FD8000CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBF68FCF-42A5-4EA9-9631-099FD8000CEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

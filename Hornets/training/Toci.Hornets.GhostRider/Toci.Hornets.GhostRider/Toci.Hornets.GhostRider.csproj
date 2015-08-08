@@ -64,6 +64,9 @@
     <Compile Include="ClassObjectStatic\StaticExExtending.cs" />
     <Compile Include="GhostRider\MyExampleOfHomework.cs" />
     <Compile Include="InterfacesExtending\ITelephoneCommunication.cs" />
+    <Compile Include="Kir\BankLoggingMechanism\ILogTransfers.cs" />
+    <Compile Include="Kir\BankLoggingMechanism\IngLogTransfer.cs" />
+    <Compile Include="Kir\BankLoggingMechanism\MbankLogTransfer.cs" />
     <Compile Include="Kir\BankTransfer.cs" />
     <Compile Include="Kir\BankTransfersParser.cs" />
     <Compile Include="Kir\FileOperation.cs" />
@@ -111,6 +114,13 @@
     <Compile Include="TrainingFour\Generics\GenEx.cs" />
     <Compile Include="TrainingFour\Generics\GhostRiderGenericList.cs" />
     <Compile Include="TrainingFour\Linq\LinqShowdown.cs" />
+    <Compile Include="TrainingSeven\Attributes\SimpleFlaggedEnum.cs" />
+    <Compile Include="TrainingSeven\Attributes\SomeXmlAttributes.cs" />
+    <Compile Include="TrainingSeven\Di\TransferMoney.cs" />
+    <Compile Include="TrainingSeven\Mvc\Controller.cs" />
+    <Compile Include="TrainingSeven\Mvc\Model.cs" />
+    <Compile Include="TrainingSeven\Mvc\Routing.cs" />
+    <Compile Include="TrainingSeven\Mvc\View.cs" />
     <Compile Include="TrainingSix\Database\Abstraction\Client\DataStorageClient.cs" />
     <Compile Include="TrainingSix\Database\Abstraction\Client\PostgreSqlClient.cs" />
     <Compile Include="TrainingSix\Database\Abstraction\Model\ApplicationTestsModel.cs" />
@@ -142,6 +152,7 @@
     <Folder Include="TrainingFive\Attributes\" />
     <Folder Include="TrainingFive\DependencyInjection\" />
     <Folder Include="TrainingFourHomework\" />
+    <Folder Include="TrainingSeven\Exceptions\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Kir\demo\demo.txt" />
