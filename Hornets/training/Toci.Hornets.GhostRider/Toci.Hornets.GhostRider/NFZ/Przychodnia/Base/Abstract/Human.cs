@@ -7,7 +7,7 @@ using Toci.Hornets.GhostRider.NFZ.Przychodnia.ResourcesRequest;
 
 namespace Toci.Hornets.GhostRider.NFZ.Przychodnia.Base.Abstract
 {
-    public abstract class Human<TAFIndex, TFeature> : IHuman<TAFIndex, TFeature>
+    public abstract class Human<TAFIndex, TFeature,TContact> : IHuman<TAFIndex, TFeature, TContact>
     {
         public string Name { get; set; }
         public string Surname { get; set; }
@@ -15,7 +15,7 @@ namespace Toci.Hornets.GhostRider.NFZ.Przychodnia.Base.Abstract
         public Gender Gender { get; set; }
 
         public Dictionary<DateTime, IAddress> Addresses { get; set; }
-        public Dictionary<DateTime, IContactPossibility> ContactInfoPossibilities { get; set; }
+        public Dictionary<DateTime, IContactPossibility<TContact>> ContactInfoPossibilities { get; set; }
 
         public Dictionary<TAFIndex, IAdditionalFeature<TFeature>> AdditionalFeatures { get; set; }
 

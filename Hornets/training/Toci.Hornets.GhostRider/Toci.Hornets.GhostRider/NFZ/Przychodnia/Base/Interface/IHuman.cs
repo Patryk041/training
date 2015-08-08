@@ -5,7 +5,7 @@ using Toci.Hornets.GhostRider.NFZ.Przychodnia.Pacjenct.Interface;
 
 namespace Toci.Hornets.GhostRider.NFZ.Przychodnia.Base.Interface
 {
-    public interface IHuman<TAFIndex, TFeature>
+    public interface IHuman<TAFIndex, TFeature,TConntact>
     {
          string Name { get; set; } 
          string Surname { get; set; }
@@ -14,7 +14,7 @@ namespace Toci.Hornets.GhostRider.NFZ.Przychodnia.Base.Interface
          Gender Gender { get; set; }
 
          Dictionary<DateTime, IAddress> Addresses { get; set; }
-         Dictionary<DateTime,IContactPossibility> ContactInfoPossibilities { get; set; }
+         Dictionary<DateTime,IContactPossibility<TConntact>> ContactInfoPossibilities { get; set; }
          Dictionary<TAFIndex,IAdditionalFeature<TFeature>> AdditionalFeatures { get; set; }
 
 
