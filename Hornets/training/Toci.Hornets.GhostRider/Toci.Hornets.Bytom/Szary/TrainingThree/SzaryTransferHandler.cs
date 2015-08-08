@@ -19,7 +19,7 @@ namespace Toci.Hornets.Bytom.Szary.TrainingThree
             SzaryBankTransfer tr =(SzaryBankTransfer) transfer;
             
                 
-            if (File.Exists(UserPath.Find()+"\\raport.txt"))
+         /*   if (File.Exists(UserPath.Find()+"\\raport.txt"))
                 using ( sw = File.AppendText(UserPath.Find()+"\\raport.txt"))
                 {
                     sw.WriteLine(tr.SenderTransferSurname + " to " + tr.ConsumerTransferSurname);
@@ -33,7 +33,8 @@ namespace Toci.Hornets.Bytom.Szary.TrainingThree
             sw.WriteLine(tr.SenderTransferSurname + " to " + tr.ConsumerTransferSurname);
                 sw.Close();
                 tr.IsTransferSuccessful = true;
-            }
+            }*/
+            //Sa ERRORY! DO POPRAWKI
             return true;
 
         }
