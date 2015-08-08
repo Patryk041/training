@@ -114,7 +114,7 @@
     <Compile Include="Szary\TrainingThree\SzaryBankTransferParser.cs" />
     <Compile Include="Szary\TrainingThree\SzaryFileOperation.cs" />
     <Compile Include="Szary\TrainingThree\SzaryTransferHandler.cs" />
-    <Compile Include="Szary\TrainingThree\UserPath.cs" />
+    <Compile Include="Szary\TrainingThree\UserrPath.cs" />
     <Compile Include="Szary\TrainingTwo\CheckSum\CheckSum.cs" />
     <Compile Include="Szary\TrainingTwo\DateOperations\DateFromPesel.cs" />
     <Compile Include="Szary\TrainingTwo\DateOperations\Days.cs" />
