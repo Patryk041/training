@@ -73,6 +73,10 @@
     <Compile Include="Foonesh\TrainingTwo\PeselValidator\PeselValidatorFoonesh.cs" />
     <Compile Include="Foonesh\TrainingTwo\StringManipulations\StringManipulationsFoonesh.cs" />
     <Compile Include="KSebal\Class1.cs" />
+    <Compile Include="KSebal\Db\KsebalUpdateDb.cs" />
+    <Compile Include="KSebal\NFZ\EmailContact\EmailSender.cs" />
+    <Compile Include="KSebal\NFZ\EmailContact\LoginData.cs" />
+    <Compile Include="KSebal\NFZ\Morphology.cs" />
     <Compile Include="KSebal\telephone\Telephone.cs" />
     <Compile Include="KSebal\TrainingFourHomework\BodyPart.cs" />
     <Compile Include="KSebal\TrainingFourHomework\CorrectResults.cs" />
@@ -125,6 +129,7 @@
     <Compile Include="Sherpin\TasksTrainingTwo\SherDateValidator.cs" />
     <Compile Include="Sherpin\TasksTrainingTwo\SherPeselValidator.cs" />
     <Compile Include="Sherpin\TasksTrainingTwo\SherStringManipulations.cs" />
+    <Compile Include="Terry\NFZ\LocalCalendar.cs" />
     <Compile Include="Terry\TelephoneHomework\TerryTelephoneHomework.cs" />
     <Compile Include="Terry\TerryTest.cs" />
     <Compile Include="Terry\TrainingFour\GenericList\TerryGenericList.cs" />
