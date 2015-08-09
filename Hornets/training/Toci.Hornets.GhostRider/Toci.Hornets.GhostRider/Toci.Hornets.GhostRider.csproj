@@ -117,10 +117,18 @@
     <Compile Include="TrainingSeven\Attributes\SimpleFlaggedEnum.cs" />
     <Compile Include="TrainingSeven\Attributes\SomeXmlAttributes.cs" />
     <Compile Include="TrainingSeven\Di\TransferMoney.cs" />
+    <Compile Include="TrainingSeven\Exceptions\BusinessLogic.cs" />
+    <Compile Include="TrainingSeven\Exceptions\BusinessLogicProjectException.cs" />
+    <Compile Include="TrainingSeven\Exceptions\DatabaseProjectException.cs" />
+    <Compile Include="TrainingSeven\Exceptions\DbModel.cs" />
+    <Compile Include="TrainingSeven\Exceptions\ExceptionUtils.cs" />
+    <Compile Include="TrainingSeven\Exceptions\ProjectException.cs" />
+    <Compile Include="TrainingSeven\Exceptions\Wyjatki.cs" />
     <Compile Include="TrainingSeven\Mvc\Controller.cs" />
     <Compile Include="TrainingSeven\Mvc\Model.cs" />
     <Compile Include="TrainingSeven\Mvc\Routing.cs" />
     <Compile Include="TrainingSeven\Mvc\View.cs" />
+    <Compile Include="TrainingSeven\Using\DisposableManager.cs" />
     <Compile Include="TrainingSix\Database\Abstraction\Client\DataStorageClient.cs" />
     <Compile Include="TrainingSix\Database\Abstraction\Client\PostgreSqlClient.cs" />
     <Compile Include="TrainingSix\Database\Abstraction\Model\ApplicationTestsModel.cs" />
@@ -152,7 +160,6 @@
     <Folder Include="TrainingFive\Attributes\" />
     <Folder Include="TrainingFive\DependencyInjection\" />
     <Folder Include="TrainingFourHomework\" />
-    <Folder Include="TrainingSeven\Exceptions\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Kir\demo\demo.txt" />

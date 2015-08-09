@@ -2,6 +2,7 @@
 using Toci.Hornets.GhostRider.Kir;
 using Toci.Hornets.GhostRider.Kir.BankLoggingMechanism;
 using Toci.Hornets.GhostRider.TrainingSeven.Di;
+using Toci.Hornets.GhostRider.TrainingSix.Database.Abstraction.Model;
 using Toci.Hornets.Opole.OpoleKir.Banks;
 
 namespace Toci.Hornets.UnitTests.GhostRider.TrainingSeven.Di
@@ -14,6 +15,7 @@ namespace Toci.Hornets.UnitTests.GhostRider.TrainingSeven.Di
         public DependencyResolver()
         {
             Initialize();
+            //DataStorageQuery
         }
 
         public T Resolve<T>()

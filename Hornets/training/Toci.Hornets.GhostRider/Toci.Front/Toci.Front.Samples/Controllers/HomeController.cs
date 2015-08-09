@@ -5,14 +5,18 @@ using System.Web;
 using System.Web.Mvc;
 using Toci.Front.Samples.Models;
 using Toci.Hornets.GhostRider.Kir.BankLoggingMechanism;
+using Toci.Hornets.GhostRider.TrainingSeven.Exceptions;
 
 namespace Toci.Front.Samples.Controllers
 {
     public class HomeController : Controller
     {
-        public HomeController(ILogTransfers logger)
+
+        public HomeController(BusinessLogic logger)
         {
             //var lit = new Li
+
+            
         }
 
         //[HttpPost]
@@ -21,6 +25,21 @@ namespace Toci.Front.Samples.Controllers
             //var model = new HomeModel(); // n tier
             // try catch
             //model.WelcomeTextTag = "span";
+
+            try
+            {
+                BusinessLogic l = new BusinessLogic();
+                l.BusinesLogicOperation();
+                return null;
+            }
+            catch (ProjectException e)
+            {
+                // rekurencja e.InnerException.
+            }
+            finally
+            {
+                
+            }
 
             return View(model);
         }
