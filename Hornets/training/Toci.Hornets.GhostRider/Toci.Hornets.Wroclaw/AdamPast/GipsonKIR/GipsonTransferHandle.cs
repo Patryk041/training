@@ -18,7 +18,6 @@ namespace Toci.Hornets.Wroclaw.AdamPast.GipsonKIR
         }
 
 
-
         protected override bool Send(BankTransfer transfer)
         {
             string transferFilename = SaveFilePath+transfer.SourceBank+"_TO_"+BankName+".txt";

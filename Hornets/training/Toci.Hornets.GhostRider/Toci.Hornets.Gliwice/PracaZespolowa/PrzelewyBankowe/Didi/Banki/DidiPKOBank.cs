@@ -13,6 +13,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Didi.Banki
         {
             BankName = "PKOP"; 
         }
+
         protected override bool Send(BankTransfer transfer)
         {
             return true; 

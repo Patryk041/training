@@ -118,6 +118,10 @@
     <Compile Include="Polak\TrainingTwo\Task2- ValidatorsByPolak\DateContainer.cs" />
     <Compile Include="Polak\TrainingTwo\Task2- ValidatorsByPolak\PolakPeselValidate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SemiRafista\KIR\SeRaBankTransfer.cs" />
+    <Compile Include="SemiRafista\KIR\SeRaBankTransferParser.cs" />
+    <Compile Include="SemiRafista\KIR\SeRaFileOperation.cs" />
+    <Compile Include="SemiRafista\KIR\SeRaTransferHandle.cs" />
     <Compile Include="SemiRafista\SRTest.cs" />
     <Compile Include="SemiRafista\TelephoneTask\SeRaUseOfTelephoneInterpreter.cs" />
     <Compile Include="SemiRafista\TrainingFour\SeRaGenerics.cs" />
@@ -153,6 +157,10 @@
       <Project>{878b2eca-9cc0-42cf-aca6-cd6e44c47451}</Project>
       <Name>Toci.Hornets.GhostRider</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Toci.Hornets.Legnica\Toci.Hornets.Legnica.csproj">
+      <Project>{9E9EC7C9-B279-42A1-8BE4-90F814C37FDB}</Project>
+      <Name>Toci.Hornets.Legnica</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Agata\Kir\BankTransferFiles\" />
@@ -165,6 +173,7 @@
   <ItemGroup>
     <Content Include="Chojnecki\Kir\Przelewy.txt" />
     <Content Include="Foonesh\TrainingThree\TransferData\TransferOne.txt" />
+    <Content Include="SemiRafista\KIR\demo\SeRaDemo.txt" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="KSebal\BankTransfers\SuperBank.txt" />

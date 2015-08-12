@@ -8,7 +8,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Soltys.Banks
         {
             BankName = "ING";
         }
-        
+
         protected override bool Send(BankTransfer transfer)
         {
             transfer.IsTransferSuccessful = true;

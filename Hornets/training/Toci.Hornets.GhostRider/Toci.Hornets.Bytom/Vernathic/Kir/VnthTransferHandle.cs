@@ -9,7 +9,7 @@ namespace Toci.Hornets.Bytom.Vernathic.Kir
 {
 	class VnthTransferHandle : TransferHandle
 	{
-		protected override bool Send(BankTransfer transfer)
+	    protected override bool Send(BankTransfer transfer)
 		{
 			return false;
 		}

@@ -91,6 +91,7 @@
     <Compile Include="Legnica\Kir\LegnicaFileOperationTests.cs" />
     <Compile Include="Legnica\Kir\LegnicaPerformTransfersTest.cs" />
     <Compile Include="Legnica\Kir\MikzeTestClass.cs" />
+    <Compile Include="Rzeszow\SemiRafista\SeRaBankTests\BankTests.cs" />
     <Compile Include="Rzeszow\SemiRafista\SeRaGenericsTest.cs" />
     <Compile Include="Sieradz\BankTransferTests\PerformTransfersTest.cs" />
     <Compile Include="S2yfr4nt\GenericList\GenericList.cs" />
@@ -114,7 +115,6 @@
     <Compile Include="Sieradz\UCantTouchThis\TrainingFour\UCantTouchThisGenericListTest.cs" />
     <Compile Include="Wroclaw\Ayuu\AyuuPeselValidatorTest.cs" />
     <Compile Include="Wroclaw\Ayuu\AyuuStringManipulationsTest.cs" />
-    <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />
     <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />
     <Compile Include="Wroclaw\gipson\StringManipulationsTest.cs" />
     <Compile Include="Wroclaw\Tszulczewski\StringManipulationsTest.cs" />

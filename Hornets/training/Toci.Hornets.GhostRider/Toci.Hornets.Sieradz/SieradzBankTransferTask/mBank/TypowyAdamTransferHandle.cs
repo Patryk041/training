@@ -15,6 +15,7 @@ namespace Toci.Hornets.Sieradz.SieradzBankTransferTask.mBank
         {
             BankName = "mBank";
         }
+
         protected override bool Send(BankTransfer transfer)
         {
             GenerateTransferPDF(transfer); //suck too much to put it there

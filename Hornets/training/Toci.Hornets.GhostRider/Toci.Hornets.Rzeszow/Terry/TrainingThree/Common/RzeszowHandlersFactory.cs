@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Toci.Hornets.GhostRider.Kir;
+using Toci.Hornets.Rzeszow.SemiRafista.KIR;
 using Toci.Hornets.Rzeszow.Terry.TrainingThree.TerryBank;
 
 namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.Common
@@ -9,6 +10,7 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.Common
         private static readonly Dictionary<string, TransferHandle> HandleDictionary = new Dictionary<string, TransferHandle>
         {
             {"TerryBank", new TerryBankTransferHandle()},
+            {"SeRaBank", new SeRaTransferHandle()}
         };
         public static TransferHandle GetHandle(string bank)
         {

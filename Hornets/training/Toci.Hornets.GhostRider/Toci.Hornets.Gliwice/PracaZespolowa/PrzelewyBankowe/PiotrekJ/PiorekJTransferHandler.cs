@@ -9,6 +9,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.PiotrekJ
         {
             this.BankName = "ING Bank Śląski";
         }
+
         protected override bool Send(BankTransfer transfer)
         {
             return IsMyDestination(transfer);

@@ -14,6 +14,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Didi.Banki
         {
             BankName = "inny";
         }
+
         protected override bool Send(BankTransfer transfer)
         {
             return false;

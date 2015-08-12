@@ -9,7 +9,8 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.Common
         {
             "TerryBank",
             "Foonesh",
-            "Andrzej"
+            "Andrzej",
+            "SeRaBank"
         };
         protected override List<BankTransfersParser> GetAllParsers()
         {

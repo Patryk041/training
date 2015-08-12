@@ -11,7 +11,7 @@ namespace Toci.Hornets.Bytom.Szary.TrainingThree
        }
         
         //private string path =
-          
+
         protected override bool Send(BankTransfer transfer)
         {   
            // FindFile();

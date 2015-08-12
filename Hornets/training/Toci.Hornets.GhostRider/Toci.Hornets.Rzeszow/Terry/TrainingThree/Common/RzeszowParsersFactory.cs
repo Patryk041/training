@@ -2,6 +2,7 @@
 using Toci.Hornets.GhostRider.Kir;
 using Toci.Hornets.Rzeszow.Chojnecki.Kir;
 using Toci.Hornets.Rzeszow.Foonesh.TrainingThree;
+using Toci.Hornets.Rzeszow.SemiRafista.KIR;
 using Toci.Hornets.Rzeszow.Terry.TrainingThree.TerryBank;
 
 namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.Common
@@ -12,7 +13,8 @@ namespace Toci.Hornets.Rzeszow.Terry.TrainingThree.Common
         {
             {"TerryBank", new TerryBankTransfersParser()},
             {"Foonesh", new BankTransfersParserFoonesh()},
-            {"Andrzej", new AndrzejBankTransfersParser()}
+            {"Andrzej", new AndrzejBankTransfersParser()},
+            {"SeRaBank", new SeRaBankTransferParser()}
         };
         public static BankTransfersParser GetHandle(string bank)
         {

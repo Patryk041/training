@@ -8,6 +8,7 @@ namespace Toci.Hornets.Opole.OpoleKir.Banks
         {
             BankName = "BPH";//XX1060XXXXXXXXXXXXXXXX
         }
+
         protected override bool Send(BankTransfer transfer)
         {
             throw new System.NotImplementedException();

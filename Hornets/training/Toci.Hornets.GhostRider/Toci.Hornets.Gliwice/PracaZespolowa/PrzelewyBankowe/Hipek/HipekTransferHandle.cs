@@ -13,6 +13,7 @@ namespace Toci.Hornets.Gliwice.PracaZespolowa.PrzelewyBankowe.Hipek
         {
             this.BankName = "BZWBK";
         }
+
         protected override bool Send(BankTransfer transfer)
         {
             return IsMyDestination(transfer);

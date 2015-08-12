@@ -14,7 +14,7 @@ namespace Toci.Hornets.Rzeszow.KSebal.traningThreeHomework
        }
         
         //private string path =
-          
+
         protected override bool Send(BankTransfer transfer)
         {   
            // FindFile();
