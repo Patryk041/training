@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="GhostRider\GhostRiderPeselsValidatorTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testEkstrakatalog\TestAmazingClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\ghostrider\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
