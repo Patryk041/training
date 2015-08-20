@@ -79,6 +79,8 @@
     <Compile Include="Tszulczewski\TelephoneTask\HomeWorkClass.cs" />
     <Compile Include="Tszulczewski\Training2HomeWork\TszulczewskiStringManipulations.cs" />
     <Compile Include="Wudzinski\Example.cs" />
+    <Compile Include="Wudzinski\Homework2\WudzinskiPeselValidator.cs" />
+    <Compile Include="Wudzinski\Homework2\WudzinskiStringManipulations.cs" />
     <Compile Include="Wudzinski\TelephoneTask\WudzinskiTelephoneInterpreter.cs" />
     <Compile Include="Wyga\StringTask.cs" />
     <Compile Include="Wyga\Telephone Task\MyTelephoneTask.cs" />

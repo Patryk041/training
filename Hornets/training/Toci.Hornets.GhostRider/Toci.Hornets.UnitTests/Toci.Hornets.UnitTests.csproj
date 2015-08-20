@@ -67,6 +67,7 @@
     <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />
     <Compile Include="Wroclaw\gipson\StringManipulationsTest.cs" />
     <Compile Include="Wroclaw\Tszulczewski\StringManipulationsTest.cs" />
+    <Compile Include="Wroclaw\Wudzinski\StringManipulation\WudzinskiStringManipulationTest.cs" />
     <Compile Include="Wroclaw\Wyga\MyFirstUnitTest.cs" />
     <Compile Include="GhostRider\PeselTask\PeselTaskTest.cs" />
     <Compile Include="GhostRider\TextstTask\TextstTaskTest.cs" />
