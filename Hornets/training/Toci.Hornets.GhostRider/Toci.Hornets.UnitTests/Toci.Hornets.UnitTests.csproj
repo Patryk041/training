@@ -62,6 +62,8 @@
     <Compile Include="GhostRider\Abstraction\TestBase.cs" />
     <Compile Include="GhostRider\GeneralTests\DebugingTesting.cs" />
     <Compile Include="GhostRider\GhostRiderExtendingTest.cs" />
+    <Compile Include="Wroclaw\Ayuu\AyuuPeselValidatorTest.cs" />
+    <Compile Include="Wroclaw\Ayuu\AyuuStringManipulationsTest.cs" />
     <Compile Include="Wroclaw\gipson\BankTransfer\GatAllTest.cs" />
     <Compile Include="Wroclaw\gipson\BankTransfer\TransferCreationTest.cs" />
     <Compile Include="Wroclaw\gipson\PeselValidatorTest.cs" />

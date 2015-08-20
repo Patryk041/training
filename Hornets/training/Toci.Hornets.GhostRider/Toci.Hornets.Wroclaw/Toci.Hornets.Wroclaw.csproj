@@ -54,6 +54,10 @@
     <Compile Include="AdamPast\Homework0407\GipsonPeselValidator.cs" />
     <Compile Include="AdamPast\Homework0407\GipsonStringManipulations.cs" />
     <Compile Include="AdamPast\MergeTestAP.cs" />
+    <Compile Include="Ayuu\NewTestClass.cs" />
+    <Compile Include="Ayuu\TelephoneTask\ChooseCommunicationType.cs" />
+    <Compile Include="Ayuu\TrainingTwo\AyuuPeselValidator.cs" />
+    <Compile Include="Ayuu\TrainingTwo\AyuuStringManipulations.cs" />
     <Compile Include="Dagmara1\DMClass1.cs" />
     <Compile Include="Dagmara1\TelephoneTask\DgM_TelephoneTask.cs" />
     <Compile Include="Kollwing\TelephoneTask\ChooseOperation.cs" />
@@ -74,6 +78,7 @@
     <Compile Include="ProjectElixir\TransferHandleWroclaw.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RFelich\TestClass1.cs" />
+    <Compile Include="Rubi\RubiTest.cs" />
     <Compile Include="Tszulczewski\Example.cs" />
     <Compile Include="Tszulczewski\ExampleClass.cs" />
     <Compile Include="Tszulczewski\TelephoneTask\HomeWorkClass.cs" />
