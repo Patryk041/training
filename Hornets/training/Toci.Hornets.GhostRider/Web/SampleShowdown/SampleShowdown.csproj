@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FBF68FCF-42A5-4EA9-9631-099FD8000CEE}</ProjectGuid>
+    <ProjectGuid>{5761FAEA-C2C8-45F1-A73E-AE5BD3D72C8E}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Toci.Front.Samples</RootNamespace>
-    <AssemblyName>Toci.Front.Samples</AssemblyName>
+    <RootNamespace>SampleShowdown</RootNamespace>
+    <AssemblyName>SampleShowdown</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -39,12 +39,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac">
-      <HintPath>..\..\packages\Autofac.3.4.0\lib\net40\Autofac.dll</HintPath>
-    </Reference>
-    <Reference Include="Autofac.Integration.Mvc">
-      <HintPath>..\..\packages\Autofac.Mvc5.3.3.4\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -164,8 +158,10 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Areas\Ghost\GhostAreaRegistration.cs" />
-    <Compile Include="Areas\test\testAreaRegistration.cs" />
+    <Compile Include="Areas\TeamLeasing\Controllers\TeamLeasingSearchController.cs" />
+    <Compile Include="Areas\TeamLeasing\Models\TeamLeasingSearchModel.cs" />
+    <Compile Include="Areas\TeamLeasing\Models\TeamSearchResults.cs" />
+    <Compile Include="Areas\TeamLeasing\TeamLeasingAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -173,7 +169,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\HomeModel.cs" />
+    <Compile Include="Models\GenericModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -183,13 +179,12 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Areas\Ghost\Views\web.config" />
-    <Content Include="Areas\test\Views\web.config" />
+    <Content Include="Areas\TeamLeasing\Views\web.config" />
+    <Content Include="Areas\TeamLeasing\Views\TeamLeasingSearch\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -240,24 +235,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Ghost\Controllers\" />
-    <Folder Include="Areas\Ghost\Models\" />
-    <Folder Include="Areas\Ghost\Views\Shared\" />
-    <Folder Include="Areas\test\Controllers\" />
-    <Folder Include="Areas\test\Models\" />
-    <Folder Include="Areas\test\Views\Shared\" />
+    <Folder Include="Areas\TeamLeasing\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
-      <Project>{878b2eca-9cc0-42cf-aca6-cd6e44c47451}</Project>
-      <Name>Toci.Hornets.GhostRider</Name>
+    <ProjectReference Include="..\Toci.Phoenix.ApplicationLogic\Toci.Phoenix.Bll.Interfaces\Toci.Phoenix.Bll.Interfaces.csproj">
+      <Project>{763dae19-c121-4089-bbff-7831e3da2f55}</Project>
+      <Name>Toci.Phoenix.Bll.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
@@ -276,9 +267,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>54865</DevelopmentServerPort>
+          <DevelopmentServerPort>3550</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:54835/</IISUrl>
+          <IISUrl>http://localhost:3550/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

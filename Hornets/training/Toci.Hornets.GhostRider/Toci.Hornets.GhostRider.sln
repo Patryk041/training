@@ -25,6 +25,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.GhostRider.Bas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Front.Samples", "Toci.Front\Toci.Front.Samples\Toci.Front.Samples.csproj", "{FBF68FCF-42A5-4EA9-9631-099FD8000CEE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{95C19A03-517B-456A-A471-9E771B9AF80A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleShowdown", "Web\SampleShowdown\SampleShowdown.csproj", "{5761FAEA-C2C8-45F1-A73E-AE5BD3D72C8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Toci.Phoenix.ApplicationLogic", "Toci.Phoenix.ApplicationLogic", "{81AE3A7F-CCD1-49FF-A582-5B98FA97987F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Phoenix.Bll.Interfaces", "Web\Toci.Phoenix.ApplicationLogic\Toci.Phoenix.Bll.Interfaces\Toci.Phoenix.Bll.Interfaces.csproj", "{763DAE19-C121-4089-BBFF-7831E3DA2F55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Phoenix.Bll", "Web\Toci.Phoenix.ApplicationLogic\Toci.Phoenix.Bll\Toci.Phoenix.Bll.csproj", "{B6045238-86BC-4D9B-8878-82779AD7E455}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,8 +85,26 @@ Global
 		{FBF68FCF-42A5-4EA9-9631-099FD8000CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBF68FCF-42A5-4EA9-9631-099FD8000CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBF68FCF-42A5-4EA9-9631-099FD8000CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5761FAEA-C2C8-45F1-A73E-AE5BD3D72C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5761FAEA-C2C8-45F1-A73E-AE5BD3D72C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5761FAEA-C2C8-45F1-A73E-AE5BD3D72C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5761FAEA-C2C8-45F1-A73E-AE5BD3D72C8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{763DAE19-C121-4089-BBFF-7831E3DA2F55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{763DAE19-C121-4089-BBFF-7831E3DA2F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{763DAE19-C121-4089-BBFF-7831E3DA2F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{763DAE19-C121-4089-BBFF-7831E3DA2F55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6045238-86BC-4D9B-8878-82779AD7E455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6045238-86BC-4D9B-8878-82779AD7E455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6045238-86BC-4D9B-8878-82779AD7E455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6045238-86BC-4D9B-8878-82779AD7E455}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5761FAEA-C2C8-45F1-A73E-AE5BD3D72C8E} = {95C19A03-517B-456A-A471-9E771B9AF80A}
+		{81AE3A7F-CCD1-49FF-A582-5B98FA97987F} = {95C19A03-517B-456A-A471-9E771B9AF80A}
+		{763DAE19-C121-4089-BBFF-7831E3DA2F55} = {81AE3A7F-CCD1-49FF-A582-5B98FA97987F}
+		{B6045238-86BC-4D9B-8878-82779AD7E455} = {81AE3A7F-CCD1-49FF-A582-5B98FA97987F}
 	EndGlobalSection
 EndGlobal
