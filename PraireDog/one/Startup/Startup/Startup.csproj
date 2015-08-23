@@ -47,11 +47,18 @@
     <Compile Include="ObjBasics\Knight.cs" />
     <Compile Include="ObjBasics\Rubish.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="redeye\IdentyficationOfBank\DownloadFile.cs" />
     <Compile Include="redeye\IdentyficationOfBank\FileWidthData.cs" />
     <Compile Include="redeye\IdentyficationOfBank\Interfaces\ICheckAccount.cs" />
     <Compile Include="redeye\IdentyficationOfBank\Interfaces\IGetFile.cs" />
     <Compile Include="redeye\IdentyficationOfBank\PolishCheckAccount.cs" />
+=======
+    <Compile Include="TrainingOneHomeworks\Ayuu\TestClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TrainingOneHomeworks\wojteko22\" />
+>>>>>>> d57f56a8743eea7944f5f4f81705a6d163f1cb6d
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
