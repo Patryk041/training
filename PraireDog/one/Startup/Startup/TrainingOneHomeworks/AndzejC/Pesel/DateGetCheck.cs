@@ -38,7 +38,7 @@ namespace Startup.TrainingOneHomeworks.AndzejC.Pesel
             
         public static bool DateCheck(string pesel)
         {
-            return IsValidateDate(CutYear(int.Parse(GetMonth(pesel))), int.Parse(GetMonth(pesel)), int.Parse(GetDay(pesel)));
+            return IsValidateDate(int.Parse(GetYear(pesel)), int.Parse(GetMonth(pesel)), int.Parse(GetDay(pesel)));
         }
         public static bool DateCheck(int year, int month, int day)
         {
