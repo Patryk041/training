@@ -47,6 +47,9 @@
     <Compile Include="ObjBasics\Knight.cs" />
     <Compile Include="ObjBasics\Rubish.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrainingOneHomeworks\AndzejC\Pesel\DateGetCheck.cs" />
+    <Compile Include="TrainingOneHomeworks\AndzejC\Pesel\PeselNumberCheck.cs" />
+    <Compile Include="TrainingOneHomeworks\AndzejC\Pesel\PeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\Ayuu\TestClass.cs" />
   </ItemGroup>
   <ItemGroup>
