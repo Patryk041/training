@@ -47,6 +47,11 @@
     <Compile Include="ObjBasics\Knight.cs" />
     <Compile Include="ObjBasics\Rubish.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="redeye\IdentyficationOfBank\DownloadFile.cs" />
+    <Compile Include="redeye\IdentyficationOfBank\FileWidthData.cs" />
+    <Compile Include="redeye\IdentyficationOfBank\Interfaces\ICheckAccount.cs" />
+    <Compile Include="redeye\IdentyficationOfBank\Interfaces\IGetFile.cs" />
+    <Compile Include="redeye\IdentyficationOfBank\PolishCheckAccount.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
