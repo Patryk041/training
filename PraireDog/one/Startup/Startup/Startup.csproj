@@ -48,6 +48,8 @@
     <Compile Include="ObjBasics\Rubish.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Abstrakty\SendTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Abstrakty\GenFactory.cs" />
+    <Compile Include="TrainingOneHomeworks\AndzejC\Banki\BankIdList.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Banks\ING.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Transaction.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\TransactionMenager.cs" />
