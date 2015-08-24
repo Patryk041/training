@@ -1,6 +1,8 @@
-﻿namespace Startup.TrainingOneHomeworks.AndzejC.Banki.Banks
+﻿using Startup.TrainingOneHomeworks.AndzejC.Banki.Abstrakty;
+
+namespace Startup.TrainingOneHomeworks.AndzejC.Banki.Banks
 {
-    public class ING : SendTransaction
+    public class Ing : SendTransaction
     {
         public override bool SendTransfer(Transaction transaction)
         {

@@ -1,4 +1,4 @@
-﻿namespace Startup.TrainingOneHomeworks.AndzejC.Banki
+﻿namespace Startup.TrainingOneHomeworks.AndzejC.Banki.Abstrakty
 {
     public abstract class SendTransaction
     {
