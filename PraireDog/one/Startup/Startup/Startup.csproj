@@ -47,10 +47,15 @@
     <Compile Include="ObjBasics\Knight.cs" />
     <Compile Include="ObjBasics\Rubish.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TrainingOneHomeworks\AndzejC\Pesel\DateGetCheck.cs" />
-    <Compile Include="TrainingOneHomeworks\AndzejC\Pesel\PeselNumberCheck.cs" />
-    <Compile Include="TrainingOneHomeworks\AndzejC\Pesel\PeselValidator.cs" />
-    <Compile Include="TrainingOneHomeworks\Ayuu\TestClass.cs" />
+    <Compile Include="TrainingOneHomeworks\Vertek\AccountNumberValidate\ValidateBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Vertek\AccountNumberValidate\ValidateAccountNumber.cs" />
+    <Compile Include="TrainingOneHomeworks\Vertek\NewFolder1\Amerykanin.cs" />
+    <Compile Include="TrainingOneHomeworks\Vertek\NewFolder1\Czech.cs" />
+    <Compile Include="TrainingOneHomeworks\Vertek\NewFolder1\Human.cs" />
+    <Compile Include="TrainingOneHomeworks\Vertek\NewFolder1\IHuman.cs" />
+    <Compile Include="TrainingOneHomeworks\Vertek\NewFolder1\Polak.cs" />
+    <Compile Include="TrainingOneHomeworks\Vertek\NewFolder1\Rosjanin.cs" />
+    <Compile Include="TrainingOneHomeworks\Vertek\ValidatePESEL\PESEL.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\wojteko22\" />
