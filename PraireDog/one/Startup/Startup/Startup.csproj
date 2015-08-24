@@ -61,6 +61,7 @@
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\wojteko22\" />
   </ItemGroup>
+  <ItemGroup>
     <Compile Include="TrainingOneHomeworks\GroupMati\Banks\AliorTransactionBank.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Banks\BgzTransactionBank.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Banks\CitibankTransactionBank.cs" />
