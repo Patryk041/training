@@ -19,10 +19,9 @@ namespace Startup.TrainingOneHomeworks.Vertek.AccountNumberValidation
 
         public string GetBankName()
         {
-            ValidateAccountNumber number = new ValidateBank();
             int x = 4; //wybieramy numer konta
             int code = Convert.ToInt32(AccountNumbers[x].Substring(2,4));
-            return number.CheckNumber(code);
+            return CheckNumber(code);
         }
     }
 }
