@@ -11,13 +11,19 @@ class Manager
 		9  => array('UK'),
 		11 => array('Poland', 'Finland'),
 	);
+	public function checkAll($array)
+	{
+		foreach($array as $idNumber){
+			$this->CheckCurrent($idNumber);
+		}
+	}
 
 	function CheckCurrent($idNumber)
 	{
-		echo "Before: {$idNumber}<br>";
+
 		//$idNumber = str_replace(" ",'', $idNumber);
 		$idNumber = preg_replace("/\s/", '', $idNumber);
-		echo "After: {$idNumber}<br>";
+
 		$matchList = $this->nations[strlen($idNumber)];
 		foreach ($matchList as $country) {
 			if($country::CheckMe($idNumber))
@@ -105,14 +111,16 @@ class Poland implements Identity
 
     public function Info($idNumber)
     {
-    	echo "<b>Pesel</b>: {$idNumber} <b>Nationality</b>: {$this->nationality} <b>Sex</b>: {$this->PersonSex($idNumber)}";
+    	echo "<b>ID</b>: <label style='color:green; font-style:italic;'>{$idNumber} </label>
+    	<b>Nationality</b>: <label style='color:green; font-style:italic;'>{$this->nationality} </label>
+    	<b>Sex</b>: <label style='color:green; font-style:italic;'>{$this->PersonSex($idNumber)}</label><br>";
     }
 }
 
 class UK implements Identity
 {
 	static $regex = '/^(?!BG|GB|NK|KN|TN|NT|ZZ)[ABCEGHJ-PRSTW-Z][ABCEGHJ-NPRSTW-Z]\d{6}[A-D]$/';
-	private $nationality = "UK";
+	private $nationality = "United Kingdom";
 	private $sex;
 	private $number;
 
@@ -135,9 +143,11 @@ class UK implements Identity
 
 	}
 
-    public function Info()
+    public function Info($idNumber)
     {
-    	echo "Nationality: {$this->nationality} Sex: Undefined";
+    	echo "<b>ID</b>: <label style='color:orange; font-style:italic;'>{$idNumber} </label>
+    	<b>Nationality</b>: <label style='color:orange; font-style:italic;'>{$this->nationality} </label>
+    	<b>Sex</b>: <label style='color:orange; font-style:italic;'>{$this->PersonSex($idNumber)}</label><br>";
     }
 }
 
@@ -192,12 +202,23 @@ class Finland implements Identity
 	}
     public function Info($idNumber)
     {
-    	echo "<b>Pesel</b>: {$idNumber} <b>Nationality</b>: {$this->nationality} <b>Sex</b>: {$this->PersonSex($idNumber)}";
+    	echo "<b>ID</b>: <label style='color:blue; font-style:italic;'>{$idNumber} </label>
+    	<b>Nationality</b>: <label style='color:blue; font-style:italic;'>{$this->nationality} </label>
+    	<b>Sex</b>: <label style='color:blue; font-style:italic;'>{$this->PersonSex($idNumber)}</label><br>";
+
     }
 }
 
 $todo = new Manager();
-$todo->CheckCurrent('AB 12 34 56 C');
+$todo->checkAll(array(
+					'311280-888Y',
+					'311280-8890',
+					'14444455564',
+					'BC123456C',
+					'12345678910'
+	)
+);
+
 
 
 
