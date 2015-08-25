@@ -58,6 +58,10 @@
     <Compile Include="TrainingOneHomeworks\AndzejC\Pesel\PeselNumberCheck.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Pesel\PeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\Ayuu\TestClass.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Messages\BankMailEnum.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Messages\AliorMailMessages.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Messages\IMailMessages.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Messages\MailMessages.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
@@ -69,7 +73,7 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Banks\CitibankTransactionBank.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Banks\CreditTransactionBank.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Banks\EuroTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Banks\FabricBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Factory\BankTransactionFactory.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Banks\IngTransactionBank.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Banks\MBankTransactionBank.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Banks\MillenniumTransactionBank.cs" />
@@ -81,7 +85,7 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\InterfaceBanks\IBankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\InterfaceBanks\IBankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\InterfaceBanks\IClientTransaction.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\InterfaceBanks\IFabricBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Factory\IBankTransactionFactory.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

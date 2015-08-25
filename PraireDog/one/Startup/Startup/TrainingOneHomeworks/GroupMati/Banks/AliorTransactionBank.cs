@@ -1,5 +1,7 @@
 ﻿using System;
 using Startup.TrainingOneHomeworks.Mati;
+using Startup.TrainingOneHomeworks.Mati.InterfaceBanks;
+using Startup.TrainingOneHomeworks.Mati.Messages;
 
 namespace Startup.TrainingOneHomeworks.GroupMati.Banks
 {
@@ -9,18 +11,9 @@ namespace Startup.TrainingOneHomeworks.GroupMati.Banks
         {
             
         }
-        public override void IncommingTransaction()
-        {
-            throw new NotImplementedException();
-            
-        }
 
-        public override void OutCommingTransaction()
-        {
-            throw new NotImplementedException();
-        }
 
-        public override void DescriptionTransaction()
+        public void DescriptionTransaction()
         {
             base.DescriptionTransaction();
         }
@@ -28,6 +21,17 @@ namespace Startup.TrainingOneHomeworks.GroupMati.Banks
         public string GetBankName(string name)
         { 
             return BankName;
+        }
+
+
+        public override void IncommingTransaction()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void OutCommingTransaction()
+        {
+            throw new NotImplementedException();
         }
     }
 }

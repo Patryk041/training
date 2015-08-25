@@ -46,11 +46,11 @@ namespace Startup.TrainingOneHomeworks.Mati
             if (number == null)
                 return null;
             BankTransaction bank; 
-        //    foreach (var item in bankList)
-            {
+            //foreach (var item in bankList)
+            //{
             //    if (bankList.TryGetValue(number, out bank)) 
-          //       return bank;
-            }
+            //    return bank;
+            //}
             return null;
 
         }
