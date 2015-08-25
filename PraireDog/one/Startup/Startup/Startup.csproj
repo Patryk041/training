@@ -58,6 +58,12 @@
     <Compile Include="TrainingOneHomeworks\AndzejC\Pesel\PeselNumberCheck.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Pesel\PeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\Ayuu\TestClass.cs" />
+    <Compile Include="TrainingOneHomeworks\Erloon\AccountNumber.cs" />
+    <Compile Include="TrainingOneHomeworks\Erloon\BamkList.cs" />
+    <Compile Include="TrainingOneHomeworks\Erloon\Bank.cs" />
+    <Compile Include="TrainingOneHomeworks\Erloon\BankAccountNumber.cs" />
+    <Compile Include="TrainingOneHomeworks\Erloon\IIdentificationBankAccountNumber.cs" />
+    <Compile Include="TrainingOneHomeworks\Erloon\TheInternationalBankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Messages\BankMailEnum.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Messages\AliorMailMessages.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Messages\IMailMessages.cs" />
@@ -87,7 +93,9 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\InterfaceBanks\IClientTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Factory\IBankTransactionFactory.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="TrainingOneHomeworks\Erloon\NbpList.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
