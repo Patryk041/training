@@ -16,9 +16,13 @@ namespace Startup.TrainingOneHomeworks.Mati.Banks
             throw new NotImplementedException();
         }
 
-        public override string GetBankName()
+        public string GetBankName()
         {
             return bankName;
+        }
+
+        public BgzTransactionBank(string name) : base(name)
+        {
         }
     }
 }

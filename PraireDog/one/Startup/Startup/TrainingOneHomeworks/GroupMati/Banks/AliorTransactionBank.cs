@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Linq;
+using Startup.TrainingOneHomeworks.Mati;
 
-namespace Startup.TrainingOneHomeworks.Mati.Banks
+namespace Startup.TrainingOneHomeworks.GroupMati.Banks
 {
     public class AliorTransactionBank : BankTransaction
     {
@@ -25,7 +25,7 @@ namespace Startup.TrainingOneHomeworks.Mati.Banks
             base.DescriptionTransaction();
         }
 
-        public override string GetBankName(string name)
+        public string GetBankName(string name)
         { 
             return BankName;
         }

@@ -13,7 +13,7 @@
             throw new System.NotImplementedException();
         }
 
-        public override string GetBankName()
+        public string GetBankName()
         {
             throw new System.NotImplementedException();
         }

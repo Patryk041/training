@@ -14,9 +14,13 @@ namespace Startup.TrainingOneHomeworks.Mati.Banks
             throw new NotImplementedException();
         }
 
-        public override string GetBankName()
+        public string GetBankName()
         {
             throw new NotImplementedException();
+        }
+
+        public WesternUnionTransactionBank(string name) : base(name)
+        {
         }
     }
 }

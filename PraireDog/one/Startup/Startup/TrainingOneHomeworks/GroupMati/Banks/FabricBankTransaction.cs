@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Startup.TrainingOneHomeworks.GroupMati.Banks;
 using Startup.TrainingOneHomeworks.Mati.InterfaceBanks;
 
 namespace Startup.TrainingOneHomeworks.Mati.Banks
@@ -20,7 +21,7 @@ namespace Startup.TrainingOneHomeworks.Mati.Banks
             return new Dictionary<string, BankTransaction>()
         {
             {"1111", new AliorTransactionBank() },
-             {"1112", new BgzTransactionBank() }
+           //  {"1112", new BgzTransactionBank() }
         };
         }
     }

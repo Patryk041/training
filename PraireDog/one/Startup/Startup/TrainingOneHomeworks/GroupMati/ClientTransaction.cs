@@ -19,14 +19,14 @@ namespace Startup.TrainingOneHomeworks.Mati
         {
             List<BankTransaction> temporaryBanks = new List<BankTransaction>();
             temporaryBanks.Add(SearchAccount(GetNrbNumber(IncomingNumber)));
-            incomingBank = temporaryBanks[0].GetBankName();
+           // incomingBank = temporaryBanks[0].GetBankName();
             if (temporaryBanks.Count ==0)
             {
                 return null;
 
             }
             temporaryBanks.Add(SearchAccount(GetNrbNumber(OutcomingNumber)));
-            outcomingBank = temporaryBanks[1].GetBankName();
+           // outcomingBank = temporaryBanks[1].GetBankName();
             if (temporaryBanks.Count == 1)
             {
                 return null;
@@ -46,10 +46,10 @@ namespace Startup.TrainingOneHomeworks.Mati
             if (number == null)
                 return null;
             BankTransaction bank; 
-            foreach (var item in bankList)
+        //    foreach (var item in bankList)
             {
-                if (bankList.TryGetValue(number, out bank)) 
-                 return bank;
+            //    if (bankList.TryGetValue(number, out bank)) 
+          //       return bank;
             }
             return null;
 

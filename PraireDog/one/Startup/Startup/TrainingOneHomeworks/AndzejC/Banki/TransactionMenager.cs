@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Security.Policy;
 
 namespace Startup.TrainingOneHomeworks.AndzejC.Banki
 {
@@ -6,6 +7,7 @@ namespace Startup.TrainingOneHomeworks.AndzejC.Banki
     {
         protected List<Transaction> TransferList;
       
+        
     }
 
 
