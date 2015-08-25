@@ -52,6 +52,8 @@
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\BankIdList.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\BankList2.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Banks\Ing.cs" />
+    <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Banks\NarodowyBankPolski.cs" />
+    <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Banks\Pkobp.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Transaction.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\TransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Pesel\DateGetCheck.cs" />

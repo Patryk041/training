@@ -12,9 +12,9 @@ namespace Startup.TrainingOneHomeworks.AndzejC.Banki
             foreach (var item in TransferList)
             {
                 //sender
-                _banks.GetElement(item.SenderAccNumber.Substring(2, 4)).SendTransfer();
+                _banks.GetElement(item.SenderAccNumber.Substring(2, 4)).OutCome(item);
                 //receiver
-                _banks.GetElement(item.ReceiverAccNumber.Substring(2, 4)).SendTransfer();
+                _banks.GetElement(item.ReceiverAccNumber.Substring(2, 4)).InCome(item);
             }
         }
     }

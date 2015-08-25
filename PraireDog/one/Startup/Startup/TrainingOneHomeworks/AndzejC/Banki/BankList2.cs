@@ -10,7 +10,9 @@ namespace Startup.TrainingOneHomeworks.AndzejC.Banki
         {
             ItemList = new Dictionary<string, SendTransaction>
             {
-                {"1050", new Ing()}
+                {"1050", new Ing()},
+                {"1010", new NarodowyBankPolski()},
+                {"1020", new Pkobp()}
             };
         }
     }

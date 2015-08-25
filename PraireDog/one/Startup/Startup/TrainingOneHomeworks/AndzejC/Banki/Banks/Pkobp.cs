@@ -2,7 +2,7 @@
 
 namespace Startup.TrainingOneHomeworks.AndzejC.Banki.Banks
 {
-    public class Ing : SendTransaction
+    public class Pkobp : SendTransaction
     {
         public override bool InCome(Transaction transaction)
         {
