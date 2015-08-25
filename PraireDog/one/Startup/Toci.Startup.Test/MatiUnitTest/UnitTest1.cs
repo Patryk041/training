@@ -6,6 +6,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Startup.TrainingOneHomeworks.GroupMati.Banks;
 using Startup.TrainingOneHomeworks.Mati;
 using Startup.TrainingOneHomeworks.Mati.Banks;
+using Startup.TrainingOneHomeworks.Mati.Messages;
 
 namespace Toci.Startup.Test.MatiUnitTest
 {
@@ -40,6 +41,20 @@ namespace Toci.Startup.Test.MatiUnitTest
             BankTransaction bank1= new AliorTransactionBank();
             
             bank1.DescriptionTransaction();
+        }
+
+        [TestMethod]
+        public void CheckTransactionInstant()
+        {
+            FabricBankTransaction factory1 = new FabricBankTransaction();
+            BankTransaction bank1;
+            Assert.IsTrue(factory1.TryGetTransaction("1111",out bank1));
+        }
+        [TestMethod]
+        public void CheckMailMessage()
+        {
+            MailMessages mail = new AliorMailMessages();
+            mail.SendMail(BankMailEnum.INCOMINGTRANSFER,"adam.kuba21@gmail.com");
         }
 
       /*  protected List<BankTransaction> GetAllBankTransactions()

@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AndzejC\UnitTest1.cs" />
+    <Compile Include="ErloonTest\BankTest.cs" />
     <Compile Include="MatiUnitTest\UnitTest1.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
