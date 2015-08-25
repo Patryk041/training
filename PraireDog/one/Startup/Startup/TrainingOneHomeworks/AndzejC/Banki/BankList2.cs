@@ -6,12 +6,12 @@ namespace Startup.TrainingOneHomeworks.AndzejC.Banki
 {
     public class BankList2 : GenFactory<SendTransaction>
     {
-         public BankList2(Transaction transaction)
+         public BankList2()
         {
             ItemList = new Dictionary<string, SendTransaction>
             {
                
-                {"1050", new Ing().SendTransfer(transaction)}
+                {"1050", new Ing()}
               
             };
         }

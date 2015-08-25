@@ -4,6 +4,11 @@
     {
         public abstract bool InCome();
         public abstract bool OutCome();
-        public abstract SendTransaction SendTransfer(Transaction transaction);     
+        public abstract SendTransaction SendTransfer(Transaction transaction);
+
+        public bool SendTransfer()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
