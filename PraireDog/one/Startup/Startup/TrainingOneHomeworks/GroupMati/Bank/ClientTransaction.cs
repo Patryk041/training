@@ -18,16 +18,11 @@ namespace Startup.TrainingOneHomeworks.Mati
         public List<BankTransaction> GetTransactions()
         {
             List<BankTransaction> temporaryBanks = new List<BankTransaction>();
-            temporaryBanks.Add(SearchAccount(GetNrbNumber(IncomingNumber)));
-           // incomingBank = temporaryBanks[0].GetBankName();
-            if (temporaryBanks.Count ==0)
-            {
-                return null;
-
-            }
-            temporaryBanks.Add(SearchAccount(GetNrbNumber(OutcomingNumber)));
-           // outcomingBank = temporaryBanks[1].GetBankName();
-            if (temporaryBanks.Count == 1)
+            temporaryBanks.Add(SearchAccount(GetNrbNumber(IncomingNumber),new Dictionary<string, BankTransaction>()));
+            temporaryBanks.Add(SearchAccount(GetNrbNumber(OutcomingNumber), new Dictionary<string, BankTransaction>()));
+            if (temporaryBanks.Count == 2 
+                || ValidationNumber.Validation(OutcomingNumber) 
+                || ValidationNumber.Validation(IncomingNumber))
             {
                 return null;
             }
@@ -41,16 +36,16 @@ namespace Startup.TrainingOneHomeworks.Mati
             return null;
         }
 
-        public BankTransaction SearchAccount(string number)
+        public BankTransaction SearchAccount(string number, Dictionary<string, BankTransaction> bankList)
         {
             if (number == null)
                 return null;
-            BankTransaction bank; 
-            //foreach (var item in bankList)
-            //{
-            //    if (bankList.TryGetValue(number, out bank)) 
-            //    return bank;
-            //}
+            BankTransaction bank;
+            foreach (var item in bankList)
+            {
+                if (bankList.TryGetValue(number, out bank))
+                    return bank;
+            }
             return null;
 
         }

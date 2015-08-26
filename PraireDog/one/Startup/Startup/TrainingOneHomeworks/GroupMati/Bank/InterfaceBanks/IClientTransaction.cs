@@ -8,7 +8,7 @@ namespace Startup.TrainingOneHomeworks.Mati.InterfaceBanks
          string OutcomingNumber { get; set; }
          List<BankTransaction> GetTransactions();
          string GetNrbNumber(string number);
-        BankTransaction SearchAccount(string number);
+        BankTransaction SearchAccount(string number, Dictionary<string, BankTransaction> bankTransactions);
 
 
 

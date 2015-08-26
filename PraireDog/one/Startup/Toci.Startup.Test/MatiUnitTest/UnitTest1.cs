@@ -7,6 +7,7 @@ using Startup.TrainingOneHomeworks.GroupMati.Banks;
 using Startup.TrainingOneHomeworks.Mati;
 using Startup.TrainingOneHomeworks.Mati.Banks;
 using Startup.TrainingOneHomeworks.Mati.Messages;
+using Startup.TrainingOneHomeworks.Mati.SqlDataBase;
 
 namespace Toci.Startup.Test.MatiUnitTest
 {
@@ -17,7 +18,7 @@ namespace Toci.Startup.Test.MatiUnitTest
         public void CheckSearchAccount()
         {
             ClientTransaction transaction = new ClientTransaction();
-            Assert.IsInstanceOfType(new AliorTransactionBank(), transaction.SearchAccount("1111").GetType());
+          //  Assert.IsInstanceOfType(new AliorTransactionBank(), transaction.SearchAccount("1111").GetType());
        //     Assert.IsInstanceOfType(new BgzTransactionBank(), transaction.SearchAccount("1112").GetType());
         }
         [TestMethod]
@@ -46,9 +47,9 @@ namespace Toci.Startup.Test.MatiUnitTest
         [TestMethod]
         public void CheckTransactionInstant()
         {
-            FabricBankTransaction factory1 = new FabricBankTransaction();
+            FactoryBankTransaction< BankTransaction> factory1 = new FactoryBankTransaction<BankTransaction>();
             BankTransaction bank1;
-            Assert.IsTrue(factory1.TryGetTransaction("1111",out bank1));
+          //  Assert.IsTrue(factory1.TryGetTransaction("1111",out bank1));
         }
         [TestMethod]
         public void CheckMailMessage()
@@ -57,14 +58,25 @@ namespace Toci.Startup.Test.MatiUnitTest
             mail.SendMail(BankMailEnum.INCOMINGTRANSFER,"adam.kuba21@gmail.com");
         }
 
-      /*  protected List<BankTransaction> GetAllBankTransactions()
+        [TestMethod]
+        public void SQLCheck()
         {
-            var result = Assembly.GetCallingAssembly().GetTypes().Where(item => item.IsSubclassOf(typeof (BankTransaction)));
+            SqlConnecting sql = new SqlConnecting();
+            
+        }
+        [TestMethod]
+        public void CheckValidationNumber()
+        {
+            Assert.IsTrue(ValidationNumber.Validation("36249010440000420057684506"));
+        }
+        /*  protected List<BankTransaction> GetAllBankTransactions()
+          {
+              var result = Assembly.GetCallingAssembly().GetTypes().Where(item => item.IsSubclassOf(typeof (BankTransaction)));
 
-            foreach (var item in result)
-            {
-                //item.
-            }
-        }*/
+              foreach (var item in result)
+              {
+                  //item.
+              }
+          }*/
     }
 }

@@ -30,6 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.6\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Npgsql, Version=3.0.1.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.3.0.1\lib\net45\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -66,37 +74,45 @@
     <Compile Include="TrainingOneHomeworks\Erloon\BankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\IIdentificationBankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\TheInternationalBankAccountNumber.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Messages\BankMailEnum.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Messages\AliorMailMessages.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Messages\IMailMessages.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Messages\MailMessages.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\AbstractFactoryBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\BankMailEnum.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\AliorMailMessages.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\IMailMessages.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\MailMessages.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\IPdfCreator.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\PdfCreator.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
+    <Folder Include="TrainingOneHomeworks\GroupMati\Pesel\" />
     <Folder Include="TrainingOneHomeworks\wojteko22\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TrainingOneHomeworks\GroupMati\Banks\AliorTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Banks\BgzTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Banks\CitibankTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Banks\CreditTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Banks\EuroTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Factory\BankTransactionFactory.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Banks\IngTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Banks\MBankTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Banks\MillenniumTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Banks\PekaoTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Banks\WesternUnionTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\BankTransactionMenager.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\ClientTransaction.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\BankTransaction.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\InterfaceBanks\IBankTransaction.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\InterfaceBanks\IBankTransactionMenager.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\InterfaceBanks\IClientTransaction.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Factory\IBankTransactionFactory.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\AliorTransactionBank.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BgzTransactionBank.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\CitibankTransactionBank.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\CreditTransactionBank.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\EuroTransactionBank.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\BankTransactionFactory.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\IngTransactionBank.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\MBankTransactionBank.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\MillenniumTransactionBank.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\PekaoTransactionBank.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\WesternUnionTransactionBank.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\BankTransactionMenager.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ClientTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransactionMenager.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IClientTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\IBankTransactionFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="TrainingOneHomeworks\Erloon\NbpList.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

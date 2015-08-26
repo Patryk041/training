@@ -5,7 +5,6 @@ using Startup.TrainingOneHomeworks.Mati.InterfaceBanks;
 namespace Startup.TrainingOneHomeworks.Mati
 {
   
-
     public abstract class BankTransaction : IBankTransaction
     {
         protected string BankName { get; private set; }
@@ -14,7 +13,7 @@ namespace Startup.TrainingOneHomeworks.Mati
        
         protected BankTransaction(string name)
         {
-            BankName = name;
+                BankName = name;
         }
 
         public virtual void DescriptionTransaction()
