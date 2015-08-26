@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Startup.Test
+namespace Startup.TrainingOneHomeworks.KacperSiuda.Banki
 {
     public class Nbp : Bank
     {

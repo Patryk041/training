@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Startup.Test
-{
+namespace Startup.TrainingOneHomeworks.KacperSiuda.Banki
+
     public abstract class Bank : iBank
     {
         protected string BankName = "";

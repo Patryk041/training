@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toci.Startup.Test
+namespace Startup.TrainingOneHomeworks.KacperSiuda.Banki
 {
     public class Verify
     {
