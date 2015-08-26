@@ -86,6 +86,7 @@
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
     <Folder Include="TrainingOneHomeworks\GroupMati\Pesel\" />
+    <Folder Include="TrainingOneHomeworks\KacperSiuda\Banki\" />
     <Folder Include="TrainingOneHomeworks\wojteko22\" />
   </ItemGroup>
   <ItemGroup>
