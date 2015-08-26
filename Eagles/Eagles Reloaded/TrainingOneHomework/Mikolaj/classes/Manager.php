@@ -25,9 +25,11 @@ class Manager
 			if($Person->CheckMe())
 				{
 					$Person->PersonInfo();
+					$found = true;
 					break;
 				}
 		}
+		if(!isset($found)) echo "Incorrect ID number: {$idNumber}<br>";
 
 	}
 }
