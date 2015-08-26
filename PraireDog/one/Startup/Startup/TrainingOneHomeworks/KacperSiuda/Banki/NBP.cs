@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZadanieDomowe.Banki
+namespace Toci.Startup.Test
 {
     public class Nbp : Bank
     {
