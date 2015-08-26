@@ -54,17 +54,29 @@ class Number implements Numbers
 }
 
 
+abstract class Country implements Identity
+{
+	
+	abstract  function GetSexValue($idNumber);
+	abstract  function PersonSex($idNumber);
+	
+   public function Info($idNumber)
+    {
+    	echo "<b>ID</b>: <label style='color:green; font-style:italic;'>{$idNumber} </label>
+    	<b>Nationality</b>: <label style='color:green; font-style:italic;'>{$this->nationality} </label>
+    	<b>Sex</b>: <label style='color:green; font-style:italic;'>{$this->PersonSex($idNumber)}</label><br>";
+    }
+}
 
 
 
 
-
-class Poland implements Identity
+class Poland extends Country
 {
 
 	static $regex = '/^(\d{11})+$/';
-	private $nationality = "Poland";
-	private $number;
+	protected $nationality = "Poland";
+	protected $number;
 
 	function __construct(Numbers $number)
 	{
@@ -72,7 +84,7 @@ class Poland implements Identity
 	}
 	public static function CheckMe($idNumber)
 	{
-		if(!preg_match(Poland::$regex, $idNumber))
+		if(!preg_match(self::$regex, $idNumber))
 			return false;
 		$len = strlen($idNumber)-1; 
 
@@ -109,20 +121,14 @@ class Poland implements Identity
 		
 	}
 
-    public function Info($idNumber)
-    {
-    	echo "<b>ID</b>: <label style='color:green; font-style:italic;'>{$idNumber} </label>
-    	<b>Nationality</b>: <label style='color:green; font-style:italic;'>{$this->nationality} </label>
-    	<b>Sex</b>: <label style='color:green; font-style:italic;'>{$this->PersonSex($idNumber)}</label><br>";
-    }
+ 
 }
 
-class UK implements Identity
+class UK extends Country
 {
 	static $regex = '/^(?!BG|GB|NK|KN|TN|NT|ZZ)[ABCEGHJ-PRSTW-Z][ABCEGHJ-NPRSTW-Z]\d{6}[A-D]$/';
-	private $nationality = "United Kingdom";
-	private $sex;
-	private $number;
+	protected $nationality = "United Kingdom";
+	protected $number;
 
 	function __construct(Numbers $number)
 	{
@@ -130,7 +136,7 @@ class UK implements Identity
 	}
 	public static function CheckMe($idNumber)
 	{
-		if(!preg_match(UK::$regex, $idNumber))	
+		if(!preg_match(self::$regex, $idNumber))	
 			return false;
 		else
 			return true;
@@ -143,22 +149,16 @@ class UK implements Identity
 
 	}
 
-    public function Info($idNumber)
-    {
-    	echo "<b>ID</b>: <label style='color:orange; font-style:italic;'>{$idNumber} </label>
-    	<b>Nationality</b>: <label style='color:orange; font-style:italic;'>{$this->nationality} </label>
-    	<b>Sex</b>: <label style='color:orange; font-style:italic;'>{$this->PersonSex($idNumber)}</label><br>";
-    }
+
 }
 
 
-class Finland implements Identity
+class Finland extends Country
 {
 	static  $regex = '/\d{6}[+-A]\d{3}[0123456789ABCDEFHJKLMNPRSTUVWXY]/';
 
-	private $nationality = "Finland";
-	private $sex;
-	private $number;
+	protected $nationality = "Finland";
+	protected $number;
 
 	function __construct(Numbers $number)
 	{
@@ -166,7 +166,7 @@ class Finland implements Identity
 	}	
 	public static function CheckMe($idNumber)
 	{
-		if(!preg_match(Finland::$regex, $idNumber))
+		if(!preg_match(self::$regex, $idNumber))
 			return false;
 
 		$control_value = "0123456789ABCDEFHJKLMNPRSTUVWXY";
@@ -200,13 +200,7 @@ class Finland implements Identity
 		else
 			return "Female";
 	}
-    public function Info($idNumber)
-    {
-    	echo "<b>ID</b>: <label style='color:blue; font-style:italic;'>{$idNumber} </label>
-    	<b>Nationality</b>: <label style='color:blue; font-style:italic;'>{$this->nationality} </label>
-    	<b>Sex</b>: <label style='color:blue; font-style:italic;'>{$this->PersonSex($idNumber)}</label><br>";
 
-    }
 }
 
 $todo = new Manager();
