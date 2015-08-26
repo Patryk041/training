@@ -70,6 +70,20 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Messages\AliorMailMessages.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Messages\IMailMessages.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Messages\MailMessages.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\AliorBank.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\BankGospodarstwaHandlowego.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\BankPocztowy.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\BankZachodniWbk.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\BnpParibas.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\BosBank.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\BphBank.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\CitiBank.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\CreditAgricole.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\DeutscheBank.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\DnbBank.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\Transfer.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Banks\TransferManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
