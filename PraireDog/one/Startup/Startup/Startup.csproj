@@ -62,6 +62,17 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Messages\AliorMailMessages.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Messages\IMailMessages.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Messages\MailMessages.cs" />
+    <Compile Include="TrainingOneHomeworks\Rubi\Banks\BankInformation.cs" />
+    <Compile Include="TrainingOneHomeworks\Rubi\Banks\Interfaces\IBankInformation.cs" />
+    <Compile Include="TrainingOneHomeworks\Rubi\Banks\ListOfBanks.cs" />
+    <Compile Include="TrainingOneHomeworks\Rubi\PeselValidator\DayValidation.cs" />
+    <Compile Include="TrainingOneHomeworks\Rubi\PeselValidator\Interfaces\IDayValidation.cs" />
+    <Compile Include="TrainingOneHomeworks\Rubi\PeselValidator\Interfaces\IMonthValidation.cs" />
+    <Compile Include="TrainingOneHomeworks\Rubi\PeselValidator\Interfaces\IPeselValidation.cs" />
+    <Compile Include="TrainingOneHomeworks\Rubi\PeselValidator\Interfaces\IYearValidation.cs" />
+    <Compile Include="TrainingOneHomeworks\Rubi\PeselValidator\MonthValidation.cs" />
+    <Compile Include="TrainingOneHomeworks\Rubi\PeselValidator\PeselValidation.cs" />
+    <Compile Include="TrainingOneHomeworks\Rubi\PeselValidator\YearValidation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
