@@ -62,7 +62,8 @@
   <ItemGroup>
     <Compile Include="AndzejC\UnitTest1.cs" />
     <Compile Include="ErloonTest\BankTest.cs" />
-    <Compile Include="MatiUnitTest\UnitTest1.cs" />
+    <Compile Include="MatiUnitTest\Pesel\PeselUnitTest.cs" />
+    <Compile Include="MatiUnitTest\BankUnitTest.cs" />
     <Compile Include="MatiUnitTest\PdfUnitTest.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

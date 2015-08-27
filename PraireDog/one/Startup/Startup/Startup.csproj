@@ -82,10 +82,12 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\IPdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\PdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\InvalidPeselExeptions.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\IPeselValidator.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
-    <Folder Include="TrainingOneHomeworks\GroupMati\Pesel\" />
     <Folder Include="TrainingOneHomeworks\wojteko22\" />
   </ItemGroup>
   <ItemGroup>
