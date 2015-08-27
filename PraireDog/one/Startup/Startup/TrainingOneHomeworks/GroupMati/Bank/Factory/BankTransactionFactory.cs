@@ -14,54 +14,18 @@ namespace Startup.TrainingOneHomeworks.Mati.Banks
         /// <summary>
         /// Delegata zrobic
         /// </summary>
-        protected Dictionary<string, Func<T>> BankDictionary = new Dictionary<string, Func<T>>();
+        protected Dictionary<string, Func<T, bool>> BankDictionary = new Dictionary<string,Func<T,bool>>();
         public FactoryBankTransaction()
         {
-            //IBankTransactionFactory przyklad;
-            //Dictionary<string, bool> result = BankDictionary(przyklad);
-          
-            BankDictionary.Add("1111", () => (T)(object)new AliorTransactionBank()) ;
-            // {"1112", () => new BgzTransactionBank() },
-            // {"1113", new BgzTransactionBank() },
-            // {"1114", new BgzTransactionBank() },
-            // {"1115", new BgzTransactionBank() },
-            // {"1116", new BgzTransactionBank() },
-            // {"1117", new BgzTransactionBank() },
-            // {"1118", new BgzTransactionBank() },
-            // {"1119", new BgzTransactionBank() },
-            // {"1120", new BgzTransactionBank() },
-            // {"1121", new BgzTransactionBank() },
-            // {"1122", new BgzTransactionBank() },
-            // {"1123", new BgzTransactionBank() },
-            // {"1124", new BgzTransactionBank() },
-            // {"1125", new BgzTransactionBank() },
-            // {"1126", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
+            
+            BankDictionary.Add("1111", x => Equals(new AliorTransactionBank(),typeof(T)));
+            //BankDictionary.Add("asdf",x => Equals(new string("32".ToCharArray()).GetType(),typeof(T)));
         }
 
-        public void Add(string key, object value) 
-        {
-           // BankDictionary.Add(key, value);
+
+        public void Add<T>(string key, Func<T,bool> value) where T : class
+        { 
+          // BankDictionary.Add(key, value);
         }
 
         public Func<T, bool> GetValue(string key)

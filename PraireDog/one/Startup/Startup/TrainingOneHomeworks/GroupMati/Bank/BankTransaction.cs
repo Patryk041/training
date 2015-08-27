@@ -16,6 +16,10 @@ namespace Startup.TrainingOneHomeworks.Mati
                 BankName = name;
         }
 
+        public virtual BankTransaction GetObject()
+        {
+            return this;
+        }
         public virtual void DescriptionTransaction()
         {
             string path = @"\plik.xml";

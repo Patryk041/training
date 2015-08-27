@@ -7,15 +7,18 @@ using System.Threading.Tasks;
 
 namespace SQLlib.SQL
 {
-    class SqlMenager : ISqlMenager
+    public class SqlMenager : ISqlMenager
     {
         private SqlConnection Connection;
         private SqlDriver Driver;
 
-        SqlMenager()
+        public SqlMenager()
         {
-            Connection = new SqlConnection();
-            Driver = new SqlDriver();
+            
+            Driver = new SqlDriver(Connection);
+            Driver.CreateTable("banki_tabela");
+            Driver.Insert(new string[] { "a"},"banki_tabela");
+            Driver.SelectTable("banki_tabela");
         }
 
 

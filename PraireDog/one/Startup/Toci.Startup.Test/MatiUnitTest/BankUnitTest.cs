@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SQLlib.SQL;
+using Startup.TrainingOneHomeworks.GroupMati.Bank.Factory;
 using Startup.TrainingOneHomeworks.GroupMati.Banks;
 using Startup.TrainingOneHomeworks.Mati;
 using Startup.TrainingOneHomeworks.Mati.Banks;
@@ -47,9 +50,8 @@ namespace Toci.Startup.Test.MatiUnitTest
             [TestMethod]
             public void CheckTransactionInstant()
             {
-                FactoryBankTransaction<BankTransaction> factory1 = new FactoryBankTransaction<BankTransaction>();
-                BankTransaction bank1;
-                //  Assert.IsTrue(factory1.TryGetTransaction("1111",out bank1));
+            FactoryBankTransaction<BankTransaction> factory1 = new FactoryBankTransaction<BankTransaction>();
+                  
             }
             [TestMethod]
             public void CheckMailMessage()
@@ -64,7 +66,22 @@ namespace Toci.Startup.Test.MatiUnitTest
                 SqlConnection sql = new SqlConnection();
 
             }
-            [TestMethod]
+        [TestMethod]
+        public void SQLExampleTable()
+        {
+            SqlMenager menager = new SqlMenager();
+
+
+
+        }
+
+        [TestMethod]
+        public void SqlMenagerCheck()
+        {
+            SqlMenager menager = new SqlMenager();
+            
+        }
+        [TestMethod]
             public void CheckValidationNumber()
             {
                 Assert.IsTrue(ValidationNumber.Validation("36249010440000420057684506"));

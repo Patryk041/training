@@ -6,9 +6,9 @@ namespace SQLlib.SQL
     public interface ISqlDriver
     {
         DataTable[] SelectAllTables();
-        DataTable SelectTable(string TableName);
-        void Insert(string[] record);
-        void CreateTable(string TableName);
+        DataTable SelectTable(string tableName);
+        void Insert(string[] record, string tableName);
+        void CreateTable(string tableName);
         DataTable ImportTable();
 
     }

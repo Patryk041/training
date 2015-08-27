@@ -5,7 +5,7 @@ using Startup.TrainingOneHomeworks.Mati.Messages;
 
 namespace Startup.TrainingOneHomeworks.GroupMati.Banks
 {
-    public class AliorTransactionBank : BankTransaction
+    public sealed class AliorTransactionBank : BankTransaction
     {
         public AliorTransactionBank():base("Alior Bank")
         {
