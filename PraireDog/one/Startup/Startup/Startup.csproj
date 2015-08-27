@@ -76,16 +76,6 @@
     <Compile Include="TrainingOneHomeworks\Erloon\BankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\IIdentificationBankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\TheInternationalBankAccountNumber.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\AliorTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BgzTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\CitibankTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\CreditTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\EuroTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\IngTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\MBankTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\MillenniumTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\PekaoTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\WesternUnionTransactionBank.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\BankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\BankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ClientTransaction.cs" />
@@ -125,10 +115,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
+    <Folder Include="TrainingOneHomeworks\GroupMati\Bank\Banks\" />
     <Folder Include="TrainingOneHomeworks\wojteko22\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="TrainingOneHomeworks\Erloon\NbpList.txt" />
+    <Content Include="TrainingOneHomeworks\GroupMati\Bank\GeneratorClass\BanksLists.txt" />
+    <Content Include="TrainingOneHomeworks\GroupMati\Bank\GeneratorClass\Generator.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
