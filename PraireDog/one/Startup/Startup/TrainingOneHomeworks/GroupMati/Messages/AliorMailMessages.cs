@@ -4,7 +4,7 @@ namespace Startup.TrainingOneHomeworks.Mati.Messages
 {
     public class AliorMailMessages : MailMessages
     {
-        public AliorMailMessages() : base(@"adam.kuba21@gmail.com","smtp.gmail.com",25)
+        public AliorMailMessages() : base(@"adam.kuba21@gmail.com","smtp.gmail.com",537)
         {
             
         }

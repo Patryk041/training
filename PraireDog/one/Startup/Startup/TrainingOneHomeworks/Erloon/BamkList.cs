@@ -6,11 +6,7 @@ namespace Startup.TrainingOneHomeworks.Erloon
 {
     public static class BamkList
     {
-        public static List<Bank> ListAllBank
-        {
-            get { return ImportListFromText(); }
-        }
-
+        public static List<Bank> ListAllBank => ImportListFromText();
 
 
         public static List<Bank> ImportListFromText()

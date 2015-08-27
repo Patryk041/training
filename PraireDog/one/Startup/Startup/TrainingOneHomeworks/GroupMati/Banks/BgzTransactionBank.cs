@@ -2,7 +2,7 @@
 
 namespace Startup.TrainingOneHomeworks.Mati.Banks
 {
-    public class BgzTransactionBank : BankTransaction
+    public sealed class BgzTransactionBank : BankTransaction
     {
         private const string bankName = "Bank BGZ";
 

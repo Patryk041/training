@@ -5,6 +5,7 @@ using Startup.TrainingOneHomeworks.Mati.InterfaceBanks;
 namespace Startup.TrainingOneHomeworks.Mati
 {
   
+
     public abstract class BankTransaction : IBankTransaction
     {
         protected string BankName { get; private set; }
@@ -13,9 +14,13 @@ namespace Startup.TrainingOneHomeworks.Mati
        
         protected BankTransaction(string name)
         {
-                BankName = name;
+            BankName = name;
         }
 
+        public virtual BankTransaction GetObject()
+        {
+            return this;
+        }
         public virtual void DescriptionTransaction()
         {
             string path = @"\plik.xml";
