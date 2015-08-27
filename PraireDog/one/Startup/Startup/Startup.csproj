@@ -72,6 +72,7 @@
     <Compile Include="TrainingOneHomeworks\Erloon\BankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\IIdentificationBankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\TheInternationalBankAccountNumber.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\BankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Messages\BankMailEnum.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Messages\AliorMailMessages.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Messages\IMailMessages.cs" />
@@ -124,7 +125,6 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Banks\MillenniumTransactionBank.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Banks\PekaoTransactionBank.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Banks\WesternUnionTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\BankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\ClientTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\BankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\InterfaceBanks\IBankTransaction.cs" />

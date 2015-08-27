@@ -45,13 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SQL\SqlInterfaces\ISqlMenager.cs" />
-    <Compile Include="SQL\SqlDriver.cs" />
-    <Compile Include="SQL\SqlInterfaces\ISqlDriver.cs" />
-    <Compile Include="SQL\SqlException\SqlExceptions.cs" />
-    <Compile Include="SQL\SqlInterfaces\ISqlConnection.cs" />
-    <Compile Include="SQL\SqlConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL\SqlConnection.cs" />
+    <Compile Include="SQL\SqlDriver.cs" />
+    <Compile Include="SQL\SqlException\SqlExceptions.cs" />
+    <Compile Include="SQL\SqlInterfaces\SqlExceptions.cs" />
     <Compile Include="SQL\SqlMenager.cs" />
   </ItemGroup>
   <ItemGroup>
