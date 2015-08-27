@@ -82,6 +82,12 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\IPdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\PdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
+    <Compile Include="TrainingOneHomeworks\TomaszF\Banks\BankTransactionING.cs" />
+    <Compile Include="TrainingOneHomeworks\TomaszF\Banks\BankTransactionPKOBP.cs" />
+    <Compile Include="TrainingOneHomeworks\TomaszF\BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\TomaszF\CheckBank.cs" />
+    <Compile Include="TrainingOneHomeworks\TomaszF\Transaction.cs" />
+    <Compile Include="TrainingOneHomeworks\TomaszF\TransactionMenager.cs" />
     <!--<Compile Include="TrainingOneHomeworks\GroupMati\Pesel\InvalidPeselExeptions.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\IPeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />-->
