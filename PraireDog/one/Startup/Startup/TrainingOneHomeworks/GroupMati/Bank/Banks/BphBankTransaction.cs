@@ -2,9 +2,9 @@
     using Startup.TrainingOneHomeworks.Mati;
     namespace Startup.TrainingOneHomeworks.GroupMati.Banks
     {
-        public sealed class NarodowyBankPolskiTransactionBank : BankTransaction
+        public sealed class BphTransactionBank : BankTransaction
         {
-            public NarodowyBankPolskiTransactionBank() : base("NarodowyBankPolski Bank")
+            public BphTransactionBank() : base("Bph Bank")
             {
             }
             public void DescriptionTransaction()

@@ -2,9 +2,9 @@
     using Startup.TrainingOneHomeworks.Mati;
     namespace Startup.TrainingOneHomeworks.GroupMati.Banks
     {
-        public sealed class AliorTransactionBank : BankTransaction
+        public sealed class {0}TransactionBank : BankTransaction
         {
-            public AliorTransactionBank() : base("Alior Bank")
+            public {0}TransactionBank() : base("{0} Bank")
             {
             }
             public void DescriptionTransaction()
