@@ -66,6 +66,7 @@
     <!--    <Compile Include="MatiUnitTest\Pesel\PeselUnitTest.cs" />-->
     <Compile Include="MatiUnitTest\PdfUnitTest.cs" />
     <Compile Include="MatiUnitTest\BankUnitTest.cs" />
+    <Compile Include="MatiUnitTest\Pesel\PeselUnitTest.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
