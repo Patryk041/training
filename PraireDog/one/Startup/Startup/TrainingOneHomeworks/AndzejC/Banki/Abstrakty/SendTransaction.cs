@@ -2,13 +2,7 @@
 {
     public abstract class SendTransaction
     {
-        public abstract bool InCome();
-        public abstract bool OutCome();
-        public abstract SendTransaction SendTransfer(Transaction transaction);
-
-        public bool SendTransfer()
-        {
-            throw new System.NotImplementedException();
-        }
+        public abstract bool InCome(Transaction transaction);
+        public abstract bool OutCome(Transaction transaction);
     }
 }
