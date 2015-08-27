@@ -20,12 +20,12 @@ namespace SQLlib
         {
 
             connection =
-                new NpgsqlConnection("Host=" + host + ";Username=" + user + ";Password=" + password + ";Database=" +
-                                     dBname);
+                new NpgsqlConnection("Host=" + host + ";Username=" + user + ";Password=" + password + ";Database=" + dBname);
         }
 
         public NpgsqlConnection GetConnection()
         {
+          
             return this.connection;
         }
 
@@ -39,8 +39,18 @@ namespace SQLlib
             {
                 throw ex = new SqlExceptions("Error while disconnectiong");
             }
+        }
 
-
+        public void OpenConnection()
+        {
+            try
+            {
+                connection.Open();
+            }
+            catch (SqlExceptions ex)
+            {
+                throw ex = new SqlExceptions("Error while connectiong");
+            }
         }
 
         public bool CheckConnection()

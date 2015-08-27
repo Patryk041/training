@@ -60,18 +60,10 @@ namespace Toci.Startup.Test.MatiUnitTest
                 mail.SendMail(BankMailEnum.INCOMINGTRANSFER, "adam.kuba21@gmail.com");
             }
 
-            [TestMethod]
-            public void SQLCheck()
-            {
-                SqlConnection sql = new SqlConnection();
-
-            }
         [TestMethod]
         public void SQLExampleTable()
         {
             SqlMenager menager = new SqlMenager();
-
-
 
         }
 
@@ -86,15 +78,15 @@ namespace Toci.Startup.Test.MatiUnitTest
             {
                 Assert.IsTrue(ValidationNumber.Validation("36249010440000420057684506"));
             }
-            /*  protected List<BankTransaction> GetAllBankTransactions()
-              {
-                  var result = Assembly.GetCallingAssembly().GetTypes().Where(item => item.IsSubclassOf(typeof (BankTransaction)));
+              //protected List<BankTransaction> GetAllBankTransactions()
+              //{
+              //    var result = Assembly.GetCallingAssembly().GetTypes().Where(item => item.IsSubclassOf(typeof (BankTransaction)));
 
-                  foreach (var item in result)
-                  {
-                      //item.
-                  }
-              }*/
+              //    foreach (var item in result)
+              //    {
+              //        //item.
+              //    }
+              //}
         }
     }
 
