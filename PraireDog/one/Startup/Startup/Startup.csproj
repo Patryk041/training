@@ -76,6 +76,42 @@
     <Compile Include="TrainingOneHomeworks\Erloon\BankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\IIdentificationBankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\TheInternationalBankAccountNumber.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\AliorBankBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BankMilennium BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BankPocztowy BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BankPolskiejSpoldzielczosci BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\Bgk BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BGZ BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BnpParibasFortis BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\Bos BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\Bph BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\Bzwbk BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\CitybankHandlowy BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\CreditAgricoleBankPolska BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\DeutscheBankPolska BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\DnBNord BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\EuroBank BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\FceBankPolska BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\FiatBankPolska BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\FmBankPBP BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\GettinNobleBank BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\Hsbc BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\IdeaBank BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\Ing BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\mBank BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\MercedesBenzBankPolska BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\MeritumBank BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\NarodowyBankPolskiBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\NordeaBank BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\Pekao BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\PkobpBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\RabobankPolska BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\RaiffeisenBank BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\RbsBankPolskaBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\SantanderConsumerBank BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\SGBBank BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\SocieteGenerale BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\ToyotaBank BankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\BankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\BankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ClientTransaction.cs" />
@@ -106,7 +142,7 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\AliorMailMessages.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\Interface\IMailMessages.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\MailMessages.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\IPdfCreator.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\Interface\IPdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\PdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\InvalidPeselExeptions.cs" />
@@ -115,7 +151,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
-    <Folder Include="TrainingOneHomeworks\GroupMati\Bank\Banks\" />
     <Folder Include="TrainingOneHomeworks\wojteko22\" />
   </ItemGroup>
   <ItemGroup>
