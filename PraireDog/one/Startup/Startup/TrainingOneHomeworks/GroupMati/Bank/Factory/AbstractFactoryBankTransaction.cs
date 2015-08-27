@@ -8,7 +8,7 @@ namespace Startup.TrainingOneHomeworks.GroupMati.Bank.Factory
 
         public Dictionary<string, Func<T>> BankDictionary;
 
-        public Dictionary<string, Func<T, bool>> BankDictionary = new Dictionary<string, Func<T, bool>>();
+        
 
     }
 }

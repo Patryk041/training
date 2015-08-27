@@ -12,12 +12,12 @@ namespace Startup.TrainingOneHomeworks.IwonaM.Banki
 
         public virtual string InputTransaction()
         {
-
+            return null;
         }
 
         public virtual string OutputTransaction()
         {
-
+            return null;
         }
 
     }

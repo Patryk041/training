@@ -67,11 +67,11 @@ namespace Startup.TrainingOneHomeworks.Mati.Banks
            // BankDictionary.Add(key, value);
         }
 
-        public Func<T, bool> GetValue(string key) 
+        public Func<T> GetValue(string key) 
         {
             return  BankDictionary[key];
         }
-        public bool TryGetTransaction(string key, Func<T, bool> bankTransaction)
+        public bool TryGetTransaction(string key, Func<T> bankTransaction)
         {
             return BankDictionary.TryGetValue(key, out bankTransaction);
         
