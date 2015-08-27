@@ -68,6 +68,12 @@
     <Compile Include="TrainingOneHomeworks\AndzejC\Pesel\PeselNumberCheck.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Pesel\PeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\Ayuu\TestClass.cs" />
+    <Compile Include="TrainingOneHomeworks\Bolec\Banksclasses\PKObp.cs" />
+    <Compile Include="TrainingOneHomeworks\Bolec\DelegateToBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Bolec\TransferInfo.cs" />
+    <Compile Include="TrainingOneHomeworks\Bolec\TransferManager.cs" />
+    <Compile Include="TrainingOneHomeworks\Bolec\transferTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\Bolec\UserAccount.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\AccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\BamkList.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\Bank.cs" />
