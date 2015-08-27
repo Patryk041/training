@@ -16,9 +16,9 @@ namespace SQLlib.SQL
         {
             
             Driver = new SqlDriver(Connection);
-            Driver.CreateTable("banki_tabela");
-            Driver.Insert(new string[] { "a"},"banki_tabela");
-            Driver.SelectTable("banki_tabela");
+            Driver.CreateTable("banki_t");
+            Driver.Insert(new string[] { "a"},"banki_t");
+            Driver.SelectTable("banki_t");
         }
 
 

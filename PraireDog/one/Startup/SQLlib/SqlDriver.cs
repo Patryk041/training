@@ -1,22 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Npgsql;
 
-namespace SQLlib.SQL 
+namespace SQLlib.SQL
 {
-    class SqlDriver : ISqlDriver
+    internal class SqlDriver : ISqlDriver
     {
-        private NpgsqlCommand cmd;
+        private readonly NpgsqlCommand cmd = new NpgsqlCommand();
+        private string CreateTableSchema { get; set; }
+        private ISqlConnection sqlConnection;
         public SqlDriver(ISqlConnection sqlConnection)
         {
-            sqlConnection = new SqlConnection();
-            cmd.Connection = sqlConnection.GetConnection();
-            
+            CreateTableSchema = "Banki";
+            this.sqlConnection = new SqlConnection();
+            cmd.Connection = this.sqlConnection.GetConnection();
         }
+
         public DataTable[] SelectAllTables()
         {
             throw new NotImplementedException();
@@ -24,26 +23,66 @@ namespace SQLlib.SQL
 
         public DataTable SelectTable(string tableName)
         {
-            cmd.CommandText = "SELECT * FROM "+tableName;
-            var reader = cmd.ExecuteReader();
+            NpgsqlDataReader reader;
+            try
+            {
+                sqlConnection.OpenConnection();
+                cmd.CommandText = "SELECT * FROM " + "\"" + CreateTableSchema + "\".\"" + tableName + "\"";
+                reader = cmd.ExecuteReader();
                 
-                   return reader.GetSchemaTable();
+            }
+            catch (NpgsqlException ex)
+            {
+                throw new SqlExceptions(ex.Message);
+            }
+            finally
+            {
+                sqlConnection.CloseConnection();
+            }
+            return reader.GetSchemaTable();
         }
 
         public void Insert(string[] record, string tableName)
         {
-            cmd.CommandText = "INSERT INTO "+ tableName + "(ID, NumberOfAccount, NameOfBank, NumberOfBank) VALUES (1, '36249010440000420057684506', 'Alior',1111)";
-            cmd.ExecuteNonQuery();
+            
+            try
+            {
+                sqlConnection.OpenConnection();
+                cmd.CommandText = "INSERT INTO "  +"\"" + CreateTableSchema + "\".\"" + tableName + "\"" +
+                                  "(ID, NumberOfAccount, NameOfBank, NumberOfBank) VALUES (1," +                    "'36249010440000420057684506', 'Alior',1111)";
+                cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException ex)
+            {
+                throw new SqlExceptions(ex.Message);
+            }
+            finally
+            {
+                sqlConnection.CloseConnection();
+            }
         }
 
         public void CreateTable(string tableName)
         {
-            cmd.CommandText = "CREATE TABLE " + tableName + " {" +
-                              "ID int ," +
-                              "NumberOfAccount text," +
-                              "NameOfBank text," +
-                              "NumberOfBank int;}";
-            cmd.ExecuteNonQuery();
+            try
+            {
+                sqlConnection.OpenConnection();
+
+                cmd.CommandText = "CREATE TABLE " + "\""+CreateTableSchema+"\".\""+tableName+"\"" + " (" +
+                                  "ID int ," +
+                                  "NumberOfAccount text," +
+                                  "NameOfBank text," +
+                                  "NumberOfBank int)";
+                cmd.ExecuteNonQuery();
+            }
+            catch (NpgsqlException ex)
+            {
+                throw new SqlExceptions(ex.Message);
+            }
+            finally
+            {
+                sqlConnection.CloseConnection();
+            }
         }
 
         public DataTable ImportTable()

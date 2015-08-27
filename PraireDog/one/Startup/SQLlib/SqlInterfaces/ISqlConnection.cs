@@ -10,9 +10,6 @@ namespace SQLlib
 
         bool CheckConnection();
         void CloseConnection();
-        
-
-
-
+        void OpenConnection();
     }
 }
