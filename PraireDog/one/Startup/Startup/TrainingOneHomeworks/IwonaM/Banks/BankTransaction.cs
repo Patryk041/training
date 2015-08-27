@@ -1,15 +1,21 @@
-﻿namespace Startup.TrainingOneHomeworks.IwonaM.Banks
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Startup.TrainingOneHomeworks.IwonaM.Banki
 {
     public abstract class BankTransaction
     {
      
-        //saldo metoda
-        public virtual void InputTransaction()
+
+        public virtual string InputTransaction()
         {
 
         }
 
-        public virtual void OutputTransaction()
+        public virtual string OutputTransaction()
         {
 
         }

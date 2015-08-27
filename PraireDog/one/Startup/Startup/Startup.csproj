@@ -84,6 +84,7 @@
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\DnbBank.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\Transfer.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\TransferManager.cs" />
+    <Compile Include="TrainingOneHomeworks\IwonaM\Pesel\Pesel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
