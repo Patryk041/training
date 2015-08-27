@@ -5,6 +5,6 @@ namespace Startup.TrainingOneHomeworks.GroupMati.Bank.Factory
 {
     public class AbstractFactoryBankTransaction <T>
     {
-        public Dictionary<string, Func<T, bool>> BankDictionary;
+        public Dictionary<string, Func<T>> BankDictionary;
     }
 }

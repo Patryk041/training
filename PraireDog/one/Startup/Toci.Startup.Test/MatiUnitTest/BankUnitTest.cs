@@ -9,6 +9,7 @@ using Startup.TrainingOneHomeworks.GroupMati.Bank.Factory;
 using Startup.TrainingOneHomeworks.GroupMati.Banks;
 using Startup.TrainingOneHomeworks.Mati;
 using Startup.TrainingOneHomeworks.Mati.Banks;
+using Startup.TrainingOneHomeworks.Mati.GeneratorClass;
 using Startup.TrainingOneHomeworks.Mati.Messages;
 
 
@@ -58,6 +59,13 @@ namespace Toci.Startup.Test.MatiUnitTest
             {
                 MailMessages mail = new AliorMailMessages();
                 mail.SendMail(BankMailEnum.INCOMINGTRANSFER, "adam.kuba21@gmail.com");
+            }
+
+            [TestMethod]
+            public void GenerateClassCheck()
+            {
+                GeneratorClass generator = new GeneratorClass();
+
             }
 
         [TestMethod]

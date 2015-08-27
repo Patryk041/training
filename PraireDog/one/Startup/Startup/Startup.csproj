@@ -75,6 +75,8 @@
     <Compile Include="TrainingOneHomeworks\Erloon\IIdentificationBankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\TheInternationalBankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\AbstractFactoryBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\GeneratorClass\GeneratorClass.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\GeneratorClass\InterfaceGenerator\IGeneratorClass.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\BankMailEnum.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\AliorMailMessages.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\IMailMessages.cs" />
