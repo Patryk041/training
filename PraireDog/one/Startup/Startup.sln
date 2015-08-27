@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Startup", "Startup\Startup.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Startup.Test", "Toci.Startup.Test\Toci.Startup.Test.csproj", "{0ECE992A-F153-4F81-92D2-52B3A8FE1D05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLlib", "SQLlib\SQLlib.csproj", "{CFB7F22E-8393-4A44-AF3C-475AD855AA59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0ECE992A-F153-4F81-92D2-52B3A8FE1D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ECE992A-F153-4F81-92D2-52B3A8FE1D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ECE992A-F153-4F81-92D2-52B3A8FE1D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB7F22E-8393-4A44-AF3C-475AD855AA59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB7F22E-8393-4A44-AF3C-475AD855AA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB7F22E-8393-4A44-AF3C-475AD855AA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB7F22E-8393-4A44-AF3C-475AD855AA59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
