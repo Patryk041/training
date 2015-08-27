@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Startup</RootNamespace>
     <AssemblyName>Startup</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -85,6 +85,20 @@
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\Transfer.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\TransferManager.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Pesel\Pesel.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\AbstractFactoryBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\BankMailEnum.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\AliorMailMessages.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\IMailMessages.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\MailMessages.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\IPdfCreator.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\PdfCreator.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\InvalidPeselExeptions.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\IPeselValidator.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />
+    <!--<Compile Include="TrainingOneHomeworks\GroupMati\Pesel\InvalidPeselExeptions.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\IPeselValidator.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />-->
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
