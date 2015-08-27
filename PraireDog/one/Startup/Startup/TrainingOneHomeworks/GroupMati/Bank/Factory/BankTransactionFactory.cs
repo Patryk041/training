@@ -14,6 +14,7 @@ namespace Startup.TrainingOneHomeworks.Mati.Banks
         /// <summary>
         /// Delegata zrobic
         /// </summary>
+
         
         public FactoryBankTransaction()
         {
@@ -58,28 +59,22 @@ namespace Startup.TrainingOneHomeworks.Mati.Banks
             //};
 
 
+}
+       
 
-            //BankDictionary.Add("1111", x => Equals(new AliorTransactionBank(),typeof(T)));
-            
-            //BankDictionary.Add("asdf",x => Equals(new string("32".ToCharArray()).GetType(),typeof(T)));
-        }
-
-
-        public void Add<T>(string key, Func<T,bool> value) where T : class
-        { 
-          // BankDictionary.Add(key, value);
-        }
-
-        public Func<T, bool> GetValue(string key)
+        public void Add(string key, object value) 
         {
-            return null;
-            //return  BankDictionary[key];
+           // BankDictionary.Add(key, value);
+        }
+
+        public Func<T, bool> GetValue(string key) 
+        {
+            return  BankDictionary[key];
         }
         public bool TryGetTransaction(string key, Func<T, bool> bankTransaction)
         {
-            return true;
-            //return BankDictionary.TryGetValue(key, out bankTransaction);
-
+            return BankDictionary.TryGetValue(key, out bankTransaction);
+        
         }
     }
 }

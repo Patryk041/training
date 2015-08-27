@@ -11,6 +11,7 @@
     <AssemblyName>SQLlib</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,14 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SQL\SqlInterfaces\ISqlMenager.cs" />
+    <Compile Include="SQL\SqlDriver.cs" />
+    <Compile Include="SQL\SqlInterfaces\ISqlDriver.cs" />
+    <Compile Include="SQL\SqlException\SqlExceptions.cs" />
+    <Compile Include="SQL\SqlInterfaces\ISqlConnection.cs" />
+    <Compile Include="SQL\SqlConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlConnection.cs" />
-    <Compile Include="SqlDriver.cs" />
-    <Compile Include="SqlException\SqlExceptions.cs" />
-    <Compile Include="SqlInterfaces\ISqlConnection.cs" />
-    <Compile Include="SqlInterfaces\ISqlDriver.cs" />
-    <Compile Include="SqlInterfaces\ISqlMenager.cs" />
-    <Compile Include="SqlMenager.cs" />
+    <Compile Include="SQL\SqlMenager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
