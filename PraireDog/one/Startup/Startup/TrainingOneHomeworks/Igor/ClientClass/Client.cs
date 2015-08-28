@@ -70,12 +70,8 @@ namespace Banki.ClientClass
             {
                 Transaction transaction = new PayIn(sender, amount, bank);
                 history.Add(transaction);
-                if (!bank.Transfer(transaction))
-                {
-                    Console.WriteLine("Sorry, something gone wrong. Try again.");
-                }
+                bank.Transfer(transaction);
             }
-            else Console.WriteLine("Sorry, the program cannot find this bank in data base.");
         }
 
         public void payout(string receiver, int amount)
@@ -86,12 +82,8 @@ namespace Banki.ClientClass
             {
                 Transaction transaction = new PayOut(receiver, amount, bank);
                 history.Add(transaction);
-                if (!bank.Transfer(transaction))
-                {
-                    Console.WriteLine("Sorry, something gone wrong. Try again.");
-                }
+                bank.Transfer(transaction);
             }
-            else Console.WriteLine("Sorry, the program cannot find this bank in data base.");
         }
 
         public void transfer(string sender, string receiver, int amount)
@@ -103,12 +95,8 @@ namespace Banki.ClientClass
             {
                 Transaction transaction = new Transfer(sender, receiver, amount, bank);
                 history.Add(transaction);
-                if (!bank.Transfer(transaction))
-                {
-                    Console.WriteLine("Sorry, something gone wrong. Try again.");
-                }
+                bank.Transfer(transaction);
             }
-            else Console.WriteLine("Sorry, the program cannot find this bank in data base.");
         }
 
         public List<string> showBankHistory(string cardNumber)
