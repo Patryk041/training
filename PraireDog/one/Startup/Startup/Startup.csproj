@@ -148,12 +148,13 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\InvalidPeselExeptions.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\IPeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />
+    <Compile Include="TrainingOneHomeworks\Lurppis\Bank\Abstract\Bank.cs" />
     <Compile Include="TrainingOneHomeworks\Lurppis\Pesel\Interface\IPesel.cs" />
     <Compile Include="TrainingOneHomeworks\Lurppis\Pesel\Pesel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
-    <Folder Include="TrainingOneHomeworks\Lurppis\Bank\" />
+    <Folder Include="TrainingOneHomeworks\Lurppis\Bank\Banks\" />
     <Folder Include="TrainingOneHomeworks\wojteko22\" />
   </ItemGroup>
   <ItemGroup>

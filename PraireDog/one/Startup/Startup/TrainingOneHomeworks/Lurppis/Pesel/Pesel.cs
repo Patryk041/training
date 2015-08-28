@@ -23,7 +23,7 @@ namespace Startup.TrainingOneHomeworks.Lurppis.Pesel
                 {
                     if (!char.IsNumber(i))
                     {
-                        throw new Exception("Pesel zawiera liczby");
+                        throw new Exception("Pesel zawiera literki");
                     }
                     else
                     {
