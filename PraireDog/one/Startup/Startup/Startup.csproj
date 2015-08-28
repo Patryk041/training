@@ -120,6 +120,8 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IClientTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\DateOfBirthd.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Gender.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\AliorBank.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\BankGospodarstwaHandlowego.cs" />
@@ -145,8 +147,8 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\Interface\IPdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\PdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\InvalidPeselExeptions.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\IPeselValidator.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Exeption\InvalidPeselExeptions.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Interface\IPeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>
