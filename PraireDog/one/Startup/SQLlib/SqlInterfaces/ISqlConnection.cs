@@ -1,6 +1,6 @@
 using Npgsql;
 
-namespace SQLlib
+namespace SQLlib.SqlInterfaces
 {
     public interface ISqlConnection
     {

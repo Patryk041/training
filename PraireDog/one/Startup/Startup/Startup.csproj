@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Startup</RootNamespace>
     <AssemblyName>Startup</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -122,6 +122,10 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IClientTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\DateOfBirthd.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Exeption\InvalidPeselExeptions.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Gender.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Interface\IPeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank.cs" />
     <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_AliorBank.cs" />
     <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_BankMillennium.cs" />
@@ -192,8 +196,6 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\Interface\IPdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\PdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\InvalidPeselExeptions.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\IPeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\Lurppis\Pesel\Interface\IPesel.cs" />
     <Compile Include="TrainingOneHomeworks\Lurppis\Pesel\Pesel.cs" />
@@ -210,6 +212,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SQLlib\SQLlib.csproj">
+      <Project>{cfb7f22e-8393-4a44-af3c-475ad855aa59}</Project>
+      <Name>SQLlib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Data;
 using Npgsql;
+using SQLlib.SqlException;
+using SQLlib.SqlInterfaces;
 
-namespace SQLlib.SQL
+namespace SQLlib
 {
     internal class SqlDriver : ISqlDriver
     {
