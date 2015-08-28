@@ -14,7 +14,7 @@ namespace Startup.TrainingOneHomeworks.GroupMati.Bank
         private FactoryTransactionBank factory = new FactoryTransactionBank();
 
         private List<IClientTransaction> _clientTransactions; 
-        public List<IClientTransaction> ClientTransactions => _clientTransactions;
+        public List<IClientTransaction> ClientTransactions { get; set; }// => _clientTransactions;
         private List<List<BankTransaction>> _verifiedClientTransactions;
         public List<List<BankTransaction>> VerifiedClientTransactions
         {
