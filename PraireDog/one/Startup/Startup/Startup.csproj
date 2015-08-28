@@ -118,14 +118,11 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\BankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ClientTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\BankTransactionFactory.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\IBankTransactionFactory.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\Interface\IBankTransactionFactory.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IClientTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\DateOfBirthd.cs" />
-<<<<<<< HEAD
-    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Gender.cs" />
-=======
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Exeption\InvalidPeselExeptions.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Gender.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Interface\IPeselValidator.cs" />
@@ -174,7 +171,6 @@
     <Compile Include="TrainingOneHomeworks\Igor\Transactions\PayIn.cs" />
     <Compile Include="TrainingOneHomeworks\Igor\Transactions\PayOut.cs" />
     <Compile Include="TrainingOneHomeworks\Igor\Transactions\Transfer.cs" />
->>>>>>> b26939a78ef6f2dd3e7e40887cec73018e59de0c
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\AliorBank.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\BankGospodarstwaHandlowego.cs" />
@@ -200,11 +196,6 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\Interface\IPdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\PdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
-<<<<<<< HEAD
-    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Exeption\InvalidPeselExeptions.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Interface\IPeselValidator.cs" />
-=======
->>>>>>> b26939a78ef6f2dd3e7e40887cec73018e59de0c
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\lucass3231\Banks\BankIdentifier.cs" />
   </ItemGroup>
