@@ -1,10 +1,9 @@
-﻿using Pesel.Interface;
-using System;
-namespace Pesel
+﻿using System;
+namespace Startup.TrainingOneHomeworks.Lurppis.Pesel
 {
-    public class Pesel : IPesel
+    public class Pesel : Interface.IPesel
     {
-        protected string pesel;
+        private string pesel;
 
         public Pesel()
         {
@@ -36,7 +35,7 @@ namespace Pesel
         }
         public bool IsCorrect()
         {
-            int year = Convert.ToInt32(pesel.Substring(0, 2));
+            //int year = Convert.ToInt32(pesel.Substring(0, 2));
             int month = Convert.ToInt32(pesel.Substring(2, 2));
             int day = Convert.ToInt32(pesel.Substring(4, 2));
 
