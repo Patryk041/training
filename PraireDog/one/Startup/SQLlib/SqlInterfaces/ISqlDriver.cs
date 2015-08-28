@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 
-namespace SQLlib.SQL
+namespace SQLlib.SqlInterfaces
 {
     public interface ISqlDriver
     {
