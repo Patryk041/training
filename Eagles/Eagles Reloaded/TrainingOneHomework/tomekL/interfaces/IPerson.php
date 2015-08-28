@@ -6,6 +6,10 @@ interface IPerson
 	
 	function getSex();
 
-	function getAge();
+
+
+	function validate();
+
+	function getNationalNumber();
 
 }
