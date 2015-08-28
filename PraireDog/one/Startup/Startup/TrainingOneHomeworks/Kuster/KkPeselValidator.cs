@@ -7,33 +7,34 @@ namespace KusterPeselValidator
         public static readonly int[] coefficients = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3 };
         public DateTime time;
 
+        public KkPeselValidator(string pesel)
+        {
+            PeselValidatorFinall(pesel);
+        }
+
         public string GetNick()
         {
             return "Kuster";
         }
-        
         public bool PeselCorrectnessLegnth(string pesel)
         {
             return pesel.Length == 11;
         }
-
         public bool PeselCorrectnessNumbers(string pesel)
         {
             int checkingSum = 0;
 
-            int[] coefficients = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3 };
             for (int i = 0; i < 10; i++)
             {
                 checkingSum += (coefficients[i] * int.Parse(pesel[i].ToString()));
             }
-            if (checkingSum % 10 == 0 && int.Parse(pesel[11].ToString()) == 0)
+            if (checkingSum % 10 == 0 && int.Parse(pesel[10].ToString()) == 0)
                 return true;
-            else if (10 - checkingSum == int.Parse(pesel[11].ToString()))
+            else if (10 - (checkingSum%10) == int.Parse(pesel[10].ToString()))
                 return true;
             else
                 return false;
         }
-
         public bool PeselCorrectnessBirthDate(string pesel)
         {
             int birthDateYearInt = int.Parse(pesel.Substring(0, 2));
@@ -57,6 +58,10 @@ namespace KusterPeselValidator
             }
 
             return true;
+        }
+        public bool PeselValidatorFinall(string pesel)
+        {
+            return (PeselCorrectnessLegnth(pesel) && PeselCorrectnessNumbers(pesel) && PeselCorrectnessBirthDate(pesel));
         }
     }
 }
