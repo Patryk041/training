@@ -122,8 +122,6 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IClientTransaction.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\DateOfBirthd.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Exeption\InvalidPeselExeptions.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Gender.cs" />
@@ -173,7 +171,6 @@
     <Compile Include="TrainingOneHomeworks\Igor\Transactions\PayIn.cs" />
     <Compile Include="TrainingOneHomeworks\Igor\Transactions\PayOut.cs" />
     <Compile Include="TrainingOneHomeworks\Igor\Transactions\Transfer.cs" />
->>>>>>> 7637eff9dddd2733f5dd8765fed8b5aa3c1b0faf
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\AliorBank.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\BankGospodarstwaHandlowego.cs" />
