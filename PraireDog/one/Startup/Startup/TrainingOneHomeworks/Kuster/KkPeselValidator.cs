@@ -26,11 +26,11 @@ namespace KusterPeselValidator
 
             for (int i = 0; i < 10; i++)
             {
-                checkingSum += (coefficients[i] * int.Parse(pesel[i].ToString()));
+                checkingSum += (coefficients[i] * (pesel[i]-48) );
             }
-            if (checkingSum % 10 == 0 && int.Parse(pesel[10].ToString()) == 0)
+            if (checkingSum % 10 == 0 && ( (pesel[10]-48) == 0))
                 return true;
-            else if (10 - (checkingSum%10) == int.Parse(pesel[10].ToString()))
+            else if (10 - checkingSum%10 == (pesel[10]-48))
                 return true;
             else
                 return false;
