@@ -39,8 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
     <Compile Include="lucass3231\HelloEverybodyByLucass3231.cs" />
+
+    <Compile Include="Mati\MyNewClass.cs" />
+
     <Compile Include="Properties\AssemblyInfo.cs" />
+
+    <Compile Include="Widmo\Widmo.cs" />
+
+    <Compile Include="Werner\Werner.cs" />
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
