@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace Krzysztof.Banks
 {
-    public class Class1
+    public class Owner
     {
+        public string name;
+        public Address address;
+        // etc...
     }
 }
