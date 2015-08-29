@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.Kodi
+namespace Anathema.Igor
 {
-    class Kodi
+    class MyNewClass
     {
-        public string message()
+        public string dajGlos()
         {
-            return "Kodi was here!!";
+            return "witam";
         }
     }
 }
