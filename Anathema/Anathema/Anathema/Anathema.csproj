@@ -46,6 +46,7 @@
     <Compile Include="Polak\HelloByPolak.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tomekL\tomekL.cs" />
+    <Compile Include="usppat\usppatHelloClass.cs" />
     <Compile Include="Widmo\Widmo.cs" />
     <Compile Include="Werner\Werner.cs" />
   </ItemGroup>
