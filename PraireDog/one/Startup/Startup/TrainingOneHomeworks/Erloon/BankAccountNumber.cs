@@ -4,9 +4,17 @@
     {
         public string CheckBank(AccountNumber accountNumber)
         {
-            string tempAccountNumber = accountNumber.AcountNumber.Substring(3, 8);
-            var fundBank = BamkList.ListAllBank.Find(bank => bank.BranchBankId.Equals(tempAccountNumber));
-            return "Nazwa banku: " + fundBank.BankName + " oddział w " + fundBank.BranchBankName;
+            string BankName;
+            var fundBank = BamkList.ListAllBank.Find(bank => bank.BranchBankId.Equals(accountNumber.AcountNumber.Substring(2, 8)));
+            if (fundBank == null)
+            {
+                BankName = "Nie ma takiego banku";
+            }
+            else
+            {
+                BankName = string.Format("Nazwa banku: {0} oddział w {1}", fundBank.BankName, fundBank.BranchBankName);
+            }
+            return BankName;
         }
     }
 }
