@@ -73,6 +73,7 @@
     <Compile Include="Polak\HelloByPolak.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sancho\Sancho.cs" />
+    <Compile Include="Sherpin\SherpinHello.cs" />
     <Compile Include="TomaszF\TomaszF.cs" />
     <Compile Include="tomekL\tomekL.cs" />
     <Compile Include="Ubot%28Seb%29\Seb.cs" />
