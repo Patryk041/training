@@ -11,7 +11,7 @@ namespace UnitTestPesel
         public void Validate()
         {
             Assert.IsFalse(PeselValidator.Validate("1234567890"));
-            // Hire you should put correctly pesel number
+            // Here you should put correctly pesel number
             // Assert.IsTrue(PeselValidator.Validate(""));
         }
     }
