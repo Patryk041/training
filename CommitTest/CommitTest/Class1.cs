@@ -8,5 +8,6 @@ namespace CommitTest
 {
     public class Class1
     {
+        private string modyfikacja = "19:42 29.08.2015";
     }
 }
