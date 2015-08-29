@@ -39,15 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
     <Compile Include="lucass3231\HelloEverybodyByLucass3231.cs" />
-=======
+
 
 
     <Compile Include="GhostRider\HelloEverybodyByGhostRider.cs" />
->>>>>>> 97a32ad17c73f1b6aac4627aaa15b4b4e1eb601b
+
+
 
     <Compile Include="Mati\MyNewClass.cs" />
 
@@ -55,13 +55,10 @@
 
     <Compile Include="Widmo\Widmo.cs" />
 
-<<<<<<< HEAD
+
     <Compile Include="Werner\Werner.cs" />
 
-=======
-=======
 
->>>>>>> 97a32ad17c73f1b6aac4627aaa15b4b4e1eb601b
     <Compile Include="Lurppis\MyClass.cs" />
     <Compile Include="Mati\MyNewClass.cs" />
     <Compile Include="Polak\HelloByPolak.cs" />
@@ -69,7 +66,7 @@
     <Compile Include="Widmo\Widmo.cs" />
 
     <Compile Include="Werner\Werner.cs" />
->>>>>>> 98bd25033780b8c036344c304d5b6af4424d5995
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
