@@ -1,4 +1,4 @@
-﻿using Anathema.Generics;
+using Anathema.Generics;
 
 namespace Anathema.Lurppis
 {
