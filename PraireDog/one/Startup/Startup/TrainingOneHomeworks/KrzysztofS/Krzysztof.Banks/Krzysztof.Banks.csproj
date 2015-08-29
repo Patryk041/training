@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CFB7F22E-8393-4A44-AF3C-475AD855AA59}</ProjectGuid>
+    <ProjectGuid>{21D45145-D1BC-4B38-ADC4-62210629C1AB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SQLlib</RootNamespace>
-    <AssemblyName>SQLlib</AssemblyName>
+    <RootNamespace>Krzysztof.Banks</RootNamespace>
+    <AssemblyName>Krzysztof.Banks</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,22 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Cassandra, Version=2.6.0.0, Culture=neutral, PublicKeyToken=10b231fbfc8c4b4d, processorArchitecture=MSIL">
-      <HintPath>..\packages\CassandraCSharpDriver.2.6.0\lib\net40\Cassandra.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="itextsharp, Version=5.5.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
-      <HintPath>..\packages\iTextSharp.5.5.6\lib\itextsharp.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LZ4, Version=1.0.5.93, Culture=neutral, PublicKeyToken=fd2bda0a70c5a705, processorArchitecture=MSIL">
-      <HintPath>..\packages\lz4net.1.0.5.93\lib\net40-client\LZ4.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Npgsql, Version=3.0.1.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Npgsql.3.0.1\lib\net45\Npgsql.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,20 +40,51 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account\Account.cs" />
+    <Compile Include="Account\Address.cs" />
+    <Compile Include="Account\Owner.cs" />
+    <Compile Include="Bank.cs" />
+    <Compile Include="Banks\Bank_Alior.cs" />
+    <Compile Include="Banks\Bank_BGZ.cs" />
+    <Compile Include="Banks\Bank_BNP.cs" />
+    <Compile Include="Banks\Bank_BOS.cs" />
+    <Compile Include="Banks\Bank_BPS.cs" />
+    <Compile Include="Banks\Bank_Credit.cs" />
+    <Compile Include="Banks\Bank_DB.cs" />
+    <Compile Include="Banks\Bank_DnB.cs" />
+    <Compile Include="Banks\Bank_Euro.cs" />
+    <Compile Include="Banks\Bank_Fiat.cs" />
+    <Compile Include="Banks\Bank_FCE.cs" />
+    <Compile Include="Banks\Bank_FM.cs" />
+    <Compile Include="Banks\Bank_Getin.cs" />
+    <Compile Include="Banks\Bank_HSBC.cs" />
+    <Compile Include="Banks\Bank_BGK.cs" />
+    <Compile Include="Banks\Bank_BPH.cs" />
+    <Compile Include="Banks\Bank_BZWBK.cs" />
+    <Compile Include="Banks\Bank_Citi.cs" />
+    <Compile Include="Banks\Bank_Idea.cs" />
+    <Compile Include="Banks\Bank_ING.cs" />
+    <Compile Include="Banks\Bank_MBank.cs" />
+    <Compile Include="Banks\Bank_Mercedes.cs" />
+    <Compile Include="Banks\Bank_Meritum.cs" />
+    <Compile Include="Banks\Bank_Millenium.cs" />
+    <Compile Include="Banks\Bank_Nordea.cs" />
+    <Compile Include="Banks\Bank_Pekao.cs" />
+    <Compile Include="Banks\Bank_Pocztowy.cs" />
+    <Compile Include="Banks\Bank_Rabobank.cs" />
+    <Compile Include="Banks\Bank_Raiffeisen.cs" />
+    <Compile Include="Banks\Bank_RBS.cs" />
+    <Compile Include="Banks\Bank_Plus.cs" />
+    <Compile Include="Banks\Bank_Santander.cs" />
+    <Compile Include="Banks\Bank_SGB.cs" />
+    <Compile Include="Banks\Bank_Societe.cs" />
+    <Compile Include="Banks\Bank_Toyota.cs" />
+    <Compile Include="Banks\Bank_VW.cs" />
+    <Compile Include="ManageBanks.cs" />
+    <Compile Include="Banks\Bank_NBP.cs" />
+    <Compile Include="Banks\Bank_PKOBP.cs" />
+    <Compile Include="IBank.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlBase.cs" />
-    <Compile Include="SqlBases\SqlCassandra.cs" />
-    <Compile Include="SqlConnection.cs" />
-    <Compile Include="SqlDriver.cs" />
-    <Compile Include="SqlException\SqlExceptions.cs" />
-    <Compile Include="SqlInterfaces\ISqlConnection.cs" />
-    <Compile Include="SqlInterfaces\ISqlDriver.cs" />
-    <Compile Include="SqlInterfaces\ISqlMenager.cs" />
-    <Compile Include="SqlMenager.cs" />
-    <Compile Include="SqlBases\SqlPostrgres.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
