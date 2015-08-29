@@ -40,12 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Mati\MyNewClass.cs" />
+    <Compile Include="Polak\HelloByPolak.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="Widmo\Widmo.cs" />
-=======
     <Compile Include="Werner\Werner.cs" />
->>>>>>> dd08de6d7d60e29a4c5a2de2dc0238cc3db32b9e
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
