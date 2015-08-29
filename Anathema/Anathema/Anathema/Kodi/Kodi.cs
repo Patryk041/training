@@ -8,5 +8,9 @@ namespace Anathema.Kodi
 {
     class Kodi
     {
+        public string message()
+        {
+            return "Kodi was here!!";
+        }
     }
 }
