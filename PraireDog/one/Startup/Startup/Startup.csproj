@@ -199,10 +199,10 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\Kuster\KkPeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\lucass3231\Banks\BankIdentifier.cs" />
+    <Compile Include="TrainingOneHomeworks\wojteko22\AccountNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
-    <Folder Include="TrainingOneHomeworks\wojteko22\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="TrainingOneHomeworks\Erloon\NbpList.txt" />
