@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
+   
+    <Compile Include="Lausion\LausionClass.cs" />
     <Compile Include="adhed\Toci.cs" />
     <Compile Include="Erley\FirstErleyClass.cs" />
     <Compile Include="Generics\Chor\AbstractChainOfResponsibility.cs" />
@@ -56,16 +59,34 @@
     <Compile Include="Igor\MyNewClass.cs" />
     <Compile Include="jake\jakeTestClass.cs" />
     <Compile Include="Kodi\Kodi.cs" />
+
     <Compile Include="Kosski\testGit.cs" />
     <Compile Include="Kwasny\Hello.cs" />
     <Compile Include="Lausion\LausionClass.cs" />
+
+    <Compile Include="Kuster\KusterClass.cs" />
+
     <Compile Include="lDoran\Hello.cs" />
+
+
+
+
+
     <Compile Include="Lurppis\MyClass.cs" />
     <Compile Include="Maciej\MaciekClass.cs" />
     <Compile Include="Mati\MyNewClass.cs" />
     <Compile Include="Polak\HelloByPolak.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sancho\Sancho.cs" />
+
+    <Compile Include="Ubot%28Seb%29\Seb.cs" />
+    <Compile Include="wojteko22\wojteko22.cs" />
+
+
+    <Compile Include="tomekL.cs" />
+    <Compile Include="Lausion\LausionClass.cs" />
+    <Compile Include="Maciej\MaciekClass.cs" />
+
     <Compile Include="tomekL\tomekL.cs" />
     <Compile Include="Ubot%28Seb%29\Seb.cs" />
     <Compile Include="usppat\usppatHelloClass.cs" />
