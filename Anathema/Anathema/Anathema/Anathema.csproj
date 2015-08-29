@@ -40,6 +40,9 @@
   </ItemGroup>
   <ItemGroup>
 
+    <Compile Include="Erloon\MyClassE.cs" />
+
+
 
     <Compile Include="lucass3231\HelloEverybodyByLucass3231.cs" />
 
@@ -59,10 +62,13 @@
     <Compile Include="Werner\Werner.cs" />
 
 
+
     <Compile Include="Lurppis\MyClass.cs" />
+
     <Compile Include="Mati\MyNewClass.cs" />
     <Compile Include="Polak\HelloByPolak.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tomekL.cs" />
     <Compile Include="Widmo\Widmo.cs" />
 
     <Compile Include="Werner\Werner.cs" />
