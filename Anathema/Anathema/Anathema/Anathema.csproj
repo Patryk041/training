@@ -53,7 +53,6 @@
     <Compile Include="Kodi\Kodi.cs" />
     <Compile Include="Kwasny\Hello.cs" />
     <Compile Include="lDoran\Hello.cs" />
-    <Compile Include="Lurppis\MyClass.cs" />
     <Compile Include="Polak\HelloByPolak.cs" />
     <Compile Include="Sancho\Sancho.cs" />
     <Compile Include="Ubot%28Seb%29\Seb.cs" />
