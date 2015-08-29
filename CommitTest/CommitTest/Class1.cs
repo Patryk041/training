@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.Igor
+namespace CommitTest
 {
-    public class MyNewClass<T>
+    public class Class1
     {
-        public void addElement(T element)
-        {
-
-        }
+        private string modyfikacja = "19:42 29.08.2015";
     }
 }

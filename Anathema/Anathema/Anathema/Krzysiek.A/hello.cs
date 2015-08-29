@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.Igor
+namespace Projekty.kDerwan
 {
-    public class MyNewClass<T>
+    public class hello
     {
-        public void addElement(T element)
+        public string HelloEveryBody()
         {
-
+            return "Glorry !";
         }
     }
 }
