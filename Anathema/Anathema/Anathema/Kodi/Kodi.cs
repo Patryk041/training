@@ -4,14 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.Kosski
+namespace Anathema.Kodi
 {
-    class testGit
+    class Kodi
     {
-
-        public static string test()
-        {
-            return "test";
-        }
     }
 }
