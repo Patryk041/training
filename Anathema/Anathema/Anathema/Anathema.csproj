@@ -47,6 +47,7 @@
     <Compile Include="Erley\FirstErleyClass.cs" />
     <Compile Include="Igor\MyNewClass.cs" />
     <Compile Include="GhostRider\HelloEverybodyByGhostRider.cs" />
+    <Compile Include="jake\jakeTestClass.cs" />
     <Compile Include="Kosski\testGit.cs" />
     <Compile Include="Mati\MyNewClass.cs" />
     <Compile Include="piotrek88\MyClass.cs" />
