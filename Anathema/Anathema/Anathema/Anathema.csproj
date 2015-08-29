@@ -39,7 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="Erloon\MyClassE.cs" />
+    <Compile Include="GhostRider\HelloEverybodyByGhostRider.cs" />
+    <Compile Include="Kodi\Kodi.cs" />
+
     <Compile Include="lDoran\Hello.cs" />
+
     <Compile Include="Lausion\LausionClass.cs" />
     <Compile Include="Lurppis\MyClass.cs" />
     <Compile Include="Mati\MyNewClass.cs" />
