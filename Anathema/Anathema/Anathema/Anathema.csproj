@@ -66,6 +66,7 @@
 
     <Compile Include="Lausion\LausionClass.cs" />
     <Compile Include="Lurppis\MyClass.cs" />
+    <Compile Include="Maciej\MaciekClass.cs" />
     <Compile Include="Mati\MyNewClass.cs" />
     <Compile Include="Polak\HelloByPolak.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
