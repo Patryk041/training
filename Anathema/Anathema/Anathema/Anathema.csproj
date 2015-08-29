@@ -81,6 +81,7 @@
     <Compile Include="Werner\Werner.cs" />
     <Compile Include="Widmo\Widmo.cs" />
     <Compile Include="wojteko22\wojteko22.cs" />
+    <Compile Include="wojtek\FirstClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="obj\Debug\Anathema.csproj.FileListAbsolute.txt" />
