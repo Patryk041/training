@@ -6,42 +6,16 @@ using SQLlib.SqlInterfaces;
 
 namespace SQLlib
 {
-    internal class SqlDriver : ISqlDriver
+    internal class SqlDriver<T> : ISqlDriver<T>
     {
 
         private string CreateTableSchema { get; set; }
-        private ISqlConnection sqlConnection;
-        public SqlDriver(ISqlConnection sqlConnection, SqlBase sqlBase)
+        private ISqlConnection<T> sqlConnection;
+        public SqlDriver(ISqlConnection<T> sqlConnection, SqlBase sqlBase)
         {
-            CreateTableSchema = "Banki";
-            this.sqlConnection = new SqlConnection();
-            cmd.Connection = this.sqlConnection.GetConnection();
+           
         }
 
-        public DataTable[] SelectAllTables()
-        {
-            throw new NotImplementedException();
-        }
-
-        public DataTable SelectTable(string tableName)
-        {
-	        return null;
-        }
-
-        public void Insert(string[] record, string tableName)
-        {
-            
-            
-        }
-
-        public void CreateTable(string tableName)
-        {
-            
-        }
-
-        public DataTable ImportTable()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

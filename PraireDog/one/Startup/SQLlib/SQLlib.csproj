@@ -57,6 +57,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SqlFactory\AbstractSqlFactory.cs" />
+    <Compile Include="SqlFactory\SqlFactory.cs" />
+    <Compile Include="SqlInterfaces\IPropertiesConnection.cs" />
+    <Compile Include="SqlInterfaces\ISqlReaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlBase.cs" />
     <Compile Include="SqlBases\SqlCassandra.cs" />
@@ -67,12 +71,14 @@
     <Compile Include="SqlInterfaces\ISqlDriver.cs" />
     <Compile Include="SqlInterfaces\ISqlMenager.cs" />
     <Compile Include="SqlMenager.cs" />
-    <Compile Include="SqlBases\SqlPostrgres.cs" />
+    <Compile Include="SqlBases\SqlPostgres.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Modeling\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
