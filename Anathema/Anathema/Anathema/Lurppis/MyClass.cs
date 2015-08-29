@@ -1,10 +1,10 @@
 ﻿namespace Anathema.Lurppis
 {
-    public class MyClass
+    public class MyClass<T>
     {
-        public string write()
+        public virtual bool AddElement(T item, bool unique = true)
         {
-            return "Yo";
-        } 
+            return true;
+        }
     }
 }
