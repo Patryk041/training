@@ -118,7 +118,7 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\BankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ClientTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\BankTransactionFactory.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\IBankTransactionFactory.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\Interface\IBankTransactionFactory.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IClientTransaction.cs" />
@@ -197,19 +197,12 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\PdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />
+    <Compile Include="TrainingOneHomeworks\Kuster\KkPeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\lucass3231\Banks\BankIdentifier.cs" />
-    <Compile Include="TrainingOneHomeworks\Lurppis\Bank\Abstract\Bank.cs" />
-    <Compile Include="TrainingOneHomeworks\Lurppis\Bank\BankIdList\BankList.cs" />
-    <Compile Include="TrainingOneHomeworks\Lurppis\Bank\Banks\AliorBank.cs" />
-    <Compile Include="TrainingOneHomeworks\Lurppis\Bank\Banks\IngBank.cs" />
-    <Compile Include="TrainingOneHomeworks\Lurppis\Bank\Banks\NarodowyBankPolski.cs" />
-    <Compile Include="TrainingOneHomeworks\Lurppis\Bank\Transactions\Transaction.cs" />
-    <Compile Include="TrainingOneHomeworks\Lurppis\Pesel\Interface\IPesel.cs" />
-    <Compile Include="TrainingOneHomeworks\Lurppis\Pesel\Pesel.cs" />
+    <Compile Include="TrainingOneHomeworks\wojteko22\AccountNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
-    <Folder Include="TrainingOneHomeworks\wojteko22\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="TrainingOneHomeworks\Erloon\NbpList.txt" />

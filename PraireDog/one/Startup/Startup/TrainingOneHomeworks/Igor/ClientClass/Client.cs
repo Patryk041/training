@@ -62,19 +62,21 @@ namespace Banki.ClientClass
             banks.Add(new Bank_VolkswagenBank(banks));
         }
 
-        public void payin(string sender, int amount)
+        public bool payin(string sender, int amount)
         {
             sender = sender.Replace(" ", "");
             Bank bank = getBank(sender);
-            if(bank!=null)
+            if (bank != null)
             {
                 Transaction transaction = new PayIn(sender, amount, bank);
                 history.Add(transaction);
-                bank.Transfer(transaction);
+                if (!bank.Transfer(transaction)) return false;
+                else return true;
             }
+            else return false;
         }
 
-        public void payout(string receiver, int amount)
+        public bool payout(string receiver, int amount)
         {
             receiver = receiver.Replace(" ", "");
             Bank bank = getBank(receiver);
@@ -82,11 +84,13 @@ namespace Banki.ClientClass
             {
                 Transaction transaction = new PayOut(receiver, amount, bank);
                 history.Add(transaction);
-                bank.Transfer(transaction);
+                if (!bank.Transfer(transaction)) return false;
+                else return true;
             }
+            else return false;
         }
 
-        public void transfer(string sender, string receiver, int amount)
+        public bool transfer(string sender, string receiver, int amount)
         {
             sender = sender.Replace(" ", "");
             receiver = receiver.Replace(" ", "");
@@ -95,8 +99,10 @@ namespace Banki.ClientClass
             {
                 Transaction transaction = new Transfer(sender, receiver, amount, bank);
                 history.Add(transaction);
-                bank.Transfer(transaction);
+                if (!bank.Transfer(transaction)) return false;
+                else return true;
             }
+            else return false;
         }
 
         public List<string> showBankHistory(string cardNumber)

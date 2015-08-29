@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0ECE992A-F153-4F81-92D2-52B3A8FE1D05}</ProjectGuid>
+    <ProjectGuid>{DF9CF351-8D70-442A-A111-26B1014B1A6B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Toci.Startup.Test</RootNamespace>
-    <AssemblyName>Toci.Startup.Test</AssemblyName>
+    <RootNamespace>Krzysztof.BanksTest</RootNamespace>
+    <AssemblyName>Krzysztof.BanksTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -16,7 +16,6 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,7 +36,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Data" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -47,33 +45,18 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
-          <Private>False</Private>
-        </Reference>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AndzejC\UnitTest1.cs" />
-    <Compile Include="ErloonTest\BankTest.cs" />
-    <Compile Include="IwonaM\UnitTestPesel.cs" />
-    <Compile Include="MatiUnitTest\PdfUnitTest.cs" />
-    <Compile Include="MatiUnitTest\BankUnitTest.cs" />
-    <Compile Include="MatiUnitTest\Pesel\PeselUnitTest.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="BankTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SQLlib\SQLlib.csproj">
-      <Project>{cfb7f22e-8393-4a44-af3c-475ad855aa59}</Project>
-      <Name>SQLlib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Startup\Startup.csproj">
-      <Project>{28ee9570-efa9-46b2-8a43-ae67cc334cb6}</Project>
-      <Name>Startup</Name>
+    <ProjectReference Include="..\Krzysztof.Banks\Krzysztof.Banks.csproj">
+      <Project>{21d45145-d1bc-4b38-adc4-62210629c1ab}</Project>
+      <Name>Krzysztof.Banks</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
