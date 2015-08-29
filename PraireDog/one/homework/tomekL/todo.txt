@@ -1,0 +1,6 @@
+podajesz numer konta, a program rozpoznaje jaki to bank
+oparte o polimorfizm, dziedziczenie, interfejsy etc
+
+zadanie 2 to walidacja pesel
+
+zadanie 3 - wziać rózne numery pesel z róznych krajów (to co w php pisałeś)
