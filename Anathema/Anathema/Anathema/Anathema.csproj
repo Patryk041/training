@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Erloon\ErloonTest.cs" />
     <Compile Include="Erloon\MyClassE.cs" />
     <Compile Include="GhostRider\HelloEverybodyByGhostRider.cs" />
     <Compile Include="Lausion\LausionClass.cs" />
