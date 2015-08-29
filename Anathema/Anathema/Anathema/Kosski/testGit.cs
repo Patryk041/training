@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.Kodi
+namespace Anathema.Kosski
 {
-    class Kodi
+    class testGit
     {
-        public string message()
+
+        public static string test()
         {
-            return "Kodi was here!!";
+            return "test";
         }
     }
 }

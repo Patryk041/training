@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
 
 
     <Compile Include="Erloon\MyClassE.cs" />
@@ -50,10 +51,20 @@
 
 
     <Compile Include="Erloon\MyClassE.cs" />
+=======
+    <Compile Include="adhed\Toci.cs" />
+    <Compile Include="Erley\FirstErleyClass.cs" />
+    <Compile Include="Igor\MyNewClass.cs" />
+>>>>>>> 1b25ca9c2570773e3a13fe275e0114872a3c401d
     <Compile Include="GhostRider\HelloEverybodyByGhostRider.cs" />
+    <Compile Include="Kosski\testGit.cs" />
+    <Compile Include="Mati\MyNewClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Erloon\MyClassE.cs" />
     <Compile Include="Kodi\Kodi.cs" />
-
+    <Compile Include="Kwasny\Hello.cs" />
     <Compile Include="lDoran\Hello.cs" />
+<<<<<<< HEAD
 
     <Compile Include="Mati\MyNewClass.cs" />
 
@@ -73,13 +84,27 @@
     <Compile Include="Maciej\MaciekClass.cs" />
 
     <Compile Include="Mati\MyNewClass.cs" />
+=======
+    <Compile Include="Lurppis\MyClass.cs" />
+>>>>>>> 1b25ca9c2570773e3a13fe275e0114872a3c401d
     <Compile Include="Polak\HelloByPolak.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sancho\Sancho.cs" />
+    <Compile Include="Ubot%28Seb%29\Seb.cs" />
+    <Compile Include="wojteko22\wojteko22.cs" />
+    <Compile Include="Lausion\LausionClass.cs" />
+    <Compile Include="Maciej\MaciekClass.cs" />
     <Compile Include="tomekL\tomekL.cs" />
     <Compile Include="usppat\usppatHelloClass.cs" />
     <Compile Include="Widmo\Widmo.cs" />
     <Compile Include="Werner\Werner.cs" />
 
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
