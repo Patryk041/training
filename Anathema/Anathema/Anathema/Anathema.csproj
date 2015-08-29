@@ -39,23 +39,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
+
 
 
     <Compile Include="Erloon\MyClassE.cs" />
-
-
-
     <Compile Include="lucass3231\HelloEverybodyByLucass3231.cs" />
 
 
 
     <Compile Include="Erloon\MyClassE.cs" />
-=======
+
     <Compile Include="adhed\Toci.cs" />
     <Compile Include="Erley\FirstErleyClass.cs" />
     <Compile Include="Igor\MyNewClass.cs" />
->>>>>>> 1b25ca9c2570773e3a13fe275e0114872a3c401d
+
     <Compile Include="GhostRider\HelloEverybodyByGhostRider.cs" />
     <Compile Include="Kosski\testGit.cs" />
     <Compile Include="Mati\MyNewClass.cs" />
@@ -64,7 +61,7 @@
     <Compile Include="Kodi\Kodi.cs" />
     <Compile Include="Kwasny\Hello.cs" />
     <Compile Include="lDoran\Hello.cs" />
-<<<<<<< HEAD
+
 
     <Compile Include="Mati\MyNewClass.cs" />
 
@@ -84,9 +81,9 @@
     <Compile Include="Maciej\MaciekClass.cs" />
 
     <Compile Include="Mati\MyNewClass.cs" />
-=======
+
     <Compile Include="Lurppis\MyClass.cs" />
->>>>>>> 1b25ca9c2570773e3a13fe275e0114872a3c401d
+
     <Compile Include="Polak\HelloByPolak.cs" />
     <Compile Include="Sancho\Sancho.cs" />
     <Compile Include="Ubot%28Seb%29\Seb.cs" />
