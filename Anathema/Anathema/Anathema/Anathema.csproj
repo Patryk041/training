@@ -39,7 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Erloon\MyClassE.cs" />
+=======
+    <Compile Include="Lurppis\MyClass.cs" />
+>>>>>>> eb9fa5ef5f4853388094e54679c7b88c59ae7c96
     <Compile Include="Mati\MyNewClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
 <<<<<<< HEAD
