@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.Igor
+namespace Anathema.Sherpin
 {
-    public class MyNewClass<T>
+    class SherpinHello
     {
-        public void addElement(T element)
+        public bool SherpinHelloWorld()
         {
-
+            return true;
         }
     }
 }

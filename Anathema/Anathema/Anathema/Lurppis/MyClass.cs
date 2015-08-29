@@ -1,10 +1,19 @@
-﻿namespace Anathema.Lurppis
+using Anathema.Generics;
+
+namespace Anathema.Lurppis
 {
-    public class MyClass
+    public class MyClass<T>
+    public class MyClass : GhostRiderBase
     {
-        public string write()
+        public virtual bool AddElement(T item, bool unique = true)
         {
+            return true;
             return "Yo";
-        } 
+        }
+
+        public override string GetBankName()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
