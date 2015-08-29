@@ -76,6 +76,11 @@
     <Compile Include="TrainingOneHomeworks\Erloon\BamkList.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\Bank.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\BankAccountNumber.cs" />
+    <Compile Include="TrainingOneHomeworks\Erloon\BanksData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BanksData.resx</DependentUpon>
+    </Compile>
     <Compile Include="TrainingOneHomeworks\Erloon\IIdentificationBankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\TheInternationalBankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\AliorBankBankTransaction.cs" />
@@ -205,6 +210,7 @@
     <Folder Include="TrainingOneHomeworks\wojteko22\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\NbpBankList.txt" />
     <Content Include="TrainingOneHomeworks\Erloon\NbpList.txt" />
     <Content Include="TrainingOneHomeworks\GroupMati\Bank\GeneratorClass\BanksLists.txt" />
     <Content Include="TrainingOneHomeworks\GroupMati\Bank\GeneratorClass\Generator.txt" />
@@ -217,6 +223,12 @@
       <Project>{cfb7f22e-8393-4a44-af3c-475ad855aa59}</Project>
       <Name>SQLlib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TrainingOneHomeworks\Erloon\BanksData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BanksData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
