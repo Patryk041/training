@@ -2,7 +2,7 @@
 	require 'poland.php';
 	require 'france.php';
 		
-		$polak1 = new personPoland("90120511197");
+		$polak1 = new personPoland("70030857974");
 		$polak1->validate();
 		echo $polak1->getSex();
 		$polak1->getBirth();
