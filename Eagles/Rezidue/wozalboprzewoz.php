@@ -9,7 +9,7 @@
 	class AlsmostChor // Chain of responsibility
 	{
 		//array
-		private $strategies = array(
+		protected $strategies = array(
 			//'relse' => new IDontBeliveItByEstler()
 		);
 		
@@ -45,5 +45,25 @@
 	$test = new AlsmostChor();
 	
 	$test->LetDoIt();
+	
+	
+	
+	
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
