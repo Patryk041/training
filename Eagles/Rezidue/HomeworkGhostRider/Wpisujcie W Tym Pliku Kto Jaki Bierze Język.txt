@@ -1,0 +1,13 @@
+| WPISUJCIE KTO JAKI WYBRA£ SOBIE JÊZYK DO ZROBIENIA DO GENERATORA: |
+---------------------------------------------------------------------
+
+
+C# :
+
+Java :
+
+C++ :
+
+Python :
+
+F# : Raqs
