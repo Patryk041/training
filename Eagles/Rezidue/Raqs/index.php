@@ -1,5 +1,5 @@
 <?php
-require '../polimorfizm.php';
+require_once '../polimorfizm.php';
 	
 	class IBeliveICanFly implements IWeAreEvolvingFast{
 		private $filteringResult;
@@ -22,4 +22,7 @@ require '../polimorfizm.php';
 			return "Gra¿yna";
 		}
 	}
+	
+	$IBeliveICanFly = new IBeliveICanFly();
+	$IBeliveICanFly->LetsHaveFun("Orze³ki œwietnie ³ykaj¹ chiñszczyznê na tym szkoleniu", 8, 14, array( 'r' => array('bla')))
 	
