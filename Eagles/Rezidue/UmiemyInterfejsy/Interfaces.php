@@ -1,6 +1,6 @@
 <?php
  	interface IDeveloper{
- 		
+ 			public function developSomeCode($codeToCode);
  	}
  	
  	interface ISenses{
