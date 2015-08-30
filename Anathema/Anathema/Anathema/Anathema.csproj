@@ -72,6 +72,7 @@
     <Compile Include="piotrek88\MyClass.cs" />
     <Compile Include="Polak\HelloByPolak.cs" />
     <Compile Include="Puchacz\testclass.cs" />
+    <Compile Include="Rubi\TestClass.cs" />
     <Compile Include="Sancho\Sancho.cs" />
     <Compile Include="Sherpin\SherpinHello.cs" />
     <Compile Include="TomaszF\TomaszF.cs" />
