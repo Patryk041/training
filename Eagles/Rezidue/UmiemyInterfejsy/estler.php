@@ -1,4 +1,18 @@
 <?php 
+ 	interface IDeveloper{
+ 		
+ 	}
+ 	
+ 	interface ISenses{
+ 			public function getSenseName();
+ 			public function useSense();
+ 	}
+ 	
+ 	interface IHuman{
+ 			public function getName();
+ 			public function getSex(); 			
+ 	}
+	
 	class showAll implements IDeveloper { 
 		function printData() { 
 			$datas = new getData(); 
@@ -41,4 +55,5 @@
 	
 	$user = new showAll();
 	echo $user -> printData(); 
+	
 ?>
