@@ -75,6 +75,7 @@
     <Compile Include="Rubi\TestClass.cs" />
     <Compile Include="Sancho\Sancho.cs" />
     <Compile Include="Sherpin\SherpinHello.cs" />
+    <Compile Include="Skilloo\Skilloo.cs" />
     <Compile Include="TomaszF\TomaszF.cs" />
     <Compile Include="tomekL\tomekL.cs" />
     <Compile Include="Ubot%28Seb%29\Seb.cs" />
