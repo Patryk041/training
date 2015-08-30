@@ -1,0 +1,8 @@
+ zadanko dotyczylo polimorficznej identyfikacji obywateli po ich narodowym nr identyfikacyjnym
+
+ https://en.wikipedia.org/wiki/National_identification_number
+
+ POLAND (PESEL) - It has the form YYMMDDZZZXQ   , where YYMMDD is the date of birth
+ (with century encoded in month field), ZZZ is the personal identification number,
+ X denotes sex (even for females, odd for males) and Q is a parity number.
+
