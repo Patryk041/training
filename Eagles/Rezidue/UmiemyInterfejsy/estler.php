@@ -1,22 +1,16 @@
 <?php 
- 	interface IDeveloper{
- 		
- 	}
- 	
- 	interface ISenses{
- 			public function getSenseName();
- 			public function useSense();
- 	}
- 	
- 	interface IHuman{
- 			public function getName();
- 			public function getSex(); 			
- 	}
+ 	require 'Interfaces.php';
 	
 	class showAll implements IDeveloper { 
 		function printData() { 
 			$datas = new getData(); 
-			return "Developer name is: ".$datas -> getName()." and his sex is: ".$datas -> getSex()."\n His main sense is ".$datas -> getSenseName()." and it sounds ".$datas->useSense(); 
+			return "Developer name is: ".$datas -> getName()." and his sex is: ".$datas -> getSex()."\nHis main sense is ".$datas -> getSenseName()." and it sounds ".$datas->useSense()."\n"; 
+		}
+		
+		function developSomeCode($someLove) { 
+			for ($i = 0; $i <= $someLove; $i++) { 
+				echo "Everybody need some love \n";
+			}
 		}
 	}
 	
@@ -55,5 +49,5 @@
 	
 	$user = new showAll();
 	echo $user -> printData(); 
-	
+	echo $user -> developSomeCode(20); 
 ?>
