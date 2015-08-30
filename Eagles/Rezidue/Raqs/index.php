@@ -1,10 +1,10 @@
 <?php
-require_once '../polimorfizm.php';
+//require_once '../polimorfizm.php';
 	
 	class IBeliveICanFly implements IWeAreEvolvingFast{
 		private $filteringResult;
 		
-		public function LetsHaveFun($string, $int, $double, $array){
+		public function LetsHaveFun($string, $int, $double, array $array){
 			$chunk = '';
 			for ($i=$int; $i < strlen($string); $i++){
 				$chunk .= $string[$i];
@@ -23,6 +23,6 @@ require_once '../polimorfizm.php';
 		}
 	}
 	
-	$IBeliveICanFly = new IBeliveICanFly();
-	$IBeliveICanFly->LetsHaveFun("Orze³ki œwietnie ³ykaj¹ chiñszczyznê na tym szkoleniu", 8, 14, array( 'r' => array('bla')))
+	//$IBeliveICanFly = new IBeliveICanFly();
+	//$IBeliveICanFly->LetsHaveFun("Orze³ki œwietnie ³ykaj¹ chiñszczyznê na tym szkoleniu", 8, 14, array( 'r' => array('bla')));
 	
