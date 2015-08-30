@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="damian7m7\damian7m7.cs" />
     <Compile Include="lucass3231\HelloEverybodyByLucass3231.cs" />
     <Compile Include="GhostRider\HelloEverybodyByGhostRider.cs" />
     <Compile Include="adhed\Toci.cs" />
@@ -65,8 +66,6 @@
     <Compile Include="Kwasny\Hello.cs" />
     <Compile Include="Lausion\LausionClass.cs" />
     <Compile Include="lDoran\Hello.cs" />
-    <Compile Include="Widmo\Widmo.cs" />
-    <Compile Include="Werner\Werner.cs" />
     <Compile Include="Lurppis\MyClass.cs" />
     <Compile Include="Maciej\MaciekClass.cs" />
     <Compile Include="MartaGr\MartaGr.cs" />
@@ -79,16 +78,11 @@
     <Compile Include="tomekL\tomekL.cs" />
     <Compile Include="Ubot%28Seb%29\Seb.cs" />
     <Compile Include="usppat\usppatHelloClass.cs" />
+    <Compile Include="Werner\Werner.cs" />
+    <Compile Include="Widmo\Widmo.cs" />
     <Compile Include="wojteko22\wojteko22.cs" />
     <Compile Include="wojtek\FirstClass.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="obj\Debug\Anathema.csproj.FileListAbsolute.txt" />
-
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-  </ItemGroup>
+  </ItemGroup> 
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
