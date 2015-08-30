@@ -80,9 +80,10 @@
     <Compile Include="usppat\usppatHelloClass.cs" />
     <Compile Include="Werner\Werner.cs" />
     <Compile Include="Widmo\Widmo.cs" />
+    <Compile Include="Wilczy\Class1.cs" />
     <Compile Include="wojteko22\wojteko22.cs" />
     <Compile Include="wojtek\FirstClass.cs" />
-  </ItemGroup> 
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
