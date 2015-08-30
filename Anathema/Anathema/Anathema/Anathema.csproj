@@ -39,10 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Iwona\TestClass.cs" />
     <Compile Include="Lurppis\MyClass.cs" />
-=======
     <Compile Include="damian7m7\damian7m7.cs" />
     <Compile Include="lucass3231\HelloEverybodyByLucass3231.cs" />
     <Compile Include="GhostRider\HelloEverybodyByGhostRider.cs" />
@@ -62,19 +60,15 @@
     <Compile Include="Generics\IAbstractFactory.cs" />
     <Compile Include="Igor\MyNewClass.cs" />
     <Compile Include="Kosski\testGit.cs" />
->>>>>>> d80e087fc9d91c7575e25337b3cdbd412a73f865
     <Compile Include="Mati\MyNewClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="Widmo\Widmo.cs" />
-=======
     <Compile Include="jake\jakeTestClass.cs" />
     <Compile Include="Kodi\Kodi.cs" />
     <Compile Include="Kuster\KusterClass.cs" />
     <Compile Include="Kwasny\Hello.cs" />
     <Compile Include="Lausion\LausionClass.cs" />
     <Compile Include="lDoran\Hello.cs" />
-    <Compile Include="Lurppis\MyClass.cs" />
     <Compile Include="Maciej\MaciekClass.cs" />
     <Compile Include="MartaGr\MartaGr.cs" />
     <Compile Include="piotrek88\MyClass.cs" />
@@ -88,9 +82,7 @@
     <Compile Include="tomekL\tomekL.cs" />
     <Compile Include="Ubot%28Seb%29\Seb.cs" />
     <Compile Include="usppat\usppatHelloClass.cs" />
->>>>>>> d80e087fc9d91c7575e25337b3cdbd412a73f865
     <Compile Include="Werner\Werner.cs" />
-    <Compile Include="Widmo\Widmo.cs" />
     <Compile Include="Wilczy\Class1.cs" />
     <Compile Include="wojteko22\wojteko22.cs" />
     <Compile Include="wojtek\FirstClass.cs" />
