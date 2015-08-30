@@ -1,10 +1,6 @@
 <?php
 
-	interface IWeAreEnvolvingFast { 
-		function LetsHaveFun($string, $int, $double, array $array);
-		
-		function ThereIsEvenMoreFun($chunk, $array);
-	}
+	require '..\poliformizm.php';
 
 	class IDontBeliveIt implements IWeAreEnvolvingFast {		
 		function LetsHaveFun($string, $int, $double, array $array) { 
