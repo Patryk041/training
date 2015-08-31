@@ -6,15 +6,15 @@ using SQLlib.SqlInterfaces;
 
 namespace SQLlib
 {
-    internal class SqlDriver<T> : ISqlDriver<T>
+    internal class SqlDriver<T> //: ISqlDriver<T>
     {
 
         private string CreateTableSchema { get; set; }
         private ISqlConnection<T> sqlConnection;
-        public SqlDriver(ISqlConnection<T> sqlConnection, SqlBase sqlBase)
-        {
+        //public SqlDriver(ISqlConnection<T> sqlConnection, SqlBase sqlBase)
+        //{
            
-        }
+        //}
 
        
     }
