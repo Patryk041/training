@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Doktor\MyClassD.cs" />
     <Compile Include="Iwona\TestClass.cs" />
     <Compile Include="Lurppis\MyClass.cs" />
     <Compile Include="damian7m7\damian7m7.cs" />
