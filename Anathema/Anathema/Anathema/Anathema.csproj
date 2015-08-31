@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Doktor\MyClassD.cs" />
+    <Compile Include="Iwona\TestClass.cs" />
+    <Compile Include="Lurppis\MyClass.cs" />
     <Compile Include="damian7m7\damian7m7.cs" />
     <Compile Include="lucass3231\HelloEverybodyByLucass3231.cs" />
     <Compile Include="GhostRider\HelloEverybodyByGhostRider.cs" />
@@ -60,29 +63,32 @@
     <Compile Include="Kosski\testGit.cs" />
     <Compile Include="Mati\MyNewClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="seeyIT\Test123321123.cs" />
+    <Compile Include="Widmo\Widmo.cs" />
     <Compile Include="jake\jakeTestClass.cs" />
     <Compile Include="Kodi\Kodi.cs" />
     <Compile Include="Kuster\KusterClass.cs" />
     <Compile Include="Kwasny\Hello.cs" />
     <Compile Include="Lausion\LausionClass.cs" />
     <Compile Include="lDoran\Hello.cs" />
-    <Compile Include="Lurppis\MyClass.cs" />
     <Compile Include="Maciej\MaciekClass.cs" />
     <Compile Include="MartaGr\MartaGr.cs" />
     <Compile Include="piotrek88\MyClass.cs" />
     <Compile Include="Polak\HelloByPolak.cs" />
     <Compile Include="Puchacz\testclass.cs" />
+    <Compile Include="Rubi\TestClass.cs" />
     <Compile Include="Sancho\Sancho.cs" />
     <Compile Include="Sherpin\SherpinHello.cs" />
+    <Compile Include="Skilloo\Skilloo.cs" />
     <Compile Include="TomaszF\TomaszF.cs" />
     <Compile Include="tomekL\tomekL.cs" />
     <Compile Include="Ubot%28Seb%29\Seb.cs" />
     <Compile Include="usppat\usppatHelloClass.cs" />
     <Compile Include="Werner\Werner.cs" />
-    <Compile Include="Widmo\Widmo.cs" />
+    <Compile Include="Wilczy\Class1.cs" />
     <Compile Include="wojteko22\wojteko22.cs" />
     <Compile Include="wojtek\FirstClass.cs" />
-  </ItemGroup> 
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
