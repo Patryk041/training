@@ -1,4 +1,4 @@
-| WPISUJCIE KTO JAKI WYBRA£ SOBIE JÊZYK DO ZROBIENIA DO GENERATORA: |
+| WPISUJCIE KTO JAKI WYBRAÂ£ SOBIE JÃŠZYK DO ZROBIENIA DO GENERATORA: |
 ---------------------------------------------------------------------
 
 
@@ -11,3 +11,5 @@ C++ :
 Python :
 
 F# : Raqs
+
+JavaScript : Tomi
