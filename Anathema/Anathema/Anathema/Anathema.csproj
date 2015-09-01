@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AndrzeC\Hello.cs" />
     <Compile Include="Kodi\Kodi.cs" />
     <Compile Include="lDoran\Hello.cs" />
     <Compile Include="Lausion\LausionClass.cs" />
