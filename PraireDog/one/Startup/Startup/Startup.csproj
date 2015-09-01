@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Startup</RootNamespace>
     <AssemblyName>Startup</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -203,7 +203,28 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\Kuster\KkPeselValidator.cs" />
-    <Compile Include="TrainingOneHomeworks\lucass3231\Banks\BankIdentifier.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\Banks\BGKBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\Banks\BPHBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\Banks\BZWBKBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\Banks\CityBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\Banks\INGBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\Banks\NBPBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\Banks\PKOBPBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\Interfaces\IBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\Interfaces\IBankTransferManager.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\Interfaces\IClientTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\NumberValidator.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\BankTransferManager.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR_structure_program\BankIdentifier.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\KIR\ClientTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\MalwinaG\Bank\Banks.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\BankAbstract.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\BankDefault.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\BankMillenium.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\BankPekao.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\BankValidate.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\IBank.cs" />
     <Compile Include="TrainingOneHomeworks\wojteko22\AccountNumber.cs" />
   </ItemGroup>
   <ItemGroup>
