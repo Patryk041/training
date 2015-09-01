@@ -4,7 +4,7 @@
     {
         public string HelloEverybody()
         {
-            return "Cze!";
+            return "Cze! ";
         }
     }
 }
