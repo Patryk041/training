@@ -72,7 +72,6 @@
     <Compile Include="jake\jakeTestClass.cs" />
     <Compile Include="Kuster\KusterClass.cs" />
     <Compile Include="Kwasny\Hello.cs" />
-    <Compile Include="Maciej\MaciekClass.cs" />
     <Compile Include="MartaGr\MartaGr.cs" />
     <Compile Include="piotrek88\MyClass.cs" />
     <Compile Include="Polak\HelloByPolak.cs" />
