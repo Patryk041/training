@@ -1,10 +1,10 @@
-﻿| WPISUJCIE KTO JAKI WYBRA£ SOBIE JÊZYK DO ZROBIENIA DO GENERATORA: |
+﻿| WPISUJCIE KTO JAKI WYBRAŁ SOBIE JĘZYK DO ZROBIENIA DO GENERATORA: |
 ---------------------------------------------------------------------
 
 
 C# : Darek
 
-Java :
+Java : Mikołaj
 
 C++ : jarek-krk
 
