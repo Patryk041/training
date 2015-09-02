@@ -12,6 +12,6 @@ Python : estler
 
 F# : Raqs
 
-JavaScript : Tomi, Wodzu
+JavaScript : Tomi, Wodzu, piotrekgie (JS + jQuery)
 
 Java : Grucha ( Tomasz Trzebiński ;P)
