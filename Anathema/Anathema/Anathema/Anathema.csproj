@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AndrzeC\Hello.cs" />
+    <Compile Include="Erllon\ErloonList.cs" />
     <Compile Include="Kodi\Kodi.cs" />
     <Compile Include="lDoran\Collections\DynamicCollection.cs" />
     <Compile Include="lDoran\Hello.cs" />
