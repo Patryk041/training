@@ -19,7 +19,7 @@ namespace SQLlib.SqlBases
 
 		protected abstract DataTable[] SelectAllTables(List<string> tables);
 		public abstract DataTable SelectTable(string tableName);
-		public abstract void Insert(string[] record, string tableName);
+		public abstract void Insert(Dictionary<string,string> record, string tableName);
 		public abstract void CreateTable(string tableName, Dictionary<string, string> dictionary);
 		public abstract DataTable ImportTable();
 		public abstract void DropTable();

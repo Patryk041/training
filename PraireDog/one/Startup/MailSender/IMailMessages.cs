@@ -7,4 +7,3 @@ namespace MailSender
 		void SendMail(List<string> mailAddrList, string subject, string body);
 	}
 }
-}

@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SQLlib;
 using Startup.TrainingOneHomeworks.GroupMati.Bank;
 using Startup.TrainingOneHomeworks.GroupMati.Bank.GeneratorClass;
 using Startup.TrainingOneHomeworks.GroupMati.Bank.Messages;
@@ -62,11 +61,11 @@ namespace Toci.Startup.Test.MatiUnitTest
             bank.ClientTransactions.Add(new ClientTransaction {IncomingNumber = "222", OutcomingNumber = "535"});
         }
 
-        [TestMethod]
-        public void SqlMenagerCheck()
-        {
-            var menager = new SqlMenager();
-        }
+        //[TestMethod]
+        //public void SqlMenagerCheck()
+        //{
+        //    var menager = new SqlMenager();
+        //}
 
         [TestMethod]
         public void IsSearchBankTransaction()

@@ -26,9 +26,9 @@ namespace Toci.Startup.Test
 
 			};
 
-			string result = dictionary.Aggregate("cos", (key, instance) => key + instance.Key + " " +instance.Value + ", " );
-
-			Assert.AreEqual("cosid int, nazwaBanku text, numerKonta string", result.Substring(0,result.Length-2));
+            //string result = dictionary.Aggregate("cos", (key, instance) => key + instance.Key + " " +instance.Value + ", " );
+		    string result = String.Join(", ", dictionary.Select(x => x.Key + " " + x.Value));
+		    Assert.AreEqual("id int, nazwaBanku text, numerKonta string", result); //.Substring(0,result.Length-2));
 		}
 
 		[TestMethod]
@@ -48,12 +48,18 @@ namespace Toci.Startup.Test
 
 			};
 
-			string result = dictionary.Aggregate("", (temp, instance) => temp + instance.Key + ", "); // to musimy uzyc tam w insercie wywalilo mnie z mumble
-			var r = dictionary.Select(x => x.Key).ToArray();
+			//string result = dictionary.Aggregate("", (temp, instance) => temp + instance.Key + ", "); // to musimy uzyc tam w insercie wywalilo mnie z mumble
+			//var r = dictionary.Select(x => x.Key).ToArray();
 
-			//Assert.AreEqual("id, nazwaBanku, numerKonta", result.Substring(0, result.Length-2));
 
-			Assert.AreEqual("id, nazwaBanku, numerKonta", r[0]);
+
+		    var b = from id in dictionary
+		        select id.Key;
+     
+		    
+            //Assert.AreEqual("id, nazwaBanku, numerKonta", result.Substring(0, result.Length-2));
+
+            Assert.AreEqual("id, nazwaBanku, numerKonta", b);
 		}
 
 	}
