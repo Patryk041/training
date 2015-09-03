@@ -6,7 +6,7 @@ C# : Darek
 
 Java : Mikołaj
 
-C++ : jarek-krk
+C++ : jarek-krk,lyczkul
 
 Python : estler
 
