@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.Iwona
+namespace Anathema.Iwona.GenericsClass
 {
-    internal class TestClass
+    public class Proces
     {
-   
-}
+        public int IdProces { get; set; }
+    }
 }

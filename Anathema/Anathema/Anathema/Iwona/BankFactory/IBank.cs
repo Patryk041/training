@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.Iwona
+namespace Anathema.Iwona.BankFactory
 {
-    internal class TestClass
+    public interface IBank
     {
-   
-}
+    }
 }
