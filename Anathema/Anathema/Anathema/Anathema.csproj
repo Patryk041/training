@@ -72,6 +72,7 @@
     <Compile Include="mowmidejw\HelloWorldByDejw.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
+    <Compile Include="TomaszF\GRlist.cs" />
     <Compile Include="Widmo\Widmo.cs" />
     <Compile Include="jake\jakeTestClass.cs" />
     <Compile Include="Kuster\KusterClass.cs" />
