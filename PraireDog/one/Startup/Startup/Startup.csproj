@@ -218,6 +218,7 @@
     <Compile Include="TrainingOneHomeworks\lucass3231\KIR_structure_program\BankIdentifier.cs" />
     <Compile Include="TrainingOneHomeworks\lucass3231\KIR\BankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\lucass3231\KIR\ClientTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\Training\PostgreSqlClient.cs" />
     <Compile Include="TrainingOneHomeworks\wojteko22\AccountNumber.cs" />
   </ItemGroup>
   <ItemGroup>
