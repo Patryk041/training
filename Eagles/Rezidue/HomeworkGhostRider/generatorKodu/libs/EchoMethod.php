@@ -12,7 +12,7 @@ class EchoMethod extends PhpToJava
 
 
 		$this->slownik = array(
-			"echo" => array("wpisz"   => "System.out.println (", "stop" => ";"), 
+			"echo" => array("wpisz"   => "\nSystem.out.println (", "stop" => ";"), 
 			";"    => array("wpisz"   => ";",   "stop" => ""), 
 			"."    => array("wpisz"   => "+",   "stop" => ""), 
 			"$"    => array("wpisz"   => "",    "stop" => ""),

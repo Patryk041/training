@@ -23,11 +23,11 @@ class PhpToJava{
 		$this->translated = new JavaCode();
 		$this->slownik= array(
 		"<?php" 		 => array("wpisz" => "", 				"stop" => ""),  // stop "" means to stop doing nested Generate method and come back to parent Generate method
-		"{"     		 => array("wpisz" => "{",				"stop" => ""),  // test
-		"}" 			 => array("wpisz" => "}",				"stop" => ""),  // test
+		"{"     		 => array("wpisz" => "{\n",				"stop" => ""),  // test
+		"}" 			 => array("wpisz" => "\n}",				"stop" => ""),  // test
 		";"				 => array("wpisz" => ";",				"stop" => ""),  // test
 		"class" 		 => array("wpisz" => "\npublic class ", "stop" => "{"),
-		"publicfunction" => array("wpisz" => "\n\tpublic void ", "stop" => "{"),  //needs ExternalTranslateMethod
+		"publicfunction" => array("wpisz" => "\npublic void ", "stop" => "{"),  //needs ExternalTranslateMethod
 		"__construct()"  => array("wpisz" => " static  void main(String[] args)","stop" => "{"),  //needs ExternalTranslateMethod
 		"+"				 => array("wpisz" => "+",				"stop" => ""),
 		"-"				 => array("wpisz" => "-",				"stop" => ""),
