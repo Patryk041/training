@@ -218,7 +218,9 @@
     <Compile Include="TrainingOneHomeworks\lucass3231\KIR_structure_program\BankIdentifier.cs" />
     <Compile Include="TrainingOneHomeworks\lucass3231\KIR\BankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\lucass3231\KIR\ClientTransaction.cs" />
+<<<<<<< HEAD
     <Compile Include="TrainingOneHomeworks\lucass3231\Training\PostgreSqlClient.cs" />
+=======
     <Compile Include="TrainingOneHomeworks\MalwinaG\Bank\Banks.cs" />
     <Compile Include="TrainingOneHomeworks\marcin022\BankAbstract.cs" />
     <Compile Include="TrainingOneHomeworks\marcin022\BankDefault.cs" />
@@ -226,7 +228,7 @@
     <Compile Include="TrainingOneHomeworks\marcin022\BankPekao.cs" />
     <Compile Include="TrainingOneHomeworks\marcin022\BankValidate.cs" />
     <Compile Include="TrainingOneHomeworks\marcin022\IBank.cs" />
-
+>>>>>>> 086c59eecd3e28adaca6e63d17f415f6638edc2e
     <Compile Include="TrainingOneHomeworks\wojteko22\AccountNumber.cs" />
   </ItemGroup>
   <ItemGroup>

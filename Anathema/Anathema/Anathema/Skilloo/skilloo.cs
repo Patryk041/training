@@ -1,17 +1,16 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.Kodi
+namespace Anathema.skilloo
 {
-    class Kodi
+    class Skilloo
     {
-        public string message()
+        public string HiThere()
         {
-            return "Kodi was here!!";
+            return "hello ;)!!!";
         }
     }
 }
