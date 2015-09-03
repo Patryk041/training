@@ -1,0 +1,17 @@
+﻿| WPISUJCIE KTO JAKI WYBRAŁ SOBIE JĘZYK DO ZROBIENIA DO GENERATORA: |
+---------------------------------------------------------------------
+
+
+C# : Darek
+
+Java : Mikołaj
+
+C++ : jarek-krk,lyczkul
+
+Python : estler
+
+F# : Raqs
+
+JavaScript : Wodzu, piotrekgie (JS + jQuery)
+
+Java : Grucha ( Tomasz Trzebiński ;P), Tomi
