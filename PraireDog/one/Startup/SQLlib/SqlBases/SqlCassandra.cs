@@ -1,4 +1,5 @@
-﻿using Cassandra;
+﻿using System.Data;
+using Cassandra;
 
 namespace SQLlib.SqlBases
 {
@@ -17,5 +18,30 @@ namespace SQLlib.SqlBases
 			Cluster cluster = Cluster.Builder().AddContactPoint(Host).Build();
 			ISession session = cluster.Connect(NameDataBase);
 		}
+
+	    protected override DataTable[] SelectAllTables()
+	    {
+	        throw new System.NotImplementedException();
+	    }
+
+	    public override DataTable SelectTable(string tableName)
+	    {
+	        throw new System.NotImplementedException();
+	    }
+
+	    public override void Insert(string[] record, string tableName)
+	    {
+	        throw new System.NotImplementedException();
+	    }
+
+	    public override void CreateTable(string tableName)
+	    {
+	        throw new System.NotImplementedException();
+	    }
+
+	    public override DataTable ImportTable()
+	    {
+	        throw new System.NotImplementedException();
+	    }
 	}
 }

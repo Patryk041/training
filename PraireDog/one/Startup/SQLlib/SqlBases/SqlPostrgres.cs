@@ -1,6 +1,7 @@
 ﻿using System.Data;
 using Npgsql;
 using SQLlib.SqlException;
+using SQLlib.SqlInterfaces;
 
 namespace SQLlib.SqlBases
 {
