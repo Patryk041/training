@@ -22,13 +22,13 @@ class PhpToJava{
 	{
 		$this->translated = new JavaCode();
 		$this->slownik= array(
-		"<?php" 		 => array("wpisz" => "", 				"stop" => ""),  //stop "" means to stop doing nested Generate method and come back to parent Generate method
+		"<?php" 		 => array("wpisz" => "", 				"stop" => ""),  // stop "" means to stop doing nested Generate method and come back to parent Generate method
 		"{"     		 => array("wpisz" => "{",				"stop" => ""),  // test
 		"}" 			 => array("wpisz" => "}",				"stop" => ""),  // test
 		";"				 => array("wpisz" => ";",				"stop" => ""),  // test
 		"class" 		 => array("wpisz" => "\npublic class ", "stop" => "{"),
-		"publicfunction" => array("wpisz" => "\n\tpublic void ", "stop" => "{"),  //needs add ExternalTranslateMethod
-		"__construct()"  => array("wpisz" => " static  void main(String[] args)","stop" => "{"),  //needs add ExternalTranslateMethod
+		"publicfunction" => array("wpisz" => "\n\tpublic void ", "stop" => "{"),  //needs ExternalTranslateMethod
+		"__construct()"  => array("wpisz" => " static  void main(String[] args)","stop" => "{"),  //needs ExternalTranslateMethod
 		"+"				 => array("wpisz" => "+",				"stop" => ""),
 		"-"				 => array("wpisz" => "-",				"stop" => ""),
 		"*"				 => array("wpisz" => "*",				"stop" => ""),
@@ -37,7 +37,7 @@ class PhpToJava{
 		"\""			 => array("wpisz" => "\"",				"stop" => ""),
 		1				 => array("wpisz" => "1",				"stop" => ""),
 		"echo" 			 => array("ExternalTranslateMethod" => "EchoMethod"),
-		"$"				 => array("wpisz" => "",				"stop" => ""),  //needs add externalTranslateMethod
+		"$"				 => array("wpisz" => "",				"stop" => ""),  //needs externalTranslateMethod
 		"cuztojest"		 => array("wpisz" => "cuztojest",		"stop" => ""),
 
 
@@ -69,10 +69,6 @@ class PhpToJava{
 	protected function InternalTranslateMethod($dopis, $stop, $kod, $child=false)
 	{
 		$this->translated->code .=$dopis; 
-			
-
-		 //echo "Dopisuje <span style='color: blue; font-weight:bold; font-style:italic;'>".htmlspecialchars($dopis)."</span><br>";
-
 		$result = $this->Generate($kod, '', $stop);
 
 		if(strlen($stop)>0 ){
@@ -80,11 +76,7 @@ class PhpToJava{
 			$result["kod"] = substr($result["kod"], 1);
 		}
 
-			// echo "Buffor equals to: ".$this->GetBuffor()."<br>";
 			$this->translated->code .= $result["zlepek"];
-		
-
-		 // echo " <span style='color: blue; font-weight:bold; font-style:italic;'>Zlepiam".htmlspecialchars($result["zlepek"])."</span><br>";
 
 		return $result["kod"];
 	}
@@ -94,21 +86,17 @@ class PhpToJava{
 	{
 		while(strlen($kod) > 0 && $kod[0] !== $stop && $stop !== '')
 		{	
-			// echo "Kod to: ".htmlspecialchars($kod[0])." Stop to: ".htmlspecialchars($stop)."<br>";
-			
 
 			// by creating $zlepek we want to define if its value exists in slownik as a key value
+				$zlepek .= $kod[0];
+				$kod = substr($kod, 1);
 			
 			if(array_key_exists($zlepek, $this->slownik)){
-				  // echo "Istnieje zlepek: <span style='color: green; font-weight:bold; font-style:italic;'>".htmlspecialchars($zlepek)."</span><br>";
 				$kod = $this->Translate($zlepek, $kod);
 
 
 				$zlepek = '';
 			}else{
-				$zlepek .= $kod[0];
-				 // echo "Tworze zlepek: <span style='color: orange; font-weight:bold; font-style:italic;'>".htmlspecialchars($zlepek)."</span><br>";
-				$kod = substr($kod, 1);
 			}
 
 
