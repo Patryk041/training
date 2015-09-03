@@ -1,0 +1,9 @@
+{
+    "TransferList": [
+        { "SourceAccountNumber": "21249086233055", "DestinationAccountNumber": "33249049285539", "Amount": "1000000", "SourcePersonName": "Paszkiel", "DestinationPersonName": "Grandek", "TransferDate": "04/27/2015", "TransferTitle": "Za wyzsza ocene z oprogrmowania" },
+        { "SourceAccountNumber": "19249048144877", "DestinationAccountNumber": "26114040535520", "Amount": "1", "SourcePersonName": "Rutkowski", "DestinationPersonName": "Kozłowska", "TransferDate": "05/08/2015", "TransferTitle": "Alimenty" },
+        { "SourceAccountNumber": "80249033709015", "DestinationAccountNumber": "56124053252019", "Amount": "23", "SourcePersonName": "Jasiński", "DestinationPersonName": "Wiśniewski", "TransferDate": "01/26/2015", "TransferTitle": "Instumenty" },
+        { "SourceAccountNumber": "49249017092794", "DestinationAccountNumber": "40133743616715", "Amount": "123", "SourcePersonName": "Wysocki", "DestinationPersonName": "Jabłoński", "TransferDate": "03/18/2015", "TransferTitle": "Medykamenty" },
+        { "SourceAccountNumber": "11249076686301", "DestinationAccountNumber": "10105086885527", "Amount": "123", "SourcePersonName": "Nowakowska", "DestinationPersonName": "Wieczorek", "TransferDate": "04/24/2015", "TransferTitle": "Niebiezpieczne sprzety" }
+    ]
+}

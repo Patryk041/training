@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D3EBBDE-DC75-4BE2-866C-0DBDD84A46A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Toci.Hornets.Rzeszow</RootNamespace>
+    <AssemblyName>Toci.Hornets.Rzeszow</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agata\Generics\YaghaGenericList.cs" />
+    <Compile Include="Agata\Kir\YaghaBankTransfer.cs" />
+    <Compile Include="Agata\Kir\YaghaBankTransferParser.cs" />
+    <Compile Include="Agata\Kir\YaghaFileOperationsTxt.cs" />
+    <Compile Include="Agata\Kir\YaghaPerformTransfers.cs" />
+    <Compile Include="Agata\Kir\YaghaTransferHandle.cs" />
+    <Compile Include="Agata\TasksTrainingTwo\Date.cs" />
+    <Compile Include="Agata\TasksTrainingTwo\YaghaPeselValidator.cs" />
+    <Compile Include="Agata\TasksTrainingTwo\YaghaStringManipulations.cs" />
+    <Compile Include="Agata\Test2yagha.cs" />
+    <Compile Include="Agata\TestBranchesAga.cs" />
+    <Compile Include="Agata\YaghaTelephoneTask\YaghaCommunicationsMethods.cs" />
+    <Compile Include="AndrzejD\Class1.cs" />
+    <Compile Include="Chojnecki\AndrzejJestem.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejBankTransfer.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejBankTransfersParser.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejFileOperation.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejPerformTransfers.cs" />
+    <Compile Include="Chojnecki\Kir\AndrzejTransferHandle.cs" />
+    <Compile Include="Chojnecki\TelePhone\MyPhone.cs" />
+    <Compile Include="Chojnecki\trainingFour\AndrzejGen.cs" />
+    <Compile Include="Chojnecki\TrainingTwoPESEL\DateMenager.cs" />
+    <Compile Include="Chojnecki\TrainingTwoPESEL\PeselNumbersControler.cs" />
+    <Compile Include="Chojnecki\TrainingTwoPESEL\AndrzejPeselValidator.cs" />
+    <Compile Include="Chojnecki\TrainingTwoString\StringCheck.cs" />
+    <Compile Include="Chojnecki\TrainingTwo\StringCheck.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Foonesh\TrainingThree\BankTransfersParserFoonesh.cs" />
+    <Compile Include="Foonesh\TrainingThree\FileOperationFoonesh.cs" />
+    <Compile Include="Foonesh\TrainingThree\PerformTransfersFoonesh.cs" />
+    <Compile Include="Foonesh\TrainingThree\TransferHandleFoonesh.cs" />
+    <Compile Include="Foonesh\TrainingTwo\PeselValidator\PeselValidatorFoonesh.cs" />
+    <Compile Include="Foonesh\TrainingTwo\StringManipulations\StringManipulationsFoonesh.cs" />
+    <Compile Include="KSebal\Class1.cs" />
+    <Compile Include="KSebal\Db\KsebalUpdateDb.cs" />
+    <Compile Include="KSebal\NFZ\EmailContact\EmailSender.cs" />
+    <Compile Include="KSebal\NFZ\EmailContact\LoginData.cs" />
+    <Compile Include="KSebal\NFZ\Morphology.cs" />
+    <Compile Include="KSebal\telephone\Telephone.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\BodyPart.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\CorrectResults.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\Disease.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\DownloadData.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\DownloadDataTxt.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\ListofDiseases.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\Morfology.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\Patient.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\ProbabilityAge.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\research.cs" />
+    <Compile Include="KSebal\TrainingFourHomework\Sympthom.cs" />
+    <Compile Include="KSebal\traning2Homework\KsebalStringManipulationClass.cs" />
+    <Compile Include="KSebal\traning2Homework\Pesel\KsebalPeselValidator.cs" />
+    <Compile Include="KSebal\traning2Homework\Pesel\PeselDate.cs" />
+    <Compile Include="KSebal\traning2Homework\Pesel\PeselSumValidator.cs" />
+    <Compile Include="KSebal\traningThreeHomework\KsebalBankTransfer.cs" />
+    <Compile Include="KSebal\traningThreeHomework\KsebalBankTransferParser.cs" />
+    <Compile Include="KSebal\traningThreeHomework\KsebalTransferHandle.cs" />
+    <Compile Include="KSebal\traningThreeHomework\UserPath.cs" />
+    <Compile Include="KSebal\zadanko\KsebalItemGenericsOperation.cs" />
+    <Compile Include="KubaT\TelephoneTask\TelephonTaskHomework.cs" />
+    <Compile Include="KubaT\TestClass.cs" />
+    <Compile Include="KubaT\TrainingTwo\StringOperations\KubaTStringOperations.cs" />
+    <Compile Include="Malwina\ExtendingWarrior.cs" />
+    <Compile Include="Malwina\IBaseForWyroznienie.cs" />
+    <Compile Include="Malwina\Pesell\DataCzyOk.cs" />
+    <Compile Include="Malwina\Pesell\MalwiPeselValidator.cs" />
+    <Compile Include="Malwina\Telephone\ChooseRedOrBlue.cs" />
+    <Compile Include="Malwina\WyrozniajacaSieKlasaMalwiny.cs" />
+    <Compile Include="Malwina\WyrozniajacaSieKlasaMalwinyChild.cs" />
+    <Compile Include="Malwina\WyrozniajacaSieKlasaMalwinyYetOtherChild.cs" />
+    <Compile Include="Polak\TelephoneTask.cs" />
+    <Compile Include="Polak\TrainingTwo\Task2 - AnagramsByPolak\PolakAnagramsTask.cs" />
+    <Compile Include="Polak\TelephoneTask1\TepelhoneTask1.cs" />
+    <Compile Include="Polak\TrainingByPolak\TrainingClassPolakOne.cs" />
+    <Compile Include="Polak\TrainingByPolak\TrainingClassPolakTwo.cs" />
+    <Compile Include="Polak\TrainingByPolak\ITrainingInterfacebyPolak.cs" />
+    <Compile Include="Polak\TrainingTwo\Task2- ValidatorsByPolak\DateContainer.cs" />
+    <Compile Include="Polak\TrainingTwo\Task2- ValidatorsByPolak\PolakPeselValidate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SemiRafista\KIR\SeRaBankTransfer.cs" />
+    <Compile Include="SemiRafista\KIR\SeRaBankTransferParser.cs" />
+    <Compile Include="SemiRafista\KIR\SeRaFileOperation.cs" />
+    <Compile Include="SemiRafista\KIR\SeRaTransferHandle.cs" />
+    <Compile Include="SemiRafista\SRTest.cs" />
+    <Compile Include="SemiRafista\TelephoneTask\SeRaUseOfTelephoneInterpreter.cs" />
+    <Compile Include="SemiRafista\TrainingFour\SeRaGenerics.cs" />
+    <Compile Include="SemiRafista\TrainingTwoPESEL\SeRaDataValidator.cs" />
+    <Compile Include="SemiRafista\TrainingTwoPESEL\SeRaPeselValidator.cs" />
+    <Compile Include="SemiRafista\TrainingTwoStringManipulations\SeRaManipulatingStrings.cs" />
+    <Compile Include="Sherpin\SherPhoneTask\SherPhoneChooseTypeOfMessage.cs" />
+    <Compile Include="Sherpin\SherpinClass.cs" />
+    <Compile Include="Sherpin\TasksTrainingTwo\SherDateValidator.cs" />
+    <Compile Include="Sherpin\TasksTrainingTwo\SherPeselValidator.cs" />
+    <Compile Include="Sherpin\TasksTrainingTwo\SherStringManipulations.cs" />
+    <Compile Include="Terry\NFZ\LocalCalendar.cs" />
+    <Compile Include="Terry\TelephoneHomework\TerryTelephoneHomework.cs" />
+    <Compile Include="Terry\TerryTest.cs" />
+    <Compile Include="Terry\TrainingFour\GenericList\TerryGenericList.cs" />
+    <Compile Include="Terry\TrainingThree\Common\RzeszowHandlersFactory.cs" />
+    <Compile Include="Terry\TrainingThree\Common\RzeszowPerformTransfers.cs" />
+    <Compile Include="Terry\TrainingThree\Common\RzeszowParsersFactory.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryBankAccountInfo.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransfer.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransferHandle.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryBankTransfersParser.cs" />
+    <Compile Include="Terry\TrainingThree\TerryBank\TerryFileOperation.cs" />
+    <Compile Include="Terry\TrainingTwo\Pesel\DayValidator.cs" />
+    <Compile Include="Terry\TrainingTwo\Pesel\MonthValidator.cs" />
+    <Compile Include="Terry\TrainingTwo\Pesel\PeselDate.cs" />
+    <Compile Include="Terry\TrainingTwo\Pesel\TerryPeselValidator.cs" />
+    <Compile Include="Terry\TrainingTwo\Pesel\YearValidator.cs" />
+    <Compile Include="Terry\TrainingTwo\StringManipulation\TerryStringManipulator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
+      <Project>{878b2eca-9cc0-42cf-aca6-cd6e44c47451}</Project>
+      <Name>Toci.Hornets.GhostRider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Hornets.Legnica\Toci.Hornets.Legnica.csproj">
+      <Project>{9E9EC7C9-B279-42A1-8BE4-90F814C37FDB}</Project>
+      <Name>Toci.Hornets.Legnica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Agata\Kir\BankTransferFiles\" />
+    <Folder Include="bin\" />
+    <Folder Include="KubaT\TrainingTwo\PeselValidator\" />
+    <Folder Include="Terry\Training Four\" />
+    <Folder Include="Terry\TrainingThree\TerryBank\transfers\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Chojnecki\Kir\Przelewy.txt" />
+    <Content Include="Foonesh\TrainingThree\TransferData\TransferOne.txt" />
+    <Content Include="SemiRafista\KIR\demo\SeRaDemo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="KSebal\BankTransfers\SuperBank.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

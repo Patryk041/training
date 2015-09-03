@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{878B2ECA-9CC0-42CF-ACA6-CD6E44C47451}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Toci.Hornets.GhostRider</RootNamespace>
+    <AssemblyName>Toci.Hornets.GhostRider</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessModifiers\Didi\KlasaDidi.cs" />
+    <Compile Include="AccessModifiers\Example.cs" />
+    <Compile Include="AccessModifiers\Example1.cs" />
+    <Compile Include="AccessModifiers\GhostRider\GrTest.cs" />
+    <Compile Include="AccessModifiers\GhostRider\WarriorLibraryExample.cs" />
+    <Compile Include="ClassObjectStatic\Demonstration.cs" />
+    <Compile Include="ClassObjectStatic\FbChatMessageContainer.cs" />
+    <Compile Include="ClassObjectStatic\MicrosoftWordSimpleExample\Editor.cs" />
+    <Compile Include="ClassObjectStatic\MicrosoftWordSimpleExample\SaveFile.cs" />
+    <Compile Include="ClassObjectStatic\StaticClassExample.cs" />
+    <Compile Include="ClassObjectStatic\StaticExExtending.cs" />
+    <Compile Include="GhostRider\MyExampleOfHomework.cs" />
+    <Compile Include="InterfacesExtending\ITelephoneCommunication.cs" />
+    <Compile Include="Kir\BankLoggingMechanism\ILogTransfers.cs" />
+    <Compile Include="Kir\BankLoggingMechanism\IngLogTransfer.cs" />
+    <Compile Include="Kir\BankLoggingMechanism\MbankLogTransfer.cs" />
+    <Compile Include="Kir\BankTransfer.cs" />
+    <Compile Include="Kir\BankTransfersParser.cs" />
+    <Compile Include="Kir\FileOperation.cs" />
+    <Compile Include="Kir\GhostRiderSolution\GenericGenerator.cs" />
+    <Compile Include="Kir\PerformTransfers.cs" />
+    <Compile Include="Kir\TransferHandle.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Abstract\Symptom.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Abstract\Human.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Enum\AppointmentType.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Enum\ExaminationTypeEnum.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Enum\Gender.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IAdditionalFeature.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IAddress.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IAppointment.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IBodyPart.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\ICalendar.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IContactPossibility.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IExamination.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\IHuman.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Interface\ISymptom.cs" />
+    <Compile Include="NFZ\Przychodnia\Base\Types\Examination.cs" />
+    <Compile Include="NFZ\Przychodnia\ExaminationManagement\Interfaces\IExamination.cs" />
+    <Compile Include="NFZ\Przychodnia\Pacjenct\Patient.cs" />
+    <Compile Include="NFZ\Przychodnia\Requestors\INFZPatientIdentification.cs" />
+    <Compile Include="NFZ\Przychodnia\Requestors\NFZRequestor.cs" />
+    <Compile Include="NFZ\Przychodnia\ResourcesRequest\Requestor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TElephoneCommunication\PhotoCommunication.cs" />
+    <Compile Include="TElephoneCommunication\SmsCommunication.cs" />
+    <Compile Include="TElephoneCommunication\Telephone.cs" />
+    <Compile Include="TElephoneCommunication\VoiceCommunication.cs" />
+    <Compile Include="TrainingFive\Generics\ChessFactory.cs" />
+    <Compile Include="TrainingFive\Generics\GenericDesignPatternWrapper.cs" />
+    <Compile Include="TrainingFive\Generics\HandlersExample\ChorHandlerStack.cs" />
+    <Compile Include="TrainingFive\Generics\HandlersExample\Handler.cs" />
+    <Compile Include="TrainingFive\Generics\IChessFigure.cs" />
+    <Compile Include="TrainingFive\Generics\RegularFactory.cs" />
+    <Compile Include="TrainingFive\Reflection\CustomReflector.cs" />
+    <Compile Include="TrainingFive\Reflection\ReflectionExample.cs" />
+    <Compile Include="TrainingFive\Tpl\ParallelFileParserManager.cs" />
+    <Compile Include="TrainingFour\Delegates\DelegateClient.cs" />
+    <Compile Include="TrainingFour\Delegates\DelegateExamples.cs" />
+    <Compile Include="TrainingFour\ExtensionMethods\ExtMethodShowdown.cs" />
+    <Compile Include="TrainingFour\ExtensionMethods\PerformTransfersExtensions.cs" />
+    <Compile Include="TrainingFour\Generics\GenEx.cs" />
+    <Compile Include="TrainingFour\Generics\GhostRiderGenericList.cs" />
+    <Compile Include="TrainingFour\Linq\LinqShowdown.cs" />
+    <Compile Include="TrainingSeven\Attributes\SimpleFlaggedEnum.cs" />
+    <Compile Include="TrainingSeven\Attributes\SomeXmlAttributes.cs" />
+    <Compile Include="TrainingSeven\Di\TransferMoney.cs" />
+    <Compile Include="TrainingSeven\Exceptions\BusinessLogic.cs" />
+    <Compile Include="TrainingSeven\Exceptions\BusinessLogicProjectException.cs" />
+    <Compile Include="TrainingSeven\Exceptions\DatabaseProjectException.cs" />
+    <Compile Include="TrainingSeven\Exceptions\DbModel.cs" />
+    <Compile Include="TrainingSeven\Exceptions\ExceptionUtils.cs" />
+    <Compile Include="TrainingSeven\Exceptions\ProjectException.cs" />
+    <Compile Include="TrainingSeven\Exceptions\Wyjatki.cs" />
+    <Compile Include="TrainingSeven\Mvc\Controller.cs" />
+    <Compile Include="TrainingSeven\Mvc\Model.cs" />
+    <Compile Include="TrainingSeven\Mvc\Routing.cs" />
+    <Compile Include="TrainingSeven\Mvc\View.cs" />
+    <Compile Include="TrainingSeven\Using\DisposableManager.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Client\DataStorageClient.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Client\PostgreSqlClient.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Model\ApplicationTestsModel.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Model\DataStorageInsert.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Model\DataStorageQuery.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Model\DataStorageUpdate.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Model\StorageDataModel.cs" />
+    <Compile Include="TrainingSix\Database\Abstraction\Model\zle\TestsRssultsModel.cs" />
+    <Compile Include="TrainingThree\BenchingOverriding.cs" />
+    <Compile Include="TrainingThree\Chor\Kontrahenci.cs" />
+    <Compile Include="TrainingThree\Chor\MniejszyWorekNaDane.cs" />
+    <Compile Include="TrainingThree\Chor\OperacjeRefWar.cs" />
+    <Compile Include="TrainingThree\Chor\WorekNaDane.cs" />
+    <Compile Include="TrainingThree\OverloadingExamples.cs" />
+    <Compile Include="TrainingThree\OverridingExample.cs" />
+    <Compile Include="YourWork\TasksTrainingTwo\GhostRiderStringManipulationsBase.cs" />
+    <Compile Include="YourWork\TasksTrainingTwo\PeselValidator.cs" />
+    <Compile Include="YourWork\TasksTrainingTwo\StringManipulationsResults.cs" />
+    <Compile Include="YourWork\TelephoneTask\TelephoneInterpreter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AccessModifiers\Kollwing\" />
+    <Folder Include="NFZ\Przychodnia\Choroba\" />
+    <Folder Include="NFZ\Przychodnia\Lekarz\" />
+    <Folder Include="NFZ\Przychodnia\Recepta\" />
+    <Folder Include="TrainingFive\Attributes\" />
+    <Folder Include="TrainingFive\DependencyInjection\" />
+    <Folder Include="TrainingFourHomework\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Kir\demo\demo.txt" />
+    <Content Include="NFZ\Magic.txt" />
+    <Content Include="NFZ\TasksTODO.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

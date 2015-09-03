@@ -1,0 +1,3 @@
+Rynek 55 fals
+Luzycka 44 false
+Mala 22 false
