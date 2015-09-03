@@ -39,6 +39,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AndrzeC\Hello.cs" />
+    <Compile Include="Igor\GRListEx.cs" />
+    <Compile Include="Erllon\ErloonList.cs" />
+    <Compile Include="Iwona\BankFactory\BankFactory.cs" />
+    <Compile Include="Iwona\BankFactory\BankList\AlliorBank.cs" />
+    <Compile Include="Iwona\BankFactory\BankList\WbkBank.cs" />
+    <Compile Include="Iwona\BankFactory\BankList\IngBank.cs" />
+    <Compile Include="Iwona\BankFactory\BankList\PkoBank.cs" />
+    <Compile Include="Iwona\BankFactory\IBank.cs" />
+    <Compile Include="Iwona\GenericsTestClass\Document.cs" />
+    <Compile Include="Iwona\GenericsTestClass\GenericClass.cs" />
+    <Compile Include="Iwona\GenericsTestClass\Log.cs" />
+    <Compile Include="Iwona\GenericsTestClass\MainClass.cs" />
+    <Compile Include="Iwona\GenericsTestClass\Proces.cs" />
+    <Compile Include="Kodi\Kodi.cs" />
+    <Compile Include="lDoran\Collections\DynamicCollection.cs" />
+    <Compile Include="lDoran\Hello.cs" />
+    <Compile Include="Lausion\LausionClass.cs" />
+    <Compile Include="Doktor\MyClassD.cs" />
+    <Compile Include="Iwona\TestClass.cs" />
+    <Compile Include="Lurppis\MyClass.cs" />
+    <Compile Include="damian7m7\damian7m7.cs" />
+    <Compile Include="lucass3231\HelloEverybodyByLucass3231.cs" />
     <Compile Include="GhostRider\HelloEverybodyByGhostRider.cs" />
     <Compile Include="adhed\Toci.cs" />
     <Compile Include="Erley\FirstErleyClass.cs" />
@@ -55,45 +78,35 @@
     <Compile Include="Generics\GRList.cs" />
     <Compile Include="Generics\IAbstractFactory.cs" />
     <Compile Include="Igor\MyNewClass.cs" />
-    <Compile Include="jake\jakeTestClass.cs" />
-    <Compile Include="Kodi\Kodi.cs" />
     <Compile Include="Kosski\testGit.cs" />
+    <Compile Include="Mati\MyNewClass.cs" />
+    <Compile Include="mowmidejw\HelloWorldByDejw.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="seeyIT\Test123321123.cs" />
+    <Compile Include="TomaszF\GRlist.cs" />
+    <Compile Include="Widmo\Widmo.cs" />
+    <Compile Include="jake\jakeTestClass.cs" />
     <Compile Include="Kuster\KusterClass.cs" />
     <Compile Include="Kwasny\Hello.cs" />
-    <Compile Include="Lausion\LausionClass.cs" />
-    <Compile Include="lDoran\Hello.cs" />
-    <Compile Include="Lurppis\MyClass.cs" />
     <Compile Include="MartaGr\MartaGr.cs" />
-    <Compile Include="Maciej\MaciekClass.cs" />
-    <Compile Include="Mati\MyNewClass.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="piotrek88\MyClass.cs" />
     <Compile Include="Polak\HelloByPolak.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Puchacz\testclass.cs" />
+    <Compile Include="Rubi\TestClass.cs" />
     <Compile Include="Sancho\Sancho.cs" />
     <Compile Include="Sherpin\SherpinHello.cs" />
+    <Compile Include="Skilloo\Skilloo.cs" />
     <Compile Include="TomaszF\TomaszF.cs" />
     <Compile Include="tomekL\tomekL.cs" />
     <Compile Include="Ubot%28Seb%29\Seb.cs" />
     <Compile Include="usppat\usppatHelloClass.cs" />
     <Compile Include="Werner\Werner.cs" />
-    <Compile Include="Widmo\Widmo.cs" />
+    <Compile Include="Wilczy\Class1.cs" />
     <Compile Include="wojteko22\wojteko22.cs" />
     <Compile Include="wojtek\FirstClass.cs" />
+    <Compile Include="Yuriy\FirstClassForTest.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="obj\Debug\Anathema.csproj.FileListAbsolute.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Erloon\" />
-    <Folder Include="obj\Debug\TempPE\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

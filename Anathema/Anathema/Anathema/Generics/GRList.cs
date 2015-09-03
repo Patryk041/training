@@ -16,7 +16,7 @@ namespace Anathema.Generics
         {
             // 
             //Array.Copy();
-
+            
             _items[_index] = item;
 
             return true;
