@@ -56,6 +56,8 @@
     <Compile Include="Iwona\GenericsTestClass\MainClass.cs" />
     <Compile Include="Iwona\GenericsTestClass\Proces.cs" />
     <Compile Include="Kodi\Kodi.cs" />
+    <Compile Include="Kosski\FactoryHomework.cs" />
+    <Compile Include="Kosski\KosskiTest.cs" />
     <Compile Include="lDoran\Collections\DynamicCollection.cs" />
     <Compile Include="lDoran\Hello.cs" />
     <Compile Include="Lausion\LausionClass.cs" />
