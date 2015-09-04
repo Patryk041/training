@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Anathema.Igor
 {
-    class MyNewClass
+    public class MyNewClass<T>
     {
-        public string dajGlos()
+        public void addElement(T element)
         {
-            return "witam";
+
         }
     }
 }
