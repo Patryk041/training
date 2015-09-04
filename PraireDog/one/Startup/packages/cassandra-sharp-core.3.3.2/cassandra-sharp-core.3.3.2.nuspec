@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>cassandra-sharp-core</id>
+    <version>3.3.2</version>
+    <title>cassandra-sharp-core - core implementation of cassandra-sharp</title>
+    <authors>Pierre Chalamet</authors>
+    <owners>Pierre Chalamet</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/pchalamet/cassandra-sharp</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Core implementation of cassandra-sharp</description>
+    <summary>Core implementation of cassandra-sharp</summary>
+    <releaseNotes>- fixed issue 65 (https://github.com/pchalamet/cassandra-sharp/issues/65)</releaseNotes>
+    <tags>apache cassandra driver net40 net45 mono database nosql tpl rx reactive high performance streaming</tags>
+    <dependencies>
+      <dependency id="Rx-Main" version="2.1.30214.0" />
+    </dependencies>
+    <references>
+      <reference file="CassandraSharp.dll" />
+    </references>
+  </metadata>
+</package>

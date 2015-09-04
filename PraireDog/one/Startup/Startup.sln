@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Startup", "Startup\Startup.csproj", "{28EE9570-EFA9-46B2-8A43-AE67CC334CB6}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLlib", "SQLlib\SQLlib.csproj", "{CFB7F22E-8393-4A44-AF3C-475AD855AA59}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailSender", "MailSender\MailSender.csproj", "{D1F06495-C6B6-4C10-80A1-4F312C0100AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlTest", "SqlTest\SqlTest.csproj", "{497DF5EF-D0C9-43B8-AC53-EC6038A33753}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D1F06495-C6B6-4C10-80A1-4F312C0100AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1F06495-C6B6-4C10-80A1-4F312C0100AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1F06495-C6B6-4C10-80A1-4F312C0100AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{497DF5EF-D0C9-43B8-AC53-EC6038A33753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{497DF5EF-D0C9-43B8-AC53-EC6038A33753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{497DF5EF-D0C9-43B8-AC53-EC6038A33753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{497DF5EF-D0C9-43B8-AC53-EC6038A33753}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

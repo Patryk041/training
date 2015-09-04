@@ -14,14 +14,15 @@ namespace SQLlib.SqlBases
 	    private const string InstertCommandPattern = "INSTERT INTO \"{0} \".\"{1}\"({2}) VALUES ({3})";
 	    private NpgsqlConnection connection;
         private readonly NpgsqlCommand cmd = new NpgsqlCommand();
-        protected override string SchemaName { get; set; }
+	    public override string SchemaName { get; set; }
 
 
         public SqlPostgres() : base()
         {
         }
-        protected override void SqlConnection(IPropertiesConnection propertiesConnection,
-            ISqlConnection<SqlPostgres> sqlConnection)
+
+	    public override void SqlConnection(IPropertiesConnection propertiesConnection,
+            ISqlConnection<ISqlBase> sqlConnection)
         {
             connection = new NpgsqlConnection("Host=localhost;Username=postgres;Password=programowanie;Database=Banki");
             this.sqlConnection = sqlConnection;
@@ -44,23 +45,27 @@ namespace SQLlib.SqlBases
             }
         }
 
-        protected override DataTable[] SelectAllTables(List<string> tables)
+	   
+
+	    public override DataTable[] SelectAllTables(Dictionary<string, List<string>> tables)
         {
             DataTable[] data = new DataTable[tables.Count];
-            for (int i = 0; i < tables.Count; i++)
-            {
-                data[i] = SelectTable(tables[i]);
-            }
+	        int iterator = 0;
+	        foreach (var obj in tables)
+	        {
+	            data[iterator++] = SelectTable(obj.Key, obj.Value);
+	        }
             return data;
         }
 
-        public override DataTable SelectTable(string tableName)
+        public override DataTable SelectTable(string tableName, List<string> parametrs)
         {
             NpgsqlDataReader reader;
             try
             {
                 sqlConnection.OpenConnection();
-                cmd.CommandText = "SELECT * FROM " + "\"" + SchemaName + "\".\"" + tableName + "\"";
+                string parameter = parametrs.Aggregate("", (s, s1) => s + s1 +  ", " );
+                cmd.CommandText = "SELECT " + parameter.Substring(0, parameter.Length-2) + " FROM " + "\"" + SchemaName + "\".\"" + tableName + "\"";
                 reader = cmd.ExecuteReader();
             }
             catch (NpgsqlException ex)
@@ -77,19 +82,7 @@ namespace SQLlib.SqlBases
         {
             try
             {
-                /// 
-                /// Dodaj do tabeli : id 1, nazwaBanku Alio.
-                /// string[] recor = string[0] id 1
-                ///					 string[1] nazwa Alio
-                ///					dicrionary[0] id 1
-                ///					dictionary[1] nazwa Alio
-                /// dictionary[0].key
                 sqlConnection.OpenConnection();
-
-               
-
-                //cmd.CommandText = "INSERT INTO " + "\"" + SchemaName + "\".\"" + tableName + "\"" +
-                //                  "(" + keys + ") VALUES (" + "" + ")";
 
                 cmd.CommandText = PrepareInsertCommand(record, tableName);
                 cmd.ExecuteNonQuery();
@@ -153,5 +146,20 @@ namespace SQLlib.SqlBases
             NpgsqlDataReader npgsqlData = cmd.ExecuteReader();
             return npgsqlData.GetSchemaTable().Rows;
         }
-    }
+
+	    public override bool Close()
+	    {
+            try
+            {
+
+                connection.Close();
+                return true;
+
+            }
+            catch (SqlExceptions exception)
+            {
+                return false;
+            }
+	    }
+	}
 }

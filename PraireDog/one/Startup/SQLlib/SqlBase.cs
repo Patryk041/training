@@ -4,25 +4,26 @@ using SQLlib.SqlInterfaces;
 
 namespace SQLlib.SqlBases
 {
-	public abstract class SqlBase
+	public abstract class SqlBase 
 	{
-		protected ISqlConnection<SqlPostgres> sqlConnection;
+		protected ISqlConnection<ISqlBase> sqlConnection;
 
 		protected SqlBase() : base()
 		{
 		}
 
-		protected abstract string SchemaName { get; set; }
+	    public abstract string SchemaName { get; set; }
 
-		protected abstract void SqlConnection(IPropertiesConnection propertiesConnection,
-			ISqlConnection<SqlPostgres> sqlConnection);
+	    public abstract void SqlConnection(IPropertiesConnection propertiesConnection,
+            ISqlConnection<ISqlBase> sqlConnection);
 
-		protected abstract DataTable[] SelectAllTables(List<string> tables);
-		public abstract DataTable SelectTable(string tableName);
+	    public abstract DataTable[] SelectAllTables(Dictionary<string, List<string>> tables);
+        public abstract DataTable SelectTable(string tableName, List<string> parametrs);
 		public abstract void Insert(Dictionary<string,string> record, string tableName);
 		public abstract void CreateTable(string tableName, Dictionary<string, string> dictionary);
 		public abstract DataTable ImportTable();
 		public abstract void DropTable();
 		public abstract DataRowCollection GetRowsNames(string TableName);
+	    public abstract bool Close();
 	}
 }
