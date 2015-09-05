@@ -2,7 +2,7 @@
 
 include(__DIR__ . '/IphpSwiftconvert/IphpSwiftconvert.php');
 
-abstract class PHPCode// implements IphpSwiftConvertGetters, IphpSwiftConvert
+abstract class PHPCode implements IphpSwiftConvertGetters, IphpSwiftConvert
 {
     public $arrayFromFile;
     public $fileName;
