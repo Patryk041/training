@@ -1,0 +1,11 @@
+public function funkcja(){
+$cos = "string";
+return $cos;
+}
+
+jak powinna wygladac funkcja;
+
+func funkcja()->String{
+var cos = "string"
+return cos
+}

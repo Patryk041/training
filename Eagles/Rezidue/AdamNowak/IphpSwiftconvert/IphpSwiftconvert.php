@@ -4,12 +4,12 @@ interface IphpSwiftConvertGetters
 {
 
     function openFile();
-
+    function addImport();
 }
 
 interface IphpSwiftConvert
 {
-    function addImport();
+
     function endLineCharDelete();
     function convertVariableDeclaration();
     /**

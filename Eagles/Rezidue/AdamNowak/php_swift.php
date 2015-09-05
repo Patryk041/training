@@ -44,14 +44,15 @@ abstract class PHPCode implements IphpSwiftConvertGetters, IphpSwiftConvert
 
     function addImport()
     {
-        $fileNewContent = 'import Foundation' . '\n';
+        $fileNewContent = 'import Foundation' ;
         $f = $this->fileName;
         $content = file_get_contents($f);
         file_put_contents($f, $fileNewContent . substr($content, 0));
     }
+
 }
 
-class PreparedCode extends PHPCode
+class PrepareFields extends PHPCode
 {
     public $PrepCode;
 
@@ -60,6 +61,7 @@ class PreparedCode extends PHPCode
         $this->fileName = $fileName;
 
     }
+
 
     public function execute()
     {
@@ -71,10 +73,61 @@ class PreparedCode extends PHPCode
 
 }
 
-$instance = new PreparedCode('code');
-$instance->execute();
+class PrepareMethods extends PHPCode
+{
 
-foreach ($instance->arrayFromFile as $lol) {
-    echo '<br>' . $lol;
+    public $PrepCode;
+    public $keyWordMap = ['public','private','protected '];
+
+    function __construct($fileName)
+    {
+        $this->fileName = $fileName;
+
+    }
+
+    public function getFileContent(){
+
+        $dane = fread(fopen($this->fileName, "r"), filesize($this->fileName));
+
+        $this->PrepCode = $dane;
+    }
+
+    public function variablesInMethods(){
+
+//        $findVarInMethod = strpos(($this->PrepCode),'$');
+//        $this->PrepCode = str_replace('$','',$this->PrepCode);
+//        $this->PrepCode = str_replace('function','func',$this->PrepCode);
+//        if (strstr($this->PrepCode,'return')){
+//            $this->PrepCode = str_replace('()','()-> VariableType',$this->PrepCode);
+//        }
+//        for ($i=0; $i<count($this->keyWordMap);$i++){
+//            $this->PrepCode = str_replace($this->keyWordMap[$i],' ',$this->PrepCode);
+//        }
+        $findDolar = strpos(($this->PrepCode),'$');
+        $findEqual = strpos(($this->PrepCode),';');
+        $count = $findEqual-$findDolar;
+        $var = substr($this->PrepCode,$findDolar,$count);
+
+
+
+    }
+    public function execute()
+    {
+        $this->openFile();
+        $this->endLineCharDelete();
+        $this->getFileContent();
+        $this->variablesInMethods();
+        foreach ($this->arrayFromFile as $lol) {
+            echo '<br>' . $lol;
+        }
+        echo '<br>'.$this->PrepCode;
+    }
 }
+
+$instance = new PrepareMethods('methods');
+$instance->execute();
+echo '<br>'.$instance->getFileContent();
+
+
+
 

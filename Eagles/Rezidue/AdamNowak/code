@@ -5,4 +5,4 @@ $zmienna3 = 2,4;
 $zmienna4 = [];
 $zmienna5 = 'dupa';
 
-public function method(){
+}
