@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace Anathema.Kosski
 {
-    class CheesFactoryHomework<T> : AbstractFactory<T> where T : Lazy<IFigura>
+    class CheesFactoryHomework<T> : AbstractFactory<Func<IFigura>> 
     {
         public CheesFactoryHomework()
         {
             for (int y = 1; y < 9 ; y++)
             {
-                factoryDictonary.Add("pionekBialy"+y, (T)(object)(new Lazy<Pionek>(() => new Pionek(2, y, 1))));
-                factoryDictonary.Add("pionekCzarny"+y, (T)(object)(new Lazy<Pionek>(() => new Pionek(7, y, -1))));
+                factoryDictonary.Add("pionekBialy"+y, ()=> new Pionek(2, y, 1));
+                factoryDictonary.Add("pionekCzarny"+y, () => new Pionek(7, y, -1));
             }
-                factoryDictonary.Add("krolBialy", (T)(object)(new Lazy<Pionek>(() => new Pionek(1, 4, 1))));
-                factoryDictonary.Add("krolBialy", (T)(object)(new Lazy<Pionek>(() => new Pionek(8, 4, -1))));
+                factoryDictonary.Add("krolBialy", ()=>  new Pionek(1, 4, 1));
+                factoryDictonary.Add("krolCzarny", ()=>  new Pionek(8, 4, -1));
         }
 
 

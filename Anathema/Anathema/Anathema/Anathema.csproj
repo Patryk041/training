@@ -56,6 +56,7 @@
     <Compile Include="Iwona\GenericsTestClass\Log.cs" />
     <Compile Include="Iwona\GenericsTestClass\MainClass.cs" />
     <Compile Include="Iwona\GenericsTestClass\Proces.cs" />
+    <Compile Include="KacperSiuda\HelloClass.cs" />
     <Compile Include="Kodi\Kodi.cs" />
     <Compile Include="Kosski\FactoryHomework.cs" />
     <Compile Include="Kosski\KosskiTest.cs" />
@@ -89,8 +90,10 @@
     <Compile Include="Nonda\TestClassByNonda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Puchacz\GRlistEx.cs" />
+    <Compile Include="rbedkowski\KlasaTestowa.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
+    <Compile Include="Terry\StringExtensions.cs" />
     <Compile Include="Skilloo\Fabryka\CarFactory.cs" />
     <Compile Include="Skilloo\Fabryka\Golf.cs" />
     <Compile Include="Skilloo\Fabryka\ICar.cs" />
