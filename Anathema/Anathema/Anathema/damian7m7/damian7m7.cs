@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.Igor
+namespace Anathema.damian7m7
 {
-    public class MyNewClass<T>
+    class damian7m7
     {
-        public void addElement(T element)
-        {
-
-        }
+       
     }
 }

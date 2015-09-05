@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.Igor
+namespace Anathema.Rubi
 {
-    public class MyNewClass<T>
+    class TestClass
     {
-        public void addElement(T element)
-        {
-
-        }
     }
 }

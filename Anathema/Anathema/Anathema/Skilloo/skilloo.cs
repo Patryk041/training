@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.Igor
+namespace Anathema.skilloo
 {
-    public class MyNewClass<T>
+    class Skilloo
     {
-        public void addElement(T element)
+        public string HiThere()
         {
-
+            return "hello ;)!!";
         }
     }
 }
