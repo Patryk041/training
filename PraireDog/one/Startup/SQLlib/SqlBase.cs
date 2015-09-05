@@ -6,7 +6,7 @@ namespace SQLlib
 	{
 		protected SqlBase()
 		{
-
+            
 		}
 		protected abstract void SqlConnection();
 		protected abstract DataTable[] SelectAllTables();
