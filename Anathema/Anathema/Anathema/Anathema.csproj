@@ -90,6 +90,7 @@
     <Compile Include="Nonda\TestClassByNonda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Puchacz\GRlistEx.cs" />
+    <Compile Include="rbedkowski\KlasaTestowa.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
     <Compile Include="Skilloo\Fabryka\CarFactory.cs" />
