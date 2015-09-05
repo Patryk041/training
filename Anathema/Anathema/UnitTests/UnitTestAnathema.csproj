@@ -53,6 +53,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Bolectest\UnitTest1.cs" />
+    <Compile Include="Bolectest\UnitTest2.cs" />
     <Compile Include="lDoran\Collections\UnitTestDynamicCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="skilloo\UnitTest1.cs" />

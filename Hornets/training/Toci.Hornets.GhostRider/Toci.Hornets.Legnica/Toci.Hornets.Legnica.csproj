@@ -79,7 +79,6 @@
     <Compile Include="Filip Sokolowski\test.cs" />
     <Compile Include="LidiaM\mojaklasa.cs" />
     <Compile Include="Mateusz Smigowski\NewClass.cs" />
-    <Compile Include="Mateusz_Malolepszy\NewTestClass.cs" />
     <Compile Include="Michał Zembik\Arbak.cs" />
     <Compile Include="Michał Zembik\FTPcs\filemikzeoperation.cs" />
     <Compile Include="Michał Zembik\FTPcs\FTPcs.cs" />
@@ -107,7 +106,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Qubaa159\Klasa1.cs" />
     <Compile Include="TelefonTask\FilipPhoneExercise.cs" />
     <Compile Include="TelefonTask\KobraPhoneTask.cs" />
     <Compile Include="TelefonTask\PatrykTelephoneInterpreter.cs" />
@@ -127,14 +125,6 @@
     <Compile Include="zadania_grupowe\Legnica_Kir\TransferHandles\IngTransferHandle.cs" />
     <Compile Include="zadania_grupowe\Legnica_Kir\TransferHandles\NordeaTransferHandle.cs" />
     <Compile Include="zadania_grupowe\Legnica_Kir\TransferHandles\PekaoTransferHandle.cs" />
-    <Compile Include="zadania_grupowe\WebMD\Data\BodyPart.cs" />
-    <Compile Include="zadania_grupowe\WebMD\enum\BodyPartName.cs" />
-    <Compile Include="zadania_grupowe\WebMD\enum\Gender.cs" />
-    <Compile Include="zadania_grupowe\WebMD\interfaces\IDieseaseRecognizer.cs" />
-    <Compile Include="zadania_grupowe\WebMD\interfaces\IPatientsInformationsGenerator.cs" />
-    <Compile Include="zadania_grupowe\WebMD\Data\PatientInforamtion.cs" />
-    <Compile Include="zadania_grupowe\WebMD\RecognizeDisease.cs" />
-    <Compile Include="zadania_grupowe\WebMD\Data\Symptom.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
