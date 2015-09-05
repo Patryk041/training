@@ -14,7 +14,7 @@ namespace SQLlib.SqlBases
         DataTable[] SelectAllTables(List<string> tables);
         DataTable SelectTable(string tableName);
         void Insert(Dictionary<string,string> record, string tableName);
-        void CreateTable(string tableName, Dictionary<string, string> dictionary);
+        void CreateTable(Dictionary<string, string> dictionary, string tableName);
         DataTable ImportTable();
         void DropTable();
         DataRowCollection GetRowsNames(string TableName);

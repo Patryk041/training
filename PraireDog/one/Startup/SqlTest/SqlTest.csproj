@@ -40,7 +40,7 @@
     </Reference>
     <Reference Include="SQLlib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SQLlib\bin\Debug\SQLlib.dll</HintPath>
+      <HintPath>..\SQLlib\obj\Debug\SQLlib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Reactive.Core">

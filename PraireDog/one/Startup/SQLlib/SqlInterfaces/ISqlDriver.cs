@@ -2,7 +2,7 @@
 
 namespace SQLlib.SqlInterfaces
 {
-    public interface ISqlDriver
+    public interface ISqlDriver<T>
     {
       
 

@@ -11,7 +11,11 @@ namespace SQLlib.SqlBases
 	public class SqlPostgres : SqlBase 
 
 	{
-	    private const string InstertCommandPattern = "INSTERT INTO \"{0} \".\"{1}\"({2}) VALUES ({3})";
+        
+	    private const string INSERTCOMMANDPATTERN = "INSTERT INTO \"{0} \".\"{1}\"({2}) VALUES ({3})";
+	    private const string SELECTCOMMANDPATTERN = "SELECT {0} FROM \" {1}\".\"{2}\"";
+        private const string CREATECOMMANDPATTERN = "CREATE TABLE \" {0} \".\" {1} \" ({2})";
+	    private const string DROPCOMMANDPATTERN = "DROP TABLE {0}";
 	    private NpgsqlConnection connection;
         private readonly NpgsqlCommand cmd = new NpgsqlCommand();
 	    public override string SchemaName { get; set; }
@@ -58,24 +62,25 @@ namespace SQLlib.SqlBases
             return data;
         }
 
-        public override DataTable SelectTable(string tableName, List<string> parametrs)
+        public override DataTable SelectTable(string tableName, List<string> parameters)
         {
             NpgsqlDataReader reader;
             try
             {
                 sqlConnection.OpenConnection();
-                string parameter = parametrs.Aggregate("", (s, s1) => s + s1 +  ", " );
-                cmd.CommandText = "SELECT " + parameter.Substring(0, parameter.Length-2) + " FROM " + "\"" + SchemaName + "\".\"" + tableName + "\"";
+                cmd.CommandText = PrepareSelectCommand(parameters, tableName);
                 reader = cmd.ExecuteReader();
             }
             catch (NpgsqlException ex)
             {
                 throw new SqlExceptions(ex.Message);
             }
+
             finally
             {
                 sqlConnection.CloseConnection();
             }
+            
             return reader.GetSchemaTable();
         }
         public override void Insert(Dictionary<string, string> record, string tableName)
@@ -96,28 +101,14 @@ namespace SQLlib.SqlBases
                 sqlConnection.CloseConnection();
             }
         }
-
-	    public string PrepareInsertCommand(Dictionary<string, string> record, string tableName)
-	    {
-            string keys = string.Join(", ", record.Select(x => x.Key));
-            string values = string.Join(", ", record.Select(x => x.Value));
-            return string.Format(InstertCommandPattern, SchemaName, tableName, keys, values);
-	    }
-
-
-
-	    public override void CreateTable(string tableName, Dictionary<string, string> dictionary)
+        
+	    public override void CreateTable(Dictionary<string, string> dictionary, string tableName)
         {
             try
             {
-
                 sqlConnection.OpenConnection();
 
-                string result = dictionary.Aggregate("", (temp, pair) => temp + pair.Value + " " + pair.Key + ", ");
-
-                cmd.CommandText = "CREATE TABLE " + "\"" + SchemaName + "\".\"" + tableName + "\"" + " (" +
-                    result.Substring(0, result.Length - 2)
-                    + ")";
+                cmd.CommandText = PrepareCreateCommand(dictionary, tableName);
                 cmd.ExecuteNonQuery();
             }
             catch (NpgsqlException ex)
@@ -135,8 +126,19 @@ namespace SQLlib.SqlBases
             throw new System.NotImplementedException();
         }
 
-	    public override void DropTable()
+	    public override void DropTable(string tableName)
 	    {
+	        try
+	        {
+                sqlConnection.OpenConnection();
+
+	            cmd.CommandText = string.Format(DROPCOMMANDPATTERN, tableName);
+	            cmd.ExecuteNonQuery();
+	        }
+	        catch (NpgsqlException ex)
+	        {
+                throw new SqlExceptions(ex.Message);
+	        }
 	        throw new NotImplementedException();
 	    }
 
@@ -161,5 +163,26 @@ namespace SQLlib.SqlBases
                 return false;
             }
 	    }
+
+        public string PrepareInsertCommand(Dictionary<string, string> record, string tableName)
+        {
+            string keys = string.Join(", ", record.Select(x => x.Key));
+            string values = string.Join(", ", record.Select(x => x.Value));
+            return string.Format(INSERTCOMMANDPATTERN, SchemaName, tableName, keys, values);
+        }
+
+        public string PrepareSelectCommand(List<string> parameters, string tableName)
+        {
+            string result = parameters.Aggregate("", (s, s1) => s + s1 + ", ");
+            result = result.Substring(0, result.Length - 2);
+            return string.Format(SELECTCOMMANDPATTERN, result, SchemaName, tableName);
+        }
+
+        public string PrepareCreateCommand(Dictionary<string, string> dictionary, string tableName)
+        {
+            string result = dictionary.Aggregate("", (temp, pair) => temp + pair.Value + " " + pair.Key + ", ");
+            result = result.Substring(0, result.Length - 2);
+            return string.Format(CREATECOMMANDPATTERN, SchemaName, tableName, result);
+        }
 	}
 }

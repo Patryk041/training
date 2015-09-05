@@ -28,7 +28,8 @@ namespace SQLlib.SqlBases
 	        
            Cluster = Cluster.Builder().AddContactPoint(Host).Build();
                     
-                       	    }
+                       
+	    }
 
 	    public override DataTable[] SelectAllTables(Dictionary<string, List<string>> tables)
 	    {
@@ -73,7 +74,7 @@ namespace SQLlib.SqlBases
 	        }
 	    }
 
-	    public override void CreateTable(string tableName, Dictionary<string, string> dictionary)
+        public override void CreateTable(Dictionary<string, string> dictionary, string tableName)
 	    {
 	        throw new System.NotImplementedException();
 	    }
@@ -83,7 +84,7 @@ namespace SQLlib.SqlBases
 	        throw new System.NotImplementedException();
 	    }
 
-	    public override void DropTable()
+	    public override void DropTable(string tableName)
 	    {
 	        throw new System.NotImplementedException();
 	    }

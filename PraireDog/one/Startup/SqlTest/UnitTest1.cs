@@ -2,7 +2,6 @@
 using Cassandra;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-
 namespace SqlTest
 {
     [TestClass]
@@ -11,6 +10,7 @@ namespace SqlTest
         [TestMethod]
         public void TestMethod1()
         {
+            
         }
 
         [TestMethod]
