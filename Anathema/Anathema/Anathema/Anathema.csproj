@@ -42,7 +42,6 @@
     <Compile Include="AndrzeC\Hello.cs" />
     <Compile Include="Bolec\AddElementClass.cs" />
     <Compile Include="Bolec\MyGRList.cs" />
-    <Compile Include="GhostRider\TEST.cs" />
     <Compile Include="Igor\GRListEx.cs" />
     <Compile Include="Erllon\ErloonList.cs" />
     <Compile Include="Iwona\BankFactory\BankFactory.cs" />
@@ -114,7 +113,9 @@
     <Compile Include="wojtek\FirstClass.cs" />
     <Compile Include="Yuriy\FirstClassForTest.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="GhostRider\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
