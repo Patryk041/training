@@ -30,7 +30,6 @@ namespace Toci.Hornets.Legnica.zadania_grupowe.Legnica_Kir
         {
             foreach (var parser in GetAllParsers())
                 SendTransfers(parser.GetBankTransfers());
-                //odp ktore sie powiodly
         }
 
         private void SendTransfers(IEnumerable<BankTransfer> transfers)
