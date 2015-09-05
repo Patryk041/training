@@ -203,6 +203,14 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\Kuster\KkPeselValidator.cs" />
+   
+    <Compile Include="TrainingOneHomeworks\Puchacz\Banki\Abstract\BankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\Puchacz\Banki\Banks\TransactionAlior.cs" />
+    <Compile Include="TrainingOneHomeworks\Puchacz\Banki\Banks\TransactionPKO.cs" />
+    <Compile Include="TrainingOneHomeworks\Puchacz\Banki\Reflection.cs" />
+    <Compile Include="TrainingOneHomeworks\Puchacz\Banki\TransactionFactory.cs" />
+    <Compile Include="TrainingOneHomeworks\Puchacz\Banki\Transfer.cs" />
+    <Compile Include="TrainingOneHomeworks\Puchacz\Banki\TransferMenager.cs" />
     <Compile Include="TrainingOneHomeworks\lucass3231\KIR\Banks\BGKBankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\lucass3231\KIR\Banks\BPHBankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\lucass3231\KIR\Banks\BZWBKBankTransaction.cs" />
@@ -218,11 +226,21 @@
     <Compile Include="TrainingOneHomeworks\lucass3231\KIR_structure_program\BankIdentifier.cs" />
     <Compile Include="TrainingOneHomeworks\lucass3231\KIR\BankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\lucass3231\KIR\ClientTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\Training\PostgreSqlClient.cs" />
+    <Compile Include="TrainingOneHomeworks\MalwinaG\Bank\Banks.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\BankAbstract.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\BankDefault.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\BankMillenium.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\BankPekao.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\BankValidate.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\IBank.cs" />
     <Compile Include="TrainingOneHomeworks\wojteko22\AccountNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
+    <Folder Include="TrainingOneHomeworks\Puchacz\Banki\Interfaces\" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\NbpBankList.txt" />
     <Content Include="TrainingOneHomeworks\Erloon\NbpList.txt" />

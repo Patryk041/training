@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Anathema.Iwona
 {
-    class TestClass
+    internal class TestClass
     {
-    }
+   
+}
 }
