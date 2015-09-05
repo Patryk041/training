@@ -66,7 +66,6 @@
     <Compile Include="Lurppis\MyClass.cs" />
     <Compile Include="damian7m7\damian7m7.cs" />
     <Compile Include="lucass3231\HelloEverybodyByLucass3231.cs" />
-    <Compile Include="GhostRider\HelloEverybodyByGhostRider.cs" />
     <Compile Include="adhed\Toci.cs" />
     <Compile Include="Erley\FirstErleyClass.cs" />
     <Compile Include="Generics\AbstractFactory.cs" />
@@ -113,7 +112,9 @@
     <Compile Include="wojtek\FirstClass.cs" />
     <Compile Include="Yuriy\FirstClassForTest.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="GhostRider\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

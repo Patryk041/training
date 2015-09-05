@@ -106,7 +106,7 @@ namespace Anathema.Erllon
             get { return this._elements.Length; }
         }
 
-        public bool IsReadOnly { get; }
+        public bool IsReadOnly { get; private set; } //set musi być, ale prywatny, wtedy nie ma do niego dostępu z zewnątrz == readonly
         public void Dispose()
         {
             GC.SuppressFinalize(this);
