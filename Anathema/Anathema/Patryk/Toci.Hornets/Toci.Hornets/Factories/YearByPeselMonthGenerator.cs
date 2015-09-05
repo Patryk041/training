@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Toci.Hornets.Legnica.Patryk_Stulczewski.TrainingTwo.MyPeselValidator
+namespace Toci.Hornets.Factories
 {
     public class YearByPeselMonthGenerator
     {
