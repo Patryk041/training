@@ -7,7 +7,7 @@ namespace Toci.Hornets.Factories
 {
     public class CarFactory
     {
-        private Dictionary<string, ICar> _dictonary;
+        private Dictionary<string, Func<ICar>> _dictonary;
 
        /* public CarFactory()
         {
@@ -21,11 +21,11 @@ namespace Toci.Hornets.Factories
 
         public CarFactory()
         {
-            _dictonary = new Dictionary<string, ICar>()
+            _dictonary = new Dictionary<string, Func<ICar>>()
             {
-                {"Honda", GetAnotherCar3()},
-                {"Fiat", GetAnotherCar2()},
-                {"Ford", GetAnotherCar()}
+                {"Honda", () => new Honda()},
+                {"Fiat", () => new Fiat()},
+                {"Ford", () => new Ford() }
             };
         }
 
@@ -46,7 +46,9 @@ namespace Toci.Hornets.Factories
 
         public ICar GetCar(string key)
         {
-            return _dictonary[key];
+            Func<ICar> func = _dictonary[key];
+            return func();
+
         }
     }
 }
