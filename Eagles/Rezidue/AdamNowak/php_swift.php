@@ -42,32 +42,39 @@ abstract class PHPCode// implements IphpSwiftConvertGetters, IphpSwiftConvert
         $this->arrayFromFile = $newArray;
     }
 
-    function addImport(){
-        $fileNewContent ='import Foundation'.'\n';
-        $f=$this->fileName;
+    function addImport()
+    {
+        $fileNewContent = 'import Foundation' . '\n';
+        $f = $this->fileName;
         $content = file_get_contents($f);
-        file_put_contents($f,$fileNewContent . substr($content,0));
+        file_put_contents($f, $fileNewContent . substr($content, 0));
     }
 }
+
 class PreparedCode extends PHPCode
 {
     public $PrepCode;
 
-    function __construct($fileName){
-      $this->fileName = $fileName;
+    function __construct($fileName)
+    {
+        $this->fileName = $fileName;
 
+    }
+
+    public function execute()
+    {
+
+        $this->openFile();
+        $this->endLineCharDelete();
+        $this->convertVariableDeclaration();
     }
 
 }
 
 $instance = new PreparedCode('code');
+$instance->execute();
 
-$instance->openFile();
-
-$instance->endLineCharDelete();
-$instance->convertVariableDeclaration();
-
-foreach ($instance->arrayFromFile as $lol ) {
-    echo '<br>'.$lol;
+foreach ($instance->arrayFromFile as $lol) {
+    echo '<br>' . $lol;
 }
 
