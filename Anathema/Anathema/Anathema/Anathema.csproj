@@ -55,6 +55,7 @@
     <Compile Include="Iwona\GenericsTestClass\Log.cs" />
     <Compile Include="Iwona\GenericsTestClass\MainClass.cs" />
     <Compile Include="Iwona\GenericsTestClass\Proces.cs" />
+    <Compile Include="KacperSiuda\HelloClass.cs" />
     <Compile Include="Kodi\Kodi.cs" />
     <Compile Include="Kosski\FactoryHomework.cs" />
     <Compile Include="Kosski\KosskiTest.cs" />

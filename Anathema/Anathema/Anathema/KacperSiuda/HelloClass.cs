@@ -8,5 +8,7 @@ namespace Anathema.KacperSiuda
 {
     class HelloClass
     {
+
+
     }
 }
