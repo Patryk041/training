@@ -13,7 +13,7 @@ for ($i = 0; $i <= 10; $i ++)
         echo "*";
 echo "\n";
 
-if ($jedenie == 19)
+if ($jedzenie == 19)
 {
     echo "";
 } else

@@ -27,5 +27,3 @@ class test
 
 $t1 = new test();
 echo $t1->changeText($t1->wytnijZmienna($t1->znajdz1('echo("dupa");')));
-
-
