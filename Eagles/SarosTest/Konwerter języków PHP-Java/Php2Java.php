@@ -8,13 +8,16 @@ class Php2Java extends CodeConverter
     private $fileToConvert;
 
     private $t1;
-    
+
     private $tablicaPhp;
 
     function __construct ($fileName)
     {
+        // Tablica ze wszystkimi elementami skĹ‚adni w postaci regexĂłw
+        // poĹ‚Ä…czona z ich zamiennikamiz
         $this->tablicaPhp = array(
-                '/echo\s*\".*\"/', 'System.out.println("'.$zmienna.'")'
+                '/echo\s*\".*\"/',
+                'System.out.println("' . $zmienna . '")'
         );
         $this->t1 = new wycinarka2();
         $fp = fopen($fileName, "r+");
@@ -26,7 +29,7 @@ class Php2Java extends CodeConverter
     {
         return $this->fileToConvert;
     }
-    
+
     function getTablicaPhp ()
     {
         return $this->tablicaPhp;
@@ -38,19 +41,19 @@ class Php2Java extends CodeConverter
     function echo2Java ($file, $regex)
     {
         $wyrazenie = (string) $regex;
-
+        
         $fp = fopen($file, "r+");
         while (! feof($fp))
         {
             $linia = fgets($fp);
-            if ($this->t1->findX($linia,$wyrazenie))
+            if ($this->t1->findX($linia, $wyrazenie))
             {
                 $zmienna = $this->t1->cutPhp(
-                        $this->t1->findX($linia,$wyrazenie));
+                        $this->t1->findX($linia, $wyrazenie));
                 
                 $plik .= $this->t1->convertEcho($linia) . "\n";
-            }   
-            else $plik .=$linia;
+            } else
+                $plik .= $linia;
         }
         return $plik;
     }
@@ -60,40 +63,9 @@ class Php2Java extends CodeConverter
 }
 $P2J = new Php2Java("Siema.php");
 $t1 = new wycinarka2();
-echo $P2J->echo2Java("Siema.php",$P2J->getTablicaPhp()[0] );
 
-// for($i=0;$i<=count($P2J->getTablicaPhp());$i++){
-//     $P2J->echo2Java("Siema.php",$P2J->getTablicaPhp()[0] );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+echo $P2J->echo2Java("Siema.php", $P2J->getTablicaPhp()[0]);
+for ($i = 0; $i <= count($P2J->getTablicaPhp()); $i ++)
+{
+    $P2J->echo2Java("Siema.php", $P2J->getTablicaPhp()[0]);
+}
