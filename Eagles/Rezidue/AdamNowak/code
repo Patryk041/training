@@ -1,8 +1,17 @@
-class SwiftClass{
-$zmienna1 = "";
-$zmienna2 = 2;
-$zmienna3 = 2,4;
-$zmienna4 = [];
-$zmienna5 = 'dupa';
 
+public abstract  class SwiftClass
+{
+    private $zmienna1 = "";
+    protected $zmienna2 = 2;
+    public $zmienna3 = 2,4;
+    public $zmienna4 = [];
+    public $zmienna5 = 'asdqwe12345678';
+
+
+    public function methodReturnString()
+    {
+        $zmiennajakas = 53453;
+        $zmienna1<1;
+        $zmienna+$zmienna-$kurwadziala;
+    }
 }
