@@ -23,7 +23,7 @@
         public string CutToId(string fullnumner)
         {
             
-            BankId = fullnumner.Substring(2, 6);
+            BankId = fullnumner.Substring(2, 4);
             return BankId;
         }
 
