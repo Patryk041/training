@@ -97,9 +97,11 @@
     <Compile Include="rbedkowski\Fabryka\Restaurant.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
+    <Compile Include="Terry\StringExtensions.cs" />
     <Compile Include="Skilloo\Fabryka\CarFactory.cs" />
     <Compile Include="Skilloo\Fabryka\Golf.cs" />
     <Compile Include="Skilloo\Fabryka\ICar.cs" />
+    <Compile Include="Skilloo\Fabryka\Passat.cs" />
     <Compile Include="TomaszF\GRlist.cs" />
     <Compile Include="Widmo\Widmo.cs" />
     <Compile Include="jake\jakeTestClass.cs" />
