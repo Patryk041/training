@@ -8,11 +8,11 @@ namespace Anathema.Kosski
 {
     class testGit
     {
-        siema
+        //siema
 
-        public static string test()
-        {
-            return "test";
-        }
+        //public static string test()
+        //{
+        //    return "test";
+        //}
     }
 }
