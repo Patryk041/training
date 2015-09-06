@@ -1,26 +1,31 @@
 <?php
 
-class test
+class wycinarka2
 {
 
-    function znajdz1 ($wyraz, $regex)
+    function convertEcho ($string)
     {
-        $wynik = preg_match($regex, $wyraz, $zmienna);
+        return $this->addJava(
+                $this->cutPhp($this->findX($string, "/echo\s*\".*\"/")));
+    }
+
+    function findX ($wyraz, $regex)
+    {
+        $wynik = preg_match_all($regex, $wyraz, $zmienna);
         return $zmienna[0];
     }
 
-    function wytnijZmienna ($string)
+    function cutPhp ($string)
     {
         $regex = "/\".*\"/";
-        $wynik = preg_match($regex, $string, $zmienna);
+        $wynik = preg_match($regex, $string[0], $zmienna);
         $wyraz = trim($zmienna[0], "\"");
         return $wyraz;
     }
+
+    function addJava ($string)
+    {
+        $wynik = 'System.out.println("' . $string . '");';
+        return $wynik;
+    }
 }
-
-$t1 = new test();
-echo $t1->wytnijZmienna($t1->znajdz1('echo"zupa";', "/echo\s*\".*\"/"));
-
-
-//wytnijZmienna($t1->znajdz1('System.out.println("dupa");',"/System\.out\.println\(\".*\"\);/")); 
-
