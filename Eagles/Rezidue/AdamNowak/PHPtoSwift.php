@@ -15,10 +15,19 @@ class PHPtoSwift extends CodeConverter
     public $desiredLanguage = 33;
     public $fileContent;
     public $phpKeyWords = array('private', 'public', 'protected', 'abstract');
+    //helper fields
+    public $countSpecificChar;
+    public $ClassBody;
+    public $ClassMethods = [];
     //class chunks
     public $prepHead = [];
     public $prepFields = [];
-    public $prepMethod = [];
+
+    public $singleMethod = [];
+    public $prepMethods = [];
+
+
+    public $classFoot = [];
 
     //class chunks
 
@@ -76,7 +85,7 @@ class PHPtoSwift extends CodeConverter
             }
 
         }
-                array_push($this->prepHead,'{');
+        array_push($this->prepHead, '{');
         return $this->prepHead;
     }
 
@@ -95,7 +104,7 @@ class PHPtoSwift extends CodeConverter
         return $this->prepFields;
     }
 
-    public function fieldsDeclarationConvert()
+    function fieldsDeclarationConvert()
     {
         $array = $this->prepFields;
         $this->prepFields = [];
@@ -117,10 +126,49 @@ class PHPtoSwift extends CodeConverter
         $this->fileContent = $newArray;
     }
 
-    public function GetResultingClass($source, $currentLanguage, $desiredLanguage)
+    function getWholeClassBody()
+    {
+        $allClassToString = implode($this->fileContent);
+        $strPositionStart = strpos($allClassToString, 'func');
+        $endOfFile = strlen($allClassToString);
+        $stringWithoutBegin = substr($allClassToString, $strPositionStart, $endOfFile);
+        $revert = strrev($stringWithoutBegin);
+        $findMe = strpos($revert, '}');
+        $revertClassBody = substr($revert, $findMe + 1, $endOfFile);
+        $finalBodyClass = strrev($revertClassBody);
+        return $this->ClassBody = $finalBodyClass;
+    }
+
+    function WholeClassBodyToArray()
+    {
+        $countMethods = substr_count($this->ClassBody,'func');
+        $bodyToArray = explode('func',$this->ClassBody);
+        for($i=0;$i<count($bodyToArray);$i++){
+            $new_element = str_replace($bodyToArray,$bodyToArray[$i],'func'.$bodyToArray[$i]);
+            array_push($this->ClassMethods,$new_element);
+        }
+        array_shift($this->ClassMethods);
+        return $this->ClassMethods;
+
+    }
+
+    function getSingleMethod()
+    {
+        $array = $this->fileContent;
+
+        for ($i = 0; $i < count($array); $i++) {
+            $funcstart = strpos($array[$i], 'func');
+            echo $funcstart . $array[$i];
+        }
+
+
+    }
+
+    function GetResultingClass($source, $currentLanguage, $desiredLanguage)
     {
         return $this->swiftCLass;
     }
+
 }
 
 $swift = new PHPtoSwift('code');
@@ -129,13 +177,16 @@ $swift->openFile();
 $swift->addImportToContent();
 $swift->endLineDelete();
 $swift->phpKeyWordsDelete();
+$swift->toFuncParse();
 //prepare Fields:
 $swift->getFieldsFromClass();
 $swift->fieldsDeclarationConvert();
 //prepare Head of Class declaration
 $swift->getClassHead();
-
-$swift->toFuncParse();
+//get first function:
+echo 'test<br>';
+$swift->getSingleMethod();
+echo '<br>test<br>';
 
 echo 'head of class';
 foreach ($swift->prepHead as $lokurwa) {
@@ -148,9 +199,15 @@ foreach ($swift->prepFields as $lokurwa) {
     echo '<br>' . $lokurwa;
 }
 echo '<hr>';
-//echo fields:
-echo 'Methods';
-foreach ($swift->prepMethod as $lokurwa) {
+//echo single method:
+echo 'Single Method';
+foreach ($swift->singleMethod as $lokurwa) {
+    echo '<br>' . $lokurwa;
+}
+echo '<hr>';
+//echo all method:
+echo 'all methods in class';
+foreach ($swift->prepMethods as $lokurwa) {
     echo '<br>' . $lokurwa;
 }
 echo '<hr>';
@@ -158,7 +215,18 @@ echo '<hr>';
 
 echo 'Whole file';
 //allfile content:
-foreach ($swift->fileContent as $swiftFields) {
-    echo '<br>' . $swiftFields;
-}
+//foreach ($swift->fileContent as $swiftFields) {
+//    echo '<br>' . $swiftFields;
+//}
+$swift->getWholeClassBody();
+echo '<br>' . $swift->ClassBody;
 //allfile content:
+
+echo '<hr>';
+
+$swift->WholeClassBodyToArray();
+foreach ($swift->ClassMethods as $lokurwa ) {
+    echo '<br>'.$lokurwa;
+}
+
+echo '<hr>';

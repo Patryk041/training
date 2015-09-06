@@ -10,8 +10,25 @@ public abstract  class SwiftClass
 
     public function methodReturnString()
     {
-        $zmiennajakas = 53453;
-        $zmienna1<1;
-        $zmienna+$zmienna-$kurwadziala;
+       if (cos){
+       }else {
+       dupa
+       }
     }
+        public function methodReturnInt()
+        {
+           if (cos){
+           }else {
+           dupa
+           }
+        }
+             public function methodReturnInt()
+                {
+                   if (cos){
+                   }else {
+                   dupa
+                   }
+                }
+
+
 }
