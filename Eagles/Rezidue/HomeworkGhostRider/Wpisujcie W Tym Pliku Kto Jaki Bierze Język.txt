@@ -19,3 +19,6 @@ F# : Raqs
 JavaScript : Wodzu, piotrekgie (JS + jQuery)
 
 Java : Grucha ( Tomasz Trzebiński ;P), Tomi
+
+
+Swift : AdamNowak

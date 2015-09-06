@@ -10,17 +10,12 @@ public abstract  class SwiftClass
 
     public function methodReturnString()
     {
-       if (cos){
-       }else {
-       dupa
-       }
+     $string = 'string';
+     return $string;
     }
         public function methodReturnInt()
         {
-           if (cos){
-           }else {
-           dupa
-           }
+
         }
              public function methodReturnInt()
                 {

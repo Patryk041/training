@@ -15,7 +15,3 @@ abstract class CodeConverter
 public abstract function GetResultingClass($source, $currentLanguage, $desiredLanguage);
 }
 
-abstract class ClassChunks
-{
-
-}

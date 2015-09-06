@@ -19,7 +19,12 @@ class PHPtoSwift extends CodeConverter
     public $countSpecificChar;
     public $ClassBody;
     public $ClassMethods = [];
-    //class chunks
+    //methods chunks
+    public $methodHead;
+    public $methodBody;
+    public $methodFoot;
+    //methods chunks
+        //class chunks
     public $prepHead = [];
     public $prepFields = [];
 
@@ -27,7 +32,7 @@ class PHPtoSwift extends CodeConverter
     public $prepMethods = [];
 
 
-    public $classFoot = [];
+    public $classFoot = '}';
 
     //class chunks
 
@@ -152,81 +157,69 @@ class PHPtoSwift extends CodeConverter
 
     }
 
-    function getSingleMethod()
+    function getMethodsHead()
     {
-        $array = $this->fileContent;
 
-        for ($i = 0; $i < count($array); $i++) {
-            $funcstart = strpos($array[$i], 'func');
-            echo $funcstart . $array[$i];
-        }
+    }
 
-
+    function executeAll(){
+        $this->openFile();
+        $this->addImportToContent();
+        $this->endLineDelete();
+        $this->phpKeyWordsDelete();
+        $this->toFuncParse();
+        //prepare Fields:
+        $this->getFieldsFromClass();
+        $this->fieldsDeclarationConvert();
+        //prepare Head of Class declaration
+        $this->getWholeClassBody();
+        $this->WholeClassBodyToArray();
+        $this->getClassHead();
     }
 
     function GetResultingClass($source, $currentLanguage, $desiredLanguage)
     {
+
         return $this->swiftCLass;
     }
 
 }
 
 $swift = new PHPtoSwift('code');
-//file:
-$swift->openFile();
-$swift->addImportToContent();
-$swift->endLineDelete();
-$swift->phpKeyWordsDelete();
-$swift->toFuncParse();
-//prepare Fields:
-$swift->getFieldsFromClass();
-$swift->fieldsDeclarationConvert();
-//prepare Head of Class declaration
-$swift->getClassHead();
-//get first function:
-echo 'test<br>';
-$swift->getSingleMethod();
-echo '<br>test<br>';
+$swift->executeAll();
 
-echo 'head of class';
+//var_dump($swift->prepFields);
+//echo '<hr>';
+//echo '<h1>head of class</h1>';
 foreach ($swift->prepHead as $lokurwa) {
     echo '<br>' . $lokurwa;
 }
-echo '<hr>';
+//echo '<hr>';
 //echo fields:
-echo 'fields';
+//echo '<h1>fields</h1>';
 foreach ($swift->prepFields as $lokurwa) {
     echo '<br>' . $lokurwa;
 }
-echo '<hr>';
+//echo '<hr>';
+/**
 //echo single method:
-echo 'Single Method';
-foreach ($swift->singleMethod as $lokurwa) {
-    echo '<br>' . $lokurwa;
-}
-echo '<hr>';
-//echo all method:
-echo 'all methods in class';
-foreach ($swift->prepMethods as $lokurwa) {
-    echo '<br>' . $lokurwa;
-}
-echo '<hr>';
-
-
-echo 'Whole file';
-//allfile content:
-//foreach ($swift->fileContent as $swiftFields) {
-//    echo '<br>' . $swiftFields;
+//echo 'Single Method';
+//foreach ($swift->singleMethod as $lokurwa) {
+//    echo '<br>' . $lokurwa;
 //}
-$swift->getWholeClassBody();
-echo '<br>' . $swift->ClassBody;
-//allfile content:
+//echo '<hr>';
 
-echo '<hr>';
 
-$swift->WholeClassBodyToArray();
+//echo all method:
+//echo 'all methods in class';
+//foreach ($swift->prepMethods as $lokurwa) {
+//    echo '<br>' . $lokurwa;
+//}
+//echo '<hr>';
+**/
+//echo '<h1>Methods</h1>';
 foreach ($swift->ClassMethods as $lokurwa ) {
     echo '<br>'.$lokurwa;
 }
-
-echo '<hr>';
+echo '<br>'.$swift->classFoot;
+//echo '<hr>';
