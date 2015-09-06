@@ -4,7 +4,11 @@
 
 C# : Darek
 
+<<<<<<< Updated upstream
 Java : Mikołaj
+=======
+Java : Grucha
+>>>>>>> Stashed changes
 
 C++ : jarek-krk,lyczkul
 

@@ -17,7 +17,7 @@ class Php2Java extends CodeConverter
         // poĹ‚Ä…czona z ich zamiennikamiz
         $this->tablicaPhp = array(
                 '/echo\s*\".*\"/',
-                'System.out.println("' . $zmienna . '")'
+                'System.out.println(":CONVERT");'
         );
         $this->t1 = new wycinarka2();
         $fp = fopen($fileName, "r+");
@@ -38,24 +38,29 @@ class Php2Java extends CodeConverter
     function saveFile ($string)
     {}
 
-    function echo2Java ($file, $regex)
+    function echo2Java ($file, $regex, $i)
     {
         $wyrazenie = (string) $regex;
         
         $fp = fopen($file, "r+");
+        $plik = '';
         while (! feof($fp))
         {
             $linia = fgets($fp);
             if ($this->t1->findX($linia, $wyrazenie))
-            {
+            {//zmienna daje zawartosc dla regexu np z echo 
                 $zmienna = $this->t1->cutPhp(
                         $this->t1->findX($linia, $wyrazenie));
-                
-                $plik .= $this->t1->convertEcho($linia) . "\n";
+                // dla znalezionego odpowiednika w javie 
+                // wstawiamy zawrtosc z echo
+                $plik .= $this->t1->addJava(
+                                    $zmienna,
+                                    $this->tablicaPhp[$i+1]
+                                    ) . "\n";
             } else
                 $plik .= $linia;
         }
-        return $plik;
+       return $plik;
     }
 
     function GetResultingClass ($source, $currentLanguage, $desiredLanguage)
@@ -63,9 +68,10 @@ class Php2Java extends CodeConverter
 }
 $P2J = new Php2Java("Siema.php");
 $t1 = new wycinarka2();
-
-echo $P2J->echo2Java("Siema.php", $P2J->getTablicaPhp()[0]);
-for ($i = 0; $i <= count($P2J->getTablicaPhp()); $i ++)
+file_put_contents("javaCode.java", file_get_contents("Siema.php"));
+// echo $P2J->echo2Java("Siema.php", $P2J->getTablicaPhp()[0]);
+for ($i = 0; $i < count($P2J->getTablicaPhp()); $i +=2)
 {
-    $P2J->echo2Java("Siema.php", $P2J->getTablicaPhp()[0]);
+    $plik = $P2J->echo2Java("javaCode.java", $P2J->getTablicaPhp()[$i], $i);
+    file_put_contents("javaCode.java", $plik);
 }
