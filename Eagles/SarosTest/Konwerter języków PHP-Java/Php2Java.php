@@ -14,7 +14,7 @@ class Php2Java extends CodeConverter
     function __construct ($fileName)
     {
         $this->tablicaPhp = array(
-                "/echo\s*\".*\"/", 'System.out.println("'.$zmienna.'")'
+                '/echo\s*\".*\"/', 'System.out.println("'.$zmienna.'")'
         );
         $this->t1 = new wycinarka2();
         $fp = fopen($fileName, "r+");
@@ -37,14 +37,16 @@ class Php2Java extends CodeConverter
 
     function echo2Java ($file, $regex)
     {
+        $wyrazenie = (string) $regex;
+
         $fp = fopen($file, "r+");
         while (! feof($fp))
         {
             $linia = fgets($fp);
-            if ($this->t1->findX($linia, $regex))
+            if ($this->t1->findX($linia,$wyrazenie))
             {
                 $zmienna = $this->t1->cutPhp(
-                        $this->t1->findX($linia, $regex));
+                        $this->t1->findX($linia,$wyrazenie));
                 
                 $plik .= $this->t1->convertEcho($linia) . "\n";
             }   
@@ -58,11 +60,12 @@ class Php2Java extends CodeConverter
 }
 $P2J = new Php2Java("Siema.php");
 $t1 = new wycinarka2();
-echo $P2J->echo2Java();
+echo $P2J->echo2Java("Siema.php",$P2J->getTablicaPhp()[0] );
 
-for($i=0;$i<=count($P2J->getTablicaPhp());$i++){
-    $P2J->echo2Java("Siemasz.php",$P2J->getTablicaPhp()[$i]);
-}
+// for($i=0;$i<=count($P2J->getTablicaPhp());$i++){
+//     $P2J->echo2Java("Siema.php",$P2J->getTablicaPhp()[0] );
+
+
 
 
 

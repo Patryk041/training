@@ -7,7 +7,7 @@ class wycinarka2
     {
         return $this->addJava(
                 $this->cutPhp($this->findX($string, "/echo\s*\".*\"/")));
-    }
+   
 
     function findX ($wyraz, $regex)
     {
