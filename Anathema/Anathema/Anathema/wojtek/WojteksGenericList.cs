@@ -6,13 +6,13 @@ namespace Anathema.wojtek
     public class WojteksGenericList<T>  : GRList<T>
     {
          private T [] _items = new T[10];
-         private int _index = 0;
+         private int _index;
 
         public override bool AddElement(T item, bool unique = true)
         {
+            if (!unique) return false;
             if (_index == _items.Length)
                 ExpandArray((_items));
-            if (!unique) return false;
             _items[_index] = item;
             _index++;
             return true;
