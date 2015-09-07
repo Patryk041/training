@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Anathema.Generics;
 
 namespace Anathema.wojtek
@@ -10,15 +11,19 @@ namespace Anathema.wojtek
 
         public override bool AddElement(T item, bool unique = true)
         {
-            if (!unique) return false;
+            if (unique)
+            {
+                if (_items.Contains(item))
+                    return false;
+            }
             if (_index == _items.Length)
-                ExpandArray((_items));
+                _items=ExpandArray((_items));
             _items[_index] = item;
             _index++;
             return true;
         }
 
-        private T[] ExpandArray(T [] array)
+        private T[] ExpandArray(T[] array)
         {
             T[] temporaryArray = new T[_index * 2];
             Array.Copy(array, temporaryArray, _index * 2);
