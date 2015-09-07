@@ -27,8 +27,7 @@ namespace Anathema.wojtek
         {
             T[] temporaryArray = new T[_index * 2];
             Array.Copy(array, temporaryArray, _index * 2);
-            array = temporaryArray;
-            return array;
+            return temporaryArray;
         }
     }
 }
