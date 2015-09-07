@@ -39,7 +39,7 @@ namespace UnitTests.Terry
 
 
         [TestMethod]
-        public void TestMethod1()
+        public void LinqTest()
         {
 
             var resultInt = IntList.Where(number => number > 3 && number < 9).ToArray();
@@ -47,14 +47,11 @@ namespace UnitTests.Terry
             List<int> test = IntList.Where(number => IsOkNumber(number)).ToList();
 
             var dictTesting = TestDictionary.Select(item => item.Value == "ala" ? "jest Ala" : "nie ma").ToList();
+        }
 
-
-            int liczba;
-            string napis;
-            bool bul;
-
-        
-           
+        public void ExtensionTest()
+        {
+            var sortString = zmienna.SortToci();
 
         }
 

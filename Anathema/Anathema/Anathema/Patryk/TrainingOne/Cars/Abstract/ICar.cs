@@ -1,8 +1,8 @@
-﻿namespace Toci.Hornets.Cars.Abstract
+﻿namespace Anathema.Patryk.TrainingOne.Cars.Abstract
 {
     public interface ICar
     {
-        bool Drive();
+        bool TryDrive();
 
         Color Color { get; set; }
 

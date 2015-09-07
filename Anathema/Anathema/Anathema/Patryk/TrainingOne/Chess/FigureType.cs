@@ -1,4 +1,4 @@
-﻿namespace Toci.Hornets.Chess
+﻿namespace Anathema.Patryk.TrainingOne.Chess
 {
     public enum FigureType
     {
