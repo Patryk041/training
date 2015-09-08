@@ -22,7 +22,7 @@ class PHPtoSwift extends CodeConverter
     //methods chunks
     public $methodHead;
     public $methodBody;
-    public $methodFoot;
+    public $methodFoot = '}';
     //methods chunks
         //class chunks
     public $prepHead = [];
@@ -156,7 +156,7 @@ class PHPtoSwift extends CodeConverter
         return $this->ClassMethods;
 
     }
-
+//TODO: getMethodsHead() implementation, getBodyMethod implementation.
     function getMethodsHead()
     {
 
