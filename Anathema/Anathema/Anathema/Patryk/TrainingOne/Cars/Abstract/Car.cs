@@ -9,9 +9,9 @@
             return true;
         }
 
-        public abstract bool CanDrive();
+        protected abstract bool CanDrive();
         
-        public abstract void Drive();
+        protected abstract void Drive();
 
         public Color Color { get; set; }
         public string Description { get; set; }
