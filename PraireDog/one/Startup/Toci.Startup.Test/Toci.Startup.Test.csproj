@@ -59,6 +59,7 @@
     <Compile Include="ErloonTest\BankTest.cs" />
     <Compile Include="IwonaM\UnitTestPesel.cs" />
     <Compile Include="marcin022\UnitTest1.cs" />
+    <Compile Include="marcin022\UnitTest2.cs" />
     <Compile Include="MatiUnitTest\PdfUnitTest.cs" />
     <Compile Include="MatiUnitTest\BankUnitTest.cs" />
     <Compile Include="MatiUnitTest\Pesel\PeselUnitTest.cs" />

@@ -140,6 +140,7 @@
     <Compile Include="Wilczy\Class1.cs" />
     <Compile Include="wojteko22\wojteko22.cs" />
     <Compile Include="wojtek\FirstClass.cs" />
+    <Compile Include="wojtek\WojteksGenericList.cs" />
     <Compile Include="Yuriy\FirstClassForTest.cs" />
   </ItemGroup>
   <ItemGroup>
