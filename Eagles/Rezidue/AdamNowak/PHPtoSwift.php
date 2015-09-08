@@ -40,6 +40,8 @@ class PHPtoSwift extends CodeConverter
     function __construct($fileName)
     {
         $this->source = $fileName;
+
+
     }
 
     function openFile()
@@ -175,7 +177,9 @@ class PHPtoSwift extends CodeConverter
         $this->getWholeClassBody();
         $this->WholeClassBodyToArray();
         $this->getClassHead();
+
     }
+
 
     function GetResultingClass($source, $currentLanguage, $desiredLanguage)
     {
