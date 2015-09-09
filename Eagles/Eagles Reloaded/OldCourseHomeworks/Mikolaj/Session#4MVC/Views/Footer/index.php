@@ -1,0 +1,5 @@
+</div>
+
+<footer class="site-footer">
+  I'm the Sticky Footer.
+</footer>
