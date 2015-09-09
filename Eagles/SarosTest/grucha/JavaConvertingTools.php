@@ -8,8 +8,12 @@ class JavaConvertingTools extends ConvertingTools
 
     function __construct ()
     {
+        // tablica składni JAVA postaci regexów. Do zrobienia zostało 1000000 ;)
         $this->JavaRegexTab = array(
-                "1" => 'System.out.println(":CONVERT");'
+                "1" => 'System.out.println(":CONVERT");',
+                "2" => 'java1',
+                "3" => 'java2',
+                "4" => 'java3'
         );
     }
 
@@ -22,8 +26,8 @@ class JavaConvertingTools extends ConvertingTools
     {
         $wyrazenie = (string) $regex;
         $fp = fopen($file, "r+");
-        $plik = 'public class JAVAclass' . "{\n" .
-                 'public static void main(String [args])' . "{\n";
+        // $plik = 'public class JAVAclass' . "{\n" .
+        // 'public static void main(String [args])' . "{\n";
         
         while (! feof($fp))
         {
@@ -39,6 +43,6 @@ class JavaConvertingTools extends ConvertingTools
             } else
                 $plik .= $linia;
         }
-        return $plik.="\n}\n}";
+        return $plik; // .= "\n}\n}";
     }
 }

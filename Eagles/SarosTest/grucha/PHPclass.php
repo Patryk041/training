@@ -1,17 +1,9 @@
 <?php
-echo "Siema!";
 
-echo "Siemanko!!";
+echo "napis1";
 
-echo "Hello";
-
-echo "";
-
-echo "Kiełbasa";
-
-echo "nie";
-
-echo "dla";
-
-echo "psa";
-// echo 
+echo "napis2";
+php1
+php2 
+php3
+?>
