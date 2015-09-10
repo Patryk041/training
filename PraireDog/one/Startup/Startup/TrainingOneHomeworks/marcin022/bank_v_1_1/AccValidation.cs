@@ -1,14 +1,16 @@
 ﻿namespace Startup.TrainingOneHomeworks.marcin022.bank_1_2
 {
-    public class AccValidation
+    public class AccValidation : IAccValidation
     {
-        private string AccNumber;
-        private string BankId;
+        public string AccNumber { get; set; }
+        public string BankId { get; set; }
 
         public  AccValidation(string accNumber)
         {
             BankId = CutToId(CheckNumberFormat(accNumber));
         }
+
+
 
         public string CheckNumberFormat(string accNumber)
         {
