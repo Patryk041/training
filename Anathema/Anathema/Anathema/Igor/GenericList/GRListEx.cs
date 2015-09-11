@@ -15,10 +15,8 @@ namespace Anathema.Igor
 
         public virtual bool AddElement(T item, bool unique = true)
         {
-            foreach(var i in items)
-            {
-                if (i.Equals(item)) return false;
-            }
+            if (unique == false) return false;
+            if (items.Contains<T>(item)) return false;
 
             if(iterator>items.Length-1)
             {
