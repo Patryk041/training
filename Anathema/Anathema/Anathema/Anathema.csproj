@@ -56,6 +56,7 @@
     <Compile Include="Iwona\GenericsTestClass\Log.cs" />
     <Compile Include="Iwona\GenericsTestClass\MainClass.cs" />
     <Compile Include="Iwona\GenericsTestClass\Proces.cs" />
+    <Compile Include="KacperSiuda\HelloClass.cs" />
     <Compile Include="Kodi\Kodi.cs" />
     <Compile Include="Kosski\FactoryHomework.cs" />
     <Compile Include="Kosski\KosskiTest.cs" />
@@ -84,16 +85,40 @@
     <Compile Include="Generics\IAbstractFactory.cs" />
     <Compile Include="Igor\MyNewClass.cs" />
     <Compile Include="Kosski\testGit.cs" />
+    <Compile Include="marcin022\Class1.cs" />
+    <Compile Include="marcin022\ListGeneric.cs" />
+    <Compile Include="marcin022\Test.cs" />
     <Compile Include="Mati\MyNewClass.cs" />
     <Compile Include="mowmidejw\HelloWorldByDejw.cs" />
     <Compile Include="Nonda\TestClassByNonda.cs" />
+    <Compile Include="Patryk\TrainingOne\Cars\Abstract\Car.cs" />
+    <Compile Include="Patryk\TrainingOne\Cars\Abstract\ICar.cs" />
+    <Compile Include="Patryk\TrainingOne\Cars\Color.cs" />
+    <Compile Include="Patryk\TrainingOne\Cars\Fiat.cs" />
+    <Compile Include="Patryk\TrainingOne\Cars\Ford.cs" />
+    <Compile Include="Patryk\TrainingOne\Cars\Honda.cs" />
+    <Compile Include="Patryk\TrainingOne\Chess\Abstract\IFigure.cs" />
+    <Compile Include="Patryk\TrainingOne\Chess\Bishop.cs" />
+    <Compile Include="Patryk\TrainingOne\Chess\FigureType.cs" />
+    <Compile Include="Patryk\TrainingOne\Chess\King.cs" />
+    <Compile Include="Patryk\TrainingOne\Chess\Queen.cs" />
+    <Compile Include="Patryk\TrainingOne\Factories\AbstractFactory.cs" />
+    <Compile Include="Patryk\TrainingOne\Factories\CarFactory.cs" />
+    <Compile Include="Patryk\TrainingOne\Factories\ChessFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Puchacz\GRlistEx.cs" />
+    <Compile Include="rbedkowski\Fabryka\IOrder.cs" />
+    <Compile Include="rbedkowski\Fabryka\IRestaurant.cs" />
+    <Compile Include="rbedkowski\Fabryka\Order.cs" />
+    <Compile Include="rbedkowski\Fabryka\Program.cs" />
+    <Compile Include="rbedkowski\Fabryka\Restaurant.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
+    <Compile Include="Terry\StringExtensions.cs" />
     <Compile Include="Skilloo\Fabryka\CarFactory.cs" />
     <Compile Include="Skilloo\Fabryka\Golf.cs" />
     <Compile Include="Skilloo\Fabryka\ICar.cs" />
+    <Compile Include="Skilloo\Fabryka\Passat.cs" />
     <Compile Include="TomaszF\GRlist.cs" />
     <Compile Include="Widmo\Widmo.cs" />
     <Compile Include="jake\jakeTestClass.cs" />
@@ -115,6 +140,7 @@
     <Compile Include="Wilczy\Class1.cs" />
     <Compile Include="wojteko22\wojteko22.cs" />
     <Compile Include="wojtek\FirstClass.cs" />
+    <Compile Include="wojtek\WojteksGenericList.cs" />
     <Compile Include="Yuriy\FirstClassForTest.cs" />
   </ItemGroup>
   <ItemGroup>

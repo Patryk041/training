@@ -203,7 +203,13 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\Kuster\KkPeselValidator.cs" />
-   
+    <Compile Include="TrainingOneHomeworks\marcin022\bank_v_1_1\AccValidation.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\bank_v_1_1\BankDefault.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\bank_v_1_1\BankMillenium.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\bank_v_1_1\BankPekao.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\bank_v_1_1\BankValidate.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\bank_v_1_1\IAccValidation.cs" />
+    <Compile Include="TrainingOneHomeworks\marcin022\bank_v_1_1\IBank.cs" />
     <Compile Include="TrainingOneHomeworks\Puchacz\Banki\Abstract\BankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\Puchacz\Banki\Banks\TransactionAlior.cs" />
     <Compile Include="TrainingOneHomeworks\Puchacz\Banki\Banks\TransactionPKO.cs" />

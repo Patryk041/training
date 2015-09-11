@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.KacperSiuda
+namespace Test_sourcetree
 {
-    class HelloClass
+    class Example
     {
-
-
     }
 }

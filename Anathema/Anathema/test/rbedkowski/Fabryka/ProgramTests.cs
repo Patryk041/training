@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.KacperSiuda
+namespace test.rbedkowski.Fabryka
 {
-    class HelloClass
+    class ProgramTests
     {
-
-
     }
 }

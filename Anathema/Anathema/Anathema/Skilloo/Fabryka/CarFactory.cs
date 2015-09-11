@@ -15,7 +15,7 @@ namespace Anathema.Skilloo.Fabryka
             _dictionary= new Dictionary<string, Func<ICar>>()
             {
                 {"Golf", () => new Golf() },
-                {"Golf1", () => new Golf() }
+                {"Passat", () => new Passat() }
             };
         }
 
