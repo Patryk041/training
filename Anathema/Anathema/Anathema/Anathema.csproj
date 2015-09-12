@@ -96,6 +96,7 @@
     <Compile Include="Generics\IAbstractFactory.cs" />
     <Compile Include="Igor\MyNewClass.cs" />
     <Compile Include="Kosski\testGit.cs" />
+    <Compile Include="MadMike\MadMike.cs" />
     <Compile Include="marcin022\Class1.cs" />
     <Compile Include="marcin022\ListGeneric.cs" />
     <Compile Include="marcin022\Test.cs" />
