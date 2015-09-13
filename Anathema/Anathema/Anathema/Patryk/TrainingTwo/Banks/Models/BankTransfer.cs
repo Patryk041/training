@@ -1,4 +1,4 @@
-﻿namespace Anathema.Patryk.TrainingTwo.Models
+﻿namespace Anathema.Patryk.TrainingTwo.Banks.Models
 {
     public class BankTransfer
     {

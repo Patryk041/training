@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Anathema.Patryk.TrainingTwo.Banks;
-using Anathema.Patryk.TrainingTwo.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTests.Patryk.TrainingTwo

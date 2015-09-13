@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using Anathema.Patryk.TrainingTwo.Banks;
-using Anathema.Patryk.TrainingTwo.Banks.Handlers;
-using Anathema.Patryk.TrainingTwo.Models;
+using Anathema.Patryk.TrainingTwo.Banks.Models;
+using Anathema.Patryk.TrainingTwo.Banks.Parsers;
+using Anathema.Patryk.TrainingTwo.Banks.Parsers.Abstract;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTests.Patryk.TrainingTwo
