@@ -9,7 +9,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTests.Patryk.TrainingTwo
 {
     [TestClass]
-    public class FactoriesWithFuncAsKeyTest
+    public class DictionaryWithFuncAsKeyTest
     {
         Dictionary<Func<string, bool>, Func<IDocumentParser<BankTransfer>>> dictionary =
                 new Dictionary<Func<string, bool>, Func<IDocumentParser<BankTransfer>>>()
