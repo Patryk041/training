@@ -140,6 +140,9 @@
     <Compile Include="rbedkowski\Fabryka\Restaurant.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
+    <Compile Include="Terry\Examples\Interfaces\IUser.cs" />
+    <Compile Include="Terry\Examples\User.cs" />
+    <Compile Include="Terry\Examples\UserValidator.cs" />
     <Compile Include="Terry\StringExtensions.cs" />
     <Compile Include="Skilloo\Fabryka\CarFactory.cs" />
     <Compile Include="Skilloo\Fabryka\Golf.cs" />
