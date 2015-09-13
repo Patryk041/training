@@ -59,12 +59,19 @@
     <Compile Include="marcin022\UnitTest1.cs" />
     <Compile Include="Patryk\TrainingOne\DelegateTest.cs" />
     <Compile Include="Patryk\TrainingOne\FactoriesTest.cs" />
+    <Compile Include="Patryk\TrainingTwo\TxtBankTransferParserTest.cs" />
+    <Compile Include="Patryk\TrainingTwo\TxtFileOperationsTest.cs" />
+    <Compile Include="Patryk\TrainingTwo\PerformTransferTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Terry\UnitTest1.cs" />
     <Compile Include="skilloo\UnitTest1.cs" />
     <Compile Include="Terry\ExamplesTest.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Patryk\TrainingTwo\Files\BankTransfersToDo.txt" />
+    <Content Include="Patryk\TrainingTwo\Files\SomeText.txt" />
+    <Content Include="Patryk\TrainingTwo\Files\TextFile1.txt" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Anathema\Anathema.csproj">
       <Project>{084eb29b-1588-4357-b008-91c1bb01a42f}</Project>
