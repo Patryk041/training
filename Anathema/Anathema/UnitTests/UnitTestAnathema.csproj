@@ -59,6 +59,7 @@
     <Compile Include="marcin022\UnitTest1.cs" />
     <Compile Include="Patryk\TrainingOne\DelegateTest.cs" />
     <Compile Include="Patryk\TrainingOne\FactoriesTest.cs" />
+    <Compile Include="Patryk\TrainingTwo\FactoriesWithFuncAsKeyTest.cs" />
     <Compile Include="Patryk\TrainingTwo\TxtBankTransferParserTest.cs" />
     <Compile Include="Patryk\TrainingTwo\TxtFileOperationsTest.cs" />
     <Compile Include="Patryk\TrainingTwo\PerformTransferTest.cs" />
