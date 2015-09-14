@@ -30,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -138,6 +139,8 @@
     <Compile Include="rbedkowski\Fabryka\Order.cs" />
     <Compile Include="rbedkowski\Fabryka\Program.cs" />
     <Compile Include="rbedkowski\Fabryka\Restaurant.cs" />
+    <Compile Include="rbedkowski\Pesel\PeselValidator.cs" />
+    <Compile Include="rbedkowski\Pesel\TestPesel.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
     <Compile Include="Terry\StringExtensions.cs" />
@@ -171,6 +174,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GhostRider\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="rbedkowski\Pesel\pesel.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\ResharperCodeContractNullability.1.0.1\analyzers\dotnet\cs\CodeContractNullability.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
