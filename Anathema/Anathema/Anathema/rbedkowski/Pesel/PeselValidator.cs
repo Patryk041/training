@@ -24,7 +24,7 @@ namespace Anathema.rbedkowski.Pesel
             int NumerPeselNumeric;
             Contract.Requires(!string.IsNullOrWhiteSpace(_pesel), "Nie wprowadzono numeru pesel.");
             Contract.Requires(!(_pesel.Length < 11), "Numer pesel powinien zawierać 11 cyfr");
-            Contract.Requires(!int.TryParse(_pesel, out NumerPeselNumeric), "Numer pesel zawiera niedozwolone znaki");
+            Contract.Requires(int.TryParse(_pesel, out NumerPeselNumeric), "Numer pesel zawiera niedozwolone znaki");
             Console.WriteLine(_pesel.Length);
             return _pesel;
         }

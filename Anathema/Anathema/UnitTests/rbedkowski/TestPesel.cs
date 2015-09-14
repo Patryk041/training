@@ -9,16 +9,16 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTests.rbedkowski
 {
     [TestClass]
-    class TestPesel
+    public class TestPesel
     {
         [TestMethod]
-        public static void Main(string[] args)
+        public void MainTest()
         {
             PeselValidator pesel = new PeselValidator();
 
             try
             {
-                Console.WriteLine(pesel.SetPesel("7406219896"));
+                Console.WriteLine(pesel.SetPesel("740621a9896"));
             }
             catch (Exception e)
             {
