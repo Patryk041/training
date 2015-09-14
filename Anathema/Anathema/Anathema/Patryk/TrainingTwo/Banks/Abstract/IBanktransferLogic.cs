@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Anathema.Patryk.TrainingTwo.Models;
+using Anathema.Patryk.TrainingTwo.Banks.Models;
 
 namespace Anathema.Patryk.TrainingTwo.Banks.Abstract
 {

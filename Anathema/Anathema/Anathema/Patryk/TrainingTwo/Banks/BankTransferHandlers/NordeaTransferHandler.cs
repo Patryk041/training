@@ -1,6 +1,7 @@
-﻿using Anathema.Patryk.TrainingTwo.Models;
+﻿using Anathema.Patryk.TrainingTwo.Banks.BankTransferHandlers.Abstract;
+using Anathema.Patryk.TrainingTwo.Banks.Models;
 
-namespace Anathema.Patryk.TrainingTwo.Banks.BankHandlers
+namespace Anathema.Patryk.TrainingTwo.Banks.BankTransferHandlers
 {
     public class NordeaTransferHandler : BankTransferHandler
     {

@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using Anathema.Patryk.TrainingTwo;
+using Anathema.Patryk.TrainingTwo.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTests.Patryk.TrainingTwo

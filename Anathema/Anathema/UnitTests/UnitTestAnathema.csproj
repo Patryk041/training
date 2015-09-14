@@ -63,6 +63,7 @@
     <Compile Include="marcin022\UnitTest1.cs" />
     <Compile Include="Patryk\TrainingOne\DelegateTest.cs" />
     <Compile Include="Patryk\TrainingOne\FactoriesTest.cs" />
+    <Compile Include="Patryk\TrainingTwo\DictionaryWithFuncAsKeyTest.cs" />
     <Compile Include="Patryk\TrainingTwo\TxtBankTransferParserTest.cs" />
     <Compile Include="Patryk\TrainingTwo\TxtFileOperationsTest.cs" />
     <Compile Include="Patryk\TrainingTwo\PerformTransferTest.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="rbedkowski\TestPesel.cs" />
     <Compile Include="Terry\UnitTest1.cs" />
     <Compile Include="skilloo\UnitTest1.cs" />
+    <Compile Include="Terry\ExamplesTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Patryk\TrainingTwo\Files\BankTransfersToDo.txt" />

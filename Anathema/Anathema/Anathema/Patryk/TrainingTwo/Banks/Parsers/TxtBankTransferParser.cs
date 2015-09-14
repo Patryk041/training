@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Anathema.Patryk.TrainingTwo.Models;
+﻿using Anathema.Patryk.TrainingTwo.Banks.Models;
+using Anathema.Patryk.TrainingTwo.Banks.Parsers.Abstract;
 
-namespace Anathema.Patryk.TrainingTwo.Banks.Handlers
+namespace Anathema.Patryk.TrainingTwo.Banks.Parsers
 {
     public class TxtBankTransferParser : TxtParser<BankTransfer>
     {

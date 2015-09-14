@@ -15,17 +15,10 @@ namespace UnitTests.Terry
 
         protected List<int> IntList = new List<int>
         {
-                1,
-                5,
-                2,
-                4,
-                6,
-                8,
-                4,
-                5,
-                7,
-                9,
-                11
+            1,
+            2,
+            4,
+            6
         };
 
         protected Dictionary<int, string> TestDictionary = new Dictionary<int, string>
