@@ -6,7 +6,7 @@ class Pesel {
 	private $tabTemp = array(190,190,200,200,210,210,220,220,180,180);
 	private $tabCorrect = array(1,3,7,9,1,3,7,9,1,3);
 	private $tabDay = array(31,28,31,30,31,30,31,31,30,31,30,31);
-	private $tabMonath = array("styczen", "luty", "marzec", "kwiecien", "maj", "czerwiec", "lipiec", "sierpien", "wrzesien", "pazdziernik", "listopad", "grudzieñ");
+	private $tabMonath = array("styczen", "luty", "marzec", "kwiecien", "maj", "czerwiec", "lipiec", "sierpien", "wrzesien", "pazdziernik", "listopad", "grudzieï¿½");
 	public $leapYear = null;
 	public $year = null;
 	public $monath = null;
@@ -21,7 +21,7 @@ class Pesel {
 		if (strlen($this->nrPesel)== 11) {
 			return true;
 		}
-		echo "Nieprawid³owa d³ugoœæ numeru pesel.\n";
+		echo "Nieprawidlowa dlugosc numeru pesel.\n";
 		return false;
 	}
 	
@@ -83,7 +83,7 @@ class Pesel {
 		if ($this->setMonath() >0 & $this->setMonath()<=12)
 			return true;
 		else {
-			echo "B³¹d na pozycji miesi¹ca.\n";
+			echo "Blad na pozycji miesiaca.\n";
 			return false;			
 		}
 
@@ -111,7 +111,7 @@ class Pesel {
 			if ($sum == $this->nrPeselDigit[10])
 				return true;
 			else {
-				echo "Nieprawid³owy numer pesel.\n\n";
+				echo "Nieprawidlowy numer pesel.\n\n";
 				return false;
 			} 				 						
 		}
@@ -120,7 +120,7 @@ class Pesel {
 	public function show() {
 		if ($this->setData())
 			return "Plec: ".$this->sex."\n"."Data urodzenia: ".$this->year." ".$this->tabMonath[$this->monath-1]." ".$this->day;
-		else echo "B³êdne dane.\n";
+		else echo "Bledne dane.\n";
 	}
 }
 
