@@ -1,15 +1,4 @@
-﻿using System.Collections.Generic;
-using Startup.TrainingOneHomeworks.AndzejC.Banki.Abstrakty;
-
-namespace Startup.TrainingOneHomeworks.AndzejC.Banki
-{
-    public class BankIdList : GenFactory<string>
-    {
-        public BankIdList()
-        {
-            ItemList = new Dictionary<string, string>
-            {
-                {"1010", "Narodowy Bank Polski"},
+﻿ {"1010", "Narodowy Bank Polski"},
                 {"1020", "PKO BP"},
                 {"1030", "Citybank Handlowy"},
                 {"1050", "ING"},
@@ -45,7 +34,3 @@ namespace Startup.TrainingOneHomeworks.AndzejC.Banki
                 {"2190", "DnB Nord"},
                 {"2480", "Gettin Noble Bank"},
                 {"2490", "Alior Bank"}
-            };
-        }
-    }
-}

@@ -2,14 +2,18 @@
 
 namespace Startup.TrainingOneHomeworks.AndzejC.Banki.Banks
 {
-    public class Pkobp : SendTransaction
+    public class Pkobp : Bank,IBankTransfer
     {
-        public override bool InCome(Transaction transaction)
+        public Pkobp() : base("PkoBP")
+        {
+        }
+
+        public bool InCome(Transaction transaction)
         {
             throw new System.NotImplementedException();
         }
 
-        public override bool OutCome(Transaction transaction)
+        public bool OutCome(Transaction transaction)
         {
             throw new System.NotImplementedException();
         }
