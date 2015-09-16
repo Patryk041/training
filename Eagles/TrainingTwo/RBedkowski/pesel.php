@@ -21,7 +21,7 @@ class Pesel {
 		if (strlen($this->nrPesel)== 11) {
 			return true;
 		}
-		echo "Nieprawidlowa dlugosc numeru pesel.\n";
+		echo "Nieprawidlowa dlugosc numeru pesel .\n";
 		return false;
 	}
 	
