@@ -2,14 +2,19 @@
 
 namespace Startup.TrainingOneHomeworks.AndzejC.Banki.Banks
 {
-    public class NarodowyBankPolski : SendTransaction
+    public class NarodowyBankPolski : Bank,IBankTransfer
     {
-        public override bool InCome(Transaction transaction)
+
+        public NarodowyBankPolski() : base("Narodowy Bank Polski")
+        {
+        }
+
+        public bool InCome(Transaction transaction)
         {
             throw new System.NotImplementedException();
         }
 
-        public override bool OutCome(Transaction transaction)
+        public bool OutCome(Transaction transaction)
         {
             throw new System.NotImplementedException();
         }
