@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Anathema.Generics.Chor;
+using Anathema.Patryk.TrainingOne.Cars.Abstract;
 using Anathema.Patryk.TrainingTwo.Banks.Abstract;
 using Anathema.Patryk.TrainingTwo.Banks.BankTransferHandlers;
 using Anathema.Patryk.TrainingTwo.Banks.BankTransferHandlers.Abstract;
@@ -10,7 +12,6 @@ namespace Anathema.Patryk.TrainingTwo.Banks
     public class PerfromBankTransfers
     {
 
-        //interfejs który wymusza na klasie dostarczenie metody, z której pobierzemy listę przelewów
         private IBanktransferLogic _banktransferLogic;
 
         private AbstractChainOfResponsibility<BankTransferHandler, BankTransfer> chainOfResponsibility;
@@ -21,24 +22,25 @@ namespace Anathema.Patryk.TrainingTwo.Banks
             chainOfResponsibility = new ChorBankTransferHandler();
         }
 
-
-        //na wejsciu dostajemy plik, który może mieć rózne rozszerzenia, np : xmla txt pdf json
-        //musimy na podstawie danych w tym pliku utowrzeć listę przelewów ( klasa BankTransfer)
-        //Następnie przelewy przetwarzamy w chain of responsibility
+        public PerfromBankTransfers(IBanktransferLogic banktransfer)
+        {
+            _banktransferLogic = banktransfer;
+            chainOfResponsibility = new ChorBankTransferHandler();
+        }
 
         public void PerformTransfers(string path)
         {
+            if (path == null) return;
+
             List<BankTransfer> bankTransfers = _banktransferLogic.GetAllBanktransfers(path);
 
-
-            //przetwarzanie przelewów w chain of responsibility
-            foreach (var transfer in bankTransfers)
+           /* foreach (var transfer in bankTransfers)
             {
                 chainOfResponsibility.Handle(transfer);
-            }
+            }*/
 
-            //altenratywna metoda przetwarzania przelewow w LINQ
             bankTransfers.ForEach(chainOfResponsibility.Handle);
+
         }
 
     }

@@ -18,9 +18,15 @@ namespace UnitTests.Patryk.TrainingTwo
                     { s => s.EndsWith(".xml") , () => new XmlBankTransferParser() }
                 };
 
+
+
+
+
         [TestMethod]
         public void FetchValueFromDictWhenBadFileExtensionTest()
         {
+
+           
 
             Assert.IsNotNull(GetDocumentParser("plik.txt"));
             Assert.IsNotNull(GetDocumentParser("plik.xml"));

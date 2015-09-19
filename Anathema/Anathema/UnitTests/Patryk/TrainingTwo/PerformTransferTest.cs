@@ -13,7 +13,7 @@ namespace UnitTests.Patryk.TrainingTwo
         {
             string path = @"..//..//Patryk//TrainingTwo//Files//BankTransfersToDo.txt";
 
-            PerfromBankTransfers perfromBankTransfers = new PerfromBankTransfers();
+            PerfromBankTransfers perfromBankTransfers = new PerfromBankTransfers(new BanktransferLogic());
 
             perfromBankTransfers.PerformTransfers(path);
 

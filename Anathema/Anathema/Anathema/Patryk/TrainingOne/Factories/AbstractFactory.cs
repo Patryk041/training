@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Anathema.Generics;
 
 namespace Anathema.Patryk.TrainingOne.Factories
 {
@@ -9,7 +10,7 @@ namespace Anathema.Patryk.TrainingOne.Factories
 
         public TValue GetElement(TKey key)
         {
-            return Dictonary.ContainsKey(key) ? Dictonary[key]() : default(TValue);
+           return Dictonary.ContainsKey(key) ? Dictonary[key]() : default(TValue);
         }
     }
 }

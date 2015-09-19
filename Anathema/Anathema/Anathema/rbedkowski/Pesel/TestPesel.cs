@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Anathema.rbedkowski.Pesel;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UnitTests.rbedkowski
+namespace Anathema.rbedkowski.Pesel
 {
    
     public class TestPesel

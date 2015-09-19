@@ -3,19 +3,16 @@ using Anathema.Patryk.TrainingTwo.Banks.Models;
 
 namespace Anathema.Patryk.TrainingTwo.Banks.BankTransferHandlers
 {
-
-    public class BzwbkTransferHandler : BankTransferHandler
+    public class PekaoBankTransferHandler : BankTransferHandler
     {
-
-        //interfejs  
-        public BzwbkTransferHandler()
+        public PekaoBankTransferHandler()
         {
-            BankName = "Bzwbk";
+            BankName = "Pekao";
         }
- 
+
         protected override void SendTransfer(BankTransfer entity)
         {
-            entity.TransferSuccessful = true;
+            
         }
     }
 }

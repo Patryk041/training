@@ -2,13 +2,10 @@
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Pesel.Pesel
+namespace Anathema.rbedkowski.Pesel
 {
-    class PeselValidator
+    public class PeselValidator
     {
         private string NumerPesel { set; get; }
         private string Sex;
@@ -24,7 +21,7 @@ namespace Pesel.Pesel
 
         List<string> listPesel = new List<string>();
 
-        private string SetPesel (string _pesel)
+        public string SetPesel (string _pesel)
         {
             Contract.Requires(!string.IsNullOrWhiteSpace(_pesel), "Nie wprowadzono numeru pesel.");
             Contract.Requires(!(_pesel.Length < 11), "Numer pesel powinien zawierać 11 cyfr.");
