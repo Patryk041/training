@@ -101,8 +101,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="adhed\CityManagerTest.cs" />
-    <Compile Include="adhed\CityListTest.cs" />
+    <Compile Include="adhed\CityTrainingOne\CityManagerTest.cs" />
+    <Compile Include="adhed\CityTrainingOne\CityListTest.cs" />
+    <Compile Include="adhed\CityTrainingOne\TxtCitiesParserTest.cs" />
+    <Compile Include="adhed\CityTrainingTwo\CityListManagerTest.cs" />
     <Compile Include="Bolectest\UnitTest1.cs" />
     <Compile Include="Bolectest\UnitTest2.cs" />
     <Compile Include="lDoran\Collections\UnitTestDynamicCollection.cs" />
@@ -123,6 +125,8 @@
     <Compile Include="Terry\ExamplesTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adhed\CityTrainingOne\Files\cities.txt" />
+    <Content Include="adhed\CityTrainingTwo\Files\cities.txt" />
     <Content Include="Patryk\TrainingTwo\Files\BankTransfersToDo.txt" />
     <Content Include="Patryk\TrainingTwo\Files\SomeText.txt" />
     <Content Include="Patryk\TrainingTwo\Files\TextFile1.txt" />

@@ -85,10 +85,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="adhed\CityTraining\City.cs" />
-    <Compile Include="adhed\CityTraining\CityList.cs" />
-    <Compile Include="adhed\CityTraining\CityManager.cs" />
-    <Compile Include="adhed\Generics\GenericList.cs" />
+    <Compile Include="adhed\CityTrainingOne\City.cs" />
+    <Compile Include="adhed\CityTrainingOne\CityList.cs" />
+    <Compile Include="adhed\CityTrainingOne\CityManager.cs" />
+    <Compile Include="adhed\CityTrainingOne\Parsers\TxtCitiesParser.cs" />
+    <Compile Include="adhed\CityTrainingOne\Generics\GenericList.cs" />
+    <Compile Include="adhed\CityTrainingTwo\Models\City.cs" />
+    <Compile Include="adhed\CityTrainingTwo\CityListManager.cs" />
+    <Compile Include="adhed\CityTrainingTwo\Parsers\TxtFileCitiesParser.cs" />
     <Compile Include="AndrzeC\Hello.cs" />
     <Compile Include="Bolec\AddElementClass.cs" />
     <Compile Include="Bolec\MyGRList.cs" />
@@ -230,6 +234,8 @@
     <Folder Include="GhostRider\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adhed\CityTrainingOne\Parsers\cities.txt" />
+    <Content Include="adhed\CityTrainingTwo\Files\cities.txt" />
     <Content Include="rbedkowski\Pesel\pesel.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

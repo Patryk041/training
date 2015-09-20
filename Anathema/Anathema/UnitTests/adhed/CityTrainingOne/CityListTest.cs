@@ -44,7 +44,7 @@ namespace UnitTests.adhed
             City city = new City("Karpacz");
             cityList.AddElement(city);
 
-            Assert.IsTrue(cityList.CityExistsInList("Karpacz"));
+            Assert.IsTrue(cityList.CheckCityExistsInList("Karpacz"));
         }
 
         [TestMethod]
@@ -54,7 +54,7 @@ namespace UnitTests.adhed
             City city = new City("Przesieka");
             cityList.AddElement(city);
 
-            Assert.IsFalse(cityList.CityExistsInList("Karpacz"));
+            Assert.IsFalse(cityList.CheckCityExistsInList("Karpacz"));
         }
     }
 }

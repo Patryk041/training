@@ -6,15 +6,21 @@ namespace Anathema.adhed.CityTraining
 {
     public class CityList : GenericList<City>
     {
+
+        /* BULLSHIT!
+         * BULLSHIT!
+         * BULLSHIT!
+         */
+
         public CityList()
         {
-            _list = new List<City>();
+            List = new List<City>();
         }
 
-        public bool CityExistsInList(string cityName)
+        public bool CheckCityExistsInList(string cityName)
         {
             //LINQ: check that any element with the same city name exists in the list
-            return _list.Any(city => city.CityName == cityName);
+            return List.Any(city => city.CityName == cityName);
         }
        
     }
