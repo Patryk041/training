@@ -8,6 +8,7 @@ namespace UnitTests.adhed
     [TestClass]
     public class CityListTest
     {
+
         [TestMethod]
         public void ShouldReturnEmptyList()
         {
@@ -34,6 +35,26 @@ namespace UnitTests.adhed
 
             Assert.AreEqual(list.Count, 3);
 
+        }
+
+        [TestMethod]
+        public void ShouldReturnTrueWhenLookingForCity()
+        {
+            CityList cityList = new CityList();
+            City city = new City("Karpacz");
+            cityList.AddElement(city);
+
+            Assert.IsTrue(cityList.CityExistsInList("Karpacz"));
+        }
+
+        [TestMethod]
+        public void ShouldReturnFalseWhenLookingForCity()
+        {
+            CityList cityList = new CityList();
+            City city = new City("Przesieka");
+            cityList.AddElement(city);
+
+            Assert.IsFalse(cityList.CityExistsInList("Karpacz"));
         }
     }
 }

@@ -8,11 +8,13 @@ namespace Anathema.adhed.CityTraining
 {
     public class City
     {
-        private string _cityName;
+        public string CityName { get; set; }
+        public int SurfaceArea { get; set; }
+        public int Population { get; set; }
 
         public City(string name)
         {
-            _cityName = name;
+            CityName = name;
         }
     }
 }
