@@ -102,6 +102,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="adhed\CityManagerTest.cs" />
+    <Compile Include="adhed\CityListTest.cs" />
     <Compile Include="Bolectest\UnitTest1.cs" />
     <Compile Include="Bolectest\UnitTest2.cs" />
     <Compile Include="lDoran\Collections\UnitTestDynamicCollection.cs" />

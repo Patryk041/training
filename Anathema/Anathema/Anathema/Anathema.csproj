@@ -86,7 +86,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="adhed\CityTraining\City.cs" />
+    <Compile Include="adhed\CityTraining\CityList.cs" />
     <Compile Include="adhed\CityTraining\CityManager.cs" />
+    <Compile Include="adhed\Generics\GenericList.cs" />
     <Compile Include="AndrzeC\Hello.cs" />
     <Compile Include="Bolec\AddElementClass.cs" />
     <Compile Include="Bolec\MyGRList.cs" />
