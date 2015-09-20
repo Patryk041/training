@@ -90,6 +90,7 @@
     <Compile Include="adhed\CityTrainingOne\CityManager.cs" />
     <Compile Include="adhed\CityTrainingOne\Parsers\TxtCitiesParser.cs" />
     <Compile Include="adhed\CityTrainingOne\Generics\GenericList.cs" />
+    <Compile Include="adhed\CityTrainingTwo\CitiesComparer.cs" />
     <Compile Include="adhed\CityTrainingTwo\Models\City.cs" />
     <Compile Include="adhed\CityTrainingTwo\CityListManager.cs" />
     <Compile Include="adhed\CityTrainingTwo\Parsers\TxtFileCitiesParser.cs" />

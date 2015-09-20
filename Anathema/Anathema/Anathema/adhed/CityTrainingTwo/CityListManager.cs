@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
+using System.Xml.Linq;
 using Anathema.adhed.CityTraining.Parsers;
 using Anathema.adhed.CityTrainingTwo.Parsers;
 
@@ -40,9 +42,34 @@ namespace Anathema.adhed.CityTrainingTwo
 
         public void LoadCities(string path)
         {
-            TxtFileCitiesParser parser = new TxtFileCitiesParser();
+            var parser = new TxtFileCitiesParser();
             List<City> cities = parser.GetAllResults(path);   
             JoinList(cities);
+        }
+
+        public List<City> GetCitiesStartsWithLetter(string letter)
+        {
+            return _cityList.Where(item => item.CityName.StartsWith(letter)).ToList();
+        }
+
+        public void RemoveCity(string cityName)
+        {
+            _cityList.RemoveAll(city => city.CityName == cityName);
+        }
+
+        public int CountCitiesStartsWithLetter(string letter)
+        {
+            return _cityList.Count(city => city.CityName.StartsWith(letter));
+        }
+
+        public int CountCities()
+        {
+            return _cityList.Count();
+        }
+
+        public void RemoveDuplicates()
+        {
+           _cityList = _cityList.Distinct(new CitiesComparer()).ToList();
         }
     }
 }

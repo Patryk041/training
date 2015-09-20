@@ -89,7 +89,101 @@ namespace UnitTests.adhed.CityTrainingTwo
 
             List<City> list = listManager.GetCitiesList();
 
-            Assert.IsNotNull(list);
+            bool result = listManager.CheckCityExists("Pieszyce");
+
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void ShouldGetCitiesStartsWithSpecifiedLetter()
+        {
+            CityListManager listManager = new CityListManager();
+
+            string path = @"..//..//adhed//CityTrainingTwo//Files//cities.txt";
+            listManager.LoadCities(path);
+           
+            List<City> listWithZ = listManager.GetCitiesStartsWithLetter("Z");
+
+            Assert.AreEqual(listWithZ.Count, 2);
+        }
+
+        [TestMethod]
+        public void ShouldRemoveCityFromList()
+        {
+            CityListManager listManager = new CityListManager();
+
+            string path = @"..//..//adhed//CityTrainingTwo//Files//cities.txt";
+            listManager.LoadCities(path);
+
+            var result1 = listManager.CheckCityExists("Karpacz");
+
+            listManager.RemoveCity("Karpacz");
+
+            var result2 = listManager.CheckCityExists("Karpacz");
+
+            Assert.IsFalse(result2);
+        }
+
+        [TestMethod]
+        public void ShouldCountCitiesStartsWithLetter()
+        {
+            CityListManager listManager = new CityListManager();
+
+            var city1 = new City("Karpacz");
+            var city2 = new City("Wieleń");
+            var city3 = new City("Warszawa");
+            
+            listManager.AddCity(city1);
+            listManager.AddCity(city2);
+            listManager.AddCity(city3);
+
+            var result = listManager.CountCitiesStartsWithLetter("W");
+
+            Assert.AreEqual(result, 2);
+        }
+
+        [TestMethod]
+        public void ShouldCountCities()
+        {
+            CityListManager listManager = new CityListManager();
+
+            var city1 = new City("Karpacz");
+            var city2 = new City("Wieleń");
+
+            listManager.AddCity(city1);
+            listManager.AddCity(city2);
+
+            var result = listManager.CountCities();
+
+            Assert.AreEqual(result, 2);
+        }
+
+        [TestMethod]
+        public void ShouldRemoveDuplicates()
+        {
+            CityListManager listManager = new CityListManager();
+
+            var city1 = new City("Karpacz");
+            var city2 = new City("Wieleń");
+            var city3 = new City("Warszawa");
+            var city4 = new City("Karpacz");
+            var city5 = new City("Wieleń");
+
+            listManager.AddCity(city1);
+            listManager.AddCity(city2);
+            listManager.AddCity(city3);
+            listManager.AddCity(city4);
+            listManager.AddCity(city5);
+
+            var result1 = listManager.CountCities();
+
+            listManager.RemoveDuplicates();
+
+            var result2 = listManager.CountCities();
+
+            Assert.AreEqual(result2, 3);
+
+
         }
 
 

@@ -6,7 +6,8 @@ namespace Anathema.adhed.CityTrainingTwo.Parsers
     {
         protected override City GetResult(string entry)
         {
-            return new City(entry);
+            var list = entry.Split('\r');
+            return new City(list[0]);
         }
     }
 }
