@@ -131,6 +131,12 @@
     <Compile Include="Lausion\LausionClass.cs" />
     <Compile Include="Doktor\MyClassD.cs" />
     <Compile Include="Iwona\TestClass.cs" />
+    <Compile Include="Lurppis\ChainOfResponsibility\Abstract\Pracownik.cs" />
+    <Compile Include="Lurppis\ChainOfResponsibility\Pracownicy\Kierownik.cs" />
+    <Compile Include="Lurppis\ChainOfResponsibility\Pracownicy\MechanikAudi.cs" />
+    <Compile Include="Lurppis\ChainOfResponsibility\Pracownicy\MechanikBmw.cs" />
+    <Compile Include="Lurppis\ChainOfResponsibility\Test.cs" />
+    <Compile Include="Lurppis\ChainOfResponsibility\Zadania.cs" />
     <Compile Include="Lurppis\Fasada\Fasada.cs" />
     <Compile Include="Lurppis\Fasada\ObliczPierwiastkiWielomianu.cs" />
     <Compile Include="Lurppis\MyClass.cs" />
@@ -236,7 +242,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GhostRider\" />
-    <Folder Include="Lurppis\Chain of Responsibility\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="adhed\CityTrainingOne\Parsers\cities.txt" />
