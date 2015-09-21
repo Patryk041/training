@@ -143,7 +143,6 @@
     <Compile Include="Lurppis\ChainOfResponsibility\Pracownicy\Kierownik.cs" />
     <Compile Include="Lurppis\ChainOfResponsibility\Pracownicy\MechanikAudi.cs" />
     <Compile Include="Lurppis\ChainOfResponsibility\Pracownicy\MechanikBmw.cs" />
-    <Compile Include="Lurppis\ChainOfResponsibility\Test.cs" />
     <Compile Include="Lurppis\ChainOfResponsibility\Zadania.cs" />
     <Compile Include="Lurppis\Fasada\Fasada.cs" />
     <Compile Include="Lurppis\Fasada\ObliczPierwiastkiWielomianu.cs" />

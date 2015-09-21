@@ -145,13 +145,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-<<<<<<< HEAD
+
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-=======
+
   <ItemGroup />
->>>>>>> a15506ae9d60045fc85df62c3cfc50418dc6e11e
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
