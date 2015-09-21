@@ -4,72 +4,40 @@ using System.Diagnostics;
 using System.Linq;
 using System.Xml.Linq;
 using Anathema.adhed.CityTraining.Parsers;
+using Anathema.adhed.CityTrainingTwo.Generics;
 using Anathema.adhed.CityTrainingTwo.Parsers;
 
 namespace Anathema.adhed.CityTrainingTwo
 {
-    public class CityListManager
+    public class CityListManager : GenericListManager<City>
     {
-        private List<City> _cityList;
 
-        public CityListManager()
+        public override bool CheckElementExists(string value)
         {
-            _cityList = new List<City>();
+             return GList.Any(item => item.CityName == value);
         }
 
-        public List<City> GetCitiesList()
-        {
-            return _cityList;
-        }
-
-        public void AddCity(City city)
-        {
-            _cityList.Add(city);
-        }
-
-        public bool CheckCityExists(string cityName)
-        {
-            return _cityList.Any(item => item.CityName == cityName);
-        }
-
-        public void JoinList(List<City> listToJoin)
-        {
-            foreach (var city in listToJoin)
-            {
-                _cityList.Add(city);
-            }
-        }
-
-        public void LoadCities(string path)
+        public override void LoadElements(string path)
         {
             var parser = new TxtFileCitiesParser();
-            List<City> cities = parser.GetAllResults(path);   
+            List<City> cities = parser.GetAllResults(path);
             JoinList(cities);
         }
 
         public List<City> GetCitiesStartsWithLetter(string letter)
         {
-            return _cityList.Where(item => item.CityName.StartsWith(letter)).ToList();
+            return GList.Where(item => item.CityName.StartsWith(letter)).ToList();
         }
 
-        public void RemoveCity(string cityName)
+        public override void RemoveElement(string cityName)
         {
-            _cityList.RemoveAll(city => city.CityName == cityName);
+            GList.RemoveAll(city => city.CityName == cityName);
         }
 
-        public int CountCitiesStartsWithLetter(string letter)
+        public override int CountElementsStartWithLetter(string letter)
         {
-            return _cityList.Count(city => city.CityName.StartsWith(letter));
+            return GList.Count(city => city.CityName.StartsWith(letter));
         }
 
-        public int CountCities()
-        {
-            return _cityList.Count();
-        }
-
-        public void RemoveDuplicates()
-        {
-           _cityList = _cityList.Distinct(new CitiesComparer()).ToList();
-        }
     }
 }

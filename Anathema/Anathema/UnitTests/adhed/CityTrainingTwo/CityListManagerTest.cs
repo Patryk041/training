@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Anathema.adhed.CityTrainingTwo;
+using Anathema.adhed.CityTrainingTwo.Generics;
+using Anathema.adhed.Generics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTests.adhed.CityTrainingTwo
@@ -11,8 +13,8 @@ namespace UnitTests.adhed.CityTrainingTwo
         [TestMethod]
         public void ShouldGetEmptyList()
         {
-            CityListManager listManager = new CityListManager();
-            List<City> list = listManager.GetCitiesList();
+            GenericListManager<City> listManager = new CityListManager();
+            List<City> list = listManager.GetList();
 
             Assert.AreEqual(list.Count, 0);
         }
@@ -20,15 +22,15 @@ namespace UnitTests.adhed.CityTrainingTwo
         [TestMethod]
         public void ShouldGetListWithTwoRecords()
         {
-            CityListManager listManager = new CityListManager();
+            GenericListManager<City> listManager = new CityListManager();
            
             City city1 = new City("Karpacz");
             City city2 = new City("Jelenia Góra");
 
-            listManager.AddCity(city1);
-            listManager.AddCity(city2);
+            listManager.AddElement(city1);
+            listManager.AddElement(city2);
 
-            List<City> list = listManager.GetCitiesList();
+            List<City> list = listManager.GetList();
 
             Assert.AreEqual(list.Count, 2);
         }
@@ -36,8 +38,8 @@ namespace UnitTests.adhed.CityTrainingTwo
         [TestMethod]
         public void ShouldCityNotExists()
         {
-            CityListManager listManager = new CityListManager();
-            bool result = listManager.CheckCityExists("Karpacz");
+            GenericListManager<City> listManager = new CityListManager();
+            bool result = listManager.CheckElementExists("Karpacz");
 
             Assert.IsFalse(result);
 
@@ -46,12 +48,12 @@ namespace UnitTests.adhed.CityTrainingTwo
         [TestMethod]
         public void ShouldCityExists()
         {
-            CityListManager listManager = new CityListManager();
+            GenericListManager<City> listManager = new CityListManager();
             City city = new City("Karpacz");
 
-            listManager.AddCity(city);
+            listManager.AddElement(city);
 
-            bool result = listManager.CheckCityExists("Karpacz");
+            bool result = listManager.CheckElementExists("Karpacz");
 
             Assert.IsTrue(result);
         }
@@ -59,13 +61,13 @@ namespace UnitTests.adhed.CityTrainingTwo
         [TestMethod]
         public void ShouldJoinTheList()
         {
-            CityListManager listManager = new CityListManager();
+            GenericListManager<City> listManager = new CityListManager();
 
             City city1 = new City("Karpacz");
             City city2 = new City("Waszyngton");
             City city3 = new City("Świebodzin");
 
-            listManager.AddCity(city1);
+            listManager.AddElement(city1);
 
             List<City> anotherList = new List<City>();
             anotherList.Add(city2);
@@ -73,8 +75,8 @@ namespace UnitTests.adhed.CityTrainingTwo
 
             listManager.JoinList(anotherList);
 
-            //check that city from another list exist in main list after the join process
-            bool result = listManager.CheckCityExists("Waszyngton");
+            //check that city from another list exists in main list after the join process
+            bool result = listManager.CheckElementExists("Waszyngton");
 
             Assert.IsTrue(result);
         }
@@ -82,14 +84,14 @@ namespace UnitTests.adhed.CityTrainingTwo
         [TestMethod]
         public void ShouldLoadTheCitiesFromTxtFile()
         {
-            CityListManager listManager = new CityListManager();
+            GenericListManager<City> listManager = new CityListManager();
 
             string path = @"..//..//adhed//CityTrainingTwo//Files//cities.txt";
-            listManager.LoadCities(path);
+            listManager.LoadElements(path);
 
-            List<City> list = listManager.GetCitiesList();
+            List<City> list = listManager.GetList();
 
-            bool result = listManager.CheckCityExists("Pieszyce");
+            bool result = listManager.CheckElementExists("Pieszyce");
 
             Assert.IsTrue(result);
         }
@@ -100,7 +102,7 @@ namespace UnitTests.adhed.CityTrainingTwo
             CityListManager listManager = new CityListManager();
 
             string path = @"..//..//adhed//CityTrainingTwo//Files//cities.txt";
-            listManager.LoadCities(path);
+            listManager.LoadElements(path);
            
             List<City> listWithZ = listManager.GetCitiesStartsWithLetter("Z");
 
@@ -113,13 +115,13 @@ namespace UnitTests.adhed.CityTrainingTwo
             CityListManager listManager = new CityListManager();
 
             string path = @"..//..//adhed//CityTrainingTwo//Files//cities.txt";
-            listManager.LoadCities(path);
+            listManager.LoadElements(path);
 
-            var result1 = listManager.CheckCityExists("Karpacz");
+            var result1 = listManager.CheckElementExists("Karpacz");
 
-            listManager.RemoveCity("Karpacz");
+            listManager.RemoveElement("Karpacz");
 
-            var result2 = listManager.CheckCityExists("Karpacz");
+            var result2 = listManager.CheckElementExists("Karpacz");
 
             Assert.IsFalse(result2);
         }
@@ -132,12 +134,12 @@ namespace UnitTests.adhed.CityTrainingTwo
             var city1 = new City("Karpacz");
             var city2 = new City("Wieleń");
             var city3 = new City("Warszawa");
-            
-            listManager.AddCity(city1);
-            listManager.AddCity(city2);
-            listManager.AddCity(city3);
 
-            var result = listManager.CountCitiesStartsWithLetter("W");
+            listManager.AddElement(city1);
+            listManager.AddElement(city2);
+            listManager.AddElement(city3);
+
+            var result = listManager.CountElementsStartWithLetter("W");
 
             Assert.AreEqual(result, 2);
         }
@@ -150,10 +152,10 @@ namespace UnitTests.adhed.CityTrainingTwo
             var city1 = new City("Karpacz");
             var city2 = new City("Wieleń");
 
-            listManager.AddCity(city1);
-            listManager.AddCity(city2);
+            listManager.AddElement(city1);
+            listManager.AddElement(city2);
 
-            var result = listManager.CountCities();
+            var result = listManager.CountElements();
 
             Assert.AreEqual(result, 2);
         }
@@ -169,17 +171,17 @@ namespace UnitTests.adhed.CityTrainingTwo
             var city4 = new City("Karpacz");
             var city5 = new City("Wieleń");
 
-            listManager.AddCity(city1);
-            listManager.AddCity(city2);
-            listManager.AddCity(city3);
-            listManager.AddCity(city4);
-            listManager.AddCity(city5);
+            listManager.AddElement(city1);
+            listManager.AddElement(city2);
+            listManager.AddElement(city3);
+            listManager.AddElement(city4);
+            listManager.AddElement(city5);
 
-            var result1 = listManager.CountCities();
+            var result1 = listManager.CountElements();
 
-            listManager.RemoveDuplicates();
+            listManager.RemoveDuplicates(new CitiesComparer());
 
-            var result2 = listManager.CountCities();
+            var result2 = listManager.CountElements();
 
             Assert.AreEqual(result2, 3);
 
