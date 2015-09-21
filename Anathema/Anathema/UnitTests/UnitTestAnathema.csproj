@@ -106,6 +106,7 @@
     <Compile Include="Bolectest\UnitTest1.cs" />
     <Compile Include="Bolectest\UnitTest2.cs" />
     <Compile Include="lDoran\Collections\UnitTestDynamicCollection.cs" />
+    <Compile Include="Lurppis\Fasada\UnitTest1.cs" />
     <Compile Include="marcin022\UnitTest1.cs" />
     <Compile Include="Patryk\TrainingOne\DelegateTest.cs" />
     <Compile Include="Patryk\TrainingOne\FactoriesTest.cs" />
@@ -133,6 +134,9 @@
   <ItemGroup>
     <None Include="CodeAnalysis.ruleset" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -122,6 +122,8 @@
     <Compile Include="Lausion\LausionClass.cs" />
     <Compile Include="Doktor\MyClassD.cs" />
     <Compile Include="Iwona\TestClass.cs" />
+    <Compile Include="Lurppis\Fasada\Fasada.cs" />
+    <Compile Include="Lurppis\Fasada\ObliczPierwiastkiWielomianu.cs" />
     <Compile Include="Lurppis\MyClass.cs" />
     <Compile Include="damian7m7\damian7m7.cs" />
     <Compile Include="lucass3231\HelloEverybodyByLucass3231.cs" />
@@ -222,6 +224,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GhostRider\" />
+    <Folder Include="Lurppis\Chain of Responsibility\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="rbedkowski\Pesel\pesel.txt">
