@@ -6,6 +6,8 @@ namespace Anathema.Patryk.TrainingTwo.Banks.BankTransferHandlers
 
     public class BzwbkTransferHandler : BankTransferHandler
     {
+
+        //interfejs  
         public BzwbkTransferHandler()
         {
             BankName = "Bzwbk";
@@ -13,7 +15,7 @@ namespace Anathema.Patryk.TrainingTwo.Banks.BankTransferHandlers
  
         protected override void SendTransfer(BankTransfer entity)
         {
-                
+            entity.TransferSuccessful = true;
         }
     }
 }

@@ -81,12 +81,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Contract.Annotations, Version=8.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Contract.Annotations.8.2.1.0\lib\net45\Contract.Annotations.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -103,6 +101,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="adhed\CityTrainingOne\CityManagerTest.cs" />
+    <Compile Include="adhed\CityTrainingOne\CityListTest.cs" />
+    <Compile Include="adhed\CityTrainingOne\TxtCitiesParserTest.cs" />
+    <Compile Include="adhed\CityTrainingTwo\CityListManagerTest.cs" />
     <Compile Include="Bolectest\UnitTest1.cs" />
     <Compile Include="Bolectest\UnitTest2.cs" />
     <Compile Include="lDoran\Collections\UnitTestDynamicCollection.cs" />
@@ -110,10 +112,13 @@
     <Compile Include="marcin022\UnitTest1.cs" />
     <Compile Include="Patryk\TrainingOne\DelegateTest.cs" />
     <Compile Include="Patryk\TrainingOne\FactoriesTest.cs" />
+    <Compile Include="Patryk\TrainingThree\Moq\MoqTests.cs" />
     <Compile Include="Patryk\TrainingTwo\DictionaryWithFuncAsKeyTest.cs" />
+    <Compile Include="Patryk\TrainingTwo\MockBankTransferLogic.cs" />
     <Compile Include="Patryk\TrainingTwo\TxtBankTransferParserTest.cs" />
     <Compile Include="Patryk\TrainingTwo\TxtFileOperationsTest.cs" />
     <Compile Include="Patryk\TrainingTwo\PerformTransferTest.cs" />
+    <Compile Include="Patryk\TrainingTwo\XmlTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="rbedkowski\TestPesel.cs" />
     <Compile Include="Terry\UnitTest1.cs" />
@@ -121,9 +126,14 @@
     <Compile Include="Terry\ExamplesTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adhed\CityTrainingOne\Files\cities.txt" />
+    <Content Include="adhed\CityTrainingTwo\Files\cities.txt" />
     <Content Include="Patryk\TrainingTwo\Files\BankTransfersToDo.txt" />
     <Content Include="Patryk\TrainingTwo\Files\SomeText.txt" />
     <Content Include="Patryk\TrainingTwo\Files\TextFile1.txt" />
+    <Content Include="Patryk\TrainingTwo\Files\TransfersToDo.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Anathema\Anathema.csproj">
@@ -132,12 +142,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CodeAnalysis.ruleset" />
     <None Include="packages.config" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+=======
+  <ItemGroup />
+>>>>>>> a15506ae9d60045fc85df62c3cfc50418dc6e11e
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

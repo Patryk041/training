@@ -35,10 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Contract.Annotations, Version=8.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Contract.Annotations.8.2.1.0\lib\net45\Contract.Annotations.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>

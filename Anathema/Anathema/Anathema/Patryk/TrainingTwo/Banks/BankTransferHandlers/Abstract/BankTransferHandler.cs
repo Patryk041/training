@@ -19,7 +19,6 @@ namespace Anathema.Patryk.TrainingTwo.Banks.BankTransferHandlers.Abstract
             return entity.DestinationBankName == BankName;
         }
 
-        //na zadanie domowe nalezy dostarczyc implementacje tej metody w wybranym przez siebie banku
         protected abstract void SendTransfer(BankTransfer entity);
     }
 

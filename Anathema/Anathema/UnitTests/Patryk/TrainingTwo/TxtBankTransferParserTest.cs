@@ -19,8 +19,6 @@ namespace UnitTests.Patryk.TrainingTwo
             TxtParser<BankTransfer> txtBankTransferParser = new TxtBankTransferParser();
 
             List<BankTransfer> list =  txtBankTransferParser.GetAllResults(path);
-        }
-
-         
+        }        
     }
 }
