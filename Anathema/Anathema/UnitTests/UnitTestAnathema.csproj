@@ -105,6 +105,7 @@
     <Compile Include="adhed\CityTrainingOne\CityListTest.cs" />
     <Compile Include="adhed\CityTrainingOne\TxtCitiesParserTest.cs" />
     <Compile Include="adhed\CityTrainingTwo\CityListManagerTest.cs" />
+    <Compile Include="adhed\SmartphoneFactory\FactoryTest.cs" />
     <Compile Include="Bolectest\UnitTest1.cs" />
     <Compile Include="Bolectest\UnitTest2.cs" />
     <Compile Include="lDoran\Collections\UnitTestDynamicCollection.cs" />

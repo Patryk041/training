@@ -15,7 +15,7 @@ namespace Anathema.adhed.CityTrainingTwo.Generics
 
         public void AddElement(T item)
         {
-            GList.Add(item);
+            if (item != null) { GList.Add(item); }    
         }
 
         public List<T> GetList()
@@ -27,7 +27,7 @@ namespace Anathema.adhed.CityTrainingTwo.Generics
         {
             foreach (var item in listToJoin)
             {
-               GList.Add(item);
+               AddElement(item);
             }
         }
 

@@ -1,4 +1,5 @@
-﻿using Anathema.Patryk.TrainingTwo.Banks.Parsers.Abstract;
+﻿using System;
+using Anathema.Patryk.TrainingTwo.Banks.Parsers.Abstract;
 
 namespace Anathema.adhed.CityTrainingTwo.Parsers
 {
@@ -6,8 +7,9 @@ namespace Anathema.adhed.CityTrainingTwo.Parsers
     {
         protected override City GetResult(string entry)
         {
-            var list = entry.Split('\r');
-            return new City(list[0]);
+            var list = entry.Split(Environment.NewLine.ToCharArray());
+
+            return list[0] == "" ? null : new City(list[0]);
         }
     }
 }

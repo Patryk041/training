@@ -95,6 +95,14 @@
     <Compile Include="adhed\CityTrainingTwo\Models\City.cs" />
     <Compile Include="adhed\CityTrainingTwo\CityListManager.cs" />
     <Compile Include="adhed\CityTrainingTwo\Parsers\TxtFileCitiesParser.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Abstract\ISmartphone.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Factories\AbstractFactory.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Factories\SmartphoneFactory.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Htc.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Iphone.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Samsung.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Abstract\Smartphone.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Xiaomi.cs" />
     <Compile Include="AndrzeC\Hello.cs" />
     <Compile Include="Bolec\AddElementClass.cs" />
     <Compile Include="Bolec\MyGRList.cs" />
