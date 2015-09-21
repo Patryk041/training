@@ -78,6 +78,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -143,7 +144,15 @@
     <Compile Include="Lurppis\ChainOfResponsibility\Pracownicy\Kierownik.cs" />
     <Compile Include="Lurppis\ChainOfResponsibility\Pracownicy\MechanikAudi.cs" />
     <Compile Include="Lurppis\ChainOfResponsibility\Pracownicy\MechanikBmw.cs" />
+    <Compile Include="Lurppis\ChainOfResponsibility\BrzydkiTest.cs" />
     <Compile Include="Lurppis\ChainOfResponsibility\Zadania.cs" />
+    <Compile Include="Lurppis\FactoryMethos\Abstract\AbstractFactory\AbstractAnimalFactory.cs" />
+    <Compile Include="Lurppis\FactoryMethos\Abstract\Animal.cs" />
+    <Compile Include="Lurppis\FactoryMethos\AnimalFactory.cs" />
+    <Compile Include="Lurppis\FactoryMethos\Color.cs" />
+    <Compile Include="Lurppis\FactoryMethos\Interface\IAnimal.cs" />
+    <Compile Include="Lurppis\FactoryMethos\Zwierzeta\Cat.cs" />
+    <Compile Include="Lurppis\FactoryMethos\Zwierzeta\Wolf.cs" />
     <Compile Include="Lurppis\Fasada\Fasada.cs" />
     <Compile Include="Lurppis\Fasada\ObliczPierwiastkiWielomianu.cs" />
     <Compile Include="Lurppis\MyClass.cs" />
