@@ -9,7 +9,7 @@ namespace Anathema.Patryk.TrainingOne.Factories
 
         public TValue GetElement(TKey key)
         {
-            return Dictonary.ContainsKey(key) ? Dictonary[key]() : default(TValue);
+           return Dictonary.ContainsKey(key) ? Dictonary[key]() : default(TValue);
         }
     }
 }

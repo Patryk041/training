@@ -53,10 +53,10 @@
     <Compile Include="ObjBasics\Knight.cs" />
     <Compile Include="ObjBasics\Rubish.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Abstrakty\SendTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Abstrakty\Bank.cs" />
+    <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Abstrakty\Interface\IBankTransfer.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Abstrakty\GenFactory.cs" />
-    <Compile Include="TrainingOneHomeworks\AndzejC\Banki\BankIdList.cs" />
-    <Compile Include="TrainingOneHomeworks\AndzejC\Banki\BankList2.cs" />
+    <Compile Include="TrainingOneHomeworks\AndzejC\Banki\BankFactory.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Banks\Ing.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Banks\NarodowyBankPolski.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Banks\Pkobp.cs" />
@@ -243,12 +243,12 @@
     <Compile Include="TrainingOneHomeworks\wojteko22\AccountNumber.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
     <Folder Include="TrainingOneHomeworks\Puchacz\Banki\Interfaces\" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <None Include="Resources\NbpBankList.txt" />
+    <Content Include="TrainingOneHomeworks\AndzejC\Banki\Banks\TextFile1.txt" />
     <Content Include="TrainingOneHomeworks\Erloon\NbpList.txt" />
     <Content Include="TrainingOneHomeworks\GroupMati\Bank\GeneratorClass\BanksLists.txt" />
     <Content Include="TrainingOneHomeworks\GroupMati\Bank\GeneratorClass\Generator.txt" />

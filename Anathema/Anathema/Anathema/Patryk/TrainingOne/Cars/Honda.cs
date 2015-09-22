@@ -9,12 +9,12 @@ namespace Anathema.Patryk.TrainingOne.Cars
             Description = "Honda";
         }
 
-        public override bool CanDrive()
+        protected override bool CanDrive()
         {
             return true;
         }
 
-        public override void Drive()
+        protected override void Drive()
         {
             
         }
