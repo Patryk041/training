@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Anathema.Lurppis.Fasada
+namespace Anathema.Lurppis.Wzorce.Fasada
 {
     public class ObliczPierwiastkiWielomianu
     {

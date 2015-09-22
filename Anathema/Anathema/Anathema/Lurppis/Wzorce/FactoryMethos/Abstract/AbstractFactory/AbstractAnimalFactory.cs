@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Anathema.Lurppis.FactoryMethos.Abstract.AbstractFactory
+namespace Anathema.Lurppis.Wzorce.FactoryMethos.Abstract.AbstractFactory
 {
     public abstract class AbstractAnimkalFactory<TKey, TValue>
     {

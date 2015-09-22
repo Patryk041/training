@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Anathema.Lurppis.ChainOfResponsibility.Abstract;
-using Anathema.Lurppis.ChainOfResponsibility.Pracownicy;
+using Anathema.Lurppis.Wzorce.ChainOfResponsibility.Abstract;
+using Anathema.Lurppis.Wzorce.ChainOfResponsibility.Pracownicy;
 
-namespace Anathema.Lurppis.ChainOfResponsibility
+namespace Anathema.Lurppis.Wzorce.ChainOfResponsibility
 {
     public class BrzydkiTest
     {

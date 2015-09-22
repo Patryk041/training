@@ -1,5 +1,4 @@
-﻿using Anathema.Lurppis.Fasada;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTests.Lurppis.Fasada
 {

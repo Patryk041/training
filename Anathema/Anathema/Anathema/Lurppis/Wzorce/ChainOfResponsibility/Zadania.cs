@@ -1,4 +1,4 @@
-﻿namespace Anathema.Lurppis.ChainOfResponsibility
+﻿namespace Anathema.Lurppis.Wzorce.ChainOfResponsibility
 {
     public enum Zadania
     {

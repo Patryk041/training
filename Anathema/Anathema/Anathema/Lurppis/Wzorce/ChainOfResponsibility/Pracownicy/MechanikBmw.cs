@@ -1,7 +1,7 @@
 ﻿using System;
-using Anathema.Lurppis.ChainOfResponsibility.Abstract;
+using Anathema.Lurppis.Wzorce.ChainOfResponsibility.Abstract;
 
-namespace Anathema.Lurppis.ChainOfResponsibility.Pracownicy
+namespace Anathema.Lurppis.Wzorce.ChainOfResponsibility.Pracownicy
 {
     public class MechanikBmw : Pracownik
     {

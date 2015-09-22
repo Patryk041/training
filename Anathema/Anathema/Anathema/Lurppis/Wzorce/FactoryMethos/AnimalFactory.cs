@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using Anathema.Lurppis.FactoryMethos.Abstract.AbstractFactory;
-using Anathema.Lurppis.FactoryMethos.Interface;
-using Anathema.Lurppis.FactoryMethos.Zwierzeta;
+using Anathema.Lurppis.Wzorce.FactoryMethos.Abstract.AbstractFactory;
+using Anathema.Lurppis.Wzorce.FactoryMethos.Interface;
+using Anathema.Lurppis.Wzorce.FactoryMethos.Zwierzeta;
 
-namespace Anathema.Lurppis.FactoryMethos
+namespace Anathema.Lurppis.Wzorce.FactoryMethos
 {
     public class AnimalFactory : AbstractAnimkalFactory<string,IAnimal>
     {

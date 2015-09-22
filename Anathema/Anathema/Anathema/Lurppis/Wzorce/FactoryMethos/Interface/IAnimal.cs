@@ -1,4 +1,4 @@
-﻿namespace Anathema.Lurppis.FactoryMethos.Interface
+﻿namespace Anathema.Lurppis.Wzorce.FactoryMethos.Interface
 {
     public interface IAnimal
     {

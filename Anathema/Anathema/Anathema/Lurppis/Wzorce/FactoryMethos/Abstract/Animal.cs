@@ -1,6 +1,6 @@
-﻿using Anathema.Lurppis.FactoryMethos.Interface;
+﻿using Anathema.Lurppis.Wzorce.FactoryMethos.Interface;
 
-namespace Anathema.Lurppis.FactoryMethos.Abstract
+namespace Anathema.Lurppis.Wzorce.FactoryMethos.Abstract
 {
     public abstract class Animal : IAnimal
     {

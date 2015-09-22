@@ -1,4 +1,4 @@
-﻿namespace Anathema.Lurppis.FactoryMethos
+﻿namespace Anathema.Lurppis.Wzorce.FactoryMethos
 {
     public enum Color
     {

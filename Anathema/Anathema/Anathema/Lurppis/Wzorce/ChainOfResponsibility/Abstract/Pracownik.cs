@@ -1,4 +1,4 @@
-﻿namespace Anathema.Lurppis.ChainOfResponsibility.Abstract
+﻿namespace Anathema.Lurppis.Wzorce.ChainOfResponsibility.Abstract
 {
     public abstract class Pracownik
     {

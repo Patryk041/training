@@ -1,6 +1,6 @@
-﻿using Anathema.Lurppis.FactoryMethos.Abstract;
+﻿using Anathema.Lurppis.Wzorce.FactoryMethos.Abstract;
 
-namespace Anathema.Lurppis.FactoryMethos.Zwierzeta
+namespace Anathema.Lurppis.Wzorce.FactoryMethos.Zwierzeta
 {
     public class Wolf : Animal
     {
