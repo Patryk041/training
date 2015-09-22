@@ -1,6 +1,6 @@
 ﻿1. Zbuduj wyrażenie regex które znajdzie match dla 'abc' 
    ale nie dla 'abc1'
-2. Własna implementacja funckji strlen, substr
+2. Własna implementacja funkcji strlen, substr
 3. Walidacja adresu mailowego - dla bardziej zaawansowanych
 4. Znajdz wszystkie pliki z podanym rozszerzeniem np. *.exe
 
