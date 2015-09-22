@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Anathema.Lurppis.FactoryMethos.Abstract;
 using Anathema.Lurppis.FactoryMethos.Abstract.AbstractFactory;
 using Anathema.Lurppis.FactoryMethos.Interface;
 using Anathema.Lurppis.FactoryMethos.Zwierzeta;
