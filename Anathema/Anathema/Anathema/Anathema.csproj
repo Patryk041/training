@@ -216,6 +216,15 @@
     <Compile Include="Patryk\TrainingTwo\Banks\Models\BankTransfer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Puchacz\GRlistEx.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Bramkarz.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Kadra.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Kierownik.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Napastnik.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Obronca.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Pomocnik.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\TestKadry.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Trener.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Zadanie.cs" />
     <Compile Include="rbedkowski\Fabryka\IOrder.cs" />
     <Compile Include="rbedkowski\Fabryka\IRestaurant.cs" />
     <Compile Include="rbedkowski\Fabryka\Order.cs" />
