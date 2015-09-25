@@ -230,6 +230,8 @@
     <Compile Include="rbedkowski\Fabryka\Order.cs" />
     <Compile Include="rbedkowski\Fabryka\Program.cs" />
     <Compile Include="rbedkowski\Fabryka\Restaurant.cs" />
+    <Compile Include="rbedkowski\LINQ\ListLinq.cs" />
+    <Compile Include="rbedkowski\LINQ\TestLinq.cs" />
     <Compile Include="rbedkowski\Pesel\PeselValidator.cs" />
     <Compile Include="rbedkowski\Pesel\TestPesel.cs" />
     <Compile Include="rbedkowski\Singleton\Configuration.cs" />
