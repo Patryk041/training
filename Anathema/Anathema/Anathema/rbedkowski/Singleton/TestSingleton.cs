@@ -22,6 +22,11 @@ namespace Anathema.rbedkowski.Singleton
 
             Console.WriteLine("Jezyk : {0} kolor: {1}", konfiguracja.Lang, konfiguracja.Color);
             Console.WriteLine("Jezyk : {0} kolor: {1}", konfiguracja1.Lang, konfiguracja1.Color);
+
+            Singleton _single = Singleton.Instance;
+            _single.Lang = "US";
+            _single.Color = "Braun";
+
         }
 
     }
