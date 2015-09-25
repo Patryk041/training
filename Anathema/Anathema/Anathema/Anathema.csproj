@@ -223,6 +223,11 @@
     <Compile Include="rbedkowski\Fabryka\Restaurant.cs" />
     <Compile Include="rbedkowski\Pesel\PeselValidator.cs" />
     <Compile Include="rbedkowski\Pesel\TestPesel.cs" />
+    <Compile Include="rbedkowski\Strategy\Driver.cs" />
+    <Compile Include="rbedkowski\Strategy\IAction.cs" />
+    <Compile Include="rbedkowski\Strategy\Pilot.cs" />
+    <Compile Include="rbedkowski\Strategy\Sailor.cs" />
+    <Compile Include="rbedkowski\Strategy\TestStrategy.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
     <Compile Include="Terry\Examples\Interfaces\IUser.cs" />
