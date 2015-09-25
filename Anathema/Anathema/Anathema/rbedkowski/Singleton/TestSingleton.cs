@@ -1,0 +1,28 @@
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Anathema.rbedkowski.Singleton
+{
+    [TestClass]
+    public class TestSingleton
+    {
+        [TestMethod]
+        public void MainTest()
+        {
+            Configuration konfiguracja = Configuration.GetInstance();
+            konfiguracja.Lang = "PL";
+            konfiguracja.Color = "Red";
+            Configuration konfiguracja1 = Configuration.GetInstance();
+            konfiguracja1.Lang = "GB";
+            konfiguracja1.Color = "Blue";
+
+            Console.WriteLine("Jezyk : {0} kolor: {1}", konfiguracja.Lang, konfiguracja.Color);
+            Console.WriteLine("Jezyk : {0} kolor: {1}", konfiguracja1.Lang, konfiguracja1.Color);
+        }
+
+    }
+}
