@@ -224,6 +224,7 @@
     <Compile Include="rbedkowski\Pesel\PeselValidator.cs" />
     <Compile Include="rbedkowski\Pesel\TestPesel.cs" />
     <Compile Include="rbedkowski\Singleton\Configuration.cs" />
+    <Compile Include="rbedkowski\Singleton\Singleton.cs" />
     <Compile Include="rbedkowski\Singleton\TestSingleton.cs" />
     <Compile Include="rbedkowski\Strategy\Driver.cs" />
     <Compile Include="rbedkowski\Strategy\IAction.cs" />

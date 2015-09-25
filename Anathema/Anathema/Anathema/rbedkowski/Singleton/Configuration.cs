@@ -14,7 +14,7 @@ namespace Anathema.rbedkowski.Singleton
         
         private Configuration()
         {
-
+           
         }
 
         private static class SingletonInstance
