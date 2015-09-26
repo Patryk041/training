@@ -39,7 +39,7 @@ namespace UnitTests.Patryk.TrainingTwo
                 });
             }
 
-            XmlBankTransferParser xmlBankTransfer = new XmlBankTransferParser();
+            XmlBankTransfersParser xmlBankTransfer = new XmlBankTransfersParser();
             var result = xmlBankTransfer.GetAllResults(path);
 
 

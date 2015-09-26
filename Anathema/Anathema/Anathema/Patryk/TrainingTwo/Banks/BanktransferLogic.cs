@@ -16,7 +16,7 @@ namespace Anathema.Patryk.TrainingTwo.Banks
             Dictonary = new Dictionary<Func<string, bool>, Func<IDocumentParser<BankTransfer>>>()
             {
                 { text => text.EndsWith(".txt"), () => new TxtBankTransferParser()   },
-                { text => text.EndsWith(".xml"), () => new XmlBankTransferParser()   }
+                { text => text.EndsWith(".xml"), () => new XmlBankTransfersParser()   }
             };  
         }
 

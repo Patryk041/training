@@ -166,7 +166,11 @@
     <Compile Include="Patryk\TrainingThree\BadPerfromBankTransfers.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\BankTransferHandlers\IngTransferHandler.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\BankTransferHandlers\PekaoBankTransferHandler.cs" />
-    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\XmlBankTransferParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\Abstract\AnotherXmlBankTransferParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\Abstract\DocumentParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\XmlBankTransfersParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\XmlParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Utils\AbstractFactory.cs" />
     <Compile Include="Patryk\TrainingTwo\Utils\AbstractFactoryWithFuncAsKey.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\Abstract\IBanktransferLogic.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\BankTransferHandlers\Abstract\BankTransferHandler.cs" />
@@ -178,6 +182,7 @@
     <Compile Include="Patryk\TrainingTwo\Banks\Parsers\Abstract\IDocumentParser.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\PerfromBankTransfers.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\Parsers\Abstract\TxtParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Utils\AbstractFactoryWithouFuncAsKey.cs" />
     <Compile Include="Patryk\TrainingTwo\Utils\FileOperations.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\Models\BankTransfer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
