@@ -107,6 +107,8 @@
     <Compile Include="AndrzeC\Hello.cs" />
     <Compile Include="Bolec\AddElementClass.cs" />
     <Compile Include="Bolec\MyGRList.cs" />
+    <Compile Include="Brzydal\BrzydkaKlasa.cs" />
+    <Compile Include="Brzydal\Zad1GenerycznaLista\BrzydkaGenerycznaLista.cs" />
     <Compile Include="Igor\AbstractFactory\AbstractFactory.cs" />
     <Compile Include="Igor\AbstractFactory\ComputerFactory\ComputerFactory.cs" />
     <Compile Include="Igor\AbstractFactory\Computers\Acer.cs" />
@@ -205,7 +207,11 @@
     <Compile Include="Patryk\TrainingThree\BadPerfromBankTransfers.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\BankTransferHandlers\IngTransferHandler.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\BankTransferHandlers\PekaoBankTransferHandler.cs" />
-    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\XmlBankTransferParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\Abstract\AnotherXmlBankTransferParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\Abstract\DocumentParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\XmlBankTransfersParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\XmlParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Utils\AbstractFactory.cs" />
     <Compile Include="Patryk\TrainingTwo\Utils\AbstractFactoryWithFuncAsKey.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\Abstract\IBanktransferLogic.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\BankTransferHandlers\Abstract\BankTransferHandler.cs" />
@@ -217,17 +223,38 @@
     <Compile Include="Patryk\TrainingTwo\Banks\Parsers\Abstract\IDocumentParser.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\PerfromBankTransfers.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\Parsers\Abstract\TxtParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Utils\AbstractFactoryWithouFuncAsKey.cs" />
     <Compile Include="Patryk\TrainingTwo\Utils\FileOperations.cs" />
     <Compile Include="Patryk\TrainingTwo\Banks\Models\BankTransfer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Puchacz\GRlistEx.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Bramkarz.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Kadra.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Kierownik.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Napastnik.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Obronca.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Pomocnik.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\TestKadry.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Trener.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Zadanie.cs" />
     <Compile Include="rbedkowski\Fabryka\IOrder.cs" />
     <Compile Include="rbedkowski\Fabryka\IRestaurant.cs" />
     <Compile Include="rbedkowski\Fabryka\Order.cs" />
     <Compile Include="rbedkowski\Fabryka\Program.cs" />
     <Compile Include="rbedkowski\Fabryka\Restaurant.cs" />
+    <Compile Include="rbedkowski\FilesOperations\TestFilesOperations.cs" />
+    <Compile Include="rbedkowski\LINQ\ListLinq.cs" />
+    <Compile Include="rbedkowski\LINQ\TestLinq.cs" />
     <Compile Include="rbedkowski\Pesel\PeselValidator.cs" />
     <Compile Include="rbedkowski\Pesel\TestPesel.cs" />
+    <Compile Include="rbedkowski\Singleton\Configuration.cs" />
+    <Compile Include="rbedkowski\Singleton\Singleton.cs" />
+    <Compile Include="rbedkowski\Singleton\TestSingleton.cs" />
+    <Compile Include="rbedkowski\Strategy\Driver.cs" />
+    <Compile Include="rbedkowski\Strategy\IAction.cs" />
+    <Compile Include="rbedkowski\Strategy\Pilot.cs" />
+    <Compile Include="rbedkowski\Strategy\Sailor.cs" />
+    <Compile Include="rbedkowski\Strategy\TestStrategy.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
     <Compile Include="Terry\Examples\Interfaces\IUser.cs" />
@@ -274,6 +301,11 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="rbedkowski\FilesOperations\tekst.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

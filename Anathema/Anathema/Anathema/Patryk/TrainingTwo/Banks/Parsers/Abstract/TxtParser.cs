@@ -5,7 +5,7 @@ using Anathema.Patryk.TrainingTwo.Utils;
 namespace Anathema.Patryk.TrainingTwo.Banks.Parsers.Abstract
 {
 
-    public abstract class TxtParser<TResult> : IDocumentParser<TResult>
+    public abstract class TxtParser<TResult> : DocumentParser<TResult,string>
     {
         protected FileOperations FileOperations;
         private char _splitter;
@@ -16,19 +16,12 @@ namespace Anathema.Patryk.TrainingTwo.Banks.Parsers.Abstract
             _splitter = splitter;
         }
 
-        public virtual List<TResult> GetAllResults(string path)
-        {
-            return GetEntires(path).Select(GetResult).ToList();
-        }
 
-
-        protected virtual List<string> GetEntires(string path)
+        protected override List<string> GetEntries(string path)
         {
 
             string fileContent = FileOperations.ReadAllContent(path);
             return fileContent.Split(_splitter).ToList();
         }
-
-        protected abstract TResult GetResult(string entry);
     }
 }

@@ -15,7 +15,7 @@ namespace UnitTests.Patryk.TrainingTwo
                 new Dictionary<Func<string, bool>, Func<IDocumentParser<BankTransfer>>>()
                 {
                     { s => s.EndsWith(".txt") , () => new TxtBankTransferParser()},
-                    { s => s.EndsWith(".xml") , () => new XmlBankTransferParser() }
+                    { s => s.EndsWith(".xml") , () => new XmlBankTransfersParser() }
                 };
 
 
