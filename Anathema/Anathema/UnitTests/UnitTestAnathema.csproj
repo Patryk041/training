@@ -108,6 +108,7 @@
     <Compile Include="adhed\SmartphoneFactory\FactoryTest.cs" />
     <Compile Include="Bolectest\UnitTest1.cs" />
     <Compile Include="Bolectest\UnitTest2.cs" />
+    <Compile Include="Brzydal\BrzydalTestListaGeneryczna.cs" />
     <Compile Include="lDoran\Collections\UnitTestDynamicCollection.cs" />
     <Compile Include="Lurppis\Fasada\UnitTest1.cs" />
     <Compile Include="marcin022\UnitTest1.cs" />
@@ -145,11 +146,9 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-
   <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

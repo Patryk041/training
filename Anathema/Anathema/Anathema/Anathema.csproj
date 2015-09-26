@@ -108,6 +108,7 @@
     <Compile Include="Bolec\AddElementClass.cs" />
     <Compile Include="Bolec\MyGRList.cs" />
     <Compile Include="Brzydal\BrzydkaKlasa.cs" />
+    <Compile Include="Brzydal\Zad1GenerycznaLista\BrzydkaGenerycznaLista.cs" />
     <Compile Include="Igor\AbstractFactory\AbstractFactory.cs" />
     <Compile Include="Igor\AbstractFactory\ComputerFactory\ComputerFactory.cs" />
     <Compile Include="Igor\AbstractFactory\Computers\Acer.cs" />
