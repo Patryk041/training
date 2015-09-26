@@ -81,14 +81,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Contract.Annotations, Version=8.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Contract.Annotations.8.2.1.0\lib\net45\Contract.Annotations.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Moq, Version=4.2.1507.118, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
-      <HintPath>..\packages\Moq.4.2.1507.0118\lib\net40\Moq.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -109,9 +101,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="adhed\CityTrainingOne\CityManagerTest.cs" />
+    <Compile Include="adhed\CityTrainingOne\CityListTest.cs" />
+    <Compile Include="adhed\CityTrainingOne\TxtCitiesParserTest.cs" />
+    <Compile Include="adhed\CityTrainingTwo\CityListManagerTest.cs" />
+    <Compile Include="adhed\SmartphoneFactory\FactoryTest.cs" />
     <Compile Include="Bolectest\UnitTest1.cs" />
     <Compile Include="Bolectest\UnitTest2.cs" />
+    <Compile Include="Brzydal\BrzydalTestListaGeneryczna.cs" />
     <Compile Include="lDoran\Collections\UnitTestDynamicCollection.cs" />
+    <Compile Include="Lurppis\Fasada\UnitTest1.cs" />
     <Compile Include="marcin022\UnitTest1.cs" />
     <Compile Include="Patryk\TrainingOne\DelegateTest.cs" />
     <Compile Include="Patryk\TrainingOne\FactoriesTest.cs" />
@@ -131,6 +130,8 @@
     <Compile Include="Terry\ExamplesTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adhed\CityTrainingOne\Files\cities.txt" />
+    <Content Include="adhed\CityTrainingTwo\Files\cities.txt" />
     <Content Include="Patryk\TrainingTwo\Files\BankTransfersToDo.txt" />
     <Content Include="Patryk\TrainingTwo\Files\SomeText.txt" />
     <Content Include="Patryk\TrainingTwo\Files\TextFile1.txt" />
@@ -146,6 +147,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup />
   <Choose>

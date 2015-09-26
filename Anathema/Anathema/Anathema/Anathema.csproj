@@ -74,11 +74,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -86,9 +86,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adhed\CityTrainingOne\City.cs" />
+    <Compile Include="adhed\CityTrainingOne\CityList.cs" />
+    <Compile Include="adhed\CityTrainingOne\CityManager.cs" />
+    <Compile Include="adhed\CityTrainingOne\Parsers\TxtCitiesParser.cs" />
+    <Compile Include="adhed\CityTrainingOne\Generics\GenericList.cs" />
+    <Compile Include="adhed\CityTrainingTwo\CitiesComparer.cs" />
+    <Compile Include="adhed\CityTrainingTwo\Generics\GenericListManager.cs" />
+    <Compile Include="adhed\CityTrainingTwo\Models\City.cs" />
+    <Compile Include="adhed\CityTrainingTwo\CityListManager.cs" />
+    <Compile Include="adhed\CityTrainingTwo\Parsers\TxtFileCitiesParser.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Abstract\ISmartphone.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Factories\AbstractFactory.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Factories\SmartphoneFactory.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Htc.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Iphone.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Samsung.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Abstract\Smartphone.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Xiaomi.cs" />
     <Compile Include="AndrzeC\Hello.cs" />
     <Compile Include="Bolec\AddElementClass.cs" />
     <Compile Include="Bolec\MyGRList.cs" />
+    <Compile Include="Brzydal\BrzydkaKlasa.cs" />
+    <Compile Include="Brzydal\Zad1GenerycznaLista\BrzydkaGenerycznaLista.cs" />
     <Compile Include="Igor\AbstractFactory\AbstractFactory.cs" />
     <Compile Include="Igor\AbstractFactory\ComputerFactory\ComputerFactory.cs" />
     <Compile Include="Igor\AbstractFactory\Computers\Acer.cs" />
@@ -122,6 +142,21 @@
     <Compile Include="Lausion\LausionClass.cs" />
     <Compile Include="Doktor\MyClassD.cs" />
     <Compile Include="Iwona\TestClass.cs" />
+    <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Abstract\Pracownik.cs" />
+    <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Pracownicy\Kierownik.cs" />
+    <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Pracownicy\MechanikAudi.cs" />
+    <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Pracownicy\MechanikBmw.cs" />
+    <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\BrzydkiTest.cs" />
+    <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Zadania.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\Abstract\AbstractFactory\AbstractAnimalFactory.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\Abstract\Animal.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\AnimalFactory.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\Color.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\Interface\IAnimal.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\Zwierzeta\Cat.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\Zwierzeta\Wolf.cs" />
+    <Compile Include="Lurppis\Wzorce\Fasada\Fasada.cs" />
+    <Compile Include="Lurppis\Wzorce\Fasada\ObliczPierwiastkiWielomianu.cs" />
     <Compile Include="Lurppis\MyClass.cs" />
     <Compile Include="damian7m7\damian7m7.cs" />
     <Compile Include="lucass3231\HelloEverybodyByLucass3231.cs" />
@@ -142,6 +177,7 @@
     <Compile Include="Generics\IAbstractFactory.cs" />
     <Compile Include="Igor\MyNewClass.cs" />
     <Compile Include="Kosski\testGit.cs" />
+    <Compile Include="Lurppis\Wzorce\Sngleton\Singleton.cs" />
     <Compile Include="MadMike\MadMike.cs" />
     <Compile Include="marcin022\Class1.cs" />
     <Compile Include="marcin022\ListGeneric.cs" />
@@ -187,13 +223,33 @@
     <Compile Include="Patryk\TrainingTwo\Banks\Models\BankTransfer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Puchacz\GRlistEx.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Bramkarz.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Kadra.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Kierownik.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Napastnik.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Obronca.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Pomocnik.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\TestKadry.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Trener.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Zadanie.cs" />
     <Compile Include="rbedkowski\Fabryka\IOrder.cs" />
     <Compile Include="rbedkowski\Fabryka\IRestaurant.cs" />
     <Compile Include="rbedkowski\Fabryka\Order.cs" />
     <Compile Include="rbedkowski\Fabryka\Program.cs" />
     <Compile Include="rbedkowski\Fabryka\Restaurant.cs" />
+    <Compile Include="rbedkowski\FilesOperations\TestFilesOperations.cs" />
+    <Compile Include="rbedkowski\LINQ\ListLinq.cs" />
+    <Compile Include="rbedkowski\LINQ\TestLinq.cs" />
     <Compile Include="rbedkowski\Pesel\PeselValidator.cs" />
     <Compile Include="rbedkowski\Pesel\TestPesel.cs" />
+    <Compile Include="rbedkowski\Singleton\Configuration.cs" />
+    <Compile Include="rbedkowski\Singleton\Singleton.cs" />
+    <Compile Include="rbedkowski\Singleton\TestSingleton.cs" />
+    <Compile Include="rbedkowski\Strategy\Driver.cs" />
+    <Compile Include="rbedkowski\Strategy\IAction.cs" />
+    <Compile Include="rbedkowski\Strategy\Pilot.cs" />
+    <Compile Include="rbedkowski\Strategy\Sailor.cs" />
+    <Compile Include="rbedkowski\Strategy\TestStrategy.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
     <Compile Include="Terry\Examples\Interfaces\IUser.cs" />
@@ -232,12 +288,19 @@
     <Folder Include="GhostRider\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adhed\CityTrainingOne\Parsers\cities.txt" />
+    <Content Include="adhed\CityTrainingTwo\Files\cities.txt" />
     <Content Include="rbedkowski\Pesel\pesel.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="rbedkowski\FilesOperations\tekst.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
