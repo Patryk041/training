@@ -175,6 +175,11 @@
     <Compile Include="Generics\IAbstractFactory.cs" />
     <Compile Include="Igor\MyNewClass.cs" />
     <Compile Include="Kosski\testGit.cs" />
+    <Compile Include="Lurppis\Wzorce\Obserwator\Czujnik.cs" />
+    <Compile Include="Lurppis\Wzorce\Obserwator\Interface\IObserwatorzy.cs" />
+    <Compile Include="Lurppis\Wzorce\Obserwator\Interface\IObserwator.cs" />
+    <Compile Include="Lurppis\Wzorce\Obserwator\T3sT\Testcik.cs" />
+    <Compile Include="Lurppis\Wzorce\Obserwator\Urzadzenie.cs" />
     <Compile Include="Lurppis\Wzorce\Sngleton\Singleton.cs" />
     <Compile Include="MadMike\MadMike.cs" />
     <Compile Include="marcin022\Class1.cs" />
