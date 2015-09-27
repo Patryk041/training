@@ -1,0 +1,18 @@
+﻿Template method (po polsku - metoda szablonowa)
+
+	jest wzorcem niezwykle prostym w użyciu i jednocześnie bardzo użytecznym zarazem,
+	ponieważ pozwala zredukować duplikowany kod do minimum, a czasem nawet do zera.
+
+Idea wzorca template method jest banalnie prosta -
+	służy on do tworzenia metod szablonowych,
+	które składają się z mniejszych - zmiennych komponentów.
+	Metody szablonowe umieszczamy z reguły w klasie abstrakcyjnej.
+	W tym miejscu tworzymy szkielet takiej metody oraz deklaracje poszczególnych metod składowych,
+	które w niektórych przypadkach mogą zostać od razu zaimplementowane.
+
+W kolejnym kroku tworzymy poszczególne klasy konkretne,
+które wypełniają odpowiednią treścią składowe metody szablonowej,
+która sama w sobie z reguły jest niezmienna.
+
+Taka konstrukcja pozwala na rozwiązywanie nawet bardzo złożonych problemów -
+wystarczy odpowiednio "zdekomponować" istniejący kod:-)

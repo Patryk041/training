@@ -120,6 +120,19 @@
     <Compile Include="Igor\AbstractFactory\Computers\Logitech.cs" />
     <Compile Include="Igor\AbstractFactory\Computers\Samsung.cs" />
     <Compile Include="Igor\AbstractFactory\Computers\Sony.cs" />
+    <Compile Include="Igor\City Homework\City.cs" />
+    <Compile Include="Igor\City Homework\CityClientOperator.cs" />
+    <Compile Include="Igor\City Homework\ClientOperator.cs" />
+    <Compile Include="Igor\City Homework\DataLoadSystem\FileLoader\FileLoader.cs" />
+    <Compile Include="Igor\City Homework\DataLoadSystem\FileLoader\TXTCityLoader\TXTCityLoader.cs" />
+    <Compile Include="Igor\City Homework\DataLoadSystem\FileLoader\XMLCityLoader\XMLCityLoader.cs" />
+    <Compile Include="Igor\City Homework\DataLoadSystem\ILoadDataSys.cs" />
+    <Compile Include="Igor\ExceptionTranslator\AbstractFactory.cs" />
+    <Compile Include="Igor\ExceptionTranslator\ExceptionFactoryXml.cs" />
+    <Compile Include="Igor\ExceptionTranslator\ExceptionPack.cs" />
+    <Compile Include="Igor\ExceptionTranslator\ExceptionTran.cs" />
+    <Compile Include="Igor\ExceptionTranslator\OpenSys\OpenSystem.cs" />
+    <Compile Include="Igor\ExceptionTranslator\OpenSys\XmlOpenerSys.cs" />
     <Compile Include="Igor\GenericList\GRListEx.cs" />
     <Compile Include="Erllon\ErloonList.cs" />
     <Compile Include="Iwona\BankFactory\BankFactory.cs" />
@@ -148,6 +161,10 @@
     <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Pracownicy\MechanikBmw.cs" />
     <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\BrzydkiTest.cs" />
     <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Zadania.cs" />
+    <Compile Include="Lurppis\Wzorce\Dekorator\Dekorator.cs" />
+    <Compile Include="Lurppis\Wzorce\Dekorator\Interface\IKalkulator.cs" />
+    <Compile Include="Lurppis\Wzorce\Dekorator\KalkulatorNaukowy.cs" />
+    <Compile Include="Lurppis\Wzorce\Dekorator\KalkulatorProsty.cs" />
     <Compile Include="Lurppis\Wzorce\FactoryMethos\Abstract\AbstractFactory\AbstractAnimalFactory.cs" />
     <Compile Include="Lurppis\Wzorce\FactoryMethos\Abstract\Animal.cs" />
     <Compile Include="Lurppis\Wzorce\FactoryMethos\AnimalFactory.cs" />
@@ -177,12 +194,31 @@
     <Compile Include="Generics\IAbstractFactory.cs" />
     <Compile Include="Igor\MyNewClass.cs" />
     <Compile Include="Kosski\testGit.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Interface\IKomponent.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Narzedzie1.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Plombowanie.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Przeglad.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Szlifowanie.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Test\UbogiTest.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\UsuniecieUbytku.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Wizyta.cs" />
+    <Compile Include="Lurppis\Wzorce\MetodaSzablonowa\Szablon\AbstractClass.cs" />
+    <Compile Include="Lurppis\Wzorce\MetodaSzablonowa\Szablon\ClassFirst.cs" />
+    <Compile Include="Lurppis\Wzorce\MetodaSzablonowa\Szablon\ClassSecond.cs" />
+    <Compile Include="Lurppis\Wzorce\MetodaSzablonowa\Szablon\Test\PrymitywnyPokaz.cs" />
     <Compile Include="Lurppis\Wzorce\Obserwator\Czujnik.cs" />
     <Compile Include="Lurppis\Wzorce\Obserwator\Interface\IObserwatorzy.cs" />
     <Compile Include="Lurppis\Wzorce\Obserwator\Interface\IObserwator.cs" />
     <Compile Include="Lurppis\Wzorce\Obserwator\T3sT\Testcik.cs" />
     <Compile Include="Lurppis\Wzorce\Obserwator\Urzadzenie.cs" />
     <Compile Include="Lurppis\Wzorce\Sngleton\Singleton.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Context.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operation.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operations\AdditionStrategy.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Interface\IStrategy.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operations\DivisionStrategy.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operations\MultiplicationStrategy.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operations\SubtractionStrategy.cs" />
     <Compile Include="MadMike\MadMike.cs" />
     <Compile Include="marcin022\Class1.cs" />
     <Compile Include="marcin022\ListGeneric.cs" />
@@ -297,10 +333,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GhostRider\" />
+    <Folder Include="Lurppis\Wzorce\MetodaSzablonowa\Przyklad\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="adhed\CityTrainingOne\Parsers\cities.txt" />
     <Content Include="adhed\CityTrainingTwo\Files\cities.txt" />
+    <Content Include="Igor\City Homework\TXTDocuments\Cities.txt" />
+    <Content Include="Igor\City Homework\XMLDocuments\Cities.xml" />
+    <Content Include="Igor\ExceptionTranslator\XML_List\ExceptionList.xml" />
+    <Content Include="Lurppis\Wzorce\Dekorator\Opis.txt" />
+    <Content Include="Lurppis\Wzorce\Kompozyt\Opis.txt" />
+    <Content Include="Lurppis\Wzorce\MetodaSzablonowa\Opis.txt" />
+    <Content Include="Lurppis\Wzorce\Strategia\Brzydki przyklad.txt" />
+    <Content Include="Lurppis\Wzorce\Strategia\Opis.txt" />
     <Content Include="rbedkowski\Pesel\pesel.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
