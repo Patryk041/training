@@ -33,3 +33,9 @@ będziemy chcieli utworzyć kalkulator 2.0, nazwijmy go dla jasności naukowym.
 		którą rozszerzamy, Dekorator.cs.  Implementuje ją interface IKalkulator
 4) Pozostało nam stworzyć instancję klasy,
 		która rozszerzy możliwości kalkulatora prostego, KalkulatorNaukowy.cs.
+
+
+****** Podsumowanie ******
+	Wzorzec, który pozwala rozszerzyć funkcjonalności klasy
+bez modyfikacji jej kodu. Jest alternatywą dla zwykłego dziedziczenia,
+ale przeznaczony przede wszystkim do wzbogacania (dekorowania) klas w działających programach.
