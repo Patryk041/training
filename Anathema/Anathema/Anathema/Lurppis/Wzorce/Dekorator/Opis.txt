@@ -1,0 +1,35 @@
+﻿Wzorzec projektowy DEKORATOR
+
+Wzorzec z kategori wzorców strukturalnych (Opisuje powiązania między obiektami)
+
+****** OPIS ******
+	Sama jego nazwa sugeruję nam mocno, że będziemy coś dekorować, czyli wzbogacać.
+Jego zadanie to rozszerzenie funkcjonalności jakiejś klasy o nowe metody, pola.
+Można porównać jego działania do trywialnego dziedziczenia, klasa po klasie, z tą różnicą,
+że wzorzec dekorator rozszerza funkcjonalność klasy w trakcie działania programu,
+a używając dziedziczenia, wszystkie funkcjonalności musimy zdefiniować przed kompilacją programu.
+
+Dzieje się to poprzez utworzenie nowej klasy,
+która dziedziczy po tym samym interfejsie, co klasa dekorowana.
+Z pomocą konstruktora przyjmuje ona obiekt konkretnej klasy,
+poprzez niego wywołuje metody “starej” klasy oraz w zależności od potrzeb nowej klasy,
+sama ma zdefiniowane konkretne funkcjonalności.
+
+****** Koniec ******
+
+****** Przykład ******
+Zasymulujmy sytuację, kiedy mamy klasę pełniąca funkcję kalkulatora prostego,
+zawierającą cztery podstawowe działania matematyczne, z której poprzez dekorację,
+będziemy chcieli utworzyć kalkulator 2.0, nazwijmy go dla jasności naukowym.
+
+****** Koniec ******
+
+*** ETAPY ***
+
+1) Tworzymy Interface IKalkulator
+2) Tworzymy klase KalkulatorProsty który dziedziczy po interface IKalkulator
+3) Tworzymy teraz abstrakcyjną klasę dekoratora,
+		która zapewni nam możliwość korzystania z funkcji klasy,
+		którą rozszerzamy, Dekorator.cs.  Implementuje ją interface IKalkulator
+4) Pozostało nam stworzyć instancję klasy,
+		która rozszerzy możliwości kalkulatora prostego, KalkulatorNaukowy.cs.
