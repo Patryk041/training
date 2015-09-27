@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Anathema.rbedkowski.Fabryka
 {
-    interface IRestaurant
+    class Pizza : IOrder
     {
-        IOrder GetComponent();
+        public string GetComponent()
+        {
+            return "Pizza";
+        }
     }
 }
