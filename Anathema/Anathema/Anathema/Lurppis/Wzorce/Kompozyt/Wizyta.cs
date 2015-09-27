@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Anathema.Lurppis.Wzorce.Kompozyt.Interface;
 
 namespace Anathema.Lurppis.Wzorce.Kompozyt
@@ -14,6 +15,7 @@ namespace Anathema.Lurppis.Wzorce.Kompozyt
         {
             NazwaWyswietlana = nazwa;
         }
+
         public void Dodaj(IKomponent ob)
         {
             _listaDzieci.Add(ob);
@@ -28,7 +30,12 @@ namespace Anathema.Lurppis.Wzorce.Kompozyt
 
         public void Wyswietl(int przesuniecie)
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine(new String('-', przesuniecie) + String.Format("{0} : Cena {1} zł", NazwaWyswietlana, Cena));
+
+            foreach (IKomponent ob in _listaDzieci)
+            {
+                ob.Wyswietl(przesuniecie + 2);
+            }
         }
     }
 }
