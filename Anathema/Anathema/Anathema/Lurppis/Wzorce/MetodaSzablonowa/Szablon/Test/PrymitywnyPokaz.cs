@@ -1,4 +1,4 @@
-﻿namespace Anathema.Lurppis.Wzorce.MetodaSzablonowa.Test
+﻿namespace Anathema.Lurppis.Wzorce.MetodaSzablonowa.Szablon.Test
 {
     public class PrymitywnyPokaz
     {

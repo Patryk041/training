@@ -181,6 +181,18 @@
     <Compile Include="Generics\IAbstractFactory.cs" />
     <Compile Include="Igor\MyNewClass.cs" />
     <Compile Include="Kosski\testGit.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Interface\IKomponent.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Narzedzie1.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Plombowanie.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Przeglad.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Szlifowanie.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Test\UbogiTest.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\UsuniecieUbytku.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Wizyta.cs" />
+    <Compile Include="Lurppis\Wzorce\MetodaSzablonowa\Szablon\AbstractClass.cs" />
+    <Compile Include="Lurppis\Wzorce\MetodaSzablonowa\Szablon\ClassFirst.cs" />
+    <Compile Include="Lurppis\Wzorce\MetodaSzablonowa\Szablon\ClassSecond.cs" />
+    <Compile Include="Lurppis\Wzorce\MetodaSzablonowa\Szablon\Test\PrymitywnyPokaz.cs" />
     <Compile Include="Lurppis\Wzorce\Obserwator\Czujnik.cs" />
     <Compile Include="Lurppis\Wzorce\Obserwator\Interface\IObserwatorzy.cs" />
     <Compile Include="Lurppis\Wzorce\Obserwator\Interface\IObserwator.cs" />
@@ -300,6 +312,9 @@
     <Content Include="adhed\CityTrainingOne\Parsers\cities.txt" />
     <Content Include="adhed\CityTrainingTwo\Files\cities.txt" />
     <Content Include="Lurppis\Wzorce\Dekorator\Opis.txt" />
+    <Content Include="Lurppis\Wzorce\Kompozyt\Opis.txt" />
+    <Content Include="Lurppis\Wzorce\MetodaSzablonowa\Opis.txt" />
+    <Content Include="Lurppis\Wzorce\MetodaSzablonowa\Przyklad\Problem.txt" />
     <Content Include="rbedkowski\Pesel\pesel.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Anathema.Lurppis.Wzorce.MetodaSzablonowa
+namespace Anathema.Lurppis.Wzorce.MetodaSzablonowa.Szablon
 {
     class ClassFirst : AbstractClass
     {

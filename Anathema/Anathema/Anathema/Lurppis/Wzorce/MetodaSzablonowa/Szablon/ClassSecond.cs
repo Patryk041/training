@@ -1,7 +1,16 @@
-﻿namespace Anathema.Lurppis.Wzorce.MetodaSzablonowa
+﻿using System;
+
+namespace Anathema.Lurppis.Wzorce.MetodaSzablonowa.Szablon
 {
-    public class ClassSecond
+    class ClassSecond : AbstractClass
     {
-         
+        protected override void OperationA()
+        {
+            Console.WriteLine("ClassSecond.OperationA");
+        }
+        protected override void OperationB()
+        {
+            Console.WriteLine("ClassSecond.OperationB");
+        }
     }
 }
