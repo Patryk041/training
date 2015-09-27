@@ -199,6 +199,13 @@
     <Compile Include="Lurppis\Wzorce\Obserwator\T3sT\Testcik.cs" />
     <Compile Include="Lurppis\Wzorce\Obserwator\Urzadzenie.cs" />
     <Compile Include="Lurppis\Wzorce\Sngleton\Singleton.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Context.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operation.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operations\AdditionStrategy.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Interface\IStrategy.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operations\DivisionStrategy.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operations\MultiplicationStrategy.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operations\SubtractionStrategy.cs" />
     <Compile Include="MadMike\MadMike.cs" />
     <Compile Include="marcin022\Class1.cs" />
     <Compile Include="marcin022\ListGeneric.cs" />
@@ -307,6 +314,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GhostRider\" />
+    <Folder Include="Lurppis\Wzorce\MetodaSzablonowa\Przyklad\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="adhed\CityTrainingOne\Parsers\cities.txt" />
@@ -314,7 +322,8 @@
     <Content Include="Lurppis\Wzorce\Dekorator\Opis.txt" />
     <Content Include="Lurppis\Wzorce\Kompozyt\Opis.txt" />
     <Content Include="Lurppis\Wzorce\MetodaSzablonowa\Opis.txt" />
-    <Content Include="Lurppis\Wzorce\MetodaSzablonowa\Przyklad\Problem.txt" />
+    <Content Include="Lurppis\Wzorce\Strategia\Brzydki przyklad.txt" />
+    <Content Include="Lurppis\Wzorce\Strategia\Opis.txt" />
     <Content Include="rbedkowski\Pesel\pesel.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

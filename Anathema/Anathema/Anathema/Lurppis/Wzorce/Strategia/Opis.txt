@@ -1,0 +1,63 @@
+﻿Z założenia wzorzec strategii ma upraszczać instrukcje warunkowe if/switch.
+Cel ten można osiągnąć stosunkowo łatwo, wystarczy zastosować się do poniższych instrukcji.
+
+Po pierwsze, musimy zidentyfikować czy określony fragment kodu rzeczywiście pasuje
+	do wzorca strategii. Taka sytuacja ma miejsce najczęściej,
+	w momencie gdy określony zestaw danych przetwarzamy na różne
+	sposoby w zależności od pewnego warunku.
+
+Po drugie, musimy ustalić wspólny interfejs, który posłuży nam do budowania klas
+	oferujących konkretne strategie rozwiązania określonego problemu.
+
+Ostatnim krokiem może być stworzenie metody wytwórczej,
+która w zależności od kontekstu utworzy inny obiekt.
+
+Warto wspomnieć, że wzorzec strategii nie usuwa instrukcji warunkowych,
+aczkolwiek bardzo często je upraszcza, ponieważ cały kod który pierwotnie się w nich znajdował,
+trafia do dedykowanych klas.
+Jeśli klasy są proste i nie mają cech wspólnych, możemy skorzystać z interfejsu.
+W przeciwnym przypadku warto pomyśleć o rozwiązaniu opartym o klasę abstrakcyjną,
+które pozwoli na reużycie kodu w klasach poszczególnych strategii.
+
+*** Przykład ***
+Chcemy się pozbyć potencjalnego problemu, który moze nam się przytrafić w większych projektach
+Przykład banalny, ale nie o to chodzi
+	Zmienimy ten programik by działał na wzorcu projektowym strategii
+
+enum Operation
+{
+    Addition = 0,
+    Subtraction,
+    Multiplication,
+    Division
+}
+ 
+class Program
+{
+    static void Main(string[] args)
+    {
+        double a = 10;
+        double b = 2;
+        double result = 0;
+        Operation operation = Operation.Addition;
+ 
+        switch(operation)
+        {
+            case Operation.Addition:
+                result = a + b;
+                break;
+            case Operation.Subtraction:
+                result = a - b;
+                break;
+            case Operation.Multiplication:
+                result = a * b;
+                break;
+            case Operation.Division:
+                result = a / b;
+                break;
+        }
+ 
+        Console.WriteLine(result);
+        Console.ReadKey();
+    }
+}
