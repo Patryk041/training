@@ -120,6 +120,19 @@
     <Compile Include="Igor\AbstractFactory\Computers\Logitech.cs" />
     <Compile Include="Igor\AbstractFactory\Computers\Samsung.cs" />
     <Compile Include="Igor\AbstractFactory\Computers\Sony.cs" />
+    <Compile Include="Igor\City Homework\City.cs" />
+    <Compile Include="Igor\City Homework\CityClientOperator.cs" />
+    <Compile Include="Igor\City Homework\ClientOperator.cs" />
+    <Compile Include="Igor\City Homework\DataLoadSystem\FileLoader\FileLoader.cs" />
+    <Compile Include="Igor\City Homework\DataLoadSystem\FileLoader\TXTCityLoader\TXTCityLoader.cs" />
+    <Compile Include="Igor\City Homework\DataLoadSystem\FileLoader\XMLCityLoader\XMLCityLoader.cs" />
+    <Compile Include="Igor\City Homework\DataLoadSystem\ILoadDataSys.cs" />
+    <Compile Include="Igor\ExceptionTranslator\AbstractFactory.cs" />
+    <Compile Include="Igor\ExceptionTranslator\ExceptionFactoryXml.cs" />
+    <Compile Include="Igor\ExceptionTranslator\ExceptionPack.cs" />
+    <Compile Include="Igor\ExceptionTranslator\ExceptionTran.cs" />
+    <Compile Include="Igor\ExceptionTranslator\OpenSys\OpenSystem.cs" />
+    <Compile Include="Igor\ExceptionTranslator\OpenSys\XmlOpenerSys.cs" />
     <Compile Include="Igor\GenericList\GRListEx.cs" />
     <Compile Include="Erllon\ErloonList.cs" />
     <Compile Include="Iwona\BankFactory\BankFactory.cs" />
@@ -319,6 +332,9 @@
   <ItemGroup>
     <Content Include="adhed\CityTrainingOne\Parsers\cities.txt" />
     <Content Include="adhed\CityTrainingTwo\Files\cities.txt" />
+    <Content Include="Igor\City Homework\TXTDocuments\Cities.txt" />
+    <Content Include="Igor\City Homework\XMLDocuments\Cities.xml" />
+    <Content Include="Igor\ExceptionTranslator\XML_List\ExceptionList.xml" />
     <Content Include="Lurppis\Wzorce\Dekorator\Opis.txt" />
     <Content Include="Lurppis\Wzorce\Kompozyt\Opis.txt" />
     <Content Include="Lurppis\Wzorce\MetodaSzablonowa\Opis.txt" />
