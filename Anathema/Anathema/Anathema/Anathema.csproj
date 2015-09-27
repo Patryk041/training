@@ -148,6 +148,10 @@
     <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Pracownicy\MechanikBmw.cs" />
     <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\BrzydkiTest.cs" />
     <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Zadania.cs" />
+    <Compile Include="Lurppis\Wzorce\Dekorator\Dekorator.cs" />
+    <Compile Include="Lurppis\Wzorce\Dekorator\Interface\IKalkulator.cs" />
+    <Compile Include="Lurppis\Wzorce\Dekorator\KalkulatorNaukowy.cs" />
+    <Compile Include="Lurppis\Wzorce\Dekorator\KalkulatorProsty.cs" />
     <Compile Include="Lurppis\Wzorce\FactoryMethos\Abstract\AbstractFactory\AbstractAnimalFactory.cs" />
     <Compile Include="Lurppis\Wzorce\FactoryMethos\Abstract\Animal.cs" />
     <Compile Include="Lurppis\Wzorce\FactoryMethos\AnimalFactory.cs" />
@@ -295,6 +299,7 @@
   <ItemGroup>
     <Content Include="adhed\CityTrainingOne\Parsers\cities.txt" />
     <Content Include="adhed\CityTrainingTwo\Files\cities.txt" />
+    <Content Include="Lurppis\Wzorce\Dekorator\Opis.txt" />
     <Content Include="rbedkowski\Pesel\pesel.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
