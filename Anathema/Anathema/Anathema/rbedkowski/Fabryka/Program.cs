@@ -10,22 +10,22 @@ namespace Anathema.rbedkowski.Fabryka
         [TestMethod]
         public void test()
         {
-            Dictionary<string, Func<IRestaurant>> Zamowienie = new Dictionary<string, Func<IRestaurant>>()
+            Dictionary<string, Func<string>> Zamowienie = new Dictionary<string, Func<string>>()
             {
-                {"Polish", ()=>new PolishRestaurant()},
-                {"English", ()=>new EnglishRestaurant()},
-                {"Italian", ()=>new ItalianRestaurant() },
-                {"Pasta", ()=>new PastaRestaurant() }
+                {"Polish", ()=>new PolishRestaurant().GetComponent().GetComponent()},
+                {"English", ()=>new EnglishRestaurant().GetComponent().GetComponent()},
+                {"Italian", ()=>new ItalianRestaurant().GetComponent().GetComponent() },
+                {"Pasta", ()=>new PastaRestaurant().GetComponent().GetComponent() }
             };
 
-            IRestaurant restauracja = new PolishRestaurant();
-            restauracja.GetComponent();
-            restauracja = new PastaRestaurant();
-            restauracja.GetComponent();
-            restauracja = new ItalianRestaurant();
-            restauracja.GetComponent();
-            restauracja = new EnglishRestaurant();
-            restauracja.GetComponent();
+
+            var Order = Zamowienie["Polish"]();
+            Order = Zamowienie["Pasta"]();
+            Order = Zamowienie["Italian"]();
+            Order = Zamowienie["English"]();
+
+
+            
 
 
 
