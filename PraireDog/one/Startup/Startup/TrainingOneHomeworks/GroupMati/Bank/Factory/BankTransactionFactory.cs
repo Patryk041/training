@@ -1,77 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Linq;
-using Startup.TrainingOneHomeworks.GroupMati.Bank.Factory;
-using Startup.TrainingOneHomeworks.GroupMati.Banks;
-using Startup.TrainingOneHomeworks.Mati.InterfaceBanks;
+using Startup.TrainingOneHomeworks.GroupMati.Bank.Banks;
 
-namespace Startup.TrainingOneHomeworks.Mati.Banks
+namespace Startup.TrainingOneHomeworks.GroupMati.Bank.Factory
 {
-    public class FactoryBankTransaction<T>  : AbstractFactoryBankTransaction<T>
+    public class FactoryTransactionBank  : AbstractFactoryBankTransaction<String,BankTransaction>
     {
 
         /// <summary>
-        /// Delegata zrobic
+        /// Fabryka z instancjami banków.
         /// </summary>
-        protected Dictionary<string, Func<T>> BankDictionary = new Dictionary<string, Func<T>>();
-        public FactoryBankTransaction()
-        {
-            //IBankTransactionFactory przyklad;
-            //Dictionary<string, bool> result = BankDictionary(przyklad);
-          
-            BankDictionary.Add("1111", () => (T)(object)new AliorTransactionBank()) ;
-            // {"1112", () => new BgzTransactionBank() },
-            // {"1113", new BgzTransactionBank() },
-            // {"1114", new BgzTransactionBank() },
-            // {"1115", new BgzTransactionBank() },
-            // {"1116", new BgzTransactionBank() },
-            // {"1117", new BgzTransactionBank() },
-            // {"1118", new BgzTransactionBank() },
-            // {"1119", new BgzTransactionBank() },
-            // {"1120", new BgzTransactionBank() },
-            // {"1121", new BgzTransactionBank() },
-            // {"1122", new BgzTransactionBank() },
-            // {"1123", new BgzTransactionBank() },
-            // {"1124", new BgzTransactionBank() },
-            // {"1125", new BgzTransactionBank() },
-            // {"1126", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-            // {"1112", new BgzTransactionBank() },
-        }
 
-        public void Add(string key, object value) 
+        public FactoryTransactionBank()
         {
-           // BankDictionary.Add(key, value);
-        }
-
-        public Func<T, bool> GetValue(string key) 
-        {
-            return  BankDictionary[key];
-        }
-        public bool TryGetTransaction(string key, Func<T, bool> bankTransaction)
-        {
-            return BankDictionary.TryGetValue(key, out bankTransaction);
-        
+            BankDictionary = new Dictionary<string, Func<BankTransaction>>()
+            {
+                { "1010", () => new NarodowyBankPolskiTransactionBank()},
+                { "1020", () => new PkobpTransactionBank()},
+                { "1030", () => new CitybankHandlowyTransactionBank()},
+                { "1050", () => new IngTransactionBank()},
+                { "1060", () => new BphTransactionBank()},
+                { "1090", () => new BzwbkTransactionBank()},
+                { "1130", () => new BgkTransactionBank()},
+                { "1140", () => new mBankTransactionBank()},
+                { "1160", () => new BankMilenniumTransactionBank()},
+                { "1240", () => new PekaoTransactionBank()},
+                { "1280", () => new HsbcTransactionBank()},
+                { "1300", () => new MeritumBankTransactionBank()},
+                { "1320", () => new BankPocztowyTransactionBank()},
+                { "1440", () => new NordeaBankTransactionBank()},
+                { "1470", () => new EuroBankTransactionBank()},
+                { "1540", () => new BosTransactionBank()},
+                { "1580", () => new MercedesBenzBankPolskaTransactionBank()},
+                { "1600", () => new BnpParibasFortisTransactionBank()},
+                { "1610", () => new SGBBankTransactionBank()},
+                { "1670", () => new RbsBankPolskaTransactionBank()},
+                { "1750", () => new RaiffeisenBankTransactionBank()},
+                { "1840", () => new SocieteGeneraleTransactionBank()},
+                { "1870", () => new FmBankPBPTransactionBank()},
+                { "1910", () => new DeutscheBankPolskaTransactionBank()},
+                { "1930", () => new BankPolskiejSpoldzielczosciTransactionBank()},
+                { "1940", () => new CreditAgricoleBankPolskaTransactionBank()},
+                { "1950", () => new IdeaBankTransactionBank()},
+                { "2000", () => new RabobankPolskaTransactionBank()},
+                { "2030", () => new BGZTransactionBank()},
+                { "2070", () => new FceBankPolskaTransactionBank()},
+                { "2120", () => new SantanderConsumerBankTransactionBank()},
+                { "2140", () => new FiatBankPolskaTransactionBank()},
+                { "2160", () => new ToyotaBankTransactionBank()},
+                { "2190", () => new DnBNordTransactionBank()},
+                { "2480", () => new GettinNobleBankTransactionBank()},
+                { "2490", () => new AliorBankTransactionBank()}
+            };
         }
     }
 }

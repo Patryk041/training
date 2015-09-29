@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Startup.TrainingOneHomeworks.GroupMati.Banks;
-using Startup.TrainingOneHomeworks.Mati;
-using Startup.TrainingOneHomeworks.Mati.Banks;
-using Startup.TrainingOneHomeworks.Mati.Messages;
-using Startup.TrainingOneHomeworks.Mati.SqlDataBase;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SQLlib;
+using Startup.TrainingOneHomeworks.GroupMati.Bank;
+using Startup.TrainingOneHomeworks.GroupMati.Bank.GeneratorClass;
+using Startup.TrainingOneHomeworks.GroupMati.Bank.Messages;
 
 namespace Toci.Startup.Test.MatiUnitTest
 {
@@ -17,66 +12,118 @@ namespace Toci.Startup.Test.MatiUnitTest
         [TestMethod]
         public void CheckSearchAccount()
         {
-            ClientTransaction transaction = new ClientTransaction();
-          //  Assert.IsInstanceOfType(new AliorTransactionBank(), transaction.SearchAccount("1111").GetType());
-       //     Assert.IsInstanceOfType(new BgzTransactionBank(), transaction.SearchAccount("1112").GetType());
+            var transaction = new ClientTransaction();
+            //  Assert.IsInstanceOfType(new AliorTransactionBank(), transaction.SearchAccount("1111").GetType());
+            //     Assert.IsInstanceOfType(new BgzTransactionBank(), transaction.SearchAccount("1112").GetType());
         }
+
         [TestMethod]
         public void GetListTransactionIsNull()
         {
-            ClientTransaction transaction = new ClientTransaction();
-            Assert.IsNull(transaction.GetTransactions());
-         //   Assert.IsNull(transaction.GetTransactions()[1].GetType());
+            var transaction = new ClientTransaction();
+            //Assert.IsNull(transaction.GetTransactions());
+            //   Assert.IsNull(transaction.GetTransactions()[1].GetType());
         }
+
         [TestMethod]
         public void GetListTransaction()
         {
-            ClientTransaction transaction = new ClientTransaction();
-            Assert.IsInstanceOfType(new AliorTransactionBank(), transaction.GetTransactions()[0].GetType());
-         //  Assert.IsInstanceOfType(new BgzTransactionBank(), transaction.GetTransactions()[1].GetType());
+            var transaction = new ClientTransaction();
+            //  Assert.IsInstanceOfType(new AliorTransactionBank(), transaction.GetTransactions()[0].GetType());
+            //  Assert.IsInstanceOfType(new BgzTransactionBank(), transaction.GetTransactions()[1].GetType());
         }
 
         [TestMethod]
         public void IsCreatedDocumentXml()
         {
-            BankTransaction bank1= new AliorTransactionBank();
-            
-            bank1.DescriptionTransaction();
+            //  BankTransaction bank1 = new AliorTransactionBank();
+
+            // bank1.DescriptionTransaction();
         }
 
-        [TestMethod]
-        public void CheckTransactionInstant()
-        {
-            FactoryBankTransaction< BankTransaction> factory1 = new FactoryBankTransaction<BankTransaction>();
-            BankTransaction bank1;
-          //  Assert.IsTrue(factory1.TryGetTransaction("1111",out bank1));
-        }
         [TestMethod]
         public void CheckMailMessage()
         {
             MailMessages mail = new AliorMailMessages();
-            mail.SendMail(BankMailEnum.INCOMINGTRANSFER,"adam.kuba21@gmail.com");
+            mail.SendMail(BankMailEnum.Incomingtransfer, "adam.kuba21@gmail.com");
         }
 
         [TestMethod]
-        public void SQLCheck()
+        public void GenerateClassCheck()
         {
-            SqlConnecting sql = new SqlConnecting();
-            
+            var generator = new GeneratorClass();
         }
+
+        [TestMethod]
+        public void CheckList()
+        {
+            var bank =
+                new BankTransactionMenager(new ClientTransaction {IncomingNumber = "212", OutcomingNumber = "dsd"});
+            bank.ClientTransactions.Add(new ClientTransaction {IncomingNumber = "222", OutcomingNumber = "535"});
+        }
+
+        [TestMethod]
+        public void SqlMenagerCheck()
+        {
+            var menager = new SqlMenager();
+        }
+
+        [TestMethod]
+        public void IsSearchBankTransaction()
+        {
+            var btm = new BankTransactionMenager(new ClientTransaction {IncomingNumber = "111", OutcomingNumber = "222"});
+            BankTransaction bt;
+            //  bt = btm.SearchAccount("36249010440000420057684506");
+        }
+
+        [TestMethod]
+        public void CheckVerificationListOfClient()
+        {
+            var btm =
+                new BankTransactionMenager(new ClientTransaction
+                {
+                    IncomingNumber = "36249010440000420057684506",
+                    OutcomingNumber = "36249010440000420057684506"
+                });
+            btm.ClientTransactions.Add(new ClientTransaction {IncomingNumber = "222", OutcomingNumber = "535"});
+            btm.ClientTransactions.Add(new ClientTransaction
+            {
+                IncomingNumber = "28203000451130000012129130",
+                OutcomingNumber = "28203000451130000012129130"
+            });
+            btm.ClientTransactions.Add(new ClientTransaction
+            {
+                IncomingNumber = "28203000451130000012129130",
+                OutcomingNumber = "535"
+            });
+            btm.ClientTransactions.Add(new ClientTransaction
+            {
+                IncomingNumber = "535",
+                OutcomingNumber = "28203000451130000012129130"
+            });
+            btm.ClientTransactions.Add(new ClientTransaction
+            {
+                IncomingNumber = "28203000451130000012129130",
+                OutcomingNumber = "36249010440000420057684506"
+            });
+
+            var listOfVeryfied = btm.VerifiedClientTransactions;
+        }
+
         [TestMethod]
         public void CheckValidationNumber()
         {
             Assert.IsTrue(ValidationNumber.Validation("36249010440000420057684506"));
         }
-        /*  protected List<BankTransaction> GetAllBankTransactions()
-          {
-              var result = Assembly.GetCallingAssembly().GetTypes().Where(item => item.IsSubclassOf(typeof (BankTransaction)));
 
-              foreach (var item in result)
-              {
-                  //item.
-              }
-          }*/
+        //}
+        //    }
+        //        //item.
+        //    {
+
+        //    foreach (var item in result)
+        //    var result = Assembly.GetCallingAssembly().GetTypes().Where(item => item.IsSubclassOf(typeof (BankTransaction)));
+        //{
+        //protected List<BankTransaction> GetAllBankTransactions()
     }
 }

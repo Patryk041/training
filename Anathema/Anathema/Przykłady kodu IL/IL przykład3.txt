@@ -1,0 +1,27 @@
+[normalny kod]
+using System;
+
+class Program
+{
+    static void Main()
+    {
+	int[] array = new int[10];
+	array[0] = 1;
+    }
+}
+
+[kod IL (potocznie CIL/MSIL)]
+.method private hidebysig static void  Main() cil managed
+{
+  .entrypoint // punkt, od którego CLR odczyta program
+  .maxstack  3 // rozmiar slotów stosu
+  .locals init ([0] int32[] 'array') // definiuje zmienne (tutaj jest to zmienna typu tablicy int'ów o nazwie 'array')
+  IL_0000:  ldc.i4.s   10 // wkłada 10 (int32) na stos (będzie to parametr dla rozmiaru tablicy)
+  IL_0002:  newarr     [mscorlib]System.Int32 // tworzy tablicę (zwraca adres na stos)
+  IL_0007:  stloc.0 // wyciąga wartość ze stosu i ładuje do zmiennej lokalnej [0] ('array') (wkłada adres tablicy)
+  IL_0008:  ldloc.0 // wkłada wartość zmiennej lokalnej [0] ('array') na stos (siedzi w niej adres do tablicy i to jest parametr dla polecenia 'sletem.i4')
+  IL_0009:  ldc.i4.0 // wkłada 0 (int32) na stos (tutaj jest parametr dla adresu komórki tablicy)
+  IL_000a:  ldc.i4.1 // wkłada 1 (int32) na stos (tutaj jest to dana, którą ładuje do '0' komórki)
+  IL_000b:  stelem.i4 // zamienia wartości w tablicy
+  IL_000c:  ret // wychodzi z metody
+} // koniec metody Program::Main

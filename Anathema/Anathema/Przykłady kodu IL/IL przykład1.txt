@@ -1,0 +1,37 @@
+[normalny kod]
+using System;
+
+class Program
+{
+    static void Main()
+    {
+	int i = 0;
+	while (i < 10)
+	{
+	    Console.WriteLine(i);
+	    i++;
+	}
+    }
+}
+
+[kod IL (potocznie CIL/MSIL)]
+.method private hidebysig static void Main() cil managed
+{
+    .entrypoint // punkt wejœciowy (tylko jeden w programie)
+    .maxstack 2 // iloœæ slotów stosu potrzebnych do operacji (max iloœæ danych jakie mo¿na w³o¿yæ na stos)
+    .locals init (
+	[0] int32 num) // definiuje zmienne
+    L_0000: ldc.i4.0 // wk³ada 0 (int32) na stos
+    L_0001: stloc.0 // pobiera wartoœæ ze stosu i ³aduje do lokalnej zmiennej nr [0] (w tym przypadku "num")
+    L_0002: br.s L_000e // skoczy do L_000e ¿eby w³o¿yæ na stos [0] i zobaczyæ czy [0] (num) jest mniejsze od 10 (je¿eli tak wróci liniê ni¿ej)
+    L_0004: ldloc.0 // ³aduje lokaln¹ zmienn¹ [0] na stos (tutaj jako parametr)
+    L_0005: call void [mscorlib]System.Console::WriteLine(int32) // wywo³uje funkcje WriteLine
+    L_000a: ldloc.0 // ³aduje lokaln¹ zmienn¹ [0] na stos
+    L_000b: ldc.i4.1 // wk³ada 1 (int32) na stos
+    L_000c: add // dodaje do zmiennej [0] '1' (inkrementuje [0]) i zwraca wynik na stos
+    L_000d: stloc.0 // pobiera wartoœæ ze stosu i ³aduje do lokalnej zmiennej nr [0] (w tym przypadku "num")
+    L_000e: ldloc.0 // ³aduje lokaln¹ zmienn¹ [0] na stos
+    L_000f: ldc.i4.s 10 // ³aduje 10 (int32) na stos
+    L_0011: blt.s L_0004 // je¿eli [0] jest mniejsze ni¿ 10 skacze do L_0004
+    L_0013: ret // wy³azi z metody
+}

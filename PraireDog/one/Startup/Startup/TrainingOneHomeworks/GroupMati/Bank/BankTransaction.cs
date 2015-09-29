@@ -1,10 +1,10 @@
 ﻿using System.IO;
 using System.Xml.Serialization;
-using Startup.TrainingOneHomeworks.Mati.InterfaceBanks;
+using Startup.TrainingOneHomeworks.GroupMati.Bank.InterfaceBanks;
 
-namespace Startup.TrainingOneHomeworks.Mati
+namespace Startup.TrainingOneHomeworks.GroupMati.Bank
 {
-  
+
     public abstract class BankTransaction : IBankTransaction
     {
         protected string BankName { get; private set; }
@@ -16,6 +16,10 @@ namespace Startup.TrainingOneHomeworks.Mati
                 BankName = name;
         }
 
+        public virtual BankTransaction GetObject()
+        {
+            return this;
+        }
         public virtual void DescriptionTransaction()
         {
             string path = @"\plik.xml";

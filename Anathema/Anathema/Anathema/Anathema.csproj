@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{084EB29B-1588-4357-B008-91C1BB01A42F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Anathema</RootNamespace>
+    <AssemblyName>Anathema</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <CodeContractsAssemblyMode>0</CodeContractsAssemblyMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRuntimeSkipQuantifiers>False</CodeContractsRuntimeSkipQuantifiers>
+    <CodeContractsRunCodeAnalysis>True</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>True</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>True</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>True</CodeContractsArithmeticObligations>
+    <CodeContractsEnumObligations>True</CodeContractsEnumObligations>
+    <CodeContractsRedundantAssumptions>True</CodeContractsRedundantAssumptions>
+    <CodeContractsAssertsToContractsCheckBox>True</CodeContractsAssertsToContractsCheckBox>
+    <CodeContractsRedundantTests>True</CodeContractsRedundantTests>
+    <CodeContractsMissingPublicRequiresAsWarnings>True</CodeContractsMissingPublicRequiresAsWarnings>
+    <CodeContractsMissingPublicEnsuresAsWarnings>False</CodeContractsMissingPublicEnsuresAsWarnings>
+    <CodeContractsInferRequires>True</CodeContractsInferRequires>
+    <CodeContractsInferEnsures>False</CodeContractsInferEnsures>
+    <CodeContractsInferEnsuresAutoProperties>True</CodeContractsInferEnsuresAutoProperties>
+    <CodeContractsInferObjectInvariants>False</CodeContractsInferObjectInvariants>
+    <CodeContractsSuggestAssumptions>False</CodeContractsSuggestAssumptions>
+    <CodeContractsSuggestAssumptionsForCallees>False</CodeContractsSuggestAssumptionsForCallees>
+    <CodeContractsSuggestRequires>False</CodeContractsSuggestRequires>
+    <CodeContractsNecessaryEnsures>True</CodeContractsNecessaryEnsures>
+    <CodeContractsSuggestObjectInvariants>False</CodeContractsSuggestObjectInvariants>
+    <CodeContractsSuggestReadonly>True</CodeContractsSuggestReadonly>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>True</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsSQLServerOption />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>True</CodeContractsCacheAnalysisResults>
+    <CodeContractsSkipAnalysisIfCannotConnectToCache>False</CodeContractsSkipAnalysisIfCannotConnectToCache>
+    <CodeContractsFailBuildOnWarnings>False</CodeContractsFailBuildOnWarnings>
+    <CodeContractsBeingOptimisticOnExternal>True</CodeContractsBeingOptimisticOnExternal>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>%28none%29</CodeContractsReferenceAssembly>
+    <CodeContractsAnalysisWarningLevel>0</CodeContractsAnalysisWarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adhed\CityTrainingOne\City.cs" />
+    <Compile Include="adhed\CityTrainingOne\CityList.cs" />
+    <Compile Include="adhed\CityTrainingOne\CityManager.cs" />
+    <Compile Include="adhed\CityTrainingOne\Parsers\TxtCitiesParser.cs" />
+    <Compile Include="adhed\CityTrainingOne\Generics\GenericList.cs" />
+    <Compile Include="adhed\CityTrainingTwo\CitiesComparer.cs" />
+    <Compile Include="adhed\CityTrainingTwo\Generics\GenericListManager.cs" />
+    <Compile Include="adhed\CityTrainingTwo\Models\City.cs" />
+    <Compile Include="adhed\CityTrainingTwo\CityListManager.cs" />
+    <Compile Include="adhed\CityTrainingTwo\Parsers\TxtFileCitiesParser.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Abstract\ISmartphone.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Factories\AbstractFactory.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Factories\SmartphoneFactory.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Htc.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Iphone.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Samsung.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Abstract\Smartphone.cs" />
+    <Compile Include="adhed\DesignPatterns\FactoryTraining\Xiaomi.cs" />
+    <Compile Include="AndrzeC\Hello.cs" />
+    <Compile Include="Bolec\AddElementClass.cs" />
+    <Compile Include="Bolec\MyGRList.cs" />
+    <Compile Include="Brzydal\BrzydkaKlasa.cs" />
+    <Compile Include="Brzydal\Zad1GenerycznaLista\BrzydkaGenerycznaLista.cs" />
+    <Compile Include="Igor\AbstractFactory\AbstractFactory.cs" />
+    <Compile Include="Igor\AbstractFactory\ComputerFactory\ComputerFactory.cs" />
+    <Compile Include="Igor\AbstractFactory\Computers\Acer.cs" />
+    <Compile Include="Igor\AbstractFactory\Computers\Apple.cs" />
+    <Compile Include="Igor\AbstractFactory\Computers\ASUS.cs" />
+    <Compile Include="Igor\AbstractFactory\Computers\Dell.cs" />
+    <Compile Include="Igor\AbstractFactory\Computers\HP.cs" />
+    <Compile Include="Igor\AbstractFactory\Computers\IComputer.cs" />
+    <Compile Include="Igor\AbstractFactory\Computers\Logitech.cs" />
+    <Compile Include="Igor\AbstractFactory\Computers\Samsung.cs" />
+    <Compile Include="Igor\AbstractFactory\Computers\Sony.cs" />
+    <Compile Include="Igor\City Homework\City.cs" />
+    <Compile Include="Igor\City Homework\CityClientOperator.cs" />
+    <Compile Include="Igor\City Homework\ClientOperator.cs" />
+    <Compile Include="Igor\City Homework\DataLoadSystem\FileLoader\FileLoader.cs" />
+    <Compile Include="Igor\City Homework\DataLoadSystem\FileLoader\TXTCityLoader\TXTCityLoader.cs" />
+    <Compile Include="Igor\City Homework\DataLoadSystem\FileLoader\XMLCityLoader\XMLCityLoader.cs" />
+    <Compile Include="Igor\City Homework\DataLoadSystem\ILoadDataSys.cs" />
+    <Compile Include="Igor\ExceptionTranslator\AbstractFactory.cs" />
+    <Compile Include="Igor\ExceptionTranslator\ExceptionFactoryXml.cs" />
+    <Compile Include="Igor\ExceptionTranslator\ExceptionPack.cs" />
+    <Compile Include="Igor\ExceptionTranslator\ExceptionTran.cs" />
+    <Compile Include="Igor\ExceptionTranslator\OpenSys\OpenSystem.cs" />
+    <Compile Include="Igor\ExceptionTranslator\OpenSys\XmlOpenerSys.cs" />
+    <Compile Include="Igor\GenericList\GRListEx.cs" />
+    <Compile Include="Erllon\ErloonList.cs" />
+    <Compile Include="Iwona\BankFactory\BankFactory.cs" />
+    <Compile Include="Iwona\BankFactory\BankList\AlliorBank.cs" />
+    <Compile Include="Iwona\BankFactory\BankList\WbkBank.cs" />
+    <Compile Include="Iwona\BankFactory\BankList\IngBank.cs" />
+    <Compile Include="Iwona\BankFactory\BankList\PkoBank.cs" />
+    <Compile Include="Iwona\BankFactory\IBank.cs" />
+    <Compile Include="Iwona\GenericsTestClass\Document.cs" />
+    <Compile Include="Iwona\GenericsTestClass\GenericClass.cs" />
+    <Compile Include="Iwona\GenericsTestClass\Log.cs" />
+    <Compile Include="Iwona\GenericsTestClass\MainClass.cs" />
+    <Compile Include="Iwona\GenericsTestClass\Proces.cs" />
+    <Compile Include="KacperSiuda\HelloClass.cs" />
+    <Compile Include="Kodi\Kodi.cs" />
+    <Compile Include="Kosski\FactoryHomework.cs" />
+    <Compile Include="Kosski\KosskiTest.cs" />
+    <Compile Include="lDoran\Collections\DynamicCollection.cs" />
+    <Compile Include="lDoran\Hello.cs" />
+    <Compile Include="Lausion\LausionClass.cs" />
+    <Compile Include="Doktor\MyClassD.cs" />
+    <Compile Include="Iwona\TestClass.cs" />
+    <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Abstract\Pracownik.cs" />
+    <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Pracownicy\Kierownik.cs" />
+    <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Pracownicy\MechanikAudi.cs" />
+    <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Pracownicy\MechanikBmw.cs" />
+    <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\BrzydkiTest.cs" />
+    <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Zadania.cs" />
+    <Compile Include="Lurppis\Wzorce\Dekorator\Dekorator.cs" />
+    <Compile Include="Lurppis\Wzorce\Dekorator\Interface\IKalkulator.cs" />
+    <Compile Include="Lurppis\Wzorce\Dekorator\KalkulatorNaukowy.cs" />
+    <Compile Include="Lurppis\Wzorce\Dekorator\KalkulatorProsty.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\Abstract\AbstractFactory\AbstractAnimalFactory.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\Abstract\Animal.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\AnimalFactory.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\Color.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\Interface\IAnimal.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\Zwierzeta\Cat.cs" />
+    <Compile Include="Lurppis\Wzorce\FactoryMethos\Zwierzeta\Wolf.cs" />
+    <Compile Include="Lurppis\Wzorce\Fasada\Fasada.cs" />
+    <Compile Include="Lurppis\Wzorce\Fasada\ObliczPierwiastkiWielomianu.cs" />
+    <Compile Include="Lurppis\MyClass.cs" />
+    <Compile Include="damian7m7\damian7m7.cs" />
+    <Compile Include="lucass3231\HelloEverybodyByLucass3231.cs" />
+    <Compile Include="adhed\Toci.cs" />
+    <Compile Include="Blacha\BasicTest.cs" />
+    <Compile Include="Erley\FirstErleyClass.cs" />
+    <Compile Include="Generics\AbstractFactory.cs" />
+    <Compile Include="Generics\Chor\AbstractChainOfResponsibility.cs" />
+    <Compile Include="Generics\Chor\BlachaExampleHandler.cs" />
+    <Compile Include="Generics\Chor\Credibility.cs" />
+    <Compile Include="Generics\Chor\Employment.cs" />
+    <Compile Include="Generics\Chor\EntityRefTypeChor.cs" />
+    <Compile Include="Generics\Chor\Family.cs" />
+    <Compile Include="Generics\Chor\Human.cs" />
+    <Compile Include="Generics\Chor\IHandler.cs" />
+    <Compile Include="Generics\GhostRiderBase.cs" />
+    <Compile Include="Generics\GRList.cs" />
+    <Compile Include="Generics\IAbstractFactory.cs" />
+    <Compile Include="Igor\MyNewClass.cs" />
+    <Compile Include="Kosski\testGit.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Interface\IKomponent.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Narzedzie1.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Plombowanie.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Przeglad.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Szlifowanie.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Test\UbogiTest.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\UsuniecieUbytku.cs" />
+    <Compile Include="Lurppis\Wzorce\Kompozyt\Wizyta.cs" />
+    <Compile Include="Lurppis\Wzorce\MetodaSzablonowa\Szablon\AbstractClass.cs" />
+    <Compile Include="Lurppis\Wzorce\MetodaSzablonowa\Szablon\ClassFirst.cs" />
+    <Compile Include="Lurppis\Wzorce\MetodaSzablonowa\Szablon\ClassSecond.cs" />
+    <Compile Include="Lurppis\Wzorce\MetodaSzablonowa\Szablon\Test\PrymitywnyPokaz.cs" />
+    <Compile Include="Lurppis\Wzorce\Obserwator\Czujnik.cs" />
+    <Compile Include="Lurppis\Wzorce\Obserwator\Interface\IObserwatorzy.cs" />
+    <Compile Include="Lurppis\Wzorce\Obserwator\Interface\IObserwator.cs" />
+    <Compile Include="Lurppis\Wzorce\Obserwator\T3sT\Testcik.cs" />
+    <Compile Include="Lurppis\Wzorce\Obserwator\Urzadzenie.cs" />
+    <Compile Include="Lurppis\Wzorce\Sngleton\Singleton.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Context.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operation.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operations\AdditionStrategy.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Interface\IStrategy.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operations\DivisionStrategy.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operations\MultiplicationStrategy.cs" />
+    <Compile Include="Lurppis\Wzorce\Strategia\Operations\SubtractionStrategy.cs" />
+    <Compile Include="MadMike\MadMike.cs" />
+    <Compile Include="marcin022\Class1.cs" />
+    <Compile Include="marcin022\ListGeneric.cs" />
+    <Compile Include="marcin022\Test.cs" />
+    <Compile Include="Mati\MyNewClass.cs" />
+    <Compile Include="mowmidejw\HelloWorldByDejw.cs" />
+    <Compile Include="Nonda\TestClassByNonda.cs" />
+    <Compile Include="Patryk\TrainingOne\Cars\Abstract\Car.cs" />
+    <Compile Include="Patryk\TrainingOne\Cars\Abstract\ICar.cs" />
+    <Compile Include="Patryk\TrainingOne\Cars\Color.cs" />
+    <Compile Include="Patryk\TrainingOne\Cars\Fiat.cs" />
+    <Compile Include="Patryk\TrainingOne\Cars\Ford.cs" />
+    <Compile Include="Patryk\TrainingOne\Cars\Honda.cs" />
+    <Compile Include="Patryk\TrainingOne\Chess\Abstract\IFigure.cs" />
+    <Compile Include="Patryk\TrainingOne\Chess\Bishop.cs" />
+    <Compile Include="Patryk\TrainingOne\Chess\FigureType.cs" />
+    <Compile Include="Patryk\TrainingOne\Chess\King.cs" />
+    <Compile Include="Patryk\TrainingOne\Chess\Queen.cs" />
+    <Compile Include="Patryk\TrainingOne\Factories\AbstractFactory.cs" />
+    <Compile Include="Patryk\TrainingOne\Factories\CarFactory.cs" />
+    <Compile Include="Patryk\TrainingOne\Factories\ChessFactory.cs" />
+    <Compile Include="Patryk\TrainingThree\BadPerfromBankTransfers.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\BankTransferHandlers\IngTransferHandler.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\BankTransferHandlers\PekaoBankTransferHandler.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\Abstract\AnotherXmlBankTransferParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\Abstract\DocumentParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\XmlBankTransfersParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\XmlParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Utils\AbstractFactory.cs" />
+    <Compile Include="Patryk\TrainingTwo\Utils\AbstractFactoryWithFuncAsKey.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Abstract\IBanktransferLogic.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\BankTransferHandlers\Abstract\BankTransferHandler.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\BankTransferHandlers\BzwbkTransferHandler.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\BankTransferHandlers\ChorBankTransferHandler.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\BankTransferHandlers\NordeaTransferHandler.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\BanktransferLogic.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\TxtBankTransferParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\Abstract\IDocumentParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\PerfromBankTransfers.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Parsers\Abstract\TxtParser.cs" />
+    <Compile Include="Patryk\TrainingTwo\Utils\AbstractFactoryWithouFuncAsKey.cs" />
+    <Compile Include="Patryk\TrainingTwo\Utils\FileOperations.cs" />
+    <Compile Include="Patryk\TrainingTwo\Banks\Models\BankTransfer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Puchacz\GRlistEx.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Bramkarz.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Kadra.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Kierownik.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Napastnik.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Obronca.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Pomocnik.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\TestKadry.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Trener.cs" />
+    <Compile Include="rbedkowski\Chain of responsibility\Zadanie.cs" />
+    <Compile Include="rbedkowski\Fabryka\Cafee.cs" />
+    <Compile Include="rbedkowski\Fabryka\EnglishRestaurant.cs" />
+    <Compile Include="rbedkowski\Fabryka\IOrder.cs" />
+    <Compile Include="rbedkowski\Fabryka\IRestaurant.cs" />
+    <Compile Include="rbedkowski\Fabryka\ItalianRestaurant.cs" />
+    <Compile Include="rbedkowski\Fabryka\Pasta.cs" />
+    <Compile Include="rbedkowski\Fabryka\PastaRestaurant.cs" />
+    <Compile Include="rbedkowski\Fabryka\Pizza.cs" />
+    <Compile Include="rbedkowski\Fabryka\Program.cs" />
+    <Compile Include="rbedkowski\Fabryka\PolishRestaurant.cs" />
+    <Compile Include="rbedkowski\Fabryka\Tea.cs" />
+    <Compile Include="rbedkowski\FilesOperations\TestFilesOperations.cs" />
+    <Compile Include="rbedkowski\LINQ\ListLinq.cs" />
+    <Compile Include="rbedkowski\LINQ\TestLinq.cs" />
+    <Compile Include="rbedkowski\Pesel\PeselValidator.cs" />
+    <Compile Include="rbedkowski\Pesel\TestPesel.cs" />
+    <Compile Include="rbedkowski\Singleton\Configuration.cs" />
+    <Compile Include="rbedkowski\Singleton\Singleton.cs" />
+    <Compile Include="rbedkowski\Singleton\TestSingleton.cs" />
+    <Compile Include="rbedkowski\Strategy\Driver.cs" />
+    <Compile Include="rbedkowski\Strategy\IAction.cs" />
+    <Compile Include="rbedkowski\Strategy\Pilot.cs" />
+    <Compile Include="rbedkowski\Strategy\Sailor.cs" />
+    <Compile Include="rbedkowski\Strategy\TestStrategy.cs" />
+    <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
+    <Compile Include="seeyIT\Test123321123.cs" />
+    <Compile Include="Terry\Examples\Interfaces\IUser.cs" />
+    <Compile Include="Terry\Examples\User.cs" />
+    <Compile Include="Terry\Examples\UserValidator.cs" />
+    <Compile Include="Terry\StringExtensions.cs" />
+    <Compile Include="Skilloo\Fabryka\CarFactory.cs" />
+    <Compile Include="Skilloo\Fabryka\Golf.cs" />
+    <Compile Include="Skilloo\Fabryka\ICar.cs" />
+    <Compile Include="Skilloo\Fabryka\Passat.cs" />
+    <Compile Include="TomaszF\GRlist.cs" />
+    <Compile Include="Widmo\Widmo.cs" />
+    <Compile Include="jake\jakeTestClass.cs" />
+    <Compile Include="Kuster\KusterClass.cs" />
+    <Compile Include="Kwasny\Hello.cs" />
+    <Compile Include="MartaGr\MartaGr.cs" />
+    <Compile Include="piotrek88\MyClass.cs" />
+    <Compile Include="Polak\HelloByPolak.cs" />
+    <Compile Include="Puchacz\testclass.cs" />
+    <Compile Include="Rubi\TestClass.cs" />
+    <Compile Include="Sancho\Sancho.cs" />
+    <Compile Include="Sherpin\SherpinHello.cs" />
+    <Compile Include="Skilloo\Skilloo.cs" />
+    <Compile Include="TomaszF\TomaszF.cs" />
+    <Compile Include="tomekL\tomekL.cs" />
+    <Compile Include="Ubot%28Seb%29\Seb.cs" />
+    <Compile Include="usppat\usppatHelloClass.cs" />
+    <Compile Include="Werner\Werner.cs" />
+    <Compile Include="Wilczy\Class1.cs" />
+    <Compile Include="wojteko22\wojteko22.cs" />
+    <Compile Include="wojtek\FirstClass.cs" />
+    <Compile Include="wojtek\WojteksGenericList.cs" />
+    <Compile Include="Yuriy\FirstClassForTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GhostRider\" />
+    <Folder Include="Lurppis\Wzorce\MetodaSzablonowa\Przyklad\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adhed\CityTrainingOne\Parsers\cities.txt" />
+    <Content Include="adhed\CityTrainingTwo\Files\cities.txt" />
+    <Content Include="Igor\City Homework\TXTDocuments\Cities.txt" />
+    <Content Include="Igor\City Homework\XMLDocuments\Cities.xml" />
+    <Content Include="Igor\ExceptionTranslator\XML_List\ExceptionList.xml" />
+    <Content Include="Lurppis\Wzorce\Dekorator\Opis.txt" />
+    <Content Include="Lurppis\Wzorce\Kompozyt\Opis.txt" />
+    <Content Include="Lurppis\Wzorce\MetodaSzablonowa\Opis.txt" />
+    <Content Include="Lurppis\Wzorce\Strategia\Brzydki przyklad.txt" />
+    <Content Include="Lurppis\Wzorce\Strategia\Opis.txt" />
+    <Content Include="rbedkowski\Pesel\pesel.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="rbedkowski\FilesOperations\tekst.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

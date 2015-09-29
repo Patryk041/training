@@ -6,18 +6,18 @@ namespace Startup.TrainingOneHomeworks.Erloon
 {
     public static class BamkList
     {
-        public static List<Bank> ListAllBank
+        public static List<Bank> ListAllBank //=> ImportListFromText();  nie kompiluje się, dlatego wyciąłem - Terry
         {
             get { return ImportListFromText(); }
         }
 
-
-
         public static List<Bank> ImportListFromText()
         {
             var banks = new List<Bank>();
+            string textFile = BanksData.NbpBankList;
+            string[] tabList = textFile.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
 
-            foreach (var line in File.ReadAllLines(@"C:\Moje Pliki\Repozytoria\Szkolenia\PraireDog\one\Startup\Startup\TrainingOneHomeworks\Erloon\NbpList.txt"))
+            foreach (var line in tabList)
             {
                 var columns = line.Split('\t');
                 banks.Add(new Bank
