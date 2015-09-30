@@ -329,6 +329,10 @@
     <Compile Include="wojteko22\wojteko22.cs" />
     <Compile Include="wojtek\factory\AbstractFactory.cs" />
     <Compile Include="wojtek\factory\BikeFactory.cs" />
+    <Compile Include="wojtek\factory\Bikes\AbstractBike.cs" />
+    <Compile Include="wojtek\factory\Bikes\Canyon.cs" />
+    <Compile Include="wojtek\factory\Bikes\Giant.cs" />
+    <Compile Include="wojtek\factory\Bikes\Specialized.cs" />
     <Compile Include="wojtek\factory\IBike.cs" />
     <Compile Include="wojtek\FirstClass.cs" />
     <Compile Include="wojtek\WojteksGenericList.cs" />
