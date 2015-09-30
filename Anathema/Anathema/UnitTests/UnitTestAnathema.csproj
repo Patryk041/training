@@ -124,7 +124,13 @@
     <Compile Include="Patryk\TrainingTwo\AnotherXmlTest.cs" />
     <Compile Include="Patryk\TrainingTwo\XmlTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rbedkowski\TestFabryka.cs" />
+    <Compile Include="rbedkowski\TestFilesOperations.cs" />
+    <Compile Include="rbedkowski\TestKadry.cs" />
+    <Compile Include="rbedkowski\TestLinq.cs" />
     <Compile Include="rbedkowski\TestPesel.cs" />
+    <Compile Include="rbedkowski\TestSingleton.cs" />
+    <Compile Include="rbedkowski\TestStrategy.cs" />
     <Compile Include="Terry\UnitTest1.cs" />
     <Compile Include="skilloo\UnitTest1.cs" />
     <Compile Include="Terry\ExamplesTest.cs" />
