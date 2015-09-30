@@ -8,11 +8,11 @@ namespace Anathema.wojtek.factory
 {
     public abstract class AbstractFactory<Tkey,Titem>
     {
-        Dictionary<Tkey,Titem> dictionary = new Dictionary<Tkey,Titem>();
+        protected Dictionary<Tkey, Func<Titem>> AbstFactDict;
 
         public Titem Create(Tkey key)
         {
-           return  dictionary.ContainsKey(key) ? dictionary[key] : default(Titem);
+           return  AbstFactDict.ContainsKey(key) ? AbstFactDict[key]() : default(Titem);
         }
 
 

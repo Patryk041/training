@@ -7,13 +7,16 @@ using System.Threading.Tasks;
 
 namespace Anathema.wojtek.factory
 {
-    public class BikeFactory : AbstractFactory<string, Func<IBike>>
+    public class BikeFactory : AbstractFactory<string, IBike>
     {
-        Dictionary<string, Func<IBike>> BikeFactoryDict = new Dictionary<string, Func<IBike>>()
+        public BikeFactory()
         {
-            {"Specialized",() => new Specialized()},
-            {"Giant",() => new Giant()},
-            {"Canyon",() => new Canyon()}
-        };
+            AbstFactDict = new Dictionary<string, Func<IBike>>()
+            {
+                {"Specialized",() => new Specialized()},
+                {"Giant",() => new Giant()},
+                {"Canyon",()=>new Canyon()}
+            };
+        }
     }
 }

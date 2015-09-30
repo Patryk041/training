@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Anathema.wojtek.factory.Bikes
 {
-    class Specialized : AbstractBike
+    public class Specialized : AbstractBike
     {
         public Specialized()
         {
