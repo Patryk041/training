@@ -17,7 +17,8 @@ namespace UnitTests.wojtek
         {
             BikeFactory BikeFactoryInstance = new BikeFactory();
             IBike Bike = BikeFactoryInstance.Create("Specialized");
-            
+            Bike.Colour = "Green";
+            var test= Bike.Ride("Enduro");
         }
     }
 }
