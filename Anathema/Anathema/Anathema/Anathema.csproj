@@ -327,6 +327,9 @@
     <Compile Include="Werner\Werner.cs" />
     <Compile Include="Wilczy\Class1.cs" />
     <Compile Include="wojteko22\wojteko22.cs" />
+    <Compile Include="wojtek\factory\AbstractFactory.cs" />
+    <Compile Include="wojtek\factory\BikeFactory.cs" />
+    <Compile Include="wojtek\factory\IBike.cs" />
     <Compile Include="wojtek\FirstClass.cs" />
     <Compile Include="wojtek\WojteksGenericList.cs" />
     <Compile Include="Yuriy\FirstClassForTest.cs" />
