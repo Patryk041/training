@@ -13,5 +13,6 @@
 									 * {
 									 * }
 									 */
+		
 		public abstract function GetResultingClass($source, $currentLanguage, $desiredLanguage);
 	}
