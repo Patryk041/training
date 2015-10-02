@@ -1,0 +1,63 @@
+﻿@model SampleShowdown.Areas.TeamLeasing.Models.TeamLeasingSearchModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts
+{
+    
+}
+
+
+
+<h2>jakas ciekawa informacja</h2>
+
+
+@ViewBag.cos
+
+@ViewBag.zle
+
+
+@ViewBag.zlefdsgfsd
+
+
+
+slowo
+
+
+@using (Html.BeginForm("index", "TeamLeasingSearch", FormMethod.Get))
+{
+    // 302
+    //EmployeeId
+    @Html.Raw("emp id lepki")
+    
+    @Html.TextBoxFor(item => item.EmployeeId)
+    
+    @Html.Raw(" nie lepki")
+
+    //string.Join(", ", Model.ViewDataResults.Select(item => item.Name))
+    
+    <input type="text" name="nielepkie" value="">
+    
+    <input type="submit" name="confirm" value="Szukaj">
+    <input type="submit" name="duch" value="tadam">
+    <input type="submit" name="szyfrant" value="haha">
+    <input type="submit" name="ksebal" value="jaja">
+    }
+
+@Model.EmployeeId
+@Model.Confirm
+
+
+
+@if (Model.ViewDataResults != null)
+{
+    @Html.Raw(string.Join(", ", Model.ViewDataResults.Select(item => item.Name)))
+}
+    
+Checa:
+
+@Model.AleCheca
+    

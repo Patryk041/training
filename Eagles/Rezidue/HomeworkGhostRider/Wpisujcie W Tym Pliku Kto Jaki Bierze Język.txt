@@ -1,15 +1,24 @@
-| WPISUJCIE KTO JAKI WYBRA£ SOBIE JÊZYK DO ZROBIENIA DO GENERATORA: |
+﻿| WPISUJCIE KTO JAKI WYBRAŁ SOBIE JĘZYK DO ZROBIENIA DO GENERATORA: |
 ---------------------------------------------------------------------
 
 
-C# :
+C# : Darek
 
-Java :
+<<<<<<< Updated upstream
+Java : Mikołaj
+=======
+Java : Grucha
+>>>>>>> Stashed changes
 
-C++ :
+C++ : jarek-krk,lyczkul
 
 Python : estler
 
 F# : Raqs
 
-JavaScript : Tomi
+JavaScript : Wodzu, piotrekgie (JS + jQuery)
+
+Java : Grucha ( Tomasz Trzebiński ;P), Tomi
+
+
+Swift : AdamNowak

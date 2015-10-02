@@ -1,0 +1,7 @@
+Jak komus siê chce poæwiczyæ wyra¿enia regularne to w takiej formie poprosze:
+
+Przyk³adowa zamiana echo na System.out.println...
+
+'/echo\s*\".*\"/' -  'System.out.println(":CONVERT");'   
+
+:

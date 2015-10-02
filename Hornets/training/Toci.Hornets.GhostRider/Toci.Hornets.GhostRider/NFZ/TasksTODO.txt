@@ -1,0 +1,17 @@
+﻿-Implementacja IContactPossibility, tak aby obsługiwała różne rodzaje danych kontaktowych:
+	-TODO-1:E-Mail
+	-TODO-2:Telefon
+	-TODO-3:Fax
+	-TODO-4:Skype
+	-TODO-5:Fb
+	-TODO-6:GG
+	-TODO-7:Twitter
+-Implementacja ICalendar
+	-TODO-8:lokalny kalendarz w slowniku
+	-TODO-9:Kalendarz w pliku txt
+	-TODO-10:zapukanie do kalendarza google
+	-TODO-11:zapukanie do kalendarza ms
+-Implementacja IExamination
+	--TODO-12:Morfologia
+	--TODO-13:Badanie wzroku
+	--TODO-14:Badanie [wstaw_nazwe_badania]

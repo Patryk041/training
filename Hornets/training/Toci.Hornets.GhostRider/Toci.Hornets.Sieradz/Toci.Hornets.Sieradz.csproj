@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1109FD72-7199-4D6F-B150-918976558E66}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Toci.Hornets.Sieradz</RootNamespace>
+    <AssemblyName>Toci.Hornets.Sieradz</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>bd3a03f7</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Spire.License">
+      <HintPath>..\packages\Spire.PDF.3.4.27\lib\net40\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf">
+      <HintPath>..\packages\Spire.PDF.3.4.27\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeeJay\DjExampleAbstract.cs" />
+    <Compile Include="DeeJay\DjExampleClass.cs" />
+    <Compile Include="DeeJay\ExampleDeeJayClass.cs" />
+    <Compile Include="DeeJay\IDJExample.cs" />
+    <Compile Include="DeeJay\TasksTrainingTwo\DjPeselValidator.cs" />
+    <Compile Include="DeeJay\TasksTrainingTwo\DjStringManipulations.cs" />
+    <Compile Include="DeeJay\TelephoneTask\DjTelephoneCommunication.cs" />
+    <Compile Include="DeeJay\TelephoneTask\DjTelephoneFactory.cs" />
+    <Compile Include="Duch\DuchTelephoneFactory.cs" />
+    <Compile Include="Duch\DuchGenFactory.cs" />
+    <Compile Include="Duch\Homework 1\DuchTele.cs" />
+    <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselFactory.cs" />
+    <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselUtils.cs" />
+    <Compile Include="Duch\Homework 2\PeselValidator\DuchPeselValidator.cs" />
+    <Compile Include="Duch\Homework 2\StringManipulator\DuchStringManipulatro.cs" />
+    <Compile Include="Duch\Homework 2\StringManipulator\DuchStringUtills.cs" />
+    <Compile Include="Duch\Traning 4\DuchGenList.cs" />
+    <Compile Include="Duch\Traning 4\DuchGenListUtil.cs" />
+    <Compile Include="Duch\Traning 4\ListEnum.cs" />
+    <Compile Include="Duch\U1task\DuchStringComparator.cs" />
+    <Compile Include="HealthCenter\Abstracts\PatientService.cs" />
+    <Compile Include="HealthCenter\Abstracts\PatientsLoader.cs" />
+    <Compile Include="HealthCenter\Enums\gender.cs" />
+    <Compile Include="HealthCenter\ExtensionMethods\LoaderDelegateExtensions.cs" />
+    <Compile Include="HealthCenter\Interfaces\ICalendar.cs" />
+    <Compile Include="HealthCenter\Interfaces\IPatientService.cs" />
+    <Compile Include="HealthCenter\Loaders\DefaultPatientsLoader.cs" />
+    <Compile Include="HealthCenter\Loaders\XmlPatientsLoader.cs" />
+    <Compile Include="HealthCenter\PathHolders\SieradzPatientsDataPathHolder.cs" />
+    <Compile Include="HealthCenter\Types\PatientVisit.cs" />
+    <Compile Include="HealthCenter\Types\TestExaminationResults.cs" />
+    <Compile Include="Jake\JakeTest.cs" />
+    <Compile Include="Jake\TrainingTwo\jakePeselValidator\jakePeselValidator.cs" />
+    <Compile Include="Jake\TrainingTwo\jakePeselValidator\tools\IsCorrectDate.cs" />
+    <Compile Include="Jake\TrainingTwo\jakePeselValidator\tools\CutDate.cs" />
+    <Compile Include="Jake\TrainingTwo\jakePeselValidator\tools\PeselChecksum.cs" />
+    <Compile Include="Jake\TrainingTwo\TelephoneTask\TelephoneTask.cs" />
+    <Compile Include="Kamil\ClassKamil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HealthCenter\Abstracts\Doctor.cs" />
+    <Compile Include="HealthCenter\Abstracts\Patient.cs" />
+    <Compile Include="HealthCenter\Interfaces\IHuman.cs" />
+    <Compile Include="HealthCenter\Interfaces\IDoctor.cs" />
+    <Compile Include="HealthCenter\Interfaces\IPatient.cs" />
+    <Compile Include="HealthCenter\Types\Calendar.cs" />
+    <Compile Include="HealthCenter\Types\ExaminationResults.cs" />
+    <Compile Include="HealthCenter\Types\PatientHistory.cs" />
+    <Compile Include="HealthCenter\Types\PersonalData.cs" />
+    <Compile Include="Quicksilver\TasksTrainingTwoQs\QuicksilverPeselValidator.cs" />
+    <Compile Include="Quicksilver\TasksTrainingTwoQs\QuicksilverStringManipulator.cs" />
+    <Compile Include="Quicksilver\TelephoneTaskQs\WhoYouGonnaCall.cs" />
+    <Compile Include="Quicksilver\testByQuicksilver.cs" />
+    <Compile Include="Quicksilver\UndergroundTasks\CasualStringComparator.cs" />
+    <Compile Include="Quicksilver\UndergroundTasks\LessCasualStringComparator.cs" />
+    <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\Alior\UCantTouchThisTransferHandle.cs" />
+    <Compile Include="SieradzBankTransferTask\BPH\QuicksilverBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\BPH\QuicksilverTransferHandle.cs" />
+    <Compile Include="SieradzBankTransferTask\Hellada\DuchBankTransferHandler.cs" />
+    <Compile Include="SieradzBankTransferTask\Hellada\DuchBankTransferParser.cs" />
+    <Compile Include="SieradzBankTransferTask\ING\jakeBankTransferParser.cs" />
+    <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamTransferHandle.cs" />
+    <Compile Include="SieradzBankTransferTask\Pekao\DjBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\Pekao\DjEmailSender.cs" />
+    <Compile Include="SieradzBankTransferTask\Pekao\DjTransferHandle.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankFilesPathHolder.cs" />
+    <Compile Include="SieradzBankTransferTask\mBank\TypowyAdamBankTransfersParser.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankTransfer.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankUtils\DuchStringUtils.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankUtils\SieradzBankTransfersUtils.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzBankUtils\SieradzTransferHandlesDictionary.cs" />
+    <Compile Include="Toolz\SieradzGenericInstanceCreator.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzFileOperation.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzPerformTransfers.cs" />
+    <Compile Include="SieradzBankTransferTask\SieradzTransferInfo.cs" />
+    <Compile Include="TypowyAdam\ExampleClass.cs" />
+    <Compile Include="Duch\U1task\U1Utils.cs" />
+    <Compile Include="TypowyAdam\GenericListTaskTrainingFour\TypowyAdamGenericList.cs" />
+    <Compile Include="TypowyAdam\TelephoneTask\TypowyAdamTelephoneTask.cs" />
+    <Compile Include="TypowyAdam\TrainingTwoTasks\StringManipulator\TypowyAdamStringManipulator.cs" />
+    <Compile Include="TypowyAdam\UndergroundTasks\MultiTypicalStringComparator.cs" />
+    <Compile Include="TypowyAdam\UndergroundTasks\Pentagram.cs" />
+    <Compile Include="TypowyAdam\TrainingTwoTasks\PeselValidator\TypowyAdamPeselValidatorUtils.cs" />
+    <Compile Include="TypowyAdam\UndergroundTasks\SimpleTypicalStringComparator.cs" />
+    <Compile Include="TypowyAdam\TrainingTwoTasks\PeselValidator\TypowyAdamPeselValidator.cs" />
+    <Compile Include="TypowyAdam\UndergroundTasks\TypowyAdamPeselValidatorOld.cs" />
+    <Compile Include="UCantTouchThis\CastingExamples\CastingExampleOne.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\CastingExamples\One.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\CastingExamples\Two.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_FieldsUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_PropertiesUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\ExtensionMethods\UCTT_StringExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\ImSoBadAss.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\JsonParser\SimpleJsonParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisPeselValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\TasksTrainingTwo\UCantTouchThisStringManipulations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\TelephoneTask\UCantTouchThisTelephoneTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\TelephoneTask\UCTT_TelephoneTaskFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\TrainingFour\UCantTouchThisTraingFour.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\UCTTGenericFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCantTouchThisAutismPeselValisator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\UndergroundTasks\PeselValidator\UCTT_PeselValidatorUtils.cs" />
+    <Compile Include="UCantTouchThis\UndergroundTasks\RandomStringGenerator\UCTT_RandomStingGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\DummyStringComparator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\StringComparatorsFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\UCantTouchThisStringComparator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCantTouchThis\UndergroundTasks\StringComparator\UCTT_AutismStringComparator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UndergroundTasks\Interface\IStringComparator.cs" />
+    <Compile Include="UndergroundTasks\Interface\IPeselValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toci.Hornets.Bytom\Toci.Hornets.Bytom.csproj">
+      <Project>{b7f17d8a-c620-4239-a086-79dbef372755}</Project>
+      <Name>Toci.Hornets.Bytom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Hornets.GhostRider\Toci.Hornets.GhostRider.csproj">
+      <Project>{878b2eca-9cc0-42cf-aca6-cd6e44c47451}</Project>
+      <Name>Toci.Hornets.GhostRider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Hornets.Gliwice\Toci.Hornets.Gliwice.csproj">
+      <Project>{bfe04213-e553-481b-9b82-44312e146379}</Project>
+      <Name>Toci.Hornets.Gliwice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Hornets.Legnica\Toci.Hornets.Legnica.csproj">
+      <Project>{9e9ec7c9-b279-42a1-8be4-90f814c37fdb}</Project>
+      <Name>Toci.Hornets.Legnica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Hornets.Opole\Toci.Hornets.Opole.csproj">
+      <Project>{76565c63-6dc2-47b8-98d0-e2c57e1dd6e7}</Project>
+      <Name>Toci.Hornets.Opole</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Hornets.Rzeszow\Toci.Hornets.Rzeszow.csproj">
+      <Project>{5d3ebbde-dc75-4be2-866c-0dbdd84a46a8}</Project>
+      <Name>Toci.Hornets.Rzeszow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Hornets.Wroclaw\Toci.Hornets.Wroclaw.csproj">
+      <Project>{5b12a0e8-9563-4d82-93a7-db9013c945f0}</Project>
+      <Name>Toci.Hornets.Wroclaw</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Duch\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HealthCenter\DataFiles\PatientsData\Patients.xml" />
+    <Content Include="HealthCenter\ReadMe.txt" />
+    <Content Include="SieradzBankTransferTask\BankTransfersFiles\0000Hellada.txt" />
+    <Content Include="SieradzBankTransferTask\BankTransfersFiles\Pekao.xml" />
+    <Content Include="SieradzBankTransferTask\BankTransfersFiles\mBankTransfers.xml" />
+    <Content Include="SieradzBankTransferTask\BankTransfersFiles\testFile.txt" />
+    <Content Include="SieradzBankTransferTask\mBank\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="SieradzBankTransferTask\BankTransfersFiles\Alior.json" />
+    <None Include="SieradzBankTransferTask\BankTransfersFiles\BphBankTransfers.bph" />
+    <None Include="SieradzBankTransferTask\SieradzBankNamesDictionary.cfg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!--To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

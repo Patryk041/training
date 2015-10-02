@@ -1,0 +1,29 @@
+
+public abstract  class SwiftClass
+{
+    private $zmienna1 = "";
+    protected $zmienna2 = 2;
+    public $zmienna3 = 2,4;
+    public $zmienna4 = [];
+    public $zmienna5 = 'asdqwe12345678';
+
+
+    public function methodReturnString()
+    {
+     $string = 'string';
+     return $string;
+    }
+        public function methodReturnInt()
+        {
+
+        }
+             public function methodReturnInt()
+                {
+                   if (cos){
+                   }else {
+                   dupa
+                   }
+                }
+
+
+}
