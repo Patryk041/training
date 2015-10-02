@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 namespace Startup.TrainingOneHomeworks.AndzejC.Banki.Abstrakty
 {
-    public abstract class GenFactory<T1>
+    public abstract class GenFactory<TKey,TValue>
     {
-        protected Dictionary<string, T1> ItemList;
+        protected Dictionary<TKey, TValue> ItemList;
 
-        public T1 GetElement(string key)
+        public TValue GetElement(TKey key)
         {
             return ItemList[key];
         }

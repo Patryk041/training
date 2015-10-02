@@ -55,8 +55,11 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AndzejC\UnitTest1.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="ErloonTest\BankTest.cs" />
     <Compile Include="IwonaM\UnitTestPesel.cs" />
+    <Compile Include="marcin022\UnitTest1.cs" />
+    <Compile Include="marcin022\UnitTest2.cs" />
     <Compile Include="MatiUnitTest\PdfUnitTest.cs" />
     <Compile Include="MatiUnitTest\BankUnitTest.cs" />
     <Compile Include="MatiUnitTest\Pesel\PeselUnitTest.cs" />
@@ -76,6 +79,7 @@
       <Name>Startup</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

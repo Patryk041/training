@@ -2,14 +2,16 @@
 
 namespace Startup.TrainingOneHomeworks.AndzejC.Banki.Banks
 {
-    public class Ing : SendTransaction
+    public class Ing : Bank, IBankTransfer
     {
-        public override bool InCome(Transaction transaction)
+        public Ing() : base("Ing"){}
+
+        public bool InCome(Transaction transaction)
         {
             throw new System.NotImplementedException();
         }
 
-        public override bool OutCome(Transaction transaction)
+        public bool OutCome(Transaction transaction)
         {
             throw new System.NotImplementedException();
         }

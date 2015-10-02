@@ -1,12 +1,12 @@
-﻿using Anathema.Generics;
+using Anathema.Generics;
 
 namespace Anathema.Lurppis
 {
     public class MyClass : GhostRiderBase
     {
-        public string write()
+        public virtual bool AddElement(object item, bool unique = true)
         {
-            return "Yo";
+            return true;
         }
 
         public override string GetBankName()

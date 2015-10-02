@@ -68,6 +68,7 @@
     <Compile Include="SqlInterfaces\ISqlMenager.cs" />
     <Compile Include="SqlMenager.cs" />
     <Compile Include="SqlBases\SqlPostrgres.cs" />
+    
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

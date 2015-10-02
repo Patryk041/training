@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace Toci.Hornets.Legnica.Patryk_Stulczewski.TrainingTwo.MyPeselValidator
 {
-    public static class YearByPeselMonthGenerator
+    public class YearByPeselMonthGenerator
     {
-        private static Dictionary<Func<int, bool>, int> _centuryByMonth = new Dictionary<Func<int, bool>, int>()
+        private Dictionary<Func<int, bool>, int> _centuryByMonth = new Dictionary<Func<int, bool>, int>()
             {
                 {x => x >= 81 && x <= 92, 1800},
                 {x => x >= 1 && x <= 12, 1900},
@@ -15,12 +15,28 @@ namespace Toci.Hornets.Legnica.Patryk_Stulczewski.TrainingTwo.MyPeselValidator
                 {x => x >= 61 && x <= 72, 2200}
             };
 
-        public static int GetYear(int month)
+        public int GetYear(int month)
         {
             var century = _centuryByMonth.Keys.FirstOrDefault(x => x(month));
             if (century != null) 
                 return _centuryByMonth[century];
             throw new IndexOutOfRangeException();
         }
+
+        public int GenerateYearByPeselMonth(int month)
+        {
+            if (month >= 81 && month <= 92)
+                return 1800;
+            if (month >= 81 && month <= 92)
+                return 1900;
+            if (month >= 81 && month <= 92)
+                return 2000;
+            if (month >= 81 && month <= 92)
+                return 2100;
+            if (month >= 81 && month <= 92)
+                return 2200;
+            throw new IndexOutOfRangeException();
+        }
     }
+
 }
