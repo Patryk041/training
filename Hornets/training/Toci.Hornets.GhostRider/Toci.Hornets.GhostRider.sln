@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Phoenix.Bll.Interfaces
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Phoenix.Bll", "Web\Toci.Phoenix.ApplicationLogic\Toci.Phoenix.Bll\Toci.Phoenix.Bll.csproj", "{B6045238-86BC-4D9B-8878-82779AD7E455}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Hornets.Warszawa", "Toci.Hornets.Warszawa\Toci.Hornets.Warszawa.csproj", "{9871C33B-E90D-4A62-92E9-E6284FAD6828}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{B6045238-86BC-4D9B-8878-82779AD7E455}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6045238-86BC-4D9B-8878-82779AD7E455}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6045238-86BC-4D9B-8878-82779AD7E455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9871C33B-E90D-4A62-92E9-E6284FAD6828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9871C33B-E90D-4A62-92E9-E6284FAD6828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9871C33B-E90D-4A62-92E9-E6284FAD6828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9871C33B-E90D-4A62-92E9-E6284FAD6828}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

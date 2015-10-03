@@ -40,7 +40,7 @@
       <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Mono.Security.dll</HintPath>
     </Reference>
     <Reference Include="Npgsql">
-      <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Npgsql.dll</HintPath>
+      <HintPath>..\Toci.Front\Toci.Front.Samples\Bin\Npgsql.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -127,7 +127,7 @@
     <Compile Include="TrainingSeven\Mvc\Controller.cs" />
     <Compile Include="TrainingSeven\Mvc\Model.cs" />
     <Compile Include="TrainingSeven\Mvc\Routing.cs" />
-    <Compile Include="TrainingSeven\Mvc\View.cs" />
+    <Compile Include="TrainingSeven\Mvc\ViewByGr.cs" />
     <Compile Include="TrainingSeven\Using\DisposableManager.cs" />
     <Compile Include="TrainingSix\Database\Abstraction\Client\DataStorageClient.cs" />
     <Compile Include="TrainingSix\Database\Abstraction\Client\PostgreSqlClient.cs" />
