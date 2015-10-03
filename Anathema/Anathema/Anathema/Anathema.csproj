@@ -273,6 +273,8 @@
     <Compile Include="rbedkowski\Chain of responsibility\TestKadry.cs" />
     <Compile Include="rbedkowski\Chain of responsibility\Trener.cs" />
     <Compile Include="rbedkowski\Chain of responsibility\Zadanie.cs" />
+    <Compile Include="rbedkowski\Delegaty\DelegatString.cs" />
+    <Compile Include="rbedkowski\Delegaty\TestDelegat.cs" />
     <Compile Include="rbedkowski\Fabryka\Cafee.cs" />
     <Compile Include="rbedkowski\Fabryka\EnglishRestaurant.cs" />
     <Compile Include="rbedkowski\Fabryka\IOrder.cs" />
@@ -281,7 +283,7 @@
     <Compile Include="rbedkowski\Fabryka\Pasta.cs" />
     <Compile Include="rbedkowski\Fabryka\PastaRestaurant.cs" />
     <Compile Include="rbedkowski\Fabryka\Pizza.cs" />
-    <Compile Include="rbedkowski\Fabryka\Program.cs" />
+    <Compile Include="rbedkowski\Fabryka\TestFabryka.cs" />
     <Compile Include="rbedkowski\Fabryka\PolishRestaurant.cs" />
     <Compile Include="rbedkowski\Fabryka\Tea.cs" />
     <Compile Include="rbedkowski\FilesOperations\TestFilesOperations.cs" />
@@ -327,6 +329,13 @@
     <Compile Include="Werner\Werner.cs" />
     <Compile Include="Wilczy\Class1.cs" />
     <Compile Include="wojteko22\wojteko22.cs" />
+    <Compile Include="wojtek\factory\AbstractFactory.cs" />
+    <Compile Include="wojtek\factory\BikeFactory.cs" />
+    <Compile Include="wojtek\factory\Bikes\AbstractBike.cs" />
+    <Compile Include="wojtek\factory\Bikes\Canyon.cs" />
+    <Compile Include="wojtek\factory\Bikes\Giant.cs" />
+    <Compile Include="wojtek\factory\Bikes\Specialized.cs" />
+    <Compile Include="wojtek\factory\IBike.cs" />
     <Compile Include="wojtek\FirstClass.cs" />
     <Compile Include="wojtek\WojteksGenericList.cs" />
     <Compile Include="Yuriy\FirstClassForTest.cs" />

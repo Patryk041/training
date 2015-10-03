@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Anathema.rbedkowski.Strategy
 {
-    class Sailor : IAction
+    public class Sailor : IAction
     {
         public string GetAction()
         {

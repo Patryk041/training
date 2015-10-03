@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Anathema.rbedkowski.LINQ
 {
-    class ListLinq
+    public class ListLinq
     {
         public string Imie { get; set; }
         public string Nazwisko { get; set; }

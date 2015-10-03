@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Anathema.rbedkowski.Singleton
 {
-    class Singleton
+    public class Singleton
     {
         private static Singleton _Instance = null;
 

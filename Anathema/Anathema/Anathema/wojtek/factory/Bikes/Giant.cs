@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anathema.rbedkowski.Fabryka
+namespace Anathema.wojtek.factory.Bikes
 {
-    public class EnglishRestaurant : IRestaurant
+    public class Giant : AbstractBike
     {
-        public IOrder GetComponent()
+        public Giant()
         {
-            return new Tea();
+            Name = "Giant";
         }
     }
 }

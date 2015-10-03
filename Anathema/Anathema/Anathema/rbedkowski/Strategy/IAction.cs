@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Anathema.rbedkowski.Strategy
 {
-    interface IAction
+    public interface IAction
     {
         String GetAction();
     }

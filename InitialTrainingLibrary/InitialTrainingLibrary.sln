@@ -1,8 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Toci.Web", "Toci.Web", "{EEDEA193-B73F-4A9C-B1CB-A52B092826B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Toci.Webservices", "Toci.Webservices", "{6075E9A3-2AF6-4785-B964-0EFFF9EDF5C0}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialTrainingLibrary", "InitialTrainingLibrary\InitialTrainingLibrary.csproj", "{CCFF23CE-5A34-4FA7-AC0E-427FD4FA97B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialTrainingApp", "InitialTrainingApp\InitialTrainingApp.csproj", "{E4FAA82F-1EA9-4E0D-81B3-058366B786DE}"
@@ -10,8 +14,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialUnitTest", "InitialUnitTest\InitialUnitTest.csproj", "{7CFF86D1-EEF3-4E93-A8C5-C62B6D9D1B44}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsInitialTrainingApp", "FormsInitialTrainingApp\FormsInitialTrainingApp.csproj", "{D79FE4A7-9837-4EDB-8D0F-E629A3778A57}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Toci.Web", "Toci.Web", "{EEDEA193-B73F-4A9C-B1CB-A52B092826B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.TraininigLibrary", "Toci.TraininigLibrary\Toci.TraininigLibrary.csproj", "{0ED59B72-4120-4F4E-8684-D3A1D1F6BBF2}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -34,8 +36,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingFive", "TrainingFive\TrainingFive.csproj", "{937C6381-C83E-4F93-A2E7-D5176B3A84C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWrappers", "MvcWrappers\MvcWrappers.csproj", "{CE2F1DA4-D9AD-4153-BAE6-F2CACE3C817D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Toci.Webservices", "Toci.Webservices", "{6075E9A3-2AF6-4785-B964-0EFFF9EDF5C0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingNineWcf", "TrainingNineWcf\TrainingNineWcf.csproj", "{9F6E12E1-9131-4F3E-B6EC-4D2660729916}"
 EndProject

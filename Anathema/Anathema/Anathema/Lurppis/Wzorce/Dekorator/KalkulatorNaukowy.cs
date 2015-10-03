@@ -10,7 +10,7 @@ namespace Anathema.Lurppis.Wzorce.Dekorator
             RodzajKalkulatora = nazwa;
         }
 
-        public double PierwiastekStopnia2(double a) => a < 0 ? 0 : Math.Sqrt(a);
+        //public double PierwiastekStopnia2(double a) => a < 0 ? 0 : Math.Sqrt(a);
         /*
             if(a<0)
                 return 0;
