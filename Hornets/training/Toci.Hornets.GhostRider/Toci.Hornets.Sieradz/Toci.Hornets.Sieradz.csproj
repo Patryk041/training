@@ -32,11 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Spire.License">
-      <HintPath>..\packages\Spire.PDF.3.4.27\lib\net40\Spire.License.dll</HintPath>
+    <Reference Include="Spire.Doc, Version=5.5.112.3040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.Doc.5.5.112\lib\net40\Spire.Doc.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Spire.Pdf">
-      <HintPath>..\packages\Spire.PDF.3.4.27\lib\net40\Spire.Pdf.dll</HintPath>
+    <Reference Include="Spire.License">
+      <HintPath>..\packages\Spire.Doc.5.5.112\lib\net40\Spire.License.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=3.5.73.3040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.Doc.5.5.112\lib\net40\Spire.Pdf.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

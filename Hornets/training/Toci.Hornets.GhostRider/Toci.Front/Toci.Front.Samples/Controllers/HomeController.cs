@@ -6,6 +6,8 @@ using System.Web.Mvc;
 using Toci.Front.Samples.Models;
 using Toci.Hornets.GhostRider.Kir.BankLoggingMechanism;
 using Toci.Hornets.GhostRider.TrainingSeven.Exceptions;
+using Toci.Hornets.GhostRider.TrainingSeven.Mvc;
+using Controller = System.Web.Mvc.Controller;
 
 namespace Toci.Front.Samples.Controllers
 {
