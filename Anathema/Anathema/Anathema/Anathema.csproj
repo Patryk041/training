@@ -301,6 +301,7 @@
     <Compile Include="rbedkowski\Strategy\TestStrategy.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
+    <Compile Include="Shorcik\Hello.cs" />
     <Compile Include="Terry\Examples\Interfaces\IUser.cs" />
     <Compile Include="Terry\Examples\User.cs" />
     <Compile Include="Terry\Examples\UserValidator.cs" />
