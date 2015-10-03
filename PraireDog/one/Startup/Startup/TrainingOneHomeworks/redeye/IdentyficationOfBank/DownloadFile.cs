@@ -2,7 +2,7 @@
 using System.IO;
 using System.Net;
 
-namespace Startup.redeye.IdentyficationOfBank
+namespace Startup.TrainingOneHomeworks.redeye.IdentyficationOfBank
 {
     public class DownloadFile
     {
@@ -25,7 +25,7 @@ namespace Startup.redeye.IdentyficationOfBank
             {
                 try
                 {
-                    webClient.DownloadFile(infoFile, @"download\myfile.txt");
+                    webClient.DownloadFile(infoFile, @"download\" + Path.GetFileName(infoFile));
                 }
                 catch (Exception)
                 {
