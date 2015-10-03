@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Anathema.rbedkowski.Fabryka
 {
-    interface IOrder
+    public interface IOrder
     {
         string GetComponent();
     }

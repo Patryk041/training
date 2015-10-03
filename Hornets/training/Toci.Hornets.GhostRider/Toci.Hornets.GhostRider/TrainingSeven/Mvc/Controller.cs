@@ -6,7 +6,7 @@
         //[HttpPost]
         public string Home(Model model)
         {
-            var view = new View();
+            var view = new ViewByGr();
 
             //view.
             return "";

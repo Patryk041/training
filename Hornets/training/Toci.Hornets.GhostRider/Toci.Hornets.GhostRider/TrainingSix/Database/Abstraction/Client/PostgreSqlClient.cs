@@ -1,6 +1,6 @@
 ﻿using System.Data;
-using System.Data.SqlClient;
 using Npgsql;
+
 
 namespace Toci.Hornets.GhostRider.TrainingSix.Database.Abstraction.Client
 {

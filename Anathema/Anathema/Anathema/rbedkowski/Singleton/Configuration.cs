@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Anathema.rbedkowski.Singleton
 {
-    class Configuration
+    public class Configuration
     {
         
         public string Lang { get; set; }

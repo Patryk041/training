@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Anathema.rbedkowski.Fabryka
 {
-    class PastaRestaurant : IRestaurant
+    public class PastaRestaurant : IRestaurant
     {
         public IOrder GetComponent()
         {

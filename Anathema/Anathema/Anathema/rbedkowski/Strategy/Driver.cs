@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Anathema.rbedkowski.Strategy
 {
-    class Driver : IAction
+    public class Driver : IAction
     {
         public string GetAction()
         {

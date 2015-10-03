@@ -304,6 +304,7 @@
     <Compile Include="stpetersburgstakeout\delegates\DelegatesExample.cs" />
     <Compile Include="stpetersburgstakeout\extensions methods\ExtensionMethodsClass.cs" />
     <Compile Include="stpetersburgstakeout\extensions methods\ExtMEthodExample.cs" />
+    <Compile Include="Shorcik\Hello.cs" />
     <Compile Include="Terry\Examples\Interfaces\IUser.cs" />
     <Compile Include="Terry\Examples\User.cs" />
     <Compile Include="Terry\Examples\UserValidator.cs" />

@@ -8,7 +8,7 @@ namespace Toci.Hornets.Legnica.Patryk_Stulczewski.TrainingTwo.MyPeselValidator
         public bool ValidateDate(int year, int month, int day)
         {
             try{
-                int preciseYear = YearByPeselMonthGenerator.GetYear(month) + year;
+                int preciseYear = new YearByPeselMonthGenerator().GetYear(month) + year;
                 if (DaysInMonthValidator.IsCorrectCountOfDays(year, month % 20, day))
                     return !IsDateInFuture(preciseYear, month % 20, day);
             }
