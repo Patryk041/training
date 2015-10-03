@@ -11,7 +11,7 @@ namespace Anathema.rbedkowski.LINQ
     public class TestLinq
     {
         [TestMethod]
-        public void MainTest()
+        public void ShorcikLinqTest()
         {
             List<ListLinq> lista = new List<ListLinq>();
             lista.Add(new ListLinq() {Imie = "Rafal", Nazwisko = "Bedkowski", Wiek = 40});
