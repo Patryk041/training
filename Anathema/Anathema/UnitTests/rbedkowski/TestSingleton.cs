@@ -1,11 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Anathema.rbedkowski.Singleton;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Anathema.rbedkowski.Singleton
+namespace UnitTests.rbedkowski
 {
     [TestClass]
     public class TestSingleton
@@ -23,15 +20,15 @@ namespace Anathema.rbedkowski.Singleton
             Console.WriteLine("Jezyk : {0} kolor: {1}", konfiguracja.Lang, konfiguracja.Color);
             Console.WriteLine("Jezyk : {0} kolor: {1}", konfiguracja1.Lang, konfiguracja1.Color);
 
-            Singleton _single = Singleton.Instance;
-            _single.Lang = "US";
-            _single.Color = "Braun";
-            Console.WriteLine("Jezyk : {0} kolor: {1}", _single.Lang, _single.Color);
+            Singleton single = Singleton.Instance;
+            single.Lang = "US";
+            single.Color = "Braun";
+            Console.WriteLine("Jezyk : {0} kolor: {1}", single.Lang, single.Color);
 
-            Singleton _instancja = Singleton.Instance;
-            _single.Lang = "NL";
-            _single.Color = "Green";
-            Console.WriteLine("Jezyk : {0} kolor: {1}", _single.Lang, _single.Color);
+            Singleton single2 = Singleton.Instance;
+            single2.Lang = "NL";
+            single2.Color = "Green";
+            Console.WriteLine("Jezyk : {0} kolor: {1}", single.Lang, single.Color);
 
         }
 
