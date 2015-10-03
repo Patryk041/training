@@ -1,4 +1,5 @@
-﻿using Autofac;
+﻿using System.ComponentModel;
+using Autofac;
 using Toci.Hornets.GhostRider.Kir;
 using Toci.Hornets.GhostRider.Kir.BankLoggingMechanism;
 using Toci.Hornets.GhostRider.TrainingSeven.Di;
@@ -35,7 +36,7 @@ namespace Toci.Hornets.UnitTests.GhostRider.TrainingSeven.Di
             //builder.RegisterType<OfflineState>().Keyed<IDeviceState>(DeviceState.Offline);
 
             IContainer container = ContainerBuilder.Build();
-
+            
             Scope = container.BeginLifetimeScope();
         }
     }
