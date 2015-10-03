@@ -301,6 +301,9 @@
     <Compile Include="rbedkowski\Strategy\TestStrategy.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
+    <Compile Include="stpetersburgstakeout\delegates\DelegatesExample.cs" />
+    <Compile Include="stpetersburgstakeout\extensions methods\ExtensionMethodsClass.cs" />
+    <Compile Include="stpetersburgstakeout\extensions methods\ExtMEthodExample.cs" />
     <Compile Include="Terry\Examples\Interfaces\IUser.cs" />
     <Compile Include="Terry\Examples\User.cs" />
     <Compile Include="Terry\Examples\UserValidator.cs" />
@@ -343,6 +346,7 @@
   <ItemGroup>
     <Folder Include="GhostRider\" />
     <Folder Include="Lurppis\Wzorce\MetodaSzablonowa\Przyklad\" />
+    <Folder Include="stpetersburgstakeout\linq\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="adhed\CityTrainingOne\Parsers\cities.txt" />
