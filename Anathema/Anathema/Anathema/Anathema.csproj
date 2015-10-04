@@ -155,6 +155,7 @@
     <Compile Include="Lausion\LausionClass.cs" />
     <Compile Include="Doktor\MyClassD.cs" />
     <Compile Include="Iwona\TestClass.cs" />
+    <Compile Include="Lurppis\TestDoLinQOperations\Tescik.cs" />
     <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Abstract\Pracownik.cs" />
     <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Pracownicy\Kierownik.cs" />
     <Compile Include="Lurppis\Wzorce\ChainOfResponsibility\Pracownicy\MechanikAudi.cs" />
