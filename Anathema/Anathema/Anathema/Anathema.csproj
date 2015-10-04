@@ -301,12 +301,14 @@
     <Compile Include="rbedkowski\Strategy\Sailor.cs" />
     <Compile Include="rbedkowski\Strategy\TestStrategy.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
+    <Compile Include="Sancho\Linq\SuperLinq.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
     <Compile Include="astpetersburgstakeout\delegates\DelegatesExample.cs" />
     <Compile Include="astpetersburgstakeout\extensions methods\ExtensionMethodsClass.cs" />
     <Compile Include="astpetersburgstakeout\extensions methods\ExtMEthodExample.cs" />
     <Compile Include="Shorcik\Hello.cs" />
     <Compile Include="astpetersburgstakeout\linq\LinqOperations.cs" />
+    <Compile Include="Shorcik\linq\MoreLinqOperations.cs" />
     <Compile Include="Terry\Examples\Interfaces\IUser.cs" />
     <Compile Include="Terry\Examples\User.cs" />
     <Compile Include="Terry\Examples\UserValidator.cs" />
