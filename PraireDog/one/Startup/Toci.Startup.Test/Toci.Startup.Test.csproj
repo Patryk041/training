@@ -54,6 +54,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+<<<<<<< HEAD
+    <Compile Include="redeye\RedeyeTestClass.cs" />
+=======
     <Compile Include="AndzejC\UnitTest1.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ErloonTest\BankTest.cs" />
@@ -63,6 +66,7 @@
     <Compile Include="MatiUnitTest\PdfUnitTest.cs" />
     <Compile Include="MatiUnitTest\BankUnitTest.cs" />
     <Compile Include="MatiUnitTest\Pesel\PeselUnitTest.cs" />
+>>>>>>> ba8d1ce643e1e9e41a32045bd64cd987277d9de2
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -53,6 +53,17 @@
     <Compile Include="ObjBasics\Knight.cs" />
     <Compile Include="ObjBasics\Rubish.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
+    <Compile Include="TrainingOneHomeworks\redeye\IdentyficationOfBank\DownloadFile.cs" />
+    <Compile Include="TrainingOneHomeworks\redeye\IdentyficationOfBank\FileWidthData.cs" />
+    <Compile Include="TrainingOneHomeworks\redeye\IdentyficationOfBank\Interfaces\ICheckBankFromNrAccount.cs" />
+    <Compile Include="TrainingOneHomeworks\redeye\IdentyficationOfBank\Interfaces\IGetFile.cs" />
+    <Compile Include="TrainingOneHomeworks\redeye\IdentyficationOfBank\Interfaces\IMakeDictionaryFromFile.cs" />
+    <Compile Include="TrainingOneHomeworks\redeye\IdentyficationOfBank\PolishCheckAccount.cs" />
+    <Compile Include="TrainingOneHomeworks\Ayuu\TestClass.cs" />
+    <Compile Include="TrainingOneHomeworks\redeye\IdentyficationOfBank\PolishDictionaryFromFile.cs" />
+    <Compile Include="TrainingOneHomeworks\redeye\IdentyficationOfBank\StringRemoveAllUnnecesarySigns.cs" />
+
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Abstrakty\Bank.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Abstrakty\Interface\IBankTransfer.cs" />
     <Compile Include="TrainingOneHomeworks\AndzejC\Banki\Abstrakty\GenFactory.cs" />
@@ -267,6 +278,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>BanksData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

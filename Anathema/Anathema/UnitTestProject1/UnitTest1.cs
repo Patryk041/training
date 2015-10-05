@@ -4,6 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Anathema.Igor.AbstractFactory.Computers;
 using Anathema.Igor.AbstractFactory;
 using Anathema.Igor.AbstractFactory.ComputerFactory;
+using Anathema.Lurppis.TestDoLinQOperations;
 
 namespace UnitTestProject1
 {
@@ -26,8 +27,13 @@ namespace UnitTestProject1
             LinqOperations linqOperations = new LinqOperations();
 
             var result = linqOperations.GetDevelopersList("Developer");
+        }
 
-
+        [TestMethod]
+        public void TestFilterProfession()
+        {
+            Tescik linqOperations = new Tescik();
+            var result = linqOperations.GetProffesionList("adamW");
         }
     }
 }
