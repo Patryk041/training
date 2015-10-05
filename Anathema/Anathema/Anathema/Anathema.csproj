@@ -135,6 +135,7 @@
     <Compile Include="Igor\ExceptionTranslator\OpenSys\XmlOpenerSys.cs" />
     <Compile Include="Igor\GenericList\GRListEx.cs" />
     <Compile Include="Erllon\ErloonList.cs" />
+    <Compile Include="Igor\LinqOperations\LinqOperationExtended.cs" />
     <Compile Include="Iwona\BankFactory\BankFactory.cs" />
     <Compile Include="Iwona\BankFactory\BankList\AlliorBank.cs" />
     <Compile Include="Iwona\BankFactory\BankList\WbkBank.cs" />
