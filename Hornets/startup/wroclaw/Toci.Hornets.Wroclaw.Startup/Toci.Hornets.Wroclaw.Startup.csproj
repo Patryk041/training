@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Chmura\" />
+    <Folder Include="Kobra\" />
     <Folder Include="Dysq\" />
     <Folder Include="SherpinTraining\" />
     <Folder Include="Amman\" />
