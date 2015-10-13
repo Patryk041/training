@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
+	<name>Warsztaty</name>
+=======
 	<name>training</name>
+>>>>>>> 1b6c4678e27f309ec6b534435d5b3ba2a754e9ac
 	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
+<<<<<<< HEAD
+		<buildCommand>
+			<name>org.eclipse.wst.common.project.facet.core.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.wst.validation.validationbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.dltk.core.scriptbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
+		<nature>org.eclipse.php.core.PHPNature</nature>
+		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
+=======
+	</buildSpec>
+	<natures>
+>>>>>>> 1b6c4678e27f309ec6b534435d5b3ba2a754e9ac
 	</natures>
 </projectDescription>

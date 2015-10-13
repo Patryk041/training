@@ -161,5 +161,12 @@ Eagles/.buildpath
 Eagles/.settings/org.eclipse.wst.common.project.facet.core.xml
 Eagles/.settings/org.eclipse.core.resources.prefs
 /Eagles/nbproject/private/
+<<<<<<< HEAD
+>>>>>>> bf33720ac3570c4eda59569a613b59abec611af9
+/Eagles/TrainingFive/nbproject/private/
+
+/.idea/*
+=======
 Eagles/.idea/.name
 Eagles/.idea/Eagles.iml
+>>>>>>> 1b6c4678e27f309ec6b534435d5b3ba2a754e9ac

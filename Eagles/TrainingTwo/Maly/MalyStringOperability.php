@@ -1,6 +1,6 @@
 <?php
 
- //require_once 'TrainingTwo/GhostRider/Homework/StringOperationsObj.php';
+ require_once 'TrainingTwo/GhostRider/Homework/StringOperationsObj.php';
 
 class MalyStringOperability extends GhostRiderStringOperability
 {
@@ -19,7 +19,10 @@ class MalyStringOperability extends GhostRiderStringOperability
 	{
 		$new_text = '';
 		
-		
+		if(SubString($string) < $length)
+		{
+			return $string;
+		}
 		
 		for($i = 0; $i < $length; $i++)
 		{

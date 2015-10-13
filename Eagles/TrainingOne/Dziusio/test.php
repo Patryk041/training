@@ -21,3 +21,14 @@ function Dziusio_strlen($text) //isset
 		}
 	return $wynik;
 	}
+	function Dziusio_substr_rev($text, $count)
+	{
+		$length_of_str = Dziusio_strlen($text);
+		$wynik='';
+		for($i= ($length_of_str - $count) ;$i < $length_of_str; $i++)
+		{
+		$wynik .= $text[$i];
+		}
+		return $wynik;
+	}
+	

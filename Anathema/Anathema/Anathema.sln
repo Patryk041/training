@@ -5,6 +5,7 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anathema", "Anathema\Anathema.csproj", "{084EB29B-1588-4357-B008-91C1BB01A42F}"
 EndProject
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestAnathema", "UnitTests\UnitTestAnathema.csproj", "{1F2A838B-1A2C-478C-A74E-C0706BC34DA1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{7FB64F96-A708-4B01-922C-7563508D1A07}"
