@@ -302,6 +302,7 @@
     <Compile Include="rbedkowski\Strategy\Sailor.cs" />
     <Compile Include="rbedkowski\Strategy\TestStrategy.cs" />
     <Compile Include="Rhonin\NewGuy.cs" />
+    <Compile Include="Rhonin\TheFirstOne\GRListExtendend.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
     <Compile Include="Sancho\Linq\SuperLinq.cs" />
     <Compile Include="seeyIT\Test123321123.cs" />
