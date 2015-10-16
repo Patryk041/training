@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Anathema.wojtek.factory
 {
-    public abstract class AbstractFactory<Tkey,Titem>
+    public abstract class AbstractFactory<TKey,TItem>
     {
-        protected Dictionary<Tkey, Func<Titem>> AbstFactDict;
+        protected Dictionary<TKey, Func<TItem>> AbstFactDict;
 
-        public Titem Create(Tkey key)
+        public TItem Create(TKey key)
         {
-           return  AbstFactDict.ContainsKey(key) ? AbstFactDict[key]() : default(Titem);
+           return  AbstFactDict.ContainsKey(key) ? AbstFactDict[key]() : default(TItem);
         }
 
 

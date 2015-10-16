@@ -1,11 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Anathema.wojtek.factory;
-using Anathema.wojtek.factory.Bikes;
 
 namespace UnitTests.wojtek
 {
@@ -15,10 +9,10 @@ namespace UnitTests.wojtek
         [TestMethod]
         public void BikeFactoryMethodtest()
         {
-            BikeFactory BikeFactoryInstance = new BikeFactory();
-            IBike Bike = BikeFactoryInstance.Create("Specialized");
-            Bike.Colour = "Green";
-            var test= Bike.Ride("Enduro");
+            var bikeFactoryInstance = new BikeFactory();
+            var bike = bikeFactoryInstance.Create("Specialized");
+            bike.Colour = "Green";
+            var test= bike.Ride("Enduro");
         }
     }
 }
