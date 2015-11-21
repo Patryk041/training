@@ -310,6 +310,9 @@
     <Compile Include="Rhonin\Chess\Figures\Pawn.cs" />
     <Compile Include="Rhonin\Chess\Figures\Queen.cs" />
     <Compile Include="Rhonin\Chess\Figures\Rook.cs" />
+    <Compile Include="Rhonin\InternetShop\Bin.cs" />
+    <Compile Include="Rhonin\InternetShop\Discount.cs" />
+    <Compile Include="Rhonin\InternetShop\Purchase.cs" />
     <Compile Include="Rhonin\NewGuy.cs" />
     <Compile Include="Rhonin\TheFirstOne\GRListExtendend.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
