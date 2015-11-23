@@ -303,6 +303,8 @@
     <Compile Include="rbedkowski\Strategy\TestStrategy.cs" />
     <Compile Include="Rhonin\Chess\Board.cs" />
     <Compile Include="Rhonin\Chess\Chess.cs" />
+    <Compile Include="Rhonin\Chess\Coordinates.cs" />
+    <Compile Include="Rhonin\Chess\FigureKind.cs" />
     <Compile Include="Rhonin\Chess\IFigure.cs" />
     <Compile Include="Rhonin\Chess\Figures\Bishop.cs" />
     <Compile Include="Rhonin\Chess\Figures\King.cs" />
@@ -310,6 +312,10 @@
     <Compile Include="Rhonin\Chess\Figures\Pawn.cs" />
     <Compile Include="Rhonin\Chess\Figures\Queen.cs" />
     <Compile Include="Rhonin\Chess\Figures\Rook.cs" />
+    <Compile Include="Rhonin\DataValidator\RhoninDataValidator.cs" />
+    <Compile Include="Rhonin\DataValidator\ValidatorDay.cs" />
+    <Compile Include="Rhonin\DataValidator\ValidatorMonth.cs" />
+    <Compile Include="Rhonin\DataValidator\ValidatorYear.cs" />
     <Compile Include="Rhonin\InternetShop\Bin.cs" />
     <Compile Include="Rhonin\InternetShop\Discount.cs" />
     <Compile Include="Rhonin\InternetShop\Purchase.cs" />
