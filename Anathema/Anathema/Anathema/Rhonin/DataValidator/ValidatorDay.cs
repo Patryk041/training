@@ -34,7 +34,14 @@ namespace Anathema.Rhonin.DataValidator
                 { new List<int>() {4,6,9,11}, (d) => d > 0 && d < 31}
             };
             var key = daysDictionary.Keys.FirstOrDefault(x => x.Contains(month));
-            return daysDictionary[key].Invoke(day);
+            if (key != null)
+            {
+                return daysDictionary[key].Invoke(day);
+            }
+            else
+            {
+                return false;
+            }
         }
 
         //private static bool IsLeapYear(int year)
