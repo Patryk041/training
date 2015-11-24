@@ -7,7 +7,7 @@ namespace Anathema.Rhonin.DataValidator
         public static bool ValidateYear(int year)
         {
 
-            return (year > 0 && year < DateTime.Now.Year);
+            return (year > 0) && (year <= DateTime.Now.Year);
         } 
     }
 }

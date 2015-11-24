@@ -8,9 +8,11 @@ namespace Anathema.Rhonin.DataValidator
 {
     public class RhoninDataValidator
     {
-        bool DateValidate(int year, int month, int day)
+        public bool DateValidate(int year, int month, int day)
         {
-            return (ValidatorMonth.ValidateMonth(month) && ValidatorDay.ValidateDay(day,month,year) && ValidatorYear.ValidateYear(year));
+            if (ValidatorYear.ValidateYear(year))
+                return (ValidatorMonth.ValidateMonth(month) && ValidatorDay.ValidateDay(day, month, year));
+            return false;
         }
     }
 }

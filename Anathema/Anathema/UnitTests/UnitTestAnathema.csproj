@@ -131,6 +131,7 @@
     <Compile Include="rbedkowski\TestPesel.cs" />
     <Compile Include="rbedkowski\TestSingleton.cs" />
     <Compile Include="rbedkowski\TestStrategy.cs" />
+    <Compile Include="Rhonin\Rhonin.DataValidatorTest.cs" />
     <Compile Include="Shorcik\LinqTest.cs" />
     <Compile Include="Terry\UnitTest1.cs" />
     <Compile Include="skilloo\UnitTest1.cs" />
