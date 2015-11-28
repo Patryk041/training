@@ -302,6 +302,7 @@
     <Compile Include="rbedkowski\Strategy\Sailor.cs" />
     <Compile Include="rbedkowski\Strategy\TestStrategy.cs" />
     <Compile Include="Rhonin\Chess\Board.cs" />
+    <Compile Include="Rhonin\Chess\BoardField.cs" />
     <Compile Include="Rhonin\Chess\Chess.cs" />
     <Compile Include="Rhonin\Chess\Coordinates.cs" />
     <Compile Include="Rhonin\Chess\FigureKind.cs" />

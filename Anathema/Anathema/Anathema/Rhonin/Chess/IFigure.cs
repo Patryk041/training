@@ -6,6 +6,7 @@ namespace Anathema.Rhonin.Chess
 {
     public abstract class IFigure
     {
+        public FigureKind figureKind;
         public abstract void Moves();
 
         public bool IsFigureWhite()
@@ -13,10 +14,10 @@ namespace Anathema.Rhonin.Chess
             return true;
         }
 
-        //public FigureKind GetFigureKind()
-        //{
-            
-        //};
+        public FigureKind GetFigureKind()
+        {
+            return figureKind;
+        }
 
         public abstract Coordinates GetCoordinates();
 

@@ -4,13 +4,18 @@ namespace Anathema.Rhonin.Chess
 {
     public class Chess
     {
-        Board board;
+        BoardField board;
 
         public Chess()
         {
-            Board board = new Board();
+            BoardField board = new BoardField();
             List<IFigure> figures = new List<IFigure>();
             
+        }
+
+        public BoardField GetBoardField()
+        {
+            return board;
         }
     }
 }

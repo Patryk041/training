@@ -2,12 +2,10 @@
 {
     public class Board
     {
-        /**
-        * Fill the board
-        */
-        public Board()
+        public BoardField[,] GetFields()
         {
-            
+            return null;
         }
+
     }
 }
