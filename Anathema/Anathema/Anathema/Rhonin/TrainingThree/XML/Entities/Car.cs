@@ -10,11 +10,11 @@ namespace Anathema.Rhonin.TrainingThree.XML.Entities
         [XmlAttribute("name")]
         public string Name { get; set; }
 
-       // [XmlElement("engine")]
-        //public Engine Engine { get; set; }
-
         [XmlElement("engine")]
-        public EngineType EngineType { get; set; }
+        public Engine Engine { get; set; }
+
+        //[XmlElement("engine")]
+        //public EngineType EngineType { get; set; }
 
 
         [XmlElement("colour")]

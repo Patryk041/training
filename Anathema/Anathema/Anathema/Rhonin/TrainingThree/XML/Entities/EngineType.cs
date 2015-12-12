@@ -2,11 +2,11 @@
 
 namespace Anathema.Rhonin.TrainingThree.XML.Entities
 {
-    [XmlRoot("car")]
+    //[XmlRoot("car")]
     public class EngineType //: Engine
     {
        
-        [XmlElement("engine")]
+        [XmlText()]
         public string Silnik { get; set; }
     }
 }

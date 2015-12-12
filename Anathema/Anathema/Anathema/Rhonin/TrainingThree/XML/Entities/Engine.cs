@@ -2,7 +2,7 @@
 
 namespace Anathema.Rhonin.TrainingThree.XML.Entities
 {
-    [XmlRoot("engine")]
+    //[XmlRoot("engine")]
     public class Engine
     {
         [XmlAttribute("name")]
@@ -10,7 +10,8 @@ namespace Anathema.Rhonin.TrainingThree.XML.Entities
 
         //[XmlElement("engine")]
         //public string Silnik { get; set; }
-
+        [XmlText()]
+        public string Silnik { get; set; }
 
     }
 }
