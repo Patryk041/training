@@ -133,6 +133,7 @@
     <Compile Include="rbedkowski\TestStrategy.cs" />
     <Compile Include="Rhonin\Rhonin.DataValidatorTest.cs" />
     <Compile Include="Rhonin\StringUtilsTest.cs" />
+    <Compile Include="Rhonin\XMLParserTest.cs" />
     <Compile Include="Shorcik\LinqTest.cs" />
     <Compile Include="Terry\UnitTest1.cs" />
     <Compile Include="skilloo\UnitTest1.cs" />

@@ -322,6 +322,17 @@
     <Compile Include="Rhonin\InternetShop\Purchase.cs" />
     <Compile Include="Rhonin\NewGuy.cs" />
     <Compile Include="Rhonin\TheFirstOne\GRListExtendend.cs" />
+    <Compile Include="Rhonin\TrainingThree\Generics\ExampleClass.cs" />
+    <Compile Include="Rhonin\TrainingThree\Generics\GenericsFactory.cs" />
+    <Compile Include="Rhonin\TrainingThree\Generics\ISome.cs" />
+    <Compile Include="Rhonin\TrainingThree\Generics\OtherClass.cs" />
+    <Compile Include="Rhonin\TrainingThree\XML\Entities\Car.cs" />
+    <Compile Include="Rhonin\TrainingThree\XML\Entities\Colour.cs" />
+    <Compile Include="Rhonin\TrainingThree\XML\Entities\Engine.cs" />
+    <Compile Include="Rhonin\TrainingThree\XML\Entities\EngineType.cs" />
+    <Compile Include="Rhonin\TrainingThree\XML\Entities\Garage.cs" />
+    <Compile Include="Rhonin\TrainingThree\XML\XmlParser.cs" />
+    <Compile Include="Rhonin\TrainingTwo\TextUtilsExt.cs" />
     <Compile Include="Rhonin\Words\FilterSets.cs" />
     <Compile Include="Rhonin\Words\TextUtils.cs" />
     <Compile Include="Rubi\Homework2_Generics\RubiList.cs" />
@@ -389,6 +400,9 @@
     <Content Include="Lurppis\Wzorce\Strategia\Opis.txt" />
     <Content Include="rbedkowski\Pesel\pesel.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Rhonin\TrainingThree\XML\XMLFiles\garage.xml">
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>

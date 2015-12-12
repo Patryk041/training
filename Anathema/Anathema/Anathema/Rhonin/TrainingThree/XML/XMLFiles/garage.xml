@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<garage test="My garage">
+  <car name="Fiat">
+    <engine name="Type">Gas</engine>
+    <colour name="NotMetallic">Red</colour>
+  </car>
+  <car name="Volkswagen">
+      <engine name="Type">Benzine</engine>
+      <colour name="Metallic">Green</colour>
+  </car>
+  <car name="Dacia">
+  </car>
+</garage>
