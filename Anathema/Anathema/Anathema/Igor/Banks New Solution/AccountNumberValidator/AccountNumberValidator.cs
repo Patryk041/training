@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-//using System.Numerics;
+﻿using System.Linq;
+using System.Numerics;
 
 namespace Anathema.Igor.Banks_New_Solution.AccountNumberValidator
 {
@@ -72,14 +68,14 @@ namespace Anathema.Igor.Banks_New_Solution.AccountNumberValidator
 
         protected bool isIBANControlAmountCorrect()
         {
-            var tmpAccountNumberForStringOperations = accountNumber;
+            var tmpAccountNumber = accountNumber;
 
-            tmpAccountNumberForStringOperations = tmpAccountNumberForStringOperations.Substring(2,
-                tmpAccountNumberForStringOperations.Length - 4) +
-                tmpAccountNumberForStringOperations.Substring(0, 4);
-            tmpAccountNumberForStringOperations = changeStringLettersToThemAlphabetNumbers(tmpAccountNumberForStringOperations);
+            tmpAccountNumber = getLastSigns(tmpAccountNumber) + getFirstFourSigns(tmpAccountNumber);
+            tmpAccountNumber = changeStringLettersToThemAlphabetNumbers(tmpAccountNumber);
 
-            return Int64.Parse(tmpAccountNumberForStringOperations) % 97 == 1;
+            BigInteger controlAmount = BigInteger.Parse(tmpAccountNumber);
+
+            return (controlAmount % 97) == 1;
         }
 
         protected string changeStringLettersToThemAlphabetNumbers(string str)
@@ -89,11 +85,21 @@ namespace Anathema.Igor.Banks_New_Solution.AccountNumberValidator
             str = str.ToLower();
             foreach(var sign in str)
             {
-                if (isSmallLetter(sign)) result += ((uint)sign - (uint)'a' + 10).ToString();
+                if (isSmallLetter(sign)) result += (sign - 'a' + 10).ToString();
                 else result += sign.ToString();
             }
 
             return result;
+        }
+
+        protected string getLastSigns(string str)
+        {
+            return str.Substring(4, str.Length - 4);
+        }
+
+        protected string getFirstFourSigns(string str)
+        {
+            return str.Substring(0, 4);
         }
 
         protected bool isSmallLetter(char sign)

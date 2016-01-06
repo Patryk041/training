@@ -40,7 +40,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void AccountNumberValidatorTest()
         {
-            AccountNumberValidator validator = new AccountNumberValidator("PL83101010230000261395100000");
+            AccountNumberValidator validator = new AccountNumberValidator("83101010230000261395100000");
 
             var isCorrect = validator.isAccountNumberCorrect();
 
