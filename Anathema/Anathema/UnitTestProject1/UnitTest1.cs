@@ -3,6 +3,7 @@ using Anathema.stpetersburgstakeout.linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Anathema.Igor.AbstractFactory.Computers;
 using Anathema.Igor.AbstractFactory;
+using Anathema.Igor.Banks_New_Solution.AccountNumberValidator;
 using Anathema.Igor.AbstractFactory.ComputerFactory;
 using Anathema.Lurppis.TestDoLinQOperations;
 
@@ -34,6 +35,16 @@ namespace UnitTestProject1
         {
             Tescik linqOperations = new Tescik();
             var result = linqOperations.GetProffesionList("adamW");
+        }
+
+        [TestMethod]
+        public void AccountNumberValidatorTest()
+        {
+            AccountNumberValidator validator = new AccountNumberValidator("PL83101010230000261395100000");
+
+            var isCorrect = validator.isAccountNumberCorrect();
+
+            Assert.IsTrue(isCorrect);
         }
     }
 }

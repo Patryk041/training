@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using System.Numerics;
 
 namespace Anathema.Igor.Banks_New_Solution.AccountNumberValidator
 {
-    class AccountNumberValidator
+    public class AccountNumberValidator
     {
         private string accountNumber;
 
@@ -17,26 +18,36 @@ namespace Anathema.Igor.Banks_New_Solution.AccountNumberValidator
 
         public bool isAccountNumberCorrect()
         {
-            if(isAccountNumberCorrect())
-            {
-                return true;
-            }
-            return false;
+            if (isIBANAccountNumber()) return isIBANAccountNumberCorrect();
+            return isNRBAccountNumberCorrect();
         }
 
         public bool isIBANAccountNumberCorrect()
         {
+            var result = false;
             if(isIBANAccountNumber())
             {
                 if(FirstTwoSignsAreString())
                 {
                     if(RestOfSignsAreDigits())
                     {
-                        
+                        result = isIBANControlAmountCorrect();
                     }
                 }
             }
-            return false;
+            return result;
+        }
+
+        public bool isNRBAccountNumberCorrect()
+        {
+            var accountNumberSave = accountNumber;
+            bool result;
+            
+            accountNumber = "PL" + accountNumber;
+            result = isIBANAccountNumberCorrect();
+            accountNumber = accountNumberSave;
+
+            return result;
         }
 
         public bool isIBANAccountNumber()
@@ -56,7 +67,7 @@ namespace Anathema.Igor.Banks_New_Solution.AccountNumberValidator
 
         protected bool RestOfSignsAreDigits()
         {
-            return accountNumber.All(char.IsDigit);
+            return accountNumber.Substring(2).All(char.IsDigit);
         }
 
         protected bool isIBANControlAmountCorrect()
@@ -64,11 +75,11 @@ namespace Anathema.Igor.Banks_New_Solution.AccountNumberValidator
             var tmpAccountNumberForStringOperations = accountNumber;
 
             tmpAccountNumberForStringOperations = tmpAccountNumberForStringOperations.Substring(2,
-                tmpAccountNumberForStringOperations.Length - 2) +
-                tmpAccountNumberForStringOperations.Substring(0, 2);
+                tmpAccountNumberForStringOperations.Length - 4) +
+                tmpAccountNumberForStringOperations.Substring(0, 4);
             tmpAccountNumberForStringOperations = changeStringLettersToThemAlphabetNumbers(tmpAccountNumberForStringOperations);
 
-            return Int32.Parse(tmpAccountNumberForStringOperations) % 97 == 1;
+            return Int64.Parse(tmpAccountNumberForStringOperations) % 97 == 1;
         }
 
         protected string changeStringLettersToThemAlphabetNumbers(string str)
@@ -78,7 +89,7 @@ namespace Anathema.Igor.Banks_New_Solution.AccountNumberValidator
             str = str.ToLower();
             foreach(var sign in str)
             {
-                if (isSmallLetter(sign)) result += ((byte)sign - (byte)'a' + 1).ToString();
+                if (isSmallLetter(sign)) result += ((uint)sign - (uint)'a' + 10).ToString();
                 else result += sign.ToString();
             }
 
