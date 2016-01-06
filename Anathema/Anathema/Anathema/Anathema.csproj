@@ -120,6 +120,9 @@
     <Compile Include="Igor\AbstractFactory\Computers\Logitech.cs" />
     <Compile Include="Igor\AbstractFactory\Computers\Samsung.cs" />
     <Compile Include="Igor\AbstractFactory\Computers\Sony.cs" />
+    <Compile Include="Igor\Banks New Solution\AccountNumberTypes\NRBNumber.cs" />
+    <Compile Include="Igor\Banks New Solution\AccountNumberValidator\AccountNumberValidator.cs" />
+    <Compile Include="Igor\Banks New Solution\Client.cs" />
     <Compile Include="Igor\City Homework\City.cs" />
     <Compile Include="Igor\City Homework\CityClientOperator.cs" />
     <Compile Include="Igor\City Homework\ClientOperator.cs" />

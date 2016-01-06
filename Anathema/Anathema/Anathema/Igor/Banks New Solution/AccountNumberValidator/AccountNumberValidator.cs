@@ -66,17 +66,28 @@ namespace Anathema.Igor.Banks_New_Solution.AccountNumberValidator
             tmpAccountNumberForStringOperations = tmpAccountNumberForStringOperations.Substring(2,
                 tmpAccountNumberForStringOperations.Length - 2) +
                 tmpAccountNumberForStringOperations.Substring(0, 2);
+            tmpAccountNumberForStringOperations = changeStringLettersToThemAlphabetNumbers(tmpAccountNumberForStringOperations);
 
-
-
-            return true;
+            return Int32.Parse(tmpAccountNumberForStringOperations) % 97 == 1;
         }
 
         protected string changeStringLettersToThemAlphabetNumbers(string str)
         {
             var result = "";
 
-            foreach(var sign in )
+            str = str.ToLower();
+            foreach(var sign in str)
+            {
+                if (isSmallLetter(sign)) result += ((byte)sign - (byte)'a' + 1).ToString();
+                else result += sign.ToString();
+            }
+
+            return result;
+        }
+
+        protected bool isSmallLetter(char sign)
+        {
+            return sign >= 'a' && sign <= 'z';
         }
 
         protected bool isAccountNumberLengthCorrect()
