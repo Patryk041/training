@@ -8,7 +8,7 @@ namespace Anathema.Igor
 {
     public class MyNewClass<T>
     {
-        public void addElement(T element)
+        public void addElement(T element) //TEST nowy komp
         {
 
         }
